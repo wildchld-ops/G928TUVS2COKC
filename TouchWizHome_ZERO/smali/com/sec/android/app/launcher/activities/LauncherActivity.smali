@@ -7668,9 +7668,9 @@
 
     new-instance v17, Landroid/content/ComponentName;
 
-    const-string v18, "flipboard.boxer.app"
+    const-string v18, "com.wubydax.geartwswipe"
 
-    const-string v19, "flipboard.boxer.gui.LaunchActivity"
+    const-string v19, "com.wubydax.geartwswipe.SetAppActivity"
 
     invoke-direct/range {v17 .. v19}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
