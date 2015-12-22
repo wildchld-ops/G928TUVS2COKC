@@ -12,3 +12,5 @@ versionInfo:
 sharedLibrary: false
 doNotCompress:
 - resources.arsc
+- res/drawable-sw360dp-xxxhdpi-v13/ic_knox_badge.PNG
+- res/drawable-sw360dp-xxxhdpi-v13/ic_knox_badge2.PNG

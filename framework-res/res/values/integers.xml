@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="config_shortAnimTime">200</integer>
-    <integer name="config_mediumAnimTime">400</integer>
-    <integer name="config_longAnimTime">500</integer>
+    <integer name="config_shortAnimTime">50</integer>
+    <integer name="config_mediumAnimTime">100</integer>
+    <integer name="config_longAnimTime">150</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <integer name="config_soundEffectVolumeDb">-6</integer>
     <integer name="config_lockSoundVolumeDb">-6</integer>
-    <integer name="config_activityShortDur">150</integer>
-    <integer name="config_activityDefaultDur">220</integer>
+    <integer name="config_activityShortDur">50</integer>
+    <integer name="config_activityDefaultDur">100</integer>
     <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">-1</integer>
     <integer name="config_lowMemoryKillerMinFreeKbytesAdjust">0</integer>
     <integer name="config_extraFreeKbytesAbsolute">-1</integer>
@@ -68,9 +68,9 @@
     <integer name="config_shortPressOnPowerBehavior">1</integer>
     <integer name="config_doublePressOnPowerBehavior">3</integer>
     <integer name="config_triplePressOnPowerBehavior">4</integer>
-    <integer name="config_criticalBatteryWarningLevel">5</integer>
+    <integer name="config_criticalBatteryWarningLevel">1</integer>
     <integer name="config_shutdownBatteryTemperature">680</integer>
-    <integer name="config_lowBatteryWarningLevel">15</integer>
+    <integer name="config_lowBatteryWarningLevel">10</integer>
     <integer name="config_lowBatteryCloseWarningBump">5</integer>
     <integer name="config_defaultNotificationLedOn">500</integer>
     <integer name="config_defaultNotificationLedOff">2000</integer>
@@ -212,7 +212,7 @@
     <integer name="airbutton_contact_drawable_paint_stroke_width">1</integer>
     <integer name="airbutton_contact_drawable_radius">1</integer>
     <integer name="config_multiWindowDefaultArrangeMode">1</integer>
-    <integer name="config_maxPenWindowCount">5</integer>
+    <integer name="config_maxPenWindowCount">999</integer>
     <integer name="config_AppListWindowPosition">103</integer>
     <integer name="multiwindow_floating_minimum_size_ratio">440</integer>
     <integer name="multiwindow_defaultScaleFactor">600</integer>
@@ -226,5 +226,5 @@
     <integer name="headerwindow_button_margin_coefficient">367</integer>
     <integer name="multiwindow_floating_menu_anim_duration">200</integer>
     <integer name="multiwindow_floating_menu_anim_fade_duration">200</integer>
-    <integer name="multiwindow_floating_menu_anim_fade_delay_duration">200</integer>
+    <integer name="multiwindow_floating_menu_anim_fade_delay_duration">150</integer>
 </resources>

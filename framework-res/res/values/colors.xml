@@ -200,7 +200,7 @@
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
     <color name="ripple_material_dark">#4dffffff</color>
-    <color name="ripple_material_light">#40000000</color>
+    <color name="ripple_material_light">#1f000000</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="button_material_dark">#ff5a595b</color>
@@ -373,7 +373,7 @@
     <color name="tw_tab_selected_text_color">#ffffe57f</color>
     <color name="tw_tab_unselected_text_color">#ccfafafa</color>
     <color name="tw_notification_action_button_text_color">#ff00849d</color>
-    <color name="tw_notification_action_button_background_color">#fffafafa</color>
+    <color name="tw_notification_action_button_background_color">#00000000</color>
     <color name="universal_switch_row_scan_blue">#e6004ce8</color>
     <color name="universal_switch_row_scan_green">#e62e7d32</color>
     <color name="universal_switch_row_scan_yellow">#e6ffeb3b</color>
