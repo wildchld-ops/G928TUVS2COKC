@@ -1,0 +1,19 @@
+version: 2.0.2
+apkFileName: PackageInstaller.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '22'
+  targetSdkVersion: '22'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '22'
+  versionName: 5.1.1-G928TUVS2COKC
+sharedLibrary: false
+doNotCompress:
+- resources.arsc
+- res/drawable-xxxhdpi-v4/ic_fail.qmg
+- res/drawable-xxxhdpi-v4/ic_success.qmg
