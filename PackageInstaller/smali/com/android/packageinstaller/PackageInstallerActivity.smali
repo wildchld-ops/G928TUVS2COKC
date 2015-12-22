@@ -753,7 +753,7 @@
 
     const/4 v1, 0x1
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     sget-object v3, Landroid/os/PersonaManager$KnoxContainerVersion;->KNOX_CONTAINER_VERSION_2_3_0:Landroid/os/PersonaManager$KnoxContainerVersion;
 
