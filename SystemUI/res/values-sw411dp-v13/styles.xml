@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.TextView.NumPadKey" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">37.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingBottom">-16.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="Widget.TextView.NumPadKey.Klondike" parent="@style/Widget.TextView.NumPadKey">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="Ok_theme">
+        <item name="android:textSize">27.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="single_button">
+        <item name="android:textSize">@dimen/kg_status_line_font_size</item>
+        <item name="android:textColor">@color/theme_keyguard_message_area_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="keyguard_text_shadow">
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="keyguard_single_clock_weather_shadow">
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+</resources>

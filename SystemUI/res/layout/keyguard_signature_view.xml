@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.KeyguardSignatureView android:id="@id/keyguard_signature_view" android:layout_width="fill_parent" android:layout_height="fill_parent" androidprv:layout_maxHeight="349.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keyguard_signature_header_layout_margin" android:layout_marginRight="@dimen/keyguard_signature_header_layout_margin" android:layout_marginBottom="117.0dip">
+        <FrameLayout android:id="@id/keyguard_bouncer_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/signature_signview_container" android:background="@drawable/keyguard_signature_bg" android:layout_width="fill_parent" android:layout_height="232.0dip" android:layout_marginBottom="@dimen/keyguard_signature_signview_bottom_margin" android:layout_weight="1.0">
+                <com.android.keyguard.KeyguardMessageArea android:textSize="@dimen/keyguard_signature_help_text_size" android:textColor="#ffffffff" android:id="@id/keyguard_message_area_signature" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#40ffffff" style="@style/keyguard_text_shadow" />
+            </LinearLayout>
+            <ImageButton android:layout_gravity="center|right|top" android:id="@id/signature_additional_pin_button" android:background="#00000000" android:paddingTop="4.0dip" android:paddingRight="5.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_signature_backup_pin_btn" android:contentDescription="@string/kg_lockscreen_backup_pin_button_text" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center" android:id="@id/sec_emergency_button_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginBottom="50.0dip">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyguard_emergency_button_bouncer" />
+    </LinearLayout>
+    <com.android.keyguard.sec.SecKeyguardBottomAreaView android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/sec_keyguard_bottom_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/sec_keyguard_bottom_area" />
+    </com.android.keyguard.sec.SecKeyguardBottomAreaView>
+</com.android.keyguard.sec.KeyguardSignatureView>

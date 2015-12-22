@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.SecKeyguardClockView android:orientation="vertical" android:id="@id/keyguard_sec_clock_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/keyguard_sec_clock_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <include layout="@layout/sec_adaptive_event_container_small" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/keyguard_sec_clock_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/kg_owner_text_left_margin">
+        <TextView android:textSize="@dimen/kg_owner_text_size" android:textColor="@color/theme_profile_text_color" android:ellipsize="marquee" android:id="@id/keyguard_owner_info" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="roboto-regular" style="@style/keyguard_single_clock_weather_shadow" />
+        <TextView android:textSize="@dimen/kg_travel_text_size" android:textColor="#ffffffff" android:gravity="left" android:layout_gravity="bottom" android:id="@id/keyguard_travel_text" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/keyguard_single_clock_weather_shadow" />
+    </LinearLayout>
+</com.android.keyguard.sec.SecKeyguardClockView>

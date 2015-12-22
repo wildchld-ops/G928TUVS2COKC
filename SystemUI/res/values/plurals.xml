@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">An incorrect PIN has been entered. You have %d attempts left.</item>
+        <item quantity="one">An incorrect PIN has been entered. If an incorrect PIN is entered %d more times, you will have to contact your service provider to unlock your device.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">An incorrect PUK has been entered. If an incorrect PUK is entered %d more times, the SIM card will be permanently locked.</item>
+        <item quantity="one">An incorrect PUK has been entered. If an incorrect PUK is entered %d more times, the SIM card will be permanently locked.</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d screens in Overview</item>
+        <item quantity="one">1 screen in Overview</item>
+    </plurals>
+</resources>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/help_icon_split" android:tint="@color/recent_help_body_split_icon_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

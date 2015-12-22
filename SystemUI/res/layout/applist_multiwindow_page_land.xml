@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:id="@id/applit_gridView" android:paddingLeft="7.0dip" android:paddingTop="@dimen/view_pager_padding_top_land" android:paddingRight="7.0dip" android:paddingBottom="@dimen/view_pager_padding_bottom_land" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/applist_multiwindow_page_selector" android:horizontalSpacing="2.0dip" android:verticalSpacing="31.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+</FrameLayout>

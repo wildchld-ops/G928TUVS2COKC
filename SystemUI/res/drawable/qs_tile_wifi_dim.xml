@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/tw_quick_panel_icon_wifi_off" android:tint="@color/qs_tile_icon_on_dim_tint_color" android:alpha="0.35"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

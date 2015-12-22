@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cocktail-provider category="contextual" description="Volume Panel" configure="com.android.systemui.volume.cocktailpanel.CocktailVolumePanelProvider"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

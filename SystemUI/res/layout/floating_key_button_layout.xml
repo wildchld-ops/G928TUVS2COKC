@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.sub.FloatingKeyButtonLayout android:id="@id/floating_key_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.statusbar.policy.KeyButtonView android:id="@id/floating_more_menu" android:background="@drawable/floating_button_bg" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/floating_more_menu_button" android:scaleType="centerInside" systemui:keyCode="82" systemui:floatingKey="true" />
+    <ImageView android:id="@id/floating_hide" android:background="@drawable/floating_button_bg" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/floating_hide_button" android:scaleType="centerInside" />
+    <com.android.systemui.statusbar.policy.KeyButtonView android:id="@id/floating_back" android:background="@drawable/floating_button_bg" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="54.0dip" android:src="@drawable/floating_back_key_button" android:scaleType="centerInside" systemui:keyCode="4" systemui:floatingKey="true" />
+    <FrameLayout android:id="@id/floating_trigger_group" android:background="@drawable/floating_trigger_background" android:visibility="gone" android:layout_width="@dimen/floating_trigger_background_size" android:layout_height="@dimen/floating_trigger_background_size">
+        <ImageView android:layout_gravity="center" android:id="@id/floating_trigger" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/floating_trigger_button" />
+    </FrameLayout>
+</com.android.systemui.statusbar.phone.sub.FloatingKeyButtonLayout>

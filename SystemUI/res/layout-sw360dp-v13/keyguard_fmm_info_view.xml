@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="38.0dip" android:textColor="#fffafafa" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/keyguard_fmm_phone_locked" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="20.0dip" android:text="@string/keyguard_fmm_phone_locked_title" android:singleLine="true" android:shadowColor="#80000000" android:shadowDy="3.0" android:shadowRadius="1.0" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="roboto-regular" />
+    <TextView android:textSize="17.0dip" android:textColor="#fffafafa" android:gravity="center_horizontal" android:id="@id/keyguard_fmm_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:maxLines="4" android:scrollHorizontally="true" android:shadowColor="#80000000" android:shadowDy="3.0" android:shadowRadius="1.0" android:fontFamily="SECRobotoLight-Regular" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="#fffafafa" android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/keyguard_fmm_owner_phone_num" android:layout_width="0.0dip" android:layout_height="fill_parent" android:shadowColor="#80000000" android:shadowDy="3.0" android:shadowRadius="1.0" android:layout_weight="1.0" />
+        <Button android:gravity="center" android:layout_gravity="end|center" android:id="@id/keyguard_fmm_emergency_btn" android:background="@drawable/keyguard_fmm_ic_call" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardUniversalLockView android:gravity="bottom|center" android:orientation="vertical" android:id="@id/keyguard_direction_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/keyguard_accessibility_universal_lock_unlock"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/keyguard_bouncer_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <com.android.internal.widget.DirectionLockView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/directionLockView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:layout_weight="1.0" android:contentDescription="@string/keyguard_accessibility_direction_area" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/universal_lock_bouncer_mode_text_size" android:textColor="@color/universal_lock_bouncer_message_color" android:textColorHint="@color/keyguard_message_area_hint_text_color" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/textview_keyguard_message_area" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="@dimen/universal_lock_bouncer_mode_bottom_margin" android:fontFamily="SECRobotoLight Regular" style="@style/keyguard_text_style_direction_lock" />
+        <TextView android:textSize="@dimen/universal_lock_bouncer_mode_text_size" android:textColor="@color/universal_lock_bouncer_message_color" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/direction_lock_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/universal_lock_wrong_message_bottom_margin" android:fontFamily="SECRobotoLight Regular" style="@style/keyguard_text_style_direction_lock" />
+        <TextView android:textSize="@dimen/universal_lock_bouncer_mode_text_size" android:textColor="@color/universal_lock_bouncer_message_color" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/direction_lock_locked_out_message_bouncer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/universal_lock_wrong_message_bottom_margin" android:shadowColor="@color/keyguard_avatar_frame_shadow_color" android:fontFamily="SECRobotoLight Regular" />
+        <LinearLayout android:layout_gravity="bottom|center" android:id="@id/sec_emergency_button_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginBottom="11.0dip">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyguard_emergency_button_bouncer" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/dot_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dot_layout_bottom_margin" />
+        <com.android.keyguard.sec.SecKeyguardBottomAreaView android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/sec_keyguard_bottom_area" android:layout_width="fill_parent" android:layout_height="wrap_content" androidprv:useBackUp="true" androidprv:useCenteredMessageArea="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ViewStub android:layout_gravity="center|top" android:id="@id/stub_secure_message_area_usa" android:paddingLeft="-5.0dip" android:paddingRight="5.0dip" android:layout="@layout/keyguard_message_area" android:inflatedId="@id/keyguard_message_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+                <FrameLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/sec_keyguard_bottom_area_eca" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:gravity="bottom|center" android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sec_keyguard_bottom_area" />
+                </FrameLayout>
+            </FrameLayout>
+        </com.android.keyguard.sec.SecKeyguardBottomAreaView>
+    </FrameLayout>
+</com.android.keyguard.KeyguardUniversalLockView>
