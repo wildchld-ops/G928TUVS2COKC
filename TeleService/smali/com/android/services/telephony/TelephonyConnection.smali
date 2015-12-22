@@ -58,6 +58,7 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/internal/telephony/Connection;)V
     .locals 5
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v4, 0x0
 
@@ -123,6 +124,7 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/TelephonyConnection;)Lcom/android/internal/telephony/Connection;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     invoke-direct {p0}, Lcom/android/services/telephony/TelephonyConnection;->getForegroundConnection()Lcom/android/internal/telephony/Connection;
 
@@ -133,6 +135,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/TelephonyConnection;)Z
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     iget-boolean v0, p0, Lcom/android/services/telephony/TelephonyConnection;->mVoicePrivacyState:Z
 
@@ -141,6 +144,8 @@
 
 .method static synthetic access$102(Lcom/android/services/telephony/TelephonyConnection;Z)Z
     .locals 0
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/services/telephony/TelephonyConnection;->mVoicePrivacyState:Z
 
@@ -149,6 +154,8 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/TelephonyConnection;Ljava/util/List;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p1    # Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lcom/android/services/telephony/TelephonyConnection;->updateConferenceParticipants(Ljava/util/List;)V
 
@@ -157,6 +164,7 @@
 
 .method private applyAudioQualityCapabilities(I)I
     .locals 4
+    .param p1    # I
 
     const/16 v3, 0x400
 
@@ -185,6 +193,8 @@
 
 .method private applyCapability(II)I
     .locals 1
+    .param p1    # I
+    .param p2    # I
 
     or-int v0, p1, p2
 
@@ -193,6 +203,7 @@
 
 .method private applyConferenceTerminationCapabilities(I)I
     .locals 2
+    .param p1    # I
 
     move v0, p1
 
@@ -245,6 +256,7 @@
 
 .method private applyVideoCapabilities(I)I
     .locals 4
+    .param p1    # I
 
     const/16 v3, 0x200
 
@@ -289,6 +301,7 @@
 
 .method private applyVoicePrivacyCapabilities(I)I
     .locals 3
+    .param p1    # I
 
     const/high16 v2, 0x200000
 
@@ -447,6 +460,7 @@
 
 .method private static getAddressFromNumber(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -605,6 +619,8 @@
 
 .method private registerSecPhoneNotification(Lcom/android/internal/telephony/Phone;Landroid/os/Handler;)V
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Landroid/os/Handler;
 
     const-string v0, "ctc_call_time_duration"
 
@@ -626,6 +642,8 @@
 
 .method private removeCapability(II)I
     .locals 1
+    .param p1    # I
+    .param p2    # I
 
     xor-int/lit8 v0, p2, -0x1
 
@@ -717,6 +735,8 @@
 
 .method private unregisterSecPhoneNotification(Lcom/android/internal/telephony/Phone;Landroid/os/Handler;)V
     .locals 1
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Landroid/os/Handler;
 
     const-string v0, "ctc_call_time_duration"
 
@@ -775,6 +795,7 @@
 # virtual methods
 .method public final addTelephonyConnectionListener(Lcom/android/services/telephony/TelephonyConnection$TelephonyConnectionListener;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 1
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection$TelephonyConnectionListener;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection;->mTelephonyListeners:Ljava/util/Set;
 
@@ -963,6 +984,7 @@
 
 .method protected getOrigDialStringFromNumber(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1021,6 +1043,7 @@
 
 .method protected hangup(I)V
     .locals 5
+    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1244,6 +1267,7 @@
 
 .method public onAnswer(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1311,6 +1335,7 @@
 
 .method public onAudioStateChanged(Landroid/telecom/AudioState;)V
     .locals 4
+    .param p1    # Landroid/telecom/AudioState;
 
     const-string v1, "tmo_echolocate_logger"
 
@@ -1407,12 +1432,14 @@
 
 .method onDisconnect(Landroid/os/AsyncResult;)V
     .locals 0
+    .param p1    # Landroid/os/AsyncResult;
 
     return-void
 .end method
 
 .method public onDisconnectConferenceParticipant(Landroid/net/Uri;)V
     .locals 3
+    .param p1    # Landroid/net/Uri;
 
     const-string v0, "onDisconnectConferenceParticipant %s"
 
@@ -1451,6 +1478,7 @@
 
 .method public onPostDialContinue(Z)V
     .locals 2
+    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1565,6 +1593,7 @@
 
 .method public onStateChanged(I)V
     .locals 3
+    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1645,6 +1674,7 @@
 
 .method public performConference(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 4
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v3, 0x0
 
@@ -1843,6 +1873,7 @@
 
 .method public final removeTelephonyConnectionListener(Lcom/android/services/telephony/TelephonyConnection$TelephonyConnectionListener;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 1
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection$TelephonyConnectionListener;
 
     if-eqz p1, :cond_0
 
@@ -1902,6 +1933,7 @@
 
 .method public setAudioQuality(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/TelephonyConnection;->mAudioQuality:I
 
@@ -1912,6 +1944,7 @@
 
 .method public setCallId(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1944,6 +1977,7 @@
 
 .method public setHasBeenVideoCall(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/services/telephony/TelephonyConnection;->mHasBeenVideoCall:Z
 
@@ -1976,6 +2010,7 @@
 
 .method public setLocalVideoCapable(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/services/telephony/TelephonyConnection;->mLocalVideoCapable:Z
 
@@ -1986,6 +2021,7 @@
 
 .method setOriginalConnection(Lcom/android/internal/telephony/Connection;)V
     .locals 7
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v6, 0x3
 
@@ -2196,6 +2232,7 @@
 
 .method public setRemoteVideoCapable(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/services/telephony/TelephonyConnection;->mRemoteVideoCapable:Z
 

@@ -1,0 +1,233 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: res/layout-land/private_mode_typingverify_white.xml
+SHA1-Digest: ul5aUx33PUGu3xTxtSrdlrau0Gw=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_default_holo_light
+ .9.qmg
+SHA1-Digest: hajGrYm6TUfiuykDOXTO/zoLDSs=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/ic_setting_grid_private_mode.qm
+ g
+SHA1-Digest: ekPceg5KrsYGj/Z0/WFP/egvez8=
+
+Name: res/layout-land/private_mode_pin_white.xml
+SHA1-Digest: JTmMnEotblGvFsp4tJcgc7vWUYw=
+
+Name: res/layout-sw360dp-land-xxxhdpi-v13/private_mode_typingverify_wh
+ ite.xml
+SHA1-Digest: Zqvpag6Q6swH7FY/lrzx16I65B8=
+
+Name: res/layout-sw360dp-land-xxxhdpi-v21/private_mode_typingverify_wh
+ ite.xml
+SHA1-Digest: z8VWi2M8rXJs/lEpp0yV/8sVh3s=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_focused_holo_light
+ .9.qmg
+SHA1-Digest: NZ0CL2NvdnVEZJ+wEWkues6uCXM=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_textfield_selector
+ _white.xml
+SHA1-Digest: 5WJchZ9FSTh/WIlXp6hJEbn2Utc=
+
+Name: res/layout-v21/private_mode_pattern_white.xml
+SHA1-Digest: SaKG6HaawswbBJyDL+V5qAIvAZM=
+
+Name: res/layout/private_mode_typingverify_white.xml
+SHA1-Digest: +gvvZs7VkeINwExQEimFBYCX5XA=
+
+Name: res/layout-v21/private_mode_typingverify_white.xml
+SHA1-Digest: MRLr5tJxPqKbkJOv7oPWdCvQz9A=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_focused_holo_dark.
+ 9.qmg
+SHA1-Digest: 8dKA2v1H8Sub6gzXNGv/748LHQg=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd_whit
+ e.qmg
+SHA1-Digest: E0yCzZ3/zg4bin5skZT2DkbzsEs=
+
+Name: res/layout-land/private_mode_pattern_white.xml
+SHA1-Digest: n1OXyjpGXso+PXvfynZiSuSd3HM=
+
+Name: res/layout-land/private_mode_pattern.xml
+SHA1-Digest: AAdYihBKOEKs4xYM0QV0G2KmBSQ=
+
+Name: res/layout-sw360dp-xxxhdpi-v13/private_mode_typingverify_white.x
+ ml
+SHA1-Digest: +gvvZs7VkeINwExQEimFBYCX5XA=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/weblogin_bg.9.qmg
+SHA1-Digest: IiqoyXac0AVICnz6cWj6AO+FMus=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd_pres
+ sed_white.qmg
+SHA1-Digest: S2Y45XN3oFC+BujhWZweqJenQXU=
+
+Name: res/layout-land-v21/private_mode_pin_white.xml
+SHA1-Digest: Sx0UMutJweLz7Zl7mPiWTWTEbmc=
+
+Name: res/layout-land/private_mode_typingverify.xml
+SHA1-Digest: ta7tn8U5Sr89dWDFo56tfDMFW/E=
+
+Name: res/layout-sw411dp-land-xxxhdpi-v21/private_mode_typingverify_wh
+ ite.xml
+SHA1-Digest: Dr8APmQzw9ViKGjaLf5/UCBi/1E=
+
+Name: res/layout-sw411dp-land-xxxhdpi-v13/private_mode_pin_white.xml
+SHA1-Digest: GR44DlGCX0NASFxP7aVD5HV6VEI=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_pressed_holo_dark.
+ 9.qmg
+SHA1-Digest: jYKARtzcx/pGQH4nlG0NoUUxxTA=
+
+Name: res/drawable/private_mode_backuppin_icon.xml
+SHA1-Digest: 362Pxo6wYSAh13wXyASVWc5rsFs=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/stat_notify_private_mode.qmg
+SHA1-Digest: mWKSmgOpPHuhefQUTjrctfuPQY0=
+
+Name: res/layout-land/private_mode_pin_white_cocktail.xml
+SHA1-Digest: nnnsShVPscYFrjJFDMp0WZIEjwU=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/stat_sys_private_mode.qmg
+SHA1-Digest: 2Ma0/RnIiMHc1L0z9+NezwZsAnw=
+
+Name: res/drawable/private_mode_textfield_selector.xml
+SHA1-Digest: FCZzDvUhMnaBbF5moCRWwr0JqU8=
+
+Name: res/layout-sw411dp-land-xxxhdpi-v21/private_mode_pin_white.xml
+SHA1-Digest: QsHV1Lsi6wLy4wib+SQEBhGt7bc=
+
+Name: res/layout-land/private_mode_typingverify_white_cocktail.xml
+SHA1-Digest: 5ODHjQhmu+/lCuREYcrb4OSx/k0=
+
+Name: res/layout/private_mode_normal_on_apphide.xml
+SHA1-Digest: 1a5T73BTWCpFrK3ypuy5BiStUPI=
+
+Name: res/layout/private_mode_normal_off.xml
+SHA1-Digest: iyAYcLMrk+THJN2X1Ij6XvE2B6s=
+
+Name: res/layout/private_mode_pin.xml
+SHA1-Digest: Fj4WuDlNrRXd0KQQzqZAt84iDmk=
+
+Name: res/layout/private_mode_normal_on.xml
+SHA1-Digest: HOsyj6wDXLLBBe2Zd3ms/UWgU44=
+
+Name: res/layout/private_mode_disclaimer_off.xml
+SHA1-Digest: ifosMN/ideBvrpFrBtrnkcLm8nM=
+
+Name: res/layout/private_mode_pattern_white.xml
+SHA1-Digest: a/1tyhj7ZKYPfpBwDzP8dJR45ag=
+
+Name: res/layout-sw411dp-xxxhdpi-v13/private_mode_normal_on_l3.xml
+SHA1-Digest: Rdl96SlujyaYUowPksetIMVRQm4=
+
+Name: res/drawable/pattern_shape.xml
+SHA1-Digest: SLx7FblFzDOGC8p6l3WudhcdQac=
+
+Name: res/layout/private_mode_pin_white.xml
+SHA1-Digest: +gvvZs7VkeINwExQEimFBYCX5XA=
+
+Name: res/layout/private_mode_normal_on_l3.xml
+SHA1-Digest: UoivLbrMeAq7BPV5KUbqjc5xiyc=
+
+Name: res/layout-land/private_mode_pin.xml
+SHA1-Digest: U6mya1r8oFxxLV3gfjFMxsxjdxM=
+
+Name: res/layout-sw411dp-xxxhdpi-v13/private_mode_pin_white.xml
+SHA1-Digest: LGe6SoO6WGkeHggngu82+nUf8iU=
+
+Name: res/layout/private_mode_pattern.xml
+SHA1-Digest: dSdKB0HZQz/6vrCuYU5hPjV/Azs=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_activated_mtrl_alp
+ ha.9.qmg
+SHA1-Digest: LNfdLivg2LC5XmbRFwA+ve6zlzM=
+
+Name: resources.arsc
+SHA1-Digest: wxLcYrbiIYNGyH8Xf8xFqkyOUzE=
+
+Name: res/layout/private_mode_typingverify.xml
+SHA1-Digest: Fj4WuDlNrRXd0KQQzqZAt84iDmk=
+
+Name: res/layout-sw411dp-xxxhdpi-v21/private_mode_pin_white.xml
+SHA1-Digest: MzWKGQ1x6B5Y6CQ3P4iyE76NREo=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_line_white.
+ qmg
+SHA1-Digest: YkiWcr88kGTxNppUnmE6JgqyoGo=
+
+Name: res/layout-sw360dp-xxxhdpi-v21/private_mode_typingverify_white.x
+ ml
+SHA1-Digest: MRLr5tJxPqKbkJOv7oPWdCvQz9A=
+
+Name: res/layout/private_mode_disclaimer_on.xml
+SHA1-Digest: 1ZdvzBJWMJF8gnU2NGDnrVZA/zM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: vumvCDvw2ngTS4fhwNdfo1Wo+Lc=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd_focu
+ s.qmg
+SHA1-Digest: p6iGhRNzL5BINwECm25pCZiMCFQ=
+
+Name: res/layout-sw411dp-xxxhdpi-v13/private_mode_typingverify_white.x
+ ml
+SHA1-Digest: LGe6SoO6WGkeHggngu82+nUf8iU=
+
+Name: res/layout-sw411dp-land-xxxhdpi-v13/private_mode_typingverify_wh
+ ite.xml
+SHA1-Digest: 4ixHPaMEE+Ls+g9tHIeJyb6VQwY=
+
+Name: res/layout/private_mode_pin_white_cocktail.xml
+SHA1-Digest: LYCrGFYMh/uxL9xclyD2enbIl6U=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd.qmg
+SHA1-Digest: 9h7g8T/XX4Y7D+vUrzLt8fmV63U=
+
+Name: res/layout/private_mode_typingverify_white_cocktail.xml
+SHA1-Digest: LYCrGFYMh/uxL9xclyD2enbIl6U=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_default_holo_dark.
+ 9.qmg
+SHA1-Digest: gKIof/P+WtTC+c8W14XpabmYbwo=
+
+Name: res/layout-sw411dp-xxxhdpi-v21/private_mode_typingverify_white.x
+ ml
+SHA1-Digest: MzWKGQ1x6B5Y6CQ3P4iyE76NREo=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_pressed_holo_light
+ .9.qmg
+SHA1-Digest: FOKfWJnUTHilP9QBsmVYEoyOo5Y=
+
+Name: classes.dex
+SHA1-Digest: vJO7vtiU4wLO+/ilLple1UNf/TQ=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_backuppin_icon_whi
+ te.xml
+SHA1-Digest: klxSsXI3YXqZrL9ezt3GIS4Bo4o=
+
+Name: res/layout/private_mode_alert_lockscreen.xml
+SHA1-Digest: qW4r5iXgc3oD74N+D8bC7KVgUYg=
+
+Name: res/layout-land-v21/private_mode_pattern_white.xml
+SHA1-Digest: fClZzJUWc4kvkbxqOTqvi/rkDwE=
+
+Name: res/layout-land-v21/private_mode_typingverify_white.xml
+SHA1-Digest: l/mZIyObiIMEvSXNb0rSzAY1XqQ=
+
+Name: res/layout-v21/private_mode_pin_white.xml
+SHA1-Digest: MRLr5tJxPqKbkJOv7oPWdCvQz9A=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/tw_textfield_default_mtrl_alpha
+ .9.qmg
+SHA1-Digest: dZTEcfCw+8LtEur0kQUYS8naE9g=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_cursor.xml
+SHA1-Digest: +5xCRnS1KELH/TPg0g2U3ZB0Lko=
+
+Name: res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_line.qmg
+SHA1-Digest: bOSFVjrKnLip9agz2KAmNdE47ZQ=
+

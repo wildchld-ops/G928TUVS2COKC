@@ -205,6 +205,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -335,6 +336,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/PhoneGlobals;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->handleWB(I)V
 
@@ -343,6 +346,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/PhoneGlobals;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->initForNewRadioTechnology(I)V
 
@@ -351,6 +356,8 @@
 
 .method static synthetic access$1100(Lcom/android/phone/PhoneGlobals;Landroid/content/Intent;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->handleServiceStateChanged(Landroid/content/Intent;)V
 
@@ -359,6 +366,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/PhoneGlobals;)Lcom/android/phone/EmergencyModeManager;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->mEmergencyModeMgr:Lcom/android/phone/EmergencyModeManager;
 
@@ -375,6 +383,7 @@
 
 .method static synthetic access$1302(Landroid/app/StatusBarManager;)Landroid/app/StatusBarManager;
     .locals 0
+    .param p0    # Landroid/app/StatusBarManager;
 
     sput-object p0, Lcom/android/phone/PhoneGlobals;->mStatusBarManager:Landroid/app/StatusBarManager;
 
@@ -383,6 +392,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/PhoneGlobals;)Landroid/telephony/PhoneStateListener;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->CWPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
@@ -391,6 +401,7 @@
 
 .method static synthetic access$1500(Lcom/android/phone/PhoneGlobals;)I
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget v0, p0, Lcom/android/phone/PhoneGlobals;->mPreviousRoaming:I
 
@@ -399,6 +410,8 @@
 
 .method static synthetic access$1502(Lcom/android/phone/PhoneGlobals;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/PhoneGlobals;->mPreviousRoaming:I
 
@@ -407,6 +420,8 @@
 
 .method static synthetic access$1600(Lcom/android/phone/PhoneGlobals;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -420,6 +435,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/PhoneGlobals;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->onMMIComplete(Landroid/os/AsyncResult;)V
 
@@ -428,6 +445,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/PhoneGlobals;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->onMMICompleteSecondary(Landroid/os/AsyncResult;)V
 
@@ -436,6 +455,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/PhoneGlobals;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->phone2:Lcom/android/internal/telephony/Phone;
 
@@ -444,6 +464,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/PhoneGlobals;)Landroid/app/Activity;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->mPUKEntryActivity:Landroid/app/Activity;
 
@@ -452,6 +473,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/PhoneGlobals;Landroid/app/Activity;)Landroid/app/Activity;
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals;->mPUKEntryActivity:Landroid/app/Activity;
 
@@ -460,6 +483,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/PhoneGlobals;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->mPUKEntryProgressDialog:Landroid/app/ProgressDialog;
 
@@ -468,6 +492,8 @@
 
 .method static synthetic access$602(Lcom/android/phone/PhoneGlobals;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals;->mPUKEntryProgressDialog:Landroid/app/ProgressDialog;
 
@@ -476,6 +502,8 @@
 
 .method static synthetic access$700(Lcom/android/phone/PhoneGlobals;Landroid/os/Message;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->handleGetCallWaitingResponse(Landroid/os/Message;)V
 
@@ -484,6 +512,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/PhoneGlobals;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneGlobals;->mDataDisconnectedDueToRoaming:Z
 
@@ -492,6 +522,8 @@
 
 .method static synthetic access$900(Lcom/android/phone/PhoneGlobals;Landroid/content/Intent;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneGlobals;->updateChargingCutoff(Landroid/content/Intent;)V
 
@@ -500,6 +532,7 @@
 
 .method private callerNameIDLookup(Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -593,6 +626,7 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -800,6 +834,7 @@
 
 .method public static getPhone(I)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # I
 
     invoke-static {p0}, Landroid/telephony/SubscriptionManager;->getPhoneId(I)I
 
@@ -814,6 +849,8 @@
 
 .method static getRoamingPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
     .locals 4
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -869,6 +906,7 @@
 
 .method private handleGetCallWaitingResponse(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x0
 
@@ -949,6 +987,7 @@
 
 .method private handleServiceStateChanged(Landroid/content/Intent;)V
     .locals 16
+    .param p1    # Landroid/content/Intent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -1463,6 +1502,7 @@
 
 .method private handleWB(I)V
     .locals 5
+    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -1524,6 +1564,7 @@
 
 .method private initForNewRadioTechnology(I)V
     .locals 7
+    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1663,6 +1704,7 @@
 
 .method private onMMIComplete(Landroid/os/AsyncResult;)V
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v3, 0x0
 
@@ -1691,6 +1733,7 @@
 
 .method private onMMICompleteSecondary(Landroid/os/AsyncResult;)V
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v3, 0x0
 
@@ -1717,6 +1760,7 @@
 
 .method private updateChargingCutoff(Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Intent;
 
     const-string v2, "apnType"
 
@@ -2199,6 +2243,7 @@
 
 .method handleOtaspEvent(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     sget-boolean v0, Lcom/android/phone/PhoneGlobals;->DBG:Z
 
@@ -4452,6 +4497,7 @@
 
 .method public refreshMwiIndicator(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->notificationMgr:Lcom/android/phone/NotificationMgr;
 
@@ -4462,6 +4508,7 @@
 
 .method requestVoiceRecordingWakeState(Lcom/android/phone/PhoneGlobals$WakeState;)V
     .locals 3
+    .param p1    # Lcom/android/phone/PhoneGlobals$WakeState;
 
     const-string v0, "PhoneApp"
 
@@ -4575,6 +4622,7 @@
 
 .method requestWakeState(Lcom/android/phone/PhoneGlobals$WakeState;)V
     .locals 2
+    .param p1    # Lcom/android/phone/PhoneGlobals$WakeState;
 
     monitor-enter p0
 
@@ -4688,6 +4736,7 @@
 
 .method public setErrorDialogActivityInstance(Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;)V
     .locals 0
+    .param p1    # Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals;->mErrorDialogActivity:Lcom/android/phone/utils/EmergencyRadioOnDialogActivity;
 
@@ -4696,6 +4745,7 @@
 
 .method public setMergeCallTriggered(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneGlobals;->mMergeCallTriggered:Z
 
@@ -4704,6 +4754,7 @@
 
 .method public setNeedDataFromNetwork(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneGlobals;->mNeedDataFromNetwork:Z
 
@@ -4712,6 +4763,7 @@
 
 .method public setPreferredNetworksListCount(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/PhoneGlobals;->mPreferredNetworksCount:I
 
@@ -4720,6 +4772,7 @@
 
 .method setPukEntryActivity(Landroid/app/Activity;)V
     .locals 0
+    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals;->mPUKEntryActivity:Landroid/app/Activity;
 
@@ -4728,6 +4781,7 @@
 
 .method setPukEntryProgressDialog(Landroid/app/ProgressDialog;)V
     .locals 0
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals;->mPUKEntryProgressDialog:Landroid/app/ProgressDialog;
 
@@ -4736,6 +4790,7 @@
 
 .method setRestoreMuteOnInCallResume(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneGlobals;->mShouldRestoreMuteOnInCallResume:Z
 
@@ -4744,6 +4799,7 @@
 
 .method updatePhoneState(Lcom/android/internal/telephony/PhoneConstants$State;)V
     .locals 1
+    .param p1    # Lcom/android/internal/telephony/PhoneConstants$State;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->mLastPhoneState:Lcom/android/internal/telephony/PhoneConstants$State;
 

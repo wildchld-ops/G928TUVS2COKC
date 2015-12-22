@@ -810,6 +810,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneUtilsKOR"
 
@@ -820,6 +821,8 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Z
 
     const-string v0, "PhoneUtilsKOR"
 
@@ -830,6 +833,8 @@
 
 .method public static declared-synchronized notifyCallProtectionStatus(Lcom/android/phone/operator/kor/PhoneUtilsKOR$CallProtectionType;Z)V
     .locals 14
+    .param p0    # Lcom/android/phone/operator/kor/PhoneUtilsKOR$CallProtectionType;
+    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -1354,6 +1359,7 @@
 
 .method public static notifyCallProtectionStatus(Z)V
     .locals 2
+    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -2068,6 +2074,7 @@
 
 .method public static setHDVoiceNetworkPref(Z)V
     .locals 13
+    .param p0    # Z
 
     const/4 v8, 0x1
 

@@ -36,6 +36,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/services/telephony/TelephonyConnectionService;)V
     .locals 2
+    .param p1    # Lcom/android/services/telephony/TelephonyConnectionService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,6 +73,7 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/ImsConferenceController;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/ImsConferenceController;
 
     iget-object v0, p0, Lcom/android/services/telephony/ImsConferenceController;->mImsConferences:Ljava/util/ArrayList;
 
@@ -80,6 +82,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/ImsConferenceController;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConferenceController;
 
     invoke-direct {p0}, Lcom/android/services/telephony/ImsConferenceController;->recalculate()V
 
@@ -88,6 +91,7 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/ImsConferenceController;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConferenceController;
 
     invoke-direct {p0}, Lcom/android/services/telephony/ImsConferenceController;->recalculateConference()V
 
@@ -527,6 +531,7 @@
 
 .method private startConference(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 5
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     sget-boolean v2, Lcom/android/services/telephony/Log;->VERBOSE:Z
 
@@ -596,6 +601,7 @@
 # virtual methods
 .method add(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 3
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->VERBOSE:Z
 
@@ -629,6 +635,7 @@
 
 .method remove(Landroid/telecom/Connection;)V
     .locals 3
+    .param p1    # Landroid/telecom/Connection;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->VERBOSE:Z
 

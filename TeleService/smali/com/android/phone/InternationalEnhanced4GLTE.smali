@@ -132,6 +132,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/InternationalEnhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -140,6 +141,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/InternationalEnhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mVideoCallEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -148,6 +150,7 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/InternationalEnhanced4GLTE;->forcingVolteMenuEnable:Z
 
@@ -156,6 +159,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/InternationalEnhanced4GLTE;)V
     .locals 0
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     invoke-direct {p0}, Lcom/android/phone/InternationalEnhanced4GLTE;->checkEDMRoaming()V
 
@@ -164,6 +168,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/InternationalEnhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -172,6 +177,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/InternationalEnhanced4GLTE;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mHandler:Landroid/os/Handler;
 
@@ -180,6 +186,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/InternationalEnhanced4GLTE;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-boolean v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mOkClicked:Z
 
@@ -188,6 +195,8 @@
 
 .method static synthetic access$702(Lcom/android/phone/InternationalEnhanced4GLTE;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mOkClicked:Z
 
@@ -196,6 +205,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/InternationalEnhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mInternationalData:Landroid/preference/CheckBoxPreference;
 
@@ -204,6 +214,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/InternationalEnhanced4GLTE;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/InternationalEnhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -415,6 +426,7 @@
 
 .method private setVideoCallEnabled(Z)V
     .locals 3
+    .param p1    # Z
 
     const-string v0, "InternationalEnhanced4GLTE"
 
@@ -464,6 +476,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -727,6 +740,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -769,6 +783,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x1
 

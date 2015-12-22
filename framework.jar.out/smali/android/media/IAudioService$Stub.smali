@@ -30,17 +30,23 @@
 
 .field static final TRANSACTION_addMediaPlayerAndUpdateRemoteController:I = 0x4d
 
-.field static final TRANSACTION_adjustMasterVolume:I = 0x3
+.field static final TRANSACTION_adjustLocalOrRemoteStreamVolume:I = 0x4
 
-.field static final TRANSACTION_adjustStreamVolume:I = 0x2
+.field static final TRANSACTION_adjustMasterVolume:I = 0x7
 
-.field static final TRANSACTION_adjustSuggestedStreamVolume:I = 0x1
+.field static final TRANSACTION_adjustStreamVolume:I = 0x6
+
+.field static final TRANSACTION_adjustSuggestedStreamVolume:I = 0x5
+
+.field static final TRANSACTION_adjustVolume:I = 0x2
 
 .field static final TRANSACTION_avrcpSupportsAbsoluteVolume:I = 0x23
 
 .field static final TRANSACTION_disableSafeMediaVolume:I = 0x43
 
 .field static final TRANSACTION_dismissVolumePanel:I = 0x55
+
+.field static final TRANSACTION_dispatchMediaKeyEventUnderWakelock:I = 0x2f
 
 .field static final TRANSACTION_forceRemoteSubmixFullVolume:I = 0xa
 
@@ -368,9 +374,9 @@
 
     move-result-object v3
 
-    invoke-virtual {p0, v1, v2, v3}, Landroid/media/IAudioService$Stub;->adjustMasterVolume(IILjava/lang/String;)V
+    move-object/from16 v0, p0
 
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+    invoke-virtual {p0, v1, v2, v3}, Landroid/media/IAudioService$Stub;->adjustLocalOrRemoteStreamVolume(IILjava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -2646,6 +2652,8 @@
     const/4 v0, 0x1
 
     goto/16 :goto_0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

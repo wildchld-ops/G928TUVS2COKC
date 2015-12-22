@@ -33,6 +33,7 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 4
+    .param p1    # Landroid/telephony/ServiceState;
 
     const-string v1, "PhoneApp"
 

@@ -27,6 +27,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Landroid/os/Handler;)V
     .locals 0
+    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators$ProgressThread;->this$0:Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
@@ -104,6 +105,7 @@
 
 .method public setState(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators$ProgressThread;->mState:I
 

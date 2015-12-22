@@ -411,4 +411,39 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
+    <style name="TextAppearance.StatusBar.Traffic" parent="@style/TextAppearance.StatusBar.Clock">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffa6a6a6</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="TextAppearance.StatusBar.NetworkStats" parent="@android:style/TextAppearance.StatusBar.EventContent.Info">
+        <item name="android:textSize">@dimen/network_stats_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ClockFontStyle">
+        <item name="android:textSize">82.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">samsung-neo-num3T</item>
+    </style>
+    <style name="DateFontStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
 </resources>

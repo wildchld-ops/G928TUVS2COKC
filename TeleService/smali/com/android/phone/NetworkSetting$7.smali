@@ -33,6 +33,7 @@
 # virtual methods
 .method public onQueryComplete(Ljava/util/List;I)V
     .locals 4
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

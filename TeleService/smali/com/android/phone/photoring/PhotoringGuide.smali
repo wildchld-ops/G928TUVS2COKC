@@ -56,6 +56,7 @@
 
 .method private Endguide(Z)V
     .locals 2
+    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -76,6 +77,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/PhotoringGuide;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringGuide;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringGuide;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -84,6 +86,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/photoring/PhotoringGuide;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringGuide;
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoringGuide;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -92,6 +96,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/PhotoringGuide;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringGuide;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringGuide;->s:Ljava/lang/String;
 
@@ -100,6 +105,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/photoring/PhotoringGuide;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringGuide;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringGuide;->tv:Landroid/widget/TextView;
 
@@ -108,6 +114,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/photoring/PhotoringGuide;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringGuide;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoringGuide;->loadText()V
 
@@ -215,6 +222,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -261,6 +270,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
+    .param p1    # Landroid/view/View;
 
     const/4 v6, -0x1
 
@@ -439,6 +449,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -646,6 +657,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 

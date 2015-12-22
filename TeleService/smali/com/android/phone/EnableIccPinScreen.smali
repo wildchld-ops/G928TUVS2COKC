@@ -42,6 +42,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/EnableIccPinScreen;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EnableIccPinScreen;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EnableIccPinScreen;->handleResult(Landroid/os/AsyncResult;)V
 
@@ -50,6 +52,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/EnableIccPinScreen;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/EnableIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/EnableIccPinScreen;->mPinField:Landroid/widget/EditText;
 
@@ -58,6 +61,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/EnableIccPinScreen;Ljava/lang/CharSequence;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EnableIccPinScreen;
+    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EnableIccPinScreen;->showStatus(Ljava/lang/CharSequence;)V
 
@@ -66,6 +71,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/EnableIccPinScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EnableIccPinScreen;
 
     invoke-direct {p0}, Lcom/android/phone/EnableIccPinScreen;->enableIccPin()V
 
@@ -118,6 +124,7 @@
 
 .method private handleResult(Landroid/os/AsyncResult;)V
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v0, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
@@ -239,6 +246,7 @@
 
 .method private showStatus(Ljava/lang/CharSequence;)V
     .locals 3
+    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v2, 0x8
 
@@ -277,6 +285,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

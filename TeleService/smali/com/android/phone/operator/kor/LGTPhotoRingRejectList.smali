@@ -275,6 +275,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Lcom/android/phone/operator/kor/LGTPhotoRingRejectList$AutoRejectAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mAutoRejectAdapter:Lcom/android/phone/operator/kor/LGTPhotoRingRejectList$AutoRejectAdapter;
 
@@ -283,6 +284,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->stopContactQuery()V
 
@@ -291,6 +293,8 @@
 
 .method static synthetic access$1002(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->queryString:Ljava/lang/String;
 
@@ -299,6 +303,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->makeScreen()V
 
@@ -307,6 +312,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/widget/SearchView;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->svSearch:Landroid/widget/SearchView;
 
@@ -315,6 +321,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)I
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mScreenType:I
 
@@ -323,6 +330,8 @@
 
 .method static synthetic access$1302(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mScreenType:I
 
@@ -331,6 +340,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->updateDeleteScreenItems()V
 
@@ -339,6 +349,7 @@
 
 .method static synthetic access$1500(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -349,6 +360,9 @@
 
 .method static synthetic access$1600(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->log(Ljava/lang/String;Z)V
 
@@ -357,6 +371,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)I
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectedItem:I
 
@@ -365,6 +380,8 @@
 
 .method static synthetic access$1702(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectedItem:I
 
@@ -373,6 +390,8 @@
 
 .method static synthetic access$1800(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->removeDialog(I)V
 
@@ -381,6 +400,8 @@
 
 .method static synthetic access$1900(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->showDialog(I)V
 
@@ -389,6 +410,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mIsForeground:Z
 
@@ -397,6 +419,8 @@
 
 .method static synthetic access$2002(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mFirstVisibleItem:I
 
@@ -405,6 +429,7 @@
 
 .method static synthetic access$2100(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->callMatchCriteriaToEditNum()V
 
@@ -413,6 +438,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mFromContextMenu:Z
 
@@ -421,6 +447,8 @@
 
 .method static synthetic access$2300(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->log(Ljava/lang/String;)V
 
@@ -429,6 +457,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -439,6 +468,10 @@
 
 .method static synthetic access$2500(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Ljava/lang/String;Ljava/lang/Integer;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Integer;
+    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->updateAutoRejectNumber(Ljava/lang/String;Ljava/lang/Integer;I)V
 
@@ -447,6 +480,7 @@
 
 .method static synthetic access$2600(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/widget/ListView;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
@@ -455,6 +489,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -465,6 +500,7 @@
 
 .method static synthetic access$2800(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/view/ActionMode;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mActionMode:Landroid/view/ActionMode;
 
@@ -473,6 +509,8 @@
 
 .method static synthetic access$2802(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mActionMode:Landroid/view/ActionMode;
 
@@ -481,6 +519,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -491,6 +530,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -501,6 +541,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mUpdateScreen:Z
 
@@ -509,6 +551,9 @@
 
 .method static synthetic access$3100(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;ILandroid/widget/ListView;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # I
+    .param p2    # Landroid/widget/ListView;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->sendTouchEvent(ILandroid/widget/ListView;)V
 
@@ -517,6 +562,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mEnableCheckedView:Z
 
@@ -525,6 +571,8 @@
 
 .method static synthetic access$3202(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mEnableCheckedView:Z
 
@@ -533,6 +581,7 @@
 
 .method static synthetic access$3300(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -541,6 +590,8 @@
 
 .method static synthetic access$3302(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -549,6 +600,7 @@
 
 .method static synthetic access$3400(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getApplicationContext()Landroid/content/Context;
 
@@ -559,6 +611,7 @@
 
 .method static synthetic access$3500(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -567,6 +620,8 @@
 
 .method static synthetic access$3502(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -575,6 +630,7 @@
 
 .method static synthetic access$3600(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/widget/CheckBox;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectAllCheck:Landroid/widget/CheckBox;
 
@@ -583,6 +639,8 @@
 
 .method static synthetic access$3602(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Landroid/widget/CheckBox;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectAllCheck:Landroid/widget/CheckBox;
 
@@ -591,6 +649,7 @@
 
 .method static synthetic access$3700(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/widget/LinearLayout;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->createLayout:Landroid/widget/LinearLayout;
 
@@ -599,6 +658,7 @@
 
 .method static synthetic access$3800(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getApplicationContext()Landroid/content/Context;
 
@@ -609,6 +669,7 @@
 
 .method static synthetic access$3900(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getApplicationContext()Landroid/content/Context;
 
@@ -619,6 +680,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->hasUnknownItem()Z
 
@@ -629,6 +691,8 @@
 
 .method static synthetic access$4002(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Landroid/view/View;)Landroid/view/View;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectAllLayout:Landroid/view/View;
 
@@ -637,6 +701,7 @@
 
 .method static synthetic access$4100(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getApplicationContext()Landroid/content/Context;
 
@@ -647,6 +712,7 @@
 
 .method static synthetic access$4200(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getApplicationContext()Landroid/content/Context;
 
@@ -657,6 +723,7 @@
 
 .method static synthetic access$4300(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/view/View;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectLayout:Landroid/view/View;
 
@@ -665,6 +732,8 @@
 
 .method static synthetic access$4302(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Landroid/view/View;)Landroid/view/View;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectLayout:Landroid/view/View;
 
@@ -673,6 +742,7 @@
 
 .method static synthetic access$4400(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)I
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mActionModeType:I
 
@@ -681,6 +751,7 @@
 
 .method static synthetic access$4500(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/widget/LinearLayout;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -689,6 +760,7 @@
 
 .method static synthetic access$4600(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mEditModeFromMenu:Z
 
@@ -697,6 +769,8 @@
 
 .method static synthetic access$4602(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mEditModeFromMenu:Z
 
@@ -705,6 +779,7 @@
 
 .method static synthetic access$4700(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mIsSelectAllmode:Z
 
@@ -713,6 +788,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
@@ -721,6 +797,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -889,6 +966,7 @@
 
 .method private deleteAutoRejectNumber(I)V
     .locals 6
+    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mContentURI:Landroid/net/Uri;
 
@@ -949,6 +1027,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
@@ -999,6 +1078,7 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     const v2, 0x7f0a05fa
 
@@ -1202,6 +1282,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "LGTPhotoRingRejectList"
 
@@ -1212,6 +1293,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "LGTPhotoRingRejectList"
 
@@ -1619,6 +1702,8 @@
 
 .method private sendTouchEvent(ILandroid/widget/ListView;)V
     .locals 9
+    .param p1    # I
+    .param p2    # Landroid/widget/ListView;
 
     const/4 v5, 0x0
 
@@ -1724,6 +1809,9 @@
 
 .method private updateAutoRejectNumber(Ljava/lang/String;Ljava/lang/Integer;I)V
     .locals 7
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Integer;
+    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -2140,6 +2228,9 @@
 
 .method public deleteDialog(ZIZ)V
     .locals 8
+    .param p1    # Z
+    .param p2    # I
+    .param p3    # Z
 
     const v7, 0x7f0a02a0
 
@@ -2415,6 +2506,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -2441,6 +2535,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
+    .param p1    # Landroid/content/res/Configuration;
 
     const-string v1, "changed "
 
@@ -2498,6 +2593,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -2555,6 +2651,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 6
+    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2666,6 +2763,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 0
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
@@ -2674,6 +2773,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -2748,6 +2850,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 7
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x1
 
@@ -2888,6 +2992,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 
@@ -3003,6 +3108,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 7
+    .param p1    # Landroid/view/Menu;
 
     const v6, 0x7f0a0281
 
@@ -3307,6 +3413,7 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -3333,6 +3440,7 @@
 
 .method public setActionMode(I)V
     .locals 3
+    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3380,6 +3488,7 @@
 
 .method public softkeyLeftRun(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -3444,6 +3553,7 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;->mHandler:Landroid/os/Handler;
 

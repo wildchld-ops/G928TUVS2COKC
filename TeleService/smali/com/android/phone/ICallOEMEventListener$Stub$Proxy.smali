@@ -24,6 +24,7 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
+    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,6 +45,7 @@
 
 .method public onCallLogCreated(J)V
     .locals 5
+    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -95,6 +97,8 @@
 
 .method public onDisconnect(Lcom/kt/ollehcall/phoneinterface/KtCall;Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Lcom/kt/ollehcall/phoneinterface/KtCall;
+    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -186,6 +190,7 @@
 
 .method public onIncoming(Lcom/kt/ollehcall/phoneinterface/KtCall;)V
     .locals 5
+    .param p1    # Lcom/kt/ollehcall/phoneinterface/KtCall;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -256,6 +261,7 @@
 
 .method public onMuteStatusChanged(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -314,6 +320,7 @@
 
 .method public onPhoneStateChanged(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -365,6 +372,8 @@
 
 .method public onPostDialCharacter(IC)V
     .locals 5
+    .param p1    # I
+    .param p2    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -467,6 +476,7 @@
 
 .method public onShowMeContentsReceived(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -537,6 +547,7 @@
 
 .method public onSpeakerStatusChanged(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -595,6 +606,7 @@
 
 .method public onSuppServiceFailed(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -646,6 +658,8 @@
 
 .method public onSuppServiceNotification(II)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -699,6 +713,7 @@
 
 .method public onVTResult(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -750,6 +765,7 @@
 
 .method public onVTSwitchRequest(Lcom/kt/ollehcall/phoneinterface/KtCall;)V
     .locals 5
+    .param p1    # Lcom/kt/ollehcall/phoneinterface/KtCall;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -820,6 +836,8 @@
 
 .method public onViewCoverStatusChanged(II)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

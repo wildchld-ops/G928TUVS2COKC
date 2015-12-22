@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CellBroadcastSms;Lcom/android/phone/CellBroadcastSms$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/CellBroadcastSms;
+    .param p2    # Lcom/android/phone/CellBroadcastSms$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CellBroadcastSms$MyHandler;-><init>(Lcom/android/phone/CellBroadcastSms;)V
 
@@ -41,6 +43,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x1
 

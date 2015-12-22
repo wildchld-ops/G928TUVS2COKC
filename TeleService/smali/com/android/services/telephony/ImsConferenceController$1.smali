@@ -33,6 +33,7 @@
 # virtual methods
 .method public onDestroyed(Landroid/telecom/Conference;)V
     .locals 4
+    .param p1    # Landroid/telecom/Conference;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->VERBOSE:Z
 

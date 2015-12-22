@@ -27,6 +27,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/internal/telephony/Phone;)V
     .locals 2
+    .param p1    # Lcom/android/phone/PhoneGlobals;
+    .param p2    # Lcom/android/internal/telephony/Phone;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -104,6 +106,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->log(Ljava/lang/String;)V
 
@@ -112,6 +116,9 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->log(Ljava/lang/String;Z)V
 
@@ -255,6 +262,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -265,6 +273,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -275,6 +285,7 @@
 
 .method private onDisconnect(Landroid/os/AsyncResult;)V
     .locals 2
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v0, 0x0
 
@@ -300,6 +311,7 @@
 
 .method private onPhoneStateChanged(Landroid/os/AsyncResult;)V
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0}, Lcom/android/phone/operator/jpn/dcm/JpnCallNotifier;->getFgPhone()Lcom/android/internal/telephony/Phone;
 
@@ -350,6 +362,8 @@
 
 .method private onRingbackTone(Landroid/os/AsyncResult;Z)V
     .locals 7
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -483,6 +497,11 @@
 
 .method private playMediaTone(Landroid/content/Context;ILandroid/media/MediaPlayer$OnCompletionListener;ILandroid/media/MediaPlayer$OnErrorListener;)Landroid/media/MediaPlayer;
     .locals 9
+    .param p1    # Landroid/content/Context;
+    .param p2    # I
+    .param p3    # Landroid/media/MediaPlayer$OnCompletionListener;
+    .param p4    # I
+    .param p5    # Landroid/media/MediaPlayer$OnErrorListener;
 
     new-instance v0, Landroid/media/MediaPlayer;
 
@@ -879,6 +898,8 @@
 
 .method private startPlayJPNRingBackTone(Landroid/content/Context;I)V
     .locals 6
+    .param p1    # Landroid/content/Context;
+    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -974,6 +995,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     const/4 v2, 0x4
 

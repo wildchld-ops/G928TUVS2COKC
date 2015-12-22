@@ -1,0 +1,46 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: 8uw/9CFka1h6iXgVjjaM86vI1zs=
+
+Name: res/layout/app_details.xml
+SHA1-Digest: 50fIjI68KDV2WB9k2PfTd8/evLs=
+
+Name: res/layout/label.xml
+SHA1-Digest: Gyv6ERbLngLIDisaF4gu8Izs/ok=
+
+Name: res/layout/install_confirm.xml
+SHA1-Digest: Sn7iX9r3RfvJJPsH1O933GtYKlw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: MSr8ABa3Y2qIXPInT2hDM3xdcr4=
+
+Name: res/drawable/ic_result_status.xml
+SHA1-Digest: HXf7kBAVJBqo1Jhst7qIvNC5PLU=
+
+Name: res/layout/uninstall_confirm.xml
+SHA1-Digest: 0WA+3kxn5qiN63eVi2BYx35jN5g=
+
+Name: res/layout/op_progress.xml
+SHA1-Digest: 3RBFTMKUR0aP+C7rGfbm5C2z1Ow=
+
+Name: res/drawable-xxxhdpi-v4/ic_fail.qmg
+SHA1-Digest: /Nyk4wDWhsEcBfyF+khBvzJh5NY=
+
+Name: res/layout/install_start.xml
+SHA1-Digest: Ug9WvAW+6tzZHjg1V2WPG4PX4L4=
+
+Name: resources.arsc
+SHA1-Digest: iFJdScUEag8RPyTAdMn5VM7wrds=
+
+Name: classes.dex
+SHA1-Digest: pvzrDwWt6bhkdcqToLUZHIgjKfM=
+
+Name: res/drawable-xxxhdpi-v4/ic_success.qmg
+SHA1-Digest: 8xmgdLAxQbxyicBh+bcRQCs2Uk4=
+
+Name: res/layout/uninstall_progress.xml
+SHA1-Digest: rCtVLWc8+bCCFGewyh+kA61wXqM=
+
+Name: res/layout/permissions_list.xml
+SHA1-Digest: uPriHnSfujeDRJL9cgudQ6Sd3K0=
+

@@ -5153,8 +5153,6 @@
 
     invoke-virtual/range {v34 .. v35}, Landroid/preference/Preference;->setEnabled(Z)V
 
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/DeviceInfoSettings;->showKnoxVersion()V
-
     :goto_1
     const-string v34, "firmware_version"
 

@@ -49,6 +49,7 @@
 # virtual methods
 .method public onSSInfo(I)V
     .locals 3
+    .param p1    # I
 
     const-string v0, "SSInfoManager"
 
@@ -89,6 +90,7 @@
 
 .method public setSSInfoService(Lcom/android/phone/SSInfoService;)V
     .locals 2
+    .param p1    # Lcom/android/phone/SSInfoService;
 
     iput-object p1, p0, Lcom/android/services/utils/SSInfoManager;->mSSInfoService:Lcom/android/phone/SSInfoService;
 

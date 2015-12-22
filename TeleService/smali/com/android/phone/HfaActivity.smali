@@ -38,6 +38,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/HfaActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaActivity;
 
     invoke-direct {p0}, Lcom/android/phone/HfaActivity;->onHfaSuccess()V
 
@@ -46,6 +47,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/HfaActivity;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaActivity;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/HfaActivity;->onHfaError(Ljava/lang/String;)V
 
@@ -54,6 +57,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/HfaActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaActivity;
 
     invoke-direct {p0}, Lcom/android/phone/HfaActivity;->onUserSkip()V
 
@@ -62,6 +66,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/HfaActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaActivity;
 
     invoke-direct {p0}, Lcom/android/phone/HfaActivity;->startProvisioning()V
 
@@ -130,6 +135,7 @@
 
 .method private onHfaError(Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
@@ -206,6 +212,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

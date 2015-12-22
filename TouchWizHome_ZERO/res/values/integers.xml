@@ -70,10 +70,10 @@
     <integer name="page_source_category">-1</integer>
     <integer name="page_source_container_filter">0</integer>
     <integer name="page_source_type">1</integer>
-    <integer name="topfive_cellCountX">5</integer>
+    <integer name="topfive_cellCountX">6</integer>
     <integer name="topfive_cellCountY">1</integer>
     <integer name="touchconf_dnd_pointer_prediction_interval">16</integer>
-    <integer name="touchconf_longpress_timeout">500</integer>
+    <integer name="touchconf_longpress_timeout">200</integer>
     <integer name="touchconf_pan_gesture_predict_amount">20</integer>
     <integer name="touchconf_pan_gesture_predict_mode">1</integer>
     <integer name="touchconf_pan_gesture_smooth_mode">1</integer>

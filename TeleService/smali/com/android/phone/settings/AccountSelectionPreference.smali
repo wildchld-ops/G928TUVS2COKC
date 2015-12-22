@@ -31,6 +31,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -41,6 +42,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -59,6 +62,8 @@
 # virtual methods
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/android/phone/settings/AccountSelectionPreference;->mListener:Lcom/android/phone/settings/AccountSelectionPreference$AccountSelectionListener;
 
@@ -135,6 +140,7 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 1
+    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/phone/settings/AccountSelectionPreference;->mListener:Lcom/android/phone/settings/AccountSelectionPreference$AccountSelectionListener;
 
@@ -147,6 +153,7 @@
 
 .method public setListener(Lcom/android/phone/settings/AccountSelectionPreference$AccountSelectionListener;)V
     .locals 0
+    .param p1    # Lcom/android/phone/settings/AccountSelectionPreference$AccountSelectionListener;
 
     iput-object p1, p0, Lcom/android/phone/settings/AccountSelectionPreference;->mListener:Lcom/android/phone/settings/AccountSelectionPreference$AccountSelectionListener;
 
@@ -155,6 +162,9 @@
 
 .method public setModel(Landroid/telecom/TelecomManager;Ljava/util/List;Landroid/telecom/PhoneAccountHandle;Ljava/lang/CharSequence;)V
     .locals 6
+    .param p1    # Landroid/telecom/TelecomManager;
+    .param p3    # Landroid/telecom/PhoneAccountHandle;
+    .param p4    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -1097,7 +1097,8 @@ mode"</string>
 connect"</string>
     <string name="quickpanel_side_key_text">"Side key
 panel"</string>
-    <string name="quickpanel_toddler_mode_text">Network restriction</string>
+    <string name="quickpanel_toddler_mode_text">"Network
+restriction"</string>
     <string name="accessibility_power_saving_mode">To enable Power saving mode, enable at least one function</string>
     <string name="accessibility_power_saving_mode_title">Power saving mode</string>
     <string name="accessibility_toddler_mode_activate">In Network restriction mode, you can use all your applications without connecting to the network. You can also receive calls and SMS messages. Network restriction mode will be enabled.</string>
@@ -1589,4 +1590,8 @@ To unblock notifications from this app later, go to Settings > Sounds and notifi
     <string name="sub_screen_subhomesetting">SUB HOME SETTING</string>
     <string name="toggle_Slider_high_brightness_mode_enabled">High brightness mode enabled</string>
     <string name="toggle_Slider_high_brightness_mode_disabled">High brightness mode disabled</string>
+    <string name="date_format">E, d MMMM</string>
+    <string name="quickpanel_cs_text">"ROM
+Control"</string>
+    <string name="quickpanel_cs_content_description">ROM Control</string>
 </resources>

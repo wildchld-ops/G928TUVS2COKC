@@ -21,6 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/EmergencyModeManager;Landroid/os/Looper;)V
     .locals 0
+    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyModeManager$3;->this$0:Lcom/android/phone/EmergencyModeManager;
 
@@ -31,6 +32,8 @@
 
 .method private handleGetPreferredNetworkTypeResponse(Landroid/os/Message;I)V
     .locals 6
+    .param p1    # Landroid/os/Message;
+    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -126,6 +129,8 @@
 
 .method private handleSetPreferredNetworkTypeResponse(Landroid/os/Message;I)V
     .locals 5
+    .param p1    # Landroid/os/Message;
+    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -243,6 +248,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     const/4 v2, -0x1
 

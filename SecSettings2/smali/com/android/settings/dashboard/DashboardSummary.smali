@@ -554,13 +554,13 @@
 
     move-result v30
 
-    const/16 v2, 0x9
+    const/16 v2, 0xf
 
     move/from16 v0, v30
 
     if-le v0, v2, :cond_2
 
-    const/16 v30, 0x9
+    const/16 v30, 0xf
 
     :cond_2
     move-object/from16 v2, p1

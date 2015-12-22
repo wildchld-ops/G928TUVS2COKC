@@ -4093,7 +4093,61 @@
 .end method
 
 .method private getUpdateDataNetType()V
-    .locals 3
+    .locals 7
+
+    iget-object v4, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v5, "data_icon_type"
+
+    const v6, 0x0
+
+    invoke-static {v4, v5, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v4
+
+    const v5, 0x1
+
+    if-eq v5, v4, :cond_12
+
+    const v5, 0x2
+
+    if-eq v5, v4, :cond_13
+
+    const v5, 0x3
+
+    if-eq v5, v4, :cond_14
+
+    const v5, 0x4
+
+    if-eq v5, v4, :cond_15
+
+    const v5, 0x5
+
+    if-eq v5, v4, :cond_16
+
+    const v5, 0x6
+
+    if-eq v5, v4, :cond_17
+
+    const v5, 0x7
+
+    if-eq v5, v4, :cond_18
+
+    const v5, -0x1
+
+    if-eq v5, v4, :cond_19
+
+    const v5, -0x2
+
+    if-eq v5, v4, :cond_1a
+
+    const v5, -0x3
+
+    if-eq v5, v4, :cond_1b
 
     const-string v0, "StatusBar.NetworkController"
 
@@ -4121,7 +4175,7 @@
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mDataTypeBrand:Ljava/lang/String;
 
-    if-eqz v0, :cond_12
+    if-eqz v0, :cond_11
 
     const-string v0, ""
 
@@ -4131,7 +4185,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_12
+    if-nez v0, :cond_11
 
     const-string v0, "StatusBar.NetworkController"
 
@@ -4451,7 +4505,7 @@
     goto/16 :goto_0
 
     :cond_10
-    const-string v0, "IUS"
+    const-string v0, "LTE"
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mDataTypeBrand:Ljava/lang/String;
 
@@ -4461,26 +4515,11 @@
 
     if-eqz v0, :cond_11
 
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateIUSDataNetType()V
-
-    goto/16 :goto_0
-
-    :cond_11
-    const-string v0, "LTE"
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mDataTypeBrand:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_12
-
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateLTEICONDataNetType()V
 
     goto/16 :goto_0
 
-    :cond_12
+    :cond_11
     sget-object v0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$6;->$SwitchMap$com$android$systemui$statusbar$policy$NetworkControllerImpl$Operator:[I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mOperator:Ljava/lang/String;
@@ -4502,80 +4541,85 @@
 
     goto/16 :goto_0
 
+    :cond_12
     :pswitch_1
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateDataNetType()V
 
     goto/16 :goto_0
 
+    :cond_13
     :pswitch_2
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateATTDataNetType()V
 
     goto/16 :goto_0
 
+    :cond_14
     :pswitch_3
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateAIODataNetType()V
-
-    goto/16 :goto_0
-
-    :pswitch_4
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateTMODataNetType()V
 
     goto/16 :goto_0
 
-    :pswitch_5
+    :cond_15
+    :pswitch_4
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateVZWDataNetType()V
 
     goto/16 :goto_0
 
-    :pswitch_6
+    :cond_16
+    :pswitch_5
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateSPRDataNetType()V
 
     goto/16 :goto_0
 
-    :pswitch_7
+    :cond_17
+    :pswitch_6
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateCMCCDataNetType()V
 
     goto/16 :goto_0
 
-    :pswitch_8
+    :cond_18
+    :pswitch_7
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateCUDataNetType()V
 
     goto/16 :goto_0
 
-    :pswitch_9
+    :cond_19
+    :pswitch_8
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateZVVDataNetType()V
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateZVVLACInfo()V
 
     goto/16 :goto_0
 
-    :pswitch_a
+    :cond_1a
+    :pswitch_9
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateZTMDataNetType()V
 
     goto/16 :goto_0
 
-    :pswitch_b
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateUSCCDataNetType()V
+    :cond_1b
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateNEWDataNetType()V
 
     goto/16 :goto_0
 
     nop
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_5
+        :pswitch_4
         :pswitch_0
         :pswitch_1
         :pswitch_2
+        :pswitch_2
         :pswitch_3
-        :pswitch_4
+        :pswitch_5
         :pswitch_6
-        :pswitch_7
+        :pswitch_6
         :pswitch_7
         :pswitch_8
         :pswitch_9
-        :pswitch_a
-        :pswitch_b
     .end packed-switch
 .end method
 
@@ -14142,12 +14186,52 @@
 .end method
 
 .method private updateStatusBarNetworkSettings()V
-    .locals 2
+    .locals 7
 
-    invoke-static {}, Lcom/android/systemui/statusbar/Feature;->getMaxLevelOfSignalStrengthIndicator()I
+    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mContext:Landroid/content/Context;
 
-    move-result v0
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
+    move-result-object v1
+
+    const-string v2, "signal_bars"
+
+    const v3, 0x5
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v5
+
+    const v1, 0x4
+
+    if-eq v5, v1, :cond_0
+
+    const v1, 0x5
+
+    if-eq v5, v1, :cond_1
+
+    const v1, 0x6
+
+    if-eq v5, v1, :cond_2
+
+    const v0, 0x5
+
+    goto :goto_0
+
+    :cond_0
+    const v0, 0x4
+
+    goto :goto_0
+
+    :cond_1
+    const v0, 0x5
+
+    goto :goto_0
+
+    :cond_2
+    const v0, 0x6
+
+    :goto_0
     iput v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mMaxLevelOfSignalStrengthIndicator:I
 
     invoke-static {}, Lcom/android/systemui/statusbar/Feature;->getOperator()Ljava/lang/String;

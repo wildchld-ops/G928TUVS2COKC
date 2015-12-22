@@ -48,6 +48,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/VisualCallSettingActivity;)Landroid/widget/Switch;
     .locals 1
+    .param p0    # Lcom/android/phone/VisualCallSettingActivity;
 
     iget-object v0, p0, Lcom/android/phone/VisualCallSettingActivity;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -56,6 +57,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/VisualCallSettingActivity;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/VisualCallSettingActivity;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/VisualCallSettingActivity;->saveAgreementFlag(I)V
 
@@ -64,6 +67,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/VisualCallSettingActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/VisualCallSettingActivity;
 
     invoke-direct {p0}, Lcom/android/phone/VisualCallSettingActivity;->updateAutoUpdate()V
 
@@ -163,6 +167,7 @@
 
 .method private saveAgreementFlag(I)V
     .locals 6
+    .param p1    # I
 
     :try_start_0
     const-string v4, "com.android.incallui"
@@ -445,6 +450,7 @@
 
 .method private updateLayout(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/VisualCallSettingActivity;->mMaterialAutoUpdate:Landroid/preference/SwitchPreference;
 
@@ -462,6 +468,8 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
+    .param p1    # Landroid/widget/CompoundButton;
+    .param p2    # Z
 
     const-string v0, "VisualCallSettingActivity"
 
@@ -494,6 +502,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -696,6 +705,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -735,6 +745,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -889,6 +901,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     iget-object v1, p0, Lcom/android/phone/VisualCallSettingActivity;->mTurnOnPreference:Landroid/preference/SwitchPreferenceScreen;
 
@@ -1100,6 +1114,7 @@
 
 .method public updateTurnOnStatus(Z)V
     .locals 3
+    .param p1    # Z
 
     if-eqz p1, :cond_0
 

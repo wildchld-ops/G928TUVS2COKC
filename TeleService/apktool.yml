@@ -102,7 +102,6 @@ doNotCompress:
 - res/drawable-xxxhdpi-v4/call_reject_arrow_04.qmg
 - res/drawable-xxxhdpi-v4/call_settings_default_image.qmg
 - res/drawable-xxxhdpi-v4/contacts_default_caller_id_list.qmg
-- res/drawable-xxxhdpi-v4/edge_img_glance_1.qmg
 - res/drawable-xxxhdpi-v4/emergency_add_contacts.qmg
 - res/drawable-xxxhdpi-v4/emergency_add_contacts_press.qmg
 - res/drawable-xxxhdpi-v4/emergency_callback_icon.qmg
@@ -237,7 +236,6 @@ doNotCompress:
 - res/drawable/tw_action_bar_icon_help_holo_dark.qmg
 - res/drawable/tw_action_bar_icon_resettodefault_holo_dark.qmg
 - res/drawable/tw_background_holo_light.qmg
-- res/drawable/tw_btn_check_off_holo_dark.qmg
 - res/drawable/tw_btn_check_on_holo_dark.qmg
 - res/drawable/tw_btn_icon_next_mtrl.qmg
 - res/drawable/tw_btn_icon_previous_mtrl.qmg

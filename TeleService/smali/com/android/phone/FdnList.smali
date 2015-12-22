@@ -136,6 +136,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/FdnList;)Ljava/util/HashMap;
     .locals 1
+    .param p0    # Lcom/android/phone/FdnList;
 
     iget-object v0, p0, Lcom/android/phone/FdnList;->fdnNumber:Ljava/util/HashMap;
 
@@ -282,6 +283,7 @@
 
 .method private editSelected(I)V
     .locals 11
+    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -389,6 +391,7 @@
 # virtual methods
 .method public fdnCall(I)V
     .locals 6
+    .param p1    # I
 
     iget-object v3, p0, Lcom/android/phone/FdnList;->fdnNumber:Ljava/util/HashMap;
 
@@ -475,6 +478,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onCreate(Landroid/os/Bundle;)V
 
@@ -494,6 +498,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x1
 
@@ -560,6 +566,10 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 0
+    .param p1    # Landroid/widget/ListView;
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
 
     invoke-direct {p0, p3}, Lcom/android/phone/FdnList;->editSelected(I)V
 
@@ -568,6 +578,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -652,6 +663,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 6
+    .param p1    # Landroid/view/Menu;
 
     const/4 v5, 0x3
 

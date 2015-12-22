@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CdmaSubscriptionListPreference;Lcom/android/phone/CdmaSubscriptionListPreference$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/CdmaSubscriptionListPreference;
+    .param p2    # Lcom/android/phone/CdmaSubscriptionListPreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaSubscriptionListPreference$CdmaSubscriptionButtonHandler;-><init>(Lcom/android/phone/CdmaSubscriptionListPreference;)V
 
@@ -39,6 +41,7 @@
 
 .method private handleSetCdmaSubscriptionMode(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     iget-object v2, p0, Lcom/android/phone/CdmaSubscriptionListPreference$CdmaSubscriptionButtonHandler;->this$0:Lcom/android/phone/CdmaSubscriptionListPreference;
 
@@ -101,6 +104,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

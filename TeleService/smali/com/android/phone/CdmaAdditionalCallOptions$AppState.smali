@@ -119,6 +119,7 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
 

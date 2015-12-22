@@ -14,6 +14,9 @@
 # direct methods
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/phone/utils/AppLogging;->mContext:Landroid/content/Context;
 
@@ -24,6 +27,10 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/phone/utils/AppLogging;->mContext:Landroid/content/Context;
 
@@ -36,6 +43,11 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/phone/utils/AppLogging;->mContext:Landroid/content/Context;
 
@@ -50,6 +62,8 @@
 
 .method static insertLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/samsung/android/feature/FloatingFeature;->getInstance()Lcom/samsung/android/feature/FloatingFeature;
 

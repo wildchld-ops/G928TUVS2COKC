@@ -48,6 +48,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -128,6 +129,7 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
+    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -171,6 +173,10 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 2
+    .param p1    # Landroid/widget/ListView;
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
 
     invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialSettings;->getContentResolver()Landroid/content/ContentResolver;
 

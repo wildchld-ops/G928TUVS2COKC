@@ -227,6 +227,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyDialer;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-boolean v0, p0, Lcom/android/phone/EmergencyDialer;->isLostPhoneLock:Z
 
@@ -235,6 +236,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/EmergencyDialer;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EmergencyDialer;->isLostPhoneLock:Z
 
@@ -243,6 +246,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/EmergencyDialer;)Landroid/app/StatusBarManager;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mStatusBarManager:Landroid/app/StatusBarManager;
 
@@ -251,6 +255,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/EmergencyDialer;)Landroid/view/ActionMode;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mActionMode:Landroid/view/ActionMode;
 
@@ -259,6 +264,8 @@
 
 .method static synthetic access$1002(Lcom/android/phone/EmergencyDialer;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
+    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyDialer;->mActionMode:Landroid/view/ActionMode;
 
@@ -267,6 +274,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/EmergencyDialer;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-boolean v0, p0, Lcom/android/phone/EmergencyDialer;->mClearedByCode:Z
 
@@ -275,6 +283,8 @@
 
 .method static synthetic access$1102(Lcom/android/phone/EmergencyDialer;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EmergencyDialer;->mClearedByCode:Z
 
@@ -283,6 +293,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/EmergencyDialer;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-boolean v0, p0, Lcom/android/phone/EmergencyDialer;->mDeleteModeFromMenu:Z
 
@@ -291,6 +302,8 @@
 
 .method static synthetic access$1202(Lcom/android/phone/EmergencyDialer;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EmergencyDialer;->mDeleteModeFromMenu:Z
 
@@ -299,6 +312,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/EmergencyDialer;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyDialer;->placeCall()V
 
@@ -307,6 +321,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/EmergencyDialer;)Landroid/widget/ListView;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDummyList:Landroid/widget/ListView;
 
@@ -315,6 +330,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/EmergencyDialer;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
@@ -323,6 +339,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/EmergencyDialer;)Lcom/android/phone/EmergencyContactItemContainer;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mEmergencyItemContainer:Lcom/android/phone/EmergencyContactItemContainer;
 
@@ -331,6 +348,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/EmergencyDialer;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyDialer;->updateDigitsLayoutParams()V
 
@@ -339,6 +357,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/EmergencyDialer;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyDialer;->recreateEmergencyDialer()V
 
@@ -347,6 +366,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/EmergencyDialer;)I
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyDialer;->getCheckedCount()I
 
@@ -357,6 +377,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/EmergencyDialer;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -365,6 +386,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/EmergencyDialer;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
+    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyDialer;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -373,6 +396,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/EmergencyDialer;)Landroid/widget/CheckBox;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyDialer;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mSelectAllCheck:Landroid/widget/CheckBox;
 
@@ -381,6 +405,8 @@
 
 .method static synthetic access$902(Lcom/android/phone/EmergencyDialer;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyDialer;
+    .param p1    # Landroid/widget/CheckBox;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyDialer;->mSelectAllCheck:Landroid/widget/CheckBox;
 
@@ -389,6 +415,7 @@
 
 .method private convertToView(I)Landroid/view/View;
     .locals 3
+    .param p1    # I
 
     const-string v0, "EmergencyDialer"
 
@@ -642,6 +669,7 @@
 
 .method private createErrorMessage(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -684,6 +712,7 @@
 
 .method private disableHovering(Landroid/view/View;)V
     .locals 1
+    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -694,6 +723,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mToast:Landroid/widget/Toast;
 
@@ -1272,6 +1302,7 @@
 
 .method private keyPressed(I)V
     .locals 2
+    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mHaptic:Lcom/android/phone/common/HapticFeedback;
 
@@ -1740,6 +1771,7 @@
 
 .method private placeCall(I)V
     .locals 13
+    .param p1    # I
 
     const/4 v12, 0x1
 
@@ -2357,6 +2389,8 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mWindowManager:Landroid/view/IWindowManager;
@@ -2719,6 +2753,7 @@
 
 .method private updateAdditionalButtons(Z)V
     .locals 11
+    .param p1    # Z
 
     const v10, 0x7f0f000a
 
@@ -3632,6 +3667,7 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
+    .param p1    # Landroid/text/Editable;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -3663,6 +3699,10 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
+    .param p1    # Ljava/lang/CharSequence;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     return-void
 .end method
@@ -3749,6 +3789,8 @@
 
 .method isSwcEmergencyNumber(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3928,6 +3970,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
+    .param p1    # Landroid/view/View;
 
     const/16 v5, 0x9
 
@@ -4187,6 +4230,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -4614,6 +4658,7 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4667,6 +4712,7 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
+    .param p1    # Landroid/view/Menu;
 
     const-string v0, "emergency_contacts_item"
 
@@ -4773,6 +4819,8 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -4781,6 +4829,9 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 5
+    .param p1    # Landroid/view/View;
+    .param p2    # I
+    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -4940,6 +4991,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -5028,6 +5081,8 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -5069,6 +5124,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->isCanceled()Z
 
@@ -5145,6 +5202,7 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
+    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -5196,6 +5254,8 @@
 
 .method public onMultiWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 3
+    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
+    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onMultiWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
 
@@ -5223,6 +5283,7 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
+    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Lcom/android/phone/EmergencyDialer;->setIntent(Landroid/content/Intent;)V
 
@@ -5231,6 +5292,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -5517,6 +5579,7 @@
 
 .method protected onPostCreate(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
 
@@ -5529,6 +5592,8 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/app/Dialog;
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onPrepareDialog(ILandroid/app/Dialog;)V
 
@@ -5552,6 +5617,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 6
+    .param p1    # Landroid/view/Menu;
 
     const v5, 0x7f10016d
 
@@ -5730,6 +5796,7 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "lastNumber"
 
@@ -6047,6 +6114,7 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -6129,12 +6197,18 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
+    .param p1    # Ljava/lang/CharSequence;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     return-void
 .end method
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6173,6 +6247,7 @@
 
 .method playTone(I)V
     .locals 6
+    .param p1    # I
 
     const-string v2, "emergency_dialer_sound_pool_tones_haptic"
 
@@ -6270,6 +6345,7 @@
 
 .method playToneByKey(I)V
     .locals 1
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -6379,12 +6455,14 @@
 
 .method removeLockScreenAnimationEffects(Z)V
     .locals 0
+    .param p1    # Z
 
     return-void
 .end method
 
 .method public setDeleteModeFromMenu(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EmergencyDialer;->mDeleteModeFromMenu:Z
 
@@ -6393,6 +6471,7 @@
 
 .method public setMultimode(Z)V
     .locals 2
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mEmergencyItemContainer:Lcom/android/phone/EmergencyContactItemContainer;
 

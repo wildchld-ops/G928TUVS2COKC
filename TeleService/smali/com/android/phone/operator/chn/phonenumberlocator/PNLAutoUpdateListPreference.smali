@@ -18,6 +18,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -28,6 +29,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -42,6 +45,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->readChargesNotificationPrefrence()Z
 
@@ -52,6 +56,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;)Landroid/content/DialogInterface;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->mDialog:Landroid/content/DialogInterface;
 
@@ -60,6 +65,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;Landroid/content/DialogInterface;)Landroid/content/DialogInterface;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
+    .param p1    # Landroid/content/DialogInterface;
 
     iput-object p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->mDialog:Landroid/content/DialogInterface;
 
@@ -68,6 +75,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;)I
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
     iget v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->mTempDialogEntryIndex:I
 
@@ -76,6 +84,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->mTempDialogEntryIndex:I
 
@@ -84,6 +94,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->showChargesNotificationDialog()V
 
@@ -92,6 +103,8 @@
 
 .method static synthetic access$402(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->mSuperClickedDialogEntryIndex:I
 
@@ -100,6 +113,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->writeFlag:Z
 
@@ -108,6 +123,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLAutoUpdateListPreference;->writeChargesNotificationPrefrence()V
 
@@ -116,6 +132,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PNLAutoUpdateListPreference"
 
@@ -329,6 +346,7 @@
 # virtual methods
 .method protected onDialogClosed(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
@@ -366,6 +384,7 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 4
+    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const/4 v3, 0x0
 

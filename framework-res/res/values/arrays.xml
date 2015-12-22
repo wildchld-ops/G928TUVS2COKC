@@ -551,12 +551,12 @@
         <item>wlan0</item>
     </string-array>
     <array name="config_tether_wimax_regexs" />
-    <array name="config_tether_bluetooth_regexs" />
-    <array name="config_tether_dhcp_range" />
-    <string-array name="config_mobile_hotspot_provision_app">
-        <item>com.sec.tetheringprovision</item>
-        <item>com.sec.tetheringprovision.TetheringProvisionActivity</item>
+    <string-array name="config_tether_bluetooth_regexs">
+        <item>bnep\\d</item>
+        <item>bt-pan</item>
     </string-array>
+    <array name="config_tether_dhcp_range" />
+    <array name="config_mobile_hotspot_provision_app" />
     <integer-array name="config_tether_upstream_types">
         <item>0</item>
         <item>1</item>
@@ -687,6 +687,10 @@
         <item>bugreport</item>
         <item>users</item>
         <item>emergencymode</item>
+        <item>screenshot</item>
+        <item>screenrec</item>
+        <item>settings</item>
+        <item>silent</item>
     </string-array>
     <string-array name="config_telephonyHardware">
         <item>0,modem,0,0,0,1,1,1</item>

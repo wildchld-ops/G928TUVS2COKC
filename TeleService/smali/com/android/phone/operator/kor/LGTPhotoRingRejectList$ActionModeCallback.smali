@@ -36,6 +36,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;Lcom/android/phone/operator/kor/LGTPhotoRingRejectList$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
+    .param p2    # Lcom/android/phone/operator/kor/LGTPhotoRingRejectList$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList$ActionModeCallback;-><init>(Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;)V
 
@@ -46,6 +48,8 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTPhotoRingRejectList$ActionModeCallback;->this$0:Lcom/android/phone/operator/kor/LGTPhotoRingRejectList;
 
@@ -104,6 +108,8 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -328,6 +334,7 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 3
+    .param p1    # Landroid/view/ActionMode;
 
     const/4 v1, 0x0
 
@@ -461,6 +468,10 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 2
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # I
+    .param p3    # J
+    .param p5    # Z
 
     if-eqz p5, :cond_1
 
@@ -526,6 +537,8 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/Menu;
 
     const v5, 0x7f100203
 

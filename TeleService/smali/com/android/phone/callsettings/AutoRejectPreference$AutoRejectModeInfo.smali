@@ -33,6 +33,7 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/callsettings/AutoRejectPreference$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/callsettings/AutoRejectPreference$1;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;-><init>()V
 

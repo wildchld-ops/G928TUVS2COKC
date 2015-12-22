@@ -74,6 +74,7 @@
 
 .method static synthetic access$000(Lcom/lgu/ims/pal/isim/IsimService;)Lcom/lgu/ims/pal/isim/IIsimServiceListener;
     .locals 1
+    .param p0    # Lcom/lgu/ims/pal/isim/IsimService;
 
     iget-object v0, p0, Lcom/lgu/ims/pal/isim/IsimService;->mIsimServiceListener:Lcom/lgu/ims/pal/isim/IIsimServiceListener;
 
@@ -82,6 +83,8 @@
 
 .method static synthetic access$002(Lcom/lgu/ims/pal/isim/IsimService;Lcom/lgu/ims/pal/isim/IIsimServiceListener;)Lcom/lgu/ims/pal/isim/IIsimServiceListener;
     .locals 0
+    .param p0    # Lcom/lgu/ims/pal/isim/IsimService;
+    .param p1    # Lcom/lgu/ims/pal/isim/IIsimServiceListener;
 
     iput-object p1, p0, Lcom/lgu/ims/pal/isim/IsimService;->mIsimServiceListener:Lcom/lgu/ims/pal/isim/IIsimServiceListener;
 
@@ -92,6 +95,7 @@
 # virtual methods
 .method handleIsimResponse([B)V
     .locals 17
+    .param p1    # [B
 
     const/4 v7, 0x0
 
@@ -488,6 +492,7 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
+    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/lgu/ims/pal/isim/IsimService;->LOG_TAG:Ljava/lang/String;
 
@@ -534,6 +539,8 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 2
+    .param p1    # Landroid/content/Intent;
+    .param p2    # I
 
     iget-object v0, p0, Lcom/lgu/ims/pal/isim/IsimService;->LOG_TAG:Ljava/lang/String;
 

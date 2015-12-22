@@ -6,6 +6,7 @@
 # direct methods
 .method public static getDisconnectCause(I)Ljava/lang/String;
     .locals 4
+    .param p0    # I
 
     const v3, 0x7f0a01fa
 
@@ -259,6 +260,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "[carrier-phone] CarrierUtils"
 
@@ -273,6 +275,7 @@
 
 .method public static setDefaultCaller(I)V
     .locals 9
+    .param p0    # I
 
     const/4 v8, 0x1
 
@@ -400,6 +403,7 @@
 
 .method public static setDefaultDialer(I)V
     .locals 13
+    .param p0    # I
 
     const/high16 v12, 0x200000
 

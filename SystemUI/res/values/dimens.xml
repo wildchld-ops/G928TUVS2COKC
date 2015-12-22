@@ -852,7 +852,7 @@
     <dimen name="recents_task_view_app_button_marginEnd">48.0dip</dimen>
     <dimen name="recents_task_view_app_button_padding">12.0dip</dimen>
     <dimen name="recents_task_view_dismiss_task_marginEnd">0.0dip</dimen>
-    <dimen name="recents_task_view_rounded_corners_radius">2.0dip</dimen>
+    <dimen name="recents_task_view_rounded_corners_radius">15.0dip</dimen>
     <dimen name="recents_task_view_z_min">20.0dip</dimen>
     <dimen name="recents_task_view_z_max">80.0dip</dimen>
     <dimen name="recents_task_view_remove_anim_translation_x">100.0dip</dimen>
@@ -1311,4 +1311,5 @@
     <dimen name="player_z">18.0dip</dimen>
     <dimen name="player_z_boost">20.0dip</dimen>
     <dimen name="hud_z">35.0dip</dimen>
+    <dimen name="network_stats_text_size">8.0dip</dimen>
 </resources>

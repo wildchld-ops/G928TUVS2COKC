@@ -36,6 +36,8 @@
 # virtual methods
 .method public onReceive(Lcom/android/phone/photoring/CallMessageConstants$RequestType;Landroid/os/Bundle;)V
     .locals 31
+    .param p1    # Lcom/android/phone/photoring/CallMessageConstants$RequestType;
+    .param p2    # Landroid/os/Bundle;
 
     sget-object v27, Lcom/android/phone/photoring/PhotoRingMgr$3;->$SwitchMap$com$android$phone$photoring$CallMessageConstants$RequestType:[I
 

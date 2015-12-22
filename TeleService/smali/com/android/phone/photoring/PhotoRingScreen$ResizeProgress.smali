@@ -40,6 +40,8 @@
 # direct methods
 .method private constructor <init>(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;I)V
     .locals 2
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen$ResizeProgress;->this$0:Lcom/android/phone/photoring/PhotoRingScreen;
 
@@ -58,6 +60,10 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;ILcom/android/phone/photoring/PhotoRingScreen$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # Lcom/android/phone/photoring/PhotoRingScreen$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/photoring/PhotoRingScreen$ResizeProgress;-><init>(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;I)V
 
@@ -68,6 +74,7 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -80,6 +87,7 @@
 
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
     .locals 8
+    .param p1    # [Ljava/lang/Integer;
 
     :cond_0
     const-wide/16 v4, 0x32
@@ -195,6 +203,7 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -205,6 +214,7 @@
 
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
@@ -255,6 +265,7 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 4
+    .param p1    # [Ljava/lang/Integer;
 
     const/4 v3, 0x0
 
@@ -314,6 +325,7 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
+    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

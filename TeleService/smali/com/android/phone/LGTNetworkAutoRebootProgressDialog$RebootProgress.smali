@@ -58,6 +58,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
+    .param p2    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$RebootProgress;-><init>(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)V
 
@@ -68,6 +70,7 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -80,6 +83,7 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 2
+    .param p1    # [Ljava/lang/Void;
 
     :goto_0
     iget-boolean v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$RebootProgress;->isFinish:Z
@@ -130,6 +134,7 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -140,6 +145,7 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 2
+    .param p1    # Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog$RebootProgress;->this$0:Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 

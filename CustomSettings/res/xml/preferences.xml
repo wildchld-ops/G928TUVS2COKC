@@ -53,11 +53,12 @@
                 <ListPreference android:persistent="false" android:entries="@array/show_network_traffic_frequency_entries" android:title="@string/show_network_traffic_frequency" android:key="status_bar_network_stats_update_frequency" android:entryValues="@array/show_network_traffic_frequency_values" />
             </PreferenceScreen>
             <ListPreference android:entries="@array/signal_entries" android:title="Number Of Signal Bars" android:key="signal_bars" android:summary="Choose Number Of Signal Bars" android:entryValues="@array/signal_values" />
+            <ListPreference android:entries="@array/data_style_entries" android:title="Data Icon Style" android:key="data_icon_type" android:summary="Data Icon Style" android:dialogTitle="Data Icon Style" android:positiveButtonText="Save" android:negativeButtonText="Cancel" android:entryValues="@array/data_style_values" />
             <CheckBoxPreference android:title="Signal In-Out Icon" android:key="signal_inout" android:summaryOn="Disabled" android:summaryOff="Enabled" />
             <CheckBoxPreference android:title="Wifi In-Out Icon" android:key="wifi_inout" android:summaryOn="Enabled" android:summaryOff="Disabled" />
             <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
         </PreferenceScreen>
-        <PreferenceScreen android:title="StatusBar Colors Colors" android:summary="Customise Colors">
+        <PreferenceScreen android:title="StatusBar Colors" android:summary="Customise Colors">
             <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
             <com.ficeto.customsettings.ColorPickerPreference android:title="Signal Icon" android:key="signal_color" android:summary="Select Color" android:dialogTitle="Select Color" />
             <com.ficeto.customsettings.ColorPickerPreference android:title="WiFi Icon" android:key="wifi_color" android:summary="Select Color" android:dialogTitle="Select Color" />
@@ -129,7 +130,6 @@
         <Preference android:title="Ultra PowerSaving Manager" android:key="activity;mobi.xperiacle.upsm.manager;mobi.xperiacle.upsm.manager.MainActivity" android:summary="More Apps Available in UPSM" />
         <Preference android:title="Switch Wi-Fi band" android:key="activity;com.devasque.wifibandswitcher;com.devasque.wifibandswitcher.MainActivity" android:summary="Change Wi-Fi band frequency" />
         <Preference android:title="Superuser" android:key="activity;eu.chainfire.supersu;eu.chainfire.supersu.MainActivity" android:summary="Control root" />
-        <Preference android:title="Restore Quicksettings" android:key="tool#shell#sh /system/bin/qs.sh" android:summary="Restore Quicksettings Reboot required after running" />
     </PreferenceScreen>
     <PreferenceScreen android:layout="@layout/logo7" android:title="Restart Menu" android:selectable="true" android:key="logo">
         <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
@@ -150,7 +150,6 @@
     </PreferenceScreen>
     <PreferenceScreen android:layout="@layout/logo8" android:title="About" android:selectable="true" android:key="logo">
         <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
-        <Preference android:title="Build Version" android:key="build_number" android:summary="SuperStock Rom" style="?android:preferenceInformationStyle" />
         <Preference android:title="XDA Forum Thread" android:key="xda_forum" android:summary="Come join the discussion">
             <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/tmobile-galaxy-s6-edge-plus/development/rom-superstock-boh6-v1-0-custom-rom-t3199714" />
         </Preference>

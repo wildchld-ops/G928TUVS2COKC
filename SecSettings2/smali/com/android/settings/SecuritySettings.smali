@@ -3212,7 +3212,7 @@
 
     if-eqz p1, :cond_1
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     :goto_1
     invoke-static {v2, v3, v1}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
@@ -3220,7 +3220,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     goto :goto_1
 .end method

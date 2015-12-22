@@ -34,6 +34,7 @@
 
 .method private onDataDisabled(I)V
     .locals 3
+    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -84,6 +85,7 @@
 
 .method private onRegistrationDone(Lcom/samsung/commonimsinterface/imscommon/IMSRegistrationInfo;)V
     .locals 3
+    .param p1    # Lcom/samsung/commonimsinterface/imscommon/IMSRegistrationInfo;
 
     const-string v0, "Enhanced4GLTE"
 
@@ -133,6 +135,9 @@
 # virtual methods
 .method public onReceive(IILcom/samsung/commonimsinterface/imscommon/IMSParameter;)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Lcom/samsung/commonimsinterface/imscommon/IMSParameter;
 
     sparse-switch p2, :sswitch_data_0
 

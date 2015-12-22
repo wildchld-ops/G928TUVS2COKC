@@ -289,6 +289,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/KddiCallPrevention;)Lcom/android/phone/callsettings/KddiCallPrevention$AutoRejectAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mAutoRejectAdapter:Lcom/android/phone/callsettings/KddiCallPrevention$AutoRejectAdapter;
 
@@ -297,6 +298,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/KddiCallPrevention;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mIsForeground:Z
 
@@ -305,6 +307,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/KddiCallPrevention;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mUnLock:Z
 
@@ -313,6 +316,8 @@
 
 .method static synthetic access$1002(Lcom/android/phone/callsettings/KddiCallPrevention;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mUnLock:Z
 
@@ -321,6 +326,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/KddiCallPrevention;)Lcom/android/phone/callsettings/KddiCBarring;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mCBarringKddi:Lcom/android/phone/callsettings/KddiCBarring;
 
@@ -329,6 +335,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/KddiCallPrevention;)Landroid/widget/ListView;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mListView:Landroid/widget/ListView;
 
@@ -337,6 +344,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/callsettings/KddiCallPrevention;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mAutoRejectItemList:Ljava/util/ArrayList;
 
@@ -345,6 +353,10 @@
 
 .method static synthetic access$1400(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;IZ)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/callsettings/KddiCallPrevention;->modifyModList(Ljava/lang/String;IZ)V
 
@@ -353,6 +365,7 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/KddiCallPrevention;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/KddiCallPrevention;->composingData()Ljava/lang/String;
 
@@ -363,6 +376,9 @@
 
 .method static synthetic access$1600(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/KddiCallPrevention;->deleteFromModList(Ljava/lang/String;I)V
 
@@ -371,6 +387,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/callsettings/KddiCallPrevention;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mDefaultName:Ljava/lang/String;
 
@@ -379,6 +396,8 @@
 
 .method static synthetic access$1800(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCallPrevention;->displayToast(Ljava/lang/String;)V
 
@@ -387,6 +406,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/callsettings/KddiCallPrevention;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -395,6 +415,7 @@
 
 .method static synthetic access$2000(Lcom/android/phone/callsettings/KddiCallPrevention;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -403,6 +424,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/callsettings/KddiCallPrevention;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mUpdateScreen:Z
 
@@ -419,6 +442,8 @@
 
 .method static synthetic access$402(Lcom/android/phone/callsettings/KddiCallPrevention;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mUpdateLastCall:Z
 
@@ -427,6 +452,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/callsettings/KddiCallPrevention;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mFirstVisibleItem:I
 
@@ -435,6 +462,8 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCallPrevention;->log(Ljava/lang/String;)V
 
@@ -443,6 +472,8 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCallPrevention;->makeBaseData(Ljava/lang/String;)V
 
@@ -451,6 +482,8 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCallPrevention;->updateListICB(Ljava/lang/String;)V
 
@@ -459,6 +492,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/KddiCallPrevention;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCallPrevention;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/KddiCallPrevention;->makeScreen()V
 
@@ -467,6 +501,7 @@
 
 .method private addToModList(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -660,6 +695,7 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -930,6 +966,7 @@
 
 .method private dataParsing(Ljava/lang/String;)V
     .locals 24
+    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1365,6 +1402,8 @@
 
 .method private deleteFromModList(Ljava/lang/String;I)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1461,6 +1500,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCallPrevention;->mToast:Landroid/widget/Toast;
 
@@ -1480,6 +1520,7 @@
 
 .method private getNumberFromData(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
+    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1614,6 +1655,7 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 2
+    .param p1    # Landroid/view/View;
 
     const v0, 0x7f10002b
 
@@ -1646,6 +1688,7 @@
 
 .method private isAvaliableNumber(Ljava/lang/String;)Z
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1687,6 +1730,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/callsettings/KddiCallPrevention;->LOG_TAG:Ljava/lang/String;
 
@@ -1697,6 +1741,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     sget-object v0, Lcom/android/phone/callsettings/KddiCallPrevention;->LOG_TAG:Ljava/lang/String;
 
@@ -1707,6 +1753,7 @@
 
 .method private makeBaseData(Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
 
     const-string v6, "makeBaseData "
 
@@ -1830,6 +1877,9 @@
 
 .method private modifyModList(Ljava/lang/String;IZ)V
     .locals 10
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Z
 
     const/4 v9, 0x1
 
@@ -1996,6 +2046,7 @@
 
 .method private updateListICB(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "updateListICB "
 
@@ -2317,6 +2368,7 @@
 
 .method isUnknownNumber(Ljava/lang/String;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const-string v2, "-1"
 
@@ -2359,6 +2411,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 6
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/16 v4, 0x64
 
@@ -2506,6 +2561,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
+    .param p1    # Landroid/content/res/Configuration;
 
     sget-object v0, Lcom/android/phone/callsettings/KddiCallPrevention;->LOG_TAG:Ljava/lang/String;
 
@@ -2526,6 +2582,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -2707,6 +2764,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -3055,6 +3115,7 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

@@ -130,6 +130,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/GsmUmtsCallForwardOptions;)Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
     .locals 1
+    .param p0    # Lcom/android/phone/GsmUmtsCallForwardOptions;
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsCallForwardOptions;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
 
@@ -138,6 +139,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/GsmUmtsCallForwardOptions;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/GsmUmtsCallForwardOptions;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/GsmUmtsCallForwardOptions;->updatePreferenceScreen(Z)V
 
@@ -146,6 +149,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/GsmUmtsCallForwardOptions;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/GsmUmtsCallForwardOptions;
 
     invoke-direct {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->isAirplaneModeOn()Z
 
@@ -183,6 +187,7 @@
 
 .method private simulatePreferenceClick(Landroid/preference/Preference;)V
     .locals 7
+    .param p1    # Landroid/preference/Preference;
 
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->isAdded()Z
 
@@ -250,6 +255,7 @@
 
 .method private updatePreferenceScreen(Z)V
     .locals 2
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -274,6 +280,9 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 7
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const-string v0, "GsmUmtsCallForwardOptions"
 
@@ -490,6 +499,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -885,6 +895,7 @@
 
 .method public onCreateMultiSIM(Landroid/preference/PreferenceScreen;)V
     .locals 11
+    .param p1    # Landroid/preference/PreferenceScreen;
 
     const/4 v7, 0x5
 
@@ -1217,6 +1228,8 @@
 
 .method public onFinished(Landroid/preference/Preference;Z)V
     .locals 4
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -1336,6 +1349,7 @@
 
 .method public onGetDefaultNumber(Lcom/android/phone/EditPhoneNumberPreference;)Ljava/lang/String;
     .locals 4
+    .param p1    # Lcom/android/phone/EditPhoneNumberPreference;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
 
@@ -1411,6 +1425,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1851,6 +1866,7 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

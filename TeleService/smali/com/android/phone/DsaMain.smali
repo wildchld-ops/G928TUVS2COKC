@@ -96,6 +96,7 @@
 
 .method private dsaLog(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "DsaMain"
 
@@ -139,6 +140,7 @@
 
 .method public displayDialog(I)V
     .locals 5
+    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -852,6 +854,8 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
+    .param p1    # Landroid/widget/CompoundButton;
+    .param p2    # Z
 
     const-string v0, "DsaMain"
 
@@ -882,6 +886,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
+    .param p1    # Landroid/os/Bundle;
 
     const/16 v7, 0x10
 
@@ -1101,6 +1106,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "DsaMain"
 

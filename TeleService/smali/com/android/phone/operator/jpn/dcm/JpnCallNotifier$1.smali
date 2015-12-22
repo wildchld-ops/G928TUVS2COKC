@@ -36,6 +36,7 @@
 # virtual methods
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 2
+    .param p1    # Landroid/media/MediaPlayer;
 
     if-eqz p1, :cond_1
 

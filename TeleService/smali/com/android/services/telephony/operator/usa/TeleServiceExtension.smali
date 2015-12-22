@@ -10,6 +10,8 @@
 # direct methods
 .method public static checkForOtaspCall(Landroid/telecom/ConnectionRequest;Z)Z
     .locals 2
+    .param p0    # Landroid/telecom/ConnectionRequest;
+    .param p1    # Z
 
     const-string v1, "activate_your_phone"
 
@@ -40,6 +42,9 @@
 
 .method public static disableWifiInEmergencyCall(Lcom/android/internal/telephony/Phone;ILandroid/net/Uri;)V
     .locals 5
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # I
+    .param p2    # Landroid/net/Uri;
 
     if-nez p0, :cond_1
 
@@ -94,6 +99,8 @@
 
 .method public static getOriginalConnectionFromNumber(Landroid/net/Uri;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 1
+    .param p0    # Landroid/net/Uri;
+    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -106,6 +113,9 @@
 
 .method public static getOriginalConnectionFromNumber(Landroid/net/Uri;Landroid/net/Uri;Z)Landroid/net/Uri;
     .locals 1
+    .param p0    # Landroid/net/Uri;
+    .param p1    # Landroid/net/Uri;
+    .param p2    # Z
 
     if-nez p1, :cond_1
 
@@ -137,6 +147,9 @@
 
 .method public static ignoreSignalForTFN(III)Z
     .locals 4
+    .param p0    # I
+    .param p1    # I
+    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -181,6 +194,8 @@
 
 .method private static isCdmaOtaSpNumber(Ljava/lang/String;Z)Z
     .locals 3
+    .param p0    # Ljava/lang/String;
+    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -233,6 +248,9 @@
 
 .method public static isCdmaSilenceSignal(III)Z
     .locals 1
+    .param p0    # I
+    .param p1    # I
+    .param p2    # I
 
     const/4 v0, 0x2
 
@@ -255,6 +273,9 @@
 
 .method public static isCdmaStandardSignal(III)Z
     .locals 2
+    .param p0    # I
+    .param p1    # I
+    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -277,6 +298,8 @@
 
 .method private static isEmergency(Lcom/android/internal/telephony/Phone;Landroid/net/Uri;)Z
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Landroid/net/Uri;
 
     if-eqz p0, :cond_0
 
@@ -307,6 +330,7 @@
 
 .method public static isImsRegistrationTrial(Lcom/android/internal/telephony/Phone;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const/4 v0, 0x1
 
@@ -319,6 +343,8 @@
 
 .method public static isImsRegistrationTrial(Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)Z
     .locals 3
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     invoke-virtual {p1}, Landroid/telecom/ConnectionRequest;->getExtras()Landroid/os/Bundle;
 
@@ -351,6 +377,8 @@
 
 .method private static isImsRegistrationTrial(Lcom/android/internal/telephony/Phone;Z)Z
     .locals 8
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Z
 
     const/16 v7, 0xe
 
@@ -469,6 +497,7 @@
 
 .method public static otaspInCall(Lcom/android/internal/telephony/Connection;)Z
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Connection;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/Connection;->getCall()Lcom/android/internal/telephony/Call;
 
@@ -507,6 +536,7 @@
 
 .method public static setSilence(Z)V
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/services/telephony/operator/usa/TeleServiceExtension;->mSilence:Z
 
@@ -515,6 +545,8 @@
 
 .method public static toTelecomDisconnectCauseDescription(ILjava/lang/Integer;)Ljava/lang/Integer;
     .locals 1
+    .param p0    # I
+    .param p1    # Ljava/lang/Integer;
 
     packed-switch p0, :pswitch_data_0
 

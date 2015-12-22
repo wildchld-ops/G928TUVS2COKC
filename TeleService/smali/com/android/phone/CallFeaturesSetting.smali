@@ -576,6 +576,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/Preference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailNotificationSound:Landroid/preference/Preference;
 
@@ -584,6 +585,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mWifiCall:Landroid/preference/CheckBoxPreference;
 
@@ -592,6 +594,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
@@ -600,6 +603,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -610,6 +614,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -620,6 +625,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -630,6 +636,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/ListPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mPhoneAppMode:Landroid/preference/ListPreference;
 
@@ -638,6 +645,8 @@
 
 .method static synthetic access$1500(Lcom/android/phone/CallFeaturesSetting;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->updateCallSettingsByCarrier(I)V
 
@@ -646,6 +655,7 @@
 
 .method static synthetic access$1600(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/ListPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mCallTypePreference:Landroid/preference/ListPreference;
 
@@ -654,6 +664,9 @@
 
 .method static synthetic access$1700(Lcom/android/phone/CallFeaturesSetting;Landroid/os/AsyncResult;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/CallFeaturesSetting;->handleForwardingSettingsReadResult(Landroid/os/AsyncResult;I)V
 
@@ -662,6 +675,7 @@
 
 .method static synthetic access$1800(Lcom/android/phone/CallFeaturesSetting;)Landroid/os/AsyncResult;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailChangeResult:Landroid/os/AsyncResult;
 
@@ -670,6 +684,8 @@
 
 .method static synthetic access$1802(Lcom/android/phone/CallFeaturesSetting;Landroid/os/AsyncResult;)Landroid/os/AsyncResult;
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Landroid/os/AsyncResult;
 
     iput-object p1, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailChangeResult:Landroid/os/AsyncResult;
 
@@ -678,6 +694,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVMChangeCompletedSuccessfully:Z
 
@@ -686,6 +703,8 @@
 
 .method static synthetic access$1902(Lcom/android/phone/CallFeaturesSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CallFeaturesSetting;->mVMChangeCompletedSuccessfully:Z
 
@@ -702,6 +721,7 @@
 
 .method static synthetic access$2000(Lcom/android/phone/CallFeaturesSetting;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->checkVMChangeSuccess()Ljava/lang/String;
 
@@ -712,6 +732,7 @@
 
 .method static synthetic access$2100(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/CallFeaturesSetting;->log(Ljava/lang/String;)V
 
@@ -720,6 +741,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/CallFeaturesSetting;)Ljava/util/Map;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mForwardingChangeResults:Ljava/util/Map;
 
@@ -728,6 +750,8 @@
 
 .method static synthetic access$2300(Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Ljava/lang/String;
+    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->log(Ljava/lang/String;Z)V
 
@@ -736,6 +760,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->checkForwardingCompleted()Z
 
@@ -746,6 +771,7 @@
 
 .method static synthetic access$2500(Lcom/android/phone/CallFeaturesSetting;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->checkFwdChangeSuccess()Ljava/lang/String;
 
@@ -756,6 +782,7 @@
 
 .method static synthetic access$2600(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->setVMNumberWithCarrier()V
 
@@ -764,6 +791,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/CallFeaturesSetting;->mFwdChangesRequireRollback:Z
 
@@ -772,6 +800,8 @@
 
 .method static synthetic access$2702(Lcom/android/phone/CallFeaturesSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CallFeaturesSetting;->mFwdChangesRequireRollback:Z
 
@@ -780,6 +810,8 @@
 
 .method static synthetic access$2800(Lcom/android/phone/CallFeaturesSetting;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->dismissDialogSafely(I)V
 
@@ -788,6 +820,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->handleSetVMOrFwdMessage()V
 
@@ -796,6 +829,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/CallFeaturesSetting;)Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
 
@@ -804,6 +838,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->onRevertDone()V
 
@@ -812,6 +847,7 @@
 
 .method static synthetic access$3100(Lcom/android/phone/CallFeaturesSetting;)I
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget v0, p0, Lcom/android/phone/CallFeaturesSetting;->mCMCCFailOption:I
 
@@ -820,6 +856,8 @@
 
 .method static synthetic access$3102(Lcom/android/phone/CallFeaturesSetting;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CallFeaturesSetting;->mCMCCFailOption:I
 
@@ -828,6 +866,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -838,6 +877,7 @@
 
 .method static synthetic access$3300(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->updateFailOptionCmccSummary()V
 
@@ -846,6 +886,7 @@
 
 .method static synthetic access$3400(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -856,6 +897,7 @@
 
 .method static synthetic access$3500(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -866,6 +908,8 @@
 
 .method static synthetic access$3600(Lcom/android/phone/CallFeaturesSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->setMobileDataEnabled(Z)V
 
@@ -874,6 +918,7 @@
 
 .method static synthetic access$3700(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->isAdvanceCallingOn()Z
 
@@ -884,6 +929,8 @@
 
 .method static synthetic access$3800(Lcom/android/phone/CallFeaturesSetting;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->showDialogIfForeground(I)V
 
@@ -892,6 +939,7 @@
 
 .method static synthetic access$3900(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->isSafeToTurnOnVolteVideoCall()Z
 
@@ -902,6 +950,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/CallFeaturesSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->updatePersonalizeSoundNoiseReductionAndIncoimgPopup(Z)V
 
@@ -910,6 +960,7 @@
 
 .method static synthetic access$4000(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -920,6 +971,7 @@
 
 .method static synthetic access$4100(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -930,6 +982,7 @@
 
 .method static synthetic access$4200(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -940,6 +993,10 @@
 
 .method static synthetic access$4300(Lcom/android/phone/CallFeaturesSetting;ILandroid/preference/Preference;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # I
+    .param p2    # Landroid/preference/Preference;
+    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/CallFeaturesSetting;->updateRingtoneName(ILandroid/preference/Preference;I)V
 
@@ -948,6 +1005,7 @@
 
 .method static synthetic access$4400(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/PreferenceScreen;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mSwisSwysPreference:Landroid/preference/PreferenceScreen;
 
@@ -956,6 +1014,7 @@
 
 .method static synthetic access$4500(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->isMobileDataOn()Z
 
@@ -966,6 +1025,7 @@
 
 .method static synthetic access$4600(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mButtonDDTM:Landroid/preference/CheckBoxPreference;
 
@@ -974,6 +1034,8 @@
 
 .method static synthetic access$4702(Lcom/android/phone/CallFeaturesSetting;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/phone/CallFeaturesSetting;->mServiceMessenger:Landroid/os/Messenger;
 
@@ -982,6 +1044,7 @@
 
 .method static synthetic access$4800(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->getDDTMData()V
 
@@ -990,6 +1053,7 @@
 
 .method static synthetic access$4900(Lcom/android/phone/CallFeaturesSetting;)Lcom/samsung/tmowfc/wfcutils/WfcSwitchPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mWfcSwitchPreference:Lcom/samsung/tmowfc/wfcutils/WfcSwitchPreference;
 
@@ -998,6 +1062,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->setVolteEnabled()Z
 
@@ -1008,6 +1073,7 @@
 
 .method static synthetic access$5000(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/PreferenceGroup;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mWifiCallCategory:Landroid/preference/PreferenceGroup;
 
@@ -1016,6 +1082,7 @@
 
 .method static synthetic access$5100(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->isAirplaneModeOn()Z
 
@@ -1026,6 +1093,7 @@
 
 .method static synthetic access$5200(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->updateNoiseReduction()V
 
@@ -1034,6 +1102,7 @@
 
 .method static synthetic access$5300(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->updateNaturalSound()V
 
@@ -1042,6 +1111,7 @@
 
 .method static synthetic access$5400(Lcom/android/phone/CallFeaturesSetting;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mImsUtdialog:Landroid/app/ProgressDialog;
 
@@ -1050,6 +1120,8 @@
 
 .method static synthetic access$5402(Lcom/android/phone/CallFeaturesSetting;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/CallFeaturesSetting;->mImsUtdialog:Landroid/app/ProgressDialog;
 
@@ -1058,6 +1130,7 @@
 
 .method static synthetic access$5500(Lcom/android/phone/CallFeaturesSetting;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mImsUtHandler:Landroid/os/Handler;
 
@@ -1066,6 +1139,7 @@
 
 .method static synthetic access$5600(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->goAdditionalCallOptions()V
 
@@ -1074,6 +1148,7 @@
 
 .method static synthetic access$5700(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->isWFCRegistered()Z
 
@@ -1084,6 +1159,8 @@
 
 .method static synthetic access$5800(Lcom/android/phone/CallFeaturesSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->updatePersonalizeSoundNoiseReduction(Z)V
 
@@ -1092,6 +1169,7 @@
 
 .method static synthetic access$5900(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->updateWiFiCallPreference()V
 
@@ -1100,6 +1178,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->canEnablevolteVideoCall()Z
 
@@ -1110,6 +1189,7 @@
 
 .method static synthetic access$6200(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/PreferenceScreen;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mCallForwarding:Landroid/preference/PreferenceScreen;
 
@@ -1118,6 +1198,7 @@
 
 .method static synthetic access$6300(Lcom/android/phone/CallFeaturesSetting;)I
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->startImsUtMobileConnection()I
 
@@ -1128,6 +1209,8 @@
 
 .method static synthetic access$6400(Lcom/android/phone/CallFeaturesSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->putAutoAnswerSetting(Z)V
 
@@ -1136,6 +1219,7 @@
 
 .method static synthetic access$6500(Lcom/android/phone/CallFeaturesSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     invoke-direct {p0}, Lcom/android/phone/CallFeaturesSetting;->updateAutoAnswer()V
 
@@ -1144,6 +1228,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/CallFeaturesSetting;)Landroid/preference/SwitchPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoLTEVideoCallEnable:Landroid/preference/SwitchPreference;
 
@@ -1152,6 +1237,8 @@
 
 .method static synthetic access$800(Lcom/android/phone/CallFeaturesSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->onVoLTEVideoCallEnablePreferenceTreeClick(Z)V
 
@@ -1160,6 +1247,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/CallFeaturesSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/CallFeaturesSetting;->proximityChecked:Z
 
@@ -1168,6 +1256,8 @@
 
 .method static synthetic access$902(Lcom/android/phone/CallFeaturesSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/CallFeaturesSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CallFeaturesSetting;->proximityChecked:Z
 
@@ -1176,6 +1266,7 @@
 
 .method private appInstalledOrNot(Ljava/lang/String;)Z
     .locals 7
+    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1498,6 +1589,7 @@
 
 .method private confirmSelectionDialog(Z)V
     .locals 4
+    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1614,6 +1706,7 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1807,6 +1900,7 @@
 
 .method private deleteSettingsForVoicemailProvider(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1903,6 +1997,7 @@
 
 .method private dismissDialogSafely(I)V
     .locals 1
+    .param p1    # I
 
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->dismissDialog(I)V
@@ -2086,6 +2181,7 @@
 
 .method public static getVibrateWhenRinging(Landroid/content/Context;)Z
     .locals 4
+    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -2129,6 +2225,7 @@
 
 .method public static getVoiceCallTypeValue(Landroid/content/ContentResolver;)I
     .locals 5
+    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x1
 
@@ -2204,6 +2301,8 @@
 
 .method private handleForwardingSettingsReadResult(Landroid/os/AsyncResult;I)V
     .locals 10
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # I
 
     const/16 v8, 0x25a
 
@@ -2705,6 +2804,7 @@
 
 .method private handleSipCallOptionsChange(Ljava/lang/Object;)V
     .locals 3
+    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -2739,6 +2839,7 @@
 
 .method private handleTTYChange(Ljava/lang/Object;)V
     .locals 6
+    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -2844,6 +2945,7 @@
 
 .method private handleVMAndFwdSetSuccess(I)V
     .locals 2
+    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2912,6 +3014,7 @@
 
 .method private handleVMOrFwdSetError(I)V
     .locals 2
+    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2940,6 +3043,8 @@
 
 .method private infoForReason([Lcom/android/internal/telephony/CallForwardInfo;I)Lcom/android/internal/telephony/CallForwardInfo;
     .locals 6
+    .param p1    # [Lcom/android/internal/telephony/CallForwardInfo;
+    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -3642,6 +3747,8 @@
 
 .method private invokeOemRilRequestRaw([BLandroid/os/Message;)V
     .locals 4
+    .param p1    # [B
+    .param p2    # Landroid/os/Message;
 
     invoke-virtual {p2}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
@@ -3902,6 +4009,8 @@
 
 .method private isUpdateRequired(Lcom/android/internal/telephony/CallForwardInfo;Lcom/android/internal/telephony/CallForwardInfo;)Z
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/CallForwardInfo;
+    .param p2    # Lcom/android/internal/telephony/CallForwardInfo;
 
     const/4 v0, 0x1
 
@@ -3951,6 +4060,7 @@
 
 .method private isWifiCallingPackageLoaded(Landroid/content/Context;)Z
     .locals 4
+    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -3993,6 +4103,7 @@
 
 .method private loadSettingsForVoiceMailProvider(Ljava/lang/String;)Lcom/android/phone/CallFeaturesSetting$VoiceMailProviderSettings;
     .locals 12
+    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -4315,6 +4426,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "CallFeaturesSetting"
 
@@ -4325,6 +4437,8 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Z
 
     const-string v0, "CallFeaturesSetting"
 
@@ -4349,6 +4463,7 @@
 
 .method private makeKeyForActivity(Landroid/content/pm/ActivityInfo;)Ljava/lang/String;
     .locals 1
+    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p1, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
@@ -4357,6 +4472,8 @@
 
 .method private maybeSaveSettingsForVoicemailProvider(Ljava/lang/String;Lcom/android/phone/CallFeaturesSetting$VoiceMailProviderSettings;)V
     .locals 9
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/phone/CallFeaturesSetting$VoiceMailProviderSettings;
 
     iget-object v7, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailProviders:Landroid/preference/ListPreference;
 
@@ -4669,6 +4786,7 @@
 
 .method public static migrateVoicemailVibrationSettingsIfNeeded(Landroid/content/SharedPreferences;)Z
     .locals 6
+    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v4, 0x0
 
@@ -5431,6 +5549,7 @@
 
 .method private onVoLTEVideoCallEnablePreferenceTreeClick(Z)V
     .locals 4
+    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -5594,6 +5713,7 @@
 
 .method private putAutoAnswerSetting(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -5618,6 +5738,7 @@
 
 .method private registerRegReceiver(Z)V
     .locals 6
+    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/phone/CallFeaturesSetting;->mCallForwarding:Landroid/preference/PreferenceScreen;
 
@@ -5847,6 +5968,8 @@
 
 .method private saveVoiceMailAndForwardingNumber(Ljava/lang/String;Lcom/android/phone/CallFeaturesSetting$VoiceMailProviderSettings;)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/phone/CallFeaturesSetting$VoiceMailProviderSettings;
 
     const/16 v4, 0x2bc
 
@@ -6238,6 +6361,7 @@
 
 .method private setBeforePhoneMode(I)V
     .locals 1
+    .param p1    # I
 
     const-string v0, "default_phone_mode"
 
@@ -6248,6 +6372,7 @@
 
 .method private setDDTMData(B)V
     .locals 10
+    .param p1    # B
 
     const/16 v9, 0x17
 
@@ -6360,6 +6485,7 @@
 
 .method private setESurfingDialUp(Z)V
     .locals 3
+    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6430,6 +6556,7 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 2
+    .param p1    # Z
 
     const-string v1, "connectivity"
 
@@ -6446,6 +6573,7 @@
 
 .method private setNaturalSound(Z)V
     .locals 3
+    .param p1    # Z
 
     const-string v0, "CallFeaturesSetting"
 
@@ -6474,6 +6602,7 @@
 
 .method private setNoiseReduction(Z)V
     .locals 4
+    .param p1    # Z
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -6718,6 +6847,7 @@
 
 .method private showDialogIfForeground(I)V
     .locals 1
+    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/phone/CallFeaturesSetting;->mForeground:Z
 
@@ -6731,6 +6861,7 @@
 
 .method private showVMDialog(I)V
     .locals 1
+    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -6784,6 +6915,7 @@
 
 .method private simulatePreferenceClick(Landroid/preference/Preference;)V
     .locals 7
+    .param p1    # Landroid/preference/Preference;
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -7429,6 +7561,7 @@
 
 .method private updateCallSettingsByCarrier(I)V
     .locals 11
+    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -11745,6 +11878,7 @@
 
 .method private updatePersonalizeSoundNoiseReduction(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -11821,6 +11955,7 @@
 
 .method private updatePersonalizeSoundNoiseReductionAndIncoimgPopup(Z)V
     .locals 4
+    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -12102,6 +12237,7 @@
 
 .method private updatePreferredTtyModeSummary(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -12227,6 +12363,9 @@
 
 .method private updateRingtoneName(ILandroid/preference/Preference;I)V
     .locals 11
+    .param p1    # I
+    .param p2    # Landroid/preference/Preference;
+    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -12620,6 +12759,7 @@
 
 .method private updateVMPreferenceWidgets(Ljava/lang/String;)V
     .locals 7
+    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -13338,6 +13478,8 @@
 # virtual methods
 .method public checkingSoundSettingPreference(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 
@@ -13636,6 +13778,7 @@
 
 .method protected initGeneralSetting(Z)V
     .locals 23
+    .param p1    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/CallFeaturesSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -18677,6 +18820,7 @@
 
 .method protected initInCallOverlayPopup(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -18700,6 +18844,7 @@
 
 .method protected initPhoneSetting(Z)V
     .locals 4
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -18793,6 +18938,7 @@
 
 .method protected initSoundSetting(Z)V
     .locals 7
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -19075,6 +19221,7 @@
 
 .method protected initVideoSetting(Z)V
     .locals 10
+    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -20097,6 +20244,7 @@
 
 .method protected initVoicemailSetting(Z)V
     .locals 6
+    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -21126,6 +21274,7 @@
 
 .method protected initVoipSetting(Z)V
     .locals 0
+    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -21137,6 +21286,7 @@
 
 .method protected initWiFiCallSetting(Z)V
     .locals 9
+    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -21559,6 +21709,7 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -21807,6 +21958,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 15
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -22219,6 +22373,8 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     const/16 v1, 0x1f6
 
@@ -22304,6 +22460,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -23154,6 +23311,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 20
+    .param p1    # I
 
     const/16 v16, 0x1f4
 
@@ -24144,6 +24302,8 @@
 
 .method public onDialogClosed(Lcom/android/phone/EditPhoneNumberPreference;I)V
     .locals 2
+    .param p1    # Lcom/android/phone/EditPhoneNumberPreference;
+    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -24185,6 +24345,7 @@
 
 .method public onGetDefaultNumber(Lcom/android/phone/EditPhoneNumberPreference;)Ljava/lang/String;
     .locals 4
+    .param p1    # Lcom/android/phone/EditPhoneNumberPreference;
 
     const/4 v1, 0x0
 
@@ -24254,6 +24415,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -24415,6 +24577,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 32
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     new-instance v28, Ljava/lang/StringBuilder;
 
@@ -27073,6 +27237,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 23
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual/range {p0 .. p2}, Lcom/android/phone/CallFeaturesSetting;->checkingSoundSettingPreference(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -29110,6 +29276,8 @@
 
 .method public onPreferenceTreeClickMultiSIM(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 
@@ -29355,6 +29523,7 @@
 
 .method public onPrepareDialog(I)V
     .locals 0
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CallFeaturesSetting;->mCurrentDialogId:I
 
@@ -30256,6 +30425,8 @@
 
 .method public startActivityForResult(Landroid/content/Intent;I)V
     .locals 4
+    .param p1    # Landroid/content/Intent;
+    .param p2    # I
 
     const/4 v1, -0x1
 

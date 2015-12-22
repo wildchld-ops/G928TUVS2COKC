@@ -1026,10 +1026,27 @@
 .end method
 
 .method private shouldEnableKeyguardScreenRotation()Z
-    .locals 3
+    .locals 5
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;->mContext:Landroid/content/Context;
 
     const/4 v1, 0x0
 
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const-string v4, "lockscreen_rotate"
+
+    invoke-static {v3, v4, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarWindowManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1042,7 +1059,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_0
+    if-nez v2, :cond_1
 
     const v2, 0x7f0b0002
 
@@ -1050,12 +1067,12 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1
-
-    :cond_0
-    const/4 v1, 0x1
+    if-eqz v2, :cond_2
 
     :cond_1
+    const/4 v1, 0x1
+
+    :cond_2
     return v1
 .end method
 

@@ -410,6 +410,7 @@
 
 .method private InitAutoUpdate(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorRegisterService;->PNL_AUTO_UPDATE:Ljava/lang/String;
 
@@ -495,6 +496,7 @@
 
 .method private getDataFromDB(Landroid/content/Context;)V
     .locals 6
+    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -953,6 +955,8 @@
 
 .method private getLatestTimeSuffix([II)I
     .locals 6
+    .param p1    # [I
+    .param p2    # I
 
     const-string v4, "getLatestTimeSuffix"
 
@@ -1130,6 +1134,7 @@
 
 .method private isTime([I)Z
     .locals 4
+    .param p1    # [I
 
     const-string v2, "isTime"
 
@@ -1377,6 +1382,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneNumberLocatorBootCompletedReceiver"
 
@@ -1387,6 +1393,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "PhoneNumberLocatorBootCompletedReceiver"
 
@@ -1581,6 +1589,8 @@
 
 .method private updateDate([Ljava/lang/String;I)[I
     .locals 10
+    .param p1    # [Ljava/lang/String;
+    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -1865,6 +1875,7 @@
 
 .method private updateExp(I)Z
     .locals 1
+    .param p1    # I
 
     sget-boolean v0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorBootCompletedReceiver;->bUpdateSuccess:Z
 
@@ -1923,6 +1934,7 @@
 
 .method public checkNetWork(Landroid/content/Context;)Z
     .locals 10
+    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -2066,6 +2078,8 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 

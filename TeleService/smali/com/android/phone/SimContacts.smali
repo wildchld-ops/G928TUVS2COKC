@@ -47,6 +47,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/SimContacts;)Landroid/accounts/Account;
     .locals 1
+    .param p0    # Lcom/android/phone/SimContacts;
 
     iget-object v0, p0, Lcom/android/phone/SimContacts;->mAccount:Landroid/accounts/Account;
 
@@ -55,6 +56,9 @@
 
 .method static synthetic access$100(Landroid/database/Cursor;Landroid/content/ContentResolver;Landroid/accounts/Account;)V
     .locals 0
+    .param p0    # Landroid/database/Cursor;
+    .param p1    # Landroid/content/ContentResolver;
+    .param p2    # Landroid/accounts/Account;
 
     invoke-static {p0, p1, p2}, Lcom/android/phone/SimContacts;->actuallyImportOneSimContact(Landroid/database/Cursor;Landroid/content/ContentResolver;Landroid/accounts/Account;)V
 
@@ -63,6 +67,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/SimContacts;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/SimContacts;
 
     iget-object v0, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -71,6 +76,9 @@
 
 .method private static actuallyImportOneSimContact(Landroid/database/Cursor;Landroid/content/ContentResolver;Landroid/accounts/Account;)V
     .locals 19
+    .param p0    # Landroid/database/Cursor;
+    .param p1    # Landroid/content/ContentResolver;
+    .param p2    # Landroid/accounts/Account;
 
     new-instance v10, Lcom/android/phone/SimContacts$NamePhoneTypePair;
 
@@ -388,6 +396,7 @@
 
 .method private importOneSimContact(I)V
     .locals 4
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -494,6 +503,7 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -508,6 +518,7 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -552,6 +563,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onCreate(Landroid/os/Bundle;)V
 
@@ -608,6 +620,9 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 5
+    .param p1    # Landroid/view/ContextMenu;
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v4, 0x0
 
@@ -650,6 +665,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -666,6 +683,10 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 0
+    .param p1    # Landroid/widget/ListView;
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
 
     invoke-direct {p0, p3}, Lcom/android/phone/SimContacts;->importOneSimContact(I)V
 
@@ -674,6 +695,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 10
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v6, 0x1
 
@@ -886,6 +908,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
+    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x2
 

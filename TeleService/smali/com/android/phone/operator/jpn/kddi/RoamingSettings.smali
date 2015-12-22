@@ -67,6 +67,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/jpn/kddi/RoamingSettings;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/kddi/RoamingSettings;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/kddi/RoamingSettings;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -75,6 +76,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/jpn/kddi/RoamingSettings;)Landroid/preference/ListPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/kddi/RoamingSettings;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/kddi/RoamingSettings;->mRoamingNetworkMode:Landroid/preference/ListPreference;
 
@@ -83,6 +85,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/jpn/kddi/RoamingSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/kddi/RoamingSettings;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/kddi/RoamingSettings;->mRoamingCarrierSelKey:Landroid/preference/PreferenceScreen;
 
@@ -91,6 +94,7 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/operator/jpn/kddi/RoamingSettings;->log(Ljava/lang/String;)V
 
@@ -107,6 +111,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/jpn/kddi/RoamingSettings;)Landroid/content/SharedPreferences;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/kddi/RoamingSettings;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/kddi/RoamingSettings;->prefs:Landroid/content/SharedPreferences;
 
@@ -115,6 +120,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/operator/jpn/kddi/RoamingSettings;->LOG_TAG:Ljava/lang/String;
 
@@ -127,6 +133,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x4
 
@@ -223,6 +230,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -296,6 +304,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x1
 

@@ -6,6 +6,8 @@
 # direct methods
 .method public static d(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -16,6 +18,9 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Throwable;
 
     invoke-static {p0, p1, p2}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -26,6 +31,10 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Throwable;
+    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -46,6 +55,9 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -66,6 +78,8 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/secutil/Log;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -76,6 +90,9 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Throwable;
 
     invoke-static {p0, p1, p2}, Landroid/util/secutil/Log;->secE(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -86,6 +103,9 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -106,6 +126,7 @@
 
 .method public static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 1
+    .param p0    # Ljava/lang/Throwable;
 
     invoke-static {p0}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -116,6 +137,8 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/secutil/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -126,6 +149,9 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -146,6 +172,8 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/secutil/Log;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -156,6 +184,9 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -176,6 +207,8 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/secutil/Log;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -186,6 +219,9 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Throwable;
 
     invoke-static {p0, p1, p2}, Landroid/util/secutil/Log;->secW(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -196,6 +232,9 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -216,6 +255,8 @@
 
 .method public static wtf(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/secutil/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 

@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/WfcEmergencyCallController;Lcom/android/phone/WfcEmergencyCallController$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/WfcEmergencyCallController;
+    .param p2    # Lcom/android/phone/WfcEmergencyCallController$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/WfcEmergencyCallController$WFCBroadcastReceiver;-><init>(Lcom/android/phone/WfcEmergencyCallController;)V
 
@@ -41,6 +43,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

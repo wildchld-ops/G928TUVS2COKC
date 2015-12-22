@@ -36,6 +36,7 @@
 # virtual methods
 .method public onRegistering(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
@@ -55,6 +56,8 @@
 
 .method public onRegistrationDone(Ljava/lang/String;J)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # J
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings$9;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
@@ -74,6 +77,9 @@
 
 .method public onRegistrationFailed(Ljava/lang/String;ILjava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     packed-switch p2, :pswitch_data_0
 

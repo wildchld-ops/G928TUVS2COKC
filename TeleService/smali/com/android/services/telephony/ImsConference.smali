@@ -30,6 +30,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/services/telephony/TelephonyConnectionService;Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 4
+    .param p1    # Lcom/android/services/telephony/TelephonyConnectionService;
+    .param p2    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v0, 0x0
 
@@ -147,6 +149,8 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/ImsConference;Lcom/android/services/telephony/ConferenceParticipantConnection;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConference;
+    .param p1    # Lcom/android/services/telephony/ConferenceParticipantConnection;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/ImsConference;->removeConferenceParticipant(Lcom/android/services/telephony/ConferenceParticipantConnection;)V
 
@@ -155,6 +159,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/ImsConference;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConference;
 
     invoke-direct {p0}, Lcom/android/services/telephony/ImsConference;->updateManageConference()V
 
@@ -163,6 +168,7 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/ImsConference;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/ImsConference;
 
     iget-object v0, p0, Lcom/android/services/telephony/ImsConference;->mConferenceHost:Lcom/android/services/telephony/TelephonyConnection;
 
@@ -171,6 +177,7 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/ImsConference;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConference;
 
     invoke-direct {p0}, Lcom/android/services/telephony/ImsConference;->handleOriginalConnectionChange()V
 
@@ -179,6 +186,7 @@
 
 .method static synthetic access$400(Lcom/android/services/telephony/ImsConference;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConference;
 
     invoke-direct {p0}, Lcom/android/services/telephony/ImsConference;->disconnectConferenceParticipants()V
 
@@ -187,6 +195,9 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/ImsConference;Lcom/android/services/telephony/TelephonyConnection;Ljava/util/List;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/ImsConference;
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Ljava/util/List;
 
     invoke-direct {p0, p1, p2}, Lcom/android/services/telephony/ImsConference;->handleConferenceParticipantsUpdate(Lcom/android/services/telephony/TelephonyConnection;Ljava/util/List;)V
 
@@ -195,6 +206,8 @@
 
 .method private createConferenceParticipantConnection(Lcom/android/services/telephony/TelephonyConnection;Landroid/telecom/ConferenceParticipant;)V
     .locals 5
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Landroid/telecom/ConferenceParticipant;
 
     new-instance v0, Lcom/android/services/telephony/ConferenceParticipantConnection;
 
@@ -308,6 +321,7 @@
 
 .method private handleConferenceParticipantsUpdate(Lcom/android/services/telephony/TelephonyConnection;Ljava/util/List;)V
     .locals 13
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -592,6 +606,7 @@
 
 .method private removeConferenceParticipant(Lcom/android/services/telephony/ConferenceParticipantConnection;)V
     .locals 3
+    .param p1    # Lcom/android/services/telephony/ConferenceParticipantConnection;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->VERBOSE:Z
 
@@ -629,6 +644,7 @@
 
 .method private setConferenceHost(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 2
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->VERBOSE:Z
 
@@ -769,6 +785,7 @@
 
 .method public onConnectionAdded(Landroid/telecom/Connection;)V
     .locals 0
+    .param p1    # Landroid/telecom/Connection;
 
     return-void
 .end method
@@ -840,6 +857,7 @@
 
 .method public onMerge(Landroid/telecom/Connection;)V
     .locals 4
+    .param p1    # Landroid/telecom/Connection;
 
     :try_start_0
     check-cast p1, Lcom/android/services/telephony/TelephonyConnection;
@@ -874,6 +892,7 @@
 
 .method public onPlayDtmfTone(C)V
     .locals 1
+    .param p1    # C
 
     iget-object v0, p0, Lcom/android/services/telephony/ImsConference;->mConferenceHost:Lcom/android/services/telephony/TelephonyConnection;
 
@@ -892,6 +911,7 @@
 
 .method public onSeparate(Landroid/telecom/Connection;)V
     .locals 2
+    .param p1    # Landroid/telecom/Connection;
 
     const-string v0, "Cannot separate connections from an IMS conference."
 
@@ -942,6 +962,7 @@
 
 .method public setState(I)V
     .locals 5
+    .param p1    # I
 
     const-string v1, "setState %s"
 

@@ -28,6 +28,7 @@
 
 .method private isWizardRunning(Landroid/content/Context;)Z
     .locals 10
+    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -267,6 +268,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x1
 

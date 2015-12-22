@@ -29,6 +29,7 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,6 +52,7 @@
 
 .method public static init(Landroid/content/Context;)Lcom/android/phone/ota/InCallUiState;
     .locals 4
+    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/phone/ota/InCallUiState;
 

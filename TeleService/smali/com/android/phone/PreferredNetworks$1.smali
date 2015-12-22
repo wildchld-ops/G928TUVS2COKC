@@ -33,6 +33,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
+    .param p1    # Landroid/os/Message;
 
     const v6, 0x7f0a04fb
 

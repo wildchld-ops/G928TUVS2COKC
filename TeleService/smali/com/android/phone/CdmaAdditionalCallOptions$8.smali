@@ -36,6 +36,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     sget-boolean v0, Lcom/android/phone/CdmaAdditionalCallOptions;->DBG:Z
 

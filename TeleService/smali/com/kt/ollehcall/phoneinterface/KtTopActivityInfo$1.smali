@@ -40,6 +40,7 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/kt/ollehcall/phoneinterface/KtTopActivityInfo;
     .locals 2
+    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/kt/ollehcall/phoneinterface/KtTopActivityInfo;
 
@@ -62,6 +63,7 @@
 
 .method public newArray(I)[Lcom/kt/ollehcall/phoneinterface/KtTopActivityInfo;
     .locals 1
+    .param p1    # I
 
     new-array v0, p1, [Lcom/kt/ollehcall/phoneinterface/KtTopActivityInfo;
 

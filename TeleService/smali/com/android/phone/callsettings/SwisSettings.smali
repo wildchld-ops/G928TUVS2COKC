@@ -163,6 +163,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/SwisSettings;)Landroid/net/ConnectivityManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/SwisSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SwisSettings;->mConnManager:Landroid/net/ConnectivityManager;
 
@@ -171,6 +172,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/SwisSettings;)Landroid/widget/Switch;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/SwisSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SwisSettings;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -179,6 +181,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/SwisSettings;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/SwisSettings;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SwisSettings;->updateLayout(Z)V
 
@@ -187,6 +191,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/SwisSettings;)[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/SwisSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SwisSettings;->resolutionEntry:[Ljava/lang/String;
 
@@ -195,6 +200,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/SwisSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/SwisSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SwisSettings;->mResolution:Landroid/preference/PreferenceScreen;
 
@@ -308,6 +314,7 @@
 
 .method private updateLayout(Z)V
     .locals 1
+    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -525,6 +532,9 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const-string v0, "SwisSettings"
 
@@ -591,6 +601,8 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
+    .param p1    # Landroid/widget/CompoundButton;
+    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -713,6 +725,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
+    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -732,6 +745,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -819,6 +833,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -868,6 +883,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     iget-object v2, p0, Lcom/android/phone/callsettings/SwisSettings;->mResolution:Landroid/preference/PreferenceScreen;
 

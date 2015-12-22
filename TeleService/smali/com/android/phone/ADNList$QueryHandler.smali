@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/ADNList;Landroid/content/ContentResolver;)V
     .locals 0
+    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 
@@ -33,6 +34,9 @@
 # virtual methods
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # I
 
     iget-object v0, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 
@@ -50,6 +54,9 @@
 
 .method protected onInsertComplete(ILjava/lang/Object;Landroid/net/Uri;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 
@@ -67,6 +74,9 @@
 
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # Landroid/database/Cursor;
 
     iget-object v0, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 
@@ -143,6 +153,9 @@
 
 .method protected onUpdateComplete(ILjava/lang/Object;I)V
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # I
 
     iget-object v0, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 

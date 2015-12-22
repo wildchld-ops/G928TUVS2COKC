@@ -59,6 +59,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/AutoRejectPreference;)[Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mAutoRejectModeInfo:[Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;
 
@@ -67,6 +68,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/AutoRejectPreference;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
 
     iget v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mListIndex:I
 
@@ -75,6 +77,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/AutoRejectPreference;I)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/AutoRejectPreference;->getValueFromIndex(I)I
 
@@ -85,6 +89,9 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/AutoRejectPreference;Ljava/lang/String;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/AutoRejectPreference;->setAutoRejectMode(Ljava/lang/String;I)V
 
@@ -93,6 +100,8 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/AutoRejectPreference;Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
+    .param p1    # Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/AutoRejectPreference;->updateSummary(Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;)V
 
@@ -101,6 +110,8 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/AutoRejectPreference;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/AutoRejectPreference;->log(Ljava/lang/String;)V
 
@@ -109,6 +120,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/AutoRejectPreference;)Lcom/android/phone/callsettings/KddiCBarring;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mCBarringKddi:Lcom/android/phone/callsettings/KddiCBarring;
 
@@ -117,6 +129,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/AutoRejectPreference;)Landroid/preference/SwitchPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/AutoRejectPreference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectPreference;->mRequestNubmerService:Landroid/preference/SwitchPreference;
 
@@ -158,6 +171,7 @@
 
 .method private getAutoRejectMode(Ljava/lang/String;)I
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -206,6 +220,7 @@
 
 .method private getAutoRejectModeInfo(I)Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -315,6 +330,7 @@
 
 .method private getIndexFromValue(Ljava/lang/String;)I
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -351,6 +367,7 @@
 
 .method private getValueFromIndex(I)I
     .locals 2
+    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -383,6 +400,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "AutoRejectPreference"
 
@@ -455,6 +473,8 @@
 
 .method private setAutoRejectMode(Ljava/lang/String;I)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/AutoRejectPreference;->getActivity()Landroid/app/Activity;
 
@@ -511,6 +531,7 @@
 
 .method private updateSummary(Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;)V
     .locals 6
+    .param p1    # Lcom/android/phone/callsettings/AutoRejectPreference$AutoRejectModeInfo;
 
     const/4 v5, 0x1
 
@@ -573,6 +594,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -789,6 +811,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -839,6 +862,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -925,6 +949,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -1012,6 +1038,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

@@ -32,6 +32,7 @@
 # virtual methods
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 8
+    .param p1    # Landroid/content/Intent;
 
     sget-object v4, Lcom/android/phone/edge/GlanceReplyIntentService;->LOG_TAG:Ljava/lang/String;
 

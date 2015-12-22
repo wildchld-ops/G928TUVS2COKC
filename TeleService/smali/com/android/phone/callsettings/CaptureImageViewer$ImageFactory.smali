@@ -26,6 +26,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/callsettings/CaptureImageViewer;Landroid/content/Context;)V
     .locals 0
+    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageFactory;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 

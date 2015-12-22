@@ -60,6 +60,7 @@
     <public type="attr" name="insideImg_gravity" id="0x7f010039" />
     <public type="attr" name="images" id="0x7f01003a" />
     <public type="attr" name="image" id="0x7f01003b" />
+    <public type="attr" name="viewLocation" id="0x7f01003c" />
     <public type="drawable" name="bg_help_button_nor" id="0x7f020022" />
     <public type="drawable" name="bg_popup" id="0x7f020024" />
     <public type="drawable" name="blur_mask" id="0x7f02002a" />
@@ -1767,6 +1768,12 @@
     <public type="drawable" name="tw_quick_panel_icon_nfc_card_off" id="0x7f020cb3" />
     <public type="drawable" name="tw_quick_panel_icon_nfc_card_dim" id="0x7f020cb4" />
     <public type="drawable" name="sub_keyguard_default_wallpaper" id="0x7f020cb5" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_01" id="0x7f020cbb" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_02" id="0x7f020cbc" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_03" id="0x7f020cbd" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_04" id="0x7f020cbe" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_05" id="0x7f020cbf" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_06" id="0x7f020cc0" />
     <public type="drawable" name="alert_ic" id="0x7f02000a" />
     <public type="drawable" name="analog_clock_preview_style1" id="0x7f02000b" />
     <public type="drawable" name="battery_low_battery" id="0x7f020014" />
@@ -2744,6 +2751,29 @@
     <public type="drawable" name="wifi_on_014" id="0x7f020944" />
     <public type="drawable" name="wifi_on_015" id="0x7f020945" />
     <public type="drawable" name="wifi_on_016" id="0x7f020946" />
+    <public type="drawable" name="tw_quick_panel_icon_cs_dim" id="0x7f020cb7" />
+    <public type="drawable" name="tw_quick_panel_icon_cs_off" id="0x7f020cb8" />
+    <public type="drawable" name="tw_quick_panel_icon_cs_on" id="0x7f020cb9" />
+    <public type="drawable" name="ic_notify_lock" id="0x7f020cba" />
+    <public type="drawable" name="ic_notify_recent" id="0x7f020cc1" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_focussed_01" id="0x7f020cc2" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_focussed_02" id="0x7f020cc3" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_focussed_03" id="0x7f020cc4" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_focussed_04" id="0x7f020cc5" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_focussed_05" id="0x7f020cc6" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_focussed_06" id="0x7f020cc7" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_normal_01" id="0x7f020cc8" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_normal_02" id="0x7f020cc9" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_normal_03" id="0x7f020cca" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_normal_04" id="0x7f020ccb" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_normal_05" id="0x7f020ccc" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_normal_06" id="0x7f020ccd" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_pressed_01" id="0x7f020cce" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_pressed_02" id="0x7f020ccf" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_pressed_03" id="0x7f020cd0" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_pressed_04" id="0x7f020cd1" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_pressed_05" id="0x7f020cd2" />
+    <public type="drawable" name="tw_quick_panel_quick_setting_button_round_bg_pressed_06" id="0x7f020cd3" />
     <public type="drawable" name="bg_protect" id="0x7f020025" />
     <public type="drawable" name="APKTOOL_DUMMY_0000" id="0x7f020000" />
     <public type="drawable" name="APKTOOL_DUMMY_0001" id="0x7f020001" />
@@ -3556,6 +3586,8 @@
     <public type="layout" name="zen_toast" id="0x7f0400f5" />
     <public type="layout" name="zen_toast_qpanel" id="0x7f0400f6" />
     <public type="layout" name="keyguard_eca" id="0x7f0400f7" />
+    <public type="layout" name="network_stats" id="0x7f0400f8" />
+    <public type="layout" name="network_statsr" id="0x7f0400f9" />
     <public type="layout" name="keyguard_host_view" id="0x7f040030" />
     <public type="layout" name="keyguard_widget_pager" id="0x7f040055" />
     <public type="layout" name="status_bar_recent_item" id="0x7f0400cb" />
@@ -4259,6 +4291,7 @@
     <public type="bool" name="config_enableDataSwitch" id="0x7f0b0034" />
     <public type="bool" name="config_recentsAppIsFullScreen" id="0x7f0b0035" />
     <public type="bool" name="config_show4GForLTE_ATO" id="0x7f0b0036" />
+    <public type="bool" name="text_clock_ampm_capable" id="0x7f0b0037" />
     <public type="bool" name="action_bar_embed_tabs" id="0x7f0b0012" />
     <public type="bool" name="kg_share_status_area" id="0x7f0b0013" />
     <public type="bool" name="kg_sim_puk_account_full_screen" id="0x7f0b0014" />
@@ -5573,6 +5606,7 @@
     <public type="dimen" name="player_z" id="0x7f0c0524" />
     <public type="dimen" name="player_z_boost" id="0x7f0c0525" />
     <public type="dimen" name="hud_z" id="0x7f0c0526" />
+    <public type="dimen" name="network_stats_text_size" id="0x7f0c052b" />
     <public type="dimen" name="kg_emergency_button_shift" id="0x7f0c02e8" />
     <public type="dimen" name="status_bar_recents_thumbnail_top_margin" id="0x7f0c050a" />
     <public type="dimen" name="sview_cover_unlock_area_unlock_circle_button_size" id="0x7f0c004a" />
@@ -6993,6 +7027,9 @@
     <public type="string" name="sub_screen_subhomesetting" id="0x7f0d057d" />
     <public type="string" name="toggle_Slider_high_brightness_mode_enabled" id="0x7f0d057e" />
     <public type="string" name="toggle_Slider_high_brightness_mode_disabled" id="0x7f0d057f" />
+    <public type="string" name="quickpanel_cs_text" id="0x7f0d058a" />
+    <public type="string" name="quickpanel_cs_content_description" id="0x7f0d058b" />
+    <public type="string" name="date_format" id="0x7f0d058c" />
     <public type="string" name="toast_rotation_locked" id="0x7f0d0580" />
     <public type="string" name="data_usage_mobile_limit_title" id="0x7f0d0581" />
     <public type="string" name="data_usage_disable_mobile_vzw_3" id="0x7f0d0582" />
@@ -8114,6 +8151,39 @@
     <public type="id" name="off" id="0x7f0e0454" />
     <public type="id" name="recent_remove_item" id="0x7f0e0455" />
     <public type="id" name="recent_inspect_item" id="0x7f0e0456" />
+    <public type="id" name="cpu" id="0x7f0e0457" />
+    <public type="id" name="traffic" id="0x7f0e0458" />
+    <public type="id" name="clear_btn" id="0x7f0e0459" />
+    <public type="id" name="toggle_holder" id="0x7f0e045a" />
+    <public type="id" name="slider_holder" id="0x7f0e045b" />
+    <public type="id" name="scroll_holder" id="0x7f0e045c" />
+    <public type="id" name="bytes_tx" id="0x7f0e045d" />
+    <public type="id" name="bytes_rx" id="0x7f0e045e" />
+    <public type="id" name="gradient" id="0x7f0e045f" />
+    <public type="id" name="vpn" id="0x7f0e0460" />
+    <public type="id" name="tickerid1" id="0x7f0e0461" />
+    <public type="id" name="tickerid2" id="0x7f0e0462" />
+    <public type="id" name="closenew" id="0x7f0e0463" />
+    <public type="id" name="btn_image_bg" id="0x7f0e0464" />
+    <public type="id" name="btn_image_bg1" id="0x7f0e0465" />
+    <public type="id" name="btn_image_bg2" id="0x7f0e0466" />
+    <public type="id" name="btn_image_bg3" id="0x7f0e0467" />
+    <public type="id" name="btn_image_bg4" id="0x7f0e0468" />
+    <public type="id" name="viewImage1" id="0x7f0e0469" />
+    <public type="id" name="viewImage2" id="0x7f0e046a" />
+    <public type="id" name="viewImage3" id="0x7f0e046b" />
+    <public type="id" name="viewImage4" id="0x7f0e046c" />
+    <public type="id" name="viewImage5" id="0x7f0e046d" />
+    <public type="id" name="viewImage6" id="0x7f0e046e" />
+    <public type="id" name="viewImage7" id="0x7f0e046f" />
+    <public type="id" name="viewImage8" id="0x7f0e0470" />
+    <public type="id" name="viewImage9" id="0x7f0e0471" />
+    <public type="id" name="viewImage10" id="0x7f0e0472" />
+    <public type="id" name="viewImage11" id="0x7f0e0473" />
+    <public type="id" name="notiitem_wallpaper" id="0x7f0e0474" />
+    <public type="id" name="status_bar_carrier_label" id="0x7f0e0475" />
+    <public type="id" name="clock_center" id="0x7f0e0476" />
+    <public type="id" name="hide_battery" id="0x7f0e0477" />
     <public type="integer" name="sview_cover_hide_duration" id="0x7f0f0000" />
     <public type="integer" name="battery_button_padding" id="0x7f0f0001" />
     <public type="integer" name="sview_cover_wallpaper_custom_index" id="0x7f0f0002" />
@@ -8295,6 +8365,10 @@
     <public type="style" name="QSEditSummary" id="0x7f100055" />
     <public type="style" name="NotificationGutsTitle" id="0x7f100056" />
     <public type="style" name="NotificationGutsTime" id="0x7f100057" />
+    <public type="style" name="TextAppearance.StatusBar.Traffic" id="0x7f100059" />
+    <public type="style" name="TextAppearance.StatusBar.NetworkStats" id="0x7f10005a" />
+    <public type="style" name="ClockFontStyle" id="0x7f10005b" />
+    <public type="style" name="DateFontStyle" id="0x7f10005c" />
     <public type="style" name="Theme.SystemUI.Dialog.Alert" id="0x7f100058" />
     <public type="plurals" name="kg_password_wrong_pin_code" id="0x7f110000" />
     <public type="plurals" name="kg_password_wrong_puk_code" id="0x7f110001" />

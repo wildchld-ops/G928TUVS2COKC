@@ -31,6 +31,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/telephony/Phone;)V
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     const/4 v2, 0x0
 
@@ -63,6 +64,7 @@
 
 .method public constructor <init>(Lcom/samsung/android/sec_platform_library/FactoryPhone;)V
     .locals 3
+    .param p1    # Lcom/samsung/android/sec_platform_library/FactoryPhone;
 
     const/4 v2, 0x0
 
@@ -95,6 +97,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;)Lcom/samsung/android/sec_platform_library/FactoryPhone;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;->fphone:Lcom/samsung/android/sec_platform_library/FactoryPhone;
 
@@ -103,6 +106,8 @@
 
 .method static synthetic access$1502(Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;->mResult:Ljava/lang/String;
 
@@ -111,6 +116,8 @@
 
 .method static synthetic access$1602(Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$CommToRILThread;->mDone:Z
 
@@ -121,6 +128,8 @@
 # virtual methods
 .method declared-synchronized getInfo(II)Ljava/lang/String;
     .locals 8
+    .param p1    # I
+    .param p2    # I
 
     monitor-enter p0
 
@@ -360,6 +369,9 @@
 
 .method declared-synchronized getInfo(II[B)Ljava/lang/String;
     .locals 8
+    .param p1    # I
+    .param p2    # I
+    .param p3    # [B
 
     monitor-enter p0
 

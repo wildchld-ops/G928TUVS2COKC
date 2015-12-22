@@ -19,6 +19,8 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -81,6 +83,7 @@
 
 .method public setChecked(Z)V
     .locals 1
+    .param p1    # Z
 
     iget v0, p0, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->checkableId:I
 

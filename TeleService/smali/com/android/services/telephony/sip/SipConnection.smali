@@ -42,6 +42,8 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/sip/SipConnection;Z)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipConnection;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipConnection;->updateState(Z)V
 
@@ -105,6 +107,7 @@
 
 .method private static getAddressFromNumber(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -204,6 +207,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -324,6 +328,7 @@
 
 .method private updateState(Z)V
     .locals 3
+    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipConnection;->mOriginalConnection:Lcom/android/internal/telephony/Connection;
 
@@ -449,6 +454,7 @@
 
 .method initialize(Lcom/android/internal/telephony/Connection;)V
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     iput-object p1, p0, Lcom/android/services/telephony/sip/SipConnection;->mOriginalConnection:Lcom/android/internal/telephony/Connection;
 
@@ -521,6 +527,7 @@
 
 .method public onAnswer(I)V
     .locals 3
+    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/services/telephony/sip/SipConnection;->isValidRingingCall()Z
@@ -575,6 +582,7 @@
 
 .method public onAudioStateChanged(Landroid/telecom/AudioState;)V
     .locals 1
+    .param p1    # Landroid/telecom/AudioState;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/sip/SipConnection;->getPhone()Lcom/android/internal/telephony/sip/SipPhone;
 
@@ -719,6 +727,7 @@
 
 .method public onPlayDtmfTone(C)V
     .locals 1
+    .param p1    # C
 
     invoke-virtual {p0}, Lcom/android/services/telephony/sip/SipConnection;->getPhone()Lcom/android/internal/telephony/sip/SipPhone;
 
@@ -738,6 +747,7 @@
 
 .method public onPostDialContinue(Z)V
     .locals 0
+    .param p1    # Z
 
     return-void
 .end method
@@ -842,6 +852,7 @@
 
 .method public onStateChanged(I)V
     .locals 0
+    .param p1    # I
 
     return-void
 .end method
@@ -923,6 +934,7 @@
 
 .method updateCallCapabilities(Z)V
     .locals 2
+    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/services/telephony/sip/SipConnection;->buildCallCapabilities()I
 

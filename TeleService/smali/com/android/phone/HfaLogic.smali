@@ -48,6 +48,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/phone/HfaLogic$HfaLogicCallback;Landroid/app/PendingIntent;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Lcom/android/phone/HfaLogic$HfaLogicCallback;
+    .param p3    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,6 +87,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/HfaLogic;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaLogic;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/HfaLogic;->onHfaError(Ljava/lang/String;)V
 
@@ -100,6 +105,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/HfaLogic;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaLogic;
 
     invoke-direct {p0}, Lcom/android/phone/HfaLogic;->onHfaSuccess()V
 
@@ -108,6 +114,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/HfaLogic;Landroid/telephony/ServiceState;)V
     .locals 0
+    .param p0    # Lcom/android/phone/HfaLogic;
+    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1}, Lcom/android/phone/HfaLogic;->onServiceStateChange(Landroid/telephony/ServiceState;)V
 
@@ -116,6 +124,7 @@
 
 .method private onHfaError(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/HfaLogic;->TAG:Ljava/lang/String;
 
@@ -214,6 +223,7 @@
 
 .method private onServiceStateChange(Landroid/telephony/ServiceState;)V
     .locals 8
+    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v7, 0x2
 
@@ -331,6 +341,8 @@
 
 .method private sendFinalResponse(ILjava/lang/String;)V
     .locals 5
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/phone/HfaLogic;->mResponseIntent:Landroid/app/PendingIntent;
 
@@ -406,6 +418,7 @@
 
 .method private sendHfaCommand(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/HfaLogic;->TAG:Ljava/lang/String;
 

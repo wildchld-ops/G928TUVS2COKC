@@ -25,6 +25,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/CallFeaturesSetting;Ljava/lang/String;Landroid/content/Intent;)V
     .locals 0
+    .param p2    # Ljava/lang/String;
+    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/phone/CallFeaturesSetting$VoiceMailProvider;->this$0:Lcom/android/phone/CallFeaturesSetting;
 

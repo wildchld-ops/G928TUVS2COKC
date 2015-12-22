@@ -25,6 +25,7 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/ATCommandReceiver$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/ATCommandReceiver$1;
 
     invoke-direct {p0}, Lcom/android/phone/ATCommandReceiver$MyHandler;-><init>()V
 
@@ -33,6 +34,7 @@
 
 .method private handleGetCFResponse(Landroid/os/Message;)V
     .locals 9
+    .param p1    # Landroid/os/Message;
 
     const/16 v8, 0x22
 
@@ -256,6 +258,7 @@
 
 .method private handleGetCallWaitingResponse(Landroid/os/Message;)V
     .locals 7
+    .param p1    # Landroid/os/Message;
 
     const/4 v6, 0x0
 
@@ -395,6 +398,7 @@
 
 .method private handleSetCFResponse(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -455,6 +459,7 @@
 
 .method private handleSetCallWaitingResponse(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -517,6 +522,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

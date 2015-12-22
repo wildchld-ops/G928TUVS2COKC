@@ -36,6 +36,8 @@
 # virtual methods
 .method public onReceive(ILjava/lang/String;)V
     .locals 6
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

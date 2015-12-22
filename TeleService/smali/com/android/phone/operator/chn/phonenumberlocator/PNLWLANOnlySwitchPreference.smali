@@ -12,6 +12,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -22,6 +23,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101036d
 
@@ -32,6 +35,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -46,6 +52,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;->writeFlag:Z
 
@@ -54,6 +62,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;->writeChargesNotificationPrefrence()V
 
@@ -62,6 +71,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PNLWLANOnlySwitchPreference;->userConfirmClick()V
 

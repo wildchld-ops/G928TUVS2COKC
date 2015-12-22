@@ -10,6 +10,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
 
@@ -20,6 +21,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,6 +33,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/InCallSoundEQListPreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/InCallSoundEQListPreference;
 
     invoke-direct {p0}, Lcom/android/phone/InCallSoundEQListPreference;->goMySound()V
 
@@ -38,6 +42,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/InCallSoundEQListPreference;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/InCallSoundEQListPreference;
 
     iget-object v0, p0, Lcom/android/phone/InCallSoundEQListPreference;->mContext:Landroid/content/Context;
 
@@ -46,6 +51,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/InCallSoundEQListPreference;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/InCallSoundEQListPreference;
 
     invoke-direct {p0}, Lcom/android/phone/InCallSoundEQListPreference;->isOffHook()Z
 
@@ -56,6 +62,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/InCallSoundEQListPreference;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/InCallSoundEQListPreference;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/InCallSoundEQListPreference;->showDisableSoundEQPopup(I)V
 
@@ -64,6 +72,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/InCallSoundEQListPreference;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/InCallSoundEQListPreference;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/InCallSoundEQListPreference;->checkingDiagnosis(I)V
 
@@ -72,6 +82,7 @@
 
 .method private checkingDiagnosis(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -221,6 +232,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "InCallSoundEQListPreference"
 
@@ -243,6 +256,7 @@
 
 .method private showDisableSoundEQPopup(I)V
     .locals 4
+    .param p1    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -281,6 +295,7 @@
 # virtual methods
 .method protected onDialogClosed(Z)V
     .locals 2
+    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
@@ -307,6 +322,7 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
+    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
@@ -340,6 +356,7 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isPossibleEnableMySound()Z
 

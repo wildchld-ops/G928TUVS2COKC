@@ -122,6 +122,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/CarrierManager;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CarrierManager;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CarrierManager;->onIncomingModifyCall(Landroid/os/AsyncResult;)V
 
@@ -130,6 +132,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/CarrierManager;)Lcom/samsung/android/sdk/cover/ScoverState;
     .locals 1
+    .param p0    # Lcom/android/phone/CarrierManager;
 
     iget-object v0, p0, Lcom/android/phone/CarrierManager;->coverState:Lcom/samsung/android/sdk/cover/ScoverState;
 
@@ -138,6 +141,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/CarrierManager;Lcom/samsung/android/sdk/cover/ScoverState;)Lcom/samsung/android/sdk/cover/ScoverState;
     .locals 0
+    .param p0    # Lcom/android/phone/CarrierManager;
+    .param p1    # Lcom/samsung/android/sdk/cover/ScoverState;
 
     iput-object p1, p0, Lcom/android/phone/CarrierManager;->coverState:Lcom/samsung/android/sdk/cover/ScoverState;
 
@@ -146,6 +151,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/CarrierManager;)Lcom/samsung/android/sdk/cover/ScoverManager;
     .locals 1
+    .param p0    # Lcom/android/phone/CarrierManager;
 
     iget-object v0, p0, Lcom/android/phone/CarrierManager;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
 
@@ -154,6 +160,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/CarrierManager;Lcom/skt/prod/phone/ITInCallScreen;)Lcom/skt/prod/phone/ITInCallScreen;
     .locals 0
+    .param p0    # Lcom/android/phone/CarrierManager;
+    .param p1    # Lcom/skt/prod/phone/ITInCallScreen;
 
     iput-object p1, p0, Lcom/android/phone/CarrierManager;->mTInCallScreen:Lcom/skt/prod/phone/ITInCallScreen;
 
@@ -162,6 +170,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/CarrierManager;)Lcom/android/internal/telephony/CallManager;
     .locals 1
+    .param p0    # Lcom/android/phone/CarrierManager;
 
     iget-object v0, p0, Lcom/android/phone/CarrierManager;->cm:Lcom/android/internal/telephony/CallManager;
 
@@ -170,6 +179,7 @@
 
 .method static synthetic access$500(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/CarrierManager;->log(Ljava/lang/String;)V
 
@@ -178,6 +188,8 @@
 
 .method static synthetic access$602(Lcom/android/phone/CarrierManager;Lcom/kt/ollehcall/phoneinterface/ICallKtClientService;)Lcom/kt/ollehcall/phoneinterface/ICallKtClientService;
     .locals 0
+    .param p0    # Lcom/android/phone/CarrierManager;
+    .param p1    # Lcom/kt/ollehcall/phoneinterface/ICallKtClientService;
 
     iput-object p1, p0, Lcom/android/phone/CarrierManager;->mICallKtClientService:Lcom/kt/ollehcall/phoneinterface/ICallKtClientService;
 
@@ -224,6 +236,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "[carrier-phone] CarrierManager"
 
@@ -238,6 +251,8 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 4
+    .param p0    # Ljava/lang/String;
+    .param p1    # Z
 
     const-string v0, "[carrier-phone] CarrierManager"
 
@@ -260,6 +275,7 @@
 
 .method private onIncomingModifyCall(Landroid/os/AsyncResult;)V
     .locals 6
+    .param p1    # Landroid/os/AsyncResult;
 
     :try_start_0
     iget-object v0, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
@@ -815,6 +831,7 @@
 
 .method public displayOllehPhone(I)V
     .locals 1
+    .param p1    # I
 
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/android/phone/CarrierManager;->startOllehPhone(I)V
@@ -834,6 +851,7 @@
 
 .method public displayTPhone(I)V
     .locals 2
+    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -855,6 +873,8 @@
 
 .method public getCallFilterType(Ljava/lang/String;I)I
     .locals 7
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -939,6 +959,7 @@
 
 .method public getRejectCallType(Ljava/lang/String;)I
     .locals 7
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1048,6 +1069,7 @@
 
 .method public getRingtoneUri(Lcom/skt/prod/phone/TCall;)Ljava/lang/String;
     .locals 7
+    .param p1    # Lcom/skt/prod/phone/TCall;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1409,6 +1431,7 @@
 
 .method public setCallFilterType(Lcom/android/internal/telephony/Connection;)V
     .locals 7
+    .param p1    # Lcom/android/internal/telephony/Connection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1547,6 +1570,7 @@
 
 .method public setRejectCallType(Lcom/android/internal/telephony/Connection;)V
     .locals 7
+    .param p1    # Lcom/android/internal/telephony/Connection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1681,6 +1705,7 @@
 
 .method public startOllehPhone(I)V
     .locals 6
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1758,6 +1783,8 @@
 
 .method public startTPhone(ILjava/lang/String;)V
     .locals 6
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

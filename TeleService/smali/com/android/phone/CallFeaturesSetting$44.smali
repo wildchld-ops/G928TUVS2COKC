@@ -36,6 +36,8 @@
 # virtual methods
 .method public onItemSelected(ILjava/lang/Object;)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Integer;
 

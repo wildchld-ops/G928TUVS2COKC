@@ -90,6 +90,10 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/TelephonyConnectionService;Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/TelephonyConnectionService;
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Lcom/android/internal/telephony/Phone;
+    .param p3    # Landroid/telecom/ConnectionRequest;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/services/telephony/TelephonyConnectionService;->placeOutgoingConnection(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)V
 
@@ -98,6 +102,7 @@
 
 .method private allowMute(Lcom/android/internal/telephony/Phone;)Z
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     invoke-interface {p1}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
 
@@ -138,6 +143,10 @@
 
 .method private createConnectionFor(Lcom/android/internal/telephony/Phone;Lcom/android/internal/telephony/Connection;ZLandroid/telecom/ConnectionRequest;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 5
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Lcom/android/internal/telephony/Connection;
+    .param p3    # Z
+    .param p4    # Landroid/telecom/ConnectionRequest;
 
     const/4 v2, 0x0
 
@@ -434,6 +443,7 @@
 
 .method private ignoreEmergencyCallHelper(I)Z
     .locals 2
+    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -470,6 +480,7 @@
 
 .method private isOriginalConnectionKnown(Lcom/android/internal/telephony/Connection;)Z
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/TelephonyConnectionService;->getAllConnections()Ljava/util/Collection;
 
@@ -519,6 +530,7 @@
 
 .method static isPhoneInEcm(Lcom/android/internal/telephony/Phone;)Z
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Phone;
 
     if-eqz p0, :cond_0
 
@@ -553,6 +565,9 @@
 
 .method private placeOutgoingConnection(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)V
     .locals 8
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Lcom/android/internal/telephony/Phone;
+    .param p3    # Landroid/telecom/ConnectionRequest;
 
     const/4 v7, 0x0
 
@@ -687,6 +702,7 @@
 # virtual methods
 .method public addConnectionToConferenceController(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 2
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     invoke-virtual {p1}, Lcom/android/services/telephony/TelephonyConnection;->isImsConnection()Z
 
@@ -772,6 +788,8 @@
 
 .method public getPhoneForAccount(Landroid/telecom/PhoneAccountHandle;Z)Lcom/android/internal/telephony/Phone;
     .locals 5
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
+    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -974,6 +992,7 @@
 
 .method public getTelephonyConnection(Lcom/android/internal/telephony/Connection;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     if-eqz p1, :cond_1
 
@@ -1023,6 +1042,7 @@
 
 .method public getTelephonyConnection(Ljava/lang/String;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -1082,6 +1102,8 @@
 
 .method public onConference(Landroid/telecom/Connection;Landroid/telecom/Connection;)V
     .locals 1
+    .param p1    # Landroid/telecom/Connection;
+    .param p2    # Landroid/telecom/Connection;
 
     instance-of v0, p1, Lcom/android/services/telephony/TelephonyConnection;
 
@@ -1154,6 +1176,8 @@
 
 .method public onCreateIncomingConnection(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;
     .locals 7
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/4 v6, 0x0
 
@@ -1315,6 +1339,8 @@
 
 .method public onCreateOutgoingConnection(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;
     .locals 36
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     new-instance v32, Ljava/lang/StringBuilder;
 
@@ -3082,6 +3108,8 @@
 
 .method public onCreateUnknownConnection(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;
     .locals 12
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/4 v9, 0x0
 
@@ -3264,6 +3292,7 @@
 
 .method public removeConnection(Landroid/telecom/Connection;)V
     .locals 2
+    .param p1    # Landroid/telecom/Connection;
 
     invoke-super {p0, p1}, Landroid/telecom/ConnectionService;->removeConnection(Landroid/telecom/Connection;)V
 

@@ -20,6 +20,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/InCallSoundEQPreference;)Landroid/preference/ListPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference;->mVoiceCallEqListSetting:Landroid/preference/ListPreference;
 
@@ -28,6 +29,9 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/InCallSoundEQPreference;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/InCallSoundEQPreference;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->log(Ljava/lang/String;Z)V
 
@@ -36,6 +40,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "InCallSoundEQPreference"
 
@@ -115,6 +121,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -168,6 +175,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -214,6 +222,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

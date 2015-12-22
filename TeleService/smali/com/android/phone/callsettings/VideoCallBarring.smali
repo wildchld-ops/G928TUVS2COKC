@@ -238,6 +238,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/VideoCallBarring;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mIsVoLTE:Z
 
@@ -246,6 +247,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/VideoCallBarring;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->callbarring_password:Ljava/lang/String;
 
@@ -254,6 +256,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mNewPassword:Landroid/widget/EditText;
 
@@ -262,6 +265,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/VideoCallBarring;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->callbarring_password:Ljava/lang/String;
 
@@ -270,6 +275,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
@@ -278,6 +284,11 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/VideoCallBarring;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/phone/callsettings/VideoCallBarring;->changePasswordCallBarring(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -286,6 +297,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -294,6 +306,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/callsettings/VideoCallBarring;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mVCB_Checked:Z
 
@@ -302,6 +315,7 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->handler:Landroid/os/Handler;
 
@@ -310,6 +324,8 @@
 
 .method static synthetic access$1600(Lcom/android/phone/callsettings/VideoCallBarring;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/VideoCallBarring;->enableClick(Z)V
 
@@ -318,6 +334,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mDialog:Landroid/app/AlertDialog;
 
@@ -326,6 +343,7 @@
 
 .method static synthetic access$1800(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -334,6 +352,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -342,6 +361,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/VideoCallBarring;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/VideoCallBarring;->displayToast(Ljava/lang/String;)V
 
@@ -350,6 +371,9 @@
 
 .method static synthetic access$2000(Lcom/android/phone/callsettings/VideoCallBarring;Landroid/os/AsyncResult;I)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/VideoCallBarring;->handleSetCBMessage(Landroid/os/AsyncResult;I)I
 
@@ -360,6 +384,8 @@
 
 .method static synthetic access$2100(Lcom/android/phone/callsettings/VideoCallBarring;Lcom/android/phone/callsettings/VideoCallBarring$AppState;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Lcom/android/phone/callsettings/VideoCallBarring$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -373,6 +399,9 @@
 
 .method static synthetic access$2200(Lcom/android/phone/callsettings/VideoCallBarring;Lcom/android/phone/callsettings/VideoCallBarring$AppState;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Lcom/android/phone/callsettings/VideoCallBarring$AppState;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -386,6 +415,8 @@
 
 .method static synthetic access$2300(Lcom/android/phone/callsettings/VideoCallBarring;Landroid/os/AsyncResult;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/VideoCallBarring;->handleQueryCBMessage(Landroid/os/AsyncResult;)I
 
@@ -396,6 +427,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/callsettings/VideoCallBarring;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mCheckAllCB:Z
 
@@ -404,6 +436,8 @@
 
 .method static synthetic access$2402(Lcom/android/phone/callsettings/VideoCallBarring;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mCheckAllCB:Z
 
@@ -420,6 +454,7 @@
 
 .method static synthetic access$2600(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/callsettings/VideoCallBarring;->log(Ljava/lang/String;)V
 
@@ -428,6 +463,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/callsettings/VideoCallBarring;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -436,6 +472,7 @@
 
 .method static synthetic access$2800(Lcom/android/phone/callsettings/VideoCallBarring;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/VideoCallBarring;->dismissCallWaiting()V
 
@@ -444,6 +481,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/callsettings/VideoCallBarring;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mOldPW:Z
 
@@ -452,6 +490,8 @@
 
 .method static synthetic access$2902(Lcom/android/phone/callsettings/VideoCallBarring;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mOldPW:Z
 
@@ -460,6 +500,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/callsettings/VideoCallBarring;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mNewPW:Z
 
@@ -468,6 +509,8 @@
 
 .method static synthetic access$3002(Lcom/android/phone/callsettings/VideoCallBarring;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mNewPW:Z
 
@@ -476,6 +519,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/callsettings/VideoCallBarring;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mSkipCallBarringReq:Z
 
@@ -484,6 +529,7 @@
 
 .method static synthetic access$3100(Lcom/android/phone/callsettings/VideoCallBarring;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mConfirmPW:Z
 
@@ -492,6 +538,8 @@
 
 .method static synthetic access$3102(Lcom/android/phone/callsettings/VideoCallBarring;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mConfirmPW:Z
 
@@ -500,6 +548,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->passwordDialog:Landroid/app/AlertDialog;
 
@@ -508,6 +557,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/VideoCallBarring;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mSelectedIndex:I
 
@@ -516,6 +566,8 @@
 
 .method static synthetic access$402(Lcom/android/phone/callsettings/VideoCallBarring;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mSelectedIndex:I
 
@@ -524,6 +576,7 @@
 
 .method static synthetic access$408(Lcom/android/phone/callsettings/VideoCallBarring;)I
     .locals 2
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mSelectedIndex:I
 
@@ -536,6 +589,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/VideoCallBarring;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mMeterialPreference:Ljava/util/ArrayList;
 
@@ -544,6 +598,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/VideoCallBarring;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
@@ -552,6 +607,8 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/VideoCallBarring;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/VideoCallBarring;->setCallBarring(I)V
 
@@ -560,6 +617,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/VideoCallBarring;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/VideoCallBarring;->getCallBarring()V
 
@@ -568,6 +626,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/VideoCallBarring;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/VideoCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mOldPassword:Landroid/widget/EditText;
 
@@ -576,6 +635,10 @@
 
 .method private changePasswordCallBarring(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/VideoCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -846,6 +909,7 @@
 
 .method private checkPassword(Landroid/app/Dialog;)Z
     .locals 8
+    .param p1    # Landroid/app/Dialog;
 
     const/4 v7, 0x4
 
@@ -1152,6 +1216,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/VideoCallBarring;->getActivity()Landroid/app/Activity;
 
@@ -1170,6 +1235,7 @@
 
 .method private enableClick(Z)V
     .locals 1
+    .param p1    # Z
 
     const-string v0, "menu_simplification"
 
@@ -1543,6 +1609,7 @@
 
 .method private handleQueryCBMessage(Landroid/os/AsyncResult;)I
     .locals 10
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v9, 0x4
 
@@ -2110,6 +2177,8 @@
 
 .method private handleSetCBMessage(Landroid/os/AsyncResult;I)I
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # I
 
     const/16 v2, 0xc8
 
@@ -2296,6 +2365,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "## VideoCallBarring ##"
 
@@ -2364,6 +2434,10 @@
 
 .method private requestCBChangePassword(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     const-string v1, "AB"
 
@@ -2498,6 +2572,7 @@
 
 .method private requestCBSetCommand(I)V
     .locals 9
+    .param p1    # I
 
     iget-object v3, p0, Lcom/android/phone/callsettings/VideoCallBarring;->callbarring_password:Ljava/lang/String;
 
@@ -2611,6 +2686,7 @@
 
 .method private setAppState(Lcom/android/phone/callsettings/VideoCallBarring$AppState;)V
     .locals 2
+    .param p1    # Lcom/android/phone/callsettings/VideoCallBarring$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -2648,6 +2724,8 @@
 
 .method private setAppState(Lcom/android/phone/callsettings/VideoCallBarring$AppState;I)V
     .locals 8
+    .param p1    # Lcom/android/phone/callsettings/VideoCallBarring$AppState;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -3274,6 +3352,7 @@
 
 .method private setCallBarring(I)V
     .locals 5
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/VideoCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -3544,6 +3623,8 @@
 
 .method private showError(Landroid/app/Dialog;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Landroid/app/Dialog;
+    .param p2    # Ljava/lang/String;
 
     const v1, 0x7f10003f
 
@@ -3687,6 +3768,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -3707,6 +3790,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x3
 
@@ -4242,6 +4326,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 11
+    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -4593,6 +4678,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x1
 
@@ -4645,6 +4732,7 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
+    .param p1    # Landroid/content/DialogInterface;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/VideoCallBarring;->mPwdChangeSubmit:Z
 
@@ -4680,6 +4768,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -4735,6 +4824,8 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 6
+    .param p1    # Landroid/content/SharedPreferences;
+    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

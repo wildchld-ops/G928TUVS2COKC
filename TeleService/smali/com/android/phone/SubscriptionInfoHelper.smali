@@ -20,6 +20,8 @@
 
 .method public static addExtrasToIntent(Landroid/content/Intent;Landroid/telephony/SubscriptionInfo;)V
     .locals 2
+    .param p0    # Landroid/content/Intent;
+    .param p1    # Landroid/telephony/SubscriptionInfo;
 
     if-nez p1, :cond_0
 

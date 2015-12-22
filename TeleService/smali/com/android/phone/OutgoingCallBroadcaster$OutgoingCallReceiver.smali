@@ -33,6 +33,8 @@
 # virtual methods
 .method public doReceive(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 13
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x1
 
@@ -343,6 +345,8 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/android/phone/OutgoingCallBroadcaster$OutgoingCallReceiver;->this$0:Lcom/android/phone/OutgoingCallBroadcaster;
 

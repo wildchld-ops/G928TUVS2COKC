@@ -1537,23 +1537,44 @@
 .end method
 
 .method public handleLongPressOnRecent()Z
-    .locals 8
+    .locals 11
 
     const/4 v4, 0x0
 
+    const/4 v0, 0x0
+
+    const v8, 0x0
+
+    iget-object v9, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v9, v8}, Lcom/android/internal/policy/impl/PhoneWindowManager;->getKeyStatePub(I)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_0
+
+    const v8, 0x0
+
+    iget-object v9, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v9, v8}, Lcom/android/internal/policy/impl/PhoneWindowManager;->customKeyPressPub(I)V
+
+    goto/16 :goto_0
+
+    :cond_0
     iget-object v5, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->isSupportSimplificationUI(Landroid/content/Context;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_3
+    if-eqz v5, :cond_4
 
     invoke-static {}, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->isVzwSetupRunning()Z
 
     move-result v5
 
-    if-nez v5, :cond_3
+    if-nez v5, :cond_4
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->isDeviceProvisioned()Z
 
@@ -1571,24 +1592,24 @@
 
     iget v5, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mEnableMultiWindowUISetting:I
 
-    if-eqz v5, :cond_0
+    if-eqz v5, :cond_1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->isUserSetupComplete()Z
 
     move-result v5
 
-    if-eqz v5, :cond_0
+    if-eqz v5, :cond_1
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_5
 
-    :cond_0
+    :cond_1
     const-string v2, "RecentsMultiWindow couldn\'t execute"
 
     sget-boolean v5, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->SAFE_DEBUG:Z
 
-    if-eqz v5, :cond_1
+    if-eqz v5, :cond_2
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1638,12 +1659,12 @@
 
     move-result-object v2
 
-    :cond_1
+    :cond_2
     iget-object v5, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iget-boolean v5, v5, Lcom/android/internal/policy/impl/PhoneWindowManager;->mMobileKeyboardEnabled:Z
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_3
 
     new-instance v0, Landroid/os/Handler;
 
@@ -1661,16 +1682,16 @@
 
     invoke-virtual {v0, v5, v6, v7}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    :cond_2
+    :cond_3
     const-string v5, "MultiPhoneWindowManager"
 
     invoke-static {v5, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3
+    :cond_4
     :goto_0
     return v4
 
-    :cond_4
+    :cond_5
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mContext:Landroid/content/Context;
 
     iget-object v5, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
@@ -1825,7 +1846,7 @@
 .end method
 
 .method public interceptKeyBeforeDispatching(ZIZLandroid/view/WindowManagerPolicy$WindowState;)I
-    .locals 6
+    .locals 10
 
     const/4 v1, 0x0
 
@@ -1844,26 +1865,46 @@
     return v1
 
     :cond_1
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_5
 
-    iget v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mEnableMultiWindowUISetting:I
+    const v3, 0x1
 
     if-eqz v3, :cond_0
 
     const/4 v3, 0x7
 
-    if-ne p2, v3, :cond_3
+    if-ne p2, v3, :cond_4
 
-    if-nez p3, :cond_3
+    if-nez p3, :cond_4
 
     iget-boolean v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mIsTrayBarUI:Z
 
-    if-eqz v3, :cond_3
+    const v8, 0x2
 
+    iget-object v9, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v9, v8}, Lcom/android/internal/policy/impl/PhoneWindowManager;->getKeyStatePub(I)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_2
+
+    const v8, 0x2
+
+    iget-object v9, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v9, v8}, Lcom/android/internal/policy/impl/PhoneWindowManager;->customKeyPressPub(I)V
+
+    const v3, 0x1
+
+    goto :goto_1
+
+    :cond_2
     invoke-virtual {p0, p4}, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->toggleMultiWindowTray(Landroid/view/WindowManagerPolicy$WindowState;)Z
 
     move-result v3
 
+    :goto_1
     iput-boolean v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mConsumeBackKeyUp:Z
 
     const-string v3, "MultiPhoneWindowManager"
@@ -1892,7 +1933,7 @@
 
     iget-boolean v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mConsumeBackKeyUp:Z
 
-    if-nez v3, :cond_2
+    if-nez v3, :cond_3
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mPhoneWindowManager:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -1902,12 +1943,12 @@
 
     if-nez v3, :cond_0
 
-    :cond_2
+    :cond_3
     move v1, v2
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     iget-boolean v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mConsumeBackKeyUp:Z
 
     if-eqz v3, :cond_0
@@ -1918,7 +1959,7 @@
 
     goto :goto_0
 
-    :cond_4
+    :cond_5
     iget v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mEnableMultiWindowUISetting:I
 
     if-eqz v3, :cond_0
@@ -1931,7 +1972,7 @@
 
     iget-boolean v3, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mConsumeBackKeyUp:Z
 
-    if-eqz v3, :cond_5
+    if-eqz v3, :cond_6
 
     iput-boolean v1, p0, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->mConsumeBackKeyUp:Z
 
@@ -1939,7 +1980,7 @@
 
     goto :goto_0
 
-    :cond_5
+    :cond_6
     const/4 v3, 0x1
 
     invoke-virtual {p0, v3}, Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;->closeMultiWindowTrayBar(Z)Z
@@ -1962,7 +2003,7 @@
 
     move v1, v2
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method
 
 .method public isEnabledTalkback()Z

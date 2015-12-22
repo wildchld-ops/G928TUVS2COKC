@@ -33,6 +33,7 @@
 # virtual methods
 .method public onAudioQualityChanged(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection$3;->this$0:Lcom/android/services/telephony/TelephonyConnection;
 
@@ -63,6 +64,7 @@
 
 .method public onLocalVideoCapabilityChanged(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection$3;->this$0:Lcom/android/services/telephony/TelephonyConnection;
 
@@ -73,6 +75,7 @@
 
 .method public onRemoteVideoCapabilityChanged(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection$3;->this$0:Lcom/android/services/telephony/TelephonyConnection;
 
@@ -83,6 +86,7 @@
 
 .method public onVideoProviderChanged(Landroid/telecom/Connection$VideoProvider;)V
     .locals 1
+    .param p1    # Landroid/telecom/Connection$VideoProvider;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection$3;->this$0:Lcom/android/services/telephony/TelephonyConnection;
 
@@ -93,6 +97,7 @@
 
 .method public onVideoStateChanged(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection$3;->this$0:Lcom/android/services/telephony/TelephonyConnection;
 

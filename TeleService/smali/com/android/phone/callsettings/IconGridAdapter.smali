@@ -204,6 +204,9 @@
 
 .method public constructor <init>(Landroid/content/Context;ZZ)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Z
+    .param p3    # Z
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -232,6 +235,8 @@
 
 .method protected static AddPackageItem4Choose(Landroid/content/Context;Ljava/util/List;I)V
     .locals 6
+    .param p0    # Landroid/content/Context;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -373,6 +378,11 @@
 
 .method private static addEnabledPackageItem(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;III)Z
     .locals 5
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -462,6 +472,10 @@
 
 .method protected static addItem(Ljava/util/List;ILandroid/graphics/drawable/Drawable;ILjava/lang/String;)V
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/graphics/drawable/Drawable;
+    .param p3    # I
+    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -487,6 +501,7 @@
 
 .method public static getApplicationStringResId(I)I
     .locals 1
+    .param p0    # I
 
     sget-object v0, Lcom/android/phone/callsettings/IconGridAdapter;->gridItem:Ljava/util/List;
 
@@ -506,6 +521,7 @@
 
 .method protected static getData(Landroid/content/Context;)Ljava/util/List;
     .locals 12
+    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -747,6 +763,8 @@
 
 .method private static isEnabledPkg(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -822,6 +840,7 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
+    .param p1    # I
 
     sget-object v0, Lcom/android/phone/callsettings/IconGridAdapter;->gridItem:Ljava/util/List;
 
@@ -844,6 +863,7 @@
 
 .method public getItemId(I)J
     .locals 2
+    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -852,6 +872,9 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
+    .param p1    # I
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

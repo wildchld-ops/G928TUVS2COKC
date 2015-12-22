@@ -36,6 +36,10 @@
 # virtual methods
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 1
+    .param p1    # Landroid/widget/AbsListView;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectVideoCallList$5;->this$0:Lcom/android/phone/callsettings/AutoRejectVideoCallList;
 
@@ -47,6 +51,8 @@
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 0
+    .param p1    # Landroid/widget/AbsListView;
+    .param p2    # I
 
     return-void
 .end method

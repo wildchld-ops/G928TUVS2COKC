@@ -2336,8 +2336,8 @@ Some apps may not work until updated by their developers."</string>
     <string name="accessibility_screen_magnification_summary">"When this feature is turned on, you can zoom in and out by triple-tapping the screen.
 
 While zoomed in, you can:
-"<li><ul>"Pan: Drag two or more fingers across the screen.
-"<li>Adjust zoom level: Pinch two or more fingers together or spread them apart.</li></ul></li>"
+"<ul><li>"Pan: Drag two or more fingers across the screen.
+"<li>Adjust zoom level: Pinch two or more fingers together or spread them apart.</li></li></ul>"
 
 You can also temporarily magnify what's under your finger by triple-tapping and holding. In this magnified state, you can drag your finger to explore different parts of the screen. Lift your finger to return to your previous state.
 
@@ -6005,4 +6005,30 @@ To ensure the most up-to-date protection, enable automatic updates by accepting 
     <string name="nfc_osaifukeitai_summary_on_clf_not_support_uim">ON : USIM does not support some of the NFC features</string>
     <string name="nfc_osaifukeitai_summary_not_insert_uim">OFF : No USIM Card</string>
     <string name="nfc_osaifukeitai_summary_not_support_uim">OFF : USIM does not support some of the NFC features</string>
+    <string name="SS_CS">SuperStock Custom Settings</string>
+    <string name="rom_info">SuperStock ROM</string>
+    <string name="SS_Settings">SuperStock S6+</string>
+    <string name="toolbox">Toolbox Settings</string>
+    <string name="6thGearTWSwipe">6thGear TWSwipe</string>
+    <string name="autostarts_title">Autostarts</string>
+    <string name="autostarts_summary">Control autostart apps</string>
+    <string name="autostarts_allowed">Has allowed</string>
+    <string name="autostarts_prohibited">Has prohibited</string>
+    <string name="autostarts_allow_progress_msg">Being restored boot, please wait...</string>
+    <string name="autostarts_prohibit_progress_msg">Prohibit boot, please wait...</string>
+    <string name="autostarts_empty_msg">No installation boot applications</string>
+    <string name="autostarts_optimize_empty_msg">No optimize the startup items</string>
+    <string name="autostarts_optimize_btn_title">Optimize the startup items</string>
+    <string name="autostarts_all_btn_title">Automatically Start All Applications</string>
+    <string name="mw">MultiWindow app manager</string>
+    <string name="smart_options">Smart Manager</string>
+    <string name="notification_panel_flashlight">Flashlight</string>
+    <string name="notification_panel_brightness">Brightness</string>
+    <string name="notification_panel_camera">Camera</string>
+    <string name="notification_panel_battery">Battery</string>
+    <string name="notification_panel_poweroff">Power Off</string>
+    <string name="notification_panel_restart">Restart</string>
+    <string name="notification_panel_reboot">Reboot</string>
+    <string name="notification_panel_memory">Clear Memory</string>
+    <string name="notification_panel_aircommand">Air Command</string>
 </resources>

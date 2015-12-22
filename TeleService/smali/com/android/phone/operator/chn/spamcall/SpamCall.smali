@@ -44,6 +44,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/chn/spamcall/SpamCall;)Landroid/widget/Switch;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/spamcall/SpamCall;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/spamcall/SpamCall;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -271,6 +272,7 @@
 
 .method private updateLayout(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/spamcall/SpamCall;->mAutoReject:Landroid/preference/PreferenceScreen;
 
@@ -297,6 +299,8 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
+    .param p1    # Landroid/widget/CompoundButton;
+    .param p2    # Z
 
     const-string v0, "SpamCall"
 
@@ -329,6 +333,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -386,6 +391,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -420,6 +426,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -532,6 +540,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     iget-object v2, p0, Lcom/android/phone/operator/chn/spamcall/SpamCall;->mAutoReject:Landroid/preference/PreferenceScreen;
 
@@ -699,6 +709,7 @@
 
 .method public updateTurnOnStatus(Z)V
     .locals 6
+    .param p1    # Z
 
     const/4 v3, 0x0
 

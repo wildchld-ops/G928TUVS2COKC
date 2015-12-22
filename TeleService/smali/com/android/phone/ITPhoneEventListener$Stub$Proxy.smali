@@ -24,6 +24,7 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
+    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,6 +45,8 @@
 
 .method public onCallLogCreated(Lcom/skt/prod/phone/TCall;J)V
     .locals 6
+    .param p1    # Lcom/skt/prod/phone/TCall;
+    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -116,6 +119,8 @@
 
 .method public onCoverStateChanged(II)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -169,6 +174,8 @@
 
 .method public onDisconnect(Lcom/skt/prod/phone/TCall;Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Lcom/skt/prod/phone/TCall;
+    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -260,6 +267,7 @@
 
 .method public onHDVoiceAvailabilityChanged(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -311,6 +319,7 @@
 
 .method public onNewIncomingCall(Lcom/skt/prod/phone/TCall;)V
     .locals 5
+    .param p1    # Lcom/skt/prod/phone/TCall;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -381,6 +390,7 @@
 
 .method public onPhoneStateChanged(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -432,6 +442,8 @@
 
 .method public onPostDialCharacter(IC)V
     .locals 5
+    .param p1    # I
+    .param p2    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -485,6 +497,7 @@
 
 .method public onQueryComplete(Ljava/lang/String;Ljava/util/List;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -549,6 +562,8 @@
 
 .method public onRecordStateChanged(Lcom/skt/prod/phone/TCall;Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Lcom/skt/prod/phone/TCall;
+    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -640,6 +655,7 @@
 
 .method public onRequestVideoCall(Lcom/skt/prod/phone/TCall;)V
     .locals 5
+    .param p1    # Lcom/skt/prod/phone/TCall;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -710,6 +726,7 @@
 
 .method public onSuppServiceFailed(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -761,6 +778,8 @@
 
 .method public onSuppServiceNotification(II)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -814,6 +833,7 @@
 
 .method public onVideoCallResult(I)V
     .locals 5
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

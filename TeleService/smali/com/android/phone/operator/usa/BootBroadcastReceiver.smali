@@ -32,6 +32,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/BootBroadcastReceiver;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/BootBroadcastReceiver;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/BootBroadcastReceiver;->handleBootCompleted()V
 
@@ -40,6 +41,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/BootBroadcastReceiver;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/BootBroadcastReceiver;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/BootBroadcastReceiver;->handleSimStateChanged()V
 
@@ -278,6 +280,7 @@
 
 .method private setPreferredNetworkType(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/BootBroadcastReceiver;->mContext:Landroid/content/Context;
 
@@ -442,6 +445,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

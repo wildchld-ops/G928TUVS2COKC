@@ -660,7 +660,7 @@
 .end method
 
 .method private updateAlarm(Z)V
-    .locals 4
+    .locals 7
 
     const/4 v1, 0x0
 
@@ -697,6 +697,23 @@
     const/4 v1, 0x1
 
     :cond_1
+    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v5, "alarm_icon"
+
+    invoke-static {v4, v5, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    const/4 v1, 0x0
+
+    :cond_2
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mService:Landroid/app/StatusBarManager;
 
     const-string v3, "alarm_clock"
@@ -707,7 +724,7 @@
 .end method
 
 .method private final updateBluetooth()V
-    .locals 6
+    .locals 9
 
     const/4 v4, 0x0
 
@@ -725,7 +742,7 @@
 
     move-result-object v1
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->getState()I
 
@@ -733,7 +750,7 @@
 
     const/16 v5, 0xc
 
-    if-ne v3, v5, :cond_1
+    if-ne v3, v5, :cond_2
 
     const/4 v3, 0x1
 
@@ -772,25 +789,40 @@
 
     iget-boolean v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mBluetoothEnabled:Z
 
+    iget-object v6, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v6
+
+    const-string v7, "bluetooth_icon"
+
+    invoke-static {v6, v7, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v6
+
+    if-nez v6, :cond_1
+
+    const/4 v5, 0x0
+
+    :cond_1
     invoke-virtual {v3, v4, v5}, Landroid/app/StatusBarManager;->setIconVisibility(Ljava/lang/String;Z)V
 
     return-void
 
-    :cond_1
+    :cond_2
     move v3, v4
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     iput-boolean v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mBluetoothEnabled:Z
 
     goto :goto_1
 .end method
 
 .method private updateCast()V
-    .locals 10
-
-    const/4 v9, 0x1
+    .locals 9
 
     const/4 v2, 0x0
 
@@ -819,7 +851,9 @@
 
     iget v3, v0, Lcom/android/systemui/statusbar/policy/CastController$CastDevice;->state:I
 
-    if-eq v3, v9, :cond_1
+    const/4 v4, 0x1
+
+    if-eq v3, v4, :cond_1
 
     iget v3, v0, Lcom/android/systemui/statusbar/policy/CastController$CastDevice;->state:I
 
@@ -858,12 +892,6 @@
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_3
-    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mHandler:Landroid/os/Handler;
-
-    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mRemoveCastIconRunnable:Ljava/lang/Runnable;
-
-    invoke-virtual {v3, v4}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
-
     if-eqz v2, :cond_4
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mService:Landroid/app/StatusBarManager;
@@ -884,36 +912,14 @@
 
     invoke-virtual {v3, v4, v5, v6, v7}, Landroid/app/StatusBarManager;->setIcon(Ljava/lang/String;IILjava/lang/String;)V
 
+    :cond_4
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mService:Landroid/app/StatusBarManager;
 
     const-string v4, "cast"
 
-    invoke-virtual {v3, v4, v9}, Landroid/app/StatusBarManager;->setIconVisibility(Ljava/lang/String;Z)V
+    invoke-virtual {v3, v4, v2}, Landroid/app/StatusBarManager;->setIconVisibility(Ljava/lang/String;Z)V
 
-    :goto_0
     return-void
-
-    :cond_4
-    sget-boolean v3, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->DEBUG:Z
-
-    if-eqz v3, :cond_5
-
-    const-string v3, "PhoneStatusBarPolicy"
-
-    const-string v4, "updateCast: hiding icon in 3 sec..."
-
-    invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_5
-    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mHandler:Landroid/os/Handler;
-
-    iget-object v4, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->mRemoveCastIconRunnable:Ljava/lang/Runnable;
-
-    const-wide/16 v6, 0xbb8
-
-    invoke-virtual {v3, v4, v6, v7}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    goto :goto_0
 .end method
 
 .method private final updateSimState(Landroid/content/Intent;)V

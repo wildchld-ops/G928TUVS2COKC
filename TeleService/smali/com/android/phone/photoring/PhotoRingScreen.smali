@@ -731,6 +731,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/PhotoRingScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoRingScreen;->Pick_Video_From_Trim()V
 
@@ -739,6 +740,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/PhotoRingScreen;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->uploadPath:Ljava/lang/String;
 
@@ -747,6 +749,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoRingScreen;->englog(Ljava/lang/String;)V
 
@@ -755,6 +759,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->uploadPath:Ljava/lang/String;
 
@@ -763,6 +769,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/photoring/PhotoRingScreen;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mNumber:Ljava/lang/String;
 
@@ -771,6 +778,8 @@
 
 .method static synthetic access$1102(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mNumber:Ljava/lang/String;
 
@@ -779,6 +788,7 @@
 
 .method static synthetic access$1200(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/photoring/PhotoRingScreen;->makeNumber(Ljava/lang/String;)Ljava/lang/String;
 
@@ -789,6 +799,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->clickListenerToUpload:Landroid/content/DialogInterface$OnClickListener;
 
@@ -797,6 +808,9 @@
 
 .method static synthetic access$1400(Lcom/android/phone/photoring/PhotoRingScreen;ILandroid/content/DialogInterface$OnClickListener;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # I
+    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/photoring/PhotoRingScreen;->showRetryDialog(ILandroid/content/DialogInterface$OnClickListener;)V
 
@@ -805,6 +819,8 @@
 
 .method static synthetic access$1500(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoRingScreen;->showErrorDialog(Ljava/lang/String;)V
 
@@ -813,6 +829,7 @@
 
 .method static synthetic access$1600(Lcom/android/phone/photoring/PhotoRingScreen;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->chgUrl:Ljava/lang/String;
 
@@ -821,6 +838,8 @@
 
 .method static synthetic access$1602(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->chgUrl:Ljava/lang/String;
 
@@ -829,6 +848,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/photoring/PhotoRingScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoRingScreen;->placeCallIncludeMessage()V
 
@@ -837,6 +857,8 @@
 
 .method static synthetic access$1800(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoRingScreen;->showErrorDismissDialog(Ljava/lang/String;)V
 
@@ -845,6 +867,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/photoring/PhotoRingScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->needDownContent:Z
 
@@ -853,6 +876,8 @@
 
 .method static synthetic access$1902(Lcom/android/phone/photoring/PhotoRingScreen;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->needDownContent:Z
 
@@ -861,6 +886,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/photoring/PhotoRingScreen;)Lcom/android/phone/photoring/PhotoRingMgr;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mPM:Lcom/android/phone/photoring/PhotoRingMgr;
 
@@ -869,6 +895,7 @@
 
 .method static synthetic access$2000(Lcom/android/phone/photoring/PhotoRingScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->bShowOnly:Z
 
@@ -877,6 +904,8 @@
 
 .method static synthetic access$2002(Lcom/android/phone/photoring/PhotoRingScreen;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->bShowOnly:Z
 
@@ -885,6 +914,7 @@
 
 .method static synthetic access$2100(Lcom/android/phone/photoring/PhotoRingScreen;)I
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mContentType:I
 
@@ -893,6 +923,8 @@
 
 .method static synthetic access$2102(Lcom/android/phone/photoring/PhotoRingScreen;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mContentType:I
 
@@ -901,6 +933,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/photoring/PhotoRingScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoRingScreen;->setImageToView()V
 
@@ -909,6 +942,7 @@
 
 .method static synthetic access$2300(Lcom/android/phone/photoring/PhotoRingScreen;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->PRUrl:Ljava/lang/String;
 
@@ -917,6 +951,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/photoring/PhotoRingScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mHasphotoringToDial:Z
 
@@ -925,6 +960,8 @@
 
 .method static synthetic access$2402(Lcom/android/phone/photoring/PhotoRingScreen;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mHasphotoringToDial:Z
 
@@ -933,6 +970,7 @@
 
 .method static synthetic access$2500(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/widget/CheckBox;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mCB:Landroid/widget/CheckBox;
 
@@ -941,6 +979,7 @@
 
 .method static synthetic access$2600(Lcom/android/phone/photoring/PhotoRingScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoRingScreen;->enableMobileData()V
 
@@ -949,6 +988,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/photoring/PhotoRingScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoRingScreen;->checkMobileData()Z
 
@@ -959,6 +999,7 @@
 
 .method static synthetic access$2800(Lcom/android/phone/photoring/PhotoRingScreen;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->contactName:Ljava/lang/String;
 
@@ -967,6 +1008,8 @@
 
 .method static synthetic access$2802(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->contactName:Ljava/lang/String;
 
@@ -975,6 +1018,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/widget/AutoCompleteTextView;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
@@ -983,6 +1027,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mProgress:Landroid/app/ProgressDialog;
 
@@ -991,6 +1036,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/photoring/PhotoRingScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->bEmptyNumErr:Z
 
@@ -999,6 +1045,8 @@
 
 .method static synthetic access$3002(Lcom/android/phone/photoring/PhotoRingScreen;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->bEmptyNumErr:Z
 
@@ -1007,6 +1055,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/photoring/PhotoRingScreen;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mProgress:Landroid/app/ProgressDialog;
 
@@ -1015,6 +1065,8 @@
 
 .method static synthetic access$3100(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/CharSequence;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoRingScreen;->isValidNumber(Ljava/lang/CharSequence;)Z
 
@@ -1025,6 +1077,7 @@
 
 .method static synthetic access$3400(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mResizingdialog:Landroid/app/ProgressDialog;
 
@@ -1033,6 +1086,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->pMe:Landroid/content/Context;
 
@@ -1041,6 +1095,8 @@
 
 .method static synthetic access$500(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoRingScreen;->log(Ljava/lang/String;)V
 
@@ -1049,6 +1105,8 @@
 
 .method static synthetic access$602(Lcom/android/phone/photoring/PhotoRingScreen;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->bUnregierShowme:Z
 
@@ -1065,6 +1123,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/photoring/PhotoRingScreen;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->contentUrl:Ljava/lang/String;
 
@@ -1073,6 +1132,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/photoring/PhotoRingScreen;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingScreen;->contentUrl:Ljava/lang/String;
 
@@ -1081,6 +1142,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/photoring/PhotoRingScreen;)Landroid/widget/AutoCompleteTextView;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoRingScreen;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
@@ -1416,6 +1478,7 @@
 
 .method private editMenuSelected(I)V
     .locals 8
+    .param p1    # I
 
     invoke-static {p1}, Lcom/android/phone/photoring/PhotoringUtil;->getAttachIntent(I)Landroid/content/Intent;
 
@@ -1568,6 +1631,7 @@
 
 .method private englog(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "eng"
 
@@ -1868,6 +1932,7 @@
 
 .method private isValidNumber(Ljava/lang/CharSequence;)Z
     .locals 3
+    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -1974,6 +2039,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhotoRingScreen"
 
@@ -1984,6 +2050,7 @@
 
 .method private static makeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -2307,6 +2374,8 @@
 
 .method private resizeVideo(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -3005,6 +3074,7 @@
 
 .method private showErrorDialog(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -3051,6 +3121,7 @@
 
 .method private showErrorDismissDialog(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -3097,6 +3168,8 @@
 
 .method private showRetryDialog(ILandroid/content/DialogInterface$OnClickListener;)V
     .locals 3
+    .param p1    # I
+    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -3313,6 +3386,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 42
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     invoke-super/range {p0 .. p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -5328,6 +5404,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 17
+    .param p1    # Landroid/view/View;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getId()I
 
@@ -6012,6 +6089,7 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 10
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v9, 0x0
 
@@ -6308,6 +6386,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
+    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x7f0a05d7
 
@@ -6642,6 +6721,9 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 4
+    .param p1    # Landroid/view/ContextMenu;
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v3, 0x2
 
@@ -6680,6 +6762,7 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
+    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -6750,6 +6833,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -6800,6 +6884,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
+    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 

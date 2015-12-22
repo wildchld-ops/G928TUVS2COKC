@@ -1559,4 +1559,19 @@
     <item type="id" name="vpn_create">false</item>
     <item type="id" name="vpn_lockdown">false</item>
     <item type="id" name="wifi_wps">false</item>
+    <item type="id" name="appops_settings">false</item>
+    <item type="id" name="toolbox">false</item>
+    <item type="id" name="SS_CS">false</item>
+    <item type="id" name="SS_Settings">false</item>
+    <item type="id" name="autostarts_id">false</item>
+    <item type="id" name="toolbox_id">false</item>
+    <item type="id" name="6thSwipe_id">false</item>
+    <item type="id" name="autostarts_settings_id">false</item>
+    <item type="id" name="appName_id">false</item>
+    <item type="id" name="custom_section">false</item>
+    <item type="id" name="mw_id">false</item>
+    <item type="id" name="dev_settings">false</item>
+    <item type="id" name="viper">false</item>
+    <item type="id" name="upsm">false</item>
+    <item type="id" name="Smart_Label">false</item>
 </resources>

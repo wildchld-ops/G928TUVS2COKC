@@ -99,6 +99,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/CellBroadcastSms;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/CellBroadcastSms;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/CellBroadcastSms;->enableDisableAllCbConfigButtons(Z)V
 
@@ -107,6 +109,8 @@
 
 .method static synthetic access$1300(Lcom/android/phone/CellBroadcastSms;[I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CellBroadcastSms;
+    .param p1    # [I
 
     invoke-direct {p0, p1}, Lcom/android/phone/CellBroadcastSms;->setAllCbConfigButtons([I)V
 
@@ -115,6 +119,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/CellBroadcastSms;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/CellBroadcastSms;
 
     iget-object v0, p0, Lcom/android/phone/CellBroadcastSms;->mButtonBcSms:Landroid/preference/CheckBoxPreference;
 
@@ -123,6 +128,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/CellBroadcastSms;)Lcom/android/phone/CellBroadcastSms$MyHandler;
     .locals 1
+    .param p0    # Lcom/android/phone/CellBroadcastSms;
 
     iget-object v0, p0, Lcom/android/phone/CellBroadcastSms;->mHandler:Lcom/android/phone/CellBroadcastSms$MyHandler;
 
@@ -131,6 +137,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/CellBroadcastSms;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/CellBroadcastSms;
 
     iget-object v0, p0, Lcom/android/phone/CellBroadcastSms;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -139,6 +146,7 @@
 
 .method private enableDisableAllCbConfigButtons(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/CellBroadcastSms;->mButtonEmergencyBroadcast:Landroid/preference/CheckBoxPreference;
 
@@ -273,6 +281,7 @@
 
 .method private setAllCbConfigButtons([I)V
     .locals 4
+    .param p1    # [I
 
     const/4 v2, 0x0
 
@@ -850,6 +859,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1244,6 +1254,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/phone/CellBroadcastSms;->mListLanguage:Landroid/preference/ListPreference;
 
@@ -1270,6 +1282,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x4
 

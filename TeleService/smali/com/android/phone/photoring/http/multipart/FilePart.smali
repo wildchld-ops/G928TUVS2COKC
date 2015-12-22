@@ -38,6 +38,10 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/android/phone/photoring/http/multipart/PartSource;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/phone/photoring/http/multipart/PartSource;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -71,6 +75,8 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -110,6 +116,7 @@
 
 .method protected sendData(Ljava/io/OutputStream;)V
     .locals 8
+    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -183,6 +190,7 @@
 
 .method protected sendDispositionHeader(Ljava/io/OutputStream;)V
     .locals 3
+    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -38,6 +38,9 @@
 
 .method private makeRawData(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
     .locals 5
+    .param p1    # Landroid/content/Context;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -132,6 +135,7 @@
 
 .method private makeRow(Ljava/lang/String;)[Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -148,6 +152,9 @@
 # virtual methods
 .method public queryNonIndexableKeys(Landroid/content/Context;Landroid/database/MatrixCursor;Landroid/provider/SearchIndexableResource;)V
     .locals 7
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/database/MatrixCursor;
+    .param p3    # Landroid/provider/SearchIndexableResource;
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/MobileNetworkUtils;->getTwoStateTypes()[Ljava/lang/String;
 
@@ -220,6 +227,9 @@
 
 .method public queryNonIndexableKeys(Landroid/content/Context;Landroid/database/MatrixCursor;[Landroid/provider/SearchIndexableResource;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/database/MatrixCursor;
+    .param p3    # [Landroid/provider/SearchIndexableResource;
 
     array-length v0, p3
 
@@ -242,6 +252,8 @@
 
 .method public queryRawData(Landroid/content/Context;Landroid/database/MatrixCursor;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/database/MatrixCursor;
 
     invoke-static {}, Lcom/android/phone/mobilenetworks/MobileNetworksManager;->getInstance()Lcom/android/phone/mobilenetworks/MobileNetworksManager;
 

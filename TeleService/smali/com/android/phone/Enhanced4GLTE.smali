@@ -140,6 +140,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/Enhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -148,6 +149,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/Enhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/Enhanced4GLTE;->mVideoCallEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -156,6 +158,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/Enhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -164,6 +167,7 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/Enhanced4GLTE;->forcingVolteMenuEnable:Z
 
@@ -172,6 +176,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/Enhanced4GLTE;)Landroid/preference/CheckBoxPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/Enhanced4GLTE;->mStandardData:Landroid/preference/CheckBoxPreference;
 
@@ -180,6 +185,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/Enhanced4GLTE;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
 
     invoke-direct {p0}, Lcom/android/phone/Enhanced4GLTE;->getMobileDataEnabled()Z
 
@@ -190,6 +196,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/Enhanced4GLTE;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
 
     iget-object v0, p0, Lcom/android/phone/Enhanced4GLTE;->mHandler:Landroid/os/Handler;
 
@@ -198,6 +205,8 @@
 
 .method static synthetic access$800(Lcom/android/phone/Enhanced4GLTE;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/Enhanced4GLTE;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/Enhanced4GLTE;->setMobileDataEnabled(Z)V
 
@@ -316,6 +325,7 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 2
+    .param p1    # Z
 
     const-string v1, "connectivity"
 
@@ -332,6 +342,7 @@
 
 .method private setVideoCallEnabled(Z)V
     .locals 3
+    .param p1    # Z
 
     const-string v0, "Enhanced4GLTE"
 
@@ -464,6 +475,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -719,6 +731,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -773,6 +786,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x1
 

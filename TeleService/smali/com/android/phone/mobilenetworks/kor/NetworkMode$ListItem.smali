@@ -25,6 +25,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/mobilenetworks/kor/NetworkMode;ILjava/lang/String;)V
     .locals 1
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkMode$ListItem;->this$0:Lcom/android/phone/mobilenetworks/kor/NetworkMode;
 

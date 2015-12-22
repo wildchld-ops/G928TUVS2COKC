@@ -58,6 +58,7 @@
 
 .method private checkInterChangedSIM(Landroid/content/Context;)Z
     .locals 14
+    .param p1    # Landroid/content/Context;
 
     const-wide/16 v8, 0x0
 
@@ -372,6 +373,7 @@
 
 .method public static setDsaInitial(Z)V
     .locals 3
+    .param p0    # Z
 
     sget-object v0, Lcom/android/phone/DsaMainParser;->mEdit:Landroid/content/SharedPreferences$Editor;
 
@@ -412,6 +414,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 

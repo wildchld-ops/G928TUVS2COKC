@@ -401,85 +401,21 @@
 .method private changeSysScopeStatus()V
     .locals 12
 
-    const-wide/16 v10, 0x3e8
+    const-string v0, "sysscope_status"
 
-    const v9, 0x7f0a1254
+    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    const/4 v8, -0x1
+    move-result-object v0
 
-    const-string v6, "sysscope_status"
+    const v1, 0x7f0a1253
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/settings/deviceinfo/Status;->getString(I)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    const/4 v3, 0x0
-
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v6
-
-    div-long v0, v6, v10
-
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v6
-
-    div-long v4, v6, v10
-
-    iget v6, p0, Lcom/android/settings/deviceinfo/Status;->isSysScopeStatus:I
-
-    if-ne v6, v8, :cond_0
-
-    const-wide/16 v6, 0x78
-
-    cmp-long v6, v4, v6
-
-    if-lez v6, :cond_0
-
-    invoke-virtual {p0, v9}, Lcom/android/settings/deviceinfo/Status;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    :goto_0
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     return-void
-
-    :cond_0
-    iget v6, p0, Lcom/android/settings/deviceinfo/Status;->isSysScopeStatus:I
-
-    const/4 v7, 0x2
-
-    if-ne v6, v7, :cond_1
-
-    invoke-virtual {p0, v9}, Lcom/android/settings/deviceinfo/Status;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
-
-    :cond_1
-    iget v6, p0, Lcom/android/settings/deviceinfo/Status;->isSysScopeStatus:I
-
-    if-ne v6, v8, :cond_2
-
-    const v6, 0x7f0a1255
-
-    invoke-virtual {p0, v6}, Lcom/android/settings/deviceinfo/Status;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
-
-    :cond_2
-    const v6, 0x7f0a1253
-
-    invoke-virtual {p0, v6}, Lcom/android/settings/deviceinfo/Status;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_0
 .end method
 
 .method private connectToRilService()V

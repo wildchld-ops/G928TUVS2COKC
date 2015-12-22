@@ -5864,6 +5864,8 @@
 
     move-result v4
 
+    goto :goto_1
+
     if-ne v4, v5, :cond_2
 
     iget-object v4, p0, Landroid/media/AudioService;->mStreamVolumeAlias:[I
@@ -5981,6 +5983,7 @@
     goto :goto_0
 
     :cond_5
+    :goto_1
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -18534,6 +18537,54 @@
     return-void
 .end method
 
+.method public adjustLocalOrRemoteStreamVolume(IILjava/lang/String;)V
+    .locals 4
+
+    const/16 v3, 0xa
+
+    const/4 v2, 0x3
+
+    const/4 v1, 0x0
+
+    invoke-static {v2, v1}, Landroid/media/AudioSystem;->isStreamActive(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0, v2, p2, v1, p3}, Landroid/media/AudioService;->adjustStreamVolume(IIILjava/lang/String;)V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    iget-object v0, p0, Landroid/media/AudioService;->mMediaFocusControl:Landroid/media/MediaFocusControl;
+
+    invoke-virtual {v0, v2}, Landroid/media/MediaFocusControl;->checkUpdateRemoteStateIfActive(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Landroid/media/AudioService;->mMediaFocusControl:Landroid/media/MediaFocusControl;
+
+    invoke-virtual {v0, v2, p2, v1}, Landroid/media/MediaFocusControl;->adjustRemoteVolume(III)V
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {v3, v1}, Landroid/media/AudioSystem;->isStreamActive(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0, v3, p2, v1, p3}, Landroid/media/AudioService;->adjustStreamVolume(IIILjava/lang/String;)V
+
+    goto :goto_0
+.end method
+
 .method public adjustMasterVolume(IILjava/lang/String;)V
     .locals 1
 
@@ -20441,6 +20492,45 @@
     iget-boolean v0, p0, Landroid/media/AudioService;->mHdmiSystemAudioSupported:Z
 
     return v0
+.end method
+
+.method public isLocalOrRemoteMusicActive()Z
+    .locals 4
+
+    const/4 v3, 0x3
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    invoke-static {v3, v1}, Landroid/media/AudioSystem;->isStreamActive(II)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    :cond_0
+    :goto_0
+    return v0
+
+    :cond_1
+    iget-object v2, p0, Landroid/media/AudioService;->mMediaFocusControl:Landroid/media/MediaFocusControl;
+
+    invoke-virtual {v2, v3}, Landroid/media/MediaFocusControl;->checkUpdateRemoteStateIfActive(I)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    invoke-static {v3, v1}, Landroid/media/AudioSystem;->isStreamActiveRemotely(II)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    move v0, v1
+
+    goto :goto_0
 .end method
 
 .method public isMasterMute()Z

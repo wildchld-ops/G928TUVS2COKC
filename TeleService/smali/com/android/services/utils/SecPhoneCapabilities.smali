@@ -6,6 +6,7 @@
 # direct methods
 .method private static canMergeInCDMA(Lcom/android/internal/telephony/Phone;)Z
     .locals 10
+    .param p0    # Lcom/android/internal/telephony/Phone;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -174,6 +175,8 @@
 
 .method private static getCdmaPhoneCapabilities(Lcom/android/internal/telephony/Phone;I)I
     .locals 14
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -357,6 +360,9 @@
 
 .method private static getGsmPhoneCapabilities(Lcom/android/internal/telephony/Phone;Landroid/telecom/Connection;I)I
     .locals 15
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Landroid/telecom/Connection;
+    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -774,6 +780,9 @@
 
 .method public static getPhoneCapabilities(Lcom/android/internal/telephony/Phone;Landroid/telecom/Connection;I)I
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Landroid/telecom/Connection;
+    .param p2    # I
 
     if-nez p0, :cond_0
 
@@ -813,6 +822,8 @@
 
 .method public static final getTelephonyConferenceCapabilities(Landroid/telecom/Conference;Ljava/util/List;I)I
     .locals 17
+    .param p0    # Landroid/telecom/Conference;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1076,6 +1087,8 @@
 
 .method public static final getTelephonyConferenceInitialCapabilities(Landroid/telecom/Conference;I)I
     .locals 1
+    .param p0    # Landroid/telecom/Conference;
+    .param p1    # I
 
     const-string v0, "support_conference_call"
 
@@ -1108,6 +1121,7 @@
 
 .method private static isEpdgCall(Lcom/android/internal/telephony/Call;)Z
     .locals 6
+    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v1, 0x0
 
@@ -1163,6 +1177,7 @@
 
 .method private static isVzwVolteCall(Lcom/android/internal/telephony/Call;)Z
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Call;
 
     const-string v0, "vzw_volte_ui"
 
@@ -1229,6 +1244,7 @@
 
 .method private static log(I)V
     .locals 6
+    .param p0    # I
 
     const/4 v2, 0x1
 

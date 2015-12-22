@@ -76,6 +76,8 @@
 
 .method private constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/internal/telephony/Phone;)V
     .locals 5
+    .param p1    # Lcom/android/phone/PhoneGlobals;
+    .param p2    # Lcom/android/internal/telephony/Phone;
 
     const/4 v1, 0x0
 
@@ -179,6 +181,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/PhoneInterfaceManager;Lcom/android/phone/PhoneInterfaceManager$MainThreadRequest;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager;
+    .param p1    # Lcom/android/phone/PhoneInterfaceManager$MainThreadRequest;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhoneFromRequest(Lcom/android/phone/PhoneInterfaceManager$MainThreadRequest;)Lcom/android/internal/telephony/Phone;
 
@@ -189,6 +193,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/PhoneInterfaceManager;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->answerRingingCallInternal(I)V
 
@@ -197,6 +203,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/PhoneInterfaceManager;I)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -207,6 +215,7 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/PhoneInterfaceManager;->loge(Ljava/lang/String;)V
 
@@ -215,6 +224,9 @@
 
 .method static synthetic access$500(Lcom/android/phone/PhoneInterfaceManager;[BLandroid/os/Message;)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager;
+    .param p1    # [B
+    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/PhoneInterfaceManager;->invokeOemRilRequestRaw([BLandroid/os/Message;)V
 
@@ -223,6 +235,7 @@
 
 .method static synthetic access$600(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/PhoneInterfaceManager;->log(Ljava/lang/String;)V
 
@@ -231,6 +244,10 @@
 
 .method static synthetic access$700(Lcom/android/phone/PhoneInterfaceManager;[BLandroid/os/Message;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager;
+    .param p1    # [B
+    .param p2    # Landroid/os/Message;
+    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/PhoneInterfaceManager;->invokeOemRilRequestRaw([BLandroid/os/Message;I)V
 
@@ -239,6 +256,7 @@
 
 .method private answerRingingCallInternal(I)V
     .locals 6
+    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -544,6 +562,7 @@
 
 .method private createTelUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -766,6 +785,7 @@
 
 .method private getIccId(I)Ljava/lang/String;
     .locals 4
+    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -811,6 +831,7 @@
 
 .method private getPhone(I)Lcom/android/internal/telephony/Phone;
     .locals 3
+    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/PhoneInterfaceManager;->mSubscriptionController:Lcom/android/internal/telephony/SubscriptionController;
 
@@ -836,6 +857,7 @@
 
 .method private getPhoneFromRequest(Lcom/android/phone/PhoneInterfaceManager$MainThreadRequest;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p1    # Lcom/android/phone/PhoneInterfaceManager$MainThreadRequest;
 
     iget-object v0, p1, Lcom/android/phone/PhoneInterfaceManager$MainThreadRequest;->subId:Ljava/lang/Integer;
 
@@ -874,6 +896,8 @@
 
 .method static init(Lcom/android/phone/PhoneGlobals;Lcom/android/internal/telephony/Phone;)Lcom/android/phone/PhoneInterfaceManager;
     .locals 4
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     const-class v1, Lcom/android/phone/PhoneInterfaceManager;
 
@@ -936,6 +960,8 @@
 
 .method private invokeOemRilRequestRaw([BLandroid/os/Message;)V
     .locals 1
+    .param p1    # [B
+    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -948,6 +974,9 @@
 
 .method private invokeOemRilRequestRaw([BLandroid/os/Message;I)V
     .locals 1
+    .param p1    # [B
+    .param p2    # Landroid/os/Message;
+    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -1109,6 +1138,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneInterfaceManager"
 
@@ -1137,6 +1167,7 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneInterfaceManager"
 
@@ -1165,6 +1196,7 @@
 
 .method private static logv(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneInterfaceManager"
 
@@ -1203,6 +1235,8 @@
 
 .method private sendRequest(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -1215,6 +1249,9 @@
 
 .method private sendRequest(ILjava/lang/Object;Ljava/lang/Integer;)Ljava/lang/Object;
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # Ljava/lang/Integer;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -1295,6 +1332,7 @@
 
 .method private sendRequestAsync(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mMainThreadHandler:Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;
 
@@ -1305,6 +1343,7 @@
 
 .method private shutdownRadioUsingPhoneId(I)V
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -1354,6 +1393,8 @@
 
 .method public NSRI_requestProc(I[B)[B
     .locals 4
+    .param p1    # I
+    .param p2    # [B
 
     const-class v1, Lcom/android/phone/PhoneInterfaceManager;
 
@@ -1436,12 +1477,14 @@
 
 .method public SimSlotActivation(Z)V
     .locals 0
+    .param p1    # Z
 
     return-void
 .end method
 
 .method public SimSlotOnOff(I)V
     .locals 0
+    .param p1    # I
 
     return-void
 .end method
@@ -1580,6 +1623,7 @@
 
 .method public answerRingingCallForSubscriber(I)V
     .locals 4
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -1629,6 +1673,8 @@
 
 .method public calculateAkaResponse([B[B)Ljava/lang/String;
     .locals 3
+    .param p1    # [B
+    .param p2    # [B
 
     const-string v0, "PhoneInterfaceManager"
 
@@ -1674,6 +1720,8 @@
 
 .method public calculateGbaBootstrappingResponse([B[B)Landroid/os/Bundle;
     .locals 22
+    .param p1    # [B
+    .param p2    # [B
 
     move-object/from16 v0, p0
 
@@ -1926,6 +1974,7 @@
 
 .method public calculateNafExternalKey([B)[B
     .locals 18
+    .param p1    # [B
 
     move-object/from16 v0, p0
 
@@ -2106,6 +2155,8 @@
 
 .method public call(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getPreferredVoiceSubscription()I
 
@@ -2118,6 +2169,9 @@
 
 .method public callForSubscriber(ILjava/lang/String;Ljava/lang/String;)V
     .locals 9
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceCallPermission()V
 
@@ -2211,6 +2265,7 @@
 
 .method public checkCarrierPrivilegesForPackage(Ljava/lang/String;)I
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/internal/telephony/uicc/UiccController;->getInstance()Lcom/android/internal/telephony/uicc/UiccController;
 
@@ -2300,6 +2355,7 @@
 
 .method public dial(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getPreferredVoiceSubscription()I
 
@@ -2312,6 +2368,8 @@
 
 .method public dialForSubscriber(ILjava/lang/String;)V
     .locals 5
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/phone/PhoneInterfaceManager;->createTelUrl(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2397,6 +2455,7 @@
 
 .method public disableLocationUpdatesForSubscriber(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -2451,6 +2510,7 @@
 
 .method public enableLocationUpdatesForSubscriber(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -2471,6 +2531,7 @@
 
 .method public enableVideoCalling(Z)V
     .locals 2
+    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -2529,6 +2590,7 @@
 
 .method public endCallForSubscriber(I)Z
     .locals 3
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceCallPermission()V
 
@@ -2603,6 +2665,7 @@
 
 .method public getActivePhoneTypeForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -2703,6 +2766,7 @@
 
 .method public getAtrUsingSlotId(I)[B
     .locals 3
+    .param p1    # I
 
     const-string v1, "getAtr"
 
@@ -2763,6 +2827,7 @@
 
 .method public getCallStateForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -2781,6 +2846,7 @@
 
 .method public getCarrierPackageNamesForIntent(Landroid/content/Intent;)Ljava/util/List;
     .locals 3
+    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2898,6 +2964,7 @@
 
 .method public getCdmaEriIconIndexForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -2926,6 +2993,7 @@
 
 .method public getCdmaEriIconModeForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -2954,6 +3022,7 @@
 
 .method public getCdmaEriTextForSubscriber(I)Ljava/lang/String;
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -2968,6 +3037,7 @@
 
 .method public getCdmaMdn(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -3000,6 +3070,7 @@
 
 .method public getCdmaMin(I)Ljava/lang/String;
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -3351,6 +3422,7 @@
 
 .method public getDataEnabled(I)Z
     .locals 8
+    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -3504,6 +3576,7 @@
 
 .method public getDataNetworkTypeForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -3534,6 +3607,7 @@
 
 .method public getDataRoamingEnabledUsingSubID(I)Z
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -3564,6 +3638,7 @@
 
 .method public getDataServiceStateUsingSubId(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -3602,6 +3677,7 @@
 
 .method public getDataStateSimSlot(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -3676,6 +3752,7 @@
 
 .method public getFeliCaUimLockStatus(I)I
     .locals 4
+    .param p1    # I
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -3738,6 +3815,7 @@
 
 .method public getHandsetInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
+    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/phone/PhoneInterfaceManager;->mGetHandsetInfo:Ljava/lang/reflect/Method;
 
@@ -3843,6 +3921,7 @@
 
 .method public getIpAddressFromLinkProp(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
+    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -4010,6 +4089,7 @@
 
 .method public getLgt3GDataStatus(I)Ljava/lang/String;
     .locals 3
+    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -4074,6 +4154,7 @@
 
 .method public getLine1AlphaTagForDisplay(I)Ljava/lang/String;
     .locals 5
+    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4115,6 +4196,7 @@
 
 .method public getLine1NumberForDisplay(I)Ljava/lang/String;
     .locals 5
+    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4357,6 +4439,7 @@
 
 .method public getLteOnCdmaModeForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -4798,6 +4881,7 @@
 
 .method public getNeighboringCellInfo(Ljava/lang/String;)Ljava/util/List;
     .locals 6
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4927,6 +5011,7 @@
 
 .method public getNetworkTypeForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -4945,6 +5030,7 @@
 
 .method public getPcscfAddress(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceReadPermission()V
 
@@ -5009,6 +5095,7 @@
 
 .method public getRadioAccessFamily(I)I
     .locals 1
+    .param p1    # I
 
     invoke-static {}, Lcom/android/internal/telephony/ProxyController;->getInstance()Lcom/android/internal/telephony/ProxyController;
 
@@ -5134,6 +5221,7 @@
 
 .method public getServiceStateUsingSubId(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -5174,6 +5262,7 @@
 
 .method public getSimPinRetryForSubscriber(I)I
     .locals 2
+    .param p1    # I
 
     const-string v0, "PhoneInterfaceManager"
 
@@ -5220,6 +5309,7 @@
 
 .method public getSimPukRetryForSubscriber(I)I
     .locals 2
+    .param p1    # I
 
     const-string v0, "PhoneInterfaceManager"
 
@@ -5244,6 +5334,7 @@
 
 .method public getState(Lcom/android/internal/telephony/PhoneConstants$State;)Z
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/PhoneConstants$State;
 
     const/4 v0, 0x0
 
@@ -5402,6 +5493,7 @@
 
 .method public getVoiceMessageCountForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -5430,6 +5522,7 @@
 
 .method public getVoiceNetworkTypeForSubscriber(I)I
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -5507,6 +5600,7 @@
 
 .method public handlePinMmi(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -5521,6 +5615,8 @@
 
 .method public handlePinMmiForSubscriber(ILjava/lang/String;)Z
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -5565,6 +5661,7 @@
 
 .method public hasIccCardUsingSlotId(I)Z
     .locals 3
+    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5596,6 +5693,7 @@
 
 .method public iccCloseLogicalChannel(I)Z
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5608,6 +5706,8 @@
 
 .method public iccCloseLogicalChannelUsingSlotId(II)Z
     .locals 4
+    .param p1    # I
+    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -5642,6 +5742,12 @@
 
 .method public iccExchangeSimIO(IIIIILjava/lang/String;)[B
     .locals 8
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -5668,6 +5774,13 @@
 
 .method public iccExchangeSimIOUsingSlotId(IIIIILjava/lang/String;I)[B
     .locals 13
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Ljava/lang/String;
+    .param p7    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -5754,6 +5867,7 @@
 
 .method public iccOpenLogicalChannel(Ljava/lang/String;)Landroid/telephony/IccOpenLogicalChannelResponse;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -5766,6 +5880,8 @@
 
 .method public iccOpenLogicalChannelUsingSlotId(Ljava/lang/String;I)Landroid/telephony/IccOpenLogicalChannelResponse;
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -5788,6 +5904,12 @@
 
 .method public iccTransmitApduBasicChannel(IIIIILjava/lang/String;)Ljava/lang/String;
     .locals 8
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -5814,6 +5936,13 @@
 
 .method public iccTransmitApduBasicChannelUsingSlotId(IIIIILjava/lang/String;I)Ljava/lang/String;
     .locals 12
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Ljava/lang/String;
+    .param p7    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -5895,6 +6024,13 @@
 
 .method public iccTransmitApduLogicalChannel(IIIIIILjava/lang/String;)Ljava/lang/String;
     .locals 9
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # I
+    .param p7    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -5923,6 +6059,14 @@
 
 .method public iccTransmitApduLogicalChannelUsingSlotId(IIIIIILjava/lang/String;I)Ljava/lang/String;
     .locals 12
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # I
+    .param p7    # Ljava/lang/String;
+    .param p8    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -6012,6 +6156,8 @@
 
 .method public invokeOemRilRequestRaw([B[B)I
     .locals 9
+    .param p1    # [B
+    .param p2    # [B
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -6152,6 +6298,7 @@
 
 .method public isApnTypeAvailable(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceReadPermission()V
 
@@ -6289,6 +6436,7 @@
 
 .method public isIdleForSubscriber(I)Z
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -6418,6 +6566,7 @@
 
 .method public isOffhookForSubscriber(I)Z
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -6458,6 +6607,7 @@
 
 .method public isRadioOnForSubscriber(I)Z
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -6520,6 +6670,7 @@
 
 .method public isRingingForSubscriber(I)Z
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -6562,6 +6713,7 @@
 
 .method public isSimFDNEnabledForSubscriber(I)Z
     .locals 3
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceReadPermission()V
 
@@ -6890,6 +7042,10 @@
 
 .method public notifyMissedCall(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # J
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -6998,6 +7154,7 @@
 
 .method public nvReadItem(I)Ljava/lang/String;
     .locals 3
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -7018,6 +7175,7 @@
 
 .method public nvResetConfig(I)Z
     .locals 3
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -7042,6 +7200,7 @@
 
 .method public nvWriteCdmaPrl([B)Z
     .locals 2
+    .param p1    # [B
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -7062,6 +7221,8 @@
 
 .method public nvWriteItem(ILjava/lang/String;)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -7090,6 +7251,7 @@
 
 .method public sendEnvelopeWithStatus(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -7156,6 +7318,8 @@
 
 .method public sendRequestRawToRIL([BLandroid/os/Message;)I
     .locals 1
+    .param p1    # [B
+    .param p2    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mFactoryPhone:Lcom/samsung/android/sec_platform_library/FactoryPhone;
 
@@ -7178,6 +7342,9 @@
 
 .method public sendRequestToRIL([B[BI)I
     .locals 10
+    .param p1    # [B
+    .param p2    # [B
+    .param p3    # I
 
     const/4 v9, 0x1
 
@@ -7451,6 +7618,7 @@
 
 .method public setBTUserWantsAudioOn(Z)V
     .locals 3
+    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -7563,6 +7731,7 @@
 
 .method public setCellInfoListRate(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -7573,6 +7742,8 @@
 
 .method public setDataEnabled(IZ)V
     .locals 12
+    .param p1    # I
+    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -7844,6 +8015,7 @@
 
 .method public setDataRoamingEnabled(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -7854,6 +8026,8 @@
 
 .method public setDmCmd(I[B)[I
     .locals 13
+    .param p1    # I
+    .param p2    # [B
 
     const/4 v8, 0x1
 
@@ -8505,6 +8679,7 @@
 
 .method public setEPSLOCI([B)V
     .locals 4
+    .param p1    # [B
 
     const-string v1, "PhoneInterfaceManager"
 
@@ -8565,6 +8740,9 @@
 
 .method public setGbaBootstrappingParams([BLjava/lang/String;Ljava/lang/String;)V
     .locals 3
+    .param p1    # [B
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -8602,6 +8780,7 @@
 
 .method public setImsRegistrationState(Z)V
     .locals 1
+    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -8614,6 +8793,9 @@
 
 .method public setLine1NumberForDisplayForSubscriber(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 8
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceCarrierPrivilege()V
 
@@ -8734,6 +8916,7 @@
 
 .method public setMultiSimForegroundPhoneId(I)V
     .locals 1
+    .param p1    # I
 
     const-string v0, "feature_multisim"
 
@@ -8751,6 +8934,7 @@
 
 .method public setMultiSimLastRejectIncomingCallPhoneId(I)V
     .locals 1
+    .param p1    # I
 
     const-string v0, "feature_multisim"
 
@@ -8768,6 +8952,9 @@
 
 .method public setNetworkBand(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 7
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
 
     const/16 v6, 0x9
 
@@ -8937,6 +9124,7 @@
 
 .method public setOperatorBrandOverride(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceCarrierPrivilege()V
 
@@ -8951,6 +9139,7 @@
 
 .method public setPhone(Lcom/android/internal/telephony/Phone;)V
     .locals 0
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     iput-object p1, p0, Lcom/android/phone/PhoneInterfaceManager;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -8959,6 +9148,7 @@
 
 .method public setPreferredNetworkType(I)Z
     .locals 5
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermissionOrCarrierPrivilege()V
 
@@ -9026,6 +9216,7 @@
 
 .method public setRadio(Z)Z
     .locals 1
+    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -9040,6 +9231,7 @@
 
 .method public setRadioCapability([Landroid/telephony/RadioAccessFamily;)V
     .locals 3
+    .param p1    # [Landroid/telephony/RadioAccessFamily;
 
     :try_start_0
     invoke-static {}, Lcom/android/internal/telephony/ProxyController;->getInstance()Lcom/android/internal/telephony/ProxyController;
@@ -9067,6 +9259,8 @@
 
 .method public setRadioForSubscriber(IZ)Z
     .locals 3
+    .param p1    # I
+    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -9106,6 +9300,7 @@
 
 .method public setRadioPower(Z)Z
     .locals 1
+    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -9120,6 +9315,8 @@
 
 .method public setRadioPowerForSubscriber(IZ)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -9241,6 +9438,7 @@
 
 .method public setTransmitPower(I)Z
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -9257,6 +9455,7 @@
 
 .method public setUimRemoteLockStatus(I)I
     .locals 4
+    .param p1    # I
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -9319,6 +9518,9 @@
 
 .method public setVoiceMailNumber(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceCarrierPrivilege()V
 
@@ -9405,6 +9607,8 @@
 
 .method public sms_NSRI_decryptsms(I[B)[B
     .locals 3
+    .param p1    # I
+    .param p2    # [B
 
     sget-object v0, Lcom/android/phone/PhoneInterfaceManager;->smsNSRI:Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;
 
@@ -9460,6 +9664,9 @@
 
 .method public sms_NSRI_decryptsmsintxside(ILjava/lang/String;[B)[B
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # [B
 
     sget-object v0, Lcom/android/phone/PhoneInterfaceManager;->smsNSRI:Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;
 
@@ -9525,6 +9732,9 @@
 
 .method public sms_NSRI_encryptsms(ILjava/lang/String;[B)[B
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # [B
 
     sget-object v0, Lcom/android/phone/PhoneInterfaceManager;->smsNSRI:Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;
 
@@ -9638,6 +9848,7 @@
 
 .method public supplyPerso(Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -9662,6 +9873,7 @@
 
 .method public supplyPin(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -9676,6 +9888,8 @@
 
 .method public supplyPinForSubscriber(ILjava/lang/String;)Z
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -9695,6 +9909,7 @@
 
 .method public supplyPinReportResult(Ljava/lang/String;)[I
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -9709,6 +9924,8 @@
 
 .method public supplyPinReportResultForSubscriber(ILjava/lang/String;)[I
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -9737,6 +9954,8 @@
 
 .method public supplyPuk(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -9751,6 +9970,9 @@
 
 .method public supplyPukForSubscriber(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -9770,6 +9992,8 @@
 
 .method public supplyPukReportResult(Ljava/lang/String;Ljava/lang/String;)[I
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->getDefaultSubscription()I
 
@@ -9784,6 +10008,9 @@
 
 .method public supplyPukReportResultForSubscriber(ILjava/lang/String;Ljava/lang/String;)[I
     .locals 2
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -9822,6 +10049,7 @@
 
 .method public toggleRadioOnOffForSubscriber(I)V
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/PhoneInterfaceManager;->enforceModifyPermission()V
 
@@ -9850,6 +10078,12 @@
 
 .method public transmitIccAPDU(IIIIILjava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p6}, Lcom/android/phone/PhoneInterfaceManager;->iccTransmitApduBasicChannel(IIIIILjava/lang/String;)Ljava/lang/String;
 
@@ -9872,6 +10106,7 @@
 
 .method public updateServiceLocationForSubscriber(I)V
     .locals 1
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager;->getPhone(I)Lcom/android/internal/telephony/Phone;
 

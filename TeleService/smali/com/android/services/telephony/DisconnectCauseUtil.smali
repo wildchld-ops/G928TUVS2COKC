@@ -6,6 +6,8 @@
 # direct methods
 .method private static getCallFailedStringLTN(Landroid/content/Context;I)Ljava/lang/String;
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -531,6 +533,7 @@
 
 .method public static toTelecomDisconnectCause(I)Landroid/telecom/DisconnectCause;
     .locals 1
+    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -543,6 +546,8 @@
 
 .method public static toTelecomDisconnectCause(ILjava/lang/String;)Landroid/telecom/DisconnectCause;
     .locals 7
+    .param p0    # I
+    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -577,6 +582,7 @@
 
 .method private static toTelecomDisconnectCauseCode(I)I
     .locals 4
+    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -734,6 +740,8 @@
 
 .method private static toTelecomDisconnectCauseDescription(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     const v1, 0x7f0a01fa
 
@@ -901,6 +909,8 @@
 
 .method private static toTelecomDisconnectCauseLabel(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 5
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     if-nez p0, :cond_1
 
@@ -1160,6 +1170,7 @@
 
 .method private static toTelecomDisconnectCauseTone(I)I
     .locals 1
+    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1221,6 +1232,8 @@
 
 .method private static toTelecomDisconnectReason(ILjava/lang/String;)Ljava/lang/String;
     .locals 3
+    .param p0    # I
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/DisconnectCause;->toString(I)Ljava/lang/String;
 

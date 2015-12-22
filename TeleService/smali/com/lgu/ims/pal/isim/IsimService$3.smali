@@ -33,6 +33,7 @@
 # virtual methods
 .method public GetAuthResponse([B)Z
     .locals 4
+    .param p1    # [B
 
     if-eqz p1, :cond_0
 
@@ -319,6 +320,7 @@
 
 .method public Start(Lcom/lgu/ims/pal/isim/IIsimServiceListener;)Z
     .locals 4
+    .param p1    # Lcom/lgu/ims/pal/isim/IIsimServiceListener;
 
     const/4 v1, 0x1
 

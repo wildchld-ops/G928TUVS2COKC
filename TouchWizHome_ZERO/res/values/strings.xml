@@ -191,7 +191,7 @@
     <string name="talkback_screen">Screen</string>
     <string name="talkback_tab_of">Tab %1$d of %2$d</string>
     <string name="talkback_widget_span">%1$d by %2$d</string>
-    <string name="talkback_zero_page_description">Flipboard Briefing</string>
+    <string name="talkback_zero_page_description">TWLauncher Swipe</string>
     <string name="text_field">Text field</string>
     <string name="tick_box">Tick box</string>
     <string name="tick_box_not_ticked">Not ticked</string>

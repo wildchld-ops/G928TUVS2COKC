@@ -33,6 +33,7 @@
 # virtual methods
 .method public addListener(Lcom/android/phone/ISSInfoServiceCallback;)V
     .locals 2
+    .param p1    # Lcom/android/phone/ISSInfoServiceCallback;
 
     iget-object v0, p0, Lcom/android/phone/SSInfoService$1;->this$0:Lcom/android/phone/SSInfoService;
 
@@ -67,6 +68,7 @@
 
 .method public onSSInfo(I)V
     .locals 6
+    .param p1    # I
 
     iget-object v3, p0, Lcom/android/phone/SSInfoService$1;->this$0:Lcom/android/phone/SSInfoService;
 
@@ -180,6 +182,7 @@
 
 .method public removeListener(Lcom/android/phone/ISSInfoServiceCallback;)V
     .locals 2
+    .param p1    # Lcom/android/phone/ISSInfoServiceCallback;
 
     iget-object v0, p0, Lcom/android/phone/SSInfoService$1;->this$0:Lcom/android/phone/SSInfoService;
 

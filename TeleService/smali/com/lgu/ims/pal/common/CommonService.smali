@@ -766,6 +766,7 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
+    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/lgu/ims/pal/common/CommonService;->LOG_TAG:Ljava/lang/String;
 
@@ -794,6 +795,8 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 2
+    .param p1    # Landroid/content/Intent;
+    .param p2    # I
 
     iget-object v0, p0, Lcom/lgu/ims/pal/common/CommonService;->LOG_TAG:Ljava/lang/String;
 

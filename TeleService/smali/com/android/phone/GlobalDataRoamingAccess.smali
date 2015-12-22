@@ -42,6 +42,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -52,6 +53,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -68,6 +71,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/GlobalDataRoamingAccess;)V
     .locals 0
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
 
     invoke-direct {p0}, Lcom/android/phone/GlobalDataRoamingAccess;->positiveButtonClicked()V
 
@@ -76,6 +80,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/GlobalDataRoamingAccess;)V
     .locals 0
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
 
     invoke-direct {p0}, Lcom/android/phone/GlobalDataRoamingAccess;->negativeButtonClicked()V
 
@@ -84,6 +89,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/GlobalDataRoamingAccess;)[Ljava/lang/CharSequence;
     .locals 1
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
 
     iget-object v0, p0, Lcom/android/phone/GlobalDataRoamingAccess;->mEntries:[Ljava/lang/CharSequence;
 
@@ -92,6 +98,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/GlobalDataRoamingAccess;)Landroid/view/LayoutInflater;
     .locals 1
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
 
     iget-object v0, p0, Lcom/android/phone/GlobalDataRoamingAccess;->mInflater:Landroid/view/LayoutInflater;
 
@@ -100,6 +107,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/GlobalDataRoamingAccess;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
 
     iget-object v0, p0, Lcom/android/phone/GlobalDataRoamingAccess;->mRadioButtonList:Ljava/util/ArrayList;
 
@@ -108,6 +116,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/GlobalDataRoamingAccess;)I
     .locals 1
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
 
     iget v0, p0, Lcom/android/phone/GlobalDataRoamingAccess;->mPosition:I
 
@@ -116,6 +125,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/GlobalDataRoamingAccess;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/GlobalDataRoamingAccess;->mPosition:I
 
@@ -124,6 +135,8 @@
 
 .method static synthetic access$600(Lcom/android/phone/GlobalDataRoamingAccess;I)Z
     .locals 1
+    .param p0    # Lcom/android/phone/GlobalDataRoamingAccess;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/GlobalDataRoamingAccess;->checkSecureSetting(I)Z
 
@@ -134,6 +147,7 @@
 
 .method private checkSecureSetting(I)Z
     .locals 2
+    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/phone/GlobalDataRoamingAccess;->getMode()I
 
@@ -298,6 +312,7 @@
 
 .method private setMode(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -361,6 +376,7 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 5
+    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -542,6 +558,7 @@
 
 .method protected onDialogClosed(Z)V
     .locals 2
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/GlobalDataRoamingAccess;->mContext:Landroid/content/Context;
 
@@ -560,6 +577,7 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 2
+    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 

@@ -33,6 +33,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/lgu/ims/pal/isim/IsimService$1;->this$0:Lcom/lgu/ims/pal/isim/IsimService;
 

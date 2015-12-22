@@ -30,6 +30,8 @@
 
 .field private mCallback:Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
 
+.field private mCarrierColor:I
+
 .field private mKeyguardUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
 .field private mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
@@ -944,6 +946,33 @@
 
     const/4 v10, 0x0
 
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/android/keyguard/CarrierText;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "custom_carrier"
+
+    const v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    const-string v5, "custom_carrier_text"
+
+    invoke-static {v1, v5}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_2
+
+    :cond_0
     const-string v17, "content://com.sec.knox.provider2/KnoxCustomManagerService2"
 
     invoke-static/range {v17 .. v17}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -966,17 +995,17 @@
 
     move-result v10
 
-    if-eqz v9, :cond_0
+    if-eqz v9, :cond_1
 
     const/16 v17, -0x1
 
     move/from16 v0, v17
 
-    if-eq v10, v0, :cond_0
+    if-eq v10, v0, :cond_1
 
     and-int/lit8 v17, v10, 0x4
 
-    if-eqz v17, :cond_1
+    if-eqz v17, :cond_2
 
     const/16 v17, 0x8
 
@@ -986,7 +1015,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/keyguard/CarrierText;->setVisibility(I)V
 
-    :cond_0
+    :cond_1
     :goto_0
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -1002,17 +1031,17 @@
 
     move/from16 v1, v18
 
-    if-le v0, v1, :cond_2
+    if-le v0, v1, :cond_3
 
     :goto_1
     return-void
 
-    :cond_1
+    :cond_2
     invoke-virtual/range {p0 .. p0}, Lcom/android/keyguard/CarrierText;->getOperatorLogoView()Z
 
     move-result v17
 
-    if-nez v17, :cond_0
+    if-nez v17, :cond_1
 
     const/16 v17, 0x0
 
@@ -1024,7 +1053,7 @@
 
     goto :goto_0
 
-    :cond_2
+    :cond_3
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/keyguard/CarrierText;->mContext:Landroid/content/Context;
@@ -1049,7 +1078,7 @@
 
     move/from16 v1, v18
 
-    if-ne v0, v1, :cond_3
+    if-ne v0, v1, :cond_4
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/keyguard/CarrierText;->getResources()Landroid/content/res/Resources;
 
@@ -1065,11 +1094,18 @@
 
     move-object/from16 v1, v17
 
+    :goto_2
     invoke-virtual {v0, v1}, Lcom/android/keyguard/CarrierText;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v0}, Lcom/android/keyguard/CarrierText;->updateCarrierTextColor()V
+
+    iget v1, v0, Lcom/android/keyguard/CarrierText;->mCarrierColor:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
     goto :goto_1
 
-    :cond_3
+    :cond_4
     const/4 v3, 0x1
 
     const/4 v6, 0x0
@@ -1118,8 +1154,8 @@
 
     const/4 v7, 0x0
 
-    :goto_2
-    if-ge v7, v2, :cond_9
+    :goto_3
+    if-ge v7, v2, :cond_a
 
     const-string v13, ""
 
@@ -1153,7 +1189,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_6
+    if-eqz v17, :cond_7
 
     sget-object v17, Lcom/android/keyguard/CarrierText;->tele:Landroid/telephony/TelephonyManager;
 
@@ -1161,8 +1197,8 @@
 
     move-result-object v11
 
-    :cond_4
-    :goto_3
+    :cond_5
+    :goto_4
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v12, v11, v13}, Lcom/android/keyguard/CarrierText;->getCarrierTextForSimState(Lcom/android/internal/telephony/IccCardConstants$State;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
@@ -1205,7 +1241,7 @@
 
     invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    if-eqz v5, :cond_5
+    if-eqz v5, :cond_6
 
     const/4 v3, 0x0
 
@@ -1249,12 +1285,12 @@
 
     invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_5
+    :cond_6
     add-int/lit8 v7, v7, 0x1
 
-    goto/16 :goto_2
+    goto/16 :goto_3
 
-    :cond_6
+    :cond_7
     invoke-virtual/range {p0 .. p0}, Lcom/android/keyguard/CarrierText;->getContext()Landroid/content/Context;
 
     move-result-object v17
@@ -1271,7 +1307,7 @@
 
     move-result-object v8
 
-    if-eqz v8, :cond_4
+    if-eqz v8, :cond_5
 
     const-string v17, "showSpn"
 
@@ -1285,7 +1321,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_7
+    if-eqz v17, :cond_8
 
     const-string v17, "spn"
 
@@ -1295,7 +1331,7 @@
 
     move-result-object v13
 
-    :cond_7
+    :cond_8
     const-string v17, "showPlmn"
 
     const/16 v18, 0x0
@@ -1308,7 +1344,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_8
+    if-eqz v17, :cond_9
 
     const-string v17, "plmn"
 
@@ -1318,7 +1354,7 @@
 
     move-result-object v11
 
-    if-nez v11, :cond_8
+    if-nez v11, :cond_9
 
     move-object/from16 v0, p0
 
@@ -1332,7 +1368,7 @@
 
     check-cast v11, Ljava/lang/String;
 
-    :cond_8
+    :cond_9
     const-string v17, "CarrierText"
 
     new-instance v18, Ljava/lang/StringBuilder;
@@ -1369,9 +1405,9 @@
 
     invoke-static/range {v17 .. v18}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_3
+    goto/16 :goto_4
 
-    :cond_9
+    :cond_a
     sget-object v17, Lcom/android/keyguard/CarrierText;->mSimState:Lcom/android/internal/telephony/IccCardConstants$State;
 
     sget-object v18, Lcom/android/internal/telephony/IccCardConstants$State;->ABSENT:Lcom/android/internal/telephony/IccCardConstants$State;
@@ -1380,7 +1416,7 @@
 
     move-object/from16 v1, v18
 
-    if-ne v0, v1, :cond_e
+    if-ne v0, v1, :cond_f
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/keyguard/CarrierText;->getContext()Landroid/content/Context;
 
@@ -1408,7 +1444,7 @@
 
     move-result-object v7
 
-    if-eqz v7, :cond_d
+    if-eqz v7, :cond_e
 
     const-string v13, ""
 
@@ -1426,7 +1462,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_a
+    if-eqz v17, :cond_b
 
     const-string v17, "spn"
 
@@ -1436,7 +1472,7 @@
 
     move-result-object v13
 
-    :cond_a
+    :cond_b
     const-string v17, "showPlmn"
 
     const/16 v18, 0x0
@@ -1449,7 +1485,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_c
+    if-eqz v17, :cond_d
 
     const-string v17, "plmn"
 
@@ -1463,7 +1499,7 @@
 
     move-result v17
 
-    if-eqz v17, :cond_b
+    if-eqz v17, :cond_c
 
     sget-object v17, Lcom/android/keyguard/CarrierText;->tele:Landroid/telephony/TelephonyManager;
 
@@ -1471,8 +1507,8 @@
 
     move-result-object v11
 
-    :cond_b
-    if-nez v11, :cond_c
+    :cond_c
+    if-nez v11, :cond_d
 
     move-object/from16 v0, p0
 
@@ -1486,7 +1522,7 @@
 
     check-cast v11, Ljava/lang/String;
 
-    :cond_c
+    :cond_d
     const-string v17, "CarrierText"
 
     new-instance v18, Ljava/lang/StringBuilder;
@@ -1527,7 +1563,7 @@
 
     move-result-object v15
 
-    :cond_d
+    :cond_e
     invoke-virtual/range {p0 .. p0}, Lcom/android/keyguard/CarrierText;->getContext()Landroid/content/Context;
 
     move-result-object v17
@@ -1546,7 +1582,7 @@
 
     move-result-object v6
 
-    :cond_e
+    :cond_f
     const-string v17, "CarrierText"
 
     new-instance v18, Ljava/lang/StringBuilder;
@@ -1576,4 +1612,26 @@
     invoke-virtual {v0, v6}, Lcom/android/keyguard/CarrierText;->setText(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_1
+.end method
+
+.method updateCarrierTextColor()V
+    .locals 4
+
+    iget-object v1, p0, Lcom/android/keyguard/CarrierText;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "carrier_color"
+
+    const v3, -0x1
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/keyguard/CarrierText;->mCarrierColor:I
+
+    return-void
 .end method

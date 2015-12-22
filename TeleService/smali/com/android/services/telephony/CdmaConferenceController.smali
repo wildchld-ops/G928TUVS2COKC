@@ -27,6 +27,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/services/telephony/TelephonyConnectionService;)V
     .locals 1
+    .param p1    # Lcom/android/services/telephony/TelephonyConnectionService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,6 +56,7 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/CdmaConferenceController;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/CdmaConferenceController;
 
     invoke-direct {p0}, Lcom/android/services/telephony/CdmaConferenceController;->recalculateConference()V
 
@@ -63,6 +65,8 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/CdmaConferenceController;Lcom/android/services/telephony/CdmaConnection;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/CdmaConferenceController;
+    .param p1    # Lcom/android/services/telephony/CdmaConnection;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/CdmaConferenceController;->remove(Lcom/android/services/telephony/CdmaConnection;)V
 
@@ -71,6 +75,8 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/CdmaConferenceController;Lcom/android/services/telephony/CdmaConnection;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/CdmaConferenceController;
+    .param p1    # Lcom/android/services/telephony/CdmaConnection;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/CdmaConferenceController;->addInternal(Lcom/android/services/telephony/CdmaConnection;)V
 
@@ -79,6 +85,7 @@
 
 .method private addInternal(Lcom/android/services/telephony/CdmaConnection;)V
     .locals 1
+    .param p1    # Lcom/android/services/telephony/CdmaConnection;
 
     iget-object v0, p0, Lcom/android/services/telephony/CdmaConferenceController;->mCdmaConnections:Ljava/util/List;
 
@@ -387,6 +394,7 @@
 
 .method private remove(Lcom/android/services/telephony/CdmaConnection;)V
     .locals 1
+    .param p1    # Lcom/android/services/telephony/CdmaConnection;
 
     iget-object v0, p0, Lcom/android/services/telephony/CdmaConferenceController;->mConnectionListener:Landroid/telecom/Connection$Listener;
 
@@ -409,6 +417,7 @@
 # virtual methods
 .method add(Lcom/android/services/telephony/CdmaConnection;)V
     .locals 6
+    .param p1    # Lcom/android/services/telephony/CdmaConnection;
 
     const/4 v5, 0x1
 

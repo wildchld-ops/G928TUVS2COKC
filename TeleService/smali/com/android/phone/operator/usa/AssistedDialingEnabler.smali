@@ -18,6 +18,8 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/widget/Switch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,6 +76,7 @@
 
 .method public static isAssistedDialingOn(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -115,6 +118,8 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
+    .param p1    # Landroid/widget/CompoundButton;
+    .param p2    # Z
 
     const-string v0, "AssistedDialingEnabler"
 
@@ -163,6 +168,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

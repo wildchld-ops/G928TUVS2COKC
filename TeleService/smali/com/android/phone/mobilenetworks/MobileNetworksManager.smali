@@ -38,6 +38,7 @@
 
 .method private getCdmaOptionsRemovePreferences(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 2
+    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -169,6 +170,7 @@
 
 .method private getGsmUmtsOptionsRemovePreferences(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 2
+    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -197,6 +199,8 @@
 
 .method private getGsmUmtsOptionsRemovePreferences(Landroid/content/Context;Ljava/util/ArrayList;I)Ljava/util/ArrayList;
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -452,6 +456,7 @@
 
 .method private getMobileNetworkSettingsKorRemovePreferences(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 6
+    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -615,6 +620,7 @@
 
 .method private getMobileNetworkSettingsRemovePreferences(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 6
+    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -940,6 +946,7 @@
 
 .method private getPhone(I)Lcom/android/internal/telephony/Phone;
     .locals 3
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -981,6 +988,7 @@
 
 .method private hasConnectionsOptimizer(Landroid/content/Context;)Z
     .locals 5
+    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -1053,6 +1061,7 @@
 
 .method private isEmergencyMode(Landroid/content/Context;)Z
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -1101,6 +1110,7 @@
 
 .method private isNotCdmaPhone(I)Z
     .locals 3
+    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1288,6 +1298,7 @@
 
 .method private isRemoveGsmUmtsOptionsApn(I)Z
     .locals 4
+    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -1369,6 +1380,7 @@
 
 .method private isRemoveGsmUmtsOptionsCarrierSel(I)Z
     .locals 6
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1664,6 +1676,7 @@
 
 .method private isRemoveMobileNetworksConnectionsOptimizer(Landroid/content/Context;)Z
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -1693,6 +1706,7 @@
 
 .method private isRemoveMobileNetworksDataEnabled(Landroid/content/Context;)Z
     .locals 4
+    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -1827,6 +1841,7 @@
 
 .method private isRemoveMobileNetworksKorDataEnabled(Landroid/content/Context;)Z
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -2019,6 +2034,7 @@
 
 .method private isRemoveMobileNetworksPreferedNetworkMode(Landroid/content/Context;)Z
     .locals 10
+    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -2376,6 +2392,7 @@
 
 .method private shouldHideCarrierSettings(Landroid/content/Context;)I
     .locals 4
+    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2396,6 +2413,8 @@
 # virtual methods
 .method public getRemovePreferences(II)Ljava/util/ArrayList;
     .locals 2
+    .param p1    # I
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -2425,6 +2444,8 @@
 
 .method public getRemovePreferences(Landroid/content/Context;I)Ljava/util/ArrayList;
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2450,6 +2471,9 @@
 
 .method public getRemovePreferences(Landroid/content/Context;II)Ljava/util/ArrayList;
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p2    # I
+    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2583,6 +2607,8 @@
 
 .method public removePreferences(Landroid/preference/PreferenceScreen;I)V
     .locals 2
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -2595,6 +2621,9 @@
 
 .method public removePreferences(Landroid/preference/PreferenceScreen;II)V
     .locals 6
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # I
+    .param p3    # I
 
     if-nez p1, :cond_1
 

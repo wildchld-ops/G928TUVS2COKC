@@ -10,7 +10,7 @@
     <bool name="action_bar_embed_tabs_pre_jb">false</bool>
     <bool name="split_action_bar_is_narrow">true</bool>
     <bool name="preferences_prefer_dual_pane">false</bool>
-    <bool name="show_ongoing_ime_switcher">true</bool>
+    <bool name="show_ongoing_ime_switcher">false</bool>
     <bool name="action_bar_expanded_action_views_exclusive">true</bool>
     <bool name="target_honeycomb_needs_options_menu">true</bool>
     <bool name="config_softap_extention">true</bool>
@@ -35,7 +35,7 @@
     <bool name="config_wifi_batched_scan_supported">false</bool>
     <bool name="config_automatic_brightness_available">true</bool>
     <bool name="config_annoy_dianne">true</bool>
-    <bool name="config_unplugTurnsOnScreen">true</bool>
+    <bool name="config_unplugTurnsOnScreen">false</bool>
     <bool name="config_useAttentionLight">false</bool>
     <bool name="config_animateScreenLights">false</bool>
     <bool name="config_enableScreenshotChord">true</bool>
@@ -99,7 +99,7 @@
     <bool name="config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="config_wimaxEnabled">false</bool>
     <bool name="config_dreamsSupported">true</bool>
-    <bool name="config_dreamsEnabledByDefault">false</bool>
+    <bool name="config_dreamsEnabledByDefault">true</bool>
     <bool name="config_dreamsActivatedOnDockByDefault">true</bool>
     <bool name="config_dreamsActivatedOnSleepByDefault">false</bool>
     <bool name="config_dreamsEnabledOnBattery">false</bool>
@@ -114,7 +114,7 @@
     <bool name="config_send_sms1x_on_voice_call">true</bool>
     <bool name="config_enableWifiDisplay">true</bool>
     <bool name="config_useDevInputEventForAudioJack">false</bool>
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
     <bool name="config_camera_sound_forced">false</bool>
     <bool name="config_dontPreferApn">false</bool>

@@ -29,6 +29,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/PhoneInterfaceManager;Lcom/android/internal/telephony/IccCard;)V
     .locals 1
+    .param p2    # Lcom/android/internal/telephony/IccCard;
 
     const/4 v0, 0x0
 
@@ -47,6 +48,8 @@
 
 .method static synthetic access$1702(Lcom/android/phone/PhoneInterfaceManager$CheckIccPerso;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$CheckIccPerso;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$CheckIccPerso;->mResult:Z
 
@@ -55,6 +58,8 @@
 
 .method static synthetic access$1802(Lcom/android/phone/PhoneInterfaceManager$CheckIccPerso;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$CheckIccPerso;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$CheckIccPerso;->mDone:Z
 
@@ -65,6 +70,7 @@
 # virtual methods
 .method declared-synchronized checkPerso(Ljava/lang/String;)Z
     .locals 8
+    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

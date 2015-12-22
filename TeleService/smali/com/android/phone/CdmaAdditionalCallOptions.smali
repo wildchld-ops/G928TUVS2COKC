@@ -126,6 +126,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/CdmaAdditionalCallOptions;Lcom/android/phone/CdmaAdditionalCallOptions$AppState;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -139,6 +141,7 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->log(Ljava/lang/String;)V
 
@@ -147,6 +150,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/CdmaAdditionalCallOptions;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaAdditionalCallOptions;->displayToast(Ljava/lang/String;)V
 
@@ -155,6 +160,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     iget-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -163,6 +169,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/CdmaAdditionalCallOptions;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     iget-object v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -171,6 +178,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/CdmaAdditionalCallOptions;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     invoke-direct {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->dismissCallWaiting()V
 
@@ -179,6 +187,8 @@
 
 .method static synthetic access$1400(Lcom/android/phone/CdmaAdditionalCallOptions;Landroid/os/Message;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaAdditionalCallOptions;->handleGetVPResponse(Landroid/os/Message;)V
 
@@ -187,6 +197,8 @@
 
 .method static synthetic access$1500(Lcom/android/phone/CdmaAdditionalCallOptions;Landroid/os/Message;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaAdditionalCallOptions;->handleSetVPMessage(Landroid/os/Message;)V
 
@@ -195,6 +207,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -205,6 +218,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/CdmaAdditionalCallOptions;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaAdditionalCallOptions;->updateSummaryAutoAreaCode(Ljava/lang/String;)V
 
@@ -213,6 +228,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/CdmaAdditionalCallOptions;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaAdditionalCallOptions;->updateAutoAreaCodeOnOff(Ljava/lang/String;)V
 
@@ -221,6 +238,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/content/ContentResolver;
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -231,6 +249,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/CdmaAdditionalCallOptions;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     iget-boolean v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoiceCallVisible:Z
 
@@ -239,6 +258,8 @@
 
 .method static synthetic access$700(Lcom/android/phone/CdmaAdditionalCallOptions;Landroid/os/AsyncResult;)I
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaAdditionalCallOptions;->handleGetCWMessage(Landroid/os/AsyncResult;)I
 
@@ -249,6 +270,9 @@
 
 .method static synthetic access$800(Lcom/android/phone/CdmaAdditionalCallOptions;Lcom/android/phone/CdmaAdditionalCallOptions$AppState;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
+    .param p1    # Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -262,6 +286,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/CdmaAdditionalCallOptions;)V
     .locals 0
+    .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
     invoke-direct {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->handleSetCWMessage()V
 
@@ -325,6 +350,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
@@ -343,6 +369,7 @@
 
 .method private handleGetCWMessage(Landroid/os/AsyncResult;)I
     .locals 7
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v6, 0x0
 
@@ -488,6 +515,7 @@
 
 .method private handleGetVPResponse(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 
@@ -611,6 +639,7 @@
 
 .method private handleSetVPMessage(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -673,6 +702,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "CdmaAdditionalOtions"
 
@@ -787,6 +817,7 @@
 
 .method private setAppState(Lcom/android/phone/CdmaAdditionalCallOptions$AppState;)V
     .locals 2
+    .param p1    # Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -824,6 +855,8 @@
 
 .method private setAppState(Lcom/android/phone/CdmaAdditionalCallOptions$AppState;I)V
     .locals 2
+    .param p1    # Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1154,6 +1187,7 @@
 
 .method private updateAutoAreaCodeOnOff(Ljava/lang/String;)V
     .locals 6
+    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1228,6 +1262,7 @@
 
 .method private updateSummaryAutoAreaCode(Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1321,6 +1356,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -1714,6 +1750,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
+    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -1915,6 +1952,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1978,6 +2016,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const-string v1, "feature_multisim"
 
@@ -2094,6 +2134,8 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Landroid/content/SharedPreferences;
+    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

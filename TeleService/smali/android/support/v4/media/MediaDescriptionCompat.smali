@@ -60,6 +60,7 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
+    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -128,6 +129,8 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/support/v4/media/MediaDescriptionCompat$1;)V
     .locals 0
+    .param p1    # Landroid/os/Parcel;
+    .param p2    # Landroid/support/v4/media/MediaDescriptionCompat$1;
 
     invoke-direct {p0, p1}, Landroid/support/v4/media/MediaDescriptionCompat;-><init>(Landroid/os/Parcel;)V
 
@@ -136,6 +139,13 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/net/Uri;Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/CharSequence;
+    .param p3    # Ljava/lang/CharSequence;
+    .param p4    # Ljava/lang/CharSequence;
+    .param p5    # Landroid/graphics/Bitmap;
+    .param p6    # Landroid/net/Uri;
+    .param p7    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,6 +168,14 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/net/Uri;Landroid/os/Bundle;Landroid/support/v4/media/MediaDescriptionCompat$1;)V
     .locals 0
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/CharSequence;
+    .param p3    # Ljava/lang/CharSequence;
+    .param p4    # Ljava/lang/CharSequence;
+    .param p5    # Landroid/graphics/Bitmap;
+    .param p6    # Landroid/net/Uri;
+    .param p7    # Landroid/os/Bundle;
+    .param p8    # Landroid/support/v4/media/MediaDescriptionCompat$1;
 
     invoke-direct/range {p0 .. p7}, Landroid/support/v4/media/MediaDescriptionCompat;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/net/Uri;Landroid/os/Bundle;)V
 
@@ -166,6 +184,7 @@
 
 .method public static fromMediaDescription(Ljava/lang/Object;)Landroid/support/v4/media/MediaDescriptionCompat;
     .locals 4
+    .param p0    # Ljava/lang/Object;
 
     if-eqz p0, :cond_0
 
@@ -356,6 +375,8 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
+    .param p1    # Landroid/os/Parcel;
+    .param p2    # I
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 

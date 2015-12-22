@@ -70,6 +70,9 @@
 
 .method public static displayMessage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -174,6 +177,8 @@
 
 .method public static displayNetworkMessage(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Lcom/android/phone/PhoneDisplayMessage;->DBG:Z
 
@@ -215,6 +220,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneDisplayMessage"
 
@@ -243,6 +249,8 @@
 
 .method public static setShowForAllUsers(Landroid/app/AlertDialog;Z)V
     .locals 2
+    .param p0    # Landroid/app/AlertDialog;
+    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 

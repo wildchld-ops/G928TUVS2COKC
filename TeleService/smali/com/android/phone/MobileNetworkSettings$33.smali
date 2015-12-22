@@ -33,6 +33,7 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 1
+    .param p1    # Landroid/telephony/ServiceState;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings$33;->this$0:Lcom/android/phone/MobileNetworkSettings;
 

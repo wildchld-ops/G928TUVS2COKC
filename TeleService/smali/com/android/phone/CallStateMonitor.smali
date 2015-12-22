@@ -45,6 +45,7 @@
 
 .method public constructor <init>(Lcom/android/internal/telephony/CallManager;)V
     .locals 1
+    .param p1    # Lcom/android/internal/telephony/CallManager;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -121,6 +122,7 @@
 # virtual methods
 .method public addListener(Landroid/os/Handler;)V
     .locals 3
+    .param p1    # Landroid/os/Handler;
 
     if-eqz p1, :cond_1
 
@@ -169,6 +171,7 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     sget-boolean v2, Lcom/android/phone/CallStateMonitor;->DBG:Z
 

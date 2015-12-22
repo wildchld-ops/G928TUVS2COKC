@@ -40,6 +40,7 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/skt/prod/phone/TCall;
     .locals 1
+    .param p1    # Landroid/os/Parcel;
 
     invoke-static {}, Lcom/skt/prod/phone/TCall;->obtain()Lcom/skt/prod/phone/TCall;
 
@@ -63,6 +64,7 @@
 
 .method public newArray(I)[Lcom/skt/prod/phone/TCall;
     .locals 1
+    .param p1    # I
 
     new-array v0, p1, [Lcom/skt/prod/phone/TCall;
 

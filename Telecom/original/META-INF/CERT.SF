@@ -1,0 +1,125 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: FyCvtqUKb+xgRcRCaTsI8Owdi/4=
+
+Name: res/drawable-xxxhdpi-v4/ic_launcher_sip_call.qmg
+SHA1-Digest: 3zzJ5f2xew2RkNhyCZtHi15M+dE=
+
+Name: res/layout/drivelink_videocall_reject_dialog.xml
+SHA1-Digest: blJLumu+Xu/WLP4btijwWVEhst4=
+
+Name: res/drawable-xxxhdpi-v4/stat_notify_voice_input.qmg
+SHA1-Digest: fxIogH6LAxwHgMin7pLp/O/sEzc=
+
+Name: res/raw/low_power_ringtone.ogg
+SHA1-Digest: Ix3Ov+Axlv8YUseCnnhnCe1SKn0=
+
+Name: res/drawable-xxxhdpi-v4/msg_list_id_1.qmg
+SHA1-Digest: AAzCQ96G29Qmx2c0jDowUn3+i7Y=
+
+Name: res/drawable-xxxhdpi-v4/tw_buttonbarbutton_selector_pressed.9.qm
+ g
+SHA1-Digest: OL258Oeh7t+Oc89IUOdzNkF6xe8=
+
+Name: res/layout/remote_missed_call.xml
+SHA1-Digest: GgXjuX5Zy2FyEp8jL5jTjb7gV2M=
+
+Name: res/mipmap-sw411dp-xxxhdpi-v13/ic_launcher_phone.qmg
+SHA1-Digest: NFHlZ48MTbQGK8g0994bP2+lsF0=
+
+Name: resources.arsc
+SHA1-Digest: nP9VIqX72rI4tKAFVAgJ1/lRBno=
+
+Name: res/drawable-xxxhdpi-v4/noti_list_ic_missed_call.qmg
+SHA1-Digest: 1sQpq5lUuyzUumhrXrzFf2BJp1U=
+
+Name: res/drawable-xxxhdpi-v4/tw_buttonbarbutton_selector_selected.9.q
+ mg
+SHA1-Digest: SHFEjLpw5S5XznVLiim1U5aW7HU=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_phone.qmg
+SHA1-Digest: eagmoQR0LSHEJXAYYGp0tH1OSNM=
+
+Name: AndroidManifest.xml
+SHA1-Digest: VGw7ZlUqpuIJjnIUWqyLH4b5Ooo=
+
+Name: res/drawable-xxxhdpi-v4/ic_more_vert_white_24dp.qmg
+SHA1-Digest: SloVN8G5SXdKgeAJeGF17FRN1ng=
+
+Name: res/layout/international_assist_dial.xml
+SHA1-Digest: ZROsmSQriw0fg52gtyq7MrdrVWg=
+
+Name: res/xml/respond_via_sms_settings.xml
+SHA1-Digest: mXpwKI7XUjTM/nIu8vA6tkZNY68=
+
+Name: res/raw/call_disconnect.ogg
+SHA1-Digest: 3x1l+8u9AhlzCRZXDxcsM5y6N2o=
+
+Name: res/raw/call_hold_vzw.ogg
+SHA1-Digest: gGRa2gREV8W+xL5HBU3+IbjStjM=
+
+Name: res/drawable-xxxhdpi-v4/default_list_id_1.qmg
+SHA1-Digest: yOlXTzwgIfanBscT+i0L751hVjI=
+
+Name: res/drawable-xxxhdpi-v4/stat_notify_auto_rejected_call.qmg
+SHA1-Digest: rXpaMGOAGatzbHotghDDbyHwihM=
+
+Name: res/layout/drivelink_videocall_reject_dialog_navi.xml
+SHA1-Digest: B1yTCQn2sdO5LIV7sQWG9UlEez4=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_phone.qmg
+SHA1-Digest: leiVOOV5qx5MbC+VLTZixUjuH9w=
+
+Name: res/drawable-xxxhdpi-v4/lock_missedcall.qmg
+SHA1-Digest: QayjbQEpbGEPHqkkTVQLGaIuRIc=
+
+Name: res/drawable/ic_back_arrow.xml
+SHA1-Digest: 6rd9zLS8xgypCXsQbBbH5QNDlM0=
+
+Name: res/drawable-xxxhdpi-v4/quick_panel_icon_notify_btn_message.qmg
+SHA1-Digest: rK5rWf14gO5W0R7uYy3QojCAVu4=
+
+Name: res/raw/call_connect.ogg
+SHA1-Digest: iMsfX9RGEKJ8Ak1hLa6U2U8aqe8=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_phone.qmg
+SHA1-Digest: veEEa6+kdjtxTJI6K8s+a8x+rYs=
+
+Name: res/drawable/dialog_button_bg.xml
+SHA1-Digest: xkpm9r01Ua5qIFTxxpa4tFREIjA=
+
+Name: res/drawable-xxxhdpi-v4/tw_buttonbarbutton_selector_default.9.qm
+ g
+SHA1-Digest: QuZv9KUn+hoIEjxnj076IiFtix0=
+
+Name: res/drawable-xxxhdpi-v4/noti_event_icon_large_call_missed.qmg
+SHA1-Digest: zI8eK3xRLFzzJ0OQSH6iY0edDeo=
+
+Name: res/drawable-xxxhdpi-v4/noti_popup_bg_shadow.9.qmg
+SHA1-Digest: hvuiQpWng3H4apKCdxm3DyB8YcY=
+
+Name: res/layout/us_cdma_call_forwarding_dialog.xml
+SHA1-Digest: CDAd2PrGeI/i8yX2cNaCNKprhqI=
+
+Name: res/drawable-xxxhdpi-v4/ic_arrow_back_white_24dp.qmg
+SHA1-Digest: eK03Euh24ZNknLj8M/rfrUe6pkU=
+
+Name: res/drawable-xxxhdpi-v4/quick_panel_icon_notify_btn_call.qmg
+SHA1-Digest: JYiDLtrojDBWR68QFZF/anDjKWo=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_phone.qmg
+SHA1-Digest: UPsii2ePJbzZy+q6EgthXlitesg=
+
+Name: res/drawable-xxxhdpi-v4/tw_buttonbarbutton_selector_focused.9.qm
+ g
+SHA1-Digest: bpi9tOmN5VQnKrbZJ7M5V6naGzw=
+
+Name: res/drawable-xxxhdpi-v4/stat_sys_phone_call.qmg
+SHA1-Digest: ipwT9uguLfUZCJcjaGJqXEBuiq4=
+
+Name: res/layout/remote_mini_missed_call.xml
+SHA1-Digest: TqhQwOO8wxBTIBcNphnPThTZHIY=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_phone.qmg
+SHA1-Digest: wJxgdNCVU+WBsQzmW2cbu9Urty0=
+

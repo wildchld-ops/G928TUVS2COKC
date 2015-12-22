@@ -232,6 +232,7 @@
 
 .method public static createFailedConnectionForOther(I)Landroid/telecom/Connection;
     .locals 8
+    .param p0    # I
 
     const-string v0, "feature_kor"
 
@@ -593,6 +594,8 @@
 
 .method private static doCheckRtsState(ILandroid/telecom/ConnectionRequest;)Lcom/android/services/utils/SecTelephonyUtil$CallStatusCode;
     .locals 12
+    .param p0    # I
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     const/4 v7, 0x0
 
@@ -956,6 +959,9 @@
 
 .method private static getKTCallStatusCode([Ljava/lang/Integer;ZLandroid/telecom/ConnectionRequest;)Lcom/android/services/utils/SecTelephonyUtil$CallStatusCode;
     .locals 13
+    .param p0    # [Ljava/lang/Integer;
+    .param p1    # Z
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/4 v12, 0x4
 
@@ -1652,6 +1658,8 @@
 
 .method private static getKorCallStateCode(ZLandroid/telecom/ConnectionRequest;)Lcom/android/services/utils/SecTelephonyUtil$CallStatusCode;
     .locals 3
+    .param p0    # Z
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     const/4 v1, 0x0
 
@@ -1728,6 +1736,9 @@
 
 .method private static getLGTCallStatusCode([Ljava/lang/Integer;ZLandroid/telecom/ConnectionRequest;)Lcom/android/services/utils/SecTelephonyUtil$CallStatusCode;
     .locals 10
+    .param p0    # [Ljava/lang/Integer;
+    .param p1    # Z
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     invoke-static {p2}, Lcom/android/services/utils/SecTelephonyUtil;->isCSCall(Landroid/telecom/ConnectionRequest;)Z
 
@@ -2591,6 +2602,7 @@
 
 .method public static getNameFromFDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .param p0    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/services/utils/SecTelephonyUtil;->mhFDNQueryHanlder:Landroid/os/Handler;
 
@@ -2623,6 +2635,7 @@
 
 .method public static getNameFromSDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
+    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2734,6 +2747,9 @@
 
 .method private static getOPENCallStatusCode([Ljava/lang/Integer;ZLandroid/telecom/ConnectionRequest;)Lcom/android/services/utils/SecTelephonyUtil$CallStatusCode;
     .locals 13
+    .param p0    # [Ljava/lang/Integer;
+    .param p1    # Z
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/16 v12, 0x10
 
@@ -3325,6 +3341,9 @@
 
 .method private static getSKTCallStatusCode([Ljava/lang/Integer;ZLandroid/telecom/ConnectionRequest;)Lcom/android/services/utils/SecTelephonyUtil$CallStatusCode;
     .locals 13
+    .param p0    # [Ljava/lang/Integer;
+    .param p1    # Z
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/16 v12, 0x10
 
@@ -3864,6 +3883,7 @@
 
 .method private static isCSCall(Landroid/telecom/ConnectionRequest;)Z
     .locals 6
+    .param p0    # Landroid/telecom/ConnectionRequest;
 
     const/4 v4, 0x1
 
@@ -4108,6 +4128,8 @@
 
 .method public static preCheckRtsState(ILandroid/telecom/ConnectionRequest;)I
     .locals 5
+    .param p0    # I
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     const-string v2, "feature_kor"
 
@@ -4236,6 +4258,7 @@
 
 .method public static saveCallWaitingStatus(Z)V
     .locals 4
+    .param p0    # Z
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 

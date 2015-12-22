@@ -71,6 +71,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/RejectCallWithMsgModes;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->mCurMode:Ljava/lang/String;
 
@@ -79,6 +80,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/callsettings/RejectCallWithMsgModes;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->mCurMode:Ljava/lang/String;
 
@@ -87,6 +90,7 @@
 
 .method static synthetic access$100(Landroid/content/Context;)I
     .locals 1
+    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->getDisplayMode(Landroid/content/Context;)I
 
@@ -97,6 +101,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/RejectCallWithMsgModes;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->mModeList:Ljava/util/ArrayList;
 
@@ -105,6 +110,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/RejectCallWithMsgModes;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->storeDisplayMode(Ljava/lang/String;)V
 
@@ -113,6 +120,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/RejectCallWithMsgModes;)Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->mListViewAdapter:Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
 
@@ -121,6 +129,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/callsettings/RejectCallWithMsgModes;Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;)Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
+    .param p1    # Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->mListViewAdapter:Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
 
@@ -129,6 +139,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/RejectCallWithMsgModes;)Landroid/widget/ListView;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->mListView:Landroid/widget/ListView;
 
@@ -137,6 +148,7 @@
 
 .method private static getDisplayMode(Landroid/content/Context;)I
     .locals 5
+    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -176,6 +188,7 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     const v0, 0x7f1001a7
 
@@ -218,6 +231,7 @@
 
 .method private setDisplayMode(I)V
     .locals 3
+    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -251,6 +265,7 @@
 
 .method private storeDisplayMode(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "text"
 
@@ -288,6 +303,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -325,6 +341,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040090
 

@@ -30,6 +30,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -106,6 +108,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/DefaultRingtonePreference;)I
     .locals 1
+    .param p0    # Lcom/android/phone/DefaultRingtonePreference;
 
     iget v0, p0, Lcom/android/phone/DefaultRingtonePreference;->mSimIndex:I
 
@@ -122,6 +125,7 @@
 
 .method public static setPickedUri(Landroid/net/Uri;)V
     .locals 1
+    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -136,6 +140,9 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)Z
     .locals 4
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -190,6 +197,7 @@
 
 .method protected onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -264,6 +272,7 @@
 
 .method protected onSaveRingtone(Landroid/net/Uri;)V
     .locals 9
+    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
@@ -402,6 +411,8 @@
 
 .method public setObject(Lcom/android/phone/callsettings/RingtoneKeytoneSettings;I)V
     .locals 0
+    .param p1    # Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/DefaultRingtonePreference;->mRingtoneKeytoneSettings:Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 

@@ -189,6 +189,7 @@
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 1
+    .param p1    # Landroid/preference/Preference;
 
     iget-boolean v0, p0, Lcom/android/services/telephony/sip/SipEditor$AdvancedSettings;->mShowing:Z
 

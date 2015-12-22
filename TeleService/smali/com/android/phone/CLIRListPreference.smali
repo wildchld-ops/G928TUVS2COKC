@@ -32,6 +32,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -42,6 +43,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -98,6 +101,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/CLIRListPreference;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/CLIRListPreference;
 
     iget-object v0, p0, Lcom/android/phone/CLIRListPreference;->mDialog:Landroid/app/AlertDialog;
 
@@ -106,6 +110,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/CLIRListPreference;)Lcom/android/phone/TimeConsumingPreferenceListener;
     .locals 1
+    .param p0    # Lcom/android/phone/CLIRListPreference;
 
     iget-object v0, p0, Lcom/android/phone/CLIRListPreference;->mTcpListener:Lcom/android/phone/TimeConsumingPreferenceListener;
 
@@ -114,6 +119,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/CLIRListPreference;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/CLIRListPreference;
 
     iget-object v0, p0, Lcom/android/phone/CLIRListPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -122,6 +128,7 @@
 
 .method private saveClirInSystemSettings(I)V
     .locals 4
+    .param p1    # I
 
     const-string v1, "CLIRListPreference"
 
@@ -179,6 +186,7 @@
 # virtual methods
 .method handleGetCLIRResult([I)V
     .locals 7
+    .param p1    # [I
 
     const/4 v3, 0x0
 
@@ -328,6 +336,8 @@
 
 .method init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
     .locals 5
+    .param p1    # Lcom/android/phone/TimeConsumingPreferenceListener;
+    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -416,6 +426,9 @@
 
 .method init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
     .locals 1
+    .param p1    # Lcom/android/phone/TimeConsumingPreferenceListener;
+    .param p2    # Z
+    .param p3    # I
 
     invoke-static {p3}, Lcom/android/phone/PhoneUtilsMultiSIM;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
@@ -432,6 +445,7 @@
 
 .method protected onDialogClosed(Z)V
     .locals 4
+    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -493,6 +507,7 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 

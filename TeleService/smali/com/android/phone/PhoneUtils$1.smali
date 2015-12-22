@@ -30,6 +30,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     # getter for: Lcom/android/phone/PhoneUtils;->dequeMmiDialog:Ljava/util/ArrayDeque;
     invoke-static {}, Lcom/android/phone/PhoneUtils;->access$400()Ljava/util/ArrayDeque;

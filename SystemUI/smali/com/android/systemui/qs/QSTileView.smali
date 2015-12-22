@@ -68,6 +68,10 @@
 
 .field private final mTileSpacingPx:I
 
+.field private mToggleCircleColor:I
+
+.field private mToggleTextColor:I
+
 .field private final mTopBackgroundView:Landroid/view/View;
 
 .field private mUseTruncateName:Z
@@ -101,7 +105,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 4
+    .locals 10
 
     const/4 v3, 0x0
 
@@ -203,17 +207,34 @@
 
     iput-object v1, p0, Lcom/android/systemui/qs/QSTileView;->mIcon:Landroid/view/View;
 
-    iget-object v2, p0, Lcom/android/systemui/qs/QSTileView;->mIcon:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/systemui/qs/QSTileView;->mIcon:Landroid/view/View;
 
-    sget-boolean v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->grayScaleModeEnabled:Z
+    invoke-virtual {p0}, Lcom/android/systemui/qs/QSTileView;->set_toggles()I
 
-    if-eqz v1, :cond_0
+    move-result v2
 
-    const v1, 0x7f02083d
+    if-eqz v2, :cond_1
 
-    :goto_0
-    invoke-virtual {v2, v1}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v1, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
+    invoke-virtual {v1}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    const v9, 0x7f02083a
+
+    if-ne v9, v2, :cond_0
+
+    iget v6, p0, Lcom/android/systemui/qs/QSTileView;->mToggleCircleColor:I
+
+    sget-object v7, Landroid/graphics/PorterDuff$Mode;->MULTIPLY:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {v0, v6, v7}, Landroid/graphics/drawable/Drawable;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
+
+    :cond_0
+    invoke-virtual {v1, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_1
     iget-object v1, p0, Lcom/android/systemui/qs/QSTileView;->mIcon:Landroid/view/View;
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/qs/QSTileView;->addView(Landroid/view/View;)V
@@ -248,12 +269,11 @@
 
     invoke-direct {p0}, Lcom/android/systemui/qs/QSTileView;->updateTopPadding()V
 
+    invoke-virtual {p0}, Lcom/android/systemui/qs/QSTileView;->setToggleTextColor()V
+
+    invoke-virtual {p0}, Lcom/android/systemui/qs/QSTileView;->setToggleTextView()V
+
     return-void
-
-    :cond_0
-    const v1, 0x7f02083a
-
-    goto :goto_0
 .end method
 
 .method private SetIconTintColor(ILandroid/widget/ImageView;)V
@@ -2343,7 +2363,7 @@
 .end method
 
 .method protected handleStateChanged(Lcom/android/systemui/qs/QSTile$State;)V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, Lcom/android/systemui/qs/QSTileView;->mIcon:Landroid/view/View;
 
@@ -2404,6 +2424,10 @@
     iget-object v1, p1, Lcom/android/systemui/qs/QSTile$State;->label:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget v2, p0, Lcom/android/systemui/qs/QSTileView;->mToggleTextColor:I
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     iget-object v0, p1, Lcom/android/systemui/qs/QSTile$State;->contentDescription:Ljava/lang/String;
 
@@ -3386,6 +3410,186 @@
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
+.end method
+
+.method setToggleTextColor()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/systemui/qs/QSTileView;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "toggle_text_color"
+
+    const v2, -0x10101
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    iput v0, p0, Lcom/android/systemui/qs/QSTileView;->mToggleTextColor:I
+
+    return-void
+.end method
+
+.method setToggleTextView()V
+    .locals 4
+
+    iget-object v0, p0, Lcom/android/systemui/qs/QSTileView;->mLabel:Landroid/widget/TextView;
+
+    invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "toggle_text"
+
+    const v2, 0x1
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v0
+
+    const/4 v3, 0x0
+
+    if-ne v0, v3, :cond_0
+
+    const v3, 0x8
+
+    iget-object v0, p0, Lcom/android/systemui/qs/QSTileView;->mLabel:Landroid/widget/TextView;
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
+
+    goto :goto_0
+
+    :cond_0
+    const v3, 0x1
+
+    iget-object v0, p0, Lcom/android/systemui/qs/QSTileView;->mLabel:Landroid/widget/TextView;
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
+
+    :goto_0
+    return-void
+.end method
+
+.method set_toggles()I
+    .locals 6
+
+    iget-object v1, p0, Lcom/android/systemui/qs/QSTileView;->mLabel:Landroid/widget/TextView;
+
+    invoke-virtual {v1}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "toggle_buttons_background"
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    const v2, 0x1
+
+    if-eq v1, v2, :cond_0
+
+    const v2, 0x2
+
+    if-eq v1, v2, :cond_1
+
+    const v2, 0x3
+
+    if-eq v1, v2, :cond_2
+
+    const v2, 0x4
+
+    if-eq v1, v2, :cond_3
+
+    const v2, 0x5
+
+    if-eq v1, v2, :cond_4
+
+    const v2, 0x6
+
+    if-eq v1, v2, :cond_5
+
+    const v2, 0x7
+
+    if-eq v1, v2, :cond_6
+
+    const v2, 0x8
+
+    const v0, 0x7f02083a
+
+    goto :goto_0
+
+    :cond_0
+    const v0, 0x0
+
+    goto :goto_0
+
+    :cond_1
+    const v0, 0x7f020cbb
+
+    goto :goto_0
+
+    :cond_2
+    const v0, 0x7f020cbc
+
+    goto :goto_0
+
+    :cond_3
+    const v0, 0x7f020cbd
+
+    goto :goto_0
+
+    :cond_4
+    const v0, 0x7f020cbe
+
+    goto :goto_0
+
+    :cond_5
+    const v0, 0x7f020cbf
+
+    goto :goto_0
+
+    :cond_6
+    const v0, 0x7f020cc0
+
+    goto :goto_0
+
+    :goto_0
+    iget-object v1, p0, Lcom/android/systemui/qs/QSTileView;->mLabel:Landroid/widget/TextView;
+
+    invoke-virtual {v1}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "toggle_buttons_background_color"
+
+    const v3, -0x1
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/systemui/qs/QSTileView;->mToggleCircleColor:I
+
+    return v0
 .end method
 
 .method public useTruncatedName()Z

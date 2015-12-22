@@ -36,6 +36,7 @@
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 4
+    .param p1    # Landroid/preference/Preference;
 
     check-cast p1, Landroid/preference/EditTextPreference;
 

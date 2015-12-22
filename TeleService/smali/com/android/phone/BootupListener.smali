@@ -70,6 +70,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/BootupListener;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/BootupListener;
 
     iget-object v0, p0, Lcom/android/phone/BootupListener;->mHandler:Landroid/os/Handler;
 
@@ -78,6 +79,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/BootupListener;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/BootupListener;
 
     iget-boolean v0, p0, Lcom/android/phone/BootupListener;->isNeedChangeNetworkModeOtherSim:Z
 
@@ -86,6 +88,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/BootupListener;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/BootupListener;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/BootupListener;->isNeedChangeNetworkModeOtherSim:Z
 
@@ -94,6 +98,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/BootupListener;)[Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/BootupListener;
 
     iget-object v0, p0, Lcom/android/phone/BootupListener;->mPhones:[Lcom/android/internal/telephony/Phone;
 
@@ -102,6 +107,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/BootupListener;)I
     .locals 1
+    .param p0    # Lcom/android/phone/BootupListener;
 
     iget v0, p0, Lcom/android/phone/BootupListener;->boltSimSlot:I
 
@@ -110,6 +116,7 @@
 
 .method private isShouldForceNetworkMode(I)Z
     .locals 4
+    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -162,6 +169,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 33
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

@@ -455,6 +455,7 @@
 
 .method private constructor <init>(Lcom/android/phone/ota/OtaInCallScreen;)V
     .locals 1
+    .param p1    # Lcom/android/phone/ota/OtaInCallScreen;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -507,6 +508,8 @@
 
 .method public constructor <init>(Lcom/android/phone/ota/OtaInCallScreen;Lcom/android/phone/ota/DTMFTwelveKeyDialerView;)V
     .locals 3
+    .param p1    # Lcom/android/phone/ota/OtaInCallScreen;
+    .param p2    # Lcom/android/phone/ota/DTMFTwelveKeyDialerView;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ota/DTMFTwelveKeyDialer;-><init>(Lcom/android/phone/ota/OtaInCallScreen;)V
 
@@ -537,6 +540,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/ota/DTMFTwelveKeyDialer;C)V
     .locals 0
+    .param p0    # Lcom/android/phone/ota/DTMFTwelveKeyDialer;
+    .param p1    # C
 
     invoke-direct {p0, p1}, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->processDtmf(C)V
 
@@ -545,6 +550,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/ota/DTMFTwelveKeyDialer;)Lcom/android/internal/telephony/CallManager;
     .locals 1
+    .param p0    # Lcom/android/phone/ota/DTMFTwelveKeyDialer;
 
     iget-object v0, p0, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -585,6 +591,7 @@
 
 .method private final processDtmf(C)V
     .locals 1
+    .param p1    # C
 
     const/4 v0, 0x0
 
@@ -595,6 +602,8 @@
 
 .method private final processDtmf(CZ)V
     .locals 2
+    .param p1    # C
+    .param p2    # Z
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->is12Key(C)Z
 
@@ -641,6 +650,7 @@
 
 .method private sendShortDtmfToNetwork(C)V
     .locals 7
+    .param p1    # C
 
     const/4 v3, 0x1
 
@@ -756,6 +766,7 @@
 
 .method private setupKeypad(Lcom/android/phone/ota/DTMFTwelveKeyDialerView;)V
     .locals 4
+    .param p1    # Lcom/android/phone/ota/DTMFTwelveKeyDialerView;
 
     sget-object v3, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->mDisplayMap:Ljava/util/HashMap;
 
@@ -808,6 +819,8 @@
 
 .method private startLocalToneIfNeeded(CZ)V
     .locals 5
+    .param p1    # C
+    .param p2    # Z
 
     sget-object v1, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->mToneMap:Ljava/util/HashMap;
 
@@ -896,6 +909,7 @@
 # virtual methods
 .method public closeDialer(Z)V
     .locals 2
+    .param p1    # Z
 
     const/16 v1, 0x8
 
@@ -1036,6 +1050,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
+    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
@@ -1093,6 +1108,8 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 9
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x0
 
@@ -1196,6 +1213,9 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 3
+    .param p1    # Landroid/view/View;
+    .param p2    # I
+    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v1, 0x17
 
@@ -1272,6 +1292,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1302,6 +1324,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->mInCallScreen:Lcom/android/phone/ota/OtaInCallScreen;
 
@@ -1314,6 +1338,8 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1493,6 +1519,8 @@
 
 .method public startTone(CZ)V
     .locals 3
+    .param p1    # C
+    .param p2    # Z
 
     sget-object v1, Lcom/android/phone/ota/DTMFTwelveKeyDialer;->mToneMap:Ljava/util/HashMap;
 

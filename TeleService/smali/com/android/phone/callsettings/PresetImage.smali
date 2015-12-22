@@ -125,6 +125,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/PresetImage;)[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PresetImage;->mCallerImageAlertChanged:[Ljava/lang/String;
 
@@ -133,6 +134,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/PresetImage;)J
     .locals 2
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/PresetImage;->checkRemainingSize()J
 
@@ -143,6 +145,8 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/PresetImage;J)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
+    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/PresetImage;->recordVideo(J)Landroid/content/Intent;
 
@@ -153,6 +157,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/PresetImage;)[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PresetImage;->mCallerImageAlertDefault:[Ljava/lang/String;
 
@@ -161,6 +166,9 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/PresetImage;Landroid/content/Intent;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
+    .param p1    # Landroid/content/Intent;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResultWrapper(Landroid/content/Intent;I)V
 
@@ -169,6 +177,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/PresetImage;)Landroid/widget/ImageView;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageView;
 
@@ -177,6 +186,8 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/PresetImage;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/PresetImage;->updateDefaultImageTTS(Z)V
 
@@ -185,6 +196,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/PresetImage;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/PresetImage;->pickImageFromGallery()Landroid/content/Intent;
 
@@ -195,6 +207,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/PresetImage;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/PresetImage;->capturePicture()Landroid/content/Intent;
 
@@ -205,6 +218,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/PresetImage;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/PresetImage;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/PresetImage;->pickVideoFromGallery()Landroid/content/Intent;
 
@@ -293,6 +307,7 @@
 
 .method private checkVideo(Landroid/net/Uri;)Z
     .locals 9
+    .param p1    # Landroid/net/Uri;
 
     const/4 v8, 0x0
 
@@ -546,6 +561,8 @@
 
 .method private overlay(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 6
+    .param p1    # Landroid/graphics/Bitmap;
+    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v5, 0x0
 
@@ -804,6 +821,7 @@
 
 .method private recordVideo(J)Landroid/content/Intent;
     .locals 3
+    .param p1    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -826,6 +844,7 @@
 
 .method private setImage(Landroid/graphics/Bitmap;)V
     .locals 6
+    .param p1    # Landroid/graphics/Bitmap;
 
     move-object v2, p1
 
@@ -882,6 +901,7 @@
 
 .method private setVideo(Ljava/lang/String;)V
     .locals 18
+    .param p1    # Ljava/lang/String;
 
     const-string v3, "PresetImage"
 
@@ -1140,6 +1160,8 @@
 
 .method private startActivityForResultWrapper(Landroid/content/Intent;I)V
     .locals 2
+    .param p1    # Landroid/content/Intent;
+    .param p2    # I
 
     :try_start_0
     invoke-virtual {p0, p1, p2}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResult(Landroid/content/Intent;I)V
@@ -1165,6 +1187,7 @@
 
 .method private updateDefaultImageTTS(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getApplicationContext()Landroid/content/Context;
 
@@ -1527,6 +1550,7 @@
 # virtual methods
 .method public displayToast(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
@@ -1545,6 +1569,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 9
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v8, -0x1
 
@@ -1777,6 +1804,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
+    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "PresetImage"
 
@@ -1791,6 +1819,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1816,6 +1845,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 
@@ -2142,6 +2174,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2487,6 +2520,7 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -2549,6 +2583,7 @@
 
 .method public startChooseActivityByGridView(I)V
     .locals 9
+    .param p1    # I
 
     const/4 v8, 0x1
 

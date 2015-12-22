@@ -6,6 +6,7 @@
 # direct methods
 .method static fromCompat([Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput;)[Landroid/app/RemoteInput;
     .locals 5
+    .param p0    # [Landroid/support/v4/app/RemoteInputCompatBase$RemoteInput;
 
     if-nez p0, :cond_1
 

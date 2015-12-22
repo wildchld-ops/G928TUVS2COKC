@@ -14,6 +14,8 @@
 
 .method private takeCall(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const-string v2, "com.android.services.telephony.sip.phone_account"
 
@@ -47,6 +49,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

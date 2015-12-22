@@ -38,6 +38,27 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/Notification;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/graphics/Bitmap;IIZZILjava/lang/CharSequence;ZLandroid/os/Bundle;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 8
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/app/Notification;
+    .param p3    # Ljava/lang/CharSequence;
+    .param p4    # Ljava/lang/CharSequence;
+    .param p5    # Ljava/lang/CharSequence;
+    .param p6    # Landroid/widget/RemoteViews;
+    .param p7    # I
+    .param p8    # Landroid/app/PendingIntent;
+    .param p9    # Landroid/app/PendingIntent;
+    .param p10    # Landroid/graphics/Bitmap;
+    .param p11    # I
+    .param p12    # I
+    .param p13    # Z
+    .param p14    # Z
+    .param p15    # I
+    .param p16    # Ljava/lang/CharSequence;
+    .param p17    # Z
+    .param p18    # Landroid/os/Bundle;
+    .param p19    # Ljava/lang/String;
+    .param p20    # Z
+    .param p21    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -322,6 +343,7 @@
 # virtual methods
 .method public addAction(Landroid/support/v4/app/NotificationCompatBase$Action;)V
     .locals 2
+    .param p1    # Landroid/support/v4/app/NotificationCompatBase$Action;
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompatJellybean$Builder;->mActionExtrasList:Ljava/util/List;
 

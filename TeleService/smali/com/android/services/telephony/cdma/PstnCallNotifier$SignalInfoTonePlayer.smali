@@ -23,6 +23,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/services/telephony/cdma/PstnCallNotifier;I)V
     .locals 0
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/services/telephony/cdma/PstnCallNotifier$SignalInfoTonePlayer;->this$0:Lcom/android/services/telephony/cdma/PstnCallNotifier;
 

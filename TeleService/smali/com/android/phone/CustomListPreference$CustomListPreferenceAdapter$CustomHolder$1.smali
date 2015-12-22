@@ -44,6 +44,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/phone/CustomListPreference$CustomListPreferenceAdapter$CustomHolder$1;->this$2:Lcom/android/phone/CustomListPreference$CustomListPreferenceAdapter$CustomHolder;
 

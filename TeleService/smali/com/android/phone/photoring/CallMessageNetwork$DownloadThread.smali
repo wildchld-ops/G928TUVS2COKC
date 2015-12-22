@@ -25,6 +25,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/photoring/CallMessageNetwork;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

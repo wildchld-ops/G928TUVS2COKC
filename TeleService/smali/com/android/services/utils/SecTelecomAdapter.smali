@@ -171,6 +171,7 @@
 
 .method public getNameFromFDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "getNameFromFDN"
 
@@ -189,6 +190,7 @@
 
 .method public getNameFromSDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "getNameFromSDN"
 
@@ -232,6 +234,7 @@
 
 .method public getSecCallExtra(Ljava/lang/String;)Lcom/android/services/telephony/common/SecCallExtra;
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -342,6 +345,7 @@
 
 .method public holdCalls(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -452,6 +456,7 @@
 
 .method public onEpdgStateChanged(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -478,6 +483,10 @@
 
 .method public onModifyCall(Ljava/lang/String;ZILjava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
+    .param p3    # I
+    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -504,6 +513,10 @@
 
 .method public onPostDialAction(Lcom/android/internal/telephony/Connection$PostDialState;Ljava/lang/String;CZ)V
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/Connection$PostDialState;
+    .param p2    # Ljava/lang/String;
+    .param p3    # C
+    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -601,6 +614,8 @@
 
 .method public requestModifyCall(Ljava/lang/String;I)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -629,6 +644,7 @@
 
 .method public requestOllehPhoneStart(I)V
     .locals 2
+    .param p1    # I
 
     const-string v0, "requestOllehPhoneStart"
 
@@ -671,6 +687,7 @@
 
 .method public requestTPhoneStart(I)V
     .locals 2
+    .param p1    # I
 
     const-string v0, "requestTPhoneStart"
 
@@ -691,6 +708,9 @@
 
 .method public respondModifyCall(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
+    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -761,6 +781,7 @@
 
 .method public saveModifiedCallLog(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -787,6 +808,9 @@
 
 .method public saveParticipantLog(Ljava/lang/String;JJ)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # J
+    .param p4    # J
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -819,6 +843,10 @@
 
 .method public setEcholocateCallState(ILandroid/net/Uri;II)V
     .locals 3
+    .param p1    # I
+    .param p2    # Landroid/net/Uri;
+    .param p3    # I
+    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -859,6 +887,7 @@
 
 .method public setMute(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -899,6 +928,7 @@
 
 .method public setOtherPartyHold(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -939,6 +969,8 @@
 
 .method public setSecCallExtra(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/services/telephony/common/SecCallExtra;)V
     .locals 2
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Lcom/android/services/telephony/common/SecCallExtra;
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -969,6 +1001,7 @@
 
 .method public setSecConnectionServiceAdapter(Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;)V
     .locals 0
+    .param p1    # Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
     iput-object p1, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
@@ -1057,6 +1090,7 @@
 
 .method public turnOnBluetooth(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1097,6 +1131,7 @@
 
 .method public turnOnSpeaker(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1137,6 +1172,8 @@
 
 .method public updateSecCallExtra(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/services/telephony/common/SecCallExtra;)V
     .locals 2
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Lcom/android/services/telephony/common/SecCallExtra;
 
     iget-object v0, p0, Lcom/android/services/utils/SecTelecomAdapter;->mSecConnectionServiceAdapter:Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 

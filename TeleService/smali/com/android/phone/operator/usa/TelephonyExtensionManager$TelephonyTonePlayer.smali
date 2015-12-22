@@ -23,6 +23,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/operator/usa/TelephonyExtensionManager;I)V
     .locals 0
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager$TelephonyTonePlayer;->this$0:Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 

@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;Landroid/os/Handler;)V
     .locals 0
+    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage$AMSettingsChangeObserver;->this$0:Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;
 
@@ -33,6 +34,7 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage$AMSettingsChangeObserver;->this$0:Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;
 

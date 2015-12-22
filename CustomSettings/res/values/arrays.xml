@@ -766,8 +766,6 @@
         <item>6</item>
         <item>7</item>
     </string-array>
-    <item type="array" name="APKTOOL_DUMMY_0062">false</item>
-    <item type="array" name="APKTOOL_DUMMY_0063">false</item>
     <string-array name="notification_panel_background_images_entries">
         <item>Default</item>
         <item>Carbon</item>
@@ -782,4 +780,6 @@
         <item>3</item>
         <item>4</item>
     </string-array>
+    <item type="array" name="APKTOOL_DUMMY_0062">false</item>
+    <item type="array" name="APKTOOL_DUMMY_0063">false</item>
 </resources>

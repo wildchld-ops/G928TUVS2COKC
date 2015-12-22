@@ -34,6 +34,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/kor/KorTelephonyReceiver;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/kor/KorTelephonyReceiver;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/kor/KorTelephonyReceiver;->mIsScreenOn:Z
 
@@ -42,6 +43,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/kor/KorTelephonyReceiver;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/kor/KorTelephonyReceiver;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/KorTelephonyReceiver;->handleRoamNetworkChanged()V
 
@@ -69,6 +71,7 @@
 
 .method private handleEventCallProtectionMenu(Z)V
     .locals 6
+    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -117,6 +120,7 @@
 
 .method private handleEventScreenOn(Z)V
     .locals 7
+    .param p1    # Z
 
     const/16 v6, 0x65
 
@@ -195,6 +199,7 @@
 
 .method private handleHDVoiceSet(Landroid/content/Intent;)V
     .locals 10
+    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -526,6 +531,7 @@
 
 .method private handleVolteApcsServiceStatus(Z)V
     .locals 6
+    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -607,6 +613,7 @@
 # virtual methods
 .method public addActionToIntentFilter(Landroid/content/IntentFilter;)V
     .locals 5
+    .param p1    # Landroid/content/IntentFilter;
 
     const/4 v4, 0x1
 
@@ -853,6 +860,8 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

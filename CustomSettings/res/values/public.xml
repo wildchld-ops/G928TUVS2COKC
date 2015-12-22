@@ -165,10 +165,10 @@
     <public type="array" name="data_style_values" id="0x7f05005f" />
     <public type="array" name="toggle_buttons_background_entries" id="0x7f050060" />
     <public type="array" name="toggle_buttons_background_values" id="0x7f050061" />
-    <public type="array" name="APKTOOL_DUMMY_0062" id="0x7f050062" />
-    <public type="array" name="APKTOOL_DUMMY_0063" id="0x7f050063" />
     <public type="array" name="notification_panel_background_images_entries" id="0x7f050064" />
     <public type="array" name="notification_panel_background_images_values" id="0x7f050065" />
+    <public type="array" name="APKTOOL_DUMMY_0062" id="0x7f050062" />
+    <public type="array" name="APKTOOL_DUMMY_0063" id="0x7f050063" />
     <public type="dimen" name="colorpicker_hsvHeight" id="0x7f060000" />
     <public type="dimen" name="colorpicker_hsvWidth" id="0x7f060001" />
     <public type="dimen" name="colorpicker_hueWidth" id="0x7f060002" />

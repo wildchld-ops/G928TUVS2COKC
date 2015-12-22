@@ -30,6 +30,8 @@
 # virtual methods
 .method public draw(Ljava/lang/Object;Landroid/graphics/Canvas;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Landroid/graphics/Canvas;
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->draw(Ljava/lang/Object;Landroid/graphics/Canvas;)Z
 
@@ -40,6 +42,7 @@
 
 .method public finish(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->finish(Ljava/lang/Object;)V
 
@@ -48,6 +51,7 @@
 
 .method public isFinished(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->isFinished(Ljava/lang/Object;)Z
 
@@ -58,6 +62,8 @@
 
 .method public onPull(Ljava/lang/Object;F)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+    .param p2    # F
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->onPull(Ljava/lang/Object;F)Z
 
@@ -68,6 +74,7 @@
 
 .method public onRelease(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->onRelease(Ljava/lang/Object;)Z
 
@@ -78,6 +85,9 @@
 
 .method public setSize(Ljava/lang/Object;II)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+    .param p2    # I
+    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->setSize(Ljava/lang/Object;II)V
 
