@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#ff0288d1</color>
+    <color name="dialer_settings_actionbar_text_color">#ffffffff</color>
+    <color name="dialer_settings_actionbar_background_color">@color/theme_color</color>
+    <color name="dialer_settings_color_dark">#ff0277bd</color>
+    <color name="carmode_reject_videocall_icon_bg_color">#ff003d4a</color>
+    <color name="carmode_reject_videocall_event_info_bg_color">#ff032a37</color>
+    <color name="carmode_reject_videocall_event_info_text_color">#fff5f5f5</color>
+    <color name="carmode_reject_videocall_button_bg_color">#ff032a37</color>
+    <color name="carmode_reject_videocall_button_text_color">#ffd1dfe2</color>
+    <color name="notification_missedcall_bg">#ffe1645b</color>
+    <color name="notification_missedcall_icon_bg">#ffacd5dc</color>
+    <color name="notification_missedcall_icon_text_color">#fffafafa</color>
+</resources>
