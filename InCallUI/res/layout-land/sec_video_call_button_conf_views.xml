@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="end" android:layout_gravity="end" android:id="@id/inCallButtonContainer" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/inCallButtons" android:background="@color/sec_video_call_button_background" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="@dimen/sec_video_incall_button_height">
+            <com.android.incallui.SecVideoButton android:id="@id/switchCameraButton" android:drawableTop="@drawable/sec_video_incall_button_switch_camera_icon" android:contentDescription="@string/secOnscreenSwitchText" style="@style/SecVideoCallButton" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="@dimen/sec_video_incall_button_height">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/endCallButtonArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false">
+                <ImageButton android:layout_gravity="center" android:id="@id/endCallButton" android:background="@drawable/sec_endcall_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videocall_during_ic_endcall" android:scaleType="center" android:contentDescription="@string/onscreenEndCallText" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:gravity="center" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="@dimen/sec_video_incall_button_height">
+            <com.android.incallui.SecVideoToggleButton android:id="@id/muteButton" android:textOn="" android:textOff="" android:drawableTop="@drawable/sec_video_incall_button_mute_icon" android:contentDescription="@string/onscreenMuteText" style="@style/SecVideoCallButton" />
+            <com.android.incallui.SecVideoToggleButton android:id="@id/hideShowButton" android:visibility="gone" android:textOn="" android:textOff="" android:drawableTop="@drawable/sec_video_incall_button_hide_show_icon" style="@style/SecVideoCallButton" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

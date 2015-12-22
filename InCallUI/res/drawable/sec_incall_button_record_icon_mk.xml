@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="false">
+        <bitmap android:src="@drawable/mk_voicecall_ic_record" android:tint="@color/sec_incall_button_dim_tint" />
+    </item>
+    <item android:state_enabled="false" android:state_checked="true">
+        <bitmap android:src="@drawable/mk_voicecall_ic_stop" android:tint="@color/sec_incall_button_dim_tint" />
+    </item>
+    <item android:state_checked="false" android:drawable="@drawable/mk_voicecall_ic_record" />
+    <item android:state_checked="true" android:drawable="@drawable/mk_voicecall_ic_stop" />
+</selector>

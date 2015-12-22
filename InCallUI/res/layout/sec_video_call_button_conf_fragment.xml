@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/indicator_area" android:layout_width="fill_parent" android:layout_height="@dimen/indicator_area_height" />
+    <ViewStub android:id="@id/videoCallButtonViewsStub" android:layout="@layout/sec_video_call_button_conf_views" android:inflatedId="@id/videoCallButtonConfViews" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator_area" />
+</RelativeLayout>

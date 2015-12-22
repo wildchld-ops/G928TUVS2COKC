@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.InCallScreen" parent="@android:style/Theme.Material.Light">
+        <item name="android:textColorPrimary">@color/incall_call_banner_text_color</item>
+        <item name="android:buttonStyleToggle">@style/InCallCompoundButton</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/InCallAnimationStyle</item>
+        <item name="android:actionBarStyle">@style/InCallActionBarStyle</item>
+        <item name="android:popupMenuStyle">@style/InCallPopupMenuStyle</item>
+        <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+        <item name="dialpad_key_button_touch_tint">@color/incall_dialpad_touch_tint</item>
+    </style>
+    <style name="Theme.CircularRevealAnimation" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+    </style>
+    <style name="Theme.SecInCallScreen" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/sec_incall_call_banner_text_color</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/SecInCallAnimationStyle</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:popupMenuStyle">@style/SecInCallPopupMenuStyle</item>
+        <item name="android:colorPrimaryDark">@color/incall_call_state_active_bg</item>
+        <item name="android:colorEdgeEffect">@color/incall_call_end_effect_bg</item>
+        <item name="dialpad_key_button_touch_tint">@color/sec_incall_dialpad_touch_tint</item>
+    </style>
+    <style name="SecTabletInCallScreen" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/sec_incall_call_banner_text_color</item>
+        <item name="android:popupMenuStyle">@style/SecInCallPopupMenuStyle</item>
+        <item name="android:colorPrimaryDark">@color/incall_call_state_active_bg</item>
+        <item name="android:colorEdgeEffect">@color/incall_call_end_effect_bg</item>
+    </style>
+    <style name="SecInCallButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">8.0dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecEndCallButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">8.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecInCallButtonEasy">
+        <item name="android:textSize">@dimen/sec_incall_button_easy_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_easy_width</item>
+        <item name="android:layout_height">@dimen/sec_incall_button_easy_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecEndCallButtonEasy">
+        <item name="android:textSize">@dimen/sec_incall_button_easy_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/sec_endcall_buttons_easy_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecInCallButtonMKeyboard">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">8.0dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecEndCallButtonMKeyboard">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">6.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecInCallButtonFolder">
+        <item name="android:textSize">@dimen/sec_incall_button_easy_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_folder_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_folder_width</item>
+        <item name="android:layout_height">@dimen/sec_incall_button_folder_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecEndCallButtonFolder">
+        <item name="android:textSize">@dimen/sec_incall_button_easy_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_folder_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/sec_incall_button_folder_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecMultipartyCallButton">
+        <item name="android:textSize">@dimen/sec_multiparty_button_text_size</item>
+        <item name="android:textColor">@color/incall_call_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_multiparty_call_button_width</item>
+        <item name="android:layout_height">@dimen/sec_multiparty_call_button_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/sec_multiparty_call_drawable_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecMobileKeyboardMultipartyCallButton">
+        <item name="android:textSize">@dimen/sec_mkeyboard_multiparty_button_text_size</item>
+        <item name="android:textColor">@color/incall_call_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_multiparty_call_button_width</item>
+        <item name="android:layout_height">@dimen/sec_mkeyboard_multiparty_call_button_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecVideoCallButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:paddingTop">@dimen/sec_video_incall_button_padding_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecVideoCallHiddenButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecVideoCallQcifButton">
+        <item name="android:textSize">@dimen/sec_video_call_button_text_size</item>
+        <item name="android:textColor">@color/sec_video_call_button_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sec_videocall_button_background</item>
+        <item name="android:paddingTop">@dimen/sec_video_qcif_incall_button_padding_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/sec_video_qcif_incall_button_drawable_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecEasyVideoCallButton">
+        <item name="android:textSize">@dimen/sec_video_incall_button_text_size_easy</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:paddingTop">@dimen/sec_video_incall_image_top_margin_easy</item>
+        <item name="android:paddingBottom">@dimen/sec_video_incall_button_text_bottom_margin_easy</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/sec_video_incall_button_drawable_padding_easy</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecOnehandVideoCallButton">
+        <item name="android:textSize">@dimen/sec_video_incall_button_text_size_easy_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:paddingTop">@dimen/sec_video_incall_button_padding_top_onehand</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecEasyOnehandVideoCallButton">
+        <item name="android:textSize">@dimen/sec_video_incall_button_text_size_easy_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:paddingTop">@dimen/sec_video_incall_image_top_margin_easy_onehand</item>
+        <item name="android:paddingBottom">@dimen/sec_video_incall_button_text_bottom_margin_easy_onehand</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/sec_video_incall_button_drawable_padding_onehand</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecMultipartyVideoCallButton">
+        <item name="android:textSize">@dimen/sec_multiparty_video_call_button_text_size</item>
+        <item name="android:textColor">@color/incall_call_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_multiparty_video_call_button_width</item>
+        <item name="android:layout_height">@dimen/sec_multiparty_video_call_button_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:drawablePadding">@dimen/sec_multiparty_video_call_button_drawable_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecMobileKeyboardVideoCallButton">
+        <item name="android:textSize">@dimen/sec_mkeyboard_video_incall_button_text_size</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:paddingTop">@dimen/sec_mkeyboard_video_incall_button_padding_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="GlanceRelplyEditorFragmentBtnStyle">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffaffff5</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:elevation">1.0dip</item>
+    </style>
+    <style name="SecOnehandInCallButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_width_onehand</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">@dimen/sec_incall_button_drawable_padding_onehand</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecOnehandEndCallUpperButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">@dimen/sec_end_button_drawable_padding_onehand</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecOnehandEndCallButton">
+        <item name="android:textSize">@dimen/sec_incall_button_text_size_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">@dimen/sec_end_button_drawable_padding_onehand</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecOnehandInCallButtonEasy">
+        <item name="android:textSize">@dimen/sec_incall_button_easy_text_size_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_incall_button_easy_width_onehand</item>
+        <item name="android:layout_height">@dimen/sec_incall_button_easy_height_onehand</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="SecOnehandEndCallButtonEasy">
+        <item name="android:textSize">@dimen/sec_incall_button_easy_text_size_onehand</item>
+        <item name="android:textColor">@drawable/sec_incall_button_text_color</item>
+        <item name="android:background">@drawable/sec_incall_button_background</item>
+        <item name="android:layout_width">@dimen/sec_endcall_button_easy_width_onehand</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

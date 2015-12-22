@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="incoming_call_tab_circle_margin_delta_vertical">0.0dip</dimen>
+    <dimen name="sec_video_incoming_hideme_width">411.0dip</dimen>
+    <dimen name="sec_video_incoming_hideme_height">338.0dip</dimen>
+    <dimen name="sec_primary_incoming_call_photo_size">411.0dip</dimen>
+    <dimen name="wave_effect_container_width">732.0dip</dimen>
+    <dimen name="sec_endcall_buttons_margin_top_land">175.0dip</dimen>
+    <dimen name="sec_video_endcall_under_buttons_margin_top">42.0dip</dimen>
+    <dimen name="sec_primary_video_call_banner_width">511.0dip</dimen>
+    <dimen name="sec_video_incall_button_height">128.0dip</dimen>
+    <dimen name="sec_video_incall_button_width">219.0dip</dimen>
+    <dimen name="sec_video_vga_video_width">511.0dip</dimen>
+    <dimen name="sec_video_vga_video_height">387.5dip</dimen>
+    <dimen name="sec_video_vga_preview_width">169.0dip</dimen>
+    <dimen name="sec_video_vga_preview_height">127.0dip</dimen>
+    <dimen name="sec_video_vga_incoming_preview_width">378.0dip</dimen>
+    <dimen name="sec_video_vga_incoming_preview_height">284.0dip</dimen>
+    <dimen name="sec_video_view_margin_bottom">30.0dip</dimen>
+    <dimen name="sec_video_dialpad_container_margin_top">0.0dip</dimen>
+    <dimen name="sec_video_dialpad_container_usa_gsm_margin_top">0.0dip</dimen>
+    <dimen name="sec_video_dialpad_digits_height">89.0dip</dimen>
+    <dimen name="sec_video_incall_button_padding_top">27.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_info_height">387.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_info_left_margin">186.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_banner_width">438.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_banner_height">64.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_banner_left_margin">169.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_secondary_photo_bottom_margin">5.0dip</dimen>
+    <dimen name="sec_multiparty_video_call_secondary_call_info_width">274.0dip</dimen>
+    <dimen name="sec_video_incall_camera_button_layout_size">97.0dip</dimen>
+    <dimen name="sec_video_incall_button_usa_width">124.0dip</dimen>
+    <dimen name="sec_video_epdg_notify_info_banner_bottom_margin">0.0dip</dimen>
+    <dimen name="sec_video_vga_video_margin">342.0dip</dimen>
+    <dimen name="sec_video_call_modify_banner_open_banner_top_margin">106.0dip</dimen>
+    <dimen name="sec_primary_video_call_banner_att_width">608.0dip</dimen>
+    <dimen name="sec_video_vga_video_att_margin_left">48.0dip</dimen>
+    <dimen name="sec_incoming_volte_video_call_widget_width">353.0dip</dimen>
+    <dimen name="sec_incoming_volte_video_call_widget_height">284.0dip</dimen>
+    <dimen name="sec_incoming_volte_video_call_widget_background_height">284.0dip</dimen>
+    <dimen name="sec_incoming_volte_video_call_widget_background_with_wave_effect_height">270.0dip</dimen>
+    <dimen name="caller_info_card_top_margin">404.0dip</dimen>
+    <dimen name="sec_call_popup_width">395.0dip</dimen>
+    <dimen name="sec_call_popup_reject_msg_create_text_size">17.0dip</dimen>
+    <dimen name="sec_call_popup_reject_call_with_message_item_height">51.0dip</dimen>
+    <dimen name="sec_dialpad_views_width">309.0dip</dimen>
+    <dimen name="sec_dialpad_digits_height">157.0dip</dimen>
+    <dimen name="sec_dialpad_keys_height">297.0dip</dimen>
+    <dimen name="sec_dialpad_button_width">103.0dip</dimen>
+    <dimen name="sec_dialpad_button_height">74.0dip</dimen>
+    <dimen name="sec_call_banner_height_onehand">161.0dip</dimen>
+    <dimen name="sec_endcall_buttons_margin_top_onehand">185.0dip</dimen>
+    <dimen name="sec_end_under_button_margin_top_onehand">290.0dip</dimen>
+    <dimen name="sec_call_buttons_padding_side_left_onehand">15.0dip</dimen>
+    <dimen name="sec_call_buttons_padding_side_right_onehand">420.0dip</dimen>
+    <dimen name="sec_button_arrow_margin_end_onehand">346.0dip</dimen>
+    <dimen name="sec_incall_layout_width_onehand">297.0dip</dimen>
+    <dimen name="sec_incall_layout_height_onehand">200.0dip</dimen>
+    <dimen name="sec_call_buttons_horizontal_out_line_onehand">199.0dip</dimen>
+    <dimen name="sec_call_buttons_vertical_out_line_onehand">296.0dip</dimen>
+    <dimen name="sec_button_arrow_margin_bottom_onehand">135.0dip</dimen>
+    <dimen name="sec_video_epdg_notify_info_banner_width">366.0dip</dimen>
+    <dimen name="sec_easy_enhanced_incoming_widget_volte_left_top_hint_vertical_margin">55.0dip</dimen>
+    <dimen name="sec_easy_enhanced_incoming_widget_volte_left_hint_vertical_margin">143.0dip</dimen>
+    <dimen name="sec_easy_enhanced_incoming_widget_volte_right_hint_vertical_margin">168.0dip</dimen>
+    <dimen name="sec_easy_enhanced_incoming_widget_volte_hint_side_margin">118.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_048f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0490">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0491">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0492">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0493">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0494">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0495">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0496">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0497">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0498">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0499">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_049a">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_049b">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_049c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_049d">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_049e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_049f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04a0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04a1">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04a2">false</item>
+</resources>

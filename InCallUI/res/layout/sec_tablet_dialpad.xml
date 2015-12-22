@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialpad" android:layout_width="fill_parent" android:layout_height="@dimen/sec_dialpad_keys_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container_dialpad" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="@style/SecDialpadButtonStyle">
+            <RelativeLayout android:id="@id/container_one" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/one" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_two" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/two" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_three" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/three" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/SecDialpadHorizontalDividerStyle" />
+        <LinearLayout style="@style/SecDialpadButtonStyle">
+            <RelativeLayout android:id="@id/container_four" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/four" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_five" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/five" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_six" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/six" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/SecDialpadHorizontalDividerStyle" />
+        <LinearLayout style="@style/SecDialpadButtonStyle">
+            <RelativeLayout android:id="@id/container_seven" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/seven" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_eight" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/eight" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_nine" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/nine" layout="@layout/sec_dialpad_key" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/SecDialpadHorizontalDividerStyle" />
+        <LinearLayout style="@style/SecDialpadButtonStyle">
+            <RelativeLayout android:id="@id/container_star" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/star" layout="@layout/sec_dialpad_zero_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_zero" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/zero" layout="@layout/sec_dialpad_zero_key" />
+            </RelativeLayout>
+            <View style="@style/SecDialpadVerticalDividerStyle" />
+            <RelativeLayout android:id="@id/container_pound" style="@style/SecDialpadButtonStyle">
+                <include android:id="@id/pound" layout="@layout/sec_dialpad_zero_key" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View style="@style/SecDialpadHorizontalDividerStyle" />
+    </LinearLayout>
+</RelativeLayout>

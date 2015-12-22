@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="@dimen/drivelink_mw_incall_button_width" android:layout_height="@dimen/drivelink_mw_endcall_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:drivelink="http://schemas.android.com/apk/res-auto">
+    <com.android.incallui.SecDrivelinkButton android:id="@id/answerBtn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0" drivelink:normalColor="@color/drivelink_answer_btn_background" drivelink:selectedColor="@color/drivelink_answer_btn_background_checked" drivelink:imageSrc="@drawable/btn_phone_icon_with_text_below_call_n" drivelink:label="@string/drivelink_answer_text" drivelink:orientation="horizontal" />
+    <com.android.incallui.SecDrivelinkButton android:id="@id/rejectBtn" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" drivelink:normalColor="@color/drivelink_reject_btn_background" drivelink:selectedColor="@color/drivelink_reject_btn_background_checked" drivelink:imageSrc="@drawable/btn_phone_icon_with_text_below_rejectl_n" drivelink:label="@string/drivelink_reject_text" drivelink:orientation="horizontal" />
+</LinearLayout>

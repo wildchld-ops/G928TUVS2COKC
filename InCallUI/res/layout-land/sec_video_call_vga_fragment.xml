@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/indicator_area" android:layout_width="fill_parent" android:layout_height="@dimen/indicator_area_height" />
+    <RelativeLayout android:id="@id/videoCallViews" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator_area">
+        <View android:id="@id/call_state_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sec_video_call_state_area_height" />
+        <RelativeLayout android:id="@id/videoViewsContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/call_state_area">
+            <RelativeLayout android:id="@id/videoContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextureView android:id="@id/incomingVideo" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" />
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/far_end_preparing_animation" android:background="@color/sec_incall_screen_background" android:visibility="gone" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height">
+                    <ProgressBar android:gravity="center" android:id="@id/far_end_preparing_progress" android:layout_width="@dimen/sec_video_preparing_animation_size" android:layout_height="@dimen/sec_video_preparing_animation_size" android:layout_marginBottom="@dimen/sec_video_preparing_animation_bottom_margin" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+                    <TextView android:textSize="@dimen/sec_video_preparing_text_size" android:textColor="@color/sec_video_preparing_text_color" android:id="@id/far_end_preparing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prepareOtherVideo" android:singleLine="true" android:layout_below="@id/far_end_preparing_progress" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/farEndPhoto" android:visibility="gone" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" android:src="@null" />
+                <ViewStub android:id="@id/incomingVideoBorderStub" android:layout="@layout/sec_incoming_video_border" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" />
+                <com.android.incallui.secwidget.animationwidget.SecCaptureAnimationView android:id="@id/far_capture_animation_view" android:visibility="gone" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/previewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextureView android:id="@id/previewVideo" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" />
+                <View android:id="@id/near_end_switch_animation" android:background="@color/sec_video_switch_camera_animation_color" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" android:alpha="0.0" />
+                <com.android.incallui.secwidget.animationwidget.SecCaptureAnimationView android:id="@id/near_capture_animation_view" android:visibility="gone" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" />
+                <ImageView android:id="@id/nearEndPhoto" android:visibility="gone" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" android:src="@null" />
+                <ViewStub android:id="@id/previewVideoBorderStub" android:layout="@layout/sec_preview_video_border" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/farEndSurfaceLayoutTemplate" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" />
+            <RelativeLayout android:id="@id/incomingSurfaceLayoutTemplate" android:layout_width="@dimen/sec_video_vga_incoming_preview_width" android:layout_height="@dimen/sec_video_vga_incoming_preview_height" android:layout_alignParentBottom="true" />
+            <RelativeLayout android:id="@id/outgoingSurfaceLayoutTemplate" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" />
+            <RelativeLayout android:id="@id/nearEndSurfaceLayoutTemplate" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" android:layout_alignBottom="@id/farEndSurfaceLayoutTemplate" />
+            <RelativeLayout android:id="@id/nearEndSurfaceLayoutTemplateVzw" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/sec_video_vga_video_margin" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/touchArea" android:layout_width="@dimen/sec_video_vga_video_width" android:layout_height="@dimen/sec_video_vga_video_height" android:layout_below="@id/call_state_area" android:soundEffectsEnabled="false">
+            <RelativeLayout android:id="@id/touchBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/bigTouchArea" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/smallTouchArea" android:layout_width="@dimen/sec_video_vga_preview_width" android:layout_height="@dimen/sec_video_vga_preview_height" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/modifyRequestInfoBannerStub" android:layout="@layout/sec_video_modify_request_info_banner_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator_area" />
+    <ViewStub android:id="@id/modifyRequestInfoBannerGsmStub" android:layout="@layout/sec_video_modify_request_info_banner_gsm_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator_area" />
+    <ViewStub android:id="@id/epdgNotifyBannerStub" android:layout="@layout/sec_video_epdg_notify_banner_viewstub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator_area" />
+</RelativeLayout>

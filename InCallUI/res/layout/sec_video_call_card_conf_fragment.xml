@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/primary_call_info_container" android:background="@color/incall_call_banner_active_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <include layout="@layout/sec_primary_call_info_video_conf" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/waveEffectContainer" android:visibility="gone" android:layout_width="@dimen/wave_effect_container_width" android:layout_height="@dimen/wave_effect_container_height" android:layout_below="@id/primary_call_info_container" />
+</RelativeLayout>

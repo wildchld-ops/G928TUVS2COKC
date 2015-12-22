@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/drivelink_default_background_second" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/secondaryCallPhoto" android:layout_width="@dimen/drivelink_second_contact_photo_size" android:layout_height="@dimen/drivelink_second_contact_photo_size" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="11.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="28.0dip" android:textColor="#fffafafa" android:ellipsize="end" android:gravity="start" android:id="@id/secondaryCallName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffc5c5c5" android:ellipsize="end" android:gravity="start" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/onHold" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="1.0dip" android:layout_height="47.0dip" android:src="#ffc5c5c5" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/swapButton" android:clickable="true" android:layout_width="98.0dip" android:layout_height="fill_parent">
+        <ImageView android:duplicateParentState="true" android:layout_width="31.0dip" android:layout_height="31.0dip" android:src="@drawable/phone_multicall_swap" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/drivelink_multicall_swap_text_color" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onscreenSwapCallsText" android:fontFamily="sec-roboto-light" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

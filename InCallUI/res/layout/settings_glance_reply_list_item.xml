@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="125.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_gravity="center" android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" card_view:cardCornerRadius="0.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llayout_cardview" android:background="@drawable/sec_glance_reply_list_item_background" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="42.0dip" android:layout_height="42.0dip">
+                <ImageView android:id="@id/imgview_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_conference" android:layout_marginStart="5.0dip" />
+                <TextView android:textSize="25.0dip" android:textStyle="normal" android:textColor="#fffafafa" android:gravity="center" android:layout_gravity="center" android:id="@id/textview_photo" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" android:textAlignment="center" android:paddingStart="5.0dip" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip">
+                <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="#ff000000" android:id="@id/textview_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ff6b6f72" android:ellipsize="end" android:id="@id/textview_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="sec-roboto-light" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
