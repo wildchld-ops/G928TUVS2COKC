@@ -362,17 +362,17 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v1, 0x1388
+    const/16 v1, 0x0
 
     goto :goto_1
 
     :pswitch_0
-    const/16 v1, 0xc8
+    const/16 v1, 0x0
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v1, 0x7d0
+    const/16 v1, 0x0
 
     goto :goto_1
 
