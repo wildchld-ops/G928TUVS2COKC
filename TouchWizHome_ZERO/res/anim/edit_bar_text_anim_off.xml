@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <color android:duration="333" dali:fromColor="#ffffffff" dali:toColor="#00000000" />
-</set>

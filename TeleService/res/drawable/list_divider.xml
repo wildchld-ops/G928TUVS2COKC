@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="56.0dip" android:insetRight="@dimen/ip_call_list_paddingEnd"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <solid android:color="@color/call_setting_divider_color" />
-        <size android:height="2.0px" android:width="1.0dip" />
-    </shape>
-</inset>

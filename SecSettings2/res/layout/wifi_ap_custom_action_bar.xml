@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:actionMenuTextAppearance" android:id="@id/remove_menu_item" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_ap_menu_delete" style="?android:attr/actionButtonStyle" />
-    <TextView android:textAppearance="?android:actionMenuTextAppearance" android:id="@id/add_menu_item" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_ap_allowed_device_add_button" style="?android:attr/actionButtonStyle" />
-</LinearLayout>

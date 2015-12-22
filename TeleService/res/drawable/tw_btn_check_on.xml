@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<bitmap android:src="@drawable/tw_btn_check_on_holo_dark" android:tint="@color/tw_btn_check_on_tint"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

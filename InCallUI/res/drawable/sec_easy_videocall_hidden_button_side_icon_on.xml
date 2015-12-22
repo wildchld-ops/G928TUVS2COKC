@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="oval"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/sec_video_call_hidden_button_icon_on_color" />
-    <size android:height="@dimen/sec_easy_video_call_hidden_button_height" android:width="@dimen/sec_easy_video_call_hidden_button_width" />
-</shape>

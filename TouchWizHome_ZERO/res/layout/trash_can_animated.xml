@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.ContainerView android:layout_gravity="center" android:id="@id/trash_container" android:layout_width="@dimen/home_edit_bar_icon_width" android:layout_height="@dimen/home_edit_bar_icon_height"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/trash_can_layout" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/trash_lid" android:layout_width="@dimen/home_edit_bar_icon_width" android:layout_height="@dimen/home_edit_bar_icon_height" android:src="@drawable/homescreen_toolbar_ic_delete_uninstall_lid" dali:scaleType="fitXY" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/trash_can" android:layout_width="@dimen/home_edit_bar_icon_width" android:layout_height="@dimen/home_edit_bar_icon_height" android:src="@drawable/homescreen_toolbar_ic_delete_uninstall_bin" dali:scaleType="fitXY" />
-</com.sec.daliviews.views.ContainerView>

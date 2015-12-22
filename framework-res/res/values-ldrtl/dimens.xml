@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="tw_menu_popup_left_margin">0.0dip</dimen>
-    <dimen name="tw_menu_popup_right_margin">8.0dip</dimen>
-    <dimen name="tw_menu_popup_horizontal_offset">8.0dip</dimen>
-</resources>

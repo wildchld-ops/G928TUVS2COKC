@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="mode_5x5_apps_folder_item_view_title_text_view_font_size">12.0dip</dimen>
-    <dimen name="mode_5x5_apps_item_view_title_text_view_font_size">12.0dip</dimen>
-    <dimen name="mode_5x5_home_folder_item_view_title_text_view_font_size">12.0dip</dimen>
-    <dimen name="mode_5x5_home_item_view_title_text_view_font_size">12.0dip</dimen>
-    <dimen name="mode_top5_text_font_size_small">12.0dip</dimen>
-</resources>

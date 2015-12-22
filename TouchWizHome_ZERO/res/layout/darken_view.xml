@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.ClippedContainerView android:id="@id/home_fragment_darken_view" android:background="#00000000" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:layerHeight="@integer/layer_darken_folder" custom:clip="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/absolute_layout_no_anim" />
-</com.sec.daliviews.views.ClippedContainerView>

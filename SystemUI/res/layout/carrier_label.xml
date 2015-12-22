@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Network" android:gravity="start|bottom|center" android:layout_gravity="bottom" android:id="@id/carrier_label" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/carrier_label_height" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="@color/notification_category_text_shadow_color" android:shadowDx="0.0" android:shadowDy="4.0" android:shadowRadius="8.0" android:paddingStart="@dimen/carrier_label_start_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

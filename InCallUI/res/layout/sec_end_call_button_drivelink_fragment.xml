@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:drivelink="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/drivelink_incall_button_width" android:layout_height="@dimen/drivelink_incall_button_height" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
-        <com.android.incallui.SecDrivelinkButton android:id="@id/callBtn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="2.0dip" drivelink:normalColor="@color/drivelink_answer_btn_background" drivelink:selectedColor="@color/drivelink_answer_btn_background_checked" drivelink:imageSrc="@drawable/btn_phone_icon_with_text_below_call_n" />
-        <com.android.incallui.SecDrivelinkButton android:id="@id/messageBtn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="@dimen/drivelink_incall_button_margin_end" drivelink:normalColor="@color/drivelink_call_btn_background" drivelink:selectedColor="@color/drivelink_call_btn_background_checked" drivelink:imageSrc="@drawable/btn_phone_icon_message_n" />
-    </LinearLayout>
-</RelativeLayout>

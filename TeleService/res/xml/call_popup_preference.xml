@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="@string/callsettings_popup_incoming_calls" android:key="call_popup_preference" android:summary="@string/callsettings_popup_incoming_calls_summary" />
-    <CheckBoxPreference android:title="@string/callsettings_second_screen_calls_title2" android:key="second_screen_preference" android:summary="@string/callsettings_second_screen_calls_summary2" />
-    <CheckBoxPreference android:title="@string/incall_overlay_popup_title" android:key="call_overlay_popup_preference" android:summary="@string/incall_overlay_popup_summary" android:defaultValue="true" />
-</PreferenceScreen>

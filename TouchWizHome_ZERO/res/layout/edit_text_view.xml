@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.app.launcher.views.EditTextView android:textSize="@dimen/open_folder_title_font_size" android:textColor="@color/folder_title_text_color" android:textColorHint="@color/folder_title_text_hint_color" android:layout_gravity="center|left|top" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:hint="@string/create_folder_hint" android:singleLine="true" android:maxLength="@integer/editText_default_maxLength" android:inputType="textCapSentences" android:imeOptions="actionDone|flagNoExtractUi"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

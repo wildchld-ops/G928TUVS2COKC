@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true" android:drawable="@drawable/incallui_call_endcall" />
-    <item android:state_enabled="false" android:drawable="@drawable/incallui_call_endcall_disable" />
-</selector>

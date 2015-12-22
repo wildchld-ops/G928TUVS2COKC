@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/inCallHiddenButtons" android:background="@color/sec_video_call_button_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/sec_video_incall_hidden_button_height">
-        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/hiddenSwitchCamera" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="wrap_content" android:src="@drawable/sec_videocall_hidden_button_side_icon" android:scaleType="center" />
-        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/hiddenEndCall" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="wrap_content" android:src="@drawable/sec_videocall_hidden_button_middle_icon" android:scaleType="center" />
-        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/hiddenMute" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="wrap_content" android:src="@drawable/sec_videocall_hidden_button_side_icon" android:scaleType="center" />
-    </LinearLayout>
-</RelativeLayout>

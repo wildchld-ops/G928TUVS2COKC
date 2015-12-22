@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<view android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialpad_view" android:background="@color/background_dialpad" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" class="com.android.phone.dialpad.DialpadView"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/digits_container" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="139.0dip">
-        <ImageButton android:gravity="center" android:id="@id/dialpad_overflow" android:paddingLeft="@dimen/dialpad_digits_menu_left_padding" android:paddingRight="@dimen/dialpad_digits_menu_right_padding" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="@dimen/dialpad_overflow_margin" android:src="@drawable/ic_overflow_menu" android:tint="@color/dialpad_icon_tint" android:contentDescription="@string/description_dialpad_overflow" />
-        <ImageButton android:state_enabled="false" android:id="@id/deleteButton" android:paddingLeft="@dimen/dialpad_digits_padding" android:paddingRight="@dimen/dialpad_digits_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_dialpad_delete" android:tint="@color/dialpad_icon_tint" android:contentDescription="@string/description_delete_button" />
-    </LinearLayout>
-    <include layout="@layout/dialpad_onehand" />
-</view>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceScreen android:title="@string/photoring_block_setting" android:fragment="com.android.phone.operator.kor.LGTPhotoRingSetting" />
-    <PreferenceScreen android:title="@string/photoring_guide_title" android:key="photoring_user_guide" />
-</PreferenceScreen>

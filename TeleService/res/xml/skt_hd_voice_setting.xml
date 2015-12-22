@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
-    <ListPreference android:entries="@array/voicecall_type_entries" android:title="@string/voicecall_type_title" android:key="voicecall_type" android:summary="@string/voicecall_type_summary" android:defaultValue="0" android:entryValues="@array/voicecall_type_values" />
-    <SwitchPreference android:title="@string/menu_volteNoti" android:key="volte_noti_preference" android:summary="@string/summary_volteNoti" />
-    <PreferenceScreen android:title="@string/callsettings_menu_volte_instant_lettering" android:key="volte_instant_lettering_preference" android:summary="@string/callsettings_summary_volte_instant_lettering" android:fragment="com.android.phone.callsettings.InstantLettering" />
-</PreferenceScreen>

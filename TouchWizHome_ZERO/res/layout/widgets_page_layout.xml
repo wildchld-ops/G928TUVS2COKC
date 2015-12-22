@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.layouts.PageLayout android:orientation="vertical" android:columnCount="8" dali:animatePositioning="false" dali:enableDancingIcons="false" dali:enableBackgroundEffect="true" dali:backgroundEffectOpacity="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

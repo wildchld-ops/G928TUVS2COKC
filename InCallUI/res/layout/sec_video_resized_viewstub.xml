@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@id/farEndSurfaceLayoutResizeTemplate" android:layout_width="@dimen/sec_video_vga_video_resize_width" android:layout_height="@dimen/sec_video_vga_video_resize_height" android:layout_marginTop="@dimen/sec_video_vga_video_resize_margin_top" android:layout_marginStart="@dimen/sec_video_vga_video_resize_margin_left" />
-    <RelativeLayout android:id="@id/resizedTouchArea" android:layout_width="@dimen/sec_video_vga_video_resize_width" android:layout_height="@dimen/sec_video_vga_video_resize_height" android:layout_marginTop="@dimen/sec_video_vga_video_resize_margin_top" android:layout_marginStart="@dimen/sec_video_vga_video_resize_margin_left" />
-</RelativeLayout>

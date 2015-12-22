@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/inCallModifyCallButtons" android:background="@color/sec_video_call_button_background" android:visibility="gone" android:layout_width="@dimen/sec_video_incall_button_usa_width" android:layout_height="fill_parent">
-        <com.android.incallui.SecVideoButton android:id="@id/changeToVideoButton" android:layout_width="fill_parent" android:layout_height="1.0dip" android:text="@string/usa_vzw_change_to_video" android:drawableTop="@drawable/sec_video_incall_button_video_vzw_icon" android:layout_weight="1.0" style="@style/SecVideoCallModifyButtonWithText" />
-        <com.android.incallui.SecVideoButton android:ellipsize="end" android:id="@id/changeToVideoShareButton" android:paddingBottom="@dimen/sec_video_incall_modify_button_with_text_2_line_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:text="@string/usa_vzw_change_to_oneway_video" android:maxLines="2" android:singleLine="false" android:drawableTop="@drawable/sec_video_incall_button_video_vzw_icon" android:layout_weight="1.0" style="@style/SecVideoCallModifyButtonWithText" />
-        <com.android.incallui.SecVideoButton android:id="@id/stayOnVoiceButton" android:layout_width="fill_parent" android:layout_height="1.0dip" android:text="@string/usa_vzw_stay_on_voice" android:drawableTop="@drawable/sec_video_incall_button_voice_vzw_icon" android:layout_weight="1.0" style="@style/SecVideoCallModifyButtonWithText" />
-    </LinearLayout>
-</RelativeLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:textAppearance="?android:textAppearanceListItem" android:layout_width="fill_parent" android:layout_height="56.0dip">
-        <CheckBox android:layout_gravity="left" android:id="@id/bottombar_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/select_all" android:layout_alignParentLeft="true" />
-        <TextView android:id="@id/bottombar_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/selected_count" android:layout_alignBaseline="@id/bottombar_checkbox" android:layout_alignParentRight="true" />
-    </RelativeLayout>
-</LinearLayout>

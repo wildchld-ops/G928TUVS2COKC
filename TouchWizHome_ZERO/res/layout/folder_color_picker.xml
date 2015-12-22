@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.app.launcher.views.FolderColorPicker android:layout_gravity="left" android:visibility="invisible" android:layout_width="@dimen/folder_color_picker_width" android:layout_height="@dimen/folder_color_picker_height" dali:removable="false" dali:resizable="false" dali:rotatable="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/linear_layout_vertical_no_animation" />
-    <com.sec.daliviews.views.AdapterView android:enabled="true" android:layout_gravity="left" android:id="@id/color_picker_adapter_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/folder_color_picker_adapter_margin_left" android:layout_marginTop="@dimen/folder_color_picker_adapter_margin_top" android:layout_marginRight="@dimen/folder_color_picker_adapter_margin_right" android:layout_marginBottom="@dimen/folder_color_picker_adapter_margin_bottom">
-        <use_layout layout="@layout/folder_color_picker_layout" />
-    </com.sec.daliviews.views.AdapterView>
-</com.sec.android.app.launcher.views.FolderColorPicker>

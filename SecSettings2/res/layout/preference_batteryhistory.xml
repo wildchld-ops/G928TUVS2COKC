@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="#ccfafafa" android:paddingBottom="@dimen/list_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/battery_history_chart_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/battery_history_chart" />
-    <TextView android:textColor="?android:colorControlActivated" android:gravity="start|center" android:id="@id/labelsHeader" android:paddingTop="@dimen/list_item_top_padding" android:paddingBottom="@dimen/list_item_bottom_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/power_usage_list_summary" android:paddingStart="@dimen/list_item_start_padding" android:paddingEnd="@dimen/list_item_end_padding" style="@style/list_summary_text_style" />
-</LinearLayout>

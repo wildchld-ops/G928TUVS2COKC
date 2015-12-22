@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.PageView android:layout_gravity="center" android:id="@id/home_plus_page_root" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" dali:accept_drop="false" dali:page_near_edge_threshold="0.05" dali:page_flip_delay="0.5" dali:page_flip_time="0.3"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/home_fragment_root_layout" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/home_plus_page_icon" android:src="@drawable/homescreen_quick_view_add" />
-</com.sec.daliviews.views.PageView>

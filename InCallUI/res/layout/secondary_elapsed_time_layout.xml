@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/sec_multiparty_call_label_text_size" android:textColor="@color/sec_incall_call_banner_subtext_color" android:id="@id/secondaryElapsedTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sec_uhd_icon_right_margin" android:singleLine="true" android:layout_centerVertical="true" android:importantForAccessibility="no" android:fontFamily="sans-serif" />
-    <TextView android:textSize="@dimen/sec_multiparty_call_label_text_size" android:textColor="@color/sec_incall_call_banner_subtext_color" android:id="@id/secondaryForwardSlash" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forwardSlash" android:singleLine="true" android:layout_toRightOf="@id/secondaryElapsedTime" android:layout_centerVertical="true" android:importantForAccessibility="no" android:fontFamily="sans-serif" />
-</RelativeLayout>

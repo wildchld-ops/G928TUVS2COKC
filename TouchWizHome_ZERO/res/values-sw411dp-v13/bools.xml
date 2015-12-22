@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <bool name="dnd_drag_view_to_center">true</bool>
-    <bool name="enable_apps_dynamic_grid_change">true</bool>
-    <bool name="enable_close_folder_3x2_layout">false</bool>
-    <bool name="enable_rotation">false</bool>
-    <bool name="new_trash_animation">true</bool>
-</resources>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="oval"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <stroke android:width="@dimen/sec_photo_stroke_width" android:color="@color/sec_photo_stroke_background_color" />
-    <solid android:color="@color/contact_image_bg_color" />
-    <size android:height="@dimen/ims_conference_call_contact_image_size" android:width="@dimen/ims_conference_call_contact_image_size" />
-</shape>

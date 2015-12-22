@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.ModedView
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/moded_0x0_default_home_item_view" />
-    <include layout="@layout/moded_4x5_home_item_view" />
-    <include layout="@layout/moded_5x5_home_item_view" />
-</com.sec.daliviews.views.ModedView>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/preference_button_category_background" android:layout_width="fill_parent" android:layout_height="@dimen/preference_button_category_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="@color/preference_button_category_title_text_color" android:id="@android:id/title" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" style="?android:attr/listSeparatorTextViewStyle" />
-    <ImageView android:gravity="center_vertical" android:id="@id/settings_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/preference_category_divider" />
-    <TextView android:textSize="@dimen/preference_button_category_text_size" android:textColor="@color/preference_button_category_title_text_color" android:gravity="center" android:id="@id/text_button" android:background="@drawable/tw_common_list_item_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/preference_button_category_text_button_minwidth" />
-    <ImageView android:gravity="center" android:id="@id/img_button" android:background="@drawable/tw_common_list_item_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:minWidth="@dimen/preference_button_category_image_button_minwidth" />
-</LinearLayout>

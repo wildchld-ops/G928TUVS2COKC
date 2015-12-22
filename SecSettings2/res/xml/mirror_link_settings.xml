@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:icon="@drawable/APKTOOL_DUMMY_0164" android:id="@id/mirror_link_settings" android:title="@string/mirror_link_title" android:summary="@string/mirror_link_summary" android:fragment="com.android.settings.mirrorlink.MirrorLink"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

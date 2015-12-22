@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/allapps_list_item_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBox android:id="@id/list_item_checkbox" android:background="@drawable/tw_btn_check_bg_mtrl" android:focusable="false" android:visibility="gone" android:layout_width="@dimen/list_item_checkbox_width" android:layout_height="@dimen/list_item_checkbox_width" android:layout_marginLeft="@dimen/list_item_checkbox_margin_Left" />
-    <ImageView android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/list_item_icon" android:focusable="false" android:layout_width="@dimen/list_item_icon_width" android:layout_height="@dimen/list_item_icon_height" android:layout_marginTop="@dimen/list_item_icon_margin_top" android:scaleType="fitXY" android:layout_marginStart="@dimen/list_item_icon_margin_left" />
-    <TextView android:textSize="@dimen/list_item_text_size" android:textColor="#fffafafa" android:gravity="center_vertical" android:id="@id/list_item_text" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_text_height" android:singleLine="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/list_item_text_drawable_padding"
-      xmlns:android="http://schemas.android.com/apk/res/android" />
-</LinearLayout>

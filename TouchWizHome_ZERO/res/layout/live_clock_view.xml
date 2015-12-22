@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.app.launcher.views.LiveClockUsingView android:id="@id/moded_icon_imageView" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/frame_layout" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/live_clock_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clock1_background" android:scaleType="fitCenter" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/live_clock_hour" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clock1_hour_hand" android:scaleType="centerInside" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/live_clock_minute" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clock1_minute_hand" android:scaleType="centerInside" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/live_clock_seconds" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/clock1_second_hand" android:scaleType="centerInside" />
-</com.sec.android.app.launcher.views.LiveClockUsingView>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="tabTitleTextSize">15.0dip</dimen>
-    <dimen name="dialogTitleTextSizeForZERO">19.0dip</dimen>
-    <dimen name="dialogTitleTextSize">20.0dip</dimen>
-    <dimen name="dialogButtonTextSize">16.0dip</dimen>
-    <dimen name="dialogMessageTextSize">17.0dip</dimen>
-    <dimen name="bottomBtnTextSize">17.0dip</dimen>
-</resources>

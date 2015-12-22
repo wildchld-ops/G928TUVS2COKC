@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <rotate android:duration="300" android:fromDegrees="0.0" android:toDegrees="@dimen/folder_anim_rotation_angle" dali:rotationAxisX="-1.0" dali:rotationAxisY="-1.0" dali:rotationAxisZ="0.0" />
-    <rotate android:duration="200" android:fromDegrees="@dimen/folder_anim_rotation_angle" android:toDegrees="@dimen/folder_anim_rotation_angle_min" android:startOffset="300" dali:rotationAxisX="-1.0" dali:rotationAxisY="-1.0" dali:rotationAxisZ="0.0" />
-    <color android:duration="1" dali:fromColor="#ff00ffff" dali:toColor="#ff00ffff" />
-</set>

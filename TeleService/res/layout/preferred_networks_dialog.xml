@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CallSettingsDialogPopupStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceListItem" android:textSize="@dimen/fdnLabelTextSize" android:textColor="@color/tty_dialog_text_color" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/preferred_networks_id_msg" />
-    <EditText android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/tty_dialog_text_color" android:id="@id/edit_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
-</LinearLayout>

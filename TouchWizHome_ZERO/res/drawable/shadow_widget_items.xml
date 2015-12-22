@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.effects.ShadowEffect dali:scaleX="@dimen/widget_item_shadow_scale" dali:scaleY="@dimen/widget_item_shadow_scale" dali:strength="@dimen/widget_item_shadow_strength" dali:blur="0" dali:depth="@dimen/widget_item_shadow_depth" dali:angle="@dimen/widget_item_shadow_angle" dali:distance="@dimen/widget_item_shadow_distance"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

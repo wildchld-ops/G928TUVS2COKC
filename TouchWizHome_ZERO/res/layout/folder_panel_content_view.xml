@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.ContainerView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/folder_panel_root" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/folder_panel_layout_height" dali:accept_drop="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/top_five_layout" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bottom_bar" />
-    <com.sec.daliviews.views.AdapterView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/folder_adapter_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/folder_panel_adapter_layout_margin_right" dali:autoscroll_speed="3000" dali:rearrangement_delay="0.5" dali:horizontalScroll="true" dali:accept_drop="false" dali:resizable="false" dali:rotatable="false" dali:autoscroll_on_drag_to_edge="true">
-        <use_layout layout="@layout/folder_panel_adapter_layout" />
-    </com.sec.daliviews.views.AdapterView>
-</com.sec.daliviews.views.ContainerView>

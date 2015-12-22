@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="preferences_left_pane_weight">4</integer>
-    <integer name="preferences_right_pane_weight">6</integer>
-    <integer name="sim_name_length">32</integer>
-    <integer name="bluetooth_name_length">32</integer>
-</resources>

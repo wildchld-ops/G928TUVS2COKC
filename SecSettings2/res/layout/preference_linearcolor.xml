@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" style="@style/list_item_container_style"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.applications.LinearColorBar android:gravity="center_vertical" android:id="@id/linear_color_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/list_item_top_padding" android:layout_marginBottom="@dimen/list_item_bottom_padding" android:shadowColor="?android:colorBackground" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="4.0" style="@style/list_title_text_style" />
-</FrameLayout>

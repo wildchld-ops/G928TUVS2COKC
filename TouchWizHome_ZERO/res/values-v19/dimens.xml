@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="dimen" name="page_offset_y">0.0%</item>
-    <dimen name="translucent_status_bar_height">25.0dip</dimen>
-</resources>

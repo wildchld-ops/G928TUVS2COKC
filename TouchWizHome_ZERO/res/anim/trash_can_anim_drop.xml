@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <scale android:duration="166" android:pivotX="0.5" android:pivotY="0.0" android:startOffset="100" android:toXScale="1.3" android:toYScale="1.3" dali:animateTo="true" />
-    <scale android:duration="433" android:pivotX="0.5" android:pivotY="0.0" android:startOffset="266" android:toXScale="1.2" android:toYScale="1.2" dali:animateTo="true" />
-</set>

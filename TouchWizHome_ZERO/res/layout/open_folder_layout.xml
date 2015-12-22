@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.layouts.GridLayout android:orientation="vertical" android:rowCount="@integer/open_folder_grid_rows" android:columnCount="@integer/open_folder_grid_columns" dali:spacingHorizontal="@dimen/open_folder_cell_horizontal_spacing" dali:spacingVertical="@dimen/open_folder_cell_vertical_spacing" dali:cellSizeX="@dimen/open_folder_cellSizeX" dali:cellSizeY="@dimen/open_folder_cellSizeY" dali:clipping="true" dali:verticalScroll="true" dali:flow="true" dali:animatePositioning="true" dali:animateResizing="false" dali:animateAddingView="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

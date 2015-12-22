@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="17.0dip" android:gravity="center_vertical" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/menu_edit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <Button android:id="@id/saveButton" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/save" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/save" />
-    <Button android:id="@id/cancelButton" android:layout_width="80.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_toLeftOf="@id/saveButton" android:layout_centerVertical="true" android:contentDescription="@string/cancel" />
-</RelativeLayout>

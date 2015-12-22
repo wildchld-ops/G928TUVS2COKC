@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="127.0dip" android:layout_height="127.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ani_dial_phone" />
-    <ImageView android:gravity="center" android:id="@id/ani_incom_glow_01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ani_incom_glow_01" />
-    <ImageView android:gravity="center" android:id="@id/ani_incom_glow_02" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ani_incom_glow_02" />
-    <ImageView android:gravity="center" android:id="@id/ani_incom_glow_03" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ani_incom_glow_03" />
-    <ImageView android:gravity="center" android:id="@id/ani_incom_glow_04" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ani_incom_glow_04" />
-</FrameLayout>

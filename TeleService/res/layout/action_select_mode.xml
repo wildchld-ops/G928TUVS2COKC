@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_back" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="-5.0dip" style="?android:attr/actionButtonStyle">
-        <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/tw_ic_ab_back_mtrl" />
-        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/actionbar_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
-    </LinearLayout>
-    <Button android:textSize="18.0sp" android:gravity="center|left" android:id="@id/select_all_menu" android:paddingLeft="12.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="124.0dip" android:layout_height="34.0dip" android:layout_marginLeft="0.0dip" android:divider="?android:listDividerAlertDialog" android:singleLine="true" style="?android:attr/actionDropDownStyle" />
-</LinearLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="tw_text_edit_action_popup_max_items_portrait_phone">5</integer>
-    <integer name="tw_text_edit_action_popup_max_items_landscape_phone">8</integer>
-</resources>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.app.launcher.views.ColorPickerItemView android:enabled="true" android:layout_gravity="center" android:id="@id/folder_color_picker_checkbox_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/frame_layout" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/folder_color_picker_item_image" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/folder_color_picker_border" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/folder_color_picker_selected" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_bg_select" />
-</com.sec.android.app.launcher.views.ColorPickerItemView>

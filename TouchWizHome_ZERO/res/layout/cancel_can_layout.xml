@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.layouts.FixedLayout dali:animatePositioning="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <LayoutPosition dali:centerX="0.0dip" dali:centerY="2.0dip" dali:centerZ="0.0" dali:width="@dimen/home_edit_bar_icon_width" dali:height="@dimen/home_edit_bar_icon_width" />
-</com.sec.daliviews.layouts.FixedLayout>

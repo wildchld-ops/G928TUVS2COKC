@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.ClippedContainerView android:layout_gravity="center|left|top" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" dali:layerHeight="@integer/layer_drag_and_drop" dali:clip="false" dali:sensitive="false"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

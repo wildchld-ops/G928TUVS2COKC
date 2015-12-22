@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:gravity="center_vertical" android:id="@id/device_name_edit_text_popup" android:layout_width="fill_parent" android:layout_height="@dimen/lock_password_edit_text_height" android:layout_marginTop="@dimen/lock_password_edit_text_marginTop" android:layout_marginBottom="@dimen/lock_password_edit_text_marginBottom" android:lines="1" android:singleLine="true" android:maxLength="50" android:inputType="textCapSentences" android:privateImeOptions="disableEmoticonInput=true;inputType=option" android:imeOptions="flagNoExtractUi" android:layout_marginStart="@dimen/fingerprint_manager_rename_leftright_margin" android:layout_marginEnd="@dimen/fingerprint_manager_rename_leftright_margin" />
-</ScrollView>

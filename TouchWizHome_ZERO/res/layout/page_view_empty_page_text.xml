@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.daliviews.views.StrokeDaliTextView android:textSize="14.0dip" android:textColor="@color/home_title_color" android:gravity="center" android:id="@id/empty_page_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" android:shadowColor="@color/icon_title_font_stroke_color" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="1.0" dali:sensitive="false" dali:stroke="@bool/stroke_text_enable" dali:storkeWidth="2.0" dali:storkeColor="@color/icon_title_font_stroke_color"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

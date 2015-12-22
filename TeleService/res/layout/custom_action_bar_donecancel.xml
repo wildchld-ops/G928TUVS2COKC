@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:id="@id/custom_action_menu" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:textSize="@dimen/cancel_text_size" android:textColor="@color/tw_text_color_menu_material_toolbar" android:id="@id/menu_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" android:textAllCaps="true" android:layout_marginStart="-32.0dip" style="?android:attr/actionButtonStyle" />
-    <Button android:textSize="@dimen/done_text_size" android:textColor="@color/tw_text_color_menu_material_toolbar" android:id="@id/menu_done" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/save" android:layout_weight="1.0" android:textAllCaps="true" android:layout_marginEnd="-12.0dip" style="?android:attr/actionButtonStyle" />
-    <ImageView android:layout_gravity="center" android:id="@id/divider_right" android:background="?android:actionBarDivider" android:visibility="gone" android:layout_width="@dimen/custom_actionbar_divider_width" android:layout_height="@dimen/custom_actionbar_divider_height" />
-</LinearLayout>

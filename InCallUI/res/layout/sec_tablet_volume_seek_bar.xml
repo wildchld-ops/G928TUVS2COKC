@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="@dimen/tablet_volume_seekbar_width" android:layout_height="@dimen/tablet_volume_seekbar_height"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <SeekBar android:layout_gravity="center" android:id="@id/volumeSeekBar" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="235.0dip" android:layout_marginTop="14.0dip" android:max="10" />
-    <TextView android:textSize="18.0dip" android:textStyle="normal" android:textColor="#ff000000" android:gravity="center" android:id="@id/volumeText" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxLines="1" android:fontFamily="sec-roboto-light" />
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="apps_item_view_title_text_maxlines">2</integer>
-    <integer name="home_item_title_max_lines">2</integer>
-    <integer name="open_folder_grid_rows">4</integer>
-    <integer name="widgets_list_open_folder_row_count">3</integer>
-    <integer name="widgets_list_row_count">3</integer>
-</resources>

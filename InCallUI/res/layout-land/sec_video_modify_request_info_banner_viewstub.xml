@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center" android:id="@id/modifyRequestInfoBanner" android:background="@color/sec_video_modify_request_info_banner_bg_color" android:visibility="gone" android:layout_width="@dimen/sec_primary_video_call_banner_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sec_video_call_modify_banner_open_banner_top_margin" android:minHeight="@dimen/sec_video_incall_modify_request_info_banner_min_height">
-        <TextView android:textSize="@dimen/sec_video_incall_modify_request_info_banner_text_size" android:textColor="@color/sec_incall_call_banner_text_color" android:gravity="center" android:id="@id/modifyRequestInfoText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    </RelativeLayout>
-</RelativeLayout>

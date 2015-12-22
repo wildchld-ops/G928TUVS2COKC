@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sec.android.app.launcher.views.WidgetPageView android:layout_gravity="top" android:paddingLeft="@dimen/widgets_list_page_padding_left" android:paddingTop="@dimen/widgets_list_page_padding_top" android:paddingRight="@dimen/widgets_list_page_padding_right" android:paddingBottom="@dimen/widgets_list_page_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" dali:accept_drop="false" dali:page_near_edge_threshold="0.05" dali:page_flip_delay="1.0" dali:page_flip_time="0.3"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
-    <use_layout layout="@layout/widget_list_layout" />
-</com.sec.android.app.launcher.views.WidgetPageView>

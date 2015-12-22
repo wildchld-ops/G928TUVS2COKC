@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:background="@drawable/tw_preference_header_item_background_mtrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/preference_header_list_min_height" android:paddingStart="@dimen/preference_header_list_padding_start" android:paddingEnd="?android:scrollbarSize"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <TextView android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/PreferenceHeaderStyle" />
-    </LinearLayout>
-</LinearLayout>

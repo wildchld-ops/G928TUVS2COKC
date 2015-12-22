@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="17.0dip" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_hotspot20_summary" android:textAlignment="viewStart" android:layout_marginStart="24.0dip" style="@style/wifi_item" />
-    <RadioGroup android:orientation="vertical" android:id="@id/radio_group" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wifi_item">
-        <RadioButton android:textSize="20.0dip" android:id="@id/radio_on" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_hs20_on" />
-        <RadioButton android:textSize="20.0dip" android:id="@id/radio_off" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_hs20_off" />
-    </RadioGroup>
-</LinearLayout>

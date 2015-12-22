@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true">
-        <bitmap android:src="@drawable/tw_list_icon_minus_mtrl" android:tint="@color/list_icon_minus_color" />
-    </item>
-    <item android:drawable="@drawable/tw_list_icon_minus_mtrl" />
-</selector>

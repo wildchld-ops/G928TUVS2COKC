@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="@dimen/block_notification_list_padding_left" android:paddingTop="@dimen/block_notification_list_padding_top" android:paddingRight="@dimen/block_notification_list_padding_right" android:paddingBottom="@dimen/block_notification_list_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_notification_block_list_describtion" />
-    <ListView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/list_divider_height" android:paddingStart="@dimen/settings_side_margin" android:paddingEnd="@dimen/settings_side_margin" />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loading_notification_apps" />
-</LinearLayout>

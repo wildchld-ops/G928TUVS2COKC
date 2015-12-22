@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.WrapContentHeightViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/point_area" android:layout_width="fill_parent" android:layout_height="@dimen/motions_circle_size" android:layout_marginTop="@dimen/motions_circle_area_margin_top" android:layout_marginBottom="@dimen/motions_circle_area_margin_bottom" android:layoutDirection="ltr" />
-    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/list_divider_padding" android:layout_marginRight="@dimen/list_divider_padding" style="@style/list_divider_style" />
-</LinearLayout>

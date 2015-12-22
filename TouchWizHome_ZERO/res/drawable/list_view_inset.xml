@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="@dimen/list_item_divider_inset_left" android:insetRight="@dimen/list_item_divider_inset_right"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape>
-        <solid android:color="@color/list_divider_color" />
-    </shape>
-</inset>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="colorpicker_hsvHeight">120.0dip</dimen>
-    <dimen name="colorpicker_hsvWidth">220.0dip</dimen>
-</resources>

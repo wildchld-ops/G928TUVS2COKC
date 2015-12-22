@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="center|left|top" android:background="#ff2fa6c9" android:layout_width="fill_parent" android:layout_height="73.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="26.0sp" android:textColor="#ffffffff" android:gravity="bottom" android:layout_gravity="bottom|center|left" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:text="@string/homes_screen_settings" />
-</FrameLayout>
