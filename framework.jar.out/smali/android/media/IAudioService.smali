@@ -31,6 +31,14 @@
     .end annotation
 .end method
 
+.method public abstract adjustLocalOrRemoteStreamVolume(IILjava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract adjustMasterVolume(IILjava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -55,6 +63,14 @@
     .end annotation
 .end method
 
+.method public abstract adjustVolume(IILjava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract avrcpSupportsAbsoluteVolume(Ljava/lang/String;Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -72,6 +88,22 @@
 .end method
 
 .method public abstract dismissVolumePanel()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract dispatchMediaKeyEvent(Landroid/view/KeyEvent;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract dispatchMediaKeyEventUnderWakelock(Landroid/view/KeyEvent;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -176,6 +208,22 @@
 .end method
 
 .method public abstract getRemoteControlClientNowPlayingEntries()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getRemoteStreamMaxVolume()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getRemoteStreamVolume()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -375,6 +423,30 @@
     .end annotation
 .end method
 
+.method public abstract registerMediaButtonEventReceiverForCalls(Landroid/content/ComponentName;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract registerMediaButtonIntent(Landroid/app/PendingIntent;Landroid/content/ComponentName;Landroid/os/IBinder;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract registerRemoteControlClient(Landroid/app/PendingIntent;Landroid/media/IRemoteControlClient;Ljava/lang/String;)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract registerRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;II)Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -384,6 +456,14 @@
 .end method
 
 .method public abstract registerRemoteController(Landroid/media/IRemoteControlDisplay;IILandroid/content/ComponentName;)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract registerRemoteVolumeObserverForRcc(ILandroid/media/IRemoteVolumeObserver;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -567,6 +647,14 @@
     .end annotation
 .end method
 
+.method public abstract setRingerMode(I)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract setRingerModeExternal(ILjava/lang/String;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -584,6 +672,14 @@
 .end method
 
 .method public abstract setRingtonePlayer(Landroid/media/IRingtonePlayer;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract setSmartVoumeEnable(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -743,7 +839,23 @@
     .end annotation
 .end method
 
+.method public abstract updateRemoteControlClientMetadata(IILandroid/media/Rating;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract updateRemoteControllerOnExistingMediaPlayers()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract verifyX509CertChain(I[BLjava/lang/String;Ljava/lang/String;)I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
