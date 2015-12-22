@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="theme_pin_digit_font">/system/fonts/Roboto-Light.ttf</string>
+    <string name="theme_pin_entry_font">/system/fonts/Roboto-Light.ttf</string>
+</resources>

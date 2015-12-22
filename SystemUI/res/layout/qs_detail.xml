@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/qs_detail_view" android:background="@drawable/notification_conner_bg_tw" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end|center" android:layout_width="fill_parent" android:layout_height="@dimen/multi_user_detail_title_height" android:paddingEnd="@dimen/qs_detail_view_button1_end_margin">
+        <TextView android:textAppearance="@style/TextAppearance.QS.DetailButton" android:id="@android:id/button2" android:focusable="true" android:nextFocusLeft="@android:id/button1" android:nextFocusRight="@android:id/button1" android:nextFocusDown="@android:id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginEnd="@dimen/qs_detail_view_button2_end_margin" style="@style/QSDetailBorderlessButton" />
+        <TextView android:textAppearance="@style/TextAppearance.QS.DetailButton" android:id="@android:id/button1" android:focusable="true" android:nextFocusLeft="@android:id/button2" android:nextFocusRight="@android:id/button2" android:nextFocusDown="@android:id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" style="@style/QSDetailBorderlessButton" />
+    </LinearLayout>
+    <FrameLayout android:id="@android:id/content" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

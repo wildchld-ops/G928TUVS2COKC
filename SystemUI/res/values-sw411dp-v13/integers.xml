@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="keyguard_max_notification_count_in_m_keyboard_for_secure">2</integer>
+    <integer name="cover_max_notification_count">1</integer>
+    <integer name="cover_notification_panel_width">1246</integer>
+    <integer name="cover_notification_panel_height">1253</integer>
+    <integer name="clear_cover_statusbar_margin">68</integer>
+</resources>

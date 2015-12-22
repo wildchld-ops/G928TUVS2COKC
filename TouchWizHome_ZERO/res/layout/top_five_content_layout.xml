@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.layouts.GridLayout android:orientation="vertical" android:rowCount="@integer/topfive_cellCountY" android:columnCount="@integer/topfive_cellCountX" dali:flow="true" dali:shrinkToContent="true" dali:enableSwap="false" dali:animatePositioning="true" dali:animateResizing="false" dali:animateAddingView="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

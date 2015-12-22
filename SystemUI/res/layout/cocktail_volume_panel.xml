@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="17.0dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/cocktail_stream_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    <SeekBar android:layout_gravity="center" android:id="@id/cocktail_volume_seekbar" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="179.0dip" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+    <TextView android:textSize="18.0dip" android:textColor="#fff5f5f5" android:gravity="center_horizontal" android:id="@id/volume_level" android:layout_width="30.0dip" android:layout_height="25.0dip" android:fontFamily="sec-roboto-light" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</LinearLayout>

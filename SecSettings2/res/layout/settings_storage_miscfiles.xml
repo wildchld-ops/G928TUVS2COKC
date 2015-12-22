@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.deviceinfo.FileItemInfoLayout android:gravity="center_vertical" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_item_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/misc_checkbox" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/list_item_top_padding" android:paddingBottom="@dimen/list_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/checkbox_right_padding" android:layout_toEndOf="@id/misc_checkbox">
+        <TextView android:id="@id/misc_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toEndOf="@id/misc_checkbox" style="@style/list_title_text_style" />
+        <TextView android:id="@id/misc_filesize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/misc_filename" android:layout_centerVertical="true" android:layout_toEndOf="@id/misc_checkbox" style="@style/list_summary_text_style" />
+    </LinearLayout>
+</com.android.settings.deviceinfo.FileItemInfoLayout>

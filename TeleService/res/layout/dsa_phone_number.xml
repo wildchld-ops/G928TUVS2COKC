@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/own_number_information_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+            <include android:id="@id/ownnumber_sim1_edit" android:layout_height="wrap_content" layout="@layout/dsa_common_edit_item" />
+            <include android:id="@id/ownnumber_sim2_edit" android:layout_height="wrap_content" layout="@layout/dsa_common_edit_item" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/softkey_layout_sw" android:background="@drawable/tw_ab_bottom_transparent_mtrl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dsa_btn_layout_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/common_softkey_left_button_sw" android:background="@drawable/button_selector_pre" android:paddingLeft="@dimen/dsa_common_softkey_button_margin_start" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/common_softkey_left_button_sw_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dsa_common_softkey_arrow_image_margin_top" android:src="@drawable/button_selector_pre_img" />
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="@color/actionbar_bottom_button_text_color" android:id="@id/common_softkey_left_button_sw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dsa_btn_margin_side" android:text="@string/dsa_previous" android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/common_softkey_right_button_sw" android:background="@drawable/button_selector_next" android:paddingRight="@dimen/dsa_common_softkey_button_margin_start" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="@color/actionbar_bottom_button_text_color" android:id="@id/common_softkey_right_button_sw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dsa_btn_margin_side" android:text="@string/dsa_next" android:textAllCaps="true" />
+            <ImageView android:id="@id/common_softkey_right_button_sw_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dsa_common_softkey_arrow_image_margin_top" android:src="@drawable/button_selector_next_img" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/softkey_layout" android:background="@drawable/tw_ab_bottom_transparent_mtrl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dsa_btn_layout_height" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/common_softkey_left_button" android:background="@drawable/button_selector_pre" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/dsa_common_softkey_no_arrow_button_margin_start">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="@color/actionbar_bottom_button_text_color" android:id="@id/common_softkey_left_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doneButton" android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/common_softkey_right_button" android:background="@drawable/button_selector_next" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingEnd="@dimen/dsa_common_softkey_button_margin_start">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="@color/actionbar_bottom_button_text_color" android:id="@id/common_softkey_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:textAllCaps="true" android:layout_marginEnd="@dimen/dsa_btn_margin_side" />
+            <ImageView android:id="@id/common_softkey_right_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dsa_common_softkey_arrow_image_margin_top" android:src="@drawable/button_selector_next_img" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

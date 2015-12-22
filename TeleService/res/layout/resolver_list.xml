@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.callsettings.ResolverDrawerLayout android:id="@id/contentPanel" android:background="@android:color/transparent" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:maxWidth="480.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/callsettings_preset_title_color" android:gravity="start|center" android:id="@id/title" android:background="@color/resolver_background" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/callsettings_preset_title" android:fontFamily="sec-roboto-light" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" />
+    <GridView android:scrollbarStyle="outsideOverlay" android:id="@id/resolver_list" android:background="@color/resolver_background" android:padding="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnWidth="128.0dip" android:numColumns="3" />
+</com.android.phone.callsettings.ResolverDrawerLayout>

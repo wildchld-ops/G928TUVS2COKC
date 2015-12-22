@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/intcallsetting_outgoing_title" android:key="intcallsetting_outgoing" android:summary="@string/intcallsetting_outgoing_summary" />
+    <SwitchPreference android:title="@string/intcallsetting_outgoing_title" android:key="intcallsetting_outgoing" android:summary="@string/intcallsetting_outgoing_summary" />
+    <CheckBoxPreference android:title="@string/intcallsetting_incoming_title" android:key="intcallsetting_incoming" android:summary="@string/intcallsetting_incoming_summary" />
+    <SwitchPreference android:title="@string/intcallsetting_incoming_title" android:key="meterial_intcallsetting_incoming" android:summary="@string/intcallsetting_incoming_summary" />
+    <CheckBoxPreference android:title="@string/intcallsetting_voice_noti_title" android:key="intcallsetting_voice_noti" android:summary="@string/intcallsetting_voice_noti_summary" />
+    <SwitchPreference android:title="@string/intcallsetting_voice_noti_title" android:key="intcallsetting_voice_noti" android:summary="@string/intcallsetting_voice_noti_summary" />
+    <com.android.phone.callsettings.IntCallServicePreference android:title="@string/callsettings_int_call_svc_title" android:key="intcallservice_preference" android:summary="@string/callsettings_int_call_svc_auto" android:dialogTitle="@string/callsettings_int_call_svc_title" />
+</PreferenceScreen>

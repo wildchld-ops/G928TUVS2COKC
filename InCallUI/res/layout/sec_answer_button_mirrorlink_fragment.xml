@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/inCallButtonViewDriveLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140.0dip" android:layout_marginRight="140.0dip" android:layout_marginBottom="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:drivelink="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/IncallUpperFrame" android:layout_width="fill_parent" android:layout_height="@dimen/mirrorlink_incall_button_height">
+        <ImageButton android:id="@id/answerBtn" android:background="@drawable/sec_mirror_button_oval" android:layout_width="@dimen/mirrorlink_incall_button_width" android:layout_height="@dimen/mirrorlink_incall_button_height" android:layout_marginRight="120.0dip" android:src="@drawable/sec_mirror_answer_button_selector" android:scaleType="center" />
+        <ImageButton android:id="@id/rejectBtn" android:background="@drawable/sec_mirror_button_oval" android:layout_width="@dimen/mirrorlink_incall_button_width" android:layout_height="@dimen/mirrorlink_incall_button_height" android:src="@drawable/sec_mirror_reject_button_selector" android:scaleType="center" />
+    </LinearLayout>
+</RelativeLayout>

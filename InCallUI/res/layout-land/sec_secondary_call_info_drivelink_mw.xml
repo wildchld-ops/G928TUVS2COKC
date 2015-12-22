@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/drivelink_default_background_second" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/secondaryCallPhoto" android:layout_width="@dimen/drivelink_mw_second_contact_photo_size" android:layout_height="@dimen/drivelink_mw_second_contact_photo_size" android:scaleType="centerCrop" android:layout_marginStart="9.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="9.0dip" android:layout_marginEnd="7.0dip">
+        <TextView android:textSize="21.0dip" android:textColor="#fffafafa" android:ellipsize="end" android:gravity="start" android:id="@id/secondaryCallName" android:layout_width="fill_parent" android:layout_height="25.0dip" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffc5c5c5" android:ellipsize="end" android:gravity="start" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/onHold" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="1.0dip" android:layout_height="47.0dip" android:src="#ffc5c5c5" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/swapButton" android:clickable="true" android:layout_width="68.0dip" android:layout_height="fill_parent">
+        <ImageView android:duplicateParentState="true" android:layout_width="37.0dip" android:layout_height="32.0dip" android:src="@drawable/phone_multicall_swap" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/drivelink_multicall_swap_text_color" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onscreenSwapCallsText" android:fontFamily="sec-roboto-light" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

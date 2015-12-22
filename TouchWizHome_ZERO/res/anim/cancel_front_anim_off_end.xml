@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <scale android:duration="166" android:pivotX="0.5" android:pivotY="0.0" android:startOffset="100" android:fromXScale="1.2" android:toXScale="1.4" android:fromYScale="1.2" android:toYScale="1.4" />
+    <translate android:duration="233" android:fromXDelta="0.0%" android:toXDelta="0.0%" android:fromYDelta="0.0%" android:toYDelta="20.000004%" />
+    <scale android:duration="433" android:pivotX="0.5" android:pivotY="0.0" android:fromXScale="1.4" android:toXScale="1.2" android:fromYScale="1.4" android:toYScale="1.2" />
+    <translate android:duration="1" android:startOffset="1000" android:fromXDelta="0.0%" android:toXDelta="0.0%" android:fromYDelta="20.000004%" android:toYDelta="0.0%" />
+    <scale android:duration="1" android:pivotX="0.5" android:pivotY="0.0" android:startOffset="1000" android:fromXScale="1.2" android:toXScale="1.0" android:fromYScale="1.2" android:toYScale="1.0" />
+</set>

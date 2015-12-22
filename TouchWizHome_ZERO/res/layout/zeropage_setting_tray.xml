@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.ClippedContainerView android:layout_gravity="bottom" android:id="@id/option_screen_grid_tray" android:paddingLeft="@dimen/option_tray_paddingleft" android:paddingRight="@dimen/option_tray_paddingright" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/option_tray_height" dali:layerHeight="@integer/layer_options_tray" dali:clip="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/linear_layout_horizontal_no_animation" />
+    <com.sec.daliviews.views.ContainerView android:layout_gravity="top" android:id="@id/screen_grid_value_1" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/option_tray_screen_settings">
+        <use_layout layout="@layout/linear_layout_vertical" />
+        <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:layout_width="@dimen/option_tray_cell_size" android:layout_height="@dimen/option_tray_cell_size" android:layout_marginTop="3.0dip" android:src="@drawable/home_reoder_ic_settings" />
+        <com.sec.daliviews.views.TextView android:textSize="@dimen/option_tray_text_size" android:textColor="@color/option_tray_text_color" android:ellipsize="end" android:gravity="center|top" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginTop="7.0dip" android:text="@string/option_tray_screen_settings" android:maxLines="2" android:shadowColor="@color/option_tray_text_shadow_color" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="3.0" />
+    </com.sec.daliviews.views.ContainerView>
+</com.sec.daliviews.views.ClippedContainerView>

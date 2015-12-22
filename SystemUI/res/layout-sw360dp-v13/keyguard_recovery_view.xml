@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.KeyguardRecoveryView android:gravity="bottom" android:orientation="vertical" android:id="@id/keyguard_recovery_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/keyguard_accessibility_password_unlock" androidprv:layout_maxHeight="@dimen/keyguard_zero_password_max_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="fill_parent" android:layout_height="278.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:theme="@style/PasswordTheme" android:layout_gravity="center|top" android:id="@id/keyguard_bouncer_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textAppearance="@style/TextAppearance.passwordEntry" android:textColor="#ffffffff" android:textColorHint="@color/keyguard_message_area_hint_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/passwordEntry" android:background="@null" android:layout_width="0.0dip" android:layout_height="32.0dip" android:singleLine="true" android:maxLength="16" android:layout_weight="1.0" android:inputType="textPassword" android:privateImeOptions="inputType=option" android:imeOptions="actionDone|flagForceAscii" android:layout_marginStart="@dimen/keyguard_lockscreen_pin_margin_left" />
+                    <ImageView android:layout_gravity="center" android:id="@id/switch_ime_button" android:background="?android:selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lockscreen_ime" android:contentDescription="@string/keyguard_accessibility_change_input_method" />
+                </LinearLayout>
+                <View android:id="@id/divider" android:background="#7fffffff" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="20.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <include android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/keyguard_selector_fade_container" android:paddingTop="-5.0dip" android:paddingBottom="-5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_eca" />
+    </LinearLayout>
+</com.android.keyguard.sec.KeyguardRecoveryView>

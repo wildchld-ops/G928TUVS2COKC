@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/callsettings_outgoingcalls" />
+    <SwitchPreference android:title="@string/callsettings_call_barring_list1" android:key="vcallbarring_baoc_pref" />
+    <SwitchPreference android:title="@string/callsettings_call_barring_list2" android:key="vcallbarring_baoic_pref" />
+    <SwitchPreference android:title="@string/callsettings_call_barring_list3" android:key="vcallbarring_baoicxh_pref" />
+    <PreferenceCategory android:title="@string/callsettings_incomingcalls" />
+    <SwitchPreference android:title="@string/callsettings_call_barring_list4" android:key="vcallbarring_baic_pref" />
+    <SwitchPreference android:title="@string/callsettings_call_barring_list5" android:key="vcallbarring_baicr_pref" />
+</PreferenceScreen>

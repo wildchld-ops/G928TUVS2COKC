@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_header_search_panel" android:background="@color/actionbar_background_color_for_l" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_header_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SearchView android:gravity="center" android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:imeOptions="actionSearch|flagNoExtractUi" android:iconifiedByDefault="true" android:queryHint="@string/callsettings_search" />
+    <ImageView android:id="@id/setting_create" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/setting_create_button" android:contentDescription="@string/add" />
+</LinearLayout>

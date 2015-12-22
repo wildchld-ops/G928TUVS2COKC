@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.dialpad.DialpadKeyButton style="@style/DialpadKeyButtonStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dialpad_key_width" android:layout_height="@dimen/dialpad_key_height">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <LinearLayout style="@style/DialpadKeyInternalLayoutStyle">
+                <TextView android:id="@id/dialpad_key_number" style="@style/DialpadKeyNumberStyle" />
+                <TextView android:id="@id/dialpad_key_letters" style="@style/DialpadKeyLettersStyle" />
+            </LinearLayout>
+            <View android:layout_gravity="right" android:background="#ffc6c6c6" android:layout_width="@dimen/dialpad_divider_height" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.phone.dialpad.DialpadKeyButton>

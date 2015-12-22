@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mode_top5_text_font_size_small">12.0dip</dimen>
+</resources>

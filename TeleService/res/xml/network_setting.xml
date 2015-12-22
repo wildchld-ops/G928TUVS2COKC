@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/mobile_networks"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <CheckBoxPreference android:persistent="false" android:title="@string/data_usage_title" android:key="button_data_enabled_key" />
+    <SwitchPreference android:persistent="false" android:title="@string/data_usage_title" android:key="button_data_enabled_key" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/roaming" android:key="button_roaming_key" android:dependency="button_data_enabled_key" />
+    <SwitchPreference android:persistent="false" android:title="@string/roaming" android:key="button_roaming_key" />
+    <ListPreference android:entries="@array/pref_settings_roaming_options" android:title="@string/roaming" android:key="preferred_roaming_key" android:summary="@string/roaming_enable" android:entryValues="@array/pref_roaming_options_values" />
+    <PreferenceScreen android:persistent="false" android:title="@string/data_usage_title" android:key="button_enhanced_4glte_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.Enhanced4GLTE" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/international_data_roaming" android:key="button_international_enhanced_4glte_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.InternationalEnhanced4GLTE" />
+    </PreferenceScreen>
+    <com.android.phone.GlobalDataRoamingAccess android:persistent="false" android:title="@string/global_data_roaming_access" android:key="global_data_roaming_access_key" android:summary="@string/global_data_roaming_access_summary" android:dialogTitle="@string/global_data_roaming_access" />
+    <Preference android:persistent="false" android:enabled="false" android:title="@string/status_roaming" android:key="roaming_state_key" android:summary="@string/device_info_not_available" />
+    <Preference android:persistent="false" android:enabled="false" android:title="@string/status_signal_strength" android:key="signal_strength_key" android:summary="@string/device_info_not_available" />
+    <PreferenceScreen android:persistent="false" android:title="@string/preferred_networks_title" android:key="button_preferred_networks_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.PreferredNetworks" />
+    </PreferenceScreen>
+    <ListPreference android:entries="@array/preferred_network_mode_choices" android:title="@string/preferred_network_mode_title" android:key="preferred_network_mode_key" android:summary="@string/preferred_network_mode_summary" android:dialogTitle="@string/preferred_network_mode_dialogtitle" android:entryValues="@array/preferred_network_mode_values" />
+    <PreferenceScreen android:title="@string/roaming" android:key="enhanced_roaming_mode_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.Roaming" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sprint_connections_optimizer" android:key="connections_optimizer_key" android:summary="@string/automatic_connections_summary" />
+    <CheckBoxPreference android:title="@string/voice_over_lte_title" android:key="volte_call_key" android:summary="@string/volte_call_summary" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_settings" android:key="button_roaming_settings_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.operator.jpn.kddi.RoamingSettings" />
+    </PreferenceScreen>
+</PreferenceScreen>

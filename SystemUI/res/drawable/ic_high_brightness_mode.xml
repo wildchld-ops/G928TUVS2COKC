@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/tw_quick_panel_quick_setting_button_round_bg" />
+            <size android:height="@dimen/toggle_slider_hbm_icon_height" android:width="@dimen/toggle_slider_hbm_icon_width" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_selected="false">
+                <bitmap android:src="@drawable/ic_qs_brightness_hbm_off" android:tint="@color/toggle_slider_hbm_off_color" />
+            </item>
+            <item android:state_selected="true">
+                <bitmap android:src="@drawable/ic_qs_brightness_hbm_off" android:tint="@color/toggle_slider_hbm_on_color" />
+            </item>
+        </selector>
+    </item>
+</layer-list>

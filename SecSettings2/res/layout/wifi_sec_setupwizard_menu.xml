@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wifi_secsetupwizard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.settings.widget.SwitchBar android:theme="?switchBarTheme" android:id="@id/switch_bar" android:background="@drawable/tw_sub_action_bar_bg_mtrl" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:elevation="@dimen/sub_app_bar_shadow_elevation" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wifi_secsetup_activity_wifisettings" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/wifi_secsetup_activity_fragment_layout" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bottom_btn" android:background="#ffeceff1" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_buttons_height">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/previous_btn" android:background="@drawable/ripple_bottom_bar_button" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+            <TextView android:textSize="17.0dip" android:textColor="@color/ssw_bottom_button_welcome_page_text_color" android:id="@id/previous_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/prev_button_label" android:layout_marginEnd="@dimen/ssw_bottom_button_text_right_margin" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5" android:paddingEnd="13.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/next_button" android:background="@drawable/ripple_bottom_bar_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <TextView android:textSize="17.0dip" android:textColor="@color/ssw_bottom_button_welcome_page_text_color" android:id="@id/next_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next_button_label" android:layout_marginEnd="@dimen/ssw_bottom_button_text_right_margin" />
+                <ImageView android:id="@id/next_button_image" android:layout_width="@dimen/ssw_bottom_button_image_size" android:layout_height="@dimen/ssw_bottom_button_image_size" android:layout_marginTop="@dimen/ssw_bottom_button_image_top_margin" android:src="@drawable/setupwizard_next_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

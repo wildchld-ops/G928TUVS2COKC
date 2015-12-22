@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.FixedContainer android:layout_gravity="center|right|top" android:id="@id/home_item_uninstall" android:layout_width="@dimen/widgets_list_item_next_button_width" android:layout_height="@dimen/widgets_list_item_next_button_height" android:contentDescription="@string/home_edit_uninstall"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/frame_layout" />
+    <com.sec.daliviews.views.ImageView android:gravity="center" android:id="@id/home_item_image_uninstall" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/homescreen_btn_delete" dali:scaleType="fitXY" />
+</com.sec.daliviews.views.FixedContainer>

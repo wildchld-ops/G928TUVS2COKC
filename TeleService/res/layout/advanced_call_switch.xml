@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="#fffafafa" android:id="@id/advanced_call_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_advanced_calling_header_us" android:layout_centerVertical="true" android:textAlignment="viewStart" />
+    <Switch android:id="@id/advanced_call_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

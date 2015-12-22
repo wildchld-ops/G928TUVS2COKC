@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_guts_title_color">#fffafafa</color>
+    <color name="notification_guts_text_color">#ff5f7d97</color>
+    <color name="notification_guts_bg_color">#ff002734</color>
+</resources>

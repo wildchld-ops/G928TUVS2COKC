@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/indicator_area" android:layout_width="fill_parent" android:layout_height="@dimen/indicator_area_height" />
+    <RelativeLayout android:id="@id/inCallButtonContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/inCallButtons" android:background="@color/sec_video_call_vga_button_background" android:layout_width="fill_parent" android:layout_height="@dimen/sec_video_incall_button_height" android:paddingStart="@dimen/tablet_incall_button_margin" android:paddingEnd="@dimen/tablet_incall_button_margin">
+            <FrameLayout android:gravity="center" android:id="@id/inCallLeftButtons" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="@dimen/sec_video_incall_button_height">
+                <com.android.incallui.SecVideoButton android:id="@id/switchCameraButton" android:drawableTop="@drawable/sec_video_incall_button_switch_camera_icon" android:contentDescription="@string/secOnscreenSwitchText" style="@style/SecVideoCallButton" />
+                <com.android.incallui.SecVideoToggleButton android:id="@id/speakerButton" android:visibility="gone" android:textOn="" android:textOff="" android:drawableTop="@drawable/sec_video_incall_button_speaker_icon" android:contentDescription="@string/secOnscreenSpeaker" style="@style/SecVideoCallButton" />
+                <com.android.incallui.SecVideoButton android:id="@id/stopButton" android:visibility="gone" android:drawableTop="@drawable/videocall_ic_stop" android:contentDescription="@string/secOnscreenStopText" style="@style/SecVideoCallButton" />
+                <com.android.incallui.SecVideoButton android:id="@id/dialpadButton" android:visibility="gone" android:drawableTop="@drawable/videocall_ic_hide" android:contentDescription="@string/secOnscreenKeypadText" style="@style/SecVideoCallButton" />
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:id="@id/inCallMiddleButtons" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="@dimen/sec_video_incall_button_height">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/endCallButtonArea" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false">
+                    <ImageButton android:layout_gravity="center" android:id="@id/endCallButton" android:background="@drawable/sec_endcall_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/videocall_during_ic_endcall" android:scaleType="center" android:contentDescription="@string/onscreenEndCallText" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:gravity="center" android:id="@id/inCallRightButtons" android:layout_width="@dimen/sec_video_incall_button_width" android:layout_height="@dimen/sec_video_incall_button_height">
+                <com.android.incallui.SecVideoToggleButton android:id="@id/muteButton" android:textOn="" android:textOff="" android:drawableTop="@drawable/sec_video_incall_button_mute_icon" android:contentDescription="@string/onscreenMuteText" style="@style/SecVideoCallButton" />
+                <com.android.incallui.SecVideoToggleButton android:id="@id/hideShowButton" android:visibility="gone" android:textOn="" android:textOff="" android:drawableTop="@drawable/sec_video_incall_button_hide_show_icon" style="@style/SecVideoCallButton" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/modifyButtonStub" android:layout="@layout/sec_video_modify_button_default_viewstub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/indicator_area" />
+    <ViewStub android:id="@id/modifyButtonReceiveStub" android:layout="@layout/sec_video_modify_button_receive_viewstub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/modifyButtonBannerStub" android:layout="@layout/sec_video_modify_button_banner_viewstub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/indicator_area" />
+    <ViewStub android:id="@id/cameraButtonStub" android:layout="@layout/sec_video_camera_button_viewstub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sec_video_incall_button_height" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/hiddenButtonGsmStub" android:layout="@layout/sec_video_hidden_button_gsm_viewstub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/cameraEffectStub" android:layout="@layout/sec_video_camera_effect_viewstub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/indicator_area" />
+</RelativeLayout>

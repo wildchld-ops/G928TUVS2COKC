@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/primary_call_info_container" android:background="@color/incall_call_banner_active_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <include layout="@layout/sec_primary_call_info_video_qcif" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/waveEffectContainer" android:visibility="gone" android:layout_width="@dimen/wave_effect_container_width" android:layout_height="@dimen/wave_effect_container_height" android:layout_below="@id/primary_call_info_container" />
+    <LinearLayout android:id="@id/incomingHideMeLayout" android:paddingBottom="@dimen/sec_video_qcif_incoming_hideme_bottom_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sec_video_qcif_view_incoming_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ToggleButton android:id="@id/incomingHideMe" android:background="@drawable/sec_video_hideme_button_background" android:visibility="gone" android:clickable="false" android:textOn="@string/sec_showme_text" android:textOff="@string/sec_hideme_text" android:drawableLeft="@drawable/sec_video_incomingcall_hide_me_icon" style="@style/SecIncomingVideoCallHideMeButton" />
+    </LinearLayout>
+</RelativeLayout>

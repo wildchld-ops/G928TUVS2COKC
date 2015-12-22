@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_pin_text_color">#ffffffff</color>
+    <color name="theme_divider_color">#66fafafa</color>
+    <color name="white_bg_solution_pin_text_color">#ff444444</color>
+    <color name="white_bg_solution_pin_klondike_text_color">#ff444444</color>
+    <color name="keyguard_text_color_white">#fffafafa</color>
+    <color name="theme_textclock_color">#fffafafa</color>
+    <color name="theme_clock_date_color">#fffafafa</color>
+</resources>

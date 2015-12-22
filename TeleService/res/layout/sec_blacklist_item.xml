@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/create_list" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/list_create" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/rejection_message_counter_marginBottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/rejection_message_minHeight" android:layout_weight="1.0" android:paddingStart="@dimen/autoreject_item_padding_start">
+            <TextView android:textSize="14.0sp" android:textColor="@color/list_edit_title_color" android:id="@id/autoreject_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/autoreject_item_text_height" android:text="@string/callsettings_reject_number" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/autoreject_item_edittext_height">
+                <EditText android:ellipsize="end" android:id="@id/edit_text" android:layout_width="fill_parent" android:hint="@string/emptyList" android:maxLength="100" android:inputType="phone|textNoSuggestions" android:imeOptions="actionDone|flagNoExtractUi" style="@style/InputTextField" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:id="@id/add_button_layout" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/add_button" android:contentDescription="@string/add" style="@style/ItemAddButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="@dimen/autoreject_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/autoreject_button_list_height" android:paddingStart="@dimen/autoreject_item_padding_start" android:paddingEnd="@dimen/autoreject_item_padding_end">
+        <Button android:id="@id/Logs_button" android:layout_width="0.0dip" android:layout_height="@dimen/autoreject_button_item_height" android:text="@string/callsettings_Logs" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="@dimen/autoreject_button_between_margin" />
+        <Button android:id="@id/Contacts_button" android:layout_width="0.0dip" android:layout_height="@dimen/autoreject_button_item_height" android:text="@string/callsettings_Contacts" android:maxLines="1" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

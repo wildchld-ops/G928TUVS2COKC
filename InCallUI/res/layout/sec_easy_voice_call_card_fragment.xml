@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/primary_call_info_container" android:background="@color/incall_call_banner_active_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <include layout="@layout/sec_easy_primary_call_info" />
+    </LinearLayout>
+    <ViewStub android:id="@id/photoringstub" android:layout="@layout/photoring_incall" android:layout_width="fill_parent" android:layout_height="@dimen/mcid_content_height" android:layout_marginBottom="@dimen/mcid_content_bottom_margin" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/callerInfoCardStub" android:layout="@layout/sec_caller_info_card_layout" android:layout_width="fill_parent" android:layout_height="@dimen/caller_info_card_height" android:layout_marginLeft="@dimen/caller_info_card_side_padding" android:layout_marginTop="@dimen/caller_info_card_top_margin" android:layout_marginRight="@dimen/caller_info_card_side_padding" />
+    <ViewStub android:id="@id/amStatusView" android:layout="@layout/sec_answering_message_status_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="320.0dip" />
+    <FrameLayout android:id="@id/waveEffectContainer" android:visibility="gone" android:layout_width="@dimen/wave_effect_container_width" android:layout_height="@dimen/wave_effect_container_height" android:layout_marginTop="@dimen/wave_effect_easy_container_top_margin" />
+    <ViewStub android:id="@id/easyIncomingPop_stub" android:visibility="gone" android:layout="@layout/easyincoming_pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

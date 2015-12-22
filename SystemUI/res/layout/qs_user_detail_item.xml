@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.qs.tiles.UserDetailItemView android:gravity="center|top" android:orientation="vertical" android:paddingTop="15.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" systemui:regularFontFamily="sec-roboto-light" systemui:activatedFontFamily="sec-roboto-light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/notification_panel_theme_ripple_drawable" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.systemui.statusbar.phone.UserAvatarView android:id="@id/user_picture" android:layout_width="@dimen/avatar_view_size" android:layout_height="@dimen/avatar_view_size" android:layout_marginBottom="8.0dip" systemui:frameWidth="@dimen/avatar_view_frame_width" systemui:activeFrameColor="@color/current_user_border_color" />
+        <TextView android:textSize="@dimen/qs_detail_item_secondary_text_size" android:textColor="@color/qs_user_detail_name" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/user_name" android:layout_width="@dimen/qs_detail_item_user_name_width" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</com.android.systemui.qs.tiles.UserDetailItemView>

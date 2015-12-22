@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.AdaptiveEventContainerSmall android:gravity="end" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/adaptive_event_container_small" android:layout_width="@dimen/kg_adaptive_event_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/adaptive_info_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/ped_container" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginEnd="@dimen/kg_weather_degree_width" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/weather_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.android.keyguard.sec.AdaptiveEventContainerSmall>

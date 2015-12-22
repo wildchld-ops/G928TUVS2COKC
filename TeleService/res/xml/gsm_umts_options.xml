@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/mobile_networks"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceScreen android:persistent="false" android:title="@string/apn_settings" android:key="button_apn_key" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode_key" android:entryValues="@array/network_mode_list_values" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode1_key" android:entryValues="@array/network_mode_list_values" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode2_key" android:entryValues="@array/network_mode_list_values" />
+    <com.android.phone.NetworkModeSpinner android:persistent="false" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmodespinner_key" />
+    <com.android.phone.NetworkModeSpinner android:persistent="false" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmodespinner1_key" />
+    <com.android.phone.NetworkModeSpinner android:persistent="false" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmodespinner2_key" />
+    <PreferenceScreen android:persistent="false" android:title="@string/networks" android:key="button_carrier_sel_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.NetworkSetting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/carrier_settings_title" android:key="carrier_settings_key">
+        <intent android:targetPackage="@string/carrier_settings" android:action="android.intent.action.MAIN" android:targetClass="@string/carrier_settings_menu" />
+    </PreferenceScreen>
+    <com.android.phone.GlobalGsmUmtsSystemSelectListPreference android:entries="@array/default_setup_choices" android:title="@string/cdma_system_select_title" android:key="button_global_gsm_umts_system_select_key" android:dialogTitle="@string/cdma_system_select_dialogtitle" android:entryValues="@array/default_setup_values" />
+</PreferenceScreen>

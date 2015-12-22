@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_drawables">
+        <item>@drawable/ab_solid_shadow_holo</item>
+        <item>@drawable/editbox_dropdown_background_dark</item>
+        <item>@drawable/menu_dropdown_panel_holo_light</item>
+        <item>@drawable/popup_full_dark</item>
+        <item>@drawable/spinner_48_inner_holo</item>
+        <item>@drawable/spinner_48_outer_holo</item>
+        <item>@drawable/spinner_76_inner_holo</item>
+        <item>@drawable/spinner_76_outer_holo</item>
+        <item>@drawable/background_holo_light</item>
+        <item>@drawable/background_holo_dark</item>
+        <item>@drawable/screen_background_dark</item>
+        <item>@drawable/screen_background_dark_transparent</item>
+        <item>@drawable/screen_background_light</item>
+        <item>@drawable/screen_background_light_transparent</item>
+        <item>@drawable/screen_background_selector_dark</item>
+        <item>@drawable/screen_background_selector_light</item>
+        <item>@drawable/toast_frame</item>
+    </array>
+</resources>

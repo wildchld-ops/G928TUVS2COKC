@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardPatternView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/keyguard_pattern_view_onehand" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/keyguard_accessibility_pattern_unlock" androidprv:layout_maxHeight="@dimen/keyguard_security_max_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/kg_status_help_font_size" android:textColorHint="@color/keyguard_message_area_hint_text_color" android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/textview_keyguard_message_area" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="275.0dip" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/keyguard_bouncer_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+            <FrameLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:id="@id/onehand_lockpattern" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="58.0dip">
+                <ImageButton android:layout_gravity="start|center" android:id="@id/onehand_left_arrow_pattern" android:background="@drawable/lock_ripple_drawable" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_onehand_left_selector" android:layout_marginStart="22.0dip" />
+                <com.android.keyguard.sec.SecLockPatternView android:gravity="center" android:layout_gravity="end|center" android:id="@id/lockPatternView" android:layout_width="210.0dip" android:layout_height="210.0dip" android:contentDescription="@string/keyguard_accessibility_pattern_area" android:layout_marginEnd="@dimen/keyguard_one_hand_pattern_margin" />
+                <ImageButton android:layout_gravity="end|center" android:id="@id/onehand_right_arrow_pattern" android:background="@drawable/lock_ripple_drawable" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_onehand_right_selector" android:layout_marginEnd="22.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_gravity="bottom|center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="55.0dip" layout="@layout/keyguard_message_area_bouncer" />
+        <LinearLayout android:layout_gravity="bottom|center" android:id="@id/sec_emergency_button_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginBottom="21.0dip">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/keyguard_emergency_button_bouncer" />
+        </LinearLayout>
+        <com.android.keyguard.sec.SecKeyguardBottomAreaView android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/sec_keyguard_bottom_area" android:layout_width="fill_parent" android:layout_height="fill_parent" androidprv:useBackUp="true" androidprv:useCenteredMessageArea="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ViewStub android:layout_gravity="center|top" android:id="@id/stub_secure_message_area_usa" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout="@layout/keyguard_message_area" android:inflatedId="@id/keyguard_message_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" />
+                <FrameLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/sec_keyguard_bottom_area_eca" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:gravity="bottom|center" android:layout_gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sec_keyguard_bottom_area" />
+                </FrameLayout>
+            </FrameLayout>
+        </com.android.keyguard.sec.SecKeyguardBottomAreaView>
+    </FrameLayout>
+</com.android.keyguard.KeyguardPatternView>

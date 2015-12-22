@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/text" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/rejectionmessage_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/prefixnum_radio_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:gravity="center_vertical" android:id="@id/default_ip_number" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginStart="@dimen/ip_call_list_radio_marginStart" android:layout_marginEnd="@dimen/ip_call_list_radio_marginEnd" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/prefixnum_text_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@style/callPrimaryTextStyle" android:gravity="center_vertical" android:id="@id/ipcall_number" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/ip_call_list_text_paddingStart" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.phone" coreApp="true" package="com.android.incallui" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-G928TUVS2COKC">
+    <original-package android:name="com.android.incallui"/>
+    <permission android:label="QUICK_REPLY_NOTIFICATION" android:name="com.samsung.android.incallui.edge.QUICK_REPLY_NOTIFICATION" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="UPDATE_MUTE_STATUS" android:name="com.sec.android.phone.permission.UPDATE_MUTE_STATUS" android:protectionLevel="system|signature"/>
+    <uses-permission android:name="com.sec.android.phone.permission.UPDATE_MUTE_STATUS"/>
+    <permission android:label="TRANSPORTING_CALLER_NAME" android:name="com.sec.android.phone.permission.TRANSPORTING_CALLER_NAME"/>
+    <uses-permission android:name="com.sec.android.phone.permission.TRANSPORTING_CALLER_NAME"/>
+    <permission android:name="com.android.incallui.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.PERFORM_CDMA_PROVISIONING"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_DREAM_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"/>
+    <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.UPDATE_LOCK"/>
+    <uses-permission android:name="android.permission.USE_SIP"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_DREAM_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="com.android.incallui.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.sec.android.phone.permission.VOICE_RECORDER_SERVICE"/>
+    <uses-permission android:name="com.cequint.ecid.CALLER_ID_LOOKUP"/>
+    <uses-permission android:name="com.mirrorlink.android.service.ACCESS_PERMISSION"/>
+    <uses-permission android:name="com.samsung.rcs.cs.READ_PERMISSION"/>
+    <uses-permission android:name="com.samsung.rcs.cs.WRITE_PERMISSION"/>
+    <uses-permission android:name="com.samsung.rcs.serviceprovider.READ_PERMISSION"/>
+    <uses-permission android:name="com.samsung.rcs.serviceprovider.WRITE_PERMISSION"/>
+    <uses-permission android:name="com.samsung.rcs.permission.RCS_APP_PERMISSION"/>
+    <uses-permission android:name="com.samsung.commonimsinterface.PERMISSION"/>
+    <uses-permission android:name="com.sec.ims.android.PERMISSION"/>
+    <uses-permission android:name="com.vodafone.callplus.provider.READ_DATABASE"/>
+    <uses-permission android:name="com.vodafone.callplus.provider.WRITE_DATABASE"/>
+    <uses-permission android:name="com.samsung.permission.SSENSOR"/>
+    <uses-permission android:name="com.samsung.android.permisson.START_DOCK_OR_HOME"/>
+    <uses-permission android:name="com.samsung.tmowfc.wfcprovider.permission.READ_WFCPROVIDER"/>
+    <uses-permission android:name="com.samsung.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.memo.READ"/>
+    <uses-permission android:name="com.sec.android.provider.logsprovider.permission.READ_LOGS"/>
+    <uses-permission android:name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION"/>
+    <uses-permission android:name="com.kddi.android.evc.permission.SETTINGS_PROVIDER"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.samsung.android.phone.edge.GLANCE_REPLY"/>
+    <uses-permission android:name="com.samsung.android.incallui.edge.QUICK_REPLY_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.LOOP_RADIO">
+        <group gid="loop_radio"/>
+    </uses-permission>
+    <uses-permission android:name="samsung.android.snoteprovider.permission.READ"/>
+    <uses-permission android:name="com.samsung.android.swis.permission.AGENT_RECEIVER"/>
+    <uses-permission android:name="com.sec.android.app.sns3.permission.REQUEST_PEOPLE_LOOKUP"/>
+    <uses-permission android:name="com.sec.android.app.sns3.permission.RECEIVE_SNS_BROADCAST"/>
+    <uses-permission android:name="com.sec.android.app.sns3.permission.READ_SNS_DB"/>
+    <uses-permission android:name="com.sec.android.app.snsimagecache.permission.READ_SNSIMAGECACHE_DB"/>
+    <application android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_phone" android:label="@string/phoneAppLabel" android:largeHeap="true" android:name="InCallApp" android:supportsRtl="true">
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="true"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyASBjbcfdaynCkkeZ8baVUpBzR7-Ydnfo8"/>
+        <activity android:configChanges="keyboardHidden" android:excludeFromRecents="true" android:exported="false" android:label="@string/inCallLabel_Sec" android:launchMode="singleInstance" android:name=".InCallActivity" android:screenOrientation="nosensor" android:theme="@style/Theme.InCallScreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|mcc|mnc|orientation|screenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:label="@string/inCallLabel_Sec" android:launchMode="singleInstance" android:name=".SecInCallActivity" android:screenOrientation="nosensor" android:theme="@style/Theme.SecInCallScreen">
+            <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:excludeFromRecents="true" android:exported="false" android:label="@string/inCallLabel_Sec" android:launchMode="singleInstance" android:name=".SecDrivelinkInCallActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.SecInCallScreen">
+            <meta-data android:name="com.sec.android.multiwindow.activity.STYLE" android:value="isolatedSplit"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".rcs.SecRCSCallPopupDialogActivity" android:theme="@style/SecErrorDialogTheme">
+            <intent-filter>
+                <action android:name="com.samsung.android.incalllui.secservice.action.ACTION_RCS_POP_UP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".secutils.SecErrorDialogActivity" android:theme="@style/SecErrorDialogTheme"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".secutils.SecUncaughtExceptionDialogActivity" android:theme="@style/SecErrorDialogTheme"/>
+        <service android:name="InCallServiceImpl" android:permission="android.permission.BIND_INCALL_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.InCallService"/>
+            </intent-filter>
+        </service>
+        <service android:name="SecInCallService" android:permission="android.permission.BIND_INCALL_SERVICE">
+            <intent-filter>
+                <action android:name="com.samsung.incallui.SEC_IN_CALL_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="MCIDService">
+            <intent-filter>
+                <action android:name="com.samsung.incallui.MCID_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:enabled="true" android:exported="false" android:name="SecCallPopupService" android:theme="@style/SecCallPopupScreen"/>
+        <service android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:enabled="true" android:exported="false" android:name="SecTabletInCallService" android:theme="@style/SecTabletInCallScreen"/>
+        <service android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:enabled="true" android:exported="false" android:name="SecTabletKeyguardBGService"/>
+        <service android:enabled="true" android:exported="false" android:name="LockScreenDuringCall"/>
+        <service android:enabled="true" android:exported="false" android:name="SecVideoPopupService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.yulore.sdk.ivr.service.IvrCacheService"/>
+        <receiver android:exported="false" android:name="InCallApp$NotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.incallui.ACTION_HANG_UP_ONGOING_CALL"/>
+                <action android:name="com.android.incallui.ACTION_ANSWER_VIDEO_INCOMING_CALL"/>
+                <action android:name="com.android.incallui.ACTION_ANSWER_VOICE_INCOMING_CALL"/>
+                <action android:name="com.android.incallui.ACTION_DECLINE_INCOMING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.incallui.edge.QuickReplyBroadcastReceiver" android:permission="com.samsung.android.incallui.edge.QUICK_REPLY_NOTIFICATION">
+            <intent-filter>
+                <action android:name="com.samsung.android.incallui.edge.BROADCAST_AGAIN"/>
+                <action android:name="com.samsung.android.incallui.edge.DELETE_ALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.incallui.wearable.MuteBroadcastReceiver" android:permission="com.sec.android.phone.permission.UPDATE_MUTE_STATUS">
+            <intent-filter>
+                <action android:name="com.android.incallui.ACTION_CALL_MUTE_EXPORTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.incallui.wearable.CallerNameReceiver" android:permission="com.sec.android.phone.permission.TRANSPORTING_CALLER_NAME">
+            <intent-filter>
+                <action android:name="com.samsung.phone.GET_CALLER_NAME"/>
+                <action android:name="com.android.phone.GET_CALLER_NAME"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize|uiMode" android:exported="false" android:name=".secutils.PickImageFromGallery" android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings_glance_reply" android:name="com.android.incallui.edge.GlanceReply" android:screenOrientation="portrait" android:theme="@style/GlanceRelplyTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".help.AcceptingAndRejectingCalls" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".help.RejectCallsWithMessage" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".help.IncomingCallWhileUsingApp" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name=".SelectPhoneSimAccountActivity" android:screenOrientation="portrait" android:theme="@style/SecErrorDialogTheme"/>
+        <uses-library android:name="libvtmanagerjar" android:required="false"/>
+        <uses-library android:name="secvisualeffect" android:required="false"/>
+        <uses-library android:name="commonimsinterface" android:required="false"/>
+        <uses-library android:name="com.sec.imslibrary" android:required="false"/>
+        <uses-library android:name="TmoWfcUtils" android:required="false"/>
+        <uses-library android:name="imsmanager"/>
+    </application>
+</manifest>

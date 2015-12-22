@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">输入了不正确的 PIN 码。还有 %d 次机会。</item>
+        <item quantity="one">输入了不正确的 PIN 码。如果再输入不正确的 PIN 码 %d 次，您将必须联系服务运营商以解锁设备。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">输入了不正确的 PUK 码。如果再输入不正确的 PUK 码 %d 次，SIM 卡将被永久锁定。</item>
+        <item quantity="one">输入了不正确的 PUK 码。如果再输入不正确的 PUK 码 %d 次，SIM 卡将被永久锁定。</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d 个最近应用程序</item>
+        <item quantity="one">1 个最近应用程序</item>
+    </plurals>
+</resources>

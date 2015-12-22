@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.EmergencyContactItemContainer android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/emergency_zero_contact_container_paddingLeft" android:paddingTop="@dimen/emergency_zero_contact_container_paddingTop" android:paddingRight="@dimen/emergency_zero_contact_container_paddingRight" android:paddingBottom="@dimen/emergency_zero_contact_container_paddingBottom" android:layout_width="fill_parent" android:layout_height="@dimen/emergency_zero_dialer_items_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/emergency_service_item" android:focusable="true" android:clickable="true" layout="@layout/emergency_contact_item" />
+    <include android:id="@id/emergency_contact_item_one" android:focusable="true" android:clickable="true" layout="@layout/emergency_contact_item" />
+    <include android:id="@id/emergency_contact_item_two" android:focusable="true" android:clickable="true" layout="@layout/emergency_contact_item" />
+    <include android:id="@id/emergency_contact_item_three" android:focusable="true" android:clickable="true" layout="@layout/emergency_contact_item" />
+    <include android:id="@id/emergency_contact_item_four" android:focusable="true" android:visibility="gone" android:clickable="true" layout="@layout/emergency_contact_item" />
+</com.android.phone.EmergencyContactItemContainer>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="vertical" android:id="@id/dtmf_twelve_key_dialer_view" android:layout_width="@dimen/sec_dialpad_views_width" android:layout_height="fill_parent" class="com.android.incallui.SecDialpadFragment$DialpadSlidingLinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/indicator_area" android:layout_width="fill_parent" android:layout_height="@dimen/indicator_area_height" />
+    <view android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/indicator_area" class="com.android.incallui.SecDialpadFragment$HoverIgnoringLinearLayout">
+        <include layout="@layout/sec_dialpad_view" />
+    </view>
+</view>

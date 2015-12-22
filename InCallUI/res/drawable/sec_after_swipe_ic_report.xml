@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/after_swipe_ic_report" android:tint="@color/spam_dim_color" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/after_swipe_ic_report" />
+    </item>
+</selector>

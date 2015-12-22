@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/carmode_reject_videocall_icon_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/carmode_reject_videocall_event_info_height">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/carmode_reject_videocall_icon_size" android:layout_height="@dimen/carmode_reject_videocall_icon_size" android:src="@drawable/noti_event_icon_large_call_missed" />
+            <TextView android:textSize="@dimen/carmode_reject_videocall_event_info_text_size" android:textColor="@color/carmode_reject_videocall_event_info_text_color" android:gravity="center|left" android:id="@id/videocall_reject_during_drivelink_text" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/carmode_reject_videocall_button_bg_color" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/carmode_reject_videocall_button_height">
+            <Button android:textSize="24.0dip" android:textColor="@color/carmode_reject_videocall_button_text_color" android:id="@id/dismissButton" android:background="@drawable/dialog_button_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/alert_dialog_dismiss" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/noti_popup_bg_shadow" />
+</LinearLayout>

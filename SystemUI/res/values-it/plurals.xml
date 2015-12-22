@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">È stato inserito un PIN errato. %d tentativi rimasti.</item>
+        <item quantity="one">È stato inserito un PIN errato. Se inserite un PIN errato per altre %d volte, dovrete contattare il gestore telefonico per sbloccare il dispositivo.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">È stato inserito un codice PUK errato. Se inserite un codice PUK errato per altre %d volte, la scheda SIM verrà bloccata definitivamente.</item>
+        <item quantity="one">È stato inserito un PUK errato. Se inserite un PUK errato per altre %d volte, la scheda SIM verrà bloccata definitivamente.</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d applicazioni recenti</item>
+        <item quantity="one">1 applicazione recente</item>
+    </plurals>
+</resources>

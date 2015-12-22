@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/sec_incall_screen_background" />
+    <corners android:radius="@dimen/sec_tablet_incall_screen_radius" />
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.ContainerView android:layout_gravity="center" android:layout_width="32.0dip" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/create_page_layout" />
+    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/create_page_back" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/page0" dali:scaleType="fitXY" />
+    <com.sec.daliviews.views.ImageView android:layout_gravity="center" android:id="@id/create_page_front" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/page0" dali:scaleType="fitXY" />
+</com.sec.daliviews.views.ContainerView>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="@dimen/mode_4x5_home_folder_item_view_icon_mode_width" android:layout_height="@dimen/mode_4x5_home_folder_item_view_icon_mode_width" android:src="@drawable/homescreen_ic_folder_default" dali:scaleType="fitXY"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

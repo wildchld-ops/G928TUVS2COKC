@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="start" android:id="@id/magnifier_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/zoom_percentage" android:paddingStart="@dimen/list_item_start_padding" style="@style/seekbar_preference_title_text_style" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:id="@id/zoom_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/zoom_minus" android:background="@drawable/switch_ripple_bg" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/accessibility_magnifier_progress_minus" android:contentDescription="@string/magnifier_seekbar_minus_tts" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/zoom_seekbar" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="-6.0dip" android:layout_marginEnd="-6.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/zoom_plus" android:background="@drawable/switch_ripple_bg" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/accessibility_magnifier_progress_plus" android:contentDescription="@string/magnifier_seekbar_plus_tts" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

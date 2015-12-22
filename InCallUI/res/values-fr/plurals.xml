@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="searchFoundContacts">
+        <item quantity="other">%d contacts trouvés</item>
+        <item quantity="one">1 contact trouvé</item>
+    </plurals>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entry_7_step_font_size">
+        <item>@string/tiny</item>
+        <item>@string/extra_small</item>
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+        <item>@string/huge</item>
+        <item>@string/extra_huge</item>
+        <item>@string/extra_huge</item>
+        <item>@string/extra_huge</item>
+        <item>@string/extra_huge</item>
+    </string-array>
+    <string-array name="entryvalues_7_step_font_size">
+        <item>0.78</item>
+        <item>0.88</item>
+        <item>1.0</item>
+        <item>1.14</item>
+        <item>1.3</item>
+        <item>1.45</item>
+        <item>1.66</item>
+        <item>1.76</item>
+        <item>1.87</item>
+        <item>1.97</item>
+        <item>2.07</item>
+    </string-array>
+</resources>

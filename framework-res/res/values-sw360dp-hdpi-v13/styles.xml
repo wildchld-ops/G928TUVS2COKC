@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Material.Notification.Title" parent="@style/TextAppearance.Material.Notification">
+        <item name="textSize">@dimen/notification_title_text_size</item>
+        <item name="textColor">#ff252525</item>
+        <item name="fontFamily">sec-roboto-light</item>
+    </style>
+</resources>

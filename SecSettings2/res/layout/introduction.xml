@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/settings_bottom_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/link_message" android:paddingTop="@dimen/list_item_top_padding" android:paddingBottom="@dimen/list_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_start_padding" android:paddingEnd="@dimen/list_item_end_padding" style="@style/body_text_style" />
+    </LinearLayout>
+    <ImageView android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <CheckBox android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/do_not_show" android:paddingTop="@dimen/list_item_top_padding" android:paddingBottom="@dimen/list_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/do_not_show_for_days" android:layout_marginStart="@dimen/list_item_start_padding" android:layout_marginEnd="@dimen/list_item_end_padding" />
+    <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" style="@style/SecurityPreferenceButtonContainer">
+        <com.android.settings.widget.BottomBarButton android:id="@id/button" android:layout_width="fill_parent" android:text="@string/ok" style="@style/SecurityPreferenceButton" />
+    </LinearLayout>
+</LinearLayout>

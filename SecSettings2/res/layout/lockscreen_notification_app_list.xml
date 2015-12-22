@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="@dimen/list_divider_height" android:paddingStart="@dimen/settings_side_margin" android:paddingEnd="@dimen/settings_side_margin" />
+    <ListView android:scrollbarStyle="insideOverlay" android:id="@id/custom_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="@dimen/list_divider_height" android:paddingStart="@dimen/settings_side_margin" android:paddingEnd="@dimen/settings_side_margin" />
+    <TextView android:gravity="center" android:id="@android:id/empty" android:paddingTop="@dimen/body_text_top_padding" android:paddingBottom="@dimen/body_text_top_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loading_notification_apps" android:paddingStart="@dimen/body_text_side_padding" android:paddingEnd="@dimen/body_text_side_padding" style="@style/body_text_style" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="config_prefDialogWidth">514.0dip</dimen>
+    <dimen name="tw_resolver_pagemode_toppanel_height">95.0dip</dimen>
+    <dimen name="tw_resolver_pagemode_toppanel_padding_top">12.0dip</dimen>
+    <dimen name="tw_resolver_pagemode_toppanel_padding_bottom">8.0dip</dimen>
+    <dimen name="tw_resolver_pagemode_toppanel_defaulticon_width">130.0dip</dimen>
+    <dimen name="tw_resolver_pagemode_toppanel_defaulttext_width">361.0dip</dimen>
+</resources>

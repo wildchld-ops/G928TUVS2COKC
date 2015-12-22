@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.launcher.views.FolderAdapterView android:layout_gravity="center|left|top" android:id="@id/folder_adapter_view" android:padding="0.0dip" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" dali:autoscroll_speed="3000" dali:rearrangement_delay="0.5" dali:accept_drop="true" dali:autoscroll_on_drag_to_edge="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">입력한 PIN이 바르지 않습니다. 입력 기회가 %d회 남았습니다.</item>
+        <item quantity="one">잘못된 PIN을 입력하였습니다. 잘못된 PIN을 %d회 더 입력하면, 디바이스 잠금 해제를 서비스 공급자에 문의해야 합니다.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">입력한 PUK가 바르지 않습니다. PUK를 %d회 더 잘못 입력하면 SIM 카드가 영구적으로 잠깁니다.</item>
+        <item quantity="one">잘못된 PUK를 입력하였습니다. 잘못된 PUK를 %d회 더 입력하면, SIM 카드가 영구적으로 잠깁니다.</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">최근 사용 애플리케이션 %d개</item>
+        <item quantity="one">최근 사용 애플리케이션 1개</item>
+    </plurals>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="17.0sp" android:textColor="#fffafafa" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="88.0dip" android:text="@string/enter_password" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="16.0sp" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/owner_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

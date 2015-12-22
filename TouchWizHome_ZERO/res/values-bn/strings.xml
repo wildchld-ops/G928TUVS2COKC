@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="page_indicator_content_description_format">%2$dটির মধ্যে %1$d পৃষ্ঠা</string>
+</resources>

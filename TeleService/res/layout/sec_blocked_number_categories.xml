@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/blocked_number_category" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/listitem_padding_top" android:paddingBottom="@dimen/listitem_padding_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/autoreject_item_height" android:paddingStart="@dimen/list_divider_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/category_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/blocked_no_category" android:singleLine="true" style="@style/callPrimaryTextStyle" />
+    <TextView android:gravity="center_vertical" android:id="@id/category_summary" android:visibility="visible" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/callSecondaryTextStyle" />
+</LinearLayout>

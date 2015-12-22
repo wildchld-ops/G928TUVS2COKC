@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/volume_panel_side_margin" android:layout_marginTop="@dimen/volume_panel_elevation" android:layout_marginRight="@dimen/volume_panel_side_margin" android:layout_marginBottom="@dimen/volume_panel_elevation_margin_bottom" android:translationZ="0.0dip" android:elevation="@dimen/volume_panel_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/volume_panel_sec" />
+</FrameLayout>

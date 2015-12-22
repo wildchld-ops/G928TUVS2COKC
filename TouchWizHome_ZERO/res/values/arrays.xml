@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dnd_effect">
+        <item>None</item>
+        <item>Spotlight-Ripple</item>
+        <item>MotionBlur</item>
+        <item>Particle</item>
+    </string-array>
+    <string-array name="dnd_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="fragment_transition_effect">
+        <item>Enable</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="fragment_transition_effect_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="transition_effect">
+        <item>Cascade</item>
+        <item>Cube</item>
+        <item>Inner Cube</item>
+        <item>Carousel</item>
+        <item>Zoomout</item>
+        <item>Plain</item>
+        <item>Plain-NoWrap</item>
+        <item>Card Stack</item>
+        <item>Conveyor</item>
+        <item>Fold</item>
+        <item>Fade</item>
+        <item>Shadow</item>
+        <item>Card Stack 2</item>
+    </string-array>
+    <string-array name="transition_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialpad_star_number">∗</string>
+    <string name="dialpad_pound_number">\#</string>
+    <string name="dialpad_digits_font_family">roboto-num3L</string>
+</resources>

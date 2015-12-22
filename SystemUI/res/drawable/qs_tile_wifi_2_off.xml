@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_001" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_002" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_003" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_004" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_005" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_006" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_007" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_008" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_009" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_010" />
+    <item android:duration="30" android:drawable="@drawable/wifi_off_2_011" android:alpha="0.6" />
+</animation-list>

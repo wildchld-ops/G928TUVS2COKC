@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EventTheme>
+    <Widget packageName="com.sec.android.widget.myeventwidget" className="com.sec.android.widget.myeventwidget.MyEventWidgetProvider" cellX="0" cellY="0" spanX="4" spanY="4" />
+</EventTheme>

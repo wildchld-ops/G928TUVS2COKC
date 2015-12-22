@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+    <PreferenceScreen android:layout="@layout/logo1" android:title="Notification Options" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <PreferenceScreen android:title="Notification Panel Options" android:summary="Customise Panel">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <Preference android:title="CPU Speed Notification" android:key="activity;com.potato.cpuspied;com.potato.cpuspied.Main" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Notification Icon Options" android:summary="Customise Icons">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <CheckBoxPreference android:title="Alarm Icon" android:key="alarm_icon" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <CheckBoxPreference android:title="Bluetooth Icon" android:key="bluetooth_icon" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Notification Panel Colors" android:summary="Customise Colors">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="Notification Header Color" android:key="header_bg_color" android:summary="Select Color" android:defaultValue="false" android:dialogTitle="Select Color" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="Notification Panel Color" android:key="notification_panel_background_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo2" android:title="StatusBar Options" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <PreferenceScreen android:title="Statusbar Options" android:summary="Customise Statusbar">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <PreferenceScreen android:title="Clock and Date Options" android:summary="Customise Clock and Date">
+                <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+                <Preference android:title="Clock Style." android:key="activity;com.potato.clock.main;com.potato.clock.main.Main" android:summary="Go To Set Alignment First!!!" />
+            </PreferenceScreen>
+            <PreferenceScreen android:title="Battery Options" android:summary="Customise Battery">
+                <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+                <CheckBoxPreference android:title="Display Percentage" android:key="display_battery_percentage" android:summaryOn="Battery text shown" android:summaryOff="Battery text hidden" />
+                <CheckBoxPreference android:title="Show/Hide Stock Battery" android:key="hide_battery" android:defaultValue="false" android:summaryOn="Stock Battery shown" android:summaryOff="Stock Battery is hidden" />
+                <CheckBoxPreference android:title="Show/Hide 3Minit Battery" android:key="minit_battery_visible" android:defaultValue="true" android:summaryOn="3Minit Battery shown" android:summaryOff="3Minit Battery is hidden" />
+                <Preference android:title="3minit Battery Mod" android:key="activity;com.three.minit.minitbatterysettings.free;com.three.minit.minitbatterysettings.MainActivity" />
+                <ListPreference android:entries="@array/battery_bar_entries" android:title="Battery Bar" android:key="battery_bar" android:summary="Show or Hide Battery Bar" android:entryValues="@array/battery_bar_values" />
+                <ListPreference android:entries="@array/battery_bar_style_entries" android:title="Battery Bar Style" android:key="battery_bar_style" android:summary="Slect Style" android:entryValues="@array/battery_bar_style_values" />
+                <ListPreference android:entries="@array/battery_bar_thickness_entries" android:title="Battery Bar Thickness" android:key="battery_bar_thickness" android:summary="Slect Thickness" android:entryValues="@array/battery_bar_thickness_values" />
+                <CheckBoxPreference android:title="Battery Bar Charge Animation" android:key="battery_bar_animate" android:summaryOn="Battery Bar Charge Animation Enabled" android:summaryOff="Battery Bar Charge Animation Disabled" />
+            </PreferenceScreen>
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Network Signal Wifi Options" android:summary="Customise Options">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <PreferenceScreen android:title="Network Options">
+                <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+                <CheckBoxPreference android:title="Left Side Network Speed" android:key="status_bar_network_stats" android:defaultValue="false" />
+                <CheckBoxPreference android:title="Right Side Network Speed" android:key="status_bar_network_statsr" android:defaultValue="false" />
+                <CheckBoxPreference android:title="Hide Speed If Inactive" android:key="status_bar_network_hide" android:summary="@string/hide_network_speed_summary" android:defaultValue="false" />
+                <ListPreference android:persistent="false" android:entries="@array/show_network_traffic_frequency_entries" android:title="@string/show_network_traffic_frequency" android:key="status_bar_network_stats_update_frequency" android:entryValues="@array/show_network_traffic_frequency_values" />
+            </PreferenceScreen>
+            <ListPreference android:entries="@array/signal_entries" android:title="Number Of Signal Bars" android:key="signal_bars" android:summary="Choose Number Of Signal Bars" android:entryValues="@array/signal_values" />
+            <CheckBoxPreference android:title="Signal In-Out Icon" android:key="signal_inout" android:summaryOn="Disabled" android:summaryOff="Enabled" />
+            <CheckBoxPreference android:title="Wifi In-Out Icon" android:key="wifi_inout" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="StatusBar Colors Colors" android:summary="Customise Colors">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="Signal Icon" android:key="signal_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="WiFi Icon" android:key="wifi_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="NW Booster" android:key="nwboost_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="Other Icons" android:key="icon_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+            <com.ficeto.customsettings.ColorPickerPreference android:title="Battery Text" android:key="batt_text_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo3" android:title="Hardware Keys Options" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <ListPreference android:entries="@array/drop_speed_entries" android:title="Power LongPress Timeout" android:key="long_press_speed" android:summary="Needs Reboot" android:entryValues="@array/drop_speed_values" />
+        <ListPreference android:entries="@array/drop_speed_entries" android:title="Double Click Timeout" android:key="double_speed" android:summary="Needs Reboot" android:entryValues="@array/drop_speed_values" />
+        <PreferenceScreen android:title="Home Button" android:summary="Customise Home Button Function">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <CheckBoxPreference android:title="Wake With Home Key" android:key="wake_home" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <ListPreference android:entries="@array/long_home_entries" android:title="Long Press Home Function" android:key="long_press_home" android:summary="Choose function..." android:entryValues="@array/long_home_values" />
+            <com.ficeto.customsettings.AppPickerPreference android:title="Home Custom App..." android:key="home_custom_app" android:summary="None" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Menu Button" android:summary="Customise Menu Button Function">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <ListPreference android:entries="@array/long_menu_entries" android:title="Long Press Menu Function" android:key="long_press_menu" android:summary="Choose function..." android:entryValues="@array/long_menu_values" />
+            <com.ficeto.customsettings.AppPickerPreference android:title="Menu Custom App..." android:key="menu_custom_app" android:summary="None" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Back Button" android:summary="Customise Back Button Function">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <Preference android:title="Back to Kill" android:key="activity;com.elesbb.holdbacktokill;com.elesbb.holdbacktokill.MainActivity" android:summary="Kill apps instantly" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="Volume Buttons" android:summary="When Screen Locked...">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <CheckBoxPreference android:title="Long Press Volume Music Controls" android:key="volbtn_music_controls" android:defaultValue="true" android:summaryOn="Screen Off Music Controls Enabled" android:summaryOff="Screen Off Music Controls Disabled" android:disableDependentsState="false" />
+            <ListPreference android:entries="@array/volbtn_timeout_entries" android:title="Timeout For Long Press" android:key="volbtn_timeout" android:summary="@string/list_summary" android:dependency="volbtn_music_controls" android:entryValues="@array/volbtn_timeout_values" />
+            <ListPreference android:entries="@array/volbtn_action_entries" android:title="Volume Button Up Action" android:key="volbtn_vol_up" android:summary="@string/list_summary" android:dependency="volbtn_music_controls" android:entryValues="@array/volbtn_action_values" />
+            <ListPreference android:entries="@array/volbtn_action_entries" android:title="Volume Button Down Action" android:key="volbtn_vol_down" android:summary="@string/list_summary" android:dependency="volbtn_music_controls" android:entryValues="@array/volbtn_action_values" />
+        </PreferenceScreen>
+        <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo4" android:title="Phone Options" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <CheckBoxPreference android:title="Disable Increasing Ringtone" android:key="inc_ring" android:summary="Disable increasing volume level ringtone (Phone restart required)" />
+        <ListPreference android:entries="@array/call_delay_entries" android:title="End Call Delay" android:key="call_delay" android:summary="Change incall screen fade timeout. (Phone restart required)" android:entryValues="@array/call_delay_values" />
+        <Preference android:title="Air Wake Up" android:key="activity;com.samsung.android.app.airwakeupview;com.samsung.android.app.airwakeupview.AirWakeupMainActivity" android:summary="Wake up with a swipe above" />
+        <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo5" android:title="Toggle Options" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <CheckBoxPreference android:title="Toggle Text" android:key="toggle_text" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <ListPreference android:entries="@array/toggle_entries" android:title="Toggles in View" android:key="toggle_view" android:summary="Number Of Toggles On Screen" android:defaultValue="6" android:dialogTitle="Toggle in View" android:positiveButtonText="Save" android:negativeButtonText="Cancel" android:entryValues="@array/toggle_values" />
+        <Preference android:title="Enable extra toggles" android:key="tool#shell#sh /system/bin/toggles.sh" android:summary="Enabled extra toggles like torch, rom control etc. Reboot required after running" />
+        <com.ficeto.customsettings.ColorPickerPreference android:title="Toggle Text Color" android:key="toggle_text_color" android:summary="Select Color" android:dialogTitle="Select Color" />
+        <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo6" android:title="General Options" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <PreferenceScreen android:title="Listview animations" android:summary="List Scroll Options">
+            <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+            <ListPreference android:persistent="false" android:entries="@array/listview_animation_entries" android:title="ListView Animation" android:key="listview_animation" android:summary="Listview entries" android:entryValues="@array/listview_animation_values" />
+            <ListPreference android:persistent="false" android:entries="@array/listview_interpolator_entries" android:title="ListView Interpolator" android:key="listview_interpolator" android:summary="Listview effects" android:entryValues="@array/listview_interpolator_values" />
+            <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="Lockscreen Rotation" android:key="lockscreen_rotate" android:summaryOn="Lockscreen rotation enabled" android:summaryOff="Lockscreen rotation disabled" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo10" android:title="Tools" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <Preference android:title="6thGearTWSwipe" android:key="activity;com.wubydax.geartwswipe;com.wubydax.geartwswipe.ResetDialogActivity" android:summary="6th Gear TW Swipe" />
+        <Preference android:title="ToolboxSettings" android:key="activity;com.wubydax.toolboxsettings;com.wubydax.toolboxsettings.ToolboxSettings" android:summary="Toolbox Settings" />
+        <Preference android:title="MW Apps Manager" android:key="activity;mobi.xperiacle.mwappsmanager;mobi.xperiacle.mwappsmanager.Main" android:summary="MW App Manager" />
+        <Preference android:title="ViPER4Android" android:key="activity;com.vipercn.viper4android_v2;com.vipercn.viper4android_v2.activity.ViPER4Android" android:summary="Android Audio Settings" />
+        <Preference android:title="Ultra PowerSaving Manager" android:key="activity;mobi.xperiacle.upsm.manager;mobi.xperiacle.upsm.manager.MainActivity" android:summary="More Apps Available in UPSM" />
+        <Preference android:title="Switch Wi-Fi band" android:key="activity;com.devasque.wifibandswitcher;com.devasque.wifibandswitcher.MainActivity" android:summary="Change Wi-Fi band frequency" />
+        <Preference android:title="Superuser" android:key="activity;eu.chainfire.supersu;eu.chainfire.supersu.MainActivity" android:summary="Control root" />
+        <Preference android:title="Restore Quicksettings" android:key="tool#shell#sh /system/bin/qs.sh" android:summary="Restore Quicksettings Reboot required after running" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo7" android:title="Restart Menu" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <Preference android:title="Reboot" android:key="tool#reboot" android:summary="Does a Full Reboot" />
+        <Preference android:title="Quick Reboot" android:key="tool#hotboot" android:summary="Does a Hotboot" />
+        <Preference android:title="Reboot Recovery" android:key="tool#recovery" android:summary="Reboots to Recovery Mode" />
+        <Preference android:title="Reboot Download" android:key="tool#download" android:summary="Reboots to Download Mode" />
+        <Preference android:title="Restart SysUI App" android:key="tool#restartsystemui" android:summary="Restart SystemUI" />
+        <Preference android:title="Restart Phone" android:key="tool#restartphone" android:summary="Restart Phone" />
+        <Preference android:title="Restart InCallUI" android:key="tool#restartincallui" android:summary="Restart InCallUI" />
+        <Preference android:title="Restart TW Home" android:key="tool#restartlauncher" android:summary="Restart Launcher" />
+        <Preference android:title="Restart Stock Keyboard" android:key="tool#restartkb" android:summary="Restart keyboard" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo9" android:title="Device Info" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <Preference android:title="Battery Stats" android:key="activity;com.android.settings;com.android.settings.fuelgauge.PowerUsageSummary" android:summary="Shows Battery Usage" />
+        <Preference android:title="WiFi Information" android:key="activity;com.android.settings;com.android.settings.wifi.WifiInfo" android:summary="WiFi information" />
+    </PreferenceScreen>
+    <PreferenceScreen android:layout="@layout/logo8" android:title="About" android:selectable="true" android:key="logo">
+        <PreferenceScreen android:layout="@layout/logo" android:selectable="false" android:key="logo" />
+        <Preference android:title="Build Version" android:key="build_number" android:summary="SuperStock Rom" style="?android:preferenceInformationStyle" />
+        <Preference android:title="XDA Forum Thread" android:key="xda_forum" android:summary="Come join the discussion">
+            <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/tmobile-galaxy-s6-edge-plus/development/rom-superstock-boh6-v1-0-custom-rom-t3199714" />
+        </Preference>
+    </PreferenceScreen>
+</PreferenceScreen>

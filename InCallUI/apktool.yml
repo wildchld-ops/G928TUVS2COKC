@@ -1,0 +1,1633 @@
+version: 2.0.2
+apkFileName: InCallUI.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '20'
+  targetSdkVersion: '21'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '1'
+  versionName: 1.0.0
+sharedLibrary: false
+unknownFiles:
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_255: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_27: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_30: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_31: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_34: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_350: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_351: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_352: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_358: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_359: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_36: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_372: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_373: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_375: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_380: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_381: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_385: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_43: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_44: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_49: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_505: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_506: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_54: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_55: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_58: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_595: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_61: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_62: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_63: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_66: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_675: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_676: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_679: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_7: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_81: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_84: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_855: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_90: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_91: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_94: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_95: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_971: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_972: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberAlternateFormatsProto_995: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_800: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_808: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_870: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_878: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_881: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_882: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_883: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_888: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_979: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_AZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_BZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_CZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_DZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_EH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ER: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ES: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ET: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_FR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_GY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_HU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ID: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_IT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_JP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_KZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_LY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ME: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ML: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MQ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_MZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NP: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_NZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_OM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_PY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_QA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_RW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SB: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ST: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SX: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_SZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TD: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TH: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TJ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TK: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TL: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TO: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TR: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TV: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TW: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_TZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_US: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UY: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_UZ: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VC: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VG: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VI: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VN: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_VU: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_WF: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_WS: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_YE: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_YT: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ZA: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ZM: '8'
+  com/google/i18n/phonenumbers/data/PhoneNumberMetadataProto_ZW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_AZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BQ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_BZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_CZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_DZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_EH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ES: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ET: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_FR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_GY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_HU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ID: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IQ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_IT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_JP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_KZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_LY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ME: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ML: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MQ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_MZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NP: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_NZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_OM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_PY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_QA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_RW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SB: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SK: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ST: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SX: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_SZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TD: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TH: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TJ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TL: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TO: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TR: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TV: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TW: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_TZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_US: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UY: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_UZ: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VC: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VG: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VI: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VN: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_VU: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_WF: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_WS: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_YE: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_YT: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZA: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZM: '8'
+  com/google/i18n/phonenumbers/data/ShortNumberMetadataProto_ZW: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1201_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1202_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1203_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1204_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1205_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1206_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1207_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1208_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1209_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1210_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1212_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1213_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1214_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1215_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1216_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1217_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1218_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1219_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1224_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1225_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1226_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1228_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1229_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1231_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1234_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1236_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1239_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1240_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1242_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1248_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1250_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1251_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1252_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1253_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1254_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1256_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1260_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1262_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1267_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1269_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1270_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1272_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1276_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1281_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1289_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1301_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1302_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1303_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1304_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1305_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1306_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1307_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1308_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1309_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1310_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1312_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1313_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1314_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1315_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1316_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1317_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1318_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1319_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1320_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1321_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1323_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1325_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1330_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1331_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1334_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1336_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1337_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1339_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1345_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1346_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1347_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1351_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1352_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1360_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1361_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1364_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1365_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1385_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1386_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1401_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1402_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1403_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1404_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1405_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1406_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1407_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1408_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1409_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1410_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1412_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1413_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1414_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1415_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1416_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1417_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1418_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1419_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1423_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1424_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1425_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1430_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1431_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1432_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1434_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1435_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1437_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1438_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1440_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1441_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1443_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1450_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1469_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1478_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1479_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1480_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1484_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1501_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1502_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1503_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1504_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1505_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1506_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1507_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1508_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1509_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1510_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1512_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1513_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1514_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1515_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1516_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1517_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1518_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1519_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1520_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1530_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1540_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1541_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1551_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1559_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1561_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1562_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1563_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1567_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1570_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1571_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1573_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1574_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1575_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1580_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1585_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1586_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1587_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1601_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1602_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1603_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1604_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1605_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1606_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1607_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1608_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1609_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1610_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1612_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1613_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1614_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1615_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1616_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1617_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1618_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1619_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1620_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1623_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1626_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1630_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1631_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1636_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1639_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1641_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1646_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1647_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1649_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1650_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1651_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1657_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1660_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1661_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1662_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1667_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1669_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1671_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1678_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1682_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1701_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1702_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1703_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1704_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1705_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1706_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1707_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1708_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1709_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1712_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1713_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1714_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1715_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1716_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1717_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1718_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1719_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1720_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1724_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1725_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1726_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1727_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1730_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1731_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1732_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1734_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1737_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1740_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1754_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1757_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1760_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1763_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1765_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1769_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1770_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1772_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1773_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1774_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1775_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1778_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1779_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1780_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1781_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1782_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1785_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1786_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1801_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1802_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1803_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1804_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1805_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1806_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1807_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1808_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1809_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1810_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1812_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1813_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1814_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1815_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1816_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1817_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1818_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1819_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1828_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1830_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1831_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1832_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1838_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1843_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1845_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1847_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1848_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1850_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1851_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1856_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1857_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1858_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1859_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1860_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1862_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1863_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1864_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1865_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1867_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1870_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1872_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1873_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1876_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1878_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1888_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1901_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1902_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1903_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1904_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1905_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1906_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1907_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1908_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1909_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1910_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1912_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1913_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1914_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1915_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1916_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1917_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1918_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1919_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1920_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1925_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1928_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1929_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1930_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1931_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1936_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1937_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1938_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1940_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1941_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1947_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1949_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1951_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1952_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1954_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1956_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1959_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1970_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1971_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1972_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1973_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1978_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1979_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1980_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1984_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1985_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/1989_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/20_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/212_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/212_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/213_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/216_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/220_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/221_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/222_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/222_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/224_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/225_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/225_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/226_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/228_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/228_es: '8'
+  com/google/i18n/phonenumbers/geocoding/data/228_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/229_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/229_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/230_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/230_es: '8'
+  com/google/i18n/phonenumbers/geocoding/data/230_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/232_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/233_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/234_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/237_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/238_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/238_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/239_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/239_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/241_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/242_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/242_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/243_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/243_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/244_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/244_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/245_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/245_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/247_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/249_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/251_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/252_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/254_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/256_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/257_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/258_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/258_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/260_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/261_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/263_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/264_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/266_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/267_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/268_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/269_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/269_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/27_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/290_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/290_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/299_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/30_el: '8'
+  com/google/i18n/phonenumbers/geocoding/data/30_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/31_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/31_nl: '8'
+  com/google/i18n/phonenumbers/geocoding/data/32_de: '8'
+  com/google/i18n/phonenumbers/geocoding/data/32_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/32_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/32_nl: '8'
+  com/google/i18n/phonenumbers/geocoding/data/33_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/33_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/34_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/34_es: '8'
+  com/google/i18n/phonenumbers/geocoding/data/351_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/351_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/352_de: '8'
+  com/google/i18n/phonenumbers/geocoding/data/352_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/352_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/353_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/354_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/355_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/358_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/358_fi: '8'
+  com/google/i18n/phonenumbers/geocoding/data/358_se: '8'
+  com/google/i18n/phonenumbers/geocoding/data/359_bg: '8'
+  com/google/i18n/phonenumbers/geocoding/data/359_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/36_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/36_hu: '8'
+  com/google/i18n/phonenumbers/geocoding/data/370_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/371_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/372_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/373_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/373_ro: '8'
+  com/google/i18n/phonenumbers/geocoding/data/373_ru: '8'
+  com/google/i18n/phonenumbers/geocoding/data/374_am: '8'
+  com/google/i18n/phonenumbers/geocoding/data/374_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/374_ru: '8'
+  com/google/i18n/phonenumbers/geocoding/data/375_be: '8'
+  com/google/i18n/phonenumbers/geocoding/data/375_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/375_ru: '8'
+  com/google/i18n/phonenumbers/geocoding/data/381_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/381_sr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/389_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/39_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/39_it: '8'
+  com/google/i18n/phonenumbers/geocoding/data/40_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/40_ro: '8'
+  com/google/i18n/phonenumbers/geocoding/data/41_de: '8'
+  com/google/i18n/phonenumbers/geocoding/data/41_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/41_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/41_it: '8'
+  com/google/i18n/phonenumbers/geocoding/data/420_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/421_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/43_de: '8'
+  com/google/i18n/phonenumbers/geocoding/data/43_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/44_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/46_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/46_sv: '8'
+  com/google/i18n/phonenumbers/geocoding/data/47_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/48_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/48_pl: '8'
+  com/google/i18n/phonenumbers/geocoding/data/49_de: '8'
+  com/google/i18n/phonenumbers/geocoding/data/49_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/51_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/53_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/54_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/54_es: '8'
+  com/google/i18n/phonenumbers/geocoding/data/55_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/55_pt: '8'
+  com/google/i18n/phonenumbers/geocoding/data/56_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/56_es: '8'
+  com/google/i18n/phonenumbers/geocoding/data/57_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/58_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/58_es: '8'
+  com/google/i18n/phonenumbers/geocoding/data/599_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/62_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/62_id: '8'
+  com/google/i18n/phonenumbers/geocoding/data/66_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/66_th: '8'
+  com/google/i18n/phonenumbers/geocoding/data/686_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/7_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/7_ru: '8'
+  com/google/i18n/phonenumbers/geocoding/data/81_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/81_ja: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_ar: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_cs: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_fr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_ko: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_zh: '8'
+  com/google/i18n/phonenumbers/geocoding/data/82_zh_Hant: '8'
+  com/google/i18n/phonenumbers/geocoding/data/84_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/84_vi: '8'
+  com/google/i18n/phonenumbers/geocoding/data/86_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/86_zh: '8'
+  com/google/i18n/phonenumbers/geocoding/data/886_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/886_zh: '8'
+  com/google/i18n/phonenumbers/geocoding/data/886_zh_Hant: '8'
+  com/google/i18n/phonenumbers/geocoding/data/90_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/90_tr: '8'
+  com/google/i18n/phonenumbers/geocoding/data/91_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/94_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/962_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/966_ar: '8'
+  com/google/i18n/phonenumbers/geocoding/data/966_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/98_en: '8'
+  com/google/i18n/phonenumbers/geocoding/data/98_fa: '8'
+  com/google/i18n/phonenumbers/geocoding/data/config: '8'
+  com/google/i18n/phonenumbers/timezones/data/map_data: '8'
+doNotCompress:
+- resources.arsc
+- res/drawable-nodpi-v4/call_capture_noti_176x144.webp
+- res/drawable-nodpi-v4/call_recording_noti_176x144.webp
+- res/drawable-nodpi-v4/call_settings_default_image_qcif.webp
+- res/drawable-nodpi-v4/call_settings_default_image_qvga.webp
+- res/drawable-nodpi-v4/call_settings_default_image_vga_land.webp
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_01.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_02.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_call.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_heart.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_home.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_internet.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_mms.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_office.qmg
+- res/drawable-nodpi-v4/easy_call_endcall_multisim_sms.qmg
+- res/drawable-nodpi-v4/emergency_ic_nocallerid.qmg
+- res/drawable-nodpi-v4/sim_icon_call.qmg
+- res/drawable-nodpi-v4/sim_icon_call_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_gsm_01.qmg
+- res/drawable-nodpi-v4/sim_icon_gsm_01_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_gsm_02.qmg
+- res/drawable-nodpi-v4/sim_icon_gsm_02_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_heart.qmg
+- res/drawable-nodpi-v4/sim_icon_heart_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_home.qmg
+- res/drawable-nodpi-v4/sim_icon_home_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_internet.qmg
+- res/drawable-nodpi-v4/sim_icon_internet_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_mms.qmg
+- res/drawable-nodpi-v4/sim_icon_mms_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_office.qmg
+- res/drawable-nodpi-v4/sim_icon_office_quickpanel.qmg
+- res/drawable-nodpi-v4/sim_icon_sms.qmg
+- res/drawable-nodpi-v4/sim_icon_sms_quickpanel.qmg
+- res/drawable-nodpi-v4/stat_sys_phone_call_sim1.qmg
+- res/drawable-nodpi-v4/stat_sys_phone_call_sim2.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/ani_dial_phone.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/ani_incom_glow_01.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/ani_incom_glow_02.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/ani_incom_glow_03.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/ani_incom_glow_04.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_bluetooth_off.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_cancel_n.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_message_n.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_mute_off.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_speaker_off.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_unhold_off.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_with_text_below_call_n.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/btn_phone_icon_with_text_below_rejectl_n.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/call_info_icon_fax_w.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/call_info_icon_home_w.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/call_info_icon_office_w.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/call_info_icon_others_w.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/call_info_icon_phone_w.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/home_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/hover_selection_circle.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_bluetooth_disable_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_bluetooth_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_endcall.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_endcall2.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_endcall2_disable.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_endcall_disable.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_hold_disable.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_mute.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_mute_active.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_mute_active_tran.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_mute_disable.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_mute_tran.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_on_hold.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_on_hold_tran.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_pause.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_call_pause_tran.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_normal_state_circle.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_press_state_circle.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_receive_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_receive_icon_dis.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_swap_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/incallui_swap_icon_disable.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/mobile_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/office_icon.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/phone_multicall_swap_n.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/phone_multicall_swap_p.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/quotes_btn_end.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/quotes_btn_start.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/unknown_thumnail_big.qmg
+- res/drawable-sw360dp-xxxhdpi-v13/unknown_thumnail_profile_pic.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_add.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_bluetooth.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_endcall.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_extravolume.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_keypad_show.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_mute.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_during_ic_speaker.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_ic_record.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_ic_stop.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_multitasking_ic_contacts.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_multitasking_ic_email.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_multitasking_ic_internet.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_multitasking_ic_memo.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_multitasking_ic_message.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/mk_voicecall_multitasking_ic_splanner.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/videocall_onehand_ic_hide.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/videocall_onehand_ic_mute.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/videocall_onehand_ic_switch.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/voice_onehand_ic_arrow_left.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/voice_onehand_ic_arrow_right.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/voicecall_sview_incoming_left.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/voicecall_sview_incoming_right.qmg
+- res/drawable-sw411dp-xxxhdpi-v13/voicecall_sview_incoming_right_02.qmg
+- res/drawable-xxxhdpi-v4/am_voicecall_cover_ic_playing.qmg
+- res/drawable-xxxhdpi-v4/am_voicecall_cover_ic_rec.qmg
+- res/drawable-xxxhdpi-v4/answer_memo_guidance_playing.qmg
+- res/drawable-xxxhdpi-v4/answer_memo_recording.qmg
+- res/drawable-xxxhdpi-v4/answering_memo_sliding.qmg
+- res/drawable-xxxhdpi-v4/answering_msg_popup_ic_playing.qmg
+- res/drawable-xxxhdpi-v4/answering_msg_popup_ic_rec.qmg
+- res/drawable-xxxhdpi-v4/badge_action_call.qmg
+- res/drawable-xxxhdpi-v4/badge_action_sms.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_01.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_02.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_call.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_heart.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_home.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_internet.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_mms.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_office.qmg
+- res/drawable-xxxhdpi-v4/call_endcall_multisim_sms.qmg
+- res/drawable-xxxhdpi-v4/call_hd_icon_wifivideocall.qmg
+- res/drawable-xxxhdpi-v4/call_hd_video_icon.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_balloon.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_call_icon.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_call_icon_easy.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_call_icon_kt.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_call_icon_lg.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_call_icon_sk.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_chn.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_skt.qmg
+- res/drawable-xxxhdpi-v4/call_hd_voice_square.qmg
+- res/drawable-xxxhdpi-v4/call_hd_wifi_icon.qmg
+- res/drawable-xxxhdpi-v4/call_lgu_shut_off.qmg
+- res/drawable-xxxhdpi-v4/call_lgu_shut_on.qmg
+- res/drawable-xxxhdpi-v4/call_lgu_sound_on.qmg
+- res/drawable-xxxhdpi-v4/call_lgu_soung_off.qmg
+- res/drawable-xxxhdpi-v4/call_live_video_icon.qmg
+- res/drawable-xxxhdpi-v4/call_live_video_icon_bb.qmg
+- res/drawable-xxxhdpi-v4/call_live_video_icon_dim.qmg
+- res/drawable-xxxhdpi-v4/call_live_video_icon_dim_bb.qmg
+- res/drawable-xxxhdpi-v4/call_multitasking_fullscreen.qmg
+- res/drawable-xxxhdpi-v4/call_multitasking_video_call.qmg
+- res/drawable-xxxhdpi-v4/call_share_icon.qmg
+- res/drawable-xxxhdpi-v4/call_share_icon_bb.qmg
+- res/drawable-xxxhdpi-v4/call_share_icon_dim.qmg
+- res/drawable-xxxhdpi-v4/call_share_icon_dim_bb.qmg
+- res/drawable-xxxhdpi-v4/call_video_conversion.qmg
+- res/drawable-xxxhdpi-v4/call_voice_conversion.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_left.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_left_01.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_left_02.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_left_03.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_right.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_right_01.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_right_02.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_arrow_right_03.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_end_call.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_incoming_call.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_mute.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_reject_call.qmg
+- res/drawable-xxxhdpi-v4/clear_ic_speaker.qmg
+- res/drawable-xxxhdpi-v4/contacts_default_img.qmg
+- res/drawable-xxxhdpi-v4/contacts_profile_list_ic_blocking.qmg
+- res/drawable-xxxhdpi-v4/contacts_profile_list_ic_car.qmg
+- res/drawable-xxxhdpi-v4/contacts_profile_list_ic_emergency.qmg
+- res/drawable-xxxhdpi-v4/contacts_profile_list_ic_not_available.qmg
+- res/drawable-xxxhdpi-v4/contacts_profile_list_ic_power_saving.qmg
+- res/drawable-xxxhdpi-v4/contacts_profile_list_ic_roaming.qmg
+- res/drawable-xxxhdpi-v4/easy_answering_memo_play.qmg
+- res/drawable-xxxhdpi-v4/easy_answering_memo_rec.qmg
+- res/drawable-xxxhdpi-v4/edge_img_glance_1.qmg
+- res/drawable-xxxhdpi-v4/fab_blue.qmg
+- res/drawable-xxxhdpi-v4/fab_green.qmg
+- res/drawable-xxxhdpi-v4/fab_ic_call.qmg
+- res/drawable-xxxhdpi-v4/fab_ic_end_call.qmg
+- res/drawable-xxxhdpi-v4/fab_ic_message.qmg
+- res/drawable-xxxhdpi-v4/fab_red.qmg
+- res/drawable-xxxhdpi-v4/help_cue_drag_left.qmg
+- res/drawable-xxxhdpi-v4/help_cue_drag_right.qmg
+- res/drawable-xxxhdpi-v4/help_cue_drag_up.qmg
+- res/drawable-xxxhdpi-v4/help_popup_picker_b_c.qmg
+- res/drawable-xxxhdpi-v4/help_popup_picker_t_c.qmg
+- res/drawable-xxxhdpi-v4/help_tap_1_default.qmg
+- res/drawable-xxxhdpi-v4/ic_ab_search.qmg
+- res/drawable-xxxhdpi-v4/ic_arrow_back_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_business_white_120dp.qmg
+- res/drawable-xxxhdpi-v4/ic_call_end_white_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_call_split_white_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_call_voicemail_holo_dark.qmg
+- res/drawable-xxxhdpi-v4/ic_call_white_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_close_dk.qmg
+- res/drawable-xxxhdpi-v4/ic_contacts_holo_dark.qmg
+- res/drawable-xxxhdpi-v4/ic_dialpad_delete.qmg
+- res/drawable-xxxhdpi-v4/ic_dialpad_voicemail.qmg
+- res/drawable-xxxhdpi-v4/ic_group_white_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_hd_audio.qmg
+- res/drawable-xxxhdpi-v4/ic_lockscreen_glowdot.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_back.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_group_dk.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_group_lt.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_overflow_lt.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_person_dk.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_person_lt.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_remove_field_holo_light.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_settings_holo_light.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_star_dk.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_star_holo_light.qmg
+- res/drawable-xxxhdpi-v4/ic_menu_star_lt.qmg
+- res/drawable-xxxhdpi-v4/ic_overflow_menu.qmg
+- res/drawable-xxxhdpi-v4/ic_person_add_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_person_white_120dp.qmg
+- res/drawable-xxxhdpi-v4/ic_phone_paused_white_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_scroll_handle.qmg
+- res/drawable-xxxhdpi-v4/ic_settings_white_24dp.qmg
+- res/drawable-xxxhdpi-v4/ic_text_holo_light.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_add_call.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_arrow_whitespace.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_audio_bluetooth.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_audio_headphones.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_audio_phone.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_dialpad.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_hold.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_merge.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_mic_off.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_speaker_on.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_swap.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_video.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_video_off.qmg
+- res/drawable-xxxhdpi-v4/ic_toolbar_video_switch.qmg
+- res/drawable-xxxhdpi-v4/ic_videocam.qmg
+- res/drawable-xxxhdpi-v4/ic_voicemail_avatar.qmg
+- res/drawable-xxxhdpi-v4/ic_vowifi_call_icon.qmg
+- res/drawable-xxxhdpi-v4/img_conference.qmg
+- res/drawable-xxxhdpi-v4/img_no_image.qmg
+- res/drawable-xxxhdpi-v4/img_phone.qmg
+- res/drawable-xxxhdpi-v4/mk_videocall_main_ic_hideme.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_add.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_bluetooth.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_extravolume.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_keypad_show.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_mute.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_during_ic_speaker.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_ic_record.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_ic_stop.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_multitasking_ic_contacts.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_multitasking_ic_email.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_multitasking_ic_internet.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_multitasking_ic_memo.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_multitasking_ic_message.qmg
+- res/drawable-xxxhdpi-v4/mk_voicecall_multitasking_ic_splanner.qmg
+- res/drawable-xxxhdpi-v4/profile_emotion_icon_busy.qmg
+- res/drawable-xxxhdpi-v4/profile_emotion_icon_cinema.qmg
+- res/drawable-xxxhdpi-v4/profile_emotion_icon_driving.qmg
+- res/drawable-xxxhdpi-v4/profile_emotion_icon_in_class.qmg
+- res/drawable-xxxhdpi-v4/profile_emotion_icon_in_conference.qmg
+- res/drawable-xxxhdpi-v4/profile_emotion_icon_on_journey.qmg
+- res/drawable-xxxhdpi-v4/rcs_popup_full_dark.9.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_call_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_call_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_call_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_call_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_01_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_01_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_01_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_02_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_02_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_02_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_m_01_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_gsm_m_02_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_heart_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_heart_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_heart_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_heart_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_home_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_home_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_home_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_home_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_internet_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_internet_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_internet_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_internet_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_mms_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_mms_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_mms_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_mms_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_office_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_office_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_office_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_office_s.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_sms_l.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_sms_m_v3.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_sms_multitasking.qmg
+- res/drawable-xxxhdpi-v4/sim_icon_sms_s.qmg
+- res/drawable-xxxhdpi-v4/stat_notify_share.qmg
+- res/drawable-xxxhdpi-v4/stat_sys_phone_call.qmg
+- res/drawable-xxxhdpi-v4/stat_sys_phone_call_bluetooth.qmg
+- res/drawable-xxxhdpi-v4/stat_sys_phone_call_on_hold.qmg
+- res/drawable-xxxhdpi-v4/stat_sys_vp_phone_call.qmg
+- res/drawable-xxxhdpi-v4/stat_sys_vp_phone_call_on_hold.qmg
+- res/drawable-xxxhdpi-v4/tw_action_bar_headset.qmg
+- res/drawable-xxxhdpi-v4/tw_action_bar_icon_fileshare.qmg
+- res/drawable-xxxhdpi-v4/tw_toast_frame_mtrl.9.qmg
+- res/drawable-xxxhdpi-v4/videocall_camera_off_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_camera_on_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_cancel_att.qmg
+- res/drawable-xxxhdpi-v4/videocall_default_caller_id_land_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_default_caller_id_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_hide.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_hideme.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_mute.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_outgoing_hideme.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_outgoing_showme.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_showme.qmg
+- res/drawable-xxxhdpi-v4/videocall_easy_ic_switch.qmg
+- res/drawable-xxxhdpi-v4/videocall_effect_cancel_icon.qmg
+- res/drawable-xxxhdpi-v4/videocall_effect_thumbnail_beauty.webp
+- res/drawable-xxxhdpi-v4/videocall_effect_thumbnail_mono.webp
+- res/drawable-xxxhdpi-v4/videocall_effect_thumbnail_negative.webp
+- res/drawable-xxxhdpi-v4/videocall_effect_thumbnail_none.webp
+- res/drawable-xxxhdpi-v4/videocall_effect_thumbnail_sepia.webp
+- res/drawable-xxxhdpi-v4/videocall_effect_thumbnail_solarise.webp
+- res/drawable-xxxhdpi-v4/videocall_hideme_att.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_hide.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_hideme.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_mute.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_outgoing_hideme.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_outgoing_showme.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_showme.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_speaker.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_stop.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_switch.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_videocall_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_ic_voicecall_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_incoming_ic_accept.qmg
+- res/drawable-xxxhdpi-v4/videocall_incoming_ic_hideme_att.qmg
+- res/drawable-xxxhdpi-v4/videocall_incoming_ic_showme_att.qmg
+- res/drawable-xxxhdpi-v4/videocall_main_ic_hideme.qmg
+- res/drawable-xxxhdpi-v4/videocall_main_ic_nophotoid.qmg
+- res/drawable-xxxhdpi-v4/videocall_mk_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/videocall_multiparty_btn_merge.qmg
+- res/drawable-xxxhdpi-v4/videocall_multiparty_btn_swap.qmg
+- res/drawable-xxxhdpi-v4/videocall_multiparty_icon_hd.qmg
+- res/drawable-xxxhdpi-v4/videocall_multiparty_icon_videocall.qmg
+- res/drawable-xxxhdpi-v4/videocall_multiparty_icon_wificall.qmg
+- res/drawable-xxxhdpi-v4/videocall_multiparty_icon_wifivideocall.qmg
+- res/drawable-xxxhdpi-v4/videocall_onehand_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/videocall_onehand_ic_arrow_left.qmg
+- res/drawable-xxxhdpi-v4/videocall_onehand_ic_arrow_right.qmg
+- res/drawable-xxxhdpi-v4/videocall_onehand_ic_hide.qmg
+- res/drawable-xxxhdpi-v4/videocall_onehand_ic_mute.qmg
+- res/drawable-xxxhdpi-v4/videocall_onehand_ic_switch.qmg
+- res/drawable-xxxhdpi-v4/videocall_showme_att.qmg
+- res/drawable-xxxhdpi-v4/videocall_switch_camera_vzw.qmg
+- res/drawable-xxxhdpi-v4/videocall_videocall_att.qmg
+- res/drawable-xxxhdpi-v4/videocall_voicecall_att.qmg
+- res/drawable-xxxhdpi-v4/vodafone_callplus_icon.qmg
+- res/drawable-xxxhdpi-v4/vodafone_callplus_icon_importance_call.qmg
+- res/drawable-xxxhdpi-v4/vodafone_callplus_map_icon.qmg
+- res/drawable-xxxhdpi-v4/vodafone_callplus_popup_image_icon.qmg
+- res/drawable-xxxhdpi-v4/vodafone_callplus_popup_map_icon.qmg
+- res/drawable-xxxhdpi-v4/vodafone_callplus_unanswered_icon.qmg
+- res/drawable-xxxhdpi-v4/voice_onehand_ic_arrow_left.qmg
+- res/drawable-xxxhdpi-v4/voice_onehand_ic_arrow_right.qmg
+- res/drawable-xxxhdpi-v4/voicecall_btn_close.qmg
+- res/drawable-xxxhdpi-v4/voicecall_btn_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_btn_open.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_add.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_bluetooth.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_cwic.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_extravolum_02_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_extravolum_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_keypad.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_keypad_hide.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_mute_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_record.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_speaker_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_stop.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_ic_swis.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_bluetooth.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_extravolum_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_keypad.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_mute_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_record.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_speaker.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_onehand_easy_ic_stop.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_vzw_btn_ic_camera.qmg
+- res/drawable-xxxhdpi-v4/voicecall_during_vzw_btn_ic_one_way_camera.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_bluetooth.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_endcall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_extravolume.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_keypad_show.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_mute_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_record.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_speaker.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_during_ic_stop.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_endcall_ic_call.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_endcall_ic_create.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_endcall_ic_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_endcall_ic_update.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_endcall_ic_videocall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_endcall_ic_viewcontact.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_ic_accept.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_ic_reject.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_left_01.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_left_02.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_left_03.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_left_04.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_left_05.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_right_01.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_right_02.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_right_03.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_right_04.qmg
+- res/drawable-xxxhdpi-v4/voicecall_easy_incoming_right_05.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_call.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_create.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_message_att.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_update.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_videocall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_videocall_att.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_videocall_att_dim.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_videocall_vzw.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_ic_viewcontact.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_onehand__easy_ic_call.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_onehand_easy_ic_contacts.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_onehand_easy_ic_create.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_onehand_easy_ic_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_onehand_easy_ic_update.qmg
+- res/drawable-xxxhdpi-v4/voicecall_endcall_onehand_easy_ic_videocall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_ic_accept.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_ic_reject.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_left.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_left_01.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_left_02.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_left_03.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_right.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_right_01.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_right_02.qmg
+- res/drawable-xxxhdpi-v4/voicecall_incoming_right_03.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_call.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_call_fowarding.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_email.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_goggle.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_memo.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_planner.qmg
+- res/drawable-xxxhdpi-v4/voicecall_info_ic_status.qmg
+- res/drawable-xxxhdpi-v4/voicecall_linkedin_ic.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_accept.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_call_hold.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_call_on_hold.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_endcall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_hd_call.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_mute.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_reject.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_resume.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_speaker.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_swis.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_video_call.qmg
+- res/drawable-xxxhdpi-v4/voicecall_mini_controller_video_call_vzw.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_conneted.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_conneting.PNG
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_endcall.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_heldmerge.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_hide.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_manage.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_merge.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_btn_swap.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multiparty_group_img.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multitasking_ic_email.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multitasking_ic_internet.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multitasking_ic_memo.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multitasking_ic_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_multitasking_ic_splanner.qmg
+- res/drawable-xxxhdpi-v4/voicecall_onhold_btn_resume.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_accept.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_close.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_end.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_message.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_mute.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_open.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_reject.qmg
+- res/drawable-xxxhdpi-v4/voicecall_popup_speaker.qmg
+- res/drawable-xxxhdpi-v4/voicecall_rcs_popup_cancel.qmg
+- res/drawable-xxxhdpi-v4/voicecall_rcs_popup_cancel_focus.qmg
+- res/drawable-xxxhdpi-v4/voicecall_rcs_popup_cancel_press.qmg
+- res/drawable-xxxhdpi-v4/voicecall_rcs_popup_check.qmg
+- res/drawable-xxxhdpi-v4/voicecall_rcs_popup_check_focus.qmg
+- res/drawable-xxxhdpi-v4/voicecall_rcs_popup_check_press.qmg
+- res/drawable-xxxhdpi-v4/voicecall_recording_ic_stop.qmg
+- res/drawable-xxxhdpi-v4/voicecall_reject_btn_message_add.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_during_ic_end.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_during_ic_mute_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_during_ic_speaker_off.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_incoming_ic_accept.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_incoming_ic_reject.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_incoming_left.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_incoming_right.qmg
+- res/drawable-xxxhdpi-v4/voicecall_sview_incoming_right_02.qmg
+- res/drawable-xxxhdpi-v4/volte_btn_ic_02.qmg
+- res/drawable-xxxhdpi-v4/volte_popup_videocall.qmg
+- res/drawable-xxxhdpi-v4/volte_popup_videocall_dim.qmg
+- res/drawable-xxxhdpi-v4/vowifi_callback_call_icon.qmg
+- res/drawable-xxxhdpi-v4/vowifi_callback_call_icon_easy.qmg
+- res/drawable-xxxhdpi-v4/vowifi_easy_end_call_icon.qmg
+- res/drawable-xxxhdpi-v4/vowifi_end_call_icon.qmg
+- res/drawable-xxxhdpi-v4/yellowpage_ic_01.qmg
+- res/drawable-xxxhdpi-v4/yulore_superyellowpage_icon_arrow.qmg
+- res/drawable/after_swipe_ic_add_to_reject_list.qmg
+- res/drawable/after_swipe_ic_report.qmg
+- res/drawable/call_hd_icon_wifivideocall.qmg
+- res/drawable/call_hd_voice_call_icon.qmg
+- res/drawable/call_live_video_icon.qmg
+- res/drawable/call_live_video_icon_bb.qmg
+- res/drawable/call_live_video_icon_dim.qmg
+- res/drawable/call_live_video_icon_dim_bb.qmg
+- res/drawable/call_share_icon.qmg
+- res/drawable/call_share_icon_bb.qmg
+- res/drawable/call_share_icon_dim.qmg
+- res/drawable/call_share_icon_dim_bb.qmg
+- res/drawable/call_video_group_call_skt.qmg
+- res/drawable/help_cue_drag_left.qmg
+- res/drawable/help_cue_drag_right.qmg
+- res/drawable/help_popup_picker_b_c.qmg
+- res/drawable/help_popup_picker_t_c.qmg
+- res/drawable/help_tap_1_default.qmg
+- res/drawable/img_video_trouble.qmg
+- res/drawable/img_video_trouble_land.qmg
+- res/drawable/invalid_resource.qmg
+- res/drawable/mk_voicecall_during_ic_add.qmg
+- res/drawable/mk_voicecall_during_ic_bluetooth.qmg
+- res/drawable/mk_voicecall_during_ic_endcall.qmg
+- res/drawable/mk_voicecall_during_ic_extravolume.qmg
+- res/drawable/mk_voicecall_during_ic_keypad_show.qmg
+- res/drawable/mk_voicecall_during_ic_mute.qmg
+- res/drawable/mk_voicecall_during_ic_speaker.qmg
+- res/drawable/mk_voicecall_ic_record.qmg
+- res/drawable/mk_voicecall_ic_stop.qmg
+- res/drawable/mk_voicecall_multitasking_ic_contacts.qmg
+- res/drawable/mk_voicecall_multitasking_ic_email.qmg
+- res/drawable/mk_voicecall_multitasking_ic_internet.qmg
+- res/drawable/mk_voicecall_multitasking_ic_memo.qmg
+- res/drawable/mk_voicecall_multitasking_ic_message.qmg
+- res/drawable/mk_voicecall_multitasking_ic_splanner.qmg
+- res/drawable/phone_keypad_ic_delete.qmg
+- res/drawable/rcs_popup_full_dark.9.qmg
+- res/drawable/stat_notify_share.qmg
+- res/drawable/tw_action_bar_headset.qmg
+- res/drawable/tw_action_bar_icon_fileshare.qmg
+- res/drawable/voicecall_during_ic_lock.qmg
+- res/drawable/voicecall_during_ic_swis.qmg
+- res/drawable/voicecall_ic_hide.qmg
+- res/drawable/voicecall_linkedin_ic.qmg
+- res/drawable/voicecall_multiparty_btn_hide.qmg
+- res/drawable/voicecall_popup_open.qmg
+- res/drawable/voicecall_rcs_popup_cancel.qmg
+- res/drawable/voicecall_rcs_popup_cancel_focus.qmg
+- res/drawable/voicecall_rcs_popup_cancel_press.qmg
+- res/drawable/voicecall_rcs_popup_check.qmg
+- res/drawable/voicecall_rcs_popup_check_focus.qmg
+- res/drawable/voicecall_rcs_popup_check_press.qmg
+- res/drawable/volte_btn_ic_02.qmg
+- res/mipmap-hdpi-v4/ic_contacts_clr_48cv_44dp.qmg
+- res/mipmap-hdpi-v4/ic_launcher_phone.qmg
+- res/mipmap-mdpi-v4/ic_contacts_clr_48cv_44dp.qmg
+- res/mipmap-mdpi-v4/ic_launcher_phone.qmg
+- res/mipmap-sw411dp-xxxhdpi-v13/ic_launcher_phone.qmg
+- res/mipmap-xhdpi-v4/ic_contacts_clr_48cv_44dp.qmg
+- res/mipmap-xhdpi-v4/ic_launcher_phone.qmg
+- res/mipmap-xxhdpi-v4/ic_contacts_clr_48cv_44dp.qmg
+- res/mipmap-xxhdpi-v4/ic_launcher_phone.qmg
+- res/mipmap-xxxhdpi-v4/ic_contacts_clr_48cv_44dp.qmg
+- res/mipmap-xxxhdpi-v4/ic_launcher_phone.qmg

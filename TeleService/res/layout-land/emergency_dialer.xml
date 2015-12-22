@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/top" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dialer_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include layout="@layout/dialpad_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/dialpad_edittext_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/dialpad_edittext_bg" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ViewStub android:gravity="center" android:id="@id/emergencyItemContainer" android:background="@android:color/transparent" android:layout="@layout/emergency_contact_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <EditText android:textSize="@dimen/emergency_contact_dialer_edittext_size" android:textColor="@color/dialpad_edittext_text_color" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="99.0dip" android:cursorVisible="false" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:textDirection="ltr" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dialer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/dialpad_additional_buttons_sec" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

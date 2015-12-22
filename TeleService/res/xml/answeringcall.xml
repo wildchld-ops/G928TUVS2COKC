@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/callsettings_category_answering" />
+    <SwitchPreference android:title="@string/callsettings_answering_key_title" android:key="meterial_anykey_mode_preference" />
+    <SwitchPreference android:title="@string/callsettings_voice_cmd_title" android:key="meterial_voice_cmd_preference" android:summary="@string/callsettings_voice_cmd_summary" />
+    <CheckBoxPreference android:title="@string/callsettings_answering_call_in_external_screen_title" android:key="callsettings_answering_in_external_screen_preference" android:summary="@string/callsettings_answering_call_in_external_screen_summary" />
+    <CheckBoxPreference android:title="@string/callsettings_answering_key_title" android:key="anykey_mode_preference" />
+    <CheckBoxPreference android:title="@string/callsettings_answering_accessibility_tapping_title" android:key="callsettings_answering_accessibility_tapping" android:summary="@string/callsettings_answering_accessibility_tapping_summary" />
+    <CheckBoxPreference android:title="@string/callsettings_voice_cmd_title" android:key="voice_cmd_preference" android:summary="@string/callsettings_voice_cmd_summary" />
+    <CheckBoxPreference android:title="@string/callsettings_answering_accessibility_headtracking_title" android:key="callsettings_answering_accessibility_headtracking" android:summary="@string/callsettings_answering_accessibility_headtracking_summary" />
+    <SwitchPreference android:title="@string/callsettings_open_folder_title" android:key="meterial_folder_mode_preference" android:summary="@string/callsettings_open_folder_summary" />
+    <CheckBoxPreference android:title="@string/callsettings_open_folder_title" android:key="folder_mode_preference" android:summary="@string/callsettings_open_folder_summary" />
+    <CheckBoxPreference android:title="@string/gesture_callaccept_setting_title" android:key="gesture_callaccept_setting_key" />
+    <PreferenceCategory android:title="@string/callsettings_category_ending" />
+    <com.android.phone.callsettings.PowerKeyEndPreference android:title="@string/callsettings_PowerkeyEndsCalls_title" android:key="powerkey_end_preference" />
+    <com.android.phone.callsettings.SecPowerKeyEndPreference android:title="@string/callsettings_PowerkeyEndsCalls_title" android:key="meterial_powerkey_end_preference" />
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SecEasyDialpadKeyNumberStyle">
+        <item name="android:textSize">@dimen/sec_easy_dialpad_key_numbers_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/sec_easy_dialpad_primary_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/sec_easy_dialpad_key_number_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/sec_easy_dialpad_key_number_margin_left</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="SecDialpadKeyNumberStyle">
+        <item name="android:textSize">@dimen/sec_dialpad_key_numbers_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/sec_dialpad_primary_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">47.0dip</item>
+        <item name="android:layout_marginTop">@dimen/sec_dialpad_key_number_margin_top</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="SecOnehandDialpadKeyNumberStyle">
+        <item name="android:textSize">@dimen/sec_dialpad_key_numbers_size_onehand</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/sec_dialpad_primary_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/sec_dialpad_key_number_height_onehand</item>
+        <item name="android:layout_marginTop">@dimen/sec_dialpad_key_number_margin_top_onehand</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

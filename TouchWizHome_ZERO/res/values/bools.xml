@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="disable_zaxis_effect">false</bool>
+    <bool name="dnd_drag_view_to_center">false</bool>
+    <bool name="enable_app_widgets_drawable_renderer">false</bool>
+    <bool name="enable_apps_dynamic_grid_change">false</bool>
+    <bool name="enable_close_folder_3x2_layout">false</bool>
+    <bool name="enable_debug_receiver">true</bool>
+    <bool name="enable_dvfs">true</bool>
+    <bool name="enable_dynamic_grid_change">true</bool>
+    <bool name="enable_fragment_transitions">false</bool>
+    <bool name="enable_fuzzy_edges">true</bool>
+    <bool name="enable_launch_effect">false</bool>
+    <bool name="enable_live_icon">true</bool>
+    <bool name="enable_non_dali_twlauncher_determine_scroll">true</bool>
+    <bool name="enable_page_shadow">true</bool>
+    <bool name="enable_page_warp_effect">true</bool>
+    <bool name="enable_parallax_effect">true</bool>
+    <bool name="enable_power_saving_mode">true</bool>
+    <bool name="enable_rotation">false</bool>
+    <bool name="enable_screen_grid">true</bool>
+    <bool name="enable_shadow">true</bool>
+    <bool name="enable_tablet_layout">false</bool>
+    <bool name="enable_wallpaper_blur">true</bool>
+    <bool name="enable_weather_effect">true</bool>
+    <bool name="enable_zero_page">true</bool>
+    <bool name="enable_zero_page_fingerswipe">true</bool>
+    <bool name="enable_zero_page_list">false</bool>
+    <bool name="new_trash_animation">true</bool>
+    <bool name="preload_apps_list">true</bool>
+    <bool name="shadow_effect_enable">true</bool>
+    <bool name="stroke_text_enable">true</bool>
+</resources>

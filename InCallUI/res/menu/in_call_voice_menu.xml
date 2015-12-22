@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/addCallButton" android:title="@string/overflowAddMenuItemText" />
+    <item android:id="@id/holdButton" android:title="@string/onscreenHoldText" />
+    <item android:id="@id/recordButton" android:title="@string/secOnscreenRecordText" />
+    <item android:id="@id/extraVolumeButtonEnable" android:title="@string/secOnscreenMenuEnableExtraVolume" android:contentDescription="@string/secOnscreenMenuEnableExtraVolumeTTS" />
+    <item android:id="@id/extraVolumeButtonDisable" android:title="@string/secOnscreenMenuDisableExtraVolume" />
+    <item android:id="@id/bluetoothButton" android:visible="false" android:title="@string/audio_mode_bluetooth" />
+    <item android:id="@id/contactsButton" android:title="@string/secOnscreenContactText" />
+    <item android:id="@id/messagesButton" android:title="@string/secOnscreenMessageText" />
+    <item android:id="@id/memoButton" android:title="@string/secOnscreenMemoText" />
+    <item android:id="@id/calendarButton" android:title="@string/secOnscreenCalendarText" />
+    <item android:id="@id/addVoiceUserButton" android:visible="false" android:title="@string/group_voice_call" />
+    <item android:id="@id/switchToVideoCallButton" android:visible="false" android:title="@string/secOnscreenMenuSwitchToVideoCallText" />
+    <item android:id="@id/send_file_via_filetransfer" android:title="@string/send_file_via_filetransfer" />
+    <item android:id="@id/bt_headset_on" android:title="@string/onscreenBluetoothTextOn" />
+    <item android:id="@id/bt_headset_off" android:title="@string/onscreenBluetoothTextOff" />
+    <item android:id="@id/callTransfer" android:title="@string/secOnscreenMenuCallTransfer" />
+</menu>

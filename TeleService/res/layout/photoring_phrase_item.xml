@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/item_layout" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.android.phone.widget.CircularImageView android:layout_gravity="center" android:id="@id/thumb_circular" android:layout_width="@dimen/photoring_list_row_height" android:layout_height="@dimen/photoring_list_row_height" android:layout_marginTop="-1.0dip" phone:border="true" phone:border_width="3.0px" phone:border_color="@color/incoming_call_popup_circular_border_color"
+          xmlns:phone="http://schemas.android.com/apk/res/com.android.phone" />
+        <ImageView android:layout_gravity="center" android:id="@id/thumb" android:layout_width="@dimen/photoring_list_row_height" android:layout_height="@dimen/photoring_list_row_height" />
+    </FrameLayout>
+    <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:textSize="@dimen/photoring_phrase_text_size" android:gravity="center|left" android:id="@id/text" android:paddingLeft="10.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/photoring_list_row_height" android:singleLine="true" android:layout_weight="1.0" />
+    <CheckBox android:gravity="center" android:layout_gravity="center|right" android:id="@id/check" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+</LinearLayout>

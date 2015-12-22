@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/instant_lettering_margin" android:layout_marginTop="@dimen/instant_lettering_margin" android:layout_marginRight="@dimen/instant_lettering_margin"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="@dimen/instant_lettering_text_size" android:textColor="@color/instant_lettering_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/callsettings_help_volte_instant_lettering" android:lineSpacingExtra="@dimen/instant_lettering_line_spacing" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+</ScrollView>

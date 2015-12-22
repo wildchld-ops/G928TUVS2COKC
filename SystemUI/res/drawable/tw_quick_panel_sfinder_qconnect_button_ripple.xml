@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#ff5d5d5d"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tw_quick_panel_sfinder_qconnect_button_normal">
+        <shape>
+            <corners android:radius="30.0dip" />
+        </shape>
+    </item>
+</ripple>
