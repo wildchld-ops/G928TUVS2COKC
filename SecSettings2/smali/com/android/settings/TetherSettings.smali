@@ -4529,31 +4529,10 @@
 .end method
 
 .method public onResume()V
-    .locals 2
+    .locals 0
 
     invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
 
-    iget-object v0, p0, Lcom/android/settings/TetherSettings;->mUm:Landroid/os/UserManager;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/settings/TetherSettings;->mUm:Landroid/os/UserManager;
-
-    const-string v1, "no_config_tethering"
-
-    invoke-virtual {v0, v1}, Landroid/os/UserManager;->hasUserRestriction(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p0}, Lcom/android/settings/TetherSettings;->getActivity()Landroid/app/Activity;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
-
-    :cond_0
     invoke-direct {p0}, Lcom/android/settings/TetherSettings;->updateState()V
 
     return-void

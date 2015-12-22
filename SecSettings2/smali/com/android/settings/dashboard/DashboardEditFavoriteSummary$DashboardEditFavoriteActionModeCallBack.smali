@@ -179,7 +179,7 @@
 .method public updateSelectionMenu()V
     .locals 9
 
-    const/16 v8, 0x9
+    const/16 v8, 0xf
 
     const/4 v7, 0x2
 

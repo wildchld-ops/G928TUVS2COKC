@@ -790,6 +790,15 @@
     <public type="drawable" name="setup_illustration_wifi" id="0x7f020266" />
     <public type="drawable" name="transparency" id="0x7f0202a8" />
     <public type="drawable" name="tw_divider_vertical_holo_dark" id="0x7f0202d0" />
+    <public type="drawable" name="ss_logo" id="0x7f020315" />
+    <public type="drawable" name="ss_icon" id="0x7f020316" />
+    <public type="drawable" name="ic_setting_grid_6thSwipe" id="0x7f020317" />
+    <public type="drawable" name="ic_setting_grid_autostarts" id="0x7f020318" />
+    <public type="drawable" name="ic_setting_grid_toolbox" id="0x7f020319" />
+    <public type="drawable" name="ic_setting_grid_applicationpermissions" id="0x7f02031a" />
+    <public type="drawable" name="ic_upsm" id="0x7f02031b" />
+    <public type="drawable" name="ic_viper" id="0x7f02031c" />
+    <public type="drawable" name="ic_setting_grid_smartmanager" id="0x7f02031d" />
     <public type="drawable" name="APKTOOL_DUMMY_0064" id="0x7f020064" />
     <public type="drawable" name="APKTOOL_DUMMY_0067" id="0x7f020067" />
     <public type="drawable" name="APKTOOL_DUMMY_00cb" id="0x7f0200cb" />
@@ -1455,6 +1464,10 @@
     <public type="layout" name="zen_downtime_day" id="0x7f040265" />
     <public type="layout" name="zone_picker_list_item" id="0x7f040266" />
     <public type="layout" name="notification_app_section" id="0x7f040267" />
+    <public type="layout" name="ss_logo" id="0x7f040268" />
+    <public type="layout" name="manage_autostarts" id="0x7f040269" />
+    <public type="layout" name="manage_autostarts_item" id="0x7f04026a" />
+    <public type="layout" name="logo" id="0x7f04026b" />
     <public type="layout" name="APKTOOL_DUMMY_016f" id="0x7f04016f" />
     <public type="layout" name="APKTOOL_DUMMY_01c3" id="0x7f0401c3" />
     <public type="anim" name="abeam_detail" id="0x7f050000" />
@@ -1697,6 +1710,7 @@
     <public type="xml" name="zen_mode_allow_exception" id="0x7f0700cb" />
     <public type="xml" name="zen_mode_dnd_settings" id="0x7f0700cc" />
     <public type="xml" name="zen_mode_settings" id="0x7f0700cd" />
+    <public type="xml" name="autostarts_settings_header" id="0x7f0700ce" />
     <public type="raw" name="dummy_data_for_oem_v2" id="0x7f080000" />
     <public type="raw" name="fingerprint" id="0x7f080001" />
     <public type="raw" name="fingerprint_center" id="0x7f080002" />
@@ -10899,6 +10913,21 @@
     <public type="id" name="vpn_create" id="0x7f100619" />
     <public type="id" name="vpn_lockdown" id="0x7f10061a" />
     <public type="id" name="wifi_wps" id="0x7f10061b" />
+    <public type="id" name="appops_settings" id="0x7f10061c" />
+    <public type="id" name="toolbox" id="0x7f10061d" />
+    <public type="id" name="SS_CS" id="0x7f10061e" />
+    <public type="id" name="SS_Settings" id="0x7f10061f" />
+    <public type="id" name="autostarts_id" id="0x7f100620" />
+    <public type="id" name="toolbox_id" id="0x7f100621" />
+    <public type="id" name="6thSwipe_id" id="0x7f100622" />
+    <public type="id" name="autostarts_settings_id" id="0x7f100623" />
+    <public type="id" name="appName_id" id="0x7f100624" />
+    <public type="id" name="custom_section" id="0x7f100625" />
+    <public type="id" name="mw_id" id="0x7f100626" />
+    <public type="id" name="dev_settings" id="0x7f100627" />
+    <public type="id" name="viper" id="0x7f100628" />
+    <public type="id" name="upsm" id="0x7f100629" />
+    <public type="id" name="Smart_Label" id="0x7f10062a" />
     <public type="plurals" name="show_dev_countdown" id="0x7f110000" />
     <public type="plurals" name="lockpassword_password_requires_letters" id="0x7f110001" />
     <public type="plurals" name="lockpassword_password_requires_lowercase" id="0x7f110002" />
