@@ -404,7 +404,7 @@
 
     iput v0, p0, Lcom/samsung/android/visualeffect/lock/common/GLTextureViewRendererForRippleType;->mReductionRate:F
 
-    const v0, 0x3f6e147b    # 0.93f
+    const/4 v0, 0x1
 
     iput v0, p0, Lcom/samsung/android/visualeffect/lock/common/GLTextureViewRendererForRippleType;->refractiveIndex:F
 
@@ -412,11 +412,11 @@
 
     iput v0, p0, Lcom/samsung/android/visualeffect/lock/common/GLTextureViewRendererForRippleType;->reflectionRatio:F
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    const/4 v0, 0x0
 
     iput v0, p0, Lcom/samsung/android/visualeffect/lock/common/GLTextureViewRendererForRippleType;->alphaRatio1:F
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    const/4 v0, 0x0
 
     iput v0, p0, Lcom/samsung/android/visualeffect/lock/common/GLTextureViewRendererForRippleType;->alphaRatio2:F
 
@@ -1446,7 +1446,7 @@
 
     const/16 v8, 0x4002
 
-    if-ne v7, v8, :cond_5
+    if-ne v8, v8, :cond_5
 
     :cond_8
     iget v7, p0, Lcom/samsung/android/visualeffect/lock/common/GLTextureViewRendererForRippleType;->mouseX:F
