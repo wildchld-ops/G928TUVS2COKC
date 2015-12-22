@@ -52,4 +52,5 @@
     <bool name="config_enableDataSwitch">false</bool>
     <bool name="config_recentsAppIsFullScreen">true</bool>
     <bool name="config_show4GForLTE_ATO">true</bool>
+    <bool name="text_clock_ampm_capable">true</bool>
 </resources>

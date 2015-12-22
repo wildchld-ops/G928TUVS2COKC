@@ -54,9 +54,9 @@
     <integer name="recents_max_task_stack_view_dim">96</integer>
     <integer name="recents_alt_tab_key_delay">200</integer>
     <integer name="recents_svelte_level">0</integer>
-    <integer name="keyguard_max_notification_count">2</integer>
+    <integer name="keyguard_max_notification_count">999</integer>
     <integer name="keyguard_max_notification_count_for_secure">2</integer>
-    <integer name="keyguard_max_notification_count_for_dcm">3</integer>
+    <integer name="keyguard_max_notification_count_for_dcm">999</integer>
     <integer name="keyguard_max_notification_count_in_m_keyboard">2</integer>
     <integer name="keyguard_max_notification_count_in_m_keyboard_for_secure">0</integer>
     <integer name="doze_pulse_schedule_resets">3</integer>

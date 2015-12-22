@@ -1084,4 +1084,37 @@
     <item type="id" name="off">false</item>
     <item type="id" name="recent_remove_item">false</item>
     <item type="id" name="recent_inspect_item">false</item>
+    <item type="id" name="cpu">false</item>
+    <item type="id" name="traffic">false</item>
+    <item type="id" name="clear_btn">false</item>
+    <item type="id" name="toggle_holder">false</item>
+    <item type="id" name="slider_holder">false</item>
+    <item type="id" name="scroll_holder">false</item>
+    <item type="id" name="bytes_tx">false</item>
+    <item type="id" name="bytes_rx">false</item>
+    <item type="id" name="gradient">false</item>
+    <item type="id" name="vpn">false</item>
+    <item type="id" name="tickerid1">false</item>
+    <item type="id" name="tickerid2">false</item>
+    <item type="id" name="closenew">false</item>
+    <item type="id" name="btn_image_bg">false</item>
+    <item type="id" name="btn_image_bg1">false</item>
+    <item type="id" name="btn_image_bg2">false</item>
+    <item type="id" name="btn_image_bg3">false</item>
+    <item type="id" name="btn_image_bg4">false</item>
+    <item type="id" name="viewImage1">false</item>
+    <item type="id" name="viewImage2">false</item>
+    <item type="id" name="viewImage3">false</item>
+    <item type="id" name="viewImage4">false</item>
+    <item type="id" name="viewImage5">false</item>
+    <item type="id" name="viewImage6">false</item>
+    <item type="id" name="viewImage7">false</item>
+    <item type="id" name="viewImage8">false</item>
+    <item type="id" name="viewImage9">false</item>
+    <item type="id" name="viewImage10">false</item>
+    <item type="id" name="viewImage11">false</item>
+    <item type="id" name="notiitem_wallpaper">false</item>
+    <item type="id" name="status_bar_carrier_label">false</item>
+    <item type="id" name="clock_center">false</item>
+    <item type="id" name="hide_battery">false</item>
 </resources>

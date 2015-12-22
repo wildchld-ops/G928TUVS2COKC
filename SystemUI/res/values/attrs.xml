@@ -98,4 +98,5 @@
     </attr>
     <attr name="images" format="reference" />
     <attr name="image" format="reference" />
+    <attr name="viewLocation" format="integer" />
 </resources>

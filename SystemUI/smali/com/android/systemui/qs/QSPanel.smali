@@ -1401,7 +1401,7 @@
 .end method
 
 .method private updateButtonInfo()V
-    .locals 4
+    .locals 8
 
     iget-object v1, p0, Lcom/android/systemui/qs/QSPanel;->mContext:Landroid/content/Context;
 
@@ -1434,6 +1434,20 @@
     const v1, 0x7f0f0016
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v1
+
+    iget-object v5, p0, Lcom/android/systemui/qs/QSPanel;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string v6, "toggle_view"
+
+    const/4 v7, 0x6
+
+    invoke-static {v5, v6, v7}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v1
 
@@ -1914,7 +1928,17 @@
 
     iget v9, v6, Lcom/android/systemui/qs/QSPanel$TileRecord;->row:I
 
-    invoke-direct {p0, v9}, Lcom/android/systemui/qs/QSPanel;->getColumnCount(I)I
+    iget-object v1, p0, Lcom/android/systemui/qs/QSPanel;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v9, "toggle_view"
+
+    const v5, 0x6
+
+    invoke-static {v1, v9, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
 
@@ -2011,7 +2035,7 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_2
     sget-boolean v9, Lcom/android/systemui/statusbar/Feature;->mSupportMumButton:Z
@@ -3176,22 +3200,6 @@
     if-eqz v4, :cond_2
 
     :cond_2
-    iget-object v4, p0, Lcom/android/systemui/qs/QSPanel;->mRecords:Ljava/util/ArrayList;
-
-    const/4 v5, 0x0
-
-    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/android/systemui/qs/QSPanel$TileRecord;
-
-    iget-object v4, v4, Lcom/android/systemui/qs/QSPanel$TileRecord;->tileView:Lcom/android/systemui/qs/QSTileView;
-
-    const v5, 0x7f0e008b
-
-    invoke-virtual {v4, v5}, Lcom/android/systemui/qs/QSTileView;->setId(I)V
-
     return-void
 .end method
 
