@@ -3023,10 +3023,31 @@
 .end method
 
 .method public handleLongPressOnRecent()V
-    .locals 6
+    .locals 5
 
-    const/4 v5, 0x0
+    const v3, 0x0
 
+    iget-object v1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v1, v3}, Lcom/android/internal/policy/impl/PhoneWindowManager;->getKeyStatePub(I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    const/4 v4, 0x1
+
+    iput-boolean v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mRecentConsumed:Z
+
+    const v3, 0x0
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v1, v3}, Lcom/android/internal/policy/impl/PhoneWindowManager;->customKeyPressPub(I)V
+
+    goto :goto_0
+
+    :cond_0
     const/4 v4, 0x1
 
     const/4 v3, 0x0
@@ -3035,22 +3056,20 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_2
 
-    iput-boolean v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mRecentConsumed:Z
-
-    :cond_0
+    :cond_1
     :goto_0
     return-void
 
-    :cond_1
+    :cond_2
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mIsSupportManualScreenPinning:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHasPermanentMenuKey:Z
 
-    if-nez v2, :cond_3
+    if-nez v2, :cond_4
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -3058,7 +3077,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -3066,12 +3085,12 @@
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_4
 
     :try_start_0
     sget-boolean v2, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->SAFE_DEBUG:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
     const-string v2, "SamsungWindowManager"
 
@@ -3079,7 +3098,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_2
+    :cond_3
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v0
@@ -3101,12 +3120,16 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_4
     iput-boolean v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mRecentConsumed:Z
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p0, v2, v3, v3}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->performHapticFeedbackLw(Landroid/view/WindowManagerPolicy$WindowState;IZ)Z
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mMultiPhoneWindowManager:Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mMultiPhoneWindowManager:Lcom/android/internal/policy/impl/multiwindow/MultiPhoneWindowManager;
 
@@ -3114,18 +3137,31 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-nez v2, :cond_1
 
-    invoke-virtual {p0, v5, v3, v3}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->performHapticFeedbackLw(Landroid/view/WindowManagerPolicy$WindowState;IZ)Z
-
-    goto :goto_0
-
-    :cond_4
+    :cond_5
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHasFakeMenuKeyRecent:Z
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_1
 
-    invoke-virtual {p0, v5, v3, v3}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->performHapticFeedbackLw(Landroid/view/WindowManagerPolicy$WindowState;IZ)Z
+    const v3, 0x0
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v1, v3}, Lcom/android/internal/policy/impl/PhoneWindowManager;->getKeyStatePub(I)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    const v3, 0x0
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
+
+    invoke-virtual {v1, v3}, Lcom/android/internal/policy/impl/PhoneWindowManager;->customKeyPressPub(I)V
+
+    :cond_6
+    goto :goto_0
 
     const/16 v2, 0x52
 
@@ -8441,6 +8477,16 @@
     move v0, v1
 
     goto :goto_0
+.end method
+
+.method public isTripleTapOnPowerEnabled()Z
+    .locals 1
+
+    invoke-static {}, Lcom/android/internal/policy/impl/sec/SamsungPolicyProperties;->isSupportSafetyCare()Z
+
+    move-result v0
+
+    return v0
 .end method
 
 .method public isUseAccessControl()Z
