@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.layouts.GridLayout android:orientation="horizontal" android:rowCount="@integer/folder_panel_grid_rows" android:columnCount="@integer/folder_panel_grid_columns" dali:spacingHorizontal="@dimen/folder_panel_spacing_horizontal" dali:cellSizeX="@dimen/folder_panel_cellSizeX" dali:cellSizeY="@dimen/folder_panel_cellSizeY" dali:clipping="true" dali:horizontalScroll="true" dali:flow="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

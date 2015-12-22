@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.FixedPageView android:layout_gravity="top" android:paddingLeft="@dimen/apps_list_page_padding_left" android:paddingTop="@dimen/apps_list_page_padding_top" android:paddingRight="@dimen/apps_list_page_padding_right" android:paddingBottom="@dimen/apps_list_page_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/apps_list_page_view_margin_left" android:layout_marginRight="@dimen/apps_list_page_view_margin_right" dali:rearrangement_algorithm="pagedFlowRearranger" dali:accept_drop="true" dali:editable="true" dali:page_flip_trigger="leave_page" dali:page_near_edge_threshold="0.05" dali:page_flip_delay="1.0" dali:page_flip_time="0.3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/app_list_layout" />
+</com.sec.daliviews.views.FixedPageView>

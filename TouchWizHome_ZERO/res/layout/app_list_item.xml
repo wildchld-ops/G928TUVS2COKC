@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.launcher.views.AppListItemView android:focusable="true" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/app_list_item_layout" />
+    <com.sec.daliviews.views.ImageView android:id="@id/shortcut_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" dali:scaleType="fitXY" />
+    <com.sec.daliviews.views.StrokeDaliTextView android:textSize="12.0dip" android:textColor="@color/icon_title_font_color" android:ellipsize="end" android:gravity="center|top" android:id="@id/shortcut_title" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:maxLines="2" dali:stroke="@bool/stroke_text_enable" dali:storkeWidth="2.0" dali:storkeColor="@color/icon_title_font_stroke_color" />
+</com.sec.android.app.launcher.views.AppListItemView>

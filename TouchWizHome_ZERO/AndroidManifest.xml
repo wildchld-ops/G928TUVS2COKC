@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sec.android.app.launcher" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-eng.root.20150707.175341">
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="dangerous"/>
+    <permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="dangerous"/>
+    <permission android:name="com.android.launcher.permission.READ_SETTINGS" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="dangerous"/>
+    <permission android:name="com.android.launcher.permission.WRITE_SETTINGS" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.android.launcher.permission.ID" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.permission.BACKUP_RESTORE_HOMESCREEN" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.launcher.permission.BIND_WIDGET" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:protectionLevel="dangerous"/>
+    <permission android:name="com.samsung.android.spay.permission.HOME_GRID" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.spay.permission.HOME_GRID"/>
+    <uses-permission android:name="com.sec.permission.BACKUP_RESTORE_HOMESCREEN"/>
+    <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="com.sec.android.widgetapp.ap.hero.accuweather.permission.READ_ACCU_DATA"/>
+    <uses-permission android:name="com.sec.android.widgetapp.ap.hero.accuweather.permission.WRITE_ACCU_DATA"/>
+    <uses-permission android:name="com.sec.android.app.twdvfs.DVFS_BOOSTER_PERMISSION"/>
+    <uses-permission android:name="com.sec.android.stk.permission.EVENT"/>
+    <uses-permission android:name="com.sec.android.stk2.permission.EVENT"/>
+    <uses-permission android:name="com.sec.android.permission.LAUNCH_PERSONAL_PAGE_SERVICE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.samsung.android.permission.GET_SECRET_PACKAGE_LIST"/>
+    <uses-permission android:name="com.samsung.android.permission.SET_SECRET_PACKAGE_LIST"/>
+    <uses-permission android:name="com.samsung.android.permission.GET_SECRET_APPWIDGET_INFO"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.samsung.android.widgetapp.briefing4x2.permission.READ_APP_USAGE"/>
+    <uses-permission android:name="com.samsung.alwaysmicon.permission.READ_CONTENT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.sec.android.app.launcher.activities.LauncherApp" android:supportsRtl="true" android:theme="@style/TouchWiz">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|uiMode" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sec.android.app.launcher.activities.LauncherActivity" android:screenOrientation="portrait" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MONKEY"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/homes_screen_settings" android:name="com.sec.android.app.launcher.activities.HomeScreenSettingsActivity" android:screenOrientation="nosensor" android:theme="@style/SettingsTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sec.android.app.launcher.activities.searchapp.SearchAppList" android:screenOrientation="portrait" android:theme="@style/TouchWiz" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.sec.android.app.launcher.providers.LauncherProvider" android:exported="true" android:name="com.sec.android.app.launcher.providers.LauncherProvider" android:readPermission="com.android.launcher.permission.READ_SETTINGS" android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"/>
+        <provider android:authorities="com.sec.android.app.launcher.providers.PageSettingsProvider" android:exported="true" android:name="com.sec.android.app.launcher.providers.PageSettingsProvider" android:readPermission="com.android.launcher.permission.READ_SETTINGS" android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"/>
+        <provider android:authorities="com.sec.android.app.launcher.providers.WidgetsProvider" android:exported="true" android:name="com.sec.android.app.launcher.providers.WidgetsProvider" android:readPermission="com.android.launcher.permission.READ_SETTINGS" android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"/>
+        <provider android:authorities="com.sec.android.app.launcher.providers.LauncherProvider.id" android:exported="true" android:name="com.sec.android.app.launcher.providers.LauncherProviderID" android:readPermission="com.android.launcher.permission.READ_SETTINGS" android:writePermission="com.android.launcher.permission.ID"/>
+        <service android:exported="false" android:name="com.sec.daliviews.services.RendererService"/>
+        <service android:exported="false" android:name="com.sec.android.app.launcher.services.LauncherService">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT"/>
+                <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.sec.android.app.launcher.receivers.InstallShortcutReceiver" android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.app.launcher.receivers.UninstallShortcutReceiver" android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.android.app.launcher.receivers.LiveIconUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.action.MIDNIGHT_LIVEICONUPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.app.launcher.BackupRestore.XmlBackup" android:permission="com.sec.permission.BACKUP_RESTORE_HOMESCREEN">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.REQUEST_BACKUP_HOMESCREEN"/>
+                <action android:name="com.sec.android.intent.action.REQUEST_RESTORE_HOMESCREEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.app.launcher.receivers.InstallWidgetReceiver" android:permission="com.sec.android.launcher.permission.BIND_WIDGET">
+            <intent-filter>
+                <action android:name="com.sec.android.launcher.action.BIND_WIDGET"/>
+                <action android:name="com.sec.android.launcher.action.UNBIND_WIDGET"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="sws"/>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <meta-data android:name="rcpFileCopier" android:value=""/>
+        <meta-data android:name="SPDE.build.signature" android:value="827261/1519366/NOBLE_single_WQHD-release"/>
+        <meta-data android:name="SPDE.env.version" android:value="1.0.1/22.2.14/22.2.1"/>
+    </application>
+</manifest>

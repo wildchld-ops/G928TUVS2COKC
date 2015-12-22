@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FolderCreateText" parent="@style/FolderEditBase">
+        <item name="android:textColor">@color/create_folder_title_color</item>
+        <item name="android:background">@drawable/create_folder_title_bg</item>
+        <item name="android:paddingLeft">@dimen/open_folder_title_margin_left</item>
+        <item name="android:paddingTop">@dimen/home_folder_name_padding_top</item>
+        <item name="android:paddingRight">@dimen/open_folder_title_margin_left</item>
+        <item name="android:paddingBottom">@dimen/home_folder_name_padding_bottom</item>
+    </style>
+    <style name="FolderEditBase">
+        <item name="android:textSize">@dimen/open_folder_title_font_size</item>
+        <item name="android:textColor">@color/icon_title_font_color</item>
+        <item name="android:textColorHint">#ff7f7f7f</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+    <style name="LauncherActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/lighter_gray</item>
+    </style>
+    <style name="PowerSaveTheme" parent="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+    <style name="SearchAppListTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/LauncherActionBar</item>
+    </style>
+    <style name="Theme" parent="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar" />
+    <style name="TouchWiz" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:dialogTheme">@android:style/Theme.DeviceDefault.Dialog</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

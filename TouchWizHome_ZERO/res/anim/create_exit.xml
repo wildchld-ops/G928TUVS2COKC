@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:interpolator="@android:interpolator/sine_in_out_70" android:duration="400" android:fromYDelta="0.0%" android:toYDelta="196.0" />
+    <scale android:interpolator="@android:interpolator/sine_in_out_70" android:duration="400" android:pivotX="50.0%" android:pivotY="0.0%" android:fromXScale="100.0%" android:toXScale="70.00001%" android:fromYScale="100.0%" android:toYScale="70.00001%" />
+    <alpha android:duration="330" android:fromAlpha="1.0" android:toAlpha="0.2" />
+</set>

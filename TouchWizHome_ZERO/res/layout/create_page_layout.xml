@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.layouts.FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <LayoutPosition dali:centerX="0.0dip" dali:centerY="0.0dip" dali:centerZ="0.0" dali:width="32.0dip" dali:height="32.0dip" />
+    <LayoutPosition dali:centerX="0.0dip" dali:centerY="0.0dip" dali:centerZ="0.0" dali:width="32.0dip" dali:height="32.0dip" />
+</com.sec.daliviews.layouts.FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="enable_fuzzy_edges">true</bool>
+    <bool name="enable_zero_page">true</bool>
+    <bool name="enable_zero_page_fingerswipe">true</bool>
+</resources>

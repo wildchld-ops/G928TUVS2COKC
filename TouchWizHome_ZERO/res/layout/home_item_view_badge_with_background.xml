@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.FixedContainer android:layout_gravity="center|right|top" android:id="@id/moded_icon_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mode_4x4_badgetext_margin" android:layout_marginRight="@dimen/mode_4x4_badge_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/frame_layout" />
+    <com.sec.daliviews.views.ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/moded_icon_badge_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homescreen_menu_noti_bg" android:maxLines="1"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />
+    <com.sec.daliviews.views.TextView android:textSize="@dimen/mode_4x4_badgetext_size" android:textColor="#fffafafa" android:gravity="center" android:layout_gravity="center" android:id="@id/moded_icon_badge_text" android:paddingLeft="@dimen/mode_4x4_badgetext_padding_right" android:paddingRight="@dimen/mode_4x4_badgetext_padding_right" android:paddingBottom="@dimen/mode_4x4_badgetext_padding_bottom" android:layout_width="wrap_content" android:layout_height="@dimen/mode_4x4_badgetext_height" android:maxLines="1"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />
+</com.sec.daliviews.views.FixedContainer>

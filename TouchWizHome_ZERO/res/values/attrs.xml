@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="bufferZone_size" format="integer" />
+    <attr name="indexGravity" format="integer" />
+    <attr name="popupWidth" format="dimension" />
+    <attr name="popupHeight" format="dimension" />
+    <attr name="popupWidthInc" format="dimension" />
+    <attr name="popupHeightInc" format="dimension" />
+    <attr name="firstCharColor" format="color" />
+    <attr name="pressDelay" format="integer" />
+    <attr name="unpressDelay" format="integer" />
+    <attr name="overflowGrpSepChar" format="string" />
+    <attr name="firstCharPreMatches" format="boolean" />
+    <attr name="textUppercase" format="boolean" />
+    <attr name="searchlistcellHeight" format="dimension" />
+    <attr name="indexNormalBg" format="reference" />
+    <attr name="indexSelBg" format="reference" />
+    <attr name="indexSelItemBg" format="reference" />
+    <attr name="textColor" format="color" />
+    <attr name="selTextColor" format="color" />
+    <attr name="cellSepLineColor" format="color" />
+    <attr name="cellSepLineThick" format="dimension" />
+    <attr name="cellSepLineMarginLeft" format="dimension" />
+    <attr name="cellSepLineMarginRight" format="dimension" />
+    <attr name="textTypeface" format="string" />
+    <attr name="textTypefaceStyle" format="integer" />
+    <attr name="indexStr" format="string" />
+    <attr name="textFontSize" format="integer" />
+    <attr name="isFloating" format="boolean" />
+    <attr name="bgFullHeight" format="boolean" />
+    <attr name="textBg" format="reference" />
+    <attr name="textCharSpacingStrategy" format="integer" />
+    <attr name="textCharSpacingWidth" format="dimension" />
+    <attr name="textCharPaddingLeft" format="dimension" />
+    <attr name="textCharPaddingRight" format="dimension" />
+    <attr name="animType">
+        <enum name="createFolder" value="1" />
+        <enum name="createPage" value="0" />
+        <enum name="trash" value="2" />
+    </attr>
+    <attr name="page_anim_src" format="string" />
+    <attr name="folder_anim_src" format="string" />
+    <attr name="trash_anim_can_src" format="string" />
+    <attr name="trash_anim_lid_src" format="string" />
+    <attr name="page_anim_duration" format="float" />
+    <attr name="page_anim_displacement" format="float" />
+    <attr name="folder_anim_duration" format="float" />
+    <attr name="folder_anim_first_stage_interval" format="float" />
+    <attr name="folder_anim_rotation_angle" format="float" />
+    <attr name="trash_anim_duration" format="float" />
+    <attr name="trash_anim_scale" format="float" />
+    <attr name="trash_anim_wiggle_number" format="integer" />
+    <attr name="trash_anim_wiggle_angle" format="float" />
+    <attr name="trash_anim_scale_stage_interval" format="float" />
+    <attr name="pivotZ" format="float" />
+    <attr name="animateTo" format="boolean" />
+    <attr name="revertPivot" format="boolean" />
+    <attr name="isFrontPosition" format="boolean" />
+    <attr name="hidden" format="boolean" />
+    <attr name="layerHeight" format="integer" />
+    <attr name="clip" format="boolean" />
+    <attr name="fromColor" format="color" />
+    <attr name="toColor" format="color" />
+    <attr name="rearrangement_algorithm">
+        <enum name="defaultRearranger" value="0" />
+        <enum name="flowRearranger" value="1" />
+        <enum name="pagedFlowRearranger" value="3" />
+        <enum name="rubberBandRearranger" value="2" />
+    </attr>
+    <attr name="defaultMode" format="integer" />
+    <attr name="autoscroll_speed" format="integer" />
+    <attr name="rearrangement_delay" format="float" />
+    <attr name="free_positioning" format="boolean" />
+    <attr name="free_rotating" format="boolean" />
+    <attr name="auto_swapingPos" format="boolean" />
+    <attr name="auto_resizing" format="boolean" />
+    <attr name="auto_reposition" format="boolean" />
+    <attr name="reset_position" format="boolean" />
+    <attr name="seat_indicator" format="boolean" />
+    <attr name="pinch_zoom" format="boolean" />
+    <attr name="clone_on_drag_start" format="boolean" />
+    <attr name="auto_expending" format="boolean" />
+    <attr name="auto_switchLayout" format="boolean" />
+    <attr name="homeMenu" format="string" />
+    <attr name="pageRows" format="string" />
+    <attr name="pageColumns" format="string" />
+    <attr name="minRows" format="string" />
+    <attr name="minColumns" format="string" />
+    <attr name="maxRows" format="string" />
+    <attr name="maxColumns" format="string" />
+    <attr name="className" format="string" />
+    <attr name="packageName" format="string" />
+    <attr name="screen" format="string" />
+    <attr name="x" format="string" />
+    <attr name="y" format="string" />
+    <attr name="spanX" format="string" />
+    <attr name="spanY" format="string" />
+    <attr name="icon" format="reference" />
+    <attr name="title" format="reference" />
+    <attr name="uri" format="string" />
+    <attr name="themeName" format="string" />
+    <attr name="instance" format="string" />
+    <attr name="openFolder_numRows" format="integer" />
+    <attr name="openFolder_numItemsInRow" format="integer" />
+    <attr name="closedFolder_numItems" format="integer" />
+    <attr name="closedViewWidth" format="dimension" />
+    <attr name="closedViewHeight" format="dimension" />
+    <attr name="openViewWidth" format="dimension" />
+    <attr name="openViewHeight" format="dimension" />
+    <attr name="openViewOffsetX" format="dimension" />
+    <attr name="openViewOffsetY" format="dimension" />
+    <attr name="closedViewScaling" format="fraction" />
+    <attr name="closedFolderViewsX" format="reference" />
+    <attr name="closedFolderViewsY" format="reference" />
+    <attr name="closedFolderViewsZ" format="reference" />
+    <attr name="closedFolderBitmap" format="reference" />
+    <attr name="openFolderBitmap" format="reference" />
+    <attr name="color" format="color" />
+    <attr name="thickness" format="float" />
+    <attr name="delayFinished" format="float" />
+    <attr name="bloom" format="integer" />
+    <attr name="spacingHorizontal" format="dimension" />
+    <attr name="spacingVertical" format="dimension" />
+    <attr name="bufferSize" format="integer" />
+    <attr name="cellSizeX" format="dimension" />
+    <attr name="cellSizeY" format="dimension" />
+    <attr name="clipping" format="boolean" />
+    <attr name="verticalScroll" format="boolean" />
+    <attr name="horizontalScroll" format="boolean" />
+    <attr name="flow" format="boolean" />
+    <attr name="shrinkToContent" format="boolean" />
+    <attr name="enableSwap" format="boolean" />
+    <attr name="imageSrc" format="string" />
+    <attr name="imageDuration" format="float" />
+    <attr name="scaleType">
+        <enum name="center" value="5" />
+        <enum name="centerCrop" value="6" />
+        <enum name="centerInside" value="7" />
+        <enum name="fitCenter" value="3" />
+        <enum name="fitEnd" value="4" />
+        <enum name="fitStart" value="2" />
+        <enum name="fitXAndCrop" value="8" />
+        <enum name="fitXY" value="1" />
+        <enum name="matrix" value="0" />
+        <enum name="topCrop" value="9" />
+    </attr>
+    <attr name="animatePositioning" format="boolean" />
+    <attr name="animateResizing" format="boolean" />
+    <attr name="animateAddingView" format="boolean" />
+    <attr name="animateDrop" format="boolean" />
+    <attr name="animateDuration" format="float" />
+    <attr name="enableDancingIcons" format="boolean" />
+    <attr name="centerX" format="dimension" />
+    <attr name="centerY" format="dimension" />
+    <attr name="centerZ" format="float" />
+    <attr name="width" format="dimension" />
+    <attr name="height" format="dimension" />
+    <attr name="scrollable" format="boolean" />
+    <attr name="matchParentSeparately" format="boolean" />
+    <attr name="mode_grid_x" format="integer" />
+    <attr name="mode_grid_y" format="integer" />
+    <attr name="mode_orientation">
+        <enum name="land" value="2" />
+        <enum name="port" value="1" />
+    </attr>
+    <attr name="sensitive" format="boolean" />
+    <attr name="modeHasShadow" format="boolean" />
+    <attr name="interestedInAttach" format="boolean" />
+    <attr name="clickPulseEffect" format="boolean" />
+    <attr name="clickPulseEffect_innerColor" format="color" />
+    <attr name="clickPulseEffect_outerColor" format="color" />
+    <attr name="clickPulseEffect_duration" format="float" />
+    <attr name="clickPulseEffect_fadeInDuration" format="float" />
+    <attr name="clickPulseEffect_fadeOutDuration" format="float" />
+    <attr name="longClickPulseEffect" format="boolean" />
+    <attr name="longClickPulseEffect_innerColor" format="color" />
+    <attr name="longClickPulseEffect_outerColor" format="color" />
+    <attr name="longClickPulseEffect_duration" format="float" />
+    <attr name="longClickPulseEffect_fadeInDuration" format="float" />
+    <attr name="longClickPulseEffect_fadeOutDuration" format="float" />
+    <attr name="layout_widthOffset" format="dimension" />
+    <attr name="layout_heightOffset" format="dimension" />
+    <attr name="accept_drop" format="boolean" />
+    <attr name="drag_event_interest">
+        <enum name="interested_in_all" value="2" />
+        <enum name="interested_in_enterexit" value="1" />
+        <enum name="not_interested" value="0" />
+    </attr>
+    <attr name="editable" format="boolean" />
+    <attr name="movability">
+        <enum name="fixedFirst" value="1" />
+        <enum name="fixedLast" value="2" />
+        <enum name="movable" value="0" />
+    </attr>
+    <attr name="removable" format="boolean" />
+    <attr name="resizable" format="boolean" />
+    <attr name="rotatable" format="boolean" />
+    <attr name="autoscroll_on_drag_to_edge" format="boolean" />
+    <attr name="indicatorColor" format="color" />
+    <attr name="indicatorUnselectedColor" format="color" />
+    <attr name="indicatorWidth" format="dimension" />
+    <attr name="indicatorPaddingRatio" format="dimension" />
+    <attr name="indicatorInitPosition" format="integer" />
+    <attr name="enableBackgroundEffect" format="boolean" />
+    <attr name="backgroundEffectOpacity" format="float" />
+    <attr name="add_page" format="boolean" />
+    <attr name="remove_page" format="boolean" />
+    <attr name="auto_turning" format="boolean" />
+    <attr name="page_flip_trigger">
+        <enum name="enter_adjacent_page" value="0" />
+        <enum name="leave_page" value="1" />
+    </attr>
+    <attr name="page_near_edge_threshold" format="float" />
+    <attr name="page_flip_delay" format="float" />
+    <attr name="page_flip_time" format="float" />
+    <attr name="dynamic_loading" format="boolean" />
+    <attr name="forwardX" format="float" />
+    <attr name="forwardY" format="float" />
+    <attr name="forwardZ" format="float" />
+    <attr name="relative" format="boolean" />
+    <attr name="posX" format="float" />
+    <attr name="posY" format="float" />
+    <attr name="posZ" format="float" />
+    <attr name="borderOuterSpacing" format="dimension" />
+    <attr name="rotationAxisX" format="float" />
+    <attr name="rotationAxisY" format="float" />
+    <attr name="rotationAxisZ" format="float" />
+    <attr name="fromZScale" format="float" />
+    <attr name="toZScale" format="float" />
+    <attr name="offsetX" format="float" />
+    <attr name="offsetY" format="float" />
+    <attr name="scaleX" format="float" />
+    <attr name="scaleY" format="float" />
+    <attr name="strength" format="float" />
+    <attr name="blur" format="integer" />
+    <attr name="depth" format="float" />
+    <attr name="angle" format="float" />
+    <attr name="distance" format="float" />
+    <attr name="genericshadow" format="boolean" />
+    <attr name="bg_image" format="string" />
+    <attr name="class_name" format="string" />
+    <attr name="major_color" format="string" />
+    <attr name="package_name" format="string" />
+    <attr name="screen_num" format="string" />
+    <attr name="subtitle" format="string" />
+    <attr name="type" format="string" />
+    <attr name="cell_x" format="string" />
+    <attr name="cell_y" format="string" />
+    <attr name="show" format="string" />
+    <attr name="stroke" format="boolean" />
+    <attr name="storkeWidth" format="float" />
+    <attr name="storkeColor" format="color" />
+    <attr name="invalidate" format="boolean" />
+    <attr name="fromZDelta" format="float" />
+    <attr name="toZDelta" format="float" />
+    <attr name="name" format="string" />
+    <attr name="pageOrder" format="integer" />
+    <attr name="posMenu" format="integer" />
+    <attr name="currentPage" format="boolean" />
+    <attr name="enabled" format="boolean" />
+    <attr name="dragAndDrop" format="boolean" />
+    <attr name="changeMode" format="boolean" />
+    <attr name="longClickable" format="boolean" />
+    <attr name="layoutClipping" format="boolean" />
+    <attr name="layout">
+        <enum name="card_layout" value="7" />
+        <enum name="fixed_layout" value="6" />
+        <enum name="frame_layout" value="3" />
+        <enum name="grid_layout" value="0" />
+        <enum name="linear_layout" value="2" />
+        <enum name="magazine_layout" value="5" />
+        <enum name="page_layout" value="4" />
+        <enum name="simple_grid_layout" value="1" />
+    </attr>
+    <attr name="numberOfRows" format="integer" />
+    <attr name="numberOfColumns" format="integer" />
+    <attr name="layoutBufferSize" format="integer" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="source">
+        <enum name="apps" value="2" />
+        <enum name="favorites" value="1" />
+        <enum name="unknown" value="0" />
+        <enum name="widgets" value="3" />
+    </attr>
+    <attr name="channel">
+        <enum name="unknown" value="0" />
+    </attr>
+    <attr name="containerFilter">
+        <enum name="desktop" value="0" />
+        <enum name="folder" value="3" />
+        <enum name="hotseat" value="1" />
+        <enum name="menu" value="2" />
+    </attr>
+    <attr name="category">
+        <enum name="me" value="0" />
+        <enum name="media" value="3" />
+        <enum name="news" value="1" />
+        <enum name="social" value="2" />
+    </attr>
+    <attr name="rearrangement">
+        <enum name="flow" value="1" />
+        <enum name="rubber_band" value="2" />
+        <enum name="use_default" value="0" />
+    </attr>
+    <attr name="home_item_default_mode">
+        <enum name="hotseat" value="2" />
+        <enum name="appstand" value="1" />
+        <enum name="closedFolder" value="4" />
+        <enum name="icon" value="0" />
+        <enum name="openFolder" value="5" />
+        <enum name="widget" value="3" />
+    </attr>
+    <attr name="backgroundColor" format="color" />
+    <attr name="cellWidth" format="dimension" />
+    <attr name="cellHeight" format="dimension" />
+    <attr name="cellSpacingHorizontal" format="dimension" />
+    <attr name="cellSpacingVertical" format="dimension" />
+    <attr name="pagePaddingLeft" format="dimension" />
+    <attr name="pagePaddingTop" format="dimension" />
+    <attr name="pagePaddingRight" format="dimension" />
+    <attr name="pagePaddingBottom" format="dimension" />
+    <attr name="emptyPage" format="boolean" />
+</resources>

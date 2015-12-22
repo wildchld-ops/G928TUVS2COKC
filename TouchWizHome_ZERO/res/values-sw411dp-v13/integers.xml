@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="apps_item_title_shadow_radius">3</integer>
+    <integer name="apps_list_column_count">5</integer>
+    <integer name="apps_list_page_row_count">5</integer>
+    <integer name="apps_list_row_count">5</integer>
+    <integer name="home_item_view_uninstall_icon_translate_x">36</integer>
+    <integer name="home_item_view_uninstall_icon_translate_y">36</integer>
+    <integer name="touchconf_pan_gesture_predict_amount">16</integer>
+</resources>

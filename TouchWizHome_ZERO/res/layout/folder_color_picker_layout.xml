@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.layouts.GridLayout android:orientation="vertical" android:rowCount="1" android:columnCount="5" dali:spacingHorizontal="@dimen/folder_color_picker_cell_horizontal_spacing" dali:spacingVertical="0.0dip" dali:cellSizeX="@dimen/folder_color_picker_cell_size" dali:cellSizeY="@dimen/folder_color_picker_cell_size" dali:animatePositioning="false" dali:animateResizing="false" dali:animateAddingView="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />

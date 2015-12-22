@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:duration="133" android:fromXDelta="0.0%" android:toXDelta="0.0%" android:fromYDelta="0.0%" android:toYDelta="-4.999995%" />
+    <rotate android:duration="133" android:fromDegrees="0.0" android:toDegrees="-15.0" />
+</set>

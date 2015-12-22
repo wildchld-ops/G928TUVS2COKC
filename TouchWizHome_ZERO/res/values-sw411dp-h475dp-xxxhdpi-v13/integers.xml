@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="apps_item_view_title_text_maxlines">1</integer>
+    <integer name="widgets_list_open_folder_column_count">2</integer>
+    <integer name="widgets_list_open_folder_row_count">2</integer>
+    <integer name="widgets_list_row_count">2</integer>
+</resources>

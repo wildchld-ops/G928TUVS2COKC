@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.views.ContainerView android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" custom:layerHeight="@integer/layer_dim_anim"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <use_layout layout="@layout/frame_layout" />
+</com.sec.daliviews.views.ContainerView>

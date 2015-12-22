@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.daliviews.effects.ShadowEffect dali:scaleX="@dimen/icon_view_shadow_scale" dali:scaleY="@dimen/icon_view_shadow_scale" dali:strength="@dimen/icon_view_shadow_strength" dali:blur="0" dali:depth="@dimen/icon_view_shadow_depth" dali:angle="@dimen/icon_view_shadow_angle" dali:distance="@dimen/icon_view_shadow_distance" dali:genericshadow="@dimen/icon_view_shadow_genericshadow"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dali="http://schemas.android.com/apk/res-auto" />
