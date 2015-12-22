@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/multiwindow_popupwindow_resizing_cue" android:tint="@color/multiwindow_centerbar_press_tint_color" android:tintMode="multiply" />
+    </item>
+</layer-list>

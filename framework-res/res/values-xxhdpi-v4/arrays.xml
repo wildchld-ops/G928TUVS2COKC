@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="config_multiWindowNotSupportScaleApp">
+        <item>com.sec.android.emeeting.b2c.hancom</item>
+        <item>com.infraware.polarisoffice5tablet</item>
+    </string-array>
+</resources>

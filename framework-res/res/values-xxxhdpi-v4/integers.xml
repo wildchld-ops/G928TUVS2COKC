@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="multiwindow_floating_minimum_size_ratio">575</integer>
+    <integer name="multiwindow_defaultScaleFactor">600</integer>
+    <integer name="multiwindow_floating_maximum_size_ratio">900</integer>
+    <integer name="multiwindow_selectiveScaleFactor">470</integer>
+</resources>

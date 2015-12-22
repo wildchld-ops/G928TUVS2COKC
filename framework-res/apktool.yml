@@ -1,0 +1,14 @@
+version: 2.0.2
+apkFileName: framework-res.apk
+isFrameworkApk: true
+sdkInfo:
+  minSdkVersion: '22'
+  targetSdkVersion: '22'
+packageInfo:
+  forced-package-id: '1'
+versionInfo:
+  versionCode: '22'
+  versionName: 5.1.1-G928TUVS2COKC
+sharedLibrary: false
+doNotCompress:
+- resources.arsc

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tw_edittext_field_cursor_width">3.0px</dimen>
+    <dimen name="tw_list_divider_height">2.0px</dimen>
+    <dimen name="tw_resolver_divider_height">2.0px</dimen>
+    <dimen name="knox_app_icon_width">159.0px</dimen>
+    <dimen name="knox_app_icon_height">159.0px</dimen>
+    <dimen name="mdm_app_icon_size">159.0px</dimen>
+    <dimen name="multiwindow_minimized_width">56.0dip</dimen>
+    <dimen name="multiwindow_minimized_height">56.0dip</dimen>
+    <dimen name="multiwindow_unfocusline_thickness">2.0px</dimen>
+    <dimen name="multiwindow_minimize_inner_icon_radius">25.0dip</dimen>
+    <dimen name="multiwindow_app_icon">61.0dip</dimen>
+    <dimen name="multiwindow_trash_text_size">10.0dip</dimen>
+</resources>

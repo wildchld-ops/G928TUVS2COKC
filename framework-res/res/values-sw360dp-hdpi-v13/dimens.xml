@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_large_icon_circle_padding">10.0dip</dimen>
+    <dimen name="tw_edittext_field_cursor_width">2.0px</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tw_live_icon_color">#ff434343</color>
+    <color name="hover_tooltip_text_color">#fff5f5f5</color>
+    <color name="hover_tooltip_text_color_light">#ff000000</color>
+    <item type="color" name="APKTOOL_DUMMY_0190">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0191">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0192">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0193">false</item>
+    <item type="color" name="APKTOOL_DUMMY_01f2">false</item>
+    <item type="color" name="APKTOOL_DUMMY_01f3">false</item>
+    <item type="color" name="APKTOOL_DUMMY_01f4">false</item>
+    <item type="color" name="APKTOOL_DUMMY_01f5">false</item>
+</resources>
