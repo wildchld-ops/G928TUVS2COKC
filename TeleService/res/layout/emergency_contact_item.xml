@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.EmergencyContactItem android:focusable="true" android:layout_width="@dimen/emergency_zero_contact_item_width" android:layout_height="@dimen/emergency_zero_contact_item_height" android:layout_marginLeft="@dimen/emergency_zero_contact_item_marginLeft" android:layout_marginRight="@dimen/emergency_zero_contact_item_marginRight" android:contentDescription="@string/description_search_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/emergency_zero_contact_image_size_height" android:layout_centerHorizontal="true">
+        <ImageButton android:layout_gravity="center_horizontal" android:id="@id/contactButton" android:background="@drawable/emergency_contact_item_button" android:clickable="false" android:duplicateParentState="true" android:layout_width="@dimen/emergency_zero_contact_image_size" android:layout_height="@dimen/emergency_zero_contact_image_size" android:layout_marginTop="@dimen/emergency_zero_contact_image_padding_top" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/contactTextContainer" android:background="@drawable/emergency_contact_item_background" android:visibility="gone" android:duplicateParentState="true" android:layout_width="@dimen/emergency_zero_contact_image_size" android:layout_height="@dimen/emergency_zero_contact_image_size" android:layout_marginTop="@dimen/emergency_zero_contact_image_padding_top" android:layout_centerHorizontal="true">
+            <TextView android:textSize="25.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/contactText" android:layout_width="@dimen/emergency_zero_contact_image_size" android:layout_height="@dimen/emergency_zero_contact_image_size" android:fontFamily="sec-roboto-light" />
+        </FrameLayout>
+    </FrameLayout>
+    <TextView android:gravity="center" android:layout_gravity="bottom" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/SecEmergencyContactItemStyle" />
+    <CheckBox android:layout_gravity="center|left|top" android:id="@id/removeCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</com.android.phone.EmergencyContactItem>

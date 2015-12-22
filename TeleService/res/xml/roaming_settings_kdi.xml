@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <ListPreference android:entries="@array/system_setting_entries" android:title="@string/system_setting" android:key="world_system_select_key" android:dialogTitle="@string/system_setting" android:entryValues="@array/system_setting_values" />
+    <PreferenceScreen android:persistent="false" android:title="@string/networks" android:key="button_carrier_sel_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.NetworkSetting" />
+    </PreferenceScreen>
+</PreferenceScreen>

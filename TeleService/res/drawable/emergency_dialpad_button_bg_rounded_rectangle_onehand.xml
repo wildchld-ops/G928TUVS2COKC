@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#1f000000"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <inset android:drawable="@drawable/emergency_dialpad_button_bg_rounded_rectangle_shape" android:insetLeft="5.0dip" android:insetRight="5.0dip" android:insetTop="5.0dip" android:insetBottom="5.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <solid android:color="#ff4fa630" />
+        <corners android:radius="37.0dip" />
+    </item>
+</ripple>

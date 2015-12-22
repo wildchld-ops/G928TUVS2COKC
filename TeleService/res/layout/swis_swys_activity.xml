@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sub_appbar" android:background="@drawable/tw_sub_action_bar_background_ripple" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="19.0dip" android:textColor="@color/settings_subappbar_text_color" android:gravity="center_vertical" android:id="@id/sub_appbar_textview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="48.0dip" android:layout_alignParentStart="true" />
+        <Switch android:id="@id/sub_appbar_switch" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/instant_lettering_text_size" android:textColor="@color/instant_lettering_text_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:text="@string/swis_swys_description" android:paddingStart="@dimen/list_item_padding" android:paddingEnd="@dimen/list_item_padding" />
+    <View android:background="@color/call_setting_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

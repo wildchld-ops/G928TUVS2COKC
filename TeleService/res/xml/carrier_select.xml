@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/label_available" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/select_automatically" android:key="switch_button_auto_select_key" android:summary="@string/sum_select_automatically" />
+    <com.android.phone.ProgressButtonPreference android:persistent="false" android:title="@string/search_networks" android:key="button_srch_netwrks_key" android:summary="@string/sum_search_networks" android:widgetLayout="@layout/progress_preference_icon" />
+    <com.android.phone.ProgressButtonPreference android:persistent="false" android:title="@string/select_automatically" android:key="button_auto_select_key" android:summary="@string/sum_select_automatically" android:widgetLayout="@layout/progress_preference_icon" />
+    <com.android.phone.ProgressButtonListPreference android:entries="@array/default_setup_choices" android:title="@string/default_setup_title" android:key="button_default_setup_key" android:summary="@string/default_setup_summary" android:widgetLayout="@layout/progress_preference_icon" android:dialogTitle="@string/default_setup_dialogtitle" android:entryValues="@array/default_setup_values" />
+    <Preference android:persistent="false" android:title="@string/femto_cell_setup_title" android:key="button_srch_femto_cell_key" />
+    <PreferenceCategory android:title="@string/label_available" android:key="progressbar_search_network_category" />
+    <Preference android:persistent="false" android:enabled="false" android:key="progressbar_search_network_info" android:widgetLayout="@layout/progress_preference_circle" />
+</PreferenceScreen>

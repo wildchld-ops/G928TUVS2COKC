@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/list_selectall" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llayout_selectall" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/selectall_checkbox" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/list_divider_margin_left" android:layout_marginEnd="@dimen/list_divider_margin_right" />
+        <TextView android:gravity="center_vertical" android:id="@id/rejectcallwithmsg_selectall_text" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/setting_subheader_textcolor" />
+    </LinearLayout>
+</LinearLayout>

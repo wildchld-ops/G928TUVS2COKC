@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minHeight="@dimen/fdnlist_height" android:mode="twoLine" android:layout_weight="0.8" android:paddingStart="@dimen/fdnlist_padding_start" android:paddingEnd="12.0dip" android:layout_marginStart="@dimen/list_marginStartEnd" android:layout_marginEnd="@dimen/list_marginStartEnd">
+        <TextView android:id="@id/fdn_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textDirection="locale" style="@style/callPrimaryTextStyle" />
+        <TextView android:ellipsize="marquee" android:id="@id/fdn_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textDirection="locale" style="@style/callSecondaryTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fdn_button_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/fdn_call_button_margin">
+        <ImageButton android:id="@id/fdn_button" android:background="@drawable/badge_action_call" android:layout_width="@dimen/fdn_call_button_width" android:layout_height="@dimen/fdn_call_button_height" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/emergency_dialpad_enehanced_onehand_button_side_inset" android:insetRight="@dimen/emergency_dialpad_enehanced_onehand_button_side_inset" android:insetTop="@dimen/emergency_dialpad_enehanced_onehand_button_top_bottom_inset" android:insetBottom="@dimen/emergency_dialpad_enehanced_onehand_button_top_bottom_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+        <item android:state_focused="false" android:state_pressed="true">
+            <shape android:shape="oval">
+                <solid android:color="@color/emergency_dialpad_enhanced_onehand_button_bg_pressed" />
+                <corners android:radius="@dimen/emergency_dialpad_enhanced_onehand_button_bg" />
+            </shape>
+        </item>
+        <item>
+            <shape android:shape="oval">
+                <solid android:color="@color/emergency_dialpad_enhanced_onehand_button_bg_normal" />
+                <corners android:radius="@dimen/emergency_dialpad_enhanced_onehand_button_bg" />
+            </shape>
+        </item>
+    </selector>
+</inset>

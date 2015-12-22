@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <ListPreference android:entries="@array/roaming_mode_entries" android:title="@string/roaming_mode" android:key="roaming_mode_key" android:summary="@string/roaming_mode_summary" android:dialogTitle="@string/roaming_mode" android:entryValues="@array/roaming_mode_values" />
+    <PreferenceScreen android:title="@string/roaming_guard" android:key="roaming_guard_key" android:summary="@string/roaming_guard_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.operator.usa.RoamingGuard" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/domestic" android:key="domestic_cdma_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/settings_voice" android:key="domestic_cdma_voice_roaming_settings_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/settings_data" android:key="domestic_cdma_data_roaming_settings_key" />
+    <PreferenceCategory android:title="@string/international" android:key="international_cdma_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/settings_voice" android:key="international_cdma_voice_roaming_settings_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/settings_data" android:key="international_cdma_data_roaming_settings_key" />
+    <PreferenceCategory android:title="@string/gsm" android:key="international_gsm_category_key" />
+    <SwitchPreference android:persistent="true" android:title="@string/settings_data" android:key="international_gsm_data_roaming_settings_key" />
+</PreferenceScreen>

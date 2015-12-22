@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/roaming_notification" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/roaming_icon" android:layout_width="64.0dip" android:layout_height="64.0dip">
+        <ImageView android:id="@id/data_roaming_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:scaleType="centerInside" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/roaming_notification_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="32.0dip" android:layout_toEndOf="@id/roaming_icon">
+        <TextView android:textSize="17.0sp" android:textColor="#ff202020" android:id="@id/roaming_notification_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/roaming_area" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff737373" android:id="@id/roaming_notification_status_able" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_roaming_is_enabled" android:singleLine="true" android:layout_below="@id/roaming_notification_title" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff737373" android:id="@id/roaming_notification_status_disable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_roaming_is_disabled" android:singleLine="true" android:layout_below="@id/roaming_notification_title" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/roaming_notification_button_on" android:background="@drawable/tw_btn_check_on" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+    <ImageButton android:id="@id/roaming_notification_button_off" android:background="@drawable/tw_btn_check_off" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

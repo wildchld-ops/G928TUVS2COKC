@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/main" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/list_create" android:paddingBottom="@dimen/rejection_message_counter_marginBottom" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/rejection_message_minHeight" android:layout_weight="1.0" android:paddingStart="@dimen/autoreject_item_padding_start">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/autoreject_item_text_height">
+            <TextView android:textSize="14.0sp" android:textColor="@color/list_edit_title_color" android:id="@id/rejectmsg_item_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/callsettings_rejection_msg" android:layout_weight="1.0" android:contentDescription="@string/callsettings_rejection_msg_for_tts" />
+            <TextView android:textSize="@dimen/rejection_message_counter_text_size" android:textColor="@color/list_edit_counter_color" android:gravity="end" android:id="@id/text_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/autoreject_item_padding_start" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/autoreject_item_edittext_height">
+            <EditText android:scrollbarStyle="insideInset" android:gravity="center_vertical" android:id="@id/create_edit" android:scrollbars="vertical" android:layout_width="fill_parent" android:maxHeight="@dimen/rejection_message_editor_maxHeight" android:hint="@string/photoring_message_hint" android:capitalize="sentences" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" android:imeOptions="actionDone|flagNoExtractUi" style="@style/InputTextField" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/add_button_layout" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/add_button" android:contentDescription="@string/add" style="@style/ItemAddButton" />
+    </LinearLayout>
+</LinearLayout>

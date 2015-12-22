@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/tw_pop_up_dialog_padding_left" android:paddingEnd="@dimen/tw_pop_up_dialog_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/description" android:paddingTop="@dimen/tw_pop_up_dialog_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" android:text="@string/swis_swys_resolution_live_video_description" style="@style/TtyDialogTextStyle" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" />
+</LinearLayout>

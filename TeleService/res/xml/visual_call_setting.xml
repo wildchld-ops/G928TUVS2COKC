@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <SwitchPreferenceScreen android:title="@string/preference_turn_on_visual_call" android:key="visual_call_turn_on" android:summary="@string/preference_turn_on_visual_call_summary" android:defaultValue="true" />
+    <com.android.phone.CustomListPreference android:entries="@array/visual_call_update_options" android:title="@string/preference_update_DB_visual_call" android:key="preference_visual_call_update" android:summary="visualcall_update_options" android:defaultValue="1" android:dialogTitle="@string/preference_update_DB_visual_call" android:entryValues="@array/visual_call_update_options_values" />
+    <SwitchPreference android:title="@string/preference_update_DB_visual_call" android:key="preference_visual_call_update_material" android:summary="@string/preference_update_DB_visual_call_summary" />
+</PreferenceScreen>

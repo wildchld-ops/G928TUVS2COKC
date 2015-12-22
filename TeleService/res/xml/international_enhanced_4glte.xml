@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="enhanced_4glte_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/international_data" android:key="international_data_key" android:summary="@string/international_data_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/enhanced_4glte_services" android:key="international_enhanced_4glte_services_key" android:summary="@string/enhanced_4glte_services_roaming_summary" />
+    <CheckBoxPreference android:title="@string/user_capabilities_exchange" android:key="international_user_capabilities_exchange_key" android:summary="@string/user_capabilities_exchange_summary" />
+    <CheckBoxPreference android:title="@string/enhanced_4glte_video_call" android:key="international_enhanced_4glte_video_call_key" android:summary="@string/enhanced_4glte_video_call_summary" />
+</PreferenceScreen>

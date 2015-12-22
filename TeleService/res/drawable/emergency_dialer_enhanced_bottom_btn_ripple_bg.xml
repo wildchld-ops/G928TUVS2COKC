@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/emergency_dialpad_dial_button_inset_onehand" android:insetRight="@dimen/emergency_dialpad_dial_button_inset_onehand" android:insetTop="@dimen/emergency_dialpad_dial_button_inset_onehand" android:insetBottom="@dimen/emergency_dialpad_dial_button_inset_onehand"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ripple android:color="#4c4bae50"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</inset>

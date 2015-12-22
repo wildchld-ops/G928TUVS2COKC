@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sec_blacklist_item" />
+    <View android:background="@color/call_setting_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginStart="@dimen/list_divider_margin_right" android:layout_marginEnd="@dimen/list_divider_margin_right" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

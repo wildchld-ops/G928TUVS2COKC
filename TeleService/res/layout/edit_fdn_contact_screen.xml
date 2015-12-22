@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/list_marginStartEnd" android:layout_marginEnd="@dimen/list_marginStartEnd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/pinc" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edit_fdn_list_height" android:paddingStart="@dimen/fdn_edit_padding_left" android:paddingEnd="@dimen/fdn_edit_padding_right">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/name" style="@style/FDNTextStyle" />
+            <EditText android:id="@id/fdn_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:hint="@string/name" android:singleLine="true" android:capitalize="words" android:imeOptions="actionNext|flagNoExtractUi" android:textDirection="locale" style="@style/InputTextField" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edit_fdn_list_height" android:paddingStart="@dimen/fdn_edit_padding_left" android:paddingEnd="@dimen/fdn_edit_padding_right">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/number" style="@style/FDNTextStyle" />
+            <EditText android:id="@id/fdn_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:hint="@string/number" android:singleLine="true" android:inputType="phone" android:imeOptions="flagNoExtractUi" android:textDirection="locale" style="@style/InputTextField" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edit_fdn_list_height" android:paddingStart="@dimen/fdn_edit_padding_left" android:paddingEnd="@dimen/fdn_edit_padding_right">
+            <TextView android:id="@id/calldivertingtotext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/enter_pin2_text" style="@style/FDNTextStyle" />
+            <EditText android:id="@id/fdn_pin2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:hint="@string/enter_pin2_text" android:singleLine="true" android:maxLength="8" android:capitalize="none" android:autoText="false" android:inputType="numberPassword" android:imeOptions="flagNoExtractUi" android:textDirection="locale" android:textAlignment="viewStart" style="@style/InputTextField" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

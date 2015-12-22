@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/networks" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/roaming_network_select_title_lgt" android:key="roaming_carrier_settings">
+        <Preference android:persistent="false" android:layout="@layout/roaming_explain_lgt" android:key="roaming_explain_msg" />
+        <Preference android:persistent="false" android:title="@string/current_roaming_network_lgt" android:key="current_operator_info_lgt" android:summary="@string/operator_info_not_available" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/roaming_network_area_select_lgt" android:key="area_select">
+        <CheckBoxPreference android:persistent="false" android:title="@string/select_automatically" android:key="button_select_imsi_auto_key" android:summary="@string/roaming_network_select_auto_summary" />
+        <CheckBoxPreference android:title="@string/roaming_provider_zone1" android:key="ef_sponimsi1" android:summary="@string/roaming_network_select_first_carrier_summary" />
+        <CheckBoxPreference android:title="@string/roaming_provider_zone2" android:key="ef_sponimsi2" android:summary="@string/roaming_network_select_carrier_alliances_summary" />
+        <CheckBoxPreference android:title="@string/roaming_provider_zone3" android:key="ef_sponimsi3" android:summary="@string/unknown_operator" />
+        <CheckBoxPreference android:title="@string/roaming_provider_zone4" android:key="ef_sponimsi4" android:summary="@string/unknown_operator" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/roaming_network_select_title_skt" android:key="carrier_select">
+        <CheckBoxPreference android:persistent="false" android:title="@string/roaming_network_select_manually" android:key="button_srch_networks_manually" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/roaming_network_select_title_skt" android:key="radio_button_roaming_select_category_key">
+        <com.android.phone.mobilenetworks.kor.RadioButtonPreference android:persistent="false" android:layout="@layout/preference_widget_radiobutton" android:title="@string/select_automatically" android:key="radio_button_auto_select_key" android:summary="@string/sum_select_automatically" />
+        <com.android.phone.mobilenetworks.kor.RadioButtonPreference android:persistent="false" android:layout="@layout/preference_widget_radiobutton" android:title="@string/select_manually_kor" android:key="radio_button_manual_select_key" android:summary="@string/sum_search_networks" />
+    </PreferenceCategory>
+    <SwitchPreference android:persistent="false" android:title="@string/select_automatically" android:key="switch_button_auto_select_key" android:summary="@string/sum_select_automatically" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/select_automatically" android:key="button_auto_select_key" android:summary="@string/sum_select_automatically" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/search_networks" android:key="button_srch_netwrks_key" android:summary="@string/sum_search_networks" />
+    <PreferenceCategory android:title="@string/current_operator_kor" android:key="current_operator">
+        <Preference android:persistent="false" android:title="@string/unknown_operator" android:key="current_operator_info" android:summary="@string/operator_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/search_networks" android:key="progressbar_search_network_category">
+        <com.android.phone.mobilenetworks.kor.ProcessStatsPreference android:persistent="false" android:layout="@layout/preference_app_percentage" android:key="progressbar_search_network_info" style="?android:attr/preferenceInformationStyle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/roaming_network_select_title_skt" android:key="roaming_network_select_list" />
+</PreferenceScreen>

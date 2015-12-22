@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceCategory android:persistent="false" android:title="@string/internet_phone" android:key="button_sip_category_key" style="@style/PreferenceCategory">
+        <PreferenceScreen android:title="@string/phone_account_settings" android:key="phone_account_settings_preference_screen">
+            <intent android:targetPackage="com.android.phone" android:targetClass="com.android.phone.settings.PhoneAccountSettingsActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

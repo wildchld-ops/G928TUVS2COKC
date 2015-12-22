@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@drawable/call_dial_call_btn_bg_inset_image" android:insetLeft="@dimen/dialpad_dial_button_side_inset" android:insetRight="@dimen/dialpad_dial_button_side_inset" android:insetTop="@dimen/dialpad_dial_button_top_bottom_inset" android:insetBottom="@dimen/dialpad_dial_button_top_bottom_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

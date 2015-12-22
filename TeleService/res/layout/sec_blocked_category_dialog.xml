@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/blocked_number_category_list" android:background="?android:selectableItemBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="24.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <CheckBox android:id="@id/unknown_item_checkbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        <TextView android:gravity="center_vertical" android:id="@id/category_unknown" android:visibility="visible" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unknown" android:singleLine="true" style="@style/primaryTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="24.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <CheckBox android:id="@id/private_number_item_checkbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        <TextView android:gravity="center_vertical" android:id="@id/category_private_number" android:visibility="visible" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/private_num" android:singleLine="true" style="@style/primaryTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="24.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <CheckBox android:id="@id/pay_phone_item_checkbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        <TextView android:gravity="center_vertical" android:id="@id/category_pay_phone" android:visibility="visible" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payphone" android:singleLine="true" style="@style/primaryTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="24.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <CheckBox android:id="@id/number_other_than_contacts_item_checkbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        <TextView android:gravity="center_vertical" android:id="@id/category_number_other_than_contacts" android:visibility="visible" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/number_other_than_contacts" android:singleLine="true" style="@style/primaryTextStyle" />
+    </LinearLayout>
+</LinearLayout>
