@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#4d000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/typingverify_layout" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="91.0dip" android:layout_marginBottom="96.0dip" android:layout_alignParentBottom="true" android:elevation="12.0dip">
+        <TextView android:textSize="19.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/typingverifyTitleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="68.0dip" android:layout_toStartOf="@id/typingverifyEditText" />
+        <EditText android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/typingverifyEditText" android:background="@drawable/private_mode_textfield_selector_white" android:focusable="true" android:longClickable="false" android:layout_width="274.0dip" android:layout_height="58.0dip" android:layout_marginBottom="16.0dip" android:singleLine="true" android:maxLength="16" android:layout_alignParentBottom="true" android:inputType="textPassword" android:imeOptions="actionDone|flagForceAscii|flagNoExtractUi" android:fontFamily="sec-roboto-light" android:layout_marginStart="44.0dip" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/typingverifyTitleLine" android:background="#ff00a5c4" android:layout_width="274.0dip" android:layout_height="1.0dip" android:layout_alignBottom="@id/typingverifyEditText" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" />
+        <requestFocus />
+    </RelativeLayout>
+</RelativeLayout>
