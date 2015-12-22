@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lock_screen_show_information_title" settings:parent="@xml/security_settings_chooser"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceScreen android:title="@string/dualclock_settings_title" android:key="lock_screen_dualclock" android:fragment="com.android.settings.dualclock.DualClockSetting" />
+    <PreferenceScreen android:title="@string/lock_screen_menu_weather" android:key="lock_screen_menu_weather" />
+    <PreferenceScreen android:title="@string/lock_screen_menu_weather" android:key="lock_screen_settings_weather" />
+    <PreferenceScreen android:title="@string/lock_screen_menu_owner_infomation" android:key="lock_screen_menu_owner_infomation" />
+</PreferenceScreen>

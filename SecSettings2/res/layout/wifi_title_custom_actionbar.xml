@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/wifi_setupwizard_actionbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="24.0dip" android:textColor="#fffafafa" android:id="@id/wifi_setupwizard_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wifi_settings_title" android:layout_weight="1.0" android:fontFamily="sans-serif" android:textAlignment="viewStart" />
+        <LinearLayout android:gravity="center" android:id="@id/menu_button" android:background="@drawable/ripple_bottom_bar_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:paddingStart="19.0dip" android:paddingEnd="19.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="#ffaffff5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_settings_title" android:contentDescription="@string/more_options_button" android:textAllCaps="true" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

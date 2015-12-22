@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/list_item_start_padding" android:layout_marginEnd="@dimen/list_item_end_padding">
+        <TextView android:textSize="@dimen/battery_description_text_size" android:ellipsize="marquee" android:id="@id/textview_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/battery_preference_margin" android:layout_marginBottom="@dimen/battery_preference_margin" android:text="@string/power_usage_estimated_remaining_battery" android:singleLine="false" style="@style/body_text_style" />
+        <TextView android:textSize="@dimen/battery_description_text_size" android:ellipsize="marquee" android:id="@id/textview_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/battery_preference_margin" android:text="@string/power_usage_not_available" android:singleLine="false" android:layout_below="@id/textview_1" style="@style/body_text_style" />
+    </RelativeLayout>
+</LinearLayout>

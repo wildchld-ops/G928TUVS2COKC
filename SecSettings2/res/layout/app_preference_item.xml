@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:id="@id/radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorSingle" />
+    <ImageView android:id="@id/app_image" android:layout_width="@dimen/list_app_icon_size" android:layout_height="@dimen/list_app_icon_size" />
+    <TextView android:textSize="@dimen/sms_preference_item_font_size" android:textColor="?android:textColorAlertDialogListItem" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/app_label" android:layout_width="wrap_content" android:layout_height="@dimen/sms_preference_item_height" android:singleLine="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="16.0dip" />
+</LinearLayout>

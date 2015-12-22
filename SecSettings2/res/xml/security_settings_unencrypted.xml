@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lock_screen_secured_lock_settings_title" settings:parent="@xml/security_settings_chooser"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/crypt_keeper_settings_title" android:key="security_category">
+        <PreferenceScreen android:title="@string/crypt_keeper_encrypt_title" android:key="encryption" android:summary="@string/crypt_keeper_encrypt_summary" android:fragment="com.android.settings.CryptKeeperSettings" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pattern_lock_confirm_bottom">105.0dip</dimen>
+    <dimen name="lock_password_header_text_size">16.0dip</dimen>
+    <dimen name="lock_password_header_text_marginTop">18.0dip</dimen>
+    <dimen name="lock_additional_pin_header_text_marginTop">18.0dip</dimen>
+    <dimen name="actionbar_size">48.0dip</dimen>
+    <dimen name="dashboard_tile_width">108.0dip</dimen>
+    <dimen name="bluetooth_scandialog_fragment_height">200.0dip</dimen>
+    <dimen name="bottom_button_height">56.0dip</dimen>
+    <dimen name="wifi_offload_dialog_width">416.0dip</dimen>
+    <dimen name="wifi_ap_list_height">170.0dip</dimen>
+    <dimen name="unlock_effect_image_width">312.0dip</dimen>
+    <dimen name="unlock_effect_image_height">273.0dip</dimen>
+    <dimen name="unlock_effect_image_top_margin">11.0dip</dimen>
+    <dimen name="unlock_effect_image_bottom_margin">11.0dip</dimen>
+    <dimen name="unlock_effect_image_left_margin">16.0dip</dimen>
+    <dimen name="pattern_lock_header_text_marginTop">32.0dip</dimen>
+    <dimen name="pattern_lock_header_text_marginBottom">82.0dip</dimen>
+    <dimen name="wifi_setup_switchbar_padding_left">40.0dip</dimen>
+    <dimen name="wifi_setup_switchbar_padding_right">40.0dip</dimen>
+</resources>

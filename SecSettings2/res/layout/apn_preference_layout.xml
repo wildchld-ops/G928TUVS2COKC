@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/apn_layout" android:background="?android:listChoiceBackgroundIndicator" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" android:paddingStart="@dimen/list_item_start_padding" android:layout_toStartOf="@id/divider">
+        <RadioButton android:id="@android:id/button1" android:background="@null" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/list_item_inner_padding" android:layout_alignParentStart="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/text_layout" android:paddingTop="@dimen/list_item_top_padding" android:paddingBottom="@dimen/list_item_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@android:id/button1">
+            <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/list_title_text_style" />
+            <TextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" style="@style/list_summary_text_style" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_toStartOf="@id/apn_button_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/apn_button_layout" android:paddingLeft="@dimen/list_item_start_padding" android:paddingRight="@dimen/list_item_start_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:layout_alignTop="@id/apn_layout" android:layout_alignBottom="@id/apn_layout" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@android:id/button2" android:background="@drawable/dashboard_favorite_view_bg" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/settings_button" style="@style/list_item_config_icon" />
+    </LinearLayout>
+</RelativeLayout>

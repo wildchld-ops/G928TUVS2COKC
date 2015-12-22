@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/power_usage_summary_title_smart_manager" android:key="app_list" settings:keywords="@string/keywords_battery" settings:parentTitle="@string/power_usage_summary_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceScreen android:title="@string/power_saving_mode_title" android:key="powersaving" android:fragment="com.android.settings.powersavingmode.GenericPowerSavingMode" />
+    <PreferenceScreen android:title="@string/powersaving_ultra" android:key="ultra_powersaving" android:fragment="com.android.settings.powersavingmode.PowerSavingModeUltra" />
+    <SwitchPreference android:persistent="false" android:title="@string/display_battery_percentage" android:key="display_battery_level" android:summary="@string/display_battery_percentage_summary" />
+</PreferenceScreen>

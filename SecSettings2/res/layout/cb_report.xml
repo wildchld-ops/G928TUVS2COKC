@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/result_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0dip" android:textColor="@color/default_text" android:id="@id/result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/test_result" android:fontFamily="sans-serif" android:layout_marginStart="26.0dip" android:layout_marginEnd="26.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/result_layout">
+        <ImageView android:id="@id/default_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/result_image" android:layout_marginStart="38.0dip" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/default_text" android:id="@id/colour_adjustment_text" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="24.0dip" android:text="@string/colour_adjustment" android:layout_below="@id/default_image" android:fontFamily="sans-serif" android:layout_marginStart="26.0dip" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/default_text" android:id="@id/colour_adjustment_text1" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="24.0dip" android:text="@string/colour_adjustment" android:layout_below="@id/default_image" android:fontFamily="sans-serif" android:layout_marginStart="26.0dip" />
+        <SeekBar android:id="@id/colour_adjustment_seekbar" android:clickable="true" android:layout_width="500.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/colour_adjustment_text" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <SeekBar android:id="@id/colour_adjustment_seekbar1" android:clickable="true" android:layout_width="500.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/colour_adjustment_text1" android:layout_marginStart="12.0dip" />
+    </RelativeLayout>
+</RelativeLayout>
