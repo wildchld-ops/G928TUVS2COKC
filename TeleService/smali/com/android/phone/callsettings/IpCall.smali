@@ -250,6 +250,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/IpCall;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -258,6 +259,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/IpCall;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->setDefaultIpNumber(Ljava/lang/String;)V
 
@@ -266,6 +269,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/IpCall;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
 
@@ -282,6 +287,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/IpCall;)Lcom/android/phone/callsettings/IpCall$ActionModeCallback;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mModeCallback:Lcom/android/phone/callsettings/IpCall$ActionModeCallback;
 
@@ -290,6 +296,8 @@
 
 .method static synthetic access$1202(Lcom/android/phone/callsettings/IpCall;Lcom/android/phone/callsettings/IpCall$ActionModeCallback;)Lcom/android/phone/callsettings/IpCall$ActionModeCallback;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Lcom/android/phone/callsettings/IpCall$ActionModeCallback;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mModeCallback:Lcom/android/phone/callsettings/IpCall$ActionModeCallback;
 
@@ -298,6 +306,8 @@
 
 .method static synthetic access$1402(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mEditModeFromMenu:Z
 
@@ -306,6 +316,8 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/IpCall;Landroid/database/Cursor;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->showIpNumberList(Landroid/database/Cursor;)V
 
@@ -314,6 +326,7 @@
 
 .method static synthetic access$1600(Lcom/android/phone/callsettings/IpCall;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget v0, p0, Lcom/android/phone/callsettings/IpCall;->mLongClickPos:I
 
@@ -322,6 +335,8 @@
 
 .method static synthetic access$1602(Lcom/android/phone/callsettings/IpCall;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/IpCall;->mLongClickPos:I
 
@@ -330,6 +345,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/callsettings/IpCall;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/IpCall;->mIsLongClick:Z
 
@@ -338,6 +354,8 @@
 
 .method static synthetic access$1702(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mIsLongClick:Z
 
@@ -346,6 +364,9 @@
 
 .method static synthetic access$1800(Lcom/android/phone/callsettings/IpCall;ILandroid/widget/ListView;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # I
+    .param p2    # Landroid/widget/ListView;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/IpCall;->sendTouchEvent(ILandroid/widget/ListView;)V
 
@@ -354,6 +375,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/callsettings/IpCall;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget v0, p0, Lcom/android/phone/callsettings/IpCall;->mSelectedItem:I
 
@@ -362,6 +384,8 @@
 
 .method static synthetic access$1902(Lcom/android/phone/callsettings/IpCall;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/IpCall;->mSelectedItem:I
 
@@ -370,6 +394,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/IpCall;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IpCall;->updateIpNumberList()V
 
@@ -378,6 +403,7 @@
 
 .method static synthetic access$2000(Lcom/android/phone/callsettings/IpCall;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->ipCallListID:Ljava/util/ArrayList;
 
@@ -386,6 +412,8 @@
 
 .method static synthetic access$2100(Lcom/android/phone/callsettings/IpCall;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->deleteIpNumber(I)V
 
@@ -394,6 +422,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/callsettings/IpCall;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IpCall;->getDefaultIpNumber()Ljava/lang/String;
 
@@ -404,6 +433,8 @@
 
 .method static synthetic access$2300(Lcom/android/phone/callsettings/IpCall;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->updateIpNumberList(Z)V
 
@@ -412,6 +443,8 @@
 
 .method static synthetic access$2400(Lcom/android/phone/callsettings/IpCall;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->displayToast(Ljava/lang/String;)V
 
@@ -420,6 +453,7 @@
 
 .method static synthetic access$2500(Lcom/android/phone/callsettings/IpCall;)Landroid/view/ActionMode;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mActionMode:Landroid/view/ActionMode;
 
@@ -428,6 +462,8 @@
 
 .method static synthetic access$2502(Lcom/android/phone/callsettings/IpCall;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mActionMode:Landroid/view/ActionMode;
 
@@ -436,6 +472,8 @@
 
 .method static synthetic access$2602(Lcom/android/phone/callsettings/IpCall;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/IpCall;->mSelectedItemForEdit:I
 
@@ -444,6 +482,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/callsettings/IpCall;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mTempEditString:Ljava/lang/String;
 
@@ -452,6 +491,8 @@
 
 .method static synthetic access$2702(Lcom/android/phone/callsettings/IpCall;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mTempEditString:Ljava/lang/String;
 
@@ -460,6 +501,8 @@
 
 .method static synthetic access$2802(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mUpdated:Z
 
@@ -468,6 +511,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/callsettings/IpCall;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -476,6 +520,8 @@
 
 .method static synthetic access$2902(Lcom/android/phone/callsettings/IpCall;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -484,6 +530,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/IpCall;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget v0, p0, Lcom/android/phone/callsettings/IpCall;->mState:I
 
@@ -492,6 +539,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/callsettings/IpCall;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -500,6 +548,8 @@
 
 .method static synthetic access$3002(Lcom/android/phone/callsettings/IpCall;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -508,6 +558,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/callsettings/IpCall;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/IpCall;->mState:I
 
@@ -516,6 +568,7 @@
 
 .method static synthetic access$3100(Lcom/android/phone/callsettings/IpCall;)Landroid/widget/CheckBox;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mSelectAllCheck:Landroid/widget/CheckBox;
 
@@ -524,6 +577,8 @@
 
 .method static synthetic access$3102(Lcom/android/phone/callsettings/IpCall;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Landroid/widget/CheckBox;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpCall;->mSelectAllCheck:Landroid/widget/CheckBox;
 
@@ -532,6 +587,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/callsettings/IpCall;)Landroid/widget/LinearLayout;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->createLayout:Landroid/widget/LinearLayout;
 
@@ -540,6 +596,7 @@
 
 .method static synthetic access$3300(Lcom/android/phone/callsettings/IpCall;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->handler:Landroid/os/Handler;
 
@@ -548,6 +605,8 @@
 
 .method static synthetic access$3402(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mEnableClickSound:Z
 
@@ -556,6 +615,7 @@
 
 .method static synthetic access$3500(Lcom/android/phone/callsettings/IpCall;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget v0, p0, Lcom/android/phone/callsettings/IpCall;->mActionModeType:I
 
@@ -564,6 +624,7 @@
 
 .method static synthetic access$3600(Lcom/android/phone/callsettings/IpCall;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/IpCall;->mClickDeleteMenu:Z
 
@@ -572,6 +633,8 @@
 
 .method static synthetic access$3602(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mClickDeleteMenu:Z
 
@@ -580,6 +643,7 @@
 
 .method static synthetic access$3700(Lcom/android/phone/callsettings/IpCall;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/IpCall;->mIsSelectAllmode:Z
 
@@ -588,6 +652,8 @@
 
 .method static synthetic access$3702(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mIsSelectAllmode:Z
 
@@ -596,6 +662,7 @@
 
 .method static synthetic access$3800(Lcom/android/phone/callsettings/IpCall;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IpCall;->setListItemClick()V
 
@@ -604,6 +671,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/IpCall;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->log(Ljava/lang/String;)V
 
@@ -612,6 +681,7 @@
 
 .method static synthetic access$4000(Lcom/android/phone/callsettings/IpCall;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/IpCall;->mEnableCheckedView:Z
 
@@ -620,6 +690,8 @@
 
 .method static synthetic access$4002(Lcom/android/phone/callsettings/IpCall;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpCall;->mEnableCheckedView:Z
 
@@ -628,6 +700,8 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/IpCall;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall;->saveIpNumber(Ljava/lang/String;)V
 
@@ -636,6 +710,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/IpCall;)Lcom/android/phone/callsettings/IpCall$IpCallListAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mIpCallListAdapter:Lcom/android/phone/callsettings/IpCall$IpCallListAdapter;
 
@@ -644,6 +719,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/IpCall;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IpCall;->updateDeleteItems()V
 
@@ -652,6 +728,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/IpCall;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IpCall;->updateItem()V
 
@@ -660,6 +737,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/IpCall;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IpCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->ipCallList:Ljava/util/ArrayList;
 
@@ -668,6 +746,7 @@
 
 .method private addIpNumber(Ljava/lang/String;)J
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -720,6 +799,7 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;)Z
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -878,6 +958,7 @@
 
 .method private deleteIpNumber(I)V
     .locals 6
+    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IpCall;->IPCALL_URI:Landroid/net/Uri;
 
@@ -936,6 +1017,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
@@ -1002,6 +1084,7 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 5
+    .param p1    # Landroid/view/View;
 
     const/16 v3, 0x8
 
@@ -1197,6 +1280,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/callsettings/IpCall;->LOG_TAG:Ljava/lang/String;
 
@@ -1207,6 +1291,7 @@
 
 .method private optionMenuConfigurationChanged(Landroid/view/Menu;)V
     .locals 7
+    .param p1    # Landroid/view/Menu;
 
     const/4 v6, 0x2
 
@@ -1424,6 +1509,7 @@
 
 .method private saveIpNumber(Ljava/lang/String;)V
     .locals 11
+    .param p1    # Ljava/lang/String;
 
     const v10, 0x7f0a03a6
 
@@ -1708,6 +1794,8 @@
 
 .method private sendTouchEvent(ILandroid/widget/ListView;)V
     .locals 9
+    .param p1    # I
+    .param p2    # Landroid/widget/ListView;
 
     const/4 v5, 0x0
 
@@ -1741,6 +1829,7 @@
 
 .method private setDefaultIpNumber(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const v0, 0x7f0a0384
 
@@ -1803,6 +1892,7 @@
 
 .method private showIpNumberList(Landroid/database/Cursor;)V
     .locals 13
+    .param p1    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -2202,6 +2292,8 @@
 
 .method private updateIpNumberList(Ljava/lang/String;I)V
     .locals 7
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -2246,6 +2338,7 @@
 
 .method private updateIpNumberList(Z)V
     .locals 5
+    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2908,6 +3001,7 @@
 
 .method public getIpNumberList(Z)Landroid/database/Cursor;
     .locals 12
+    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -2956,6 +3050,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -3043,6 +3140,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
+    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Configuration"
 
@@ -3063,6 +3161,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -3215,6 +3314,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 6
+    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -3334,6 +3434,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v6, 0x6
 
@@ -3498,6 +3600,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -3884,6 +3989,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -3921,6 +4028,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v7, 0x2
 
@@ -4146,6 +4254,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 9
+    .param p1    # Landroid/view/Menu;
 
     const/4 v8, 0x6
 
@@ -4588,6 +4697,7 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "key_sim_id"
 
@@ -4640,6 +4750,7 @@
 
 .method public setActionMode(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -4687,6 +4798,7 @@
 
 .method public softkeyLeftRun(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->handler:Landroid/os/Handler;
 
@@ -4703,6 +4815,7 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->handler:Landroid/os/Handler;
 

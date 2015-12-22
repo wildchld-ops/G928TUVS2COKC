@@ -25,6 +25,8 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter;Landroid/view/View;I)V
     .locals 3
+    .param p2    # Landroid/view/View;
+    .param p3    # I
 
     const/4 v1, 0x0
 

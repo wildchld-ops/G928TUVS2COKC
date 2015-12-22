@@ -6,6 +6,8 @@
 # direct methods
 .method static createAccountHandle(Landroid/content/Context;Ljava/lang/String;)Landroid/telecom/PhoneAccountHandle;
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/telecom/PhoneAccountHandle;
 
@@ -22,6 +24,8 @@
 
 .method static createIncomingCallPendingIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -54,6 +58,8 @@
 
 .method static createPhoneAccount(Landroid/content/Context;Landroid/net/sip/SipProfile;)Landroid/telecom/PhoneAccount;
     .locals 5
+    .param p0    # Landroid/content/Context;
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-virtual {p1}, Landroid/net/sip/SipProfile;->getUriString()Ljava/lang/String;
 
@@ -135,6 +141,7 @@
 
 .method public static isPhoneIdle(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -166,6 +173,7 @@
 
 .method public static isVoipSupported(Landroid/content/Context;)Z
     .locals 2
+    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/net/sip/SipManager;->isVoipSupported(Landroid/content/Context;)Z
 
@@ -210,6 +218,9 @@
 
 .method private static updateAutoRegistrationFlag(Landroid/net/sip/SipProfile;Lcom/android/services/telephony/sip/SipProfileDb;Z)V
     .locals 5
+    .param p0    # Landroid/net/sip/SipProfile;
+    .param p1    # Lcom/android/services/telephony/sip/SipProfileDb;
+    .param p2    # Z
 
     new-instance v2, Landroid/net/sip/SipProfile$Builder;
 
@@ -263,6 +274,7 @@
 
 .method private static useSipForPstnCalls(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/services/telephony/sip/SipSharedPreferences;
 
@@ -283,6 +295,8 @@
 
 .method public static useSipToReceiveIncomingCalls(Landroid/content/Context;Z)V
     .locals 5
+    .param p0    # Landroid/content/Context;
+    .param p1    # Z
 
     new-instance v2, Lcom/android/services/telephony/sip/SipProfileDb;
 

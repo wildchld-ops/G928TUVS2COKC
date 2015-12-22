@@ -41,6 +41,10 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/telephony/Connection;Lcom/android/services/telephony/EmergencyTonePlayer;ZZ)V
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Connection;
+    .param p2    # Lcom/android/services/telephony/EmergencyTonePlayer;
+    .param p3    # Z
+    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -113,6 +117,8 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/CdmaConnection;I)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/CdmaConnection;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/CdmaConnection;->hangupCallWaiting(I)V
 
@@ -121,6 +127,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/CdmaConnection;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/CdmaConnection;
 
     invoke-direct {p0}, Lcom/android/services/telephony/CdmaConnection;->handleBurstDtmfConfirmation()V
 
@@ -228,6 +235,7 @@
 
 .method private hangupCallWaiting(I)V
     .locals 4
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/services/telephony/CdmaConnection;->getOriginalConnection()Lcom/android/internal/telephony/Connection;
 
@@ -304,6 +312,7 @@
 
 .method private sendBurstDtmfStringLocked(Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -330,6 +339,7 @@
 
 .method private sendShortDtmfToNetwork(C)V
     .locals 3
+    .param p1    # C
 
     iget-object v1, p0, Lcom/android/services/telephony/CdmaConnection;->mDtmfQueue:Ljava/util/Queue;
 
@@ -862,6 +872,7 @@
 
 .method forceAsDialing(Z)V
     .locals 1
+    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -884,6 +895,7 @@
 
 .method protected getOrigDialStringFromNumber(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1005,6 +1017,7 @@
 
 .method onDisconnect(Landroid/os/AsyncResult;)V
     .locals 1
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-static {}, Lcom/android/services/telephony/cdma/CdmaPhoneCallStateManager;->getInstance()Lcom/android/services/telephony/cdma/CdmaPhoneCallStateManager;
 
@@ -1017,6 +1030,7 @@
 
 .method public onPlayDtmfTone(C)V
     .locals 2
+    .param p1    # C
 
     const/4 v1, 0x0
 
@@ -1116,6 +1130,7 @@
 
 .method public onStateChanged(I)V
     .locals 3
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/services/telephony/CdmaConnection;->getOriginalConnection()Lcom/android/internal/telephony/Connection;
 
@@ -1190,6 +1205,7 @@
 
 .method public performConference(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 4
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v3, 0x0
 
@@ -1309,6 +1325,7 @@
 
 .method public setCdmaConferenceController(Lcom/android/services/telephony/CdmaConferenceController;)V
     .locals 0
+    .param p1    # Lcom/android/services/telephony/CdmaConferenceController;
 
     iput-object p1, p0, Lcom/android/services/telephony/CdmaConnection;->mCdmaConferenceController:Lcom/android/services/telephony/CdmaConferenceController;
 

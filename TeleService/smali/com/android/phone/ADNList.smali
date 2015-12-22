@@ -120,6 +120,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/ADNList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ADNList;
 
     invoke-direct {p0}, Lcom/android/phone/ADNList;->setAdapter()V
 
@@ -128,6 +129,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/ADNList;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/ADNList;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/ADNList;->displayProgress(Z)V
 
@@ -136,6 +139,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/ADNList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ADNList;
 
     invoke-direct {p0}, Lcom/android/phone/ADNList;->reQuery()V
 
@@ -144,6 +148,7 @@
 
 .method private displayProgress(Z)V
     .locals 5
+    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -285,6 +290,7 @@
 
 .method private static isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -451,6 +457,7 @@
 
 .method protected getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
@@ -465,6 +472,7 @@
 
 .method protected log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "ADNList"
 
@@ -475,6 +483,8 @@
 
 .method protected log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "ADNList"
 
@@ -507,6 +517,7 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -523,6 +534,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "onCreate: "
 
@@ -537,6 +549,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040001
 
@@ -571,6 +586,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 

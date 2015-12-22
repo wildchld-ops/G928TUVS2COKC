@@ -27,6 +27,7 @@
 # virtual methods
 .method public onOriginalConnectionConfigured(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 0
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     return-void
 .end method

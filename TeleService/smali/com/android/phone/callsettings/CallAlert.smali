@@ -47,6 +47,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "CallAlert"
 
@@ -59,6 +61,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     const v3, 0x7f0a02fd
 
@@ -414,6 +417,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -1288,6 +1292,8 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 9
+    .param p1    # Landroid/content/SharedPreferences;
+    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

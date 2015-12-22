@@ -73,6 +73,8 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/sip/SipSettings;Landroid/net/sip/SipProfile;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipSettings;->getProfileName(Landroid/net/sip/SipProfile;)Ljava/lang/String;
 
@@ -83,6 +85,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/sip/SipSettings;)Lcom/android/services/telephony/sip/SipSharedPreferences;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings;->mSipSharedPreferences:Lcom/android/services/telephony/sip/SipSharedPreferences;
 
@@ -91,6 +94,8 @@
 
 .method static synthetic access$1000(Lcom/android/services/telephony/sip/SipSettings;Landroid/net/sip/SipProfile;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipSettings;->handleProfileClick(Landroid/net/sip/SipProfile;)V
 
@@ -99,6 +104,8 @@
 
 .method static synthetic access$1100(Lcom/android/services/telephony/sip/SipSettings;Landroid/net/sip/SipProfile;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipSettings;->unregisterProfile(Landroid/net/sip/SipProfile;)V
 
@@ -107,6 +114,7 @@
 
 .method static synthetic access$1200(Lcom/android/services/telephony/sip/SipSettings;)Landroid/net/sip/SipManager;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings;->mSipManager:Landroid/net/sip/SipManager;
 
@@ -115,6 +123,7 @@
 
 .method static synthetic access$1300(Lcom/android/services/telephony/sip/SipSettings;)Ljava/util/Map;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings;->mSipPreferenceMap:Ljava/util/Map;
 
@@ -123,6 +132,9 @@
 
 .method static synthetic access$1400(Lcom/android/services/telephony/sip/SipSettings;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/services/telephony/sip/SipSettings;->showRegistrationMessage(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -131,6 +143,7 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/sip/SipSettings;)I
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     iget v0, p0, Lcom/android/services/telephony/sip/SipSettings;->mUid:I
 
@@ -139,6 +152,8 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/sip/SipSettings;I)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipSettings;->getPackageNameFromUid(I)Ljava/lang/String;
 
@@ -149,6 +164,7 @@
 
 .method static synthetic access$400(Lcom/android/services/telephony/sip/SipSettings;)Landroid/net/sip/SipProfile;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings;->mProfile:Landroid/net/sip/SipProfile;
 
@@ -157,6 +173,8 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/sip/SipSettings;Landroid/net/sip/SipProfile;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
+    .param p1    # Landroid/net/sip/SipProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -170,6 +188,7 @@
 
 .method static synthetic access$600(Lcom/android/services/telephony/sip/SipSettings;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     invoke-direct {p0}, Lcom/android/services/telephony/sip/SipSettings;->updateProfilesStatus()V
 
@@ -178,6 +197,7 @@
 
 .method static synthetic access$700(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/services/telephony/sip/SipSettings;->log(Ljava/lang/String;)V
 
@@ -186,6 +206,7 @@
 
 .method static synthetic access$900(Lcom/android/services/telephony/sip/SipSettings;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/sip/SipSettings;
 
     invoke-direct {p0}, Lcom/android/services/telephony/sip/SipSettings;->retrieveSipLists()V
 
@@ -194,6 +215,7 @@
 
 .method private addPreferenceFor(Landroid/net/sip/SipProfile;)V
     .locals 3
+    .param p1    # Landroid/net/sip/SipProfile;
 
     new-instance v0, Lcom/android/services/telephony/sip/SipSettings$SipPreference;
 
@@ -222,6 +244,7 @@
 
 .method private addProfile(Landroid/net/sip/SipProfile;)V
     .locals 4
+    .param p1    # Landroid/net/sip/SipProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -290,6 +313,7 @@
 
 .method private getPackageNameFromUid(I)Ljava/lang/String;
     .locals 6
+    .param p1    # I
 
     :try_start_0
     iget-object v3, p0, Lcom/android/services/telephony/sip/SipSettings;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -381,6 +405,7 @@
 
 .method private getProfileFromList(Landroid/net/sip/SipProfile;)Landroid/net/sip/SipProfile;
     .locals 4
+    .param p1    # Landroid/net/sip/SipProfile;
 
     iget-object v2, p0, Lcom/android/services/telephony/sip/SipSettings;->mSipProfileList:Ljava/util/List;
 
@@ -426,6 +451,7 @@
 
 .method private getProfileName(Landroid/net/sip/SipProfile;)Ljava/lang/String;
     .locals 3
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-virtual {p1}, Landroid/net/sip/SipProfile;->getProfileName()Ljava/lang/String;
 
@@ -473,6 +499,7 @@
 
 .method private handleProfileClick(Landroid/net/sip/SipProfile;)V
     .locals 4
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-virtual {p1}, Landroid/net/sip/SipProfile;->getCallingUid()I
 
@@ -532,6 +559,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -771,6 +799,8 @@
 
 .method private showRegistrationMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/services/telephony/sip/SipSettings$8;
 
@@ -783,6 +813,7 @@
 
 .method private startSipEditor(Landroid/net/sip/SipProfile;)V
     .locals 2
+    .param p1    # Landroid/net/sip/SipProfile;
 
     iput-object p1, p0, Lcom/android/services/telephony/sip/SipSettings;->mProfile:Landroid/net/sip/SipProfile;
 
@@ -805,6 +836,7 @@
 
 .method private unregisterProfile(Landroid/net/sip/SipProfile;)V
     .locals 3
+    .param p1    # Landroid/net/sip/SipProfile;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -841,6 +873,7 @@
 # virtual methods
 .method deleteProfile(Landroid/net/sip/SipProfile;)V
     .locals 3
+    .param p1    # Landroid/net/sip/SipProfile;
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSettings;->mSipProfileList:Ljava/util/List;
 
@@ -867,6 +900,9 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -891,6 +927,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
+    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -936,6 +973,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/16 v4, 0x400
 
@@ -1058,6 +1096,7 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
+    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -1092,6 +1131,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -1129,6 +1169,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
+    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 

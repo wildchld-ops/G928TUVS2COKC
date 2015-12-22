@@ -26,6 +26,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/PhoneVoiceRecorder$RecorderThread;Ljava/lang/String;)V
     .locals 0
+    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/PhoneVoiceRecorder$RecorderThread$FileEndWithFilter;->this$1:Lcom/android/phone/PhoneVoiceRecorder$RecorderThread;
 
@@ -40,6 +41,8 @@
 # virtual methods
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/io/File;
+    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 

@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CdmaSystemSelectListPreference;Lcom/android/phone/CdmaSystemSelectListPreference$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/CdmaSystemSelectListPreference;
+    .param p2    # Lcom/android/phone/CdmaSystemSelectListPreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;-><init>(Lcom/android/phone/CdmaSystemSelectListPreference;)V
 
@@ -39,6 +41,7 @@
 
 .method private handleQueryCdmaRoamingPreference(Landroid/os/Message;)V
     .locals 6
+    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -138,6 +141,7 @@
 
 .method private handleSetCdmaRoamingPreference(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -260,6 +264,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

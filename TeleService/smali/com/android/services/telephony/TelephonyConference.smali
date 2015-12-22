@@ -6,6 +6,7 @@
 # direct methods
 .method public constructor <init>(Landroid/telecom/PhoneAccountHandle;)V
     .locals 2
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
 
     invoke-direct {p0, p1}, Landroid/telecom/Conference;-><init>(Landroid/telecom/PhoneAccountHandle;)V
 
@@ -24,6 +25,7 @@
 
 .method private disconnectCall(Landroid/telecom/Connection;)Z
     .locals 5
+    .param p1    # Landroid/telecom/Connection;
 
     const/4 v2, 0x0
 
@@ -96,6 +98,8 @@
 
 .method private getMultipartyCallForConnection(Landroid/telecom/Connection;Ljava/lang/String;)Lcom/android/internal/telephony/Call;
     .locals 3
+    .param p1    # Landroid/telecom/Connection;
+    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/services/telephony/TelephonyConference;->getOriginalConnection(Landroid/telecom/Connection;)Lcom/android/internal/telephony/Connection;
 
@@ -128,6 +132,7 @@
 # virtual methods
 .method protected getOriginalConnection(Landroid/telecom/Connection;)Lcom/android/internal/telephony/Connection;
     .locals 1
+    .param p1    # Landroid/telecom/Connection;
 
     instance-of v0, p1, Lcom/android/services/telephony/TelephonyConnection;
 
@@ -215,6 +220,7 @@
 
 .method public onConnectionAdded(Landroid/telecom/Connection;)V
     .locals 1
+    .param p1    # Landroid/telecom/Connection;
 
     instance-of v0, p1, Lcom/android/services/telephony/TelephonyConnection;
 
@@ -287,6 +293,7 @@
 
 .method public onMerge(Landroid/telecom/Connection;)V
     .locals 4
+    .param p1    # Landroid/telecom/Connection;
 
     :try_start_0
     check-cast p1, Lcom/android/services/telephony/TelephonyConnection;
@@ -321,6 +328,7 @@
 
 .method public onPlayDtmfTone(C)V
     .locals 1
+    .param p1    # C
 
     invoke-direct {p0}, Lcom/android/services/telephony/TelephonyConference;->getFirstConnection()Lcom/android/services/telephony/TelephonyConnection;
 
@@ -336,6 +344,7 @@
 
 .method public onSeparate(Landroid/telecom/Connection;)V
     .locals 4
+    .param p1    # Landroid/telecom/Connection;
 
     invoke-virtual {p0, p1}, Lcom/android/services/telephony/TelephonyConference;->getOriginalConnection(Landroid/telecom/Connection;)Lcom/android/internal/telephony/Connection;
 

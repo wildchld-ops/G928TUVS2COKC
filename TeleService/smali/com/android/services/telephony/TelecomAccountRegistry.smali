@@ -49,6 +49,7 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,6 +106,7 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/TelecomAccountRegistry;)Landroid/telephony/TelephonyManager;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -113,6 +115,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/TelecomAccountRegistry;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mContext:Landroid/content/Context;
 
@@ -121,6 +124,7 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/TelecomAccountRegistry;)Landroid/telephony/SubscriptionManager;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
@@ -129,6 +133,7 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/TelecomAccountRegistry;)Landroid/telecom/TelecomManager;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mTelecomManager:Landroid/telecom/TelecomManager;
 
@@ -137,6 +142,7 @@
 
 .method static synthetic access$400(Lcom/android/services/telephony/TelecomAccountRegistry;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     invoke-direct {p0}, Lcom/android/services/telephony/TelecomAccountRegistry;->tearDownAccounts()V
 
@@ -145,6 +151,7 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/TelecomAccountRegistry;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     invoke-direct {p0}, Lcom/android/services/telephony/TelecomAccountRegistry;->setupAccounts()V
 
@@ -153,6 +160,7 @@
 
 .method static synthetic access$600(Lcom/android/services/telephony/TelecomAccountRegistry;)I
     .locals 1
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
 
     iget v0, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mServiceState:I
 
@@ -161,6 +169,8 @@
 
 .method static synthetic access$602(Lcom/android/services/telephony/TelecomAccountRegistry;I)I
     .locals 0
+    .param p0    # Lcom/android/services/telephony/TelecomAccountRegistry;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mServiceState:I
 
@@ -242,6 +252,7 @@
 
 .method static final declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/services/telephony/TelecomAccountRegistry;
     .locals 2
+    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/services/telephony/TelecomAccountRegistry;
 
@@ -279,6 +290,7 @@
 
 .method private hasAccountEntryForPhoneAccount(Landroid/telecom/PhoneAccountHandle;)Z
     .locals 3
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
 
     iget-object v2, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mAccounts:Ljava/util/List;
 
@@ -486,6 +498,7 @@
 
 .method setTelephonyConnectionService(Lcom/android/services/telephony/TelephonyConnectionService;)V
     .locals 0
+    .param p1    # Lcom/android/services/telephony/TelephonyConnectionService;
 
     iput-object p1, p0, Lcom/android/services/telephony/TelecomAccountRegistry;->mTelephonyConnectionService:Lcom/android/services/telephony/TelephonyConnectionService;
 

@@ -25,6 +25,7 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/operator/usa/DataRoamingGuard$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/operator/usa/DataRoamingGuard$1;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/DataRoamingGuard$RoamHandler;-><init>()V
 
@@ -35,6 +36,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

@@ -32,6 +32,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,6 +49,7 @@
 
 .method static synthetic access$002(Lcom/sec/ims/options/ICapabilityService;)Lcom/sec/ims/options/ICapabilityService;
     .locals 0
+    .param p0    # Lcom/sec/ims/options/ICapabilityService;
 
     sput-object p0, Lcom/android/phone/ims/IMSCapabilityService;->mImsCapabilityService:Lcom/sec/ims/options/ICapabilityService;
 
@@ -64,6 +66,7 @@
 
 .method public static init(Landroid/content/Context;)Lcom/android/phone/ims/IMSCapabilityService;
     .locals 4
+    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/phone/ims/IMSCapabilityService;
 
@@ -128,6 +131,7 @@
 # virtual methods
 .method public getCapabilities(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/phone/ims/IMSCapabilityService;->mImsCapabilityService:Lcom/sec/ims/options/ICapabilityService;
 

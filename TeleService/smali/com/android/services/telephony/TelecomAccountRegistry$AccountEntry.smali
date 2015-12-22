@@ -29,6 +29,9 @@
 # direct methods
 .method constructor <init>(Lcom/android/services/telephony/TelecomAccountRegistry;Lcom/android/internal/telephony/Phone;ZZ)V
     .locals 4
+    .param p2    # Lcom/android/internal/telephony/Phone;
+    .param p3    # Z
+    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/services/telephony/TelecomAccountRegistry$AccountEntry;->this$0:Lcom/android/services/telephony/TelecomAccountRegistry;
 
@@ -91,6 +94,8 @@
 
 .method private registerPstnPhoneAccount(ZZ)Landroid/telecom/PhoneAccount;
     .locals 23
+    .param p1    # Z
+    .param p2    # Z
 
     if-eqz p2, :cond_4
 

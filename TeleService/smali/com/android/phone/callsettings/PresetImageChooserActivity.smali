@@ -30,6 +30,7 @@
 
 .method private showAppDetails(Ljava/lang/String;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -89,6 +90,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x2
 
@@ -280,6 +282,9 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -309,6 +314,9 @@
 
 .method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
     .locals 2
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

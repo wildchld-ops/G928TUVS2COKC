@@ -29,6 +29,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "SoundEQDialog"
 
@@ -41,6 +43,7 @@
 # virtual methods
 .method public handleVoiceCallEqList(I)V
     .locals 6
+    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -189,6 +192,7 @@
 
 .method public handleVoiceCallEqList_noCallPose(I)V
     .locals 6
+    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -396,6 +400,8 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/android/phone/callsettings/SoundEQDialog;->handleVoiceCallEqList(I)V
 
@@ -404,6 +410,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 

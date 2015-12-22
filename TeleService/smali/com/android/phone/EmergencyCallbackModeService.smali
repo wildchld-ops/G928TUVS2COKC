@@ -74,6 +74,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyCallbackModeService;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyCallbackModeService;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EmergencyCallbackModeService;->resetEcmTimer(Landroid/os/AsyncResult;)V
 
@@ -82,6 +84,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/EmergencyCallbackModeService;J)J
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyCallbackModeService;
+    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/phone/EmergencyCallbackModeService;->mTimeLeft:J
 
@@ -90,6 +94,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/EmergencyCallbackModeService;J)V
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyCallbackModeService;
+    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/EmergencyCallbackModeService;->showNotification(J)V
 
@@ -98,6 +104,7 @@
 
 .method private resetEcmTimer(Landroid/os/AsyncResult;)V
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v1, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -136,6 +143,7 @@
 
 .method private showNotification(J)V
     .locals 15
+    .param p1    # J
 
     const-string v6, "emergency_callback_mode_exit_timer_enable"
 
@@ -406,6 +414,7 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
+    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeService;->mBinder:Landroid/os/IBinder;
 

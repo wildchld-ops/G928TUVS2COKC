@@ -23,6 +23,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/telephony/Call;Lcom/android/internal/telephony/Call;)V
     .locals 0
+    .param p1    # Lcom/android/internal/telephony/Call;
+    .param p2    # Lcom/android/internal/telephony/Call;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,6 +37,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/PhoneUtils$FgRingCalls;)Lcom/android/internal/telephony/Call;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneUtils$FgRingCalls;
 
     iget-object v0, p0, Lcom/android/phone/PhoneUtils$FgRingCalls;->fgCall:Lcom/android/internal/telephony/Call;
 
@@ -43,6 +46,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/PhoneUtils$FgRingCalls;)Lcom/android/internal/telephony/Call;
     .locals 1
+    .param p0    # Lcom/android/phone/PhoneUtils$FgRingCalls;
 
     iget-object v0, p0, Lcom/android/phone/PhoneUtils$FgRingCalls;->ringing:Lcom/android/internal/telephony/Call;
 

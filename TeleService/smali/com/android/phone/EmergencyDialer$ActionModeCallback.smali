@@ -46,6 +46,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/EmergencyDialer;Lcom/android/phone/EmergencyDialer$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/EmergencyDialer;
+    .param p2    # Lcom/android/phone/EmergencyDialer$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EmergencyDialer$ActionModeCallback;-><init>(Lcom/android/phone/EmergencyDialer;)V
 
@@ -127,6 +129,8 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -187,6 +191,8 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/Menu;
 
     const/4 v4, 0x0
 
@@ -388,6 +394,7 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 3
+    .param p1    # Landroid/view/ActionMode;
 
     const/4 v2, 0x0
 
@@ -463,12 +470,18 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 0
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # I
+    .param p3    # J
+    .param p5    # Z
 
     return-void
 .end method
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/Menu;
 
     const v1, 0x7f100203
 

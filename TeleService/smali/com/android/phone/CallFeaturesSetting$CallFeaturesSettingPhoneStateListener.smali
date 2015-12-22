@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/CallFeaturesSetting;I)V
     .locals 0
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/CallFeaturesSetting$CallFeaturesSettingPhoneStateListener;->this$0:Lcom/android/phone/CallFeaturesSetting;
 
@@ -33,6 +34,8 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

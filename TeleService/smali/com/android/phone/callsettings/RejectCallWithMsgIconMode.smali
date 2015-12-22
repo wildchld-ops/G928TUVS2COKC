@@ -380,6 +380,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mLastAnimationId:Ljava/lang/String;
 
@@ -388,6 +389,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->log(Ljava/lang/String;)V
 
@@ -396,6 +399,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getUserDataCount()I
 
@@ -406,6 +410,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Landroid/view/View;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mMultiSelectActionBarView:Landroid/view/View;
 
@@ -414,6 +419,8 @@
 
 .method static synthetic access$1102(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Landroid/view/View;)Landroid/view/View;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mMultiSelectActionBarView:Landroid/view/View;
 
@@ -422,6 +429,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Landroid/view/ActionMode;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mActionMode:Landroid/view/ActionMode;
 
@@ -430,6 +438,8 @@
 
 .method static synthetic access$1202(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mActionMode:Landroid/view/ActionMode;
 
@@ -438,6 +448,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mEnableClickSound:Z
 
@@ -446,6 +457,8 @@
 
 .method static synthetic access$1302(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mEnableClickSound:Z
 
@@ -454,6 +467,8 @@
 
 .method static synthetic access$1400(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->updateViews(I)V
 
@@ -462,6 +477,7 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->handler:Landroid/os/Handler;
 
@@ -470,6 +486,7 @@
 
 .method static synthetic access$1600(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mActionModeType:I
 
@@ -478,6 +495,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Landroid/media/AudioManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mAudioManager:Landroid/media/AudioManager;
 
@@ -486,6 +504,7 @@
 
 .method static synthetic access$1800(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mIsSelectAllmode:Z
 
@@ -494,6 +513,8 @@
 
 .method static synthetic access$1802(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mIsSelectAllmode:Z
 
@@ -502,6 +523,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->onDrop()V
 
@@ -510,6 +532,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mMidWayStartPosition:I
 
@@ -518,6 +542,7 @@
 
 .method static synthetic access$2100(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Landroid/graphics/Bitmap;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mWindowMgrBitmap:Landroid/graphics/Bitmap;
 
@@ -526,6 +551,8 @@
 
 .method static synthetic access$2200(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Landroid/graphics/Bitmap;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->createDragView(Landroid/graphics/Bitmap;)V
 
@@ -534,6 +561,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mDragPosition:I
 
@@ -542,6 +570,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mCurrState:I
 
@@ -550,6 +579,8 @@
 
 .method static synthetic access$402(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mCurrState:I
 
@@ -558,6 +589,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mAnimationOn:Z
 
@@ -566,6 +599,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mCheckedCount:I
 
@@ -574,6 +608,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mCheckedCount:I
 
@@ -582,6 +618,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -590,6 +627,8 @@
 
 .method static synthetic access$902(Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
+    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -746,6 +785,8 @@
 
 .method private changeStatusIcon(Landroid/view/View;I)V
     .locals 9
+    .param p1    # Landroid/view/View;
+    .param p2    # I
 
     const/4 v8, 0x1
 
@@ -859,6 +900,7 @@
 
 .method private createDragView(Landroid/graphics/Bitmap;)V
     .locals 7
+    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v6, 0x4
 
@@ -1048,6 +1090,7 @@
 
 .method private deleteRejectMessage(I)V
     .locals 4
+    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1082,6 +1125,7 @@
 
 .method private findItem(I)Ljava/util/HashMap;
     .locals 4
+    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1271,6 +1315,8 @@
 
 .method private getItemViewLeft(Landroid/view/ViewGroup;Z)I
     .locals 3
+    .param p1    # Landroid/view/ViewGroup;
+    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -1294,6 +1340,8 @@
 
 .method private getItemViewTop(Landroid/view/ViewGroup;Z)I
     .locals 4
+    .param p1    # Landroid/view/ViewGroup;
+    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -2147,6 +2195,7 @@
 
 .method private insertRejectMessage(Landroid/content/ContentValues;)V
     .locals 2
+    .param p1    # Landroid/content/ContentValues;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2161,6 +2210,7 @@
 
 .method private isAddViewTouched(I)Z
     .locals 3
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2224,6 +2274,7 @@
 
 .method private isTouchOnDragView(Landroid/view/MotionEvent;)Z
     .locals 6
+    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -2281,6 +2332,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "RejectCallWithMsgIconMode"
 
@@ -3053,6 +3105,8 @@
 
 .method private startNewActivite(II)V
     .locals 7
+    .param p1    # I
+    .param p2    # I
 
     const/4 v5, 0x2
 
@@ -3470,6 +3524,8 @@
 
 .method private updateRejectMessage(ILandroid/content/ContentValues;)V
     .locals 4
+    .param p1    # I
+    .param p2    # Landroid/content/ContentValues;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3504,6 +3560,9 @@
 
 .method private updateRejectMessagePosition(IILjava/lang/String;)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3650,6 +3709,8 @@
 
 .method private updateRejectMessagePositionById(ILjava/lang/String;)V
     .locals 4
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3720,6 +3781,7 @@
 
 .method private updateViews(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3799,6 +3861,7 @@
 # virtual methods
 .method public deleteDone(Landroid/view/View;)V
     .locals 7
+    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -3938,6 +4001,7 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
+    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -3989,6 +4053,7 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mGridView:Landroid/widget/GridView;
 
@@ -4062,6 +4127,8 @@
 
 .method public getMoveAnimation(FF)Landroid/view/animation/Animation;
     .locals 9
+    .param p1    # F
+    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -4096,6 +4163,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 12
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -4549,6 +4619,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
+    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -4644,6 +4715,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
+    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -4677,6 +4749,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -4780,6 +4853,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x1
 
@@ -4796,6 +4871,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -4888,6 +4966,9 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 3
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4986,6 +5067,9 @@
 
 .method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
     .locals 11
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5317,6 +5401,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -5390,6 +5476,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 11
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v10, 0x6
 
@@ -5697,6 +5784,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 4
+    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -5755,6 +5843,8 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 11
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 

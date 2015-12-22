@@ -122,6 +122,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleBatteryChanged()V
 
@@ -130,6 +131,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleLowBatterySound()V
 
@@ -138,6 +140,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleNofityAllowDataAccess()V
 
@@ -146,6 +149,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleSetSecureSettingDataRoaming()V
 
@@ -154,6 +158,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleDataRoamingDisconnected()V
 
@@ -162,6 +167,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleDataRoamingOk()V
 
@@ -170,6 +176,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->createTelephonyToneGenerator()V
 
@@ -178,6 +185,7 @@
 
 .method static synthetic access$1500(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)Landroid/media/ToneGenerator;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->mTelephonyToneGenerator:Landroid/media/ToneGenerator;
 
@@ -186,6 +194,8 @@
 
 .method static synthetic access$1600(Lcom/android/phone/operator/usa/TelephonyExtensionManager;Landroid/telephony/ServiceState;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
+    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->setOneTripState(Landroid/telephony/ServiceState;)V
 
@@ -194,6 +204,8 @@
 
 .method static synthetic access$1700(Lcom/android/phone/operator/usa/TelephonyExtensionManager;Landroid/telephony/ServiceState;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
+    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->cancelAllowDataAccess(Landroid/telephony/ServiceState;)V
 
@@ -202,6 +214,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/usa/TelephonyExtensionManager;Landroid/os/Message;)Landroid/content/Intent;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
+    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->getIntent(Landroid/os/Message;)Landroid/content/Intent;
 
@@ -212,6 +226,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/usa/TelephonyExtensionManager;Landroid/content/Intent;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
+    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->cscChameleonUpdateCallSettings(Landroid/content/Intent;)V
 
@@ -220,6 +236,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/usa/TelephonyExtensionManager;Landroid/content/Intent;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
+    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->chameleonPreconfig(Landroid/content/Intent;)V
 
@@ -228,6 +246,8 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/usa/TelephonyExtensionManager;Landroid/content/Intent;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
+    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleShowDialogDataRoamingGuard(Landroid/content/Intent;)V
 
@@ -236,6 +256,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleCloseDialogDataRoamingGuard()V
 
@@ -244,6 +265,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleRoamingSettingsDBUpdated()V
 
@@ -252,6 +274,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleGlobalNetowrkDialog()V
 
@@ -260,6 +283,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/operator/usa/TelephonyExtensionManager;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/TelephonyExtensionManager;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->handleToastAllowDataAccess()V
 
@@ -268,6 +292,7 @@
 
 .method private cancelAllowDataAccess(Landroid/telephony/ServiceState;)V
     .locals 2
+    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getRoaming()Z
 
@@ -291,6 +316,7 @@
 
 .method private chameleonPreconfig(Landroid/content/Intent;)V
     .locals 6
+    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -592,6 +618,7 @@
 
 .method private cscChameleonUpdateCallSettings(Landroid/content/Intent;)V
     .locals 7
+    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x0
 
@@ -802,6 +829,7 @@
 
 .method private getIntent(Landroid/os/Message;)Landroid/content/Intent;
     .locals 2
+    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -1035,6 +1063,7 @@
 
 .method private handleShowDialogDataRoamingGuard(Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 
@@ -1332,6 +1361,7 @@
 
 .method private isPhoneNameChanged(Ljava/lang/String;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1397,6 +1427,7 @@
 
 .method private lowBatterySound(Z)V
     .locals 10
+    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -1683,6 +1714,7 @@
 
 .method private setNetworkModeToChameleonCode(Z)V
     .locals 8
+    .param p1    # Z
 
     const/16 v7, 0xc9
 
@@ -1766,6 +1798,7 @@
 
 .method private setOneTripState(Landroid/telephony/ServiceState;)V
     .locals 11
+    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v10, 0x0
 
@@ -1942,6 +1975,7 @@
 
 .method private setPhoneName(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "TelephonyExtensionManager"
 
@@ -1974,6 +2008,7 @@
 
 .method private setPreferredNetworkModeEntry(Z)V
     .locals 2
+    .param p1    # Z
 
     const-string v0, "network_mode_cdma_lte"
 
@@ -2006,6 +2041,7 @@
 
 .method private setSystemSelectHomeOnlyEntry(Z)V
     .locals 2
+    .param p1    # Z
 
     const-string v0, "system_select_home_only_entry"
 
@@ -2128,6 +2164,7 @@
 
 .method private systemSelectRoamingType(I)V
     .locals 1
+    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -2171,6 +2208,7 @@
 
 .method private updatePhoneName(Lcom/android/internal/telephony/Phone;)V
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     invoke-interface {p1}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
 
@@ -2228,6 +2266,8 @@
 # virtual methods
 .method public actionAnyDataConnectionStateChanged(Lcom/android/internal/telephony/Phone;Landroid/content/Intent;)V
     .locals 7
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Landroid/content/Intent;
 
     const-string v4, "state"
 
@@ -2400,6 +2440,7 @@
 
 .method public addPhoneIntentFilter(Landroid/content/IntentFilter;)V
     .locals 1
+    .param p1    # Landroid/content/IntentFilter;
 
     const-string v0, "support_low_battery_sound_during_call"
 
@@ -2452,6 +2493,7 @@
 
 .method public handleServiceStateChanged(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -2515,6 +2557,8 @@
 
 .method public onPhoneReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -2667,6 +2711,7 @@
 
 .method public registerDataRoamingSettingsContentObserver(Lcom/android/internal/telephony/Phone;)V
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     const/4 v3, 0x0
 
@@ -2818,6 +2863,7 @@
 
 .method public sendGlobalNetworkDialogMessageDelayed(Z)V
     .locals 5
+    .param p1    # Z
 
     const/16 v4, 0x64
 
@@ -2852,6 +2898,8 @@
 
 .method public sendNotifyAllowDataAccessMessage(Lcom/android/internal/telephony/Phone;Ljava/lang/String;)V
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Ljava/lang/String;
 
     const-string v0, "global_data_roaming_access_enable"
 
@@ -2976,6 +3024,7 @@
 
 .method public setDataRoamingGuardActivity(Landroid/app/Activity;)V
     .locals 3
+    .param p1    # Landroid/app/Activity;
 
     const-string v0, "TelephonyExtensionManager"
 
@@ -3008,6 +3057,7 @@
 
 .method public telephonyManager(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/telephony/TelephonyManager;->from(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
 
@@ -3028,6 +3078,7 @@
 
 .method public updatePhoneName(Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/TelephonyExtensionManager;->isPhoneNameChanged(Ljava/lang/String;)Z
 

@@ -100,6 +100,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mIsForeground:Z
 
@@ -108,6 +109,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mIsContentChanged:Z
 
@@ -116,6 +119,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;)Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mDialogFragment:Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
 
@@ -124,6 +128,8 @@
 
 .method static synthetic access$402(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;)Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;
+    .param p1    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mDialogFragment:Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
 
@@ -134,6 +140,7 @@
 # virtual methods
 .method protected dismissDialog(I)V
     .locals 2
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->isAdded()Z
 
@@ -158,6 +165,7 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -166,6 +174,7 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -287,6 +296,7 @@
 
 .method protected getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
@@ -321,6 +331,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -333,6 +344,7 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -368,6 +380,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -376,6 +390,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -447,6 +462,7 @@
 
 .method public onPrepareDialog(I)V
     .locals 0
+    .param p1    # I
 
     return-void
 .end method
@@ -516,6 +532,7 @@
 
 .method protected registerContentUri(Landroid/net/Uri;)V
     .locals 3
+    .param p1    # Landroid/net/Uri;
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mContentObserver:Landroid/database/ContentObserver;
 
@@ -556,6 +573,7 @@
 
 .method protected removeDialog(I)V
     .locals 3
+    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -631,6 +649,7 @@
 
 .method protected setCancelable(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mDialogFragment:Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
 
@@ -646,6 +665,7 @@
 
 .method protected setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 1
+    .param p1    # Landroid/content/DialogInterface$OnCancelListener;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mDialogFragment:Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
 
@@ -662,6 +682,7 @@
 
 .method protected setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
     .locals 1
+    .param p1    # Landroid/content/DialogInterface$OnDismissListener;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->mDialogFragment:Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
 
@@ -678,6 +699,7 @@
 
 .method protected showDialog(I)V
     .locals 6
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->isAdded()Z
 
@@ -787,6 +809,10 @@
 
 .method public startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 6
+    .param p1    # Landroid/app/Fragment;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # Landroid/os/Bundle;
 
     const v5, 0x7f0a00b6
 
@@ -809,6 +835,11 @@
 
 .method public startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
     .locals 7
+    .param p1    # Landroid/app/Fragment;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # Landroid/os/Bundle;
+    .param p5    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 

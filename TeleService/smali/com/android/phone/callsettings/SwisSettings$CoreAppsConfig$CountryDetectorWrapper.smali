@@ -25,6 +25,7 @@
 
 .method public static final getCurrentCountryIso(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
+    .param p0    # Landroid/content/Context;
 
     const-string v1, "country_detector"
 

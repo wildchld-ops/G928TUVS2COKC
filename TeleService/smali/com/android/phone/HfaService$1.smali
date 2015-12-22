@@ -36,6 +36,7 @@
 # virtual methods
 .method public onError(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/phone/HfaService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/phone/HfaService;->access$000()Ljava/lang/String;

@@ -28,6 +28,9 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/sip/SipConnectionService;Landroid/net/sip/SipProfile;Landroid/telecom/ConnectionRequest;)Lcom/android/internal/telephony/Connection;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipConnectionService;
+    .param p1    # Landroid/net/sip/SipProfile;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     invoke-direct {p0, p1, p2}, Lcom/android/services/telephony/sip/SipConnectionService;->createConnectionForProfile(Landroid/net/sip/SipProfile;Landroid/telecom/ConnectionRequest;)Lcom/android/internal/telephony/Connection;
 
@@ -38,6 +41,7 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/sip/SipConnectionService;)Lcom/android/services/telephony/sip/SipProfileDb;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipConnectionService;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipConnectionService;->mSipProfileDb:Lcom/android/services/telephony/sip/SipProfileDb;
 
@@ -46,6 +50,7 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/sip/SipConnectionService;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/sip/SipConnectionService;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipConnectionService;->mHandler:Landroid/os/Handler;
 
@@ -54,6 +59,8 @@
 
 .method private createConnectionForProfile(Landroid/net/sip/SipProfile;Landroid/telecom/ConnectionRequest;)Lcom/android/internal/telephony/Connection;
     .locals 2
+    .param p1    # Landroid/net/sip/SipProfile;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipConnectionService;->findPhoneForProfile(Landroid/net/sip/SipProfile;)Lcom/android/internal/telephony/sip/SipPhone;
 
@@ -83,6 +90,7 @@
 
 .method private createPhoneForProfile(Landroid/net/sip/SipProfile;)Lcom/android/internal/telephony/sip/SipPhone;
     .locals 1
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-virtual {p1}, Landroid/net/sip/SipProfile;->getUriString()Ljava/lang/String;
 
@@ -97,6 +105,7 @@
 
 .method private findPhoneForProfile(Landroid/net/sip/SipProfile;)Lcom/android/internal/telephony/sip/SipPhone;
     .locals 5
+    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/sip/SipConnectionService;->getAllConnections()Ljava/util/Collection;
 
@@ -156,6 +165,8 @@
 
 .method private findProfile(Ljava/lang/String;Lcom/android/services/telephony/sip/SipConnectionService$IProfileFinderCallback;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/services/telephony/sip/SipConnectionService$IProfileFinderCallback;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -220,6 +231,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -248,6 +260,8 @@
 
 .method private startCallWithPhone(Lcom/android/internal/telephony/sip/SipPhone;Landroid/telecom/ConnectionRequest;)Lcom/android/internal/telephony/Connection;
     .locals 5
+    .param p1    # Lcom/android/internal/telephony/sip/SipPhone;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     invoke-virtual {p2}, Landroid/telecom/ConnectionRequest;->getAddress()Landroid/net/Uri;
 
@@ -323,6 +337,8 @@
 
 .method public onCreateIncomingConnection(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;
     .locals 9
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/16 v8, 0x24
 
@@ -498,6 +514,8 @@
 
 .method public onCreateOutgoingConnection(Landroid/telecom/PhoneAccountHandle;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;
     .locals 12
+    .param p1    # Landroid/telecom/PhoneAccountHandle;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/4 v11, 0x0
 

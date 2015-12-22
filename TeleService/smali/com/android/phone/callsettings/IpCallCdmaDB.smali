@@ -38,6 +38,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     const-string v0, "ipcallcdma.db"
 
@@ -56,6 +57,7 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "CREATE TABLE ip_call_cdma (_id INTEGER PRIMARY KEY AUTOINCREMENT, ipcall_number TEXT NOT NULL,edit_checked INTEGER NOT NULL);"
 
@@ -108,6 +110,9 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2    # I
+    .param p3    # I
 
     const-string v0, "IpCallCdmaDB"
 

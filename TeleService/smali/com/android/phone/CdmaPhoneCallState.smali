@@ -102,6 +102,7 @@
 
 .method public setAddCallMenuStateAfterCallWaiting(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CdmaPhoneCallState;->mAddCallMenuStateAfterCW:Z
 
@@ -110,6 +111,7 @@
 
 .method public setCurrentCallState(Lcom/android/phone/CdmaPhoneCallState$PhoneCallState;)V
     .locals 2
+    .param p1    # Lcom/android/phone/CdmaPhoneCallState$PhoneCallState;
 
     iget-object v0, p0, Lcom/android/phone/CdmaPhoneCallState;->mCurrentCallState:Lcom/android/phone/CdmaPhoneCallState$PhoneCallState;
 
@@ -143,6 +145,7 @@
 
 .method public setThreeWayCallOrigState(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CdmaPhoneCallState;->mThreeWayCallOrigStateDialing:Z
 

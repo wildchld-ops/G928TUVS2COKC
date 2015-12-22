@@ -28,6 +28,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -38,6 +39,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -60,6 +63,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/IntCallServicePreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IntCallServicePreference;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IntCallServicePreference;->autoClicked()V
 
@@ -68,6 +72,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/IntCallServicePreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IntCallServicePreference;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IntCallServicePreference;->manualClicked()V
 
@@ -76,6 +81,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/IntCallServicePreference;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/IntCallServicePreference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -84,6 +90,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/IntCallServicePreference;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/IntCallServicePreference;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IntCallServicePreference;->positiveButtonClicked()V
 
@@ -326,6 +333,7 @@
 
 .method private setInitValueAndLayout(Landroid/view/View;)V
     .locals 7
+    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -649,6 +657,7 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 0
+    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IntCallServicePreference;->setInitValueAndLayout(Landroid/view/View;)V
 
@@ -687,6 +696,7 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 2
+    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 

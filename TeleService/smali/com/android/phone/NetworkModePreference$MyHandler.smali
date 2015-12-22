@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/NetworkModePreference;Lcom/android/phone/NetworkModePreference$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/NetworkModePreference;
+    .param p2    # Lcom/android/phone/NetworkModePreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModePreference$MyHandler;-><init>(Lcom/android/phone/NetworkModePreference;)V
 
@@ -39,6 +41,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/NetworkModePreference$MyHandler;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModePreference$MyHandler;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModePreference$MyHandler;->updateState(I)V
 
@@ -47,6 +51,7 @@
 
 .method private handleGetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 8
+    .param p1    # Landroid/os/Message;
 
     const/4 v7, 0x0
 
@@ -182,6 +187,7 @@
 
 .method private handleSetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 10
+    .param p1    # Landroid/os/Message;
 
     const/4 v9, 0x3
 
@@ -1073,6 +1079,7 @@
 
 .method private updateState(I)V
     .locals 11
+    .param p1    # I
 
     const/4 v10, 0x3
 
@@ -1815,6 +1822,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x1
 

@@ -34,6 +34,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "PhoneNumberLocatorRegisterService"
 
@@ -46,6 +48,7 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
+    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -108,6 +111,8 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 2
+    .param p1    # Landroid/content/Intent;
+    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/app/Service;->onStart(Landroid/content/Intent;I)V
 

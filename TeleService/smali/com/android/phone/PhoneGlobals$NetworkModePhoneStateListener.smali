@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/PhoneGlobals;I)V
     .locals 0
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals$NetworkModePhoneStateListener;->this$0:Lcom/android/phone/PhoneGlobals;
 
@@ -33,6 +34,7 @@
 # virtual methods
 .method public onDataConnectionStateChanged(I)V
     .locals 2
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -79,6 +81,7 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 7
+    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 

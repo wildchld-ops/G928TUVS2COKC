@@ -27,6 +27,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/CustomListPreference;Landroid/content/Context;)V
     .locals 0
+    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/CustomListPreference$CustomListPreferenceAdapter;->this$0:Lcom/android/phone/CustomListPreference;
 
@@ -51,6 +52,7 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
+    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -61,6 +63,7 @@
 
 .method public getItemId(I)J
     .locals 2
+    .param p1    # I
 
     int-to-long v0, p1
 
@@ -69,6 +72,9 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
+    .param p1    # I
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ViewGroup;
 
     move-object v1, p2
 

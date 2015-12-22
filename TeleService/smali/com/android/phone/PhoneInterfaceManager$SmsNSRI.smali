@@ -31,6 +31,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/telephony/Phone;)V
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/Phone;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -51,6 +52,8 @@
 
 .method static synthetic access$1902(Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;[B)[B
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;
+    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;->mResult:[B
 
@@ -59,6 +62,8 @@
 
 .method static synthetic access$2002(Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$SmsNSRI;->mDone:Z
 
@@ -288,6 +293,8 @@
 
 .method declared-synchronized smsNSRIDecryptCmd([BI)[B
     .locals 7
+    .param p1    # [B
+    .param p2    # I
 
     monitor-enter p0
 
@@ -446,6 +453,9 @@
 
 .method declared-synchronized smsNSRIDecryptTxCmd(Ljava/lang/String;[BI)[B
     .locals 9
+    .param p1    # Ljava/lang/String;
+    .param p2    # [B
+    .param p3    # I
 
     monitor-enter p0
 
@@ -642,6 +652,9 @@
 
 .method declared-synchronized smsNSRIEncryptCmd(Ljava/lang/String;[BI)[B
     .locals 8
+    .param p1    # Ljava/lang/String;
+    .param p2    # [B
+    .param p3    # I
 
     monitor-enter p0
 

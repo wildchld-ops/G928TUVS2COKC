@@ -25,6 +25,7 @@
 
 .method public static getVoiceCallTypeValue(Landroid/content/ContentResolver;)I
     .locals 5
+    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x1
 
@@ -68,6 +69,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
+    .param p1    # Landroid/os/Bundle;
 
     const v5, 0x7f0a0599
 
@@ -211,6 +213,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -225,6 +228,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -388,6 +393,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 

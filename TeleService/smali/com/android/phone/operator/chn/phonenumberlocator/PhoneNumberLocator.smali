@@ -214,6 +214,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->log(Ljava/lang/String;)V
 
@@ -222,6 +224,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)Landroid/widget/Switch;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -230,6 +233,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->mSubAppBarOnffTextview:Landroid/widget/TextView;
 
@@ -238,6 +242,8 @@
 
 .method static synthetic access$1200(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->updateLayout(Z)V
 
@@ -246,6 +252,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->mPhoneNumberLocatorDownloader:Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
 
@@ -254,6 +261,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->mHandler:Landroid/os/Handler;
 
@@ -262,6 +270,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->restartService()V
 
@@ -270,6 +279,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->refreshVersion()V
 
@@ -278,6 +288,9 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->log(Ljava/lang/String;Z)V
 
@@ -294,6 +307,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)Landroid/widget/Toast;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->mIsAutoUpdatingToast:Landroid/widget/Toast;
 
@@ -302,6 +316,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->isNeedRestartService:Z
 
@@ -310,6 +326,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->startDownloadThread()V
 
@@ -466,6 +483,7 @@
 
 .method private enablePNLService(Z)V
     .locals 4
+    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -615,6 +633,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneNumberLocator"
 
@@ -625,6 +644,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "PhoneNumberLocator"
 
@@ -689,6 +710,7 @@
 
 .method private saveAutoUpdate(Z)V
     .locals 4
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
@@ -717,6 +739,7 @@
 
 .method private saveUdateType(I)V
     .locals 4
+    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
@@ -745,6 +768,7 @@
 
 .method private saveWLANOnly(Z)V
     .locals 4
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
@@ -852,6 +876,7 @@
 
 .method private updateLayout(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;->mNumberRegionChecked:Landroid/preference/CheckBoxPreference;
 
@@ -1103,6 +1128,8 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
+    .param p1    # Landroid/widget/CompoundButton;
+    .param p2    # Z
 
     const-string v0, "PhoneNumberLocator"
 
@@ -1181,6 +1208,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -1446,6 +1474,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1485,6 +1515,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -1636,6 +1669,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 7
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v6, 0x1
 
@@ -1763,6 +1797,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -1868,6 +1904,8 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 7
+    .param p1    # Landroid/content/SharedPreferences;
+    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

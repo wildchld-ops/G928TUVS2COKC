@@ -40,6 +40,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
+    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions$5;->val$dlg:Landroid/app/Dialog;
 

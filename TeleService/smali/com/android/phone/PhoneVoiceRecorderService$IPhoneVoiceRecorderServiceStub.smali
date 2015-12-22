@@ -32,6 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/PhoneVoiceRecorderService;Landroid/os/RemoteCallbackList;)V
     .locals 0
+    .param p1    # Lcom/android/phone/PhoneVoiceRecorderService;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -102,6 +103,7 @@
 
 .method public registerCallback(Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;)V
     .locals 1
+    .param p1    # Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -130,6 +132,7 @@
 
 .method public setCallerNumber(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorderService$IPhoneVoiceRecorderServiceStub;->mRecorder:Lcom/android/phone/PhoneVoiceRecorderService;
 
@@ -160,6 +163,7 @@
 
 .method public unregisterCallback(Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;)V
     .locals 1
+    .param p1    # Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

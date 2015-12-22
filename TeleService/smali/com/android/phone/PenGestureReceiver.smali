@@ -22,6 +22,7 @@
 # virtual methods
 .method public isInCallTopActivity(Landroid/content/Context;)Z
     .locals 8
+    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -112,6 +113,8 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 27
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 

@@ -69,6 +69,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/KTCallWaiting;)Ljava/lang/ref/WeakReference;
     .locals 1
+    .param p0    # Lcom/android/phone/KTCallWaiting;
 
     iget-object v0, p0, Lcom/android/phone/KTCallWaiting;->mProgress:Ljava/lang/ref/WeakReference;
 
@@ -77,6 +78,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/KTCallWaiting;Ljava/util/Timer;)Ljava/util/Timer;
     .locals 0
+    .param p0    # Lcom/android/phone/KTCallWaiting;
+    .param p1    # Ljava/util/Timer;
 
     iput-object p1, p0, Lcom/android/phone/KTCallWaiting;->mtimer:Ljava/util/Timer;
 
@@ -85,6 +88,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/KTCallWaiting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/KTCallWaiting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/KTCallWaiting;->mCheckedProgressDialog:Z
 
@@ -134,6 +139,7 @@
 # virtual methods
 .method handleGetCallWaitingResult(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -219,6 +225,7 @@
 
 .method handleSetCallWaitingResult(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -318,6 +325,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
+    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "KTCallWaiting"
 
@@ -348,6 +356,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -414,6 +423,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v7, 0x0
 
@@ -616,6 +627,7 @@
 
 .method showReturnError(Ljava/lang/Throwable;)V
     .locals 11
+    .param p1    # Ljava/lang/Throwable;
 
     const v10, 0x7f0a04ba
 

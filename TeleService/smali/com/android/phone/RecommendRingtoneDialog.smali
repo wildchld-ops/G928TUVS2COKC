@@ -65,6 +65,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/RecommendRingtoneDialog;)I
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mSelectedPosition:I
 
@@ -73,6 +74,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/RecommendRingtoneDialog;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/RecommendRingtoneDialog;->mSelectedPosition:I
 
@@ -81,6 +84,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/RecommendRingtoneDialog;)Lcom/android/phone/RecommendRingtoneDialog$RecommendAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mRecommendAdapter:Lcom/android/phone/RecommendRingtoneDialog$RecommendAdapter;
 
@@ -89,6 +93,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/RecommendRingtoneDialog;)Landroid/media/Ringtone;
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->ringtone:Landroid/media/Ringtone;
 
@@ -97,6 +102,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/RecommendRingtoneDialog;Landroid/media/Ringtone;)Landroid/media/Ringtone;
     .locals 0
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
+    .param p1    # Landroid/media/Ringtone;
 
     iput-object p1, p0, Lcom/android/phone/RecommendRingtoneDialog;->ringtone:Landroid/media/Ringtone;
 
@@ -105,6 +112,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/RecommendRingtoneDialog;)V
     .locals 0
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     invoke-direct {p0}, Lcom/android/phone/RecommendRingtoneDialog;->requestAudioFocus()V
 
@@ -113,6 +121,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/RecommendRingtoneDialog;)I
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mSimIndex:I
 
@@ -121,6 +130,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/RecommendRingtoneDialog;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mContext:Landroid/content/Context;
 
@@ -129,6 +139,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/RecommendRingtoneDialog;)I
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->offset:I
 
@@ -137,6 +148,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/RecommendRingtoneDialog;)Landroid/media/AudioManager;
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mAudioManager:Landroid/media/AudioManager;
 
@@ -145,6 +157,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/RecommendRingtoneDialog;)Landroid/media/AudioManager$OnAudioFocusChangeListener;
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mAudioFocusListener:Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
@@ -153,6 +166,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/RecommendRingtoneDialog;)Landroid/view/LayoutInflater;
     .locals 1
+    .param p0    # Lcom/android/phone/RecommendRingtoneDialog;
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog;->mInflater:Landroid/view/LayoutInflater;
 
@@ -194,6 +208,8 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
+    .param p1    # Landroid/content/DialogInterface;
+    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -254,6 +270,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 

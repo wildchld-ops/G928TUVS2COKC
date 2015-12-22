@@ -48,6 +48,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/mobilenetworks/kor/NetworkMode;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkMode;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkMode;->selectedBandInformed(Landroid/os/AsyncResult;)V
 
@@ -56,6 +58,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/mobilenetworks/kor/NetworkMode;Ljava/lang/Throwable;)V
     .locals 0
+    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkMode;
+    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
 
@@ -64,6 +68,7 @@
 
 .method private displayBandSelectionResult(Ljava/lang/Throwable;)V
     .locals 6
+    .param p1    # Ljava/lang/Throwable;
 
     const/4 v5, 0x1
 
@@ -206,6 +211,7 @@
 
 .method private loadBandList([Ljava/lang/String;)V
     .locals 4
+    .param p1    # [Ljava/lang/String;
 
     new-instance v0, Landroid/widget/ArrayAdapter;
 
@@ -242,6 +248,7 @@
 
 .method private selectedBandInformed(Landroid/os/AsyncResult;)V
     .locals 4
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v2, 0x0
 
@@ -308,6 +315,7 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 3
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkMode;->mDataDependencyMet:Z
 
@@ -360,6 +368,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -475,6 +484,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -505,6 +516,10 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 8
+    .param p1    # Landroid/widget/ListView;
+    .param p2    # Landroid/view/View;
+    .param p3    # I
+    .param p4    # J
 
     const/4 v6, 0x1
 

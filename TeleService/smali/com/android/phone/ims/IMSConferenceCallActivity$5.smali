@@ -36,6 +36,7 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 6
+    .param p1    # Landroid/text/Editable;
 
     const/16 v5, 0x20
 
@@ -169,6 +170,10 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
+    .param p1    # Ljava/lang/CharSequence;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity$5;->this$0:Lcom/android/phone/ims/IMSConferenceCallActivity;
 
@@ -184,6 +189,10 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
+    .param p1    # Ljava/lang/CharSequence;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 

@@ -6,6 +6,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     const-string v0, "autorejectoutgoingcall.db"
 
@@ -22,6 +23,7 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE reject_outgoingcall_num (_id INTEGER PRIMARY KEY AUTOINCREMENT, reject_number TEXT NOT NULL,reject_checked INTEGER,reject_match INTEGER);"
 
@@ -32,6 +34,9 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 1
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2    # I
+    .param p3    # I
 
     const/4 v0, 0x1
 

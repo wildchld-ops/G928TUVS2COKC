@@ -115,6 +115,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/ScrambleLib$UUID;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/ScrambleLib$UUID;
 
     iget v0, p0, Lcom/android/phone/callsettings/ScrambleLib$UUID;->Data3:I
 

@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
+    .param p2    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$UpdateVersionReceiver;-><init>(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;)V
 
@@ -41,6 +43,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator$UpdateVersionReceiver;->this$0:Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocator;
 

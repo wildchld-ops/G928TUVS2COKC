@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/NetworkModePreference;I)V
     .locals 0
+    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/NetworkModePreference$NetworkModePhoneStateListener;->this$0:Lcom/android/phone/NetworkModePreference;
 
@@ -33,6 +34,7 @@
 # virtual methods
 .method public onDataConnectionStateChanged(I)V
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference$NetworkModePhoneStateListener;->this$0:Lcom/android/phone/NetworkModePreference;
 

@@ -30,6 +30,9 @@
 # virtual methods
 .method public onQueryComplete(ILjava/lang/Object;Lcom/android/internal/telephony/CallerInfo;)V
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/Object;
+    .param p3    # Lcom/android/internal/telephony/CallerInfo;
 
     move-object v0, p2
 

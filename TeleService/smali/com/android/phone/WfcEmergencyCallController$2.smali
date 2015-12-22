@@ -33,6 +33,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     # getter for: Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/phone/WfcEmergencyCallController;->access$200()Ljava/lang/String;

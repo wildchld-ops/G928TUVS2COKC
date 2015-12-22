@@ -40,6 +40,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/CallPopUp;)Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/CallPopUp;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mWfcRegistrationStateHelper:Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
 
@@ -48,6 +49,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/CallPopUp;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/CallPopUp;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/CallPopUp;->updateIncomingPopupForWFC(Z)V
 
@@ -56,6 +59,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "CallPopUp"
 
@@ -124,6 +128,7 @@
 
 .method private updateIncomingPopupForWFC(Z)V
     .locals 4
+    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -367,6 +372,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -578,6 +584,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -698,6 +705,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x0
 

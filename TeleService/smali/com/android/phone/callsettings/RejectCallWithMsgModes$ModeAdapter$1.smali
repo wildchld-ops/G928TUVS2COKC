@@ -40,6 +40,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
+    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter$1;->this$1:Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
 

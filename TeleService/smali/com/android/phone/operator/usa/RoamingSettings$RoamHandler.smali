@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/operator/usa/RoamingSettings;Lcom/android/phone/operator/usa/RoamingSettings$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/operator/usa/RoamingSettings;
+    .param p2    # Lcom/android/phone/operator/usa/RoamingSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/RoamingSettings$RoamHandler;-><init>(Lcom/android/phone/operator/usa/RoamingSettings;)V
 
@@ -39,6 +41,7 @@
 
 .method private handleGetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -215,6 +218,7 @@
 
 .method private handleSetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -313,6 +317,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

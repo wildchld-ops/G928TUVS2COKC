@@ -36,6 +36,7 @@
 # virtual methods
 .method public onError(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/HfaActivity$1;->this$0:Lcom/android/phone/HfaActivity;
 

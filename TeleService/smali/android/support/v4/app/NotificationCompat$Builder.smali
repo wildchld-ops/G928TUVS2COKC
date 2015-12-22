@@ -95,6 +95,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
+    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -151,6 +152,7 @@
 
 .method protected static limitCharSequenceLength(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
+    .param p0    # Ljava/lang/CharSequence;
 
     const/16 v1, 0x1400
 
@@ -178,6 +180,8 @@
 
 .method private setFlag(IZ)V
     .locals 3
+    .param p1    # I
+    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -225,6 +229,7 @@
 
 .method public setAutoCancel(Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1    # Z
 
     const/16 v0, 0x10
 
@@ -235,6 +240,7 @@
 
 .method public setContentText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/support/v4/app/NotificationCompat$Builder;->limitCharSequenceLength(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -247,6 +253,7 @@
 
 .method public setContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/support/v4/app/NotificationCompat$Builder;->limitCharSequenceLength(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -259,6 +266,7 @@
 
 .method public setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
+    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 

@@ -33,6 +33,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/phone/ota/OtaInCallScreen$1;->this$0:Lcom/android/phone/ota/OtaInCallScreen;
 

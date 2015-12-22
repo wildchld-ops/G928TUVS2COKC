@@ -50,6 +50,7 @@
 
 .method private simulatePreferenceClick(Landroid/preference/PreferenceActivity;)V
     .locals 3
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     invoke-virtual {p1}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -71,6 +72,8 @@
 
 .method private simulatePreferenceClick(Landroid/preference/PreferenceActivity;Landroid/preference/Preference;)V
     .locals 7
+    .param p1    # Landroid/preference/PreferenceActivity;
+    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p1}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -118,6 +121,7 @@
 
 .method private simulatePreferenceTreeClick(Landroid/preference/PreferenceActivity;)V
     .locals 3
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     invoke-virtual {p1}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -139,6 +143,7 @@
 
 .method private startApnExpand(Landroid/preference/PreferenceActivity;)V
     .locals 3
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -159,6 +164,7 @@
 
 .method private startEnhanced4gLte(Landroid/preference/PreferenceActivity;)V
     .locals 5
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -214,6 +220,7 @@
 
 .method private startOperatorSelectionExpand(Landroid/preference/PreferenceActivity;)V
     .locals 5
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -284,6 +291,7 @@
 
 .method private startPreferredNetworks(Landroid/preference/PreferenceActivity;)V
     .locals 5
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -429,6 +437,7 @@
 
 .method public launchPreferences(Landroid/preference/PreferenceActivity;)V
     .locals 6
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     const/4 v4, 0x0
 
@@ -652,6 +661,7 @@
 
 .method public launchiNetworkModePreference(Landroid/preference/PreferenceActivity;)V
     .locals 2
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     iget-boolean v0, p0, Lcom/android/phone/mobilenetworks/MobileNetworksSearchController;->mFromSearch:Z
 
@@ -687,6 +697,7 @@
 
 .method public updateSearchIntent(Landroid/preference/PreferenceActivity;)Z
     .locals 6
+    .param p1    # Landroid/preference/PreferenceActivity;
 
     const/4 v2, 0x0
 

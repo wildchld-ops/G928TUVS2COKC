@@ -65,6 +65,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
 
     const-wide/16 v2, -0x1
 
@@ -105,6 +106,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const-wide/16 v2, -0x1
 
@@ -145,6 +148,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
 
     const-wide/16 v2, -0x1
 
@@ -185,6 +191,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyContactItem;)Landroid/view/View;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyContactItem;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mCheckBox:Landroid/view/View;
 
@@ -201,6 +208,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/EmergencyContactItem;)Landroid/widget/CheckBox;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyContactItem;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mItemCheckBox:Landroid/widget/CheckBox;
 
@@ -209,6 +217,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/EmergencyContactItem;)Lcom/android/phone/EmergencyContactItemContainer;
     .locals 1
+    .param p0    # Lcom/android/phone/EmergencyContactItem;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mParent:Lcom/android/phone/EmergencyContactItemContainer;
 
@@ -217,6 +226,8 @@
 
 .method static synthetic access$402(Lcom/android/phone/EmergencyContactItem;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyContactItem;
+    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyContactItem;->mPhoto:Landroid/graphics/Bitmap;
 
@@ -225,6 +236,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/EmergencyContactItem;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyContactItem;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyContactItem;->updateContactItem()V
 
@@ -233,6 +245,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/EmergencyContactItem;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyContactItem;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyContactItem;->placeCall()V
 
@@ -241,6 +254,7 @@
 
 .method private addEmergencyContact(I)V
     .locals 5
+    .param p1    # I
 
     const-string v2, "EmergencyContactItem"
 
@@ -423,6 +437,8 @@
 
 .method private getCircledBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 10
+    .param p1    # Landroid/graphics/Bitmap;
+    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -560,6 +576,8 @@
 
 .method private getCircledDrawable(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/drawable/Drawable;
     .locals 13
+    .param p1    # Landroid/graphics/drawable/Drawable;
+    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -711,6 +729,7 @@
 
 .method private init(Z)V
     .locals 3
+    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -889,6 +908,8 @@
 
 .method private setContactImage(Landroid/graphics/Bitmap;I)V
     .locals 6
+    .param p1    # Landroid/graphics/Bitmap;
+    .param p2    # I
 
     const/4 v5, -0x1
 
@@ -1094,6 +1115,8 @@
 
 .method private setPositiveButtonEnabled(Landroid/app/AlertDialog;Landroid/widget/EditText;)V
     .locals 2
+    .param p1    # Landroid/app/AlertDialog;
+    .param p2    # Landroid/widget/EditText;
 
     const/4 v1, -0x1
 
@@ -1508,6 +1531,7 @@
 
 .method public removeEmergencyContact(Z)V
     .locals 8
+    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/phone/EmergencyContactItem;->mCheckBox:Landroid/view/View;
 
@@ -1607,6 +1631,7 @@
 
 .method public setChecked(Z)V
     .locals 1
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mCheckBox:Landroid/view/View;
 
@@ -1619,6 +1644,11 @@
 
 .method public setItem(Lcom/android/phone/EmergencyContactItemContainer$ItemType;JLjava/lang/String;Ljava/lang/String;I)V
     .locals 8
+    .param p1    # Lcom/android/phone/EmergencyContactItemContainer$ItemType;
+    .param p2    # J
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
+    .param p6    # I
 
     const/4 v7, 0x1
 
@@ -1641,6 +1671,12 @@
 
 .method public setItem(Lcom/android/phone/EmergencyContactItemContainer$ItemType;JLjava/lang/String;Ljava/lang/String;IZ)V
     .locals 8
+    .param p1    # Lcom/android/phone/EmergencyContactItemContainer$ItemType;
+    .param p2    # J
+    .param p4    # Ljava/lang/String;
+    .param p5    # Ljava/lang/String;
+    .param p6    # I
+    .param p7    # Z
 
     const/4 v6, 0x1
 
@@ -1704,6 +1740,7 @@
 
 .method public setParent(Lcom/android/phone/EmergencyContactItemContainer;)V
     .locals 0
+    .param p1    # Lcom/android/phone/EmergencyContactItemContainer;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyContactItem;->mParent:Lcom/android/phone/EmergencyContactItemContainer;
 
@@ -1712,6 +1749,7 @@
 
 .method public updateContactItem(Lcom/android/phone/EmergencyContactItemContainer$ScreenType;)V
     .locals 0
+    .param p1    # Lcom/android/phone/EmergencyContactItemContainer$ScreenType;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyContactItem;->mScreenType:Lcom/android/phone/EmergencyContactItemContainer$ScreenType;
 
@@ -1722,6 +1760,7 @@
 
 .method public updateEmergencyContact(I)V
     .locals 6
+    .param p1    # I
 
     const/4 v4, 0x1
 

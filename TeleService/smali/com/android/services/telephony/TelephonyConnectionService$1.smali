@@ -33,6 +33,7 @@
 # virtual methods
 .method public onOriginalConnectionConfigured(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 1
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnectionService$1;->this$0:Lcom/android/services/telephony/TelephonyConnectionService;
 

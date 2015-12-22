@@ -128,6 +128,7 @@
 
 .method constructor <init>(Landroid/app/Activity;)V
     .locals 4
+    .param p1    # Landroid/app/Activity;
 
     const/4 v3, 0x1
 
@@ -194,6 +195,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/KddiCBarring;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mData:Ljava/lang/String;
 
@@ -202,6 +204,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/callsettings/KddiCBarring;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/KddiCBarring;->mData:Ljava/lang/String;
 
@@ -210,6 +214,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/KddiCBarring;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/KddiCBarring;->hideProgressDialog()V
 
@@ -218,6 +223,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/KddiCBarring;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -226,6 +232,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/KddiCBarring;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -242,6 +249,9 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/KddiCBarring;Landroid/os/AsyncResult;I)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/KddiCBarring;->handleSetCBMessage(Landroid/os/AsyncResult;I)I
 
@@ -252,6 +262,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/KddiCBarring;Lcom/android/phone/callsettings/KddiCBarring$AppState;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Lcom/android/phone/callsettings/KddiCBarring$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -265,6 +277,9 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/KddiCBarring;Lcom/android/phone/callsettings/KddiCBarring$AppState;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Lcom/android/phone/callsettings/KddiCBarring$AppState;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -278,6 +293,8 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/KddiCBarring;Landroid/os/AsyncResult;)I
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCBarring;->handleQueryCBMessage(Landroid/os/AsyncResult;)I
 
@@ -288,6 +305,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/KddiCBarring;)Ljava/util/List;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mListenerList:Ljava/util/List;
 
@@ -296,6 +314,8 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/KddiCBarring;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCBarring;->log(Ljava/lang/String;)V
 
@@ -304,6 +324,8 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/KddiCBarring;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/KddiCBarring;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/KddiCBarring;->displayToast(Ljava/lang/String;)V
 
@@ -326,6 +348,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mToast:Landroid/widget/Toast;
 
@@ -345,6 +368,7 @@
 
 .method private handleQueryCBMessage(Landroid/os/AsyncResult;)I
     .locals 8
+    .param p1    # Landroid/os/AsyncResult;
 
     const/16 v4, 0xc8
 
@@ -571,6 +595,8 @@
 
 .method private handleSetCBMessage(Landroid/os/AsyncResult;I)I
     .locals 5
+    .param p1    # Landroid/os/AsyncResult;
+    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -778,6 +804,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/callsettings/KddiCBarring;->LOG_TAG:Ljava/lang/String;
 
@@ -788,6 +815,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     sget-object v0, Lcom/android/phone/callsettings/KddiCBarring;->LOG_TAG:Ljava/lang/String;
 
@@ -798,6 +827,7 @@
 
 .method private setAppState(Lcom/android/phone/callsettings/KddiCBarring$AppState;)V
     .locals 3
+    .param p1    # Lcom/android/phone/callsettings/KddiCBarring$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -854,6 +884,8 @@
 
 .method private setAppState(Lcom/android/phone/callsettings/KddiCBarring$AppState;I)V
     .locals 4
+    .param p1    # Lcom/android/phone/callsettings/KddiCBarring$AppState;
+    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1319,6 +1351,7 @@
 
 .method private showProgressDialog(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1472,6 +1505,7 @@
 # virtual methods
 .method public deregisterCBarringMessageListener(Lcom/android/phone/callsettings/CBarringMessageListener;)V
     .locals 3
+    .param p1    # Lcom/android/phone/callsettings/CBarringMessageListener;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mListenerList:Ljava/util/List;
 
@@ -1503,6 +1537,7 @@
 
 .method public registerCBarringMessageListener(Lcom/android/phone/callsettings/CBarringMessageListener;)V
     .locals 3
+    .param p1    # Lcom/android/phone/callsettings/CBarringMessageListener;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/KddiCBarring;->mListenerList:Ljava/util/List;
 
@@ -1534,6 +1569,9 @@
 
 .method public requestCommand(IILjava/lang/String;)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1702,6 +1740,9 @@
 
 .method public setCommad(IILjava/lang/String;)V
     .locals 6
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1850,6 +1891,7 @@
 
 .method protected showDialog(I)V
     .locals 5
+    .param p1    # I
 
     new-instance v3, Ljava/lang/StringBuilder;
 

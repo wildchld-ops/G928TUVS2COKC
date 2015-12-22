@@ -68,6 +68,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/DataRoamingGuard;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/DataRoamingGuard;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/DataRoamingGuard;->setSecureRoamSettingDataValue(I)V
 
@@ -76,6 +78,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/usa/DataRoamingGuard;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/DataRoamingGuard;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/DataRoamingGuard;->setSecureRoamSettingCallValue(I)V
 
@@ -84,6 +88,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/usa/DataRoamingGuard;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/DataRoamingGuard;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/DataRoamingGuard;->setCdmaRoaming()V
 
@@ -92,6 +97,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/usa/DataRoamingGuard;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/usa/DataRoamingGuard;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/DataRoamingGuard;->setSecureRoamGuardDataValue(I)V
 
@@ -100,6 +107,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/usa/DataRoamingGuard;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/usa/DataRoamingGuard;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/DataRoamingGuard;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -144,6 +152,7 @@
 
 .method private setSecureRoamGuardDataValue(I)V
     .locals 4
+    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -356,6 +365,7 @@
 
 .method private setSecureRoamSettingCallValue(I)V
     .locals 2
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/DataRoamingGuard;->mDataRoamingSettingsExtra:Ljava/lang/String;
 
@@ -425,6 +435,7 @@
 
 .method private setSecureRoamSettingDataValue(I)V
     .locals 4
+    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/DataRoamingGuard;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -650,6 +661,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -841,6 +853,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 

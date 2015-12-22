@@ -30,6 +30,8 @@
 # virtual methods
 .method public getAbsoluteGravity(II)I
     .locals 1
+    .param p1    # I
+    .param p2    # I
 
     const v0, -0x800001
 

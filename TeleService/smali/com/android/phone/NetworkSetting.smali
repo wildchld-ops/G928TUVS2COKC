@@ -417,6 +417,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/NetworkSetting;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
@@ -425,6 +426,9 @@
 
 .method static synthetic access$100(Lcom/android/phone/NetworkSetting;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
@@ -433,6 +437,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/NetworkSetting;)Lcom/android/phone/ProgressButtonListPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mDefaultSetup:Lcom/android/phone/ProgressButtonListPreference;
 
@@ -441,6 +446,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->updatePLMNmode()V
 
@@ -449,6 +455,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/NetworkSetting;)Landroid/preference/PreferenceCategory;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mCategorySearchNetwork:Landroid/preference/PreferenceCategory;
 
@@ -457,6 +464,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/NetworkSetting;)Landroid/preference/Preference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mProgressbarSearchNetwork:Landroid/preference/Preference;
 
@@ -465,6 +473,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/NetworkSetting;)Lcom/android/phone/ProgressButtonPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mSearchButton:Lcom/android/phone/ProgressButtonPreference;
 
@@ -473,6 +482,9 @@
 
 .method static synthetic access$1500(Lcom/android/phone/NetworkSetting;Ljava/util/List;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Ljava/util/List;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/NetworkSetting;->networksListLoaded(Ljava/util/List;I)V
 
@@ -489,6 +501,8 @@
 
 .method static synthetic access$1700(Lcom/android/phone/NetworkSetting;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->setMode(Ljava/lang/String;)V
 
@@ -497,6 +511,7 @@
 
 .method static synthetic access$1800(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mBootUpExtra:Z
 
@@ -505,6 +520,8 @@
 
 .method static synthetic access$1802(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mBootUpExtra:Z
 
@@ -513,6 +530,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mIsDisconnectingData:Z
 
@@ -521,6 +539,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->updateDataState()V
 
@@ -529,6 +548,8 @@
 
 .method static synthetic access$2000(Lcom/android/phone/NetworkSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->enableMobileData(Z)V
 
@@ -537,6 +558,8 @@
 
 .method static synthetic access$2100(Lcom/android/phone/NetworkSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->setPreferenceEnabled(Z)V
 
@@ -545,6 +568,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->handleManualFailCase()V
 
@@ -553,6 +577,8 @@
 
 .method static synthetic access$2300(Lcom/android/phone/NetworkSetting;Ljava/lang/Throwable;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->displayNetworkSelectionFailed(Ljava/lang/Throwable;)V
 
@@ -561,6 +587,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->handleManualSuccessCase()V
 
@@ -569,6 +596,8 @@
 
 .method static synthetic access$2500(Lcom/android/phone/NetworkSetting;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->displayNetworkSelectionSucceeded(I)V
 
@@ -577,6 +606,7 @@
 
 .method static synthetic access$2600(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mSetAuto:Z
 
@@ -585,6 +615,8 @@
 
 .method static synthetic access$2602(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mSetAuto:Z
 
@@ -593,6 +625,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/NetworkSetting;)Lcom/android/phone/ProgressButtonPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mAutoSelect:Lcom/android/phone/ProgressButtonPreference;
 
@@ -601,6 +634,8 @@
 
 .method static synthetic access$2802(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->checkForbiddenNetwork:Z
 
@@ -609,6 +644,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->loadNetworksList()V
 
@@ -617,6 +653,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mIsSearching:Z
 
@@ -625,6 +662,8 @@
 
 .method static synthetic access$3002(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mManualModeSuccess:Z
 
@@ -633,6 +672,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mIsSearching:Z
 
@@ -641,6 +682,8 @@
 
 .method static synthetic access$3100(Lcom/android/phone/NetworkSetting;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->selectNetworkAutomatic(I)V
 
@@ -649,6 +692,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mFromDisconnectSelectListDialog:Z
 
@@ -657,6 +701,8 @@
 
 .method static synthetic access$3202(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mFromDisconnectSelectListDialog:Z
 
@@ -665,6 +711,7 @@
 
 .method static synthetic access$3300(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->selectListPopUp()V
 
@@ -673,6 +720,7 @@
 
 .method static synthetic access$3400(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->selectList()V
 
@@ -681,6 +729,7 @@
 
 .method static synthetic access$3500(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->goBackToPreviousManualNetwork()V
 
@@ -697,6 +746,8 @@
 
 .method static synthetic access$3700(Lcom/android/phone/NetworkSetting;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
@@ -705,6 +756,7 @@
 
 .method static synthetic access$3800(Lcom/android/phone/NetworkSetting;)I
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget v0, p0, Lcom/android/phone/NetworkSetting;->ActionType:I
 
@@ -713,6 +765,8 @@
 
 .method static synthetic access$3802(Lcom/android/phone/NetworkSetting;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkSetting;->ActionType:I
 
@@ -721,6 +775,7 @@
 
 .method static synthetic access$3900(Lcom/android/phone/NetworkSetting;)Landroid/telephony/TelephonyManager;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -729,6 +784,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->stopLoadNetworksList()V
 
@@ -737,6 +793,8 @@
 
 .method static synthetic access$4002(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mBootUpAutoSearh:Z
 
@@ -745,6 +803,8 @@
 
 .method static synthetic access$4100(Lcom/android/phone/NetworkSetting;Lcom/android/phone/NetworkSetting$userSelectionType;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Lcom/android/phone/NetworkSetting$userSelectionType;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->checkDataConnection(Lcom/android/phone/NetworkSetting$userSelectionType;)V
 
@@ -753,6 +813,7 @@
 
 .method static synthetic access$4200(Lcom/android/phone/NetworkSetting;)Landroid/preference/Preference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mSearchFemto:Landroid/preference/Preference;
 
@@ -761,6 +822,7 @@
 
 .method static synthetic access$4300(Lcom/android/phone/NetworkSetting;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->clearList()V
 
@@ -769,6 +831,7 @@
 
 .method static synthetic access$4400(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mIsDataDisconnectingFemto:Z
 
@@ -777,6 +840,8 @@
 
 .method static synthetic access$4402(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mIsDataDisconnectingFemto:Z
 
@@ -785,6 +850,8 @@
 
 .method static synthetic access$4500(Lcom/android/phone/NetworkSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->setMobileDataEnabled(Z)V
 
@@ -793,6 +860,7 @@
 
 .method static synthetic access$4600(Lcom/android/phone/NetworkSetting;)Lcom/android/phone/INetworkQueryService;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mNetworkQueryService:Lcom/android/phone/INetworkQueryService;
 
@@ -801,6 +869,8 @@
 
 .method static synthetic access$4602(Lcom/android/phone/NetworkSetting;Lcom/android/phone/INetworkQueryService;)Lcom/android/phone/INetworkQueryService;
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Lcom/android/phone/INetworkQueryService;
 
     iput-object p1, p0, Lcom/android/phone/NetworkSetting;->mNetworkQueryService:Lcom/android/phone/INetworkQueryService;
 
@@ -809,6 +879,7 @@
 
 .method static synthetic access$4700(Lcom/android/phone/NetworkSetting;)Landroid/preference/SwitchPreference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mSearchSwitchButton:Landroid/preference/SwitchPreference;
 
@@ -817,6 +888,7 @@
 
 .method static synthetic access$4800(Lcom/android/phone/NetworkSetting;)Lcom/android/internal/telephony/CallManager;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -825,6 +897,7 @@
 
 .method static synthetic access$4900(Lcom/android/phone/NetworkSetting;)Landroid/preference/Preference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mTempPreference:Landroid/preference/Preference;
 
@@ -833,6 +906,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
 
@@ -841,6 +915,8 @@
 
 .method static synthetic access$5000(Lcom/android/phone/NetworkSetting;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->displayNetworkSeletionInProgress(Ljava/lang/String;)V
 
@@ -849,6 +925,8 @@
 
 .method static synthetic access$502(Lcom/android/phone/NetworkSetting;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkSetting;->mOnBroadcastRecieve:Z
 
@@ -857,6 +935,7 @@
 
 .method static synthetic access$5100(Lcom/android/phone/NetworkSetting;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mAutoManualSelected:Ljava/lang/String;
 
@@ -865,6 +944,7 @@
 
 .method static synthetic access$5200(Lcom/android/phone/NetworkSetting;)I
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget v0, p0, Lcom/android/phone/NetworkSetting;->mActivePhoneSelected:I
 
@@ -873,6 +953,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/NetworkSetting;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting;->mOnPauseTransition:Z
 
@@ -881,6 +962,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/NetworkSetting;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
 
@@ -889,6 +971,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/NetworkSetting;)I
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkSetting;
 
     iget v0, p0, Lcom/android/phone/NetworkSetting;->mActivePhone:I
 
@@ -897,6 +980,8 @@
 
 .method static synthetic access$900(Lcom/android/phone/NetworkSetting;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkSetting;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkSetting;->updatePreferenceStatus(Z)V
 
@@ -1139,6 +1224,7 @@
 
 .method private checkDataConnection(Lcom/android/phone/NetworkSetting$userSelectionType;)V
     .locals 6
+    .param p1    # Lcom/android/phone/NetworkSetting$userSelectionType;
 
     const/4 v5, 0x0
 
@@ -1540,6 +1626,7 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1898,6 +1985,7 @@
 
 .method private displayEmptyNetworkList(Z)V
     .locals 2
+    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1991,6 +2079,7 @@
 
 .method private displayNetworkSelectionFailed(Ljava/lang/Throwable;)V
     .locals 6
+    .param p1    # Ljava/lang/Throwable;
 
     const v5, 0x7f0a0105
 
@@ -2116,6 +2205,7 @@
 
 .method private displayNetworkSelectionSucceeded(I)V
     .locals 6
+    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -2196,6 +2286,7 @@
 
 .method private displayNetworkSeletionInProgress(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -2281,6 +2372,7 @@
 
 .method private enableMobileData(Z)V
     .locals 3
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
@@ -2320,6 +2412,7 @@
 
 .method private getNetworkTitle(Lcom/android/internal/telephony/OperatorInfo;)Ljava/lang/String;
     .locals 1
+    .param p1    # Lcom/android/internal/telephony/OperatorInfo;
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/OperatorInfo;->getOperatorAlphaLong()Ljava/lang/String;
 
@@ -2642,6 +2735,7 @@
 
 .method private isDataConnectedNow(I)Z
     .locals 3
+    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -2713,6 +2807,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
@@ -2741,6 +2836,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
@@ -2769,6 +2866,7 @@
 
 .method private networksListLoaded(Ljava/util/List;I)V
     .locals 27
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5032,6 +5130,7 @@
 
 .method private reScanManualSelection(Landroid/os/Bundle;)V
     .locals 7
+    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -5742,6 +5841,7 @@
 
 .method private selectNetworkAutomatic(I)V
     .locals 5
+    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -5911,6 +6011,7 @@
 
 .method private sendBroadcastStatusIntent(Z)V
     .locals 4
+    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5973,6 +6074,7 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 5
+    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -6121,6 +6223,7 @@
 
 .method private setMode(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
@@ -6161,6 +6264,7 @@
 
 .method private setPreferenceEnabled(Z)V
     .locals 2
+    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6534,6 +6638,7 @@
 
 .method private updatePreferenceStatus(Z)V
     .locals 3
+    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->LOG_TAG:Ljava/lang/String;
 
@@ -6650,6 +6755,7 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
+    .param p1    # Landroid/content/DialogInterface;
 
     const/16 v2, 0x7d0
 
@@ -6739,6 +6845,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 11
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -7309,6 +7416,7 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 9
+    .param p1    # I
 
     const/16 v8, 0x320
 
@@ -8103,6 +8211,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -8158,6 +8267,8 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
+    .param p1    # Landroid/preference/PreferenceScreen;
+    .param p2    # Landroid/preference/Preference;
 
     const/16 v5, 0x1f4
 
@@ -8390,6 +8501,8 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 2
+    .param p1    # I
+    .param p2    # Landroid/app/Dialog;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

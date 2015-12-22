@@ -58,6 +58,7 @@
 
 .method public constructor <init>(Landroid/widget/ImageView;)V
     .locals 2
+    .param p1    # Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
@@ -90,6 +91,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/GifUtil;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/GifUtil;
 
     iget-boolean v0, p0, Lcom/android/phone/photoring/GifUtil;->bAnimate:Z
 
@@ -98,6 +100,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/GifUtil;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/GifUtil;
 
     iget-object v0, p0, Lcom/android/phone/photoring/GifUtil;->handler:Landroid/os/Handler;
 
@@ -142,6 +145,7 @@
 # virtual methods
 .method public isAGIF(Ljava/lang/String;)Z
     .locals 5
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -195,6 +199,7 @@
 
 .method public setImagePath(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/GifUtil;->file:Ljava/lang/String;
 

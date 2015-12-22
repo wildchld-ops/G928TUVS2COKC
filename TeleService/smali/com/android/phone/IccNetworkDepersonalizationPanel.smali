@@ -44,6 +44,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x3
 
@@ -86,6 +87,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/telephony/IccCardConstants$State;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     const/4 v2, 0x3
 
@@ -161,6 +164,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/telephony/IccCardConstants$State;I)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Lcom/android/internal/telephony/IccCardConstants$State;
+    .param p3    # I
 
     const/4 v2, 0x3
 
@@ -238,6 +244,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPinEntry:Landroid/widget/EditText;
 
@@ -246,6 +253,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
     .locals 1
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     iget v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mRetryCount:I
 
@@ -254,6 +262,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/IccNetworkDepersonalizationPanel;)V
     .locals 0
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     invoke-direct {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->indicateBusy()V
 
@@ -262,6 +271,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/IccNetworkDepersonalizationPanel;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mRetryCount:I
 
@@ -270,6 +281,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/IccNetworkDepersonalizationPanel;)V
     .locals 0
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     invoke-direct {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->indicateError()V
 
@@ -278,6 +290,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/IccNetworkDepersonalizationPanel;)V
     .locals 0
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     invoke-direct {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->hideAlert()V
 
@@ -286,6 +299,8 @@
 
 .method static synthetic access$400(Lcom/android/phone/IccNetworkDepersonalizationPanel;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->log(Ljava/lang/String;)V
 
@@ -294,6 +309,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/IccNetworkDepersonalizationPanel;)V
     .locals 0
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     invoke-direct {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->indicateSuccess()V
 
@@ -302,6 +318,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
     .locals 1
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     iget v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mLockType:I
 
@@ -310,6 +327,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mHandler:Landroid/os/Handler;
 
@@ -318,6 +336,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/IccNetworkDepersonalizationPanel;)I
     .locals 1
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     iget v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mSimId:I
 
@@ -326,6 +345,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/IccNetworkDepersonalizationPanel;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -517,6 +537,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneApp"
 
@@ -547,6 +568,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
+    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x8
 
@@ -767,6 +789,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 

@@ -36,6 +36,8 @@
 
 .method public constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/phone/common/CallLogAsync;)V
     .locals 0
+    .param p1    # Lcom/android/phone/PhoneGlobals;
+    .param p2    # Lcom/android/phone/common/CallLogAsync;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,6 +50,7 @@
 
 .method private getCallerInfoFromConnection(Lcom/android/internal/telephony/Connection;)Lcom/android/internal/telephony/CallerInfo;
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v0, 0x0
 
@@ -98,6 +101,8 @@
 
 .method private getLogNumber(Lcom/android/internal/telephony/Connection;Lcom/android/internal/telephony/CallerInfo;)Ljava/lang/String;
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Connection;
+    .param p2    # Lcom/android/internal/telephony/CallerInfo;
 
     const/4 v0, 0x0
 
@@ -196,6 +201,8 @@
 
 .method private getPresentation(Lcom/android/internal/telephony/Connection;Lcom/android/internal/telephony/CallerInfo;)I
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Connection;
+    .param p2    # Lcom/android/internal/telephony/CallerInfo;
 
     if-nez p2, :cond_2
 
@@ -268,6 +275,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/CallLogger;->LOG_TAG:Ljava/lang/String;
 
@@ -280,12 +288,19 @@
 # virtual methods
 .method public logCall(Lcom/android/internal/telephony/CallerInfo;Ljava/lang/String;IIJJ)V
     .locals 0
+    .param p1    # Lcom/android/internal/telephony/CallerInfo;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
+    .param p4    # I
+    .param p5    # J
+    .param p7    # J
 
     return-void
 .end method
 
 .method public logCall(Lcom/android/internal/telephony/Connection;)V
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v0, 0x1
 
@@ -317,6 +332,8 @@
 
 .method public logCall(Lcom/android/internal/telephony/Connection;I)V
     .locals 12
+    .param p1    # Lcom/android/internal/telephony/Connection;
+    .param p2    # I
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/Connection;->getAddress()Ljava/lang/String;
 

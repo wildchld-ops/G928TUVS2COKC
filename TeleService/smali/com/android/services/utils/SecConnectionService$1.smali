@@ -21,6 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/services/utils/SecConnectionService;Landroid/os/Looper;)V
     .locals 0
+    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/services/utils/SecConnectionService$1;->this$0:Lcom/android/services/utils/SecConnectionService;
 
@@ -33,6 +34,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
+    .param p1    # Landroid/os/Message;
 
     const-string v7, "SecConnectionService"
 

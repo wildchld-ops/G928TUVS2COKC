@@ -36,6 +36,7 @@
 # virtual methods
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 2
+    .param p1    # Landroid/content/DialogInterface;
 
     check-cast p1, Landroid/app/AlertDialog;
 

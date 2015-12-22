@@ -92,6 +92,8 @@
 
 .method public static CopyFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -319,6 +321,7 @@
 
 .method private DeleteFile(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -338,6 +341,9 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->log(Ljava/lang/String;Z)V
 
@@ -346,6 +352,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->log(Ljava/lang/String;)V
 
@@ -354,6 +362,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->DeleteFile(Ljava/lang/String;)V
 
@@ -362,6 +372,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->mContext:Landroid/content/Context;
 
@@ -378,6 +389,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->isAutoUpdateType:Z
 
@@ -386,6 +398,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->saveValuesBeforeUpdate()V
 
@@ -394,6 +407,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->mHandler:Landroid/os/Handler;
 
@@ -402,6 +416,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;
 
     invoke-direct {p0}, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->saveValuesForSuccess()V
 
@@ -410,6 +425,7 @@
 
 .method private static changePermission(Ljava/lang/String;)V
     .locals 4
+    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -445,6 +461,7 @@
 
 .method public static isChinese(C)Z
     .locals 2
+    .param p0    # C
 
     invoke-static {p0}, Ljava/lang/Character$UnicodeBlock;->of(C)Ljava/lang/Character$UnicodeBlock;
 
@@ -488,6 +505,7 @@
 
 .method public static isMessyCode(Ljava/lang/String;)Z
     .locals 4
+    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
@@ -526,6 +544,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneNumberLocatorDownloader"
 
@@ -536,6 +555,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "PhoneNumberLocatorDownloader"
 
@@ -658,6 +679,9 @@
 # virtual methods
 .method getBufferUnicodeString([BII)Ljava/lang/String;
     .locals 8
+    .param p1    # [B
+    .param p2    # I
+    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -830,6 +854,7 @@
 
 .method getVersionInfo(Ljava/lang/String;)Lcom/android/phone/operator/chn/phonenumberlocator/VersionInfo;
     .locals 10
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1117,6 +1142,7 @@
 
 .method public readDownloadFileInfo(Lcom/android/phone/operator/chn/phonenumberlocator/DownloadFileInfo;)V
     .locals 27
+    .param p1    # Lcom/android/phone/operator/chn/phonenumberlocator/DownloadFileInfo;
 
     if-nez p1, :cond_1
 
@@ -1608,6 +1634,7 @@
 
 .method public readUnsignedInt([B)J
     .locals 11
+    .param p1    # [B
 
     const/4 v8, 0x0
 
@@ -1664,6 +1691,7 @@
 
 .method public setCallback(Landroid/os/Handler;)V
     .locals 0
+    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->mHandler:Landroid/os/Handler;
 
@@ -1672,6 +1700,7 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->mContext:Landroid/content/Context;
 
@@ -1680,6 +1709,7 @@
 
 .method public setTypeAuto(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/chn/phonenumberlocator/PhoneNumberLocatorDownloader;->isAutoUpdateType:Z
 

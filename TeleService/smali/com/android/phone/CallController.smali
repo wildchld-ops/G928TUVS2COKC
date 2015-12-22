@@ -46,6 +46,9 @@
 
 .method private constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/phone/CallLogger;Lcom/android/phone/CallGatewayManager;)V
     .locals 2
+    .param p1    # Lcom/android/phone/PhoneGlobals;
+    .param p2    # Lcom/android/phone/CallLogger;
+    .param p3    # Lcom/android/phone/CallGatewayManager;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -145,6 +148,7 @@
 
 .method private checkForOtaspCall(Landroid/content/Intent;)V
     .locals 3
+    .param p1    # Landroid/content/Intent;
 
     invoke-static {p1}, Lcom/android/phone/OtaUtils;->isOtaspCallIntent(Landroid/content/Intent;)Z
 
@@ -194,6 +198,7 @@
 
 .method private checkIfOkToInitiateOutgoingCall(I)Lcom/android/phone/Constants$CallStatusCode;
     .locals 3
+    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -266,6 +271,7 @@
 
 .method private handleOutgoingCallError(Lcom/android/phone/Constants$CallStatusCode;)V
     .locals 7
+    .param p1    # Lcom/android/phone/Constants$CallStatusCode;
 
     const/high16 v6, 0x10800000
 
@@ -434,6 +440,9 @@
 
 .method static init(Lcom/android/phone/PhoneGlobals;Lcom/android/phone/CallLogger;Lcom/android/phone/CallGatewayManager;)Lcom/android/phone/CallController;
     .locals 4
+    .param p0    # Lcom/android/phone/PhoneGlobals;
+    .param p1    # Lcom/android/phone/CallLogger;
+    .param p2    # Lcom/android/phone/CallGatewayManager;
 
     const-class v1, Lcom/android/phone/CallController;
 
@@ -563,6 +572,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "CallController"
 
@@ -573,6 +583,7 @@
 
 .method private placeCallInternal(Landroid/content/Intent;)Lcom/android/phone/Constants$CallStatusCode;
     .locals 32
+    .param p1    # Landroid/content/Intent;
 
     sget-boolean v5, Lcom/android/phone/CallController;->DBG:Z
 
@@ -1408,6 +1419,7 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -1479,6 +1491,7 @@
 
 .method public placeCall(Landroid/content/Intent;)V
     .locals 9
+    .param p1    # Landroid/content/Intent;
 
     new-instance v6, Ljava/lang/StringBuilder;
 

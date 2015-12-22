@@ -35,6 +35,8 @@
 
 .method public constructor <init>(Lcom/android/phone/callsettings/DialogCreatable;I)V
     .locals 3
+    .param p1    # Lcom/android/phone/callsettings/DialogCreatable;
+    .param p2    # I
 
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
@@ -84,6 +86,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;Landroid/content/DialogInterface$OnCancelListener;)Landroid/content/DialogInterface$OnCancelListener;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
+    .param p1    # Landroid/content/DialogInterface$OnCancelListener;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;->mOnCancelListener:Landroid/content/DialogInterface$OnCancelListener;
 
@@ -92,6 +96,8 @@
 
 .method static synthetic access$302(Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;Landroid/content/DialogInterface$OnDismissListener;)Landroid/content/DialogInterface$OnDismissListener;
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;
+    .param p1    # Landroid/content/DialogInterface$OnDismissListener;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;->mOnDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
@@ -110,6 +116,7 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
+    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -127,6 +134,7 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, -0x1
 
@@ -261,6 +269,7 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
+    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
@@ -278,6 +287,7 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -307,6 +317,8 @@
 
 .method public show(Landroid/app/FragmentManager;Ljava/lang/String;)V
     .locals 2
+    .param p1    # Landroid/app/FragmentManager;
+    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;->mParentFragment:Landroid/app/Fragment;
 

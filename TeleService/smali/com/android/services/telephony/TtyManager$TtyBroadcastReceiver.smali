@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/services/telephony/TtyManager;Lcom/android/services/telephony/TtyManager$1;)V
     .locals 0
+    .param p1    # Lcom/android/services/telephony/TtyManager;
+    .param p2    # Lcom/android/services/telephony/TtyManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/TtyManager$TtyBroadcastReceiver;-><init>(Lcom/android/services/telephony/TtyManager;)V
 
@@ -41,6 +43,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x0
 

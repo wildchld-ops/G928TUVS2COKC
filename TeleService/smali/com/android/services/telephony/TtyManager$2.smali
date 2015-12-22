@@ -34,12 +34,14 @@
 
 .method private onDataDisabled(I)V
     .locals 0
+    .param p1    # I
 
     return-void
 .end method
 
 .method private onRegistrationDone(Lcom/samsung/commonimsinterface/imscommon/IMSRegistrationInfo;)V
     .locals 4
+    .param p1    # Lcom/samsung/commonimsinterface/imscommon/IMSRegistrationInfo;
 
     const/4 v3, 0x0
 
@@ -84,6 +86,9 @@
 # virtual methods
 .method public onReceive(IILcom/samsung/commonimsinterface/imscommon/IMSParameter;)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Lcom/samsung/commonimsinterface/imscommon/IMSParameter;
 
     sparse-switch p2, :sswitch_data_0
 

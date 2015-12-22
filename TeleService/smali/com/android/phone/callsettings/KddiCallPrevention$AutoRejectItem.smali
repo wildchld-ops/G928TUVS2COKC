@@ -31,6 +31,10 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/callsettings/KddiCallPrevention;Ljava/lang/String;Ljava/lang/String;ZI)V
     .locals 1
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Z
+    .param p5    # I
 
     iput-object p1, p0, Lcom/android/phone/callsettings/KddiCallPrevention$AutoRejectItem;->this$0:Lcom/android/phone/callsettings/KddiCallPrevention;
 

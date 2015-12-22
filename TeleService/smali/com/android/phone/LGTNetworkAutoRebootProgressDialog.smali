@@ -255,6 +255,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)V
     .locals 0
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     invoke-direct {p0}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->DoSetAutoSequence()V
 
@@ -263,6 +264,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     invoke-direct {p0}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->checkInitState()Z
 
@@ -273,6 +275,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     iget-object v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mAlertDialg:Landroid/app/AlertDialog;
 
@@ -281,6 +284,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
+    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mAlertDialg:Landroid/app/AlertDialog;
 
@@ -289,6 +294,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     iget-boolean v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mIsLteRoamingOn:Z
 
@@ -297,6 +303,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)V
     .locals 0
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     invoke-direct {p0}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->doActivityFinish()V
 
@@ -305,6 +312,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     iget-boolean v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->isDisableRoamingMultiIMSI:Z
 
@@ -313,6 +321,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)I
     .locals 1
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     iget v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mDialogType:I
 
@@ -321,6 +330,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     iget-object v0, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -329,6 +339,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -337,6 +349,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;)V
     .locals 0
+    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;
 
     invoke-direct {p0}, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->reboot()V
 
@@ -534,6 +547,8 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/LGTNetworkAutoRebootProgressDialog;->mWindowManager:Landroid/view/IWindowManager;
@@ -2892,6 +2907,7 @@
 
 .method private transDialgoTypeStringToInt(Ljava/lang/String;)I
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2952,6 +2968,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -3172,6 +3189,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 

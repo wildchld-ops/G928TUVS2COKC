@@ -24,6 +24,7 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
+    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -186,6 +187,7 @@
 
 .method public getSecCallExtra(Ljava/lang/String;)Lcom/android/services/telephony/common/SecCallExtra;
     .locals 6
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -339,6 +341,7 @@
 
 .method public holdCalls(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -512,6 +515,7 @@
 
 .method public onEpdgStateChanged(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -555,6 +559,10 @@
 
 .method public onModifyCall(Ljava/lang/String;ZILjava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
+    .param p3    # I
+    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -614,6 +622,9 @@
 
 .method public onPostDialPause(Ljava/lang/String;CZ)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # C
+    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -671,6 +682,8 @@
 
 .method public onPostDialPauseComplete(Ljava/lang/String;C)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -798,6 +811,7 @@
 
 .method public saveModifiedCallLog(Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -841,6 +855,9 @@
 
 .method public saveParticipantLog(Ljava/lang/String;JJ)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # J
+    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -888,6 +905,7 @@
 
 .method public selectSimForEmergency(I)I
     .locals 6
+    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -943,6 +961,10 @@
 
 .method public setEcholocateCallState(ILandroid/net/Uri;II)V
     .locals 5
+    .param p1    # I
+    .param p2    # Landroid/net/Uri;
+    .param p3    # I
+    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1011,6 +1033,7 @@
 
 .method public setMute(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1064,6 +1087,7 @@
 
 .method public setOtherPartyHold(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1117,6 +1141,8 @@
 
 .method public setSecCallExtra(Ljava/lang/String;Lcom/android/services/telephony/common/SecCallExtra;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/services/telephony/common/SecCallExtra;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1263,6 +1289,7 @@
 
 .method public turnOnBluetooth(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1316,6 +1343,7 @@
 
 .method public turnOnSpeaker(Z)V
     .locals 5
+    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1369,6 +1397,8 @@
 
 .method public updateSecCallExtra(Ljava/lang/String;Lcom/android/services/telephony/common/SecCallExtra;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/services/telephony/common/SecCallExtra;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

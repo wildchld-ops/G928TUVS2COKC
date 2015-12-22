@@ -84,6 +84,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -140,6 +141,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -196,6 +199,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -252,6 +258,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyContactItemContainer;)V
     .locals 0
+    .param p0    # Lcom/android/phone/EmergencyContactItemContainer;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyContactItemContainer;->setContactsId()V
 
@@ -260,6 +267,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItemContainer;->mToast:Landroid/widget/Toast;
 
@@ -294,6 +302,7 @@
 
 .method private getEmergencyContactItemViewIndex(I)I
     .locals 1
+    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -385,6 +394,8 @@
 
 .method private performLongClickHapticFeedback(Landroid/view/View;I)V
     .locals 5
+    .param p1    # Landroid/view/View;
+    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -446,6 +457,8 @@
 
 .method private sendTouchEvent(ILandroid/view/View;)V
     .locals 9
+    .param p1    # I
+    .param p2    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -873,6 +886,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 9
+    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1031,6 +1045,7 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 2
+    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1054,6 +1069,7 @@
 
 .method public removeContacts(Z)V
     .locals 6
+    .param p1    # Z
 
     const-string v4, "EmergencyContactItemContainer"
 
@@ -1246,6 +1262,7 @@
 
 .method public setEmergencyContactExist(Z)V
     .locals 3
+    .param p1    # Z
 
     sput-boolean p1, Lcom/android/phone/EmergencyContactItemContainer;->isContactItemExist:Z
 
@@ -1278,6 +1295,7 @@
 
 .method public setEmergencyDialerInstance(Lcom/android/phone/EmergencyDialer;)V
     .locals 0
+    .param p1    # Lcom/android/phone/EmergencyDialer;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyContactItemContainer;->mEmergencyDialer:Lcom/android/phone/EmergencyDialer;
 
@@ -1286,6 +1304,7 @@
 
 .method public setScreenType(Lcom/android/phone/EmergencyContactItemContainer$ScreenType;)V
     .locals 3
+    .param p1    # Lcom/android/phone/EmergencyContactItemContainer$ScreenType;
 
     const-string v0, "EmergencyContactItemContainer"
 

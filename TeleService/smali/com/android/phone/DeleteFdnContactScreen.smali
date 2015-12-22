@@ -102,6 +102,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/DeleteFdnContactScreen;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/DeleteFdnContactScreen;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/DeleteFdnContactScreen;->log(Ljava/lang/String;)V
 
@@ -110,6 +112,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/DeleteFdnContactScreen;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/DeleteFdnContactScreen;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/DeleteFdnContactScreen;->displayProgress(Z)V
 
@@ -118,6 +122,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/DeleteFdnContactScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/DeleteFdnContactScreen;
 
     invoke-direct {p0}, Lcom/android/phone/DeleteFdnContactScreen;->deleteContact()V
 
@@ -126,6 +131,9 @@
 
 .method static synthetic access$300(Lcom/android/phone/DeleteFdnContactScreen;ZLjava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/DeleteFdnContactScreen;
+    .param p1    # Z
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/DeleteFdnContactScreen;->handleResult(ZLjava/lang/String;)V
 
@@ -295,6 +303,7 @@
 
 .method private displayProgress(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/DeleteFdnContactScreen;->getActivity()Landroid/app/Activity;
 
@@ -340,6 +349,8 @@
 
 .method private handleResult(ZLjava/lang/String;)V
     .locals 6
+    .param p1    # Z
+    .param p2    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -590,6 +601,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneApp"
 
@@ -655,6 +667,7 @@
 
 .method private showStatus(Ljava/lang/CharSequence;)V
     .locals 2
+    .param p1    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_0
 
@@ -676,6 +689,7 @@
 
 .method private validatePin2(Ljava/lang/String;)Z
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -739,6 +753,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 9
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -831,6 +848,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/android/phone/DeleteFdnContactScreen;->resolveIntent()V
 

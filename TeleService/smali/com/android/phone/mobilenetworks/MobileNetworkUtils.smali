@@ -151,6 +151,9 @@
 
 .method public static findPreference(Landroid/preference/PreferenceScreen;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
     .locals 1
+    .param p0    # Landroid/preference/PreferenceScreen;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -219,6 +222,8 @@
 
 .method public static getNetworkModePreferenceTitle(Landroid/content/Context;I)Ljava/lang/String;
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -298,6 +303,9 @@
 
 .method private static getPreference(Landroid/preference/PreferenceScreen;Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
     .locals 4
+    .param p0    # Landroid/preference/PreferenceScreen;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/preference/PreferenceScreen;->getPreferenceCount()I
 
@@ -374,6 +382,7 @@
 
 .method public static getSimNumeric(Z)Ljava/lang/String;
     .locals 8
+    .param p0    # Z
 
     const/4 v7, 0x5
 
@@ -697,6 +706,7 @@
 
 .method public static isRoamingArea(Landroid/content/Context;)Z
     .locals 6
+    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
@@ -806,6 +816,10 @@
 
 .method public static updatePreferenceToSpecificActivity(Landroid/content/Context;Landroid/preference/Preference;Landroid/content/Intent;I)Z
     .locals 8
+    .param p0    # Landroid/content/Context;
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Landroid/content/Intent;
+    .param p3    # I
 
     const/4 v5, 0x0
 

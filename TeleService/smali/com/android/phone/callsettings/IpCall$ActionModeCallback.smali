@@ -37,6 +37,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/callsettings/IpCall;Lcom/android/phone/callsettings/IpCall$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/callsettings/IpCall;
+    .param p2    # Lcom/android/phone/callsettings/IpCall$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/IpCall$ActionModeCallback;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
@@ -47,6 +49,8 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -98,6 +102,8 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/Menu;
 
     const v5, 0x7f100058
 
@@ -342,6 +348,7 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
+    .param p1    # Landroid/view/ActionMode;
 
     const/4 v3, 0x0
 
@@ -517,6 +524,10 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 4
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # I
+    .param p3    # J
+    .param p5    # Z
 
     const/4 v3, 0x1
 
@@ -672,6 +683,7 @@
 
 .method public onPopupItemClick(I)Z
     .locals 3
+    .param p1    # I
 
     # getter for: Lcom/android/phone/callsettings/IpCall;->LOG_TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/phone/callsettings/IpCall;->access$1100()Ljava/lang/String;
@@ -724,6 +736,8 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 4
+    .param p1    # Landroid/view/ActionMode;
+    .param p2    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 

@@ -33,6 +33,7 @@
 # virtual methods
 .method public onConferenceParticipantsChanged(Landroid/telecom/Connection;Ljava/util/List;)V
     .locals 5
+    .param p1    # Landroid/telecom/Connection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -84,6 +85,7 @@
 
 .method public onDestroyed(Landroid/telecom/Connection;)V
     .locals 1
+    .param p1    # Landroid/telecom/Connection;
 
     iget-object v0, p0, Lcom/android/services/telephony/ImsConference$3;->this$0:Lcom/android/services/telephony/ImsConference;
 
@@ -95,6 +97,8 @@
 
 .method public onDisconnected(Landroid/telecom/Connection;Landroid/telecom/DisconnectCause;)V
     .locals 1
+    .param p1    # Landroid/telecom/Connection;
+    .param p2    # Landroid/telecom/DisconnectCause;
 
     iget-object v0, p0, Lcom/android/services/telephony/ImsConference$3;->this$0:Lcom/android/services/telephony/ImsConference;
 
@@ -105,6 +109,8 @@
 
 .method public onStateChanged(Landroid/telecom/Connection;I)V
     .locals 1
+    .param p1    # Landroid/telecom/Connection;
+    .param p2    # I
 
     iget-object v0, p0, Lcom/android/services/telephony/ImsConference$3;->this$0:Lcom/android/services/telephony/ImsConference;
 

@@ -33,6 +33,8 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 3
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting$2;->this$0:Lcom/android/phone/NetworkSetting;
 
@@ -98,6 +100,7 @@
 
 .method public onDataConnectionStateChanged(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting$2;->this$0:Lcom/android/phone/NetworkSetting;
 

@@ -25,6 +25,7 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/PhoneUtils$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/PhoneUtils$1;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneUtils$ConnectionHandler;-><init>()V
 
@@ -35,6 +36,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
+    .param p1    # Landroid/os/Message;
 
     const/16 v4, 0x8
 

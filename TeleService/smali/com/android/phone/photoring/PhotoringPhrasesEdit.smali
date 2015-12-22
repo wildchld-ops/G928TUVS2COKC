@@ -147,6 +147,7 @@
 
 .method private Pick_Video_From_Trim(Landroid/net/Uri;)V
     .locals 12
+    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -393,6 +394,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/PhotoringPhrasesEdit;Landroid/net/Uri;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
+    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->Pick_Video_From_Trim(Landroid/net/Uri;)V
 
@@ -401,6 +404,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)I
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
 
     iget v0, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->mContentType:I
 
@@ -409,6 +413,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)Lcom/android/phone/photoring/PhotoringPhrase;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->phrase:Lcom/android/phone/photoring/PhotoringPhrase;
 
@@ -417,6 +422,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->mtvPhrase:Landroid/widget/EditText;
 
@@ -425,6 +431,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->delItem()V
 
@@ -433,6 +440,8 @@
 
 .method static synthetic access$500(Lcom/android/phone/photoring/PhotoringPhrasesEdit;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->attachMenuSelected(I)V
 
@@ -441,6 +450,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/photoring/PhotoringPhrasesEdit;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit;->mResizingdialog:Landroid/app/ProgressDialog;
 
@@ -449,6 +459,7 @@
 
 .method private attachMenuSelected(I)V
     .locals 8
+    .param p1    # I
 
     invoke-static {p1}, Lcom/android/phone/photoring/PhotoringUtil;->getAttachIntent(I)Landroid/content/Intent;
 
@@ -621,6 +632,7 @@
 
 .method private displayToast(I)V
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -635,6 +647,8 @@
 
 .method private resizeVideo(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -779,6 +793,8 @@
 
 .method private returnSelectedPhrase(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const-string v3, "PhotoringPhrasesEdit"
 
@@ -901,6 +917,7 @@
 
 .method private setImageToView(Ljava/lang/String;)V
     .locals 6
+    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1139,6 +1156,9 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 36
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v14, 0x0
 
@@ -2156,6 +2176,7 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v7, 0x0
 
@@ -2400,6 +2421,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -2882,6 +2904,9 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 4
+    .param p1    # Landroid/view/ContextMenu;
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v3, 0x2
 
@@ -2920,6 +2945,7 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
+    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x6
 
@@ -2998,6 +3024,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 14
+    .param p1    # Landroid/view/MenuItem;
 
     const v13, 0x7f0a037e
 
@@ -3563,6 +3590,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
+    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x2
 

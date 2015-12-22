@@ -36,6 +36,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
+    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/android/phone/callsettings/PresetImage$1;->this$0:Lcom/android/phone/callsettings/PresetImage;
 

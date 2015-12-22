@@ -21,6 +21,9 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/FdnList;Landroid/content/Context;ILandroid/database/Cursor;)V
     .locals 6
+    .param p2    # Landroid/content/Context;
+    .param p3    # I
+    .param p4    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/phone/FdnList$FDNAdapter;->this$0:Lcom/android/phone/FdnList;
 
@@ -51,6 +54,9 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
+    .param p1    # I
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v9, 0x1
 

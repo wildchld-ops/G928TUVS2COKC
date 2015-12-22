@@ -42,6 +42,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,6 +114,9 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/EmergencyCallHelper;Lcom/android/internal/telephony/Phone;Lcom/android/services/telephony/EmergencyCallHelper$Callback;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/EmergencyCallHelper;
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Lcom/android/services/telephony/EmergencyCallHelper$Callback;
 
     invoke-direct {p0, p1, p2}, Lcom/android/services/telephony/EmergencyCallHelper;->startSequenceInternal(Lcom/android/internal/telephony/Phone;Lcom/android/services/telephony/EmergencyCallHelper$Callback;)V
 
@@ -121,6 +125,8 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/EmergencyCallHelper;Landroid/telephony/ServiceState;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/EmergencyCallHelper;
+    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/EmergencyCallHelper;->onServiceStateChanged(Landroid/telephony/ServiceState;)V
 
@@ -129,6 +135,7 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/EmergencyCallHelper;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/EmergencyCallHelper;
 
     invoke-direct {p0}, Lcom/android/services/telephony/EmergencyCallHelper;->onRetryTimeout()V
 
@@ -137,6 +144,7 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/EmergencyCallHelper;)Lcom/android/phone/PhoneGlobals;
     .locals 1
+    .param p0    # Lcom/android/services/telephony/EmergencyCallHelper;
 
     iget-object v0, p0, Lcom/android/services/telephony/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -145,6 +153,8 @@
 
 .method static synthetic access$400(Lcom/android/services/telephony/EmergencyCallHelper;Z)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/EmergencyCallHelper;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/EmergencyCallHelper;->onComplete(Z)V
 
@@ -153,6 +163,7 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/EmergencyCallHelper;)V
     .locals 0
+    .param p0    # Lcom/android/services/telephony/EmergencyCallHelper;
 
     invoke-direct {p0}, Lcom/android/services/telephony/EmergencyCallHelper;->cleanup()V
 
@@ -199,6 +210,8 @@
 
 .method private isOkToCall(ILcom/android/internal/telephony/PhoneConstants$State;)Z
     .locals 7
+    .param p1    # I
+    .param p2    # Lcom/android/internal/telephony/PhoneConstants$State;
 
     const/4 v6, 0x5
 
@@ -317,6 +330,7 @@
 
 .method private onComplete(Z)V
     .locals 2
+    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/services/telephony/EmergencyCallHelper;->mCallback:Lcom/android/services/telephony/EmergencyCallHelper$Callback;
 
@@ -469,6 +483,7 @@
 
 .method private onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 5
+    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v3, 0x1
 
@@ -786,6 +801,8 @@
 
 .method private startSequenceInternal(Lcom/android/internal/telephony/Phone;Lcom/android/services/telephony/EmergencyCallHelper$Callback;)V
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Lcom/android/services/telephony/EmergencyCallHelper$Callback;
 
     const/4 v2, 0x0
 
@@ -894,6 +911,8 @@
 
 .method public startTurnOnRadioSequence(Lcom/android/internal/telephony/Phone;Lcom/android/services/telephony/EmergencyCallHelper$Callback;)V
     .locals 3
+    .param p1    # Lcom/android/internal/telephony/Phone;
+    .param p2    # Lcom/android/services/telephony/EmergencyCallHelper$Callback;
 
     const-string v1, "startTurnOnRadioSequence"
 

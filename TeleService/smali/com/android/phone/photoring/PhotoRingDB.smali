@@ -18,6 +18,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
+    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x4
 
@@ -112,6 +113,8 @@
 # virtual methods
 .method public CheckPathReferencedOther(JLjava/lang/String;)Z
     .locals 11
+    .param p1    # J
+    .param p3    # Ljava/lang/String;
 
     const-string v3, "content_path=?"
 
@@ -185,6 +188,9 @@
 
 .method public CheckPhraseExist(Ljava/lang/String;Ljava/lang/String;I)J
     .locals 12
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # I
 
     const-wide/16 v10, -0x1
 
@@ -366,6 +372,7 @@
 
 .method public deleteCacheDataByID(Ljava/lang/String;)I
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const-string v1, "_id=?"
 
@@ -459,6 +466,7 @@
 
 .method public deletePhrase(Ljava/lang/String;)I
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const-string v1, "_id=?"
 
@@ -520,6 +528,9 @@
 
 .method public getCacheData(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 15
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Z
 
     const/4 v11, 0x0
 
@@ -632,6 +643,7 @@
 
 .method public getCacheDataByCTN(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
+    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -686,6 +698,7 @@
 
 .method public getPhraseById(J)Landroid/database/Cursor;
     .locals 9
+    .param p1    # J
 
     const/4 v5, 0x0
 
@@ -722,6 +735,7 @@
 
 .method public getPhrasesByType(I)Landroid/database/Cursor;
     .locals 8
+    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -758,6 +772,9 @@
 
 .method public insertCacheData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -798,6 +815,10 @@
 
 .method public insertPhrase(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -836,6 +857,9 @@
 
 .method public updateCacheData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -872,6 +896,11 @@
 
 .method public updatePhrase(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Ljava/lang/String;
+    .param p4    # Ljava/lang/String;
+    .param p5    # I
 
     new-instance v0, Landroid/content/ContentValues;
 

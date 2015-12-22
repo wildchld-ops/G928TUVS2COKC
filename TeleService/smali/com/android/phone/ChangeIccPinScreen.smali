@@ -68,6 +68,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/ChangeIccPinScreen;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ChangeIccPinScreen;->handleResult(Landroid/os/AsyncResult;)V
 
@@ -76,6 +78,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mOldPin:Landroid/widget/EditText;
 
@@ -84,6 +87,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/ChangeIccPinScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mChangePin2:Z
 
@@ -92,6 +96,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mPUKCode:Landroid/widget/EditText;
 
@@ -100,6 +105,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/Button;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mPUKSubmit:Landroid/widget/Button;
 
@@ -108,6 +114,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/ChangeIccPinScreen;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mPUKAlert:Landroid/app/AlertDialog;
 
@@ -116,6 +123,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mNewPin1:Landroid/widget/EditText;
 
@@ -124,6 +132,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/EditText;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mNewPin2:Landroid/widget/EditText;
 
@@ -132,6 +141,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/Button;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mButton:Landroid/widget/Button;
 
@@ -140,6 +150,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/ChangeIccPinScreen;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -148,6 +159,9 @@
 
 .method static synthetic access$600(Lcom/android/phone/ChangeIccPinScreen;Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/ChangeIccPinScreen;->validateNewPin(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -158,6 +172,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/ChangeIccPinScreen;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mMismatchError:Landroid/widget/TextView;
 
@@ -166,6 +181,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/ChangeIccPinScreen;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen;->mHandler:Landroid/os/Handler;
 
@@ -174,6 +190,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/ChangeIccPinScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ChangeIccPinScreen;
 
     invoke-direct {p0}, Lcom/android/phone/ChangeIccPinScreen;->reset()V
 
@@ -232,6 +249,7 @@
 
 .method private handleResult(Landroid/os/AsyncResult;)V
     .locals 6
+    .param p1    # Landroid/os/AsyncResult;
 
     const/16 v4, 0x8
 
@@ -463,6 +481,8 @@
 
 .method private validateNewPin(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -505,6 +525,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 

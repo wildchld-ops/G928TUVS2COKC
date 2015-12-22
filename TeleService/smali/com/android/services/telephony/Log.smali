@@ -82,6 +82,9 @@
 
 .method private static varargs buildMessage(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 9
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     const/4 v8, 0x2
 
@@ -174,6 +177,9 @@
 
 .method public static varargs d(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->DEBUG:Z
 
@@ -197,6 +203,9 @@
 
 .method public static varargs d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->DEBUG:Z
 
@@ -216,6 +225,10 @@
 
 .method public static varargs e(Ljava/lang/Object;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/Throwable;
+    .param p2    # Ljava/lang/String;
+    .param p3    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->ERROR:Z
 
@@ -239,6 +252,10 @@
 
 .method public static varargs e(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/Throwable;
+    .param p2    # Ljava/lang/String;
+    .param p3    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->ERROR:Z
 
@@ -258,6 +275,7 @@
 
 .method private static encodeHex([B)Ljava/lang/String;
     .locals 5
+    .param p0    # [B
 
     const/16 v4, 0x10
 
@@ -307,6 +325,7 @@
 
 .method private static getPrefixFromObject(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
+    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -329,6 +348,9 @@
 
 .method public static varargs i(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->INFO:Z
 
@@ -352,6 +374,9 @@
 
 .method public static varargs i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->INFO:Z
 
@@ -371,6 +396,7 @@
 
 .method public static isLoggable(I)Z
     .locals 1
+    .param p0    # I
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->SHIP_BUILD:Z
 
@@ -398,6 +424,7 @@
 
 .method public static pii(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
+    .param p0    # Ljava/lang/Object;
 
     if-eqz p0, :cond_0
 
@@ -455,6 +482,7 @@
 
 .method private static secureHash([B)Ljava/lang/String;
     .locals 4
+    .param p0    # [B
 
     :try_start_0
     const-string v3, "SHA-1"
@@ -488,6 +516,9 @@
 
 .method public static varargs v(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->VERBOSE:Z
 
@@ -511,6 +542,9 @@
 
 .method public static varargs w(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->WARN:Z
 
@@ -534,6 +568,9 @@
 
 .method public static varargs w(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/services/telephony/Log;->WARN:Z
 
@@ -553,6 +590,9 @@
 
 .method public static varargs wtf(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 3
+    .param p0    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/String;
+    .param p2    # [Ljava/lang/Object;
 
     invoke-static {p0}, Lcom/android/services/telephony/Log;->getPrefixFromObject(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -575,6 +615,10 @@
 
 .method public static varargs wtf(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
+    .param p0    # Ljava/lang/String;
+    .param p1    # Ljava/lang/Throwable;
+    .param p2    # Ljava/lang/String;
+    .param p3    # [Ljava/lang/Object;
 
     const-string v0, "Telephony"
 

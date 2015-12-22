@@ -49,6 +49,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/settings/PhoneAccountSettingsFragment;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/settings/PhoneAccountSettingsFragment;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/settings/PhoneAccountSettingsFragment;->handleSipReceiveCallsOption(Z)V
 
@@ -103,6 +105,7 @@
 
 .method private declared-synchronized handleSipReceiveCallsOption(Z)V
     .locals 3
+    .param p1    # Z
 
     monitor-enter p0
 
@@ -308,6 +311,7 @@
 # virtual methods
 .method public onAccountChanged(Lcom/android/phone/settings/AccountSelectionPreference;)V
     .locals 1
+    .param p1    # Lcom/android/phone/settings/AccountSelectionPreference;
 
     iget-object v0, p0, Lcom/android/phone/settings/PhoneAccountSettingsFragment;->mSelectCallAssistant:Lcom/android/phone/settings/AccountSelectionPreference;
 
@@ -321,6 +325,8 @@
 
 .method public onAccountSelected(Lcom/android/phone/settings/AccountSelectionPreference;Landroid/telecom/PhoneAccountHandle;)Z
     .locals 2
+    .param p1    # Lcom/android/phone/settings/AccountSelectionPreference;
+    .param p2    # Landroid/telecom/PhoneAccountHandle;
 
     const/4 v0, 0x1
 
@@ -354,6 +360,7 @@
 
 .method public onAccountSelectionDialogShow(Lcom/android/phone/settings/AccountSelectionPreference;)V
     .locals 1
+    .param p1    # Lcom/android/phone/settings/AccountSelectionPreference;
 
     iget-object v0, p0, Lcom/android/phone/settings/PhoneAccountSettingsFragment;->mDefaultOutgoingAccount:Lcom/android/phone/settings/AccountSelectionPreference;
 
@@ -379,6 +386,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
+    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -387,6 +395,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -415,6 +424,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/phone/settings/PhoneAccountSettingsFragment;->getActivity()Landroid/app/Activity;
 
@@ -441,6 +453,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -517,6 +531,7 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 7
+    .param p1    # Landroid/preference/Preference;
 
     iget-object v4, p0, Lcom/android/phone/settings/PhoneAccountSettingsFragment;->mConfigureCallAssistant:Landroid/preference/Preference;
 

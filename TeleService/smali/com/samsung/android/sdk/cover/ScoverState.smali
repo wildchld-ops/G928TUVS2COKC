@@ -50,6 +50,11 @@
 
 .method public constructor <init>(ZIIII)V
     .locals 1
+    .param p1    # Z
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -74,6 +79,12 @@
 
 .method public constructor <init>(ZIIIIZ)V
     .locals 1
+    .param p1    # Z
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,6 +109,13 @@
 
 .method public constructor <init>(ZIIIIZI)V
     .locals 0
+    .param p1    # Z
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
+    .param p6    # Z
+    .param p7    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

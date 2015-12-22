@@ -161,6 +161,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     invoke-direct {p0}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->onPhoneStateChanged()V
 
@@ -169,6 +170,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;Landroid/os/AsyncResult;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
+    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->onDisconnect(Landroid/os/AsyncResult;)V
 
@@ -177,6 +180,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->restartSyncCall(I)V
 
@@ -185,6 +190,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->mHandler:Landroid/os/Handler;
 
@@ -193,6 +199,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)Landroid/os/Bundle;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->CallDonditionParam:Landroid/os/Bundle;
 
@@ -201,6 +208,8 @@
 
 .method static synthetic access$202(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
+    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->CallDonditionParam:Landroid/os/Bundle;
 
@@ -209,6 +218,9 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->sendBroadcastIntent(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -217,6 +229,9 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;Ljava/lang/String;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->log(Ljava/lang/String;Z)V
 
@@ -225,6 +240,7 @@
 
 .method static synthetic access$500(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->log(Ljava/lang/String;)V
 
@@ -233,6 +249,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     invoke-direct {p0}, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->actionTurnOnSpeker()V
 
@@ -241,6 +258,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)Lcom/android/internal/telephony/CallManager;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -249,6 +267,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)Landroid/os/Bundle;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->mIntentParamFgCall:Landroid/os/Bundle;
 
@@ -257,6 +276,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->mAutoReplyIntentHandler:Landroid/os/Handler;
 
@@ -369,6 +389,7 @@
 
 .method private convertParticipantToKDDICallState(Lcom/android/phone/ims/Participant$State;)Lcom/android/phone/operator/jpn/SyncCallServiceMgr$KDDICallState;
     .locals 2
+    .param p1    # Lcom/android/phone/ims/Participant$State;
 
     sget-object v0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr$5;->$SwitchMap$com$android$phone$ims$Participant$State:[I
 
@@ -428,6 +449,7 @@
 
 .method private convertToKDDICallState(Lcom/android/internal/telephony/Call$State;)Lcom/android/phone/operator/jpn/SyncCallServiceMgr$KDDICallState;
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/Call$State;
 
     sget-object v0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr$5;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
@@ -507,6 +529,7 @@
 
 .method private convertToKDDICallType(I)Lcom/android/phone/operator/jpn/SyncCallServiceMgr$KDDICallType;
     .locals 1
+    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -630,6 +653,7 @@
 
 .method private getPhoneNumber(Lcom/android/internal/telephony/Connection;)Ljava/lang/String;
     .locals 4
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v3, 0x0
 
@@ -871,6 +895,7 @@
 
 .method private initiateSCover(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -939,6 +964,7 @@
 
 .method public static isAutoRejectCall(Lcom/android/internal/telephony/Connection;)Z
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Connection;
 
     if-nez p0, :cond_0
 
@@ -965,6 +991,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->DBG:Z
 
@@ -980,6 +1007,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     sget-object v0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->TAG:Ljava/lang/String;
 
@@ -990,6 +1019,9 @@
 
 .method private makeIndex(Ljava/lang/String;Lcom/android/internal/telephony/Connection;Z)J
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/internal/telephony/Connection;
+    .param p3    # Z
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1092,6 +1124,7 @@
 
 .method private needToBlockThisIntent(Landroid/os/Bundle;)Z
     .locals 12
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -1436,6 +1469,7 @@
 
 .method private onDisconnect(Landroid/os/AsyncResult;)V
     .locals 10
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v9, 0x1
 
@@ -3197,6 +3231,7 @@
 
 .method private registerCallReceiver(Landroid/content/BroadcastReceiver;)V
     .locals 2
+    .param p1    # Landroid/content/BroadcastReceiver;
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -3227,6 +3262,7 @@
 
 .method private restartSyncCall(I)V
     .locals 4
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr;->mHandler:Landroid/os/Handler;
 
@@ -3251,6 +3287,8 @@
 
 .method private sendBroadcastIntent(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -3383,6 +3421,7 @@
 
 .method private sendSyncCallDisconnetIntent(Landroid/os/Bundle;)V
     .locals 6
+    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "sendSyncCallDisconnetIntent"
 
@@ -3505,6 +3544,9 @@
 
 .method private updateSyncCallStateIntentParams(Lcom/android/internal/telephony/Call;Landroid/os/Bundle;Lcom/android/internal/telephony/Connection;)Z
     .locals 16
+    .param p1    # Lcom/android/internal/telephony/Call;
+    .param p2    # Landroid/os/Bundle;
+    .param p3    # Lcom/android/internal/telephony/Connection;
 
     const/4 v7, 0x0
 
@@ -4063,6 +4105,9 @@
 # virtual methods
 .method public broadcastSyncCallGroupCallStateIntent(Ljava/lang/String;Lcom/android/phone/ims/Participant$State;Lcom/android/internal/telephony/Connection;)Z
     .locals 10
+    .param p1    # Ljava/lang/String;
+    .param p2    # Lcom/android/phone/ims/Participant$State;
+    .param p3    # Lcom/android/internal/telephony/Connection;
 
     const/4 v7, 0x1
 
@@ -4301,6 +4346,9 @@
 
 .method public broadcastSyncCallMergeCallStateIntent(Lcom/android/internal/telephony/Call;Lcom/android/internal/telephony/Connection;Landroid/os/Bundle;)Z
     .locals 10
+    .param p1    # Lcom/android/internal/telephony/Call;
+    .param p2    # Lcom/android/internal/telephony/Connection;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 

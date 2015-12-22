@@ -218,6 +218,7 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -228,6 +229,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, -0x1
 
@@ -602,6 +605,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/NetworkModeSpinner;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->LOG_TAG:Ljava/lang/String;
 
@@ -610,6 +614,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/NetworkModeSpinner;)Landroid/widget/ListPopupWindow;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mListPopupWindow:Landroid/widget/ListPopupWindow;
 
@@ -618,6 +623,7 @@
 
 .method static synthetic access$1000(Lcom/android/phone/NetworkModeSpinner;)[Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mPhones:[Lcom/android/internal/telephony/Phone;
 
@@ -626,6 +632,7 @@
 
 .method static synthetic access$1100(Lcom/android/phone/NetworkModeSpinner;)I
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget v0, p0, Lcom/android/phone/NetworkModeSpinner;->mActivePhoneId:I
 
@@ -642,6 +649,7 @@
 
 .method static synthetic access$1202(I)I
     .locals 0
+    .param p0    # I
 
     sput p0, Lcom/android/phone/NetworkModeSpinner;->sChangeNetworkType_Step2:I
 
@@ -650,6 +658,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/NetworkModeSpinner;)I
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget v0, p0, Lcom/android/phone/NetworkModeSpinner;->mNetworkTypeForStep2:I
 
@@ -658,6 +667,8 @@
 
 .method static synthetic access$1302(Lcom/android/phone/NetworkModeSpinner;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkModeSpinner;->mNetworkTypeForStep2:I
 
@@ -674,6 +685,7 @@
 
 .method static synthetic access$1402(I)I
     .locals 0
+    .param p0    # I
 
     sput p0, Lcom/android/phone/NetworkModeSpinner;->sNetworkTypeSim0:I
 
@@ -690,6 +702,7 @@
 
 .method static synthetic access$1502(I)I
     .locals 0
+    .param p0    # I
 
     sput p0, Lcom/android/phone/NetworkModeSpinner;->sNetworkTypeSim1:I
 
@@ -698,6 +711,7 @@
 
 .method static synthetic access$1600(Lcom/android/phone/NetworkModeSpinner;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mValues:Ljava/util/ArrayList;
 
@@ -706,6 +720,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/NetworkModeSpinner;)[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->summaryString:[Ljava/lang/String;
 
@@ -714,6 +729,7 @@
 
 .method static synthetic access$1800(Lcom/android/phone/NetworkModeSpinner;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -730,6 +746,7 @@
 
 .method static synthetic access$1902(Z)Z
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/NetworkModeSpinner;->sSetEnabled:Z
 
@@ -738,6 +755,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/NetworkModeSpinner;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->openListPopupWindow()V
 
@@ -746,6 +764,7 @@
 
 .method static synthetic access$2000(Lcom/android/phone/NetworkModeSpinner;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mContext:Landroid/content/Context;
 
@@ -754,6 +773,8 @@
 
 .method static synthetic access$2100(Lcom/android/phone/NetworkModeSpinner;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModeSpinner;->setMobileDataEnabled(Z)V
 
@@ -762,6 +783,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/NetworkModeSpinner;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkModeSpinner;->mIsDisconnectingData:Z
 
@@ -770,6 +792,8 @@
 
 .method static synthetic access$2202(Lcom/android/phone/NetworkModeSpinner;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModeSpinner;->mIsDisconnectingData:Z
 
@@ -778,6 +802,8 @@
 
 .method static synthetic access$2302(Lcom/android/phone/NetworkModeSpinner;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModeSpinner;->mTriggerChangeNetwork:Z
 
@@ -786,6 +812,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/NetworkModeSpinner;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mDialog:Landroid/app/AlertDialog;
 
@@ -794,6 +821,8 @@
 
 .method static synthetic access$2500(Lcom/android/phone/NetworkModeSpinner;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModeSpinner;->updatePreferredNetworkModeSummary(I)V
 
@@ -802,6 +831,7 @@
 
 .method static synthetic access$2600(Lcom/android/phone/NetworkModeSpinner;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->getValue()Ljava/lang/String;
 
@@ -812,6 +842,8 @@
 
 .method static synthetic access$2700(Lcom/android/phone/NetworkModeSpinner;Z)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModeSpinner;->setEnabledMenu(Z)V
 
@@ -820,6 +852,7 @@
 
 .method static synthetic access$2800(Lcom/android/phone/NetworkModeSpinner;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkModeSpinner;->mDisplayDataPreferredSlotChangeDialog:Z
 
@@ -828,6 +861,8 @@
 
 .method static synthetic access$2802(Lcom/android/phone/NetworkModeSpinner;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModeSpinner;->mDisplayDataPreferredSlotChangeDialog:Z
 
@@ -836,6 +871,7 @@
 
 .method static synthetic access$2902(Z)Z
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/NetworkModeSpinner;->sSetEnableForCrossMapping:Z
 
@@ -844,6 +880,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/NetworkModeSpinner;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->displayDataPreferredSlotChangeDialog()V
 
@@ -852,6 +889,7 @@
 
 .method static synthetic access$3100(Lcom/android/phone/NetworkModeSpinner;)Landroid/preference/TwoStatePreference;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mButtonDataEnabled:Landroid/preference/TwoStatePreference;
 
@@ -860,6 +898,8 @@
 
 .method static synthetic access$3102(Lcom/android/phone/NetworkModeSpinner;Landroid/preference/TwoStatePreference;)Landroid/preference/TwoStatePreference;
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Landroid/preference/TwoStatePreference;
 
     iput-object p1, p0, Lcom/android/phone/NetworkModeSpinner;->mButtonDataEnabled:Landroid/preference/TwoStatePreference;
 
@@ -868,6 +908,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/NetworkModeSpinner;)[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->getLTEsummary()[Ljava/lang/String;
 
@@ -878,6 +919,7 @@
 
 .method static synthetic access$3300(Lcom/android/phone/NetworkModeSpinner;)[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->get3Gsummary()[Ljava/lang/String;
 
@@ -896,6 +938,9 @@
 
 .method static synthetic access$3500(Lcom/android/phone/NetworkModeSpinner;II)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # I
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/NetworkModeSpinner;->setPreferredNetworkMode(II)V
 
@@ -904,6 +949,8 @@
 
 .method static synthetic access$3602(Lcom/android/phone/NetworkModeSpinner;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModeSpinner;->mIsOtherPhone3G:Z
 
@@ -912,6 +959,7 @@
 
 .method static synthetic access$3700(Lcom/android/phone/NetworkModeSpinner;)Landroid/telephony/TelephonyManager;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -920,6 +968,7 @@
 
 .method static synthetic access$3802(Z)Z
     .locals 0
+    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/NetworkModeSpinner;->mImsDereg:Z
 
@@ -928,6 +977,7 @@
 
 .method static synthetic access$4000(Lcom/android/phone/NetworkModeSpinner;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->changeNetworkType()V
 
@@ -936,6 +986,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/NetworkModeSpinner;)V
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModeSpinner;->changeDataServiceForMultisim()V
 
@@ -944,6 +995,8 @@
 
 .method static synthetic access$702(Lcom/android/phone/NetworkModeSpinner;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkModeSpinner;->mOldNetworkType:I
 
@@ -952,6 +1005,7 @@
 
 .method static synthetic access$800(Lcom/android/phone/NetworkModeSpinner;)I
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget v0, p0, Lcom/android/phone/NetworkModeSpinner;->mNetworkType:I
 
@@ -960,6 +1014,8 @@
 
 .method static synthetic access$802(Lcom/android/phone/NetworkModeSpinner;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkModeSpinner;->mNetworkType:I
 
@@ -968,6 +1024,7 @@
 
 .method static synthetic access$900(Lcom/android/phone/NetworkModeSpinner;)Lcom/android/phone/NetworkModeSpinner$MyHandler;
     .locals 1
+    .param p0    # Lcom/android/phone/NetworkModeSpinner;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mHandler:Lcom/android/phone/NetworkModeSpinner$MyHandler;
 
@@ -1609,6 +1666,7 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
+    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1911,6 +1969,7 @@
 
 .method private dualSimMPS_DataLock(I)Z
     .locals 5
+    .param p1    # I
 
     const-string v2, "AddDataLock"
 
@@ -3103,6 +3162,7 @@
 
 .method private isCdmaIncluded(I)Z
     .locals 1
+    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -3905,6 +3965,7 @@
 
 .method private setEnabledMenu(Z)V
     .locals 0
+    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/phone/NetworkModeSpinner;->setEnabled(Z)V
 
@@ -4914,6 +4975,7 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 4
+    .param p1    # Z
 
     const-string v1, "dcm_change_data_enable_function"
 
@@ -5830,6 +5892,8 @@
 
 .method private setPreferredNetworkMode(II)V
     .locals 5
+    .param p1    # I
+    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -5900,6 +5964,7 @@
 
 .method private updatePreferredNetworkModeSummary(I)V
     .locals 3
+    .param p1    # I
 
     const v2, 0x7f0a0116
 
@@ -6342,6 +6407,8 @@
 
 .method public addItem(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->mAdapter:Landroid/widget/ArrayAdapter;
 
@@ -6839,6 +6906,7 @@
 
 .method public dataConnectionStateChanged(I)V
     .locals 6
+    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -7244,6 +7312,7 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -7287,6 +7356,7 @@
 
 .method public sendBroadcastButtonEnableIntent(Z)V
     .locals 4
+    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -7355,6 +7425,7 @@
 
 .method public setActivityExist(Z)V
     .locals 0
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModeSpinner;->mActivityExist:Z
 
@@ -7363,6 +7434,7 @@
 
 .method public setEntries(Ljava/util/List;)V
     .locals 0
+    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/phone/NetworkModeSpinner;->mEntries:Ljava/util/List;
 
@@ -7371,6 +7443,7 @@
 
 .method public setEntryValues(Ljava/util/List;)V
     .locals 0
+    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/phone/NetworkModeSpinner;->mEntryValues:Ljava/util/List;
 
@@ -7483,6 +7556,7 @@
 
 .method public setNetworkModePreference(I)V
     .locals 3
+    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7582,6 +7656,7 @@
 
 .method public setSelectedItem(I)V
     .locals 10
+    .param p1    # I
 
     const v9, 0x7f0a0282
 
@@ -7982,6 +8057,7 @@
 
 .method public setSelectedItemType2(I)V
     .locals 7
+    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -8258,6 +8334,8 @@
 
 .method public showRebootDialog(II)V
     .locals 3
+    .param p1    # I
+    .param p2    # I
 
     iget-object v0, p0, Lcom/android/phone/NetworkModeSpinner;->LOG_TAG:Ljava/lang/String;
 

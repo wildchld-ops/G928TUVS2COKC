@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/NetworkNotificationUI;Lcom/android/phone/NetworkNotificationUI$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/NetworkNotificationUI;
+    .param p2    # Lcom/android/phone/NetworkNotificationUI$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkNotificationUI$NetworkNotificationUIHandler;-><init>(Lcom/android/phone/NetworkNotificationUI;)V
 
@@ -41,6 +43,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     const-string v1, "gsm.sim.state"
 

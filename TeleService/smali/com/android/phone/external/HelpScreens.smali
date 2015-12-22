@@ -149,6 +149,7 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
+    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/android/phone/external/HelpScreens;->getMetaData()V
 

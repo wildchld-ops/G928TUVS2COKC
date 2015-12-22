@@ -48,6 +48,7 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,6 +97,7 @@
 
 .method static synthetic access$102(I)I
     .locals 0
+    .param p0    # I
 
     sput p0, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->prevAnswerMsgCnt:I
 
@@ -104,6 +106,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;)V
     .locals 0
+    .param p0    # Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;
 
     invoke-direct {p0}, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->updateContactInMemo()V
 
@@ -112,6 +115,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->getContactName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -130,6 +135,7 @@
 
 .method private formatNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -164,6 +170,7 @@
 
 .method private getContactName(Ljava/lang/String;)Ljava/lang/String;
     .locals 18
+    .param p1    # Ljava/lang/String;
 
     const/16 v16, 0x0
 
@@ -534,6 +541,7 @@
 
 .method public displayAnswerMessageToast(Ljava/lang/String;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -657,6 +665,7 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->LOG_TAG:Ljava/lang/String;
 
@@ -1077,6 +1086,7 @@
 
 .method public onGoingAnswerMemo(Z)V
     .locals 2
+    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1105,6 +1115,7 @@
 
 .method onGoingAnswerMemoNotification(Z)V
     .locals 12
+    .param p1    # Z
 
     const v11, 0x181ce
 
@@ -1309,6 +1320,7 @@
 
 .method public updateAutoAnswerMemo(Landroid/content/SharedPreferences;)V
     .locals 3
+    .param p1    # Landroid/content/SharedPreferences;
 
     sget-object v0, Lcom/android/phone/operator/jpn/dcm/AnsweringMessage;->mContext:Landroid/content/Context;
 

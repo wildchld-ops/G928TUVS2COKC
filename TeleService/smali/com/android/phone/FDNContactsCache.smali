@@ -100,6 +100,7 @@
 
 .method static synthetic access$000(Ljava/lang/String;)V
     .locals 0
+    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/FDNContactsCache;->log(Ljava/lang/String;)V
 
@@ -108,6 +109,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/FDNContactsCache;)Ljava/lang/Object;
     .locals 1
+    .param p0    # Lcom/android/phone/FDNContactsCache;
 
     iget-object v0, p0, Lcom/android/phone/FDNContactsCache;->mCacheLock:Ljava/lang/Object;
 
@@ -116,6 +118,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/FDNContactsCache;)V
     .locals 0
+    .param p0    # Lcom/android/phone/FDNContactsCache;
 
     invoke-direct {p0}, Lcom/android/phone/FDNContactsCache;->sendResultForFDNContactQueryToAllMsgInQueue()V
 
@@ -163,6 +166,7 @@
 
 .method public static getNameFromMsg(Landroid/os/Message;)Ljava/lang/String;
     .locals 3
+    .param p0    # Landroid/os/Message;
 
     const-string v1, ""
 
@@ -186,6 +190,7 @@
 
 .method private getRecord(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
+    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -304,6 +309,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "FDNContactsCache"
 
@@ -430,6 +436,8 @@
 
 .method private sendResultForFDNContactQueryToMessage(Ljava/lang/String;Landroid/os/Message;)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/os/Message;
 
     const-string v2, "sendResultForFDNContactQueryToMessage"
 
@@ -495,6 +503,7 @@
 
 .method private startLoading(Landroid/content/Context;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -599,6 +608,9 @@
 
 .method public queryFDNContactByNumber(Landroid/content/Context;Ljava/lang/String;Landroid/os/Message;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
+    .param p2    # Ljava/lang/String;
+    .param p3    # Landroid/os/Message;
 
     iget-boolean v0, p0, Lcom/android/phone/FDNContactsCache;->mbDone:Z
 

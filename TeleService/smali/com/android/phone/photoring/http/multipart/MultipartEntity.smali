@@ -64,6 +64,7 @@
 
 .method public constructor <init>([Lcom/android/phone/photoring/http/multipart/Part;)V
     .locals 1
+    .param p1    # [Lcom/android/phone/photoring/http/multipart/Part;
 
     sget-object v0, Lcom/android/phone/photoring/http/multipart/MultipartEntity;->MULTIPART_BOUNDARY:Ljava/lang/String;
 
@@ -78,6 +79,8 @@
 
 .method public constructor <init>([Lcom/android/phone/photoring/http/multipart/Part;Ljava/lang/String;)V
     .locals 2
+    .param p1    # [Lcom/android/phone/photoring/http/multipart/Part;
+    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -111,6 +114,7 @@
 
 .method private generateMultipartBoundary(Ljava/lang/String;)[B
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -325,6 +329,7 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 2
+    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

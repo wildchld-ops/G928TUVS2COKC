@@ -30,6 +30,7 @@
 
 .method public constructor <init>(I)V
     .locals 3
+    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -304,6 +305,7 @@
 
 .method private dataChargingCutOff(Z)V
     .locals 9
+    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -536,6 +538,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "FileWriteThread_Telephony"
 
@@ -546,6 +549,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     const-string v0, "FileWriteThread_Telephony"
 
@@ -897,6 +902,7 @@
 
 .method private writeUartEnFile(Z)V
     .locals 10
+    .param p1    # Z
 
     const/4 v9, 0x1
 

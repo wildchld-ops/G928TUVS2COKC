@@ -27,6 +27,7 @@
 # virtual methods
 .method public build(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;
     .locals 25
+    .param p1    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     new-instance v1, Landroid/support/v4/app/NotificationCompatApi20$Builder;
 

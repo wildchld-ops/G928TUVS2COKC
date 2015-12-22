@@ -159,6 +159,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -167,6 +168,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->isDialogCreated:Z
 
@@ -175,6 +177,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->isDialogCreated:Z
 
@@ -183,6 +187,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->alertdialogSearch()V
 
@@ -199,6 +204,8 @@
 
 .method private addAutoRejectNumber(Ljava/lang/String;I)J
     .locals 8
+    .param p1    # Ljava/lang/String;
+    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -315,6 +322,7 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;)Z
     .locals 10
+    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -588,6 +596,7 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->mToast:Landroid/widget/Toast;
 
@@ -631,6 +640,7 @@
 
 .method private isAvaliableNumber(Ljava/lang/String;)Z
     .locals 4
+    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -672,6 +682,10 @@
 
 .method private updateAutoRejectNumber(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
     .locals 6
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/Integer;
+    .param p3    # Ljava/lang/Integer;
+    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -710,6 +724,7 @@
 
 .method private updateMatchCriteria(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->mMatchCriteriaType:Landroid/preference/ListPreference;
 
@@ -782,6 +797,7 @@
 # virtual methods
 .method public clickCancelBtn(Landroid/view/View;)V
     .locals 3
+    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->getActivity()Landroid/app/Activity;
 
@@ -800,6 +816,7 @@
 
 .method public clickSaveBtn(Landroid/view/View;)V
     .locals 8
+    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -1076,6 +1093,7 @@
 
 .method isUnknownNumber(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1084,6 +1102,9 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 10
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -1296,6 +1317,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
+    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "EditAutoRejectSVideoCallcreen"
 
@@ -1333,6 +1355,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1425,6 +1448,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 10
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const v9, 0x7f0a0287
 
@@ -1563,6 +1588,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -1817,6 +1845,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 
@@ -1882,6 +1911,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->mMatchCriteriaType:Landroid/preference/ListPreference;
 
@@ -1940,6 +1971,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 8
+    .param p1    # Landroid/view/Menu;
 
     const/4 v5, 0x4
 

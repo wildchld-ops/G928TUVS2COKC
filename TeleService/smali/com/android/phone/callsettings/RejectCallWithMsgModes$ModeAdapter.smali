@@ -38,6 +38,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/callsettings/RejectCallWithMsgModes;Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 2
+    .param p2    # Landroid/content/Context;
+    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -84,6 +86,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;->mItems:Ljava/util/ArrayList;
 
@@ -94,6 +97,9 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
+    .param p1    # I
+    .param p2    # Landroid/view/View;
+    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

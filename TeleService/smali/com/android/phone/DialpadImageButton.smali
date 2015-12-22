@@ -12,6 +12,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;)V
 
@@ -22,6 +23,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -32,6 +35,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -42,6 +48,10 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 0
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
+    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
@@ -52,6 +62,7 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 2
+    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -82,6 +93,9 @@
 
 .method public static setRippleSize(Landroid/view/View;II)V
     .locals 11
+    .param p0    # Landroid/view/View;
+    .param p1    # I
+    .param p2    # I
 
     const/4 v7, -0x1
 
@@ -141,6 +155,7 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
+    .param p1    # Landroid/graphics/Canvas;
 
     iget v0, p0, Lcom/android/phone/DialpadImageButton;->mRippleEffectWidth:I
 

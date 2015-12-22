@@ -47,6 +47,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/EditIpCallScreen;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/EditIpCallScreen;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -57,6 +58,7 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
+    .param p1    # Landroid/text/Editable;
 
     const-string v0, "CreateIpNumber"
 
@@ -69,12 +71,17 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
+    .param p1    # Ljava/lang/CharSequence;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
+    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Configuration"
 
@@ -95,6 +102,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -171,6 +179,8 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
+    .param p1    # Landroid/view/Menu;
+    .param p2    # Landroid/view/MenuInflater;
 
     const v7, 0x7f0a0287
 
@@ -281,6 +291,9 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
+    .param p1    # Landroid/view/LayoutInflater;
+    .param p2    # Landroid/view/ViewGroup;
+    .param p3    # Landroid/os/Bundle;
 
     const/4 v9, 0x1
 
@@ -574,6 +587,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 
@@ -613,6 +627,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 8
+    .param p1    # Landroid/view/Menu;
 
     const/4 v5, 0x4
 
@@ -744,12 +759,17 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
+    .param p1    # Ljava/lang/CharSequence;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
 
     return-void
 .end method
 
 .method public softkeyLeftRun(Landroid/view/View;)V
     .locals 4
+    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getIntent()Landroid/content/Intent;
 
@@ -799,6 +819,7 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 3
+    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 

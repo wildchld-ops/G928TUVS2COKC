@@ -29,6 +29,8 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/CustomListPreference$CustomListPreferenceAdapter;Landroid/view/View;I)V
     .locals 6
+    .param p2    # Landroid/view/View;
+    .param p3    # I
 
     const/4 v5, 0x1
 

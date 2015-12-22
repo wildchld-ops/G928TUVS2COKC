@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/TPhoneService;Lcom/android/phone/TPhoneService$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/TPhoneService;
+    .param p2    # Lcom/android/phone/TPhoneService$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/TPhoneService$TBroadcastReceiver;-><init>(Lcom/android/phone/TPhoneService;)V
 
@@ -41,6 +43,8 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/content/Intent;
 
     const/4 v12, 0x1
 

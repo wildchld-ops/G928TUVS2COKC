@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CdmaOptions;Lcom/android/phone/CdmaOptions$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/CdmaOptions;
+    .param p2    # Lcom/android/phone/CdmaOptions$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaOptions$MyHandler;-><init>(Lcom/android/phone/CdmaOptions;)V
 
@@ -39,6 +41,7 @@
 
 .method private handleGetPreferredOnlyTypeResponse(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -174,6 +177,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

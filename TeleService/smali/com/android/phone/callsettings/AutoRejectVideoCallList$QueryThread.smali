@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/callsettings/AutoRejectVideoCallList;Lcom/android/phone/callsettings/AutoRejectVideoCallList$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/callsettings/AutoRejectVideoCallList;
+    .param p2    # Lcom/android/phone/callsettings/AutoRejectVideoCallList$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/AutoRejectVideoCallList$QueryThread;-><init>(Lcom/android/phone/callsettings/AutoRejectVideoCallList;)V
 

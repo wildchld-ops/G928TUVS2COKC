@@ -123,6 +123,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/PhotoringAgreement;)Landroid/app/ProgressDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -131,6 +132,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/photoring/PhotoringAgreement;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
+    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoringAgreement;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -139,6 +142,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/PhotoringAgreement;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->s:Ljava/lang/String;
 
@@ -147,6 +151,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/photoring/PhotoringAgreement;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoringAgreement;->s:Ljava/lang/String;
 
@@ -155,6 +161,7 @@
 
 .method static synthetic access$200(Lcom/android/phone/photoring/PhotoringAgreement;)Landroid/widget/TextView;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->tv:Landroid/widget/TextView;
 
@@ -163,6 +170,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/photoring/PhotoringAgreement;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->mContext:Landroid/content/Context;
 
@@ -171,6 +179,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/photoring/PhotoringAgreement;)[[Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->agreeFile:[[Ljava/lang/String;
 
@@ -179,6 +188,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/photoring/PhotoringAgreement;)I
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->operator:I
 
@@ -187,6 +197,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/photoring/PhotoringAgreement;)I
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->mAgreeType:I
 
@@ -195,6 +206,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/photoring/PhotoringAgreement;)Landroid/os/Handler;
     .locals 1
+    .param p0    # Lcom/android/phone/photoring/PhotoringAgreement;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringAgreement;->handler_loading:Landroid/os/Handler;
 
@@ -243,6 +255,7 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

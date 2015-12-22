@@ -73,6 +73,7 @@
 
 .method private ChangeOrientation(Z)V
     .locals 5
+    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -155,6 +156,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/CallSettingsActivity;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsActivity;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -163,6 +165,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/CallSettingsActivity;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/CallSettingsActivity;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/CallSettingsActivity;->switchToParent(Ljava/lang/String;)V
 
@@ -171,6 +175,7 @@
 
 .method static synthetic access$202(Landroid/content/Context;)Landroid/content/Context;
     .locals 0
+    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mContext:Landroid/content/Context;
 
@@ -382,6 +387,7 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
+    .param p0    # Ljava/lang/String;
 
     const-string v0, "CallSettingsActivity"
 
@@ -392,6 +398,7 @@
 
 .method private switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
     .locals 1
+    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v0, 0x1
 
@@ -408,6 +415,7 @@
 
 .method private switchToParent(Ljava/lang/String;)V
     .locals 11
+    .param p1    # Ljava/lang/String;
 
     const-string v8, "CallSettingsActivity : switchToParent"
 
@@ -954,6 +962,7 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mCurrentFragment:Landroid/app/Fragment;
 
@@ -994,6 +1003,7 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
+    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mCurrentFragment:Landroid/app/Fragment;
 
@@ -1155,6 +1165,7 @@
 
 .method protected getStartingFragmentClass(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
+    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -1227,6 +1238,7 @@
 
 .method protected isValidFragment(Ljava/lang/String;)Z
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1235,6 +1247,9 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceActivity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1285,6 +1300,10 @@
 
 .method public onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/os/Bundle;
+    .param p3    # I
+    .param p4    # I
 
     const-string v1, "onBuildStartFragmentIntent..."
 
@@ -1299,6 +1318,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
+    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1359,6 +1379,7 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
+    .param p1    # Landroid/os/Bundle;
 
     const/16 v3, 0x400
 
@@ -1832,6 +1853,8 @@
 
 .method public onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 2
+    .param p1    # Landroid/preference/PreferenceActivity$Header;
+    .param p2    # I
 
     const-string v1, "onHeaderClick..."
 
@@ -1854,6 +1877,8 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "onKeyDown..."
 
@@ -1868,6 +1893,8 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
+    .param p1    # I
+    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -1935,6 +1962,7 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 2
+    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -1976,6 +2004,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -2083,6 +2112,7 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2113,6 +2143,7 @@
 
 .method public setCurrentFragment(Landroid/app/Fragment;)V
     .locals 0
+    .param p1    # Landroid/app/Fragment;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mCurrentFragment:Landroid/app/Fragment;
 
@@ -2121,6 +2152,7 @@
 
 .method public setListAdapter(Landroid/widget/ListAdapter;)V
     .locals 2
+    .param p1    # Landroid/widget/ListAdapter;
 
     if-nez p1, :cond_0
 
@@ -2147,6 +2179,7 @@
 
 .method public switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
     .locals 2
+    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v1, 0x0
 

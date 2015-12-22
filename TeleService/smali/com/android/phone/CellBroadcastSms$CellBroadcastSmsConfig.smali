@@ -41,6 +41,8 @@
 
 .method static synthetic access$000(ZI)V
     .locals 0
+    .param p0    # Z
+    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/phone/CellBroadcastSms$CellBroadcastSmsConfig;->setConfigDataCompleteBSelected(ZI)V
 
@@ -49,6 +51,8 @@
 
 .method static synthetic access$100(ZI)V
     .locals 0
+    .param p0    # Z
+    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/phone/CellBroadcastSms$CellBroadcastSmsConfig;->setCbSmsBSelectedValue(ZI)V
 
@@ -57,6 +61,7 @@
 
 .method static synthetic access$1100([I)V
     .locals 0
+    .param p0    # [I
 
     invoke-static {p0}, Lcom/android/phone/CellBroadcastSms$CellBroadcastSmsConfig;->setCbSmsConfig([I)V
 
@@ -75,6 +80,7 @@
 
 .method static synthetic access$200(I)V
     .locals 0
+    .param p0    # I
 
     invoke-static {p0}, Lcom/android/phone/CellBroadcastSms$CellBroadcastSmsConfig;->setConfigDataCompleteLanguage(I)V
 
@@ -83,6 +89,7 @@
 
 .method static synthetic access$400(I)V
     .locals 0
+    .param p0    # I
 
     invoke-static {p0}, Lcom/android/phone/CellBroadcastSms$CellBroadcastSmsConfig;->setCbSmsNoOfStructs(I)V
 
@@ -157,6 +164,8 @@
 
 .method private static setCbSmsBSelectedValue(ZI)V
     .locals 2
+    .param p0    # Z
+    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -193,6 +202,7 @@
 
 .method private static setCbSmsConfig([I)V
     .locals 4
+    .param p0    # [I
 
     if-nez p0, :cond_0
 
@@ -252,6 +262,7 @@
 
 .method private static setCbSmsNoOfStructs(I)V
     .locals 2
+    .param p0    # I
 
     sget-object v0, Lcom/android/phone/CellBroadcastSms$CellBroadcastSmsConfig;->mConfigDataComplete:[I
 
@@ -264,6 +275,8 @@
 
 .method private static setConfigDataCompleteBSelected(ZI)V
     .locals 4
+    .param p0    # Z
+    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -307,6 +320,7 @@
 
 .method private static setConfigDataCompleteLanguage(I)V
     .locals 2
+    .param p0    # I
 
     const/4 v0, 0x2
 

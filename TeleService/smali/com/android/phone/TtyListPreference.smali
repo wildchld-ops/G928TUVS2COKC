@@ -42,6 +42,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -68,6 +70,7 @@
 
 .method static synthetic access$000(Lcom/android/phone/TtyListPreference;)Lcom/android/phone/TtyListPreference$DownloadListAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/TtyListPreference;
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->mAdapter:Lcom/android/phone/TtyListPreference$DownloadListAdapter;
 
@@ -76,6 +79,8 @@
 
 .method static synthetic access$100(Lcom/android/phone/TtyListPreference;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/TtyListPreference;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/TtyListPreference;->createDialogTty(I)V
 
@@ -84,6 +89,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/TtyListPreference;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/TtyListPreference;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/TtyListPreference;->updatePreferredTtyMode(I)V
 
@@ -92,6 +99,7 @@
 
 .method static synthetic access$300(Lcom/android/phone/TtyListPreference;)Landroid/content/Context;
     .locals 1
+    .param p0    # Lcom/android/phone/TtyListPreference;
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->context:Landroid/content/Context;
 
@@ -100,6 +108,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/TtyListPreference;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/TtyListPreference;
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->mDialog:Landroid/app/AlertDialog;
 
@@ -116,6 +125,8 @@
 
 .method static synthetic access$600(Lcom/android/phone/TtyListPreference;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/TtyListPreference;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/TtyListPreference;->updatePreferredTtyModeSummaryForVolte(I)V
 
@@ -124,6 +135,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/TtyListPreference;)I
     .locals 1
+    .param p0    # Lcom/android/phone/TtyListPreference;
 
     iget v0, p0, Lcom/android/phone/TtyListPreference;->prvTtyMode:I
 
@@ -132,6 +144,8 @@
 
 .method static synthetic access$702(Lcom/android/phone/TtyListPreference;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/TtyListPreference;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/TtyListPreference;->prvTtyMode:I
 
@@ -140,6 +154,7 @@
 
 .method private changeTtyButton(I)I
     .locals 2
+    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -180,6 +195,7 @@
 
 .method private createDialogTty(I)V
     .locals 8
+    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -316,6 +332,7 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
+    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -326,6 +343,7 @@
 
 .method public static neverShowTtyTipsAgain(Landroid/content/Context;)V
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/TtyListPreference;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -350,6 +368,7 @@
 
 .method public static shouldShowTtyTips(Landroid/content/Context;)Z
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/TtyListPreference;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -368,6 +387,7 @@
 
 .method private updatePreferredTtyMode(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -412,6 +432,7 @@
 
 .method private updatePreferredTtyModeSummaryForVolte(I)V
     .locals 3
+    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/TtyListPreference;->context:Landroid/content/Context;
 
@@ -453,6 +474,7 @@
 # virtual methods
 .method public init(Landroid/content/Context;)V
     .locals 5
+    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -513,6 +535,7 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 2
+    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/phone/TtyListPreference;->mAdapter:Lcom/android/phone/TtyListPreference$DownloadListAdapter;
 
@@ -527,6 +550,7 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 10
+    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 

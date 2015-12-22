@@ -54,6 +54,7 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)Z
     .locals 2
+    .param p1    # Landroid/graphics/Canvas;
 
     sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->IMPL:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
@@ -94,6 +95,7 @@
 
 .method public onPull(F)Z
     .locals 2
+    .param p1    # F
 
     sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->IMPL:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 
@@ -122,6 +124,8 @@
 
 .method public setSize(II)V
     .locals 2
+    .param p1    # I
+    .param p2    # I
 
     sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->IMPL:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
 

@@ -40,6 +40,7 @@
 
 .method public static TTYNotification(Lcom/android/internal/telephony/Call;)Z
     .locals 1
+    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -52,6 +53,8 @@
 
 .method public static TTYNotification(Lcom/android/internal/telephony/Call;Lcom/android/services/telephony/common/SecCallExtra;)Z
     .locals 7
+    .param p0    # Lcom/android/internal/telephony/Call;
+    .param p1    # Lcom/android/services/telephony/common/SecCallExtra;
 
     const/4 v2, 0x0
 
@@ -115,6 +118,8 @@
 
 .method public static applyOperatorCapabilities(ILcom/android/services/telephony/TelephonyConnection;)I
     .locals 2
+    .param p0    # I
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     move v0, p0
 
@@ -145,6 +150,8 @@
 
 .method public static checkAdditionalFailedState(Lcom/android/internal/telephony/Phone;Landroid/telecom/ConnectionRequest;)I
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     invoke-static {p1}, Lcom/android/services/telephony/TelephonyConnectionUtils;->isCSVTRequest(Landroid/telecom/ConnectionRequest;)Z
 
@@ -173,6 +180,7 @@
 
 .method public static checkAndUpdate(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 14
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     if-nez p0, :cond_1
 
@@ -833,6 +841,7 @@
 
 .method public static createDisconnecCausetReason(Lcom/android/internal/telephony/Connection;)Ljava/lang/String;
     .locals 3
+    .param p0    # Lcom/android/internal/telephony/Connection;
 
     const/4 v2, 0x0
 
@@ -926,6 +935,9 @@
 
 .method public static dial(Lcom/android/internal/telephony/Phone;Ljava/lang/String;Landroid/telecom/ConnectionRequest;)Lcom/android/internal/telephony/Connection;
     .locals 15
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Ljava/lang/String;
+    .param p2    # Landroid/telecom/ConnectionRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/CallStateException;
@@ -1404,6 +1416,8 @@
 
 .method private static displaySSInfo(Landroid/content/Context;Lcom/android/internal/telephony/gsm/SuppServiceNotification;)V
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # Lcom/android/internal/telephony/gsm/SuppServiceNotification;
 
     iget v1, p1, Lcom/android/internal/telephony/gsm/SuppServiceNotification;->notificationType:I
 
@@ -1557,6 +1571,7 @@
 
 .method private static getHdIcon(Lcom/android/internal/telephony/Connection;)I
     .locals 9
+    .param p0    # Lcom/android/internal/telephony/Connection;
 
     const/4 v8, 0x0
 
@@ -1656,6 +1671,7 @@
 
 .method public static getOriginalConnectionByNumber(Ljava/lang/String;)Lcom/android/internal/telephony/Connection;
     .locals 7
+    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1762,6 +1778,7 @@
 
 .method private static getSecCallExtraFromNumber(Ljava/lang/String;)Lcom/android/services/telephony/common/SecCallExtra;
     .locals 5
+    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1813,6 +1830,7 @@
 
 .method private static getSecVideoResolution(Ljava/lang/String;)I
     .locals 6
+    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1932,6 +1950,7 @@
 
 .method public static getSessionId(Lcom/android/internal/telephony/CallDetails;)I
     .locals 6
+    .param p0    # Lcom/android/internal/telephony/CallDetails;
 
     const/4 v2, 0x0
 
@@ -2017,6 +2036,7 @@
 
 .method public static getTelephonyConnection(Lcom/android/internal/telephony/Connection;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Connection;
 
     invoke-static {}, Lcom/android/services/telephony/TelephonyConnectionService;->getInstance()Lcom/android/services/telephony/TelephonyConnectionService;
 
@@ -2039,6 +2059,7 @@
 
 .method public static getTelephonyConnection(Ljava/lang/String;)Lcom/android/services/telephony/TelephonyConnection;
     .locals 4
+    .param p0    # Ljava/lang/String;
 
     const-string v1, "TelephonyConnectionUtils"
 
@@ -2087,6 +2108,7 @@
 
 .method public static hasRingingVideoCallWithMultipartyCall(Lcom/android/internal/telephony/Phone;)Z
     .locals 9
+    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const/4 v5, 0x0
 
@@ -2184,6 +2206,7 @@
 
 .method private static is2GNetwork(Lcom/android/internal/telephony/Phone;)Z
     .locals 6
+    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const/4 v2, 0x1
 
@@ -2254,6 +2277,7 @@
 
 .method public static isAutoRejectCall(Ljava/lang/String;)Z
     .locals 2
+    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 
@@ -2280,6 +2304,7 @@
 
 .method public static isAvailableAddUser(Lcom/android/services/telephony/TelephonyConnection;)Z
     .locals 10
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v9, 0x0
 
@@ -2476,6 +2501,7 @@
 
 .method public static isCSVTRequest(Landroid/telecom/ConnectionRequest;)Z
     .locals 6
+    .param p0    # Landroid/telecom/ConnectionRequest;
 
     const/4 v4, 0x1
 
@@ -2551,6 +2577,7 @@
 
 .method public static isCdmaSubscriptionNv(Landroid/telecom/PhoneAccountHandle;)Z
     .locals 7
+    .param p0    # Landroid/telecom/PhoneAccountHandle;
 
     const/4 v4, 0x1
 
@@ -2607,6 +2634,7 @@
 
 .method public static isCshRunning(Landroid/content/Context;)Z
     .locals 6
+    .param p0    # Landroid/content/Context;
 
     const-string v4, "activity"
 
@@ -2666,6 +2694,7 @@
 
 .method public static isImsCall(Landroid/telecom/ConnectionRequest;)Z
     .locals 1
+    .param p0    # Landroid/telecom/ConnectionRequest;
 
     if-eqz p0, :cond_0
 
@@ -2692,6 +2721,7 @@
 
 .method public static isImsCall(Lcom/android/services/telephony/common/SecCallExtra;)Z
     .locals 2
+    .param p0    # Lcom/android/services/telephony/common/SecCallExtra;
 
     if-eqz p0, :cond_0
 
@@ -2791,6 +2821,7 @@
 
 .method public static isOutngoingConfCall(Ljava/lang/String;)Z
     .locals 3
+    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -2815,6 +2846,7 @@
 
 .method public static isPhoneTypeChanged(Lcom/android/services/telephony/TelephonyConnection;)Z
     .locals 11
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v5, 0x0
 
@@ -2982,6 +3014,7 @@
 
 .method public static isPhoneTypeChangedCall(Landroid/telecom/ConnectionRequest;)Z
     .locals 2
+    .param p0    # Landroid/telecom/ConnectionRequest;
 
     if-eqz p0, :cond_0
 
@@ -3065,6 +3098,7 @@
 
 .method private static isTtyType(Lcom/android/internal/telephony/Call;)Z
     .locals 2
+    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -3079,6 +3113,9 @@
 
 .method private static isTtyType(Lcom/android/internal/telephony/Call;ILjava/lang/String;)Z
     .locals 10
+    .param p0    # Lcom/android/internal/telephony/Call;
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x2
 
@@ -3287,6 +3324,8 @@
 
 .method public static makeIncomingConnection(Landroid/telecom/Connection;Landroid/telecom/ConnectionRequest;)Landroid/telecom/Connection;
     .locals 3
+    .param p0    # Landroid/telecom/Connection;
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     move-object v0, p0
 
@@ -3310,6 +3349,8 @@
 
 .method public static makeIncomingSecCallExtra(Landroid/content/Context;Lcom/android/internal/telephony/Connection;)Landroid/os/Bundle;
     .locals 9
+    .param p0    # Landroid/content/Context;
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v8, 0x1
 
@@ -3395,6 +3436,8 @@
 
 .method private static notifyCallIsConfParticipant(ILjava/lang/String;)V
     .locals 9
+    .param p0    # I
+    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -3508,6 +3551,7 @@
 
 .method public static notifyEccCallStateChanged(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 7
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v6, 0x0
 
@@ -3593,6 +3637,8 @@
 
 .method public static notifyHoldStateOfTheOtherParty(ILjava/lang/String;)V
     .locals 10
+    .param p0    # I
+    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -3748,6 +3794,7 @@
 
 .method public static onEpdgStateChanged(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 6
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v5, 0x1
 
@@ -3785,6 +3832,7 @@
 
 .method public static onLineCtrlEvent(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 8
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v7, 0x1
 
@@ -3865,6 +3913,7 @@
 
 .method public static onSSInfo(Landroid/os/AsyncResult;)V
     .locals 6
+    .param p0    # Landroid/os/AsyncResult;
 
     const/4 v5, 0x1
 
@@ -4299,6 +4348,7 @@
 
 .method public static preCheckAndUpdate(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 8
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v7, 0x1
 
@@ -4396,6 +4446,8 @@
 
 .method public static saveModifiedCallLog(Lcom/android/services/telephony/common/SecCallExtra;Lcom/android/services/telephony/TelephonyConnection;)Lcom/android/services/telephony/common/SecCallExtra;
     .locals 18
+    .param p0    # Lcom/android/services/telephony/common/SecCallExtra;
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     const-string v13, "TelephonyConnectionUtils"
 
@@ -4551,6 +4603,9 @@
 
 .method public static saveParticipantLog(Ljava/lang/String;JJ)V
     .locals 7
+    .param p0    # Ljava/lang/String;
+    .param p1    # J
+    .param p3    # J
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 
@@ -4569,6 +4624,7 @@
 
 .method public static setAudioEffect(Z)V
     .locals 0
+    .param p0    # Z
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtilsCommon;->setAudioEffect(Z)V
 
@@ -4577,6 +4633,8 @@
 
 .method public static setConnectionCallId(Lcom/android/services/telephony/TelephonyConnection;Landroid/telecom/ConnectionRequest;)V
     .locals 6
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p1    # Landroid/telecom/ConnectionRequest;
 
     const/4 v5, 0x1
 
@@ -4648,6 +4706,10 @@
 
 .method public static setEcholocateCallState(ILandroid/net/Uri;II)V
     .locals 1
+    .param p0    # I
+    .param p1    # Landroid/net/Uri;
+    .param p2    # I
+    .param p3    # I
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 
@@ -4660,6 +4722,8 @@
 
 .method public static setPhoneTypeChanged(Lcom/android/services/telephony/TelephonyConnection;Z)V
     .locals 5
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -4712,6 +4776,7 @@
 
 .method public static setSecCallExtraFromCallDetails(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 6
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     if-nez p0, :cond_1
 
@@ -4769,6 +4834,8 @@
 
 .method public static startCallVibration(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
+    .param p0    # Landroid/content/Context;
+    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -4910,6 +4977,7 @@
 
 .method private static suppServiceNotificationMobileOriginated(I)V
     .locals 0
+    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -4932,6 +5000,8 @@
 
 .method private static suppServiceNotificationMobileOriginatedMessage(Landroid/content/Context;I)V
     .locals 3
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -4977,6 +5047,7 @@
 
 .method private static suppServiceNotificationMobileTerminated(I)V
     .locals 1
+    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -5057,6 +5128,8 @@
 
 .method private static suppServiceNotificationMobileTerminatedMessage(Landroid/content/Context;I)V
     .locals 7
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
 
     const/4 v6, 0x4
 
@@ -5192,6 +5265,9 @@
 
 .method private static suppServiceNotificationMobileTerminatedMessage(Landroid/content/Context;ILjava/lang/String;)V
     .locals 4
+    .param p0    # Landroid/content/Context;
+    .param p1    # I
+    .param p2    # Ljava/lang/String;
 
     const/16 v1, 0x20
 
@@ -5237,6 +5313,8 @@
 
 .method private static updateCWToneSignal(Lcom/android/services/telephony/common/SecCallExtra;Lcom/android/internal/telephony/Connection;)Z
     .locals 5
+    .param p0    # Lcom/android/services/telephony/common/SecCallExtra;
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v0, 0x0
 
@@ -5286,6 +5364,8 @@
 
 .method private static updateCdnipNumber(Lcom/android/services/telephony/common/SecCallExtra;Lcom/android/internal/telephony/Connection;)Z
     .locals 6
+    .param p0    # Lcom/android/services/telephony/common/SecCallExtra;
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v1, 0x0
 
@@ -5353,6 +5433,9 @@
 
 .method public static updateEpdgStateBeforeDial(Lcom/android/internal/telephony/Phone;Lcom/android/services/telephony/TelephonyConnection;Landroid/telecom/ConnectionRequest;)V
     .locals 9
+    .param p0    # Lcom/android/internal/telephony/Phone;
+    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
+    .param p2    # Landroid/telecom/ConnectionRequest;
 
     const/4 v8, 0x0
 
@@ -5472,6 +5555,7 @@
 
 .method public static updateIMSCapabilities(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 5
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/TelephonyConnection;->getOriginalConnection()Lcom/android/internal/telephony/Connection;
 
@@ -5527,6 +5611,7 @@
 
 .method public static updateIMSConferencCallMgr(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 3
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/TelephonyConnection;->getOriginalConnection()Lcom/android/internal/telephony/Connection;
 
@@ -5564,6 +5649,7 @@
 
 .method public static updateRecordSaveFilePath(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 9
+    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v8, 0x0
 
@@ -5691,6 +5777,8 @@
 
 .method public static updateSecCallExtraFromCallDetails(Lcom/android/services/telephony/common/SecCallExtra;Lcom/android/internal/telephony/Connection;)Lcom/android/services/telephony/common/SecCallExtra;
     .locals 14
+    .param p0    # Lcom/android/services/telephony/common/SecCallExtra;
+    .param p1    # Lcom/android/internal/telephony/Connection;
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/Connection;->getCall()Lcom/android/internal/telephony/Call;
 

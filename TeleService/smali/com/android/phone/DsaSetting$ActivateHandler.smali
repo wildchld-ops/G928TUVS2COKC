@@ -31,6 +31,8 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/DsaSetting;Lcom/android/phone/DsaSetting$1;)V
     .locals 0
+    .param p1    # Lcom/android/phone/DsaSetting;
+    .param p2    # Lcom/android/phone/DsaSetting$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/DsaSetting$ActivateHandler;-><init>(Lcom/android/phone/DsaSetting;)V
 
@@ -39,6 +41,7 @@
 
 .method private handleGetCFResponse(Landroid/os/Message;)V
     .locals 12
+    .param p1    # Landroid/os/Message;
 
     const/4 v11, 0x1
 
@@ -452,6 +455,7 @@
 
 .method private handleGetCallWaitingResponse(Landroid/os/Message;)V
     .locals 16
+    .param p1    # Landroid/os/Message;
 
     const-string v1, "DsaSetting"
 
@@ -1303,6 +1307,7 @@
 
 .method private handleSetCFResponse(Landroid/os/Message;)V
     .locals 9
+    .param p1    # Landroid/os/Message;
 
     const/16 v8, 0x7d0
 
@@ -1481,6 +1486,7 @@
 
 .method private handleSetCallWaitingResponse(Landroid/os/Message;)V
     .locals 8
+    .param p1    # Landroid/os/Message;
 
     const/16 v7, 0x320
 
@@ -1666,6 +1672,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     const-string v0, "DsaSetting"
 

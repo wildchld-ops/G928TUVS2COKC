@@ -150,6 +150,8 @@
 
 .method static synthetic access$000(Landroid/support/v4/app/NotificationBuilderWithActions;Ljava/util/ArrayList;)V
     .locals 0
+    .param p0    # Landroid/support/v4/app/NotificationBuilderWithActions;
+    .param p1    # Ljava/util/ArrayList;
 
     invoke-static {p0, p1}, Landroid/support/v4/app/NotificationCompat;->addActionsToBuilder(Landroid/support/v4/app/NotificationBuilderWithActions;Ljava/util/ArrayList;)V
 
@@ -158,6 +160,8 @@
 
 .method static synthetic access$100(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Landroid/support/v4/app/NotificationCompat$Style;)V
     .locals 0
+    .param p0    # Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;
+    .param p1    # Landroid/support/v4/app/NotificationCompat$Style;
 
     invoke-static {p0, p1}, Landroid/support/v4/app/NotificationCompat;->addStyleToBuilderJellybean(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Landroid/support/v4/app/NotificationCompat$Style;)V
 
@@ -174,6 +178,7 @@
 
 .method private static addActionsToBuilder(Landroid/support/v4/app/NotificationBuilderWithActions;Ljava/util/ArrayList;)V
     .locals 3
+    .param p0    # Landroid/support/v4/app/NotificationBuilderWithActions;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -212,6 +217,8 @@
 
 .method private static addStyleToBuilderJellybean(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Landroid/support/v4/app/NotificationCompat$Style;)V
     .locals 10
+    .param p0    # Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;
+    .param p1    # Landroid/support/v4/app/NotificationCompat$Style;
 
     if-eqz p1, :cond_0
 

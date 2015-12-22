@@ -25,6 +25,8 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/internal/telephony/Phone;)V
     .locals 2
+    .param p1    # Lcom/android/phone/PhoneGlobals;
+    .param p2    # Lcom/android/internal/telephony/Phone;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -96,6 +98,7 @@
 
 .method private getCallDetails(Lcom/android/internal/telephony/Call;)Lcom/android/internal/telephony/CallDetails;
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/Call;
 
     if-nez p1, :cond_1
 
@@ -123,6 +126,7 @@
 
 .method private getCallDomain(Lcom/android/internal/telephony/Call;)I
     .locals 2
+    .param p1    # Lcom/android/internal/telephony/Call;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/KorCallNotifier;->getCallDetails(Lcom/android/internal/telephony/Call;)Lcom/android/internal/telephony/CallDetails;
 
@@ -143,6 +147,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/KorCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -157,6 +162,8 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 4
+    .param p1    # Ljava/lang/String;
+    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/KorCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -179,6 +186,7 @@
 
 .method private onDisconnect(Landroid/os/AsyncResult;)V
     .locals 11
+    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v10, 0x1
 
@@ -788,6 +796,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

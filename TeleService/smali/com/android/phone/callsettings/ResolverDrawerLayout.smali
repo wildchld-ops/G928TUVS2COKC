@@ -59,6 +59,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -69,6 +70,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -79,6 +82,9 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -171,6 +177,8 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/ResolverDrawerLayout;Landroid/view/View;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/callsettings/ResolverDrawerLayout;
+    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/ResolverDrawerLayout;->isDescendantClipped(Landroid/view/View;)Z
 
@@ -181,6 +189,9 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/ResolverDrawerLayout;IF)V
     .locals 0
+    .param p0    # Lcom/android/phone/callsettings/ResolverDrawerLayout;
+    .param p1    # I
+    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/ResolverDrawerLayout;->smoothScrollTo(IF)V
 
@@ -189,6 +200,7 @@
 
 .method private distanceInfluenceForSnapDuration(F)F
     .locals 4
+    .param p1    # F
 
     const/high16 v0, 0x3f000000    # 0.5f
 
@@ -215,6 +227,8 @@
 
 .method private findChildUnder(FF)Landroid/view/View;
     .locals 1
+    .param p1    # F
+    .param p2    # F
 
     invoke-static {p0, p1, p2}, Lcom/android/phone/callsettings/ResolverDrawerLayout;->findChildUnder(Landroid/view/ViewGroup;FF)Landroid/view/View;
 
@@ -225,6 +239,9 @@
 
 .method private static findChildUnder(Landroid/view/ViewGroup;FF)Landroid/view/View;
     .locals 4
+    .param p0    # Landroid/view/ViewGroup;
+    .param p1    # F
+    .param p2    # F
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -261,6 +278,8 @@
 
 .method private findListChildUnder(FF)Landroid/view/View;
     .locals 2
+    .param p1    # F
+    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/ResolverDrawerLayout;->findChildUnder(FF)Landroid/view/View;
 
@@ -336,6 +355,7 @@
 
 .method public static getScreenWidth(Landroid/content/Context;)I
     .locals 3
+    .param p0    # Landroid/content/Context;
 
     const-string v2, "window"
 
@@ -362,6 +382,9 @@
 
 .method private static isChildUnder(Landroid/view/View;FF)Z
     .locals 5
+    .param p0    # Landroid/view/View;
+    .param p1    # F
+    .param p2    # F
 
     invoke-virtual {p0}, Landroid/view/View;->getX()F
 
@@ -416,6 +439,7 @@
 
 .method private isDescendantClipped(Landroid/view/View;)Z
     .locals 11
+    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x0
 
@@ -535,6 +559,8 @@
 
 .method private isListChildUnderClipped(FF)Z
     .locals 2
+    .param p1    # F
+    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/ResolverDrawerLayout;->findListChildUnder(FF)Landroid/view/View;
 
@@ -561,6 +587,7 @@
 
 .method private onSecondaryPointerUp(Landroid/view/MotionEvent;)V
     .locals 4
+    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
@@ -610,6 +637,7 @@
 
 .method private performDrag(F)F
     .locals 8
+    .param p1    # F
 
     const/4 v5, 0x0
 
@@ -722,6 +750,8 @@
 
 .method private smoothScrollTo(IF)V
     .locals 13
+    .param p1    # I
+    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -910,6 +940,7 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
+    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/phone/callsettings/ResolverDrawerLayout$LayoutParams;
 
@@ -924,6 +955,7 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
+    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/phone/callsettings/ResolverDrawerLayout$LayoutParams;
 
@@ -1001,6 +1033,7 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
+    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1179,6 +1212,11 @@
 
 .method protected onLayout(ZIIII)V
     .locals 17
+    .param p1    # Z
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/ResolverDrawerLayout;->getWidth()I
 
@@ -1290,6 +1328,8 @@
 
 .method protected onMeasure(II)V
     .locals 15
+    .param p1    # I
+    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -1529,6 +1569,10 @@
 
 .method public onNestedFling(Landroid/view/View;FFZ)Z
     .locals 3
+    .param p1    # Landroid/view/View;
+    .param p2    # F
+    .param p3    # F
+    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -1566,6 +1610,9 @@
 
 .method public onNestedPreFling(Landroid/view/View;FF)Z
     .locals 3
+    .param p1    # Landroid/view/View;
+    .param p2    # F
+    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -1593,6 +1640,10 @@
 
 .method public onNestedPreScroll(Landroid/view/View;II[I)V
     .locals 2
+    .param p1    # Landroid/view/View;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # [I
 
     if-lez p3, :cond_0
 
@@ -1618,6 +1669,11 @@
 
 .method public onNestedScroll(Landroid/view/View;IIII)V
     .locals 1
+    .param p1    # Landroid/view/View;
+    .param p2    # I
+    .param p3    # I
+    .param p4    # I
+    .param p5    # I
 
     if-gez p5, :cond_0
 
@@ -1633,6 +1689,9 @@
 
 .method public onNestedScrollAccepted(Landroid/view/View;Landroid/view/View;I)V
     .locals 0
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/View;
+    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->onNestedScrollAccepted(Landroid/view/View;Landroid/view/View;I)V
 
@@ -1641,6 +1700,7 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
+    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -1697,6 +1757,9 @@
 
 .method public onStartNestedScroll(Landroid/view/View;Landroid/view/View;I)Z
     .locals 1
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/View;
+    .param p3    # I
 
     and-int/lit8 v0, p3, 0x2
 
@@ -1715,6 +1778,7 @@
 
 .method public onStopNestedScroll(Landroid/view/View;)V
     .locals 2
+    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onStopNestedScroll(Landroid/view/View;)V
 
@@ -1756,6 +1820,7 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
+    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -2221,6 +2286,8 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 2
+    .param p1    # Landroid/view/View;
+    .param p2    # Landroid/view/View;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
 
@@ -2248,6 +2315,7 @@
 
 .method public setOnClickOutsideListener(Landroid/view/View$OnClickListener;)V
     .locals 0
+    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/ResolverDrawerLayout;->mClickOutsideListener:Landroid/view/View$OnClickListener;
 

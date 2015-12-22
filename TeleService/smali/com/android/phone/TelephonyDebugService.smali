@@ -46,6 +46,9 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/io/FileDescriptor;
+    .param p2    # Ljava/io/PrintWriter;
+    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/TelephonyDebugService;->mDebugService:Lcom/android/internal/telephony/DebugService;
 
@@ -56,6 +59,7 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
+    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 

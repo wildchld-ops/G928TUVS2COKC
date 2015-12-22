@@ -21,6 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/MobileNetworkSettings;Landroid/os/Handler;)V
     .locals 0
+    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/MobileNetworkSettings$3;->this$0:Lcom/android/phone/MobileNetworkSettings;
 
@@ -33,6 +34,7 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 

@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -31,6 +32,8 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -80,6 +83,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/CdmaSystemSelectListPreference;)Lcom/android/internal/telephony/Phone;
     .locals 1
+    .param p0    # Lcom/android/phone/CdmaSystemSelectListPreference;
 
     iget-object v0, p0, Lcom/android/phone/CdmaSystemSelectListPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -90,6 +94,7 @@
 # virtual methods
 .method protected onDialogClosed(Z)V
     .locals 9
+    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -220,6 +225,7 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 1
+    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "ril.cdma.inecmmode"
 

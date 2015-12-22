@@ -40,6 +40,8 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -54,6 +56,8 @@
 
 .method public compare(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     const-string v0, "LWG?"
 

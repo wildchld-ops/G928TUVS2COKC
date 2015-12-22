@@ -21,6 +21,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/operator/kor/LGTRoamingData;Landroid/content/Context;)V
     .locals 3
+    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTRoamingData$DatabaseHelper;->this$0:Lcom/android/phone/operator/kor/LGTRoamingData;
 
@@ -37,6 +38,7 @@
 
 .method private init(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 10
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v8, p0, Lcom/android/phone/operator/kor/LGTRoamingData$DatabaseHelper;->this$0:Lcom/android/phone/operator/kor/LGTRoamingData;
 
@@ -191,6 +193,7 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE connect (_id INTEGER PRIMARY KEY, country_code INTEGER, country_name TEXT NOT NULL, country_name_eng TEXT NOT NULL, connect_num TEXT NOT NULL, deleteable INTEGER, default_set INTEGER, iptel INTEGER);"
 
@@ -211,6 +214,9 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
+    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
+    .param p2    # I
+    .param p3    # I
 
     const-string v0, "RoamingData"
 

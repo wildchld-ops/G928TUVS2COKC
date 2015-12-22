@@ -29,6 +29,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/telephony/IccCard;)V
     .locals 1
+    .param p1    # Lcom/android/internal/telephony/IccCard;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -51,6 +52,8 @@
 
 .method static synthetic access$1002(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$UnlockSim;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mResult:I
 
@@ -59,6 +62,8 @@
 
 .method static synthetic access$1102(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$UnlockSim;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mDone:Z
 
@@ -67,6 +72,8 @@
 
 .method static synthetic access$902(Lcom/android/phone/PhoneInterfaceManager$UnlockSim;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/PhoneInterfaceManager$UnlockSim;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/PhoneInterfaceManager$UnlockSim;->mRetryCount:I
 
@@ -112,6 +119,8 @@
 
 .method declared-synchronized unlockSim(Ljava/lang/String;Ljava/lang/String;)[I
     .locals 5
+    .param p1    # Ljava/lang/String;
+    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

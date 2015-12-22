@@ -20,6 +20,7 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/CallController;)V
     .locals 1
+    .param p1    # Lcom/android/phone/CallController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -86,6 +87,7 @@
 
 .method private onDisconnect(Landroid/os/Message;)V
     .locals 5
+    .param p1    # Landroid/os/Message;
 
     iget-object v4, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -196,6 +198,7 @@
 
 .method private onServiceStateChanged(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -486,6 +489,7 @@
 
 .method private startSequenceInternal(Landroid/os/Message;)V
     .locals 4
+    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyCallHelper;->cleanup()V
 
@@ -571,6 +575,7 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -632,6 +637,7 @@
 
 .method public startEmergencyCallFromAirplaneModeSequence(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 

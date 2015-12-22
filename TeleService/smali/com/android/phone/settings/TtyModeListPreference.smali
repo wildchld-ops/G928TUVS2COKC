@@ -27,6 +27,7 @@
 
 .method private updatePreferredTtyModeSummary(I)V
     .locals 4
+    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -107,6 +108,8 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
+    .param p1    # Landroid/preference/Preference;
+    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p0, :cond_0
 

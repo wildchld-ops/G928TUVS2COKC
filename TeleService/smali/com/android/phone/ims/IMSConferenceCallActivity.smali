@@ -302,6 +302,7 @@
 
 .method private InitiateConfCall(Ljava/lang/String;)V
     .locals 9
+    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1009,6 +1010,8 @@
 
 .method static synthetic access$002(Lcom/android/phone/ims/IMSConferenceCallActivity;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->bToastShowInProgress:Z
 
@@ -1017,6 +1020,7 @@
 
 .method static synthetic access$100(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/app/AlertDialog;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mGenericErrorDialog:Landroid/app/AlertDialog;
 
@@ -1025,6 +1029,8 @@
 
 .method static synthetic access$1000(Lcom/android/phone/ims/IMSConferenceCallActivity;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->englog(Ljava/lang/String;)V
 
@@ -1033,6 +1039,8 @@
 
 .method static synthetic access$102(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mGenericErrorDialog:Landroid/app/AlertDialog;
 
@@ -1041,6 +1049,8 @@
 
 .method static synthetic access$1100(Lcom/android/phone/ims/IMSConferenceCallActivity;Ljava/util/ArrayList;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->addCallerList(Ljava/util/ArrayList;)V
 
@@ -1049,6 +1059,7 @@
 
 .method static synthetic access$1200(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/widget/ImageButton;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mContactButton:Landroid/widget/ImageButton;
 
@@ -1057,6 +1068,7 @@
 
 .method static synthetic access$1300(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/widget/ImageButton;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mPlusButton:Landroid/widget/ImageButton;
 
@@ -1065,6 +1077,7 @@
 
 .method static synthetic access$1400(Lcom/android/phone/ims/IMSConferenceCallActivity;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mBeforeText:Ljava/lang/String;
 
@@ -1073,6 +1086,8 @@
 
 .method static synthetic access$1402(Lcom/android/phone/ims/IMSConferenceCallActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mBeforeText:Ljava/lang/String;
 
@@ -1081,6 +1096,8 @@
 
 .method static synthetic access$1500(Lcom/android/phone/ims/IMSConferenceCallActivity;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->showToast(I)V
 
@@ -1089,6 +1106,7 @@
 
 .method static synthetic access$1600(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/widget/AutoCompleteTextView;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
@@ -1097,6 +1115,7 @@
 
 .method static synthetic access$1700(Lcom/android/phone/ims/IMSConferenceCallActivity;)Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mHolderCtl:Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;
 
@@ -1105,6 +1124,8 @@
 
 .method static synthetic access$1702(Lcom/android/phone/ims/IMSConferenceCallActivity;Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;)Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mHolderCtl:Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;
 
@@ -1113,6 +1134,7 @@
 
 .method static synthetic access$1800(Lcom/android/phone/ims/IMSConferenceCallActivity;)I
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mPreviousDeletableCount:I
 
@@ -1121,6 +1143,8 @@
 
 .method static synthetic access$1802(Lcom/android/phone/ims/IMSConferenceCallActivity;I)I
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mPreviousDeletableCount:I
 
@@ -1129,6 +1153,7 @@
 
 .method static synthetic access$1900(Lcom/android/phone/ims/IMSConferenceCallActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     invoke-direct {p0}, Lcom/android/phone/ims/IMSConferenceCallActivity;->setDeleteOption()V
 
@@ -1137,6 +1162,8 @@
 
 .method static synthetic access$200(Lcom/android/phone/ims/IMSConferenceCallActivity;Ljava/lang/String;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->log(Ljava/lang/String;)V
 
@@ -1145,6 +1172,7 @@
 
 .method static synthetic access$2000(Lcom/android/phone/ims/IMSConferenceCallActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     invoke-direct {p0}, Lcom/android/phone/ims/IMSConferenceCallActivity;->show_SendButton()V
 
@@ -1161,6 +1189,7 @@
 
 .method static synthetic access$2200(Lcom/android/phone/ims/IMSConferenceCallActivity;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mPreviousCheckedNumber:Ljava/util/ArrayList;
 
@@ -1169,6 +1198,8 @@
 
 .method static synthetic access$2302(Lcom/android/phone/ims/IMSConferenceCallActivity;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mEnableCheckedView:Z
 
@@ -1177,6 +1208,7 @@
 
 .method static synthetic access$2400(Lcom/android/phone/ims/IMSConferenceCallActivity;)I
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mPreviousState:I
 
@@ -1185,6 +1217,9 @@
 
 .method static synthetic access$2500(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/view/View;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/view/View;
+    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/ims/IMSConferenceCallActivity;->onAdapterButtonClicked(Landroid/view/View;I)V
 
@@ -1193,6 +1228,7 @@
 
 .method static synthetic access$2600(Lcom/android/phone/ims/IMSConferenceCallActivity;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     invoke-direct {p0}, Lcom/android/phone/ims/IMSConferenceCallActivity;->deleteConfCallerList()V
 
@@ -1201,6 +1237,7 @@
 
 .method static synthetic access$2700(Lcom/android/phone/ims/IMSConferenceCallActivity;)Ljava/util/ArrayList;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -1209,6 +1246,8 @@
 
 .method static synthetic access$2702(Lcom/android/phone/ims/IMSConferenceCallActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -1217,6 +1256,8 @@
 
 .method static synthetic access$2802(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -1225,6 +1266,7 @@
 
 .method static synthetic access$2900(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/view/View;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSelectAllCheck:Landroid/view/View;
 
@@ -1233,6 +1275,8 @@
 
 .method static synthetic access$2902(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/view/View;)Landroid/view/View;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSelectAllCheck:Landroid/view/View;
 
@@ -1241,6 +1285,8 @@
 
 .method static synthetic access$300(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/database/Cursor;)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->createCursorAdapter(Landroid/database/Cursor;)V
 
@@ -1249,6 +1295,7 @@
 
 .method static synthetic access$3000(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/view/View;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSelectAllContainer:Landroid/view/View;
 
@@ -1257,6 +1304,8 @@
 
 .method static synthetic access$3002(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/view/View;)Landroid/view/View;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSelectAllContainer:Landroid/view/View;
 
@@ -1265,6 +1314,7 @@
 
 .method static synthetic access$3100(Lcom/android/phone/ims/IMSConferenceCallActivity;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSkipClickSound:Z
 
@@ -1273,6 +1323,8 @@
 
 .method static synthetic access$3102(Lcom/android/phone/ims/IMSConferenceCallActivity;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSkipClickSound:Z
 
@@ -1281,6 +1333,7 @@
 
 .method static synthetic access$3200(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/view/ActionMode;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mActionMode:Landroid/view/ActionMode;
 
@@ -1289,6 +1342,8 @@
 
 .method static synthetic access$3202(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mActionMode:Landroid/view/ActionMode;
 
@@ -1297,6 +1352,7 @@
 
 .method static synthetic access$3300(Lcom/android/phone/ims/IMSConferenceCallActivity;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mIsSelectAllmode:Z
 
@@ -1305,6 +1361,7 @@
 
 .method static synthetic access$3400(Lcom/android/phone/ims/IMSConferenceCallActivity;)Lcom/android/phone/ims/IMSConferenceCallMgr;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->icCM:Lcom/android/phone/ims/IMSConferenceCallMgr;
 
@@ -1313,6 +1370,7 @@
 
 .method static synthetic access$3500(Lcom/android/phone/ims/IMSConferenceCallActivity;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mIsForegroundActivity:Z
 
@@ -1321,6 +1379,7 @@
 
 .method static synthetic access$3600(Lcom/android/phone/ims/IMSConferenceCallActivity;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -1329,6 +1388,7 @@
 
 .method static synthetic access$400(Lcom/android/phone/ims/IMSConferenceCallActivity;)I
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mScreenState:I
 
@@ -1337,6 +1397,7 @@
 
 .method static synthetic access$500(Lcom/android/phone/ims/IMSConferenceCallActivity;)Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantsAdapter;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mParticipantsAdapter:Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantsAdapter;
 
@@ -1345,6 +1406,7 @@
 
 .method static synthetic access$600(Lcom/android/phone/ims/IMSConferenceCallActivity;)Ljava/lang/String;
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSelectedNumber:Ljava/lang/String;
 
@@ -1353,6 +1415,8 @@
 
 .method static synthetic access$602(Lcom/android/phone/ims/IMSConferenceCallActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mSelectedNumber:Ljava/lang/String;
 
@@ -1361,6 +1425,7 @@
 
 .method static synthetic access$700(Lcom/android/phone/ims/IMSConferenceCallActivity;)Z
     .locals 1
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mLongClickActionMode:Z
 
@@ -1369,6 +1434,8 @@
 
 .method static synthetic access$702(Lcom/android/phone/ims/IMSConferenceCallActivity;Z)Z
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mLongClickActionMode:Z
 
@@ -1377,6 +1444,8 @@
 
 .method static synthetic access$800(Lcom/android/phone/ims/IMSConferenceCallActivity;I)V
     .locals 0
+    .param p0    # Lcom/android/phone/ims/IMSConferenceCallActivity;
+    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallActivity;->setScreenState(I)V
 
@@ -1385,6 +1454,7 @@
 
 .method private addCallerList(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -1679,6 +1749,7 @@
 
 .method private createCursorAdapter(Landroid/database/Cursor;)V
     .locals 2
+    .param p1    # Landroid/database/Cursor;
 
     new-instance v0, Lcom/android/phone/ims/RecipientsAutoCompleteCursorAdapter;
 
@@ -1784,6 +1855,7 @@
 
 .method private englog(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "eng"
 
@@ -1844,6 +1916,8 @@
 
 .method private getCircledDrawable(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/drawable/Drawable;
     .locals 13
+    .param p1    # Landroid/graphics/drawable/Drawable;
+    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1995,6 +2069,7 @@
 
 .method private getGroupIdForVoiceparty(Ljava/lang/String;)I
     .locals 9
+    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -2129,6 +2204,7 @@
 
 .method private getInitialListFromIntent(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 7
+    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2237,6 +2313,7 @@
 
 .method private getInitialListFromIntentbyGroupID(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 10
+    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2536,6 +2613,7 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
+    .param p1    # Ljava/lang/String;
 
     const-string v0, "[IMSConferenceCallActivity]"
 
@@ -2546,6 +2624,8 @@
 
 .method private onAdapterButtonClicked(Landroid/view/View;I)V
     .locals 4
+    .param p1    # Landroid/view/View;
+    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -2716,6 +2796,8 @@
 
 .method private setElapsedTime(Landroid/widget/TextView;J)V
     .locals 2
+    .param p1    # Landroid/widget/TextView;
+    .param p2    # J
 
     const-wide/16 v0, 0x0
 
@@ -2742,6 +2824,7 @@
 
 .method private setScreenState(I)V
     .locals 3
+    .param p1    # I
 
     const/16 v1, 0x8
 
@@ -2860,6 +2943,8 @@
 
 .method private setStatusText(Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;Lcom/android/phone/ims/Participant;)V
     .locals 4
+    .param p1    # Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;
+    .param p2    # Lcom/android/phone/ims/Participant;
 
     iget-object v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->mHolderCtl:Lcom/android/phone/ims/IMSConferenceCallActivity$HolderCtl;
 
@@ -2942,6 +3027,7 @@
 
 .method private showEmptyToast(I)V
     .locals 2
+    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->bToastShowInProgress:Z
 
@@ -2982,6 +3068,7 @@
 
 .method private showToast(I)V
     .locals 2
+    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->bToastShowInProgress:Z
 
@@ -3019,6 +3106,7 @@
 
 .method private showToast(Ljava/lang/String;)V
     .locals 2
+    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->bToastShowInProgress:Z
 
@@ -3242,6 +3330,7 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 4
+    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -3302,6 +3391,7 @@
 
 .method public getCallLogGroupEntryUris(I)Ljava/lang/String;
     .locals 3
+    .param p1    # I
 
     const/16 v2, 0x22
 
@@ -3356,6 +3446,7 @@
 
 .method public initializeMgr(Lcom/android/phone/ims/IMSConferenceCallMgr;)V
     .locals 2
+    .param p1    # Lcom/android/phone/ims/IMSConferenceCallMgr;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity;->icCM:Lcom/android/phone/ims/IMSConferenceCallMgr;
 
@@ -3374,6 +3465,9 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 12
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/content/Intent;
 
     const v11, 0x7f0a051b
 
@@ -3686,6 +3780,7 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 9
+    .param p1    # Landroid/view/View;
 
     const v8, 0x7f0a051c
 
@@ -4020,6 +4115,7 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
+    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -4066,6 +4162,7 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
+    .param p1    # Landroid/os/Bundle;
 
     const/16 v7, 0x400
 
@@ -4636,6 +4733,7 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
+    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Lcom/android/phone/ims/IMSConferenceCallActivity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -4784,6 +4882,7 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -4861,6 +4960,7 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
+    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
@@ -4914,6 +5014,7 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
+    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onWindowFocusChanged(Z)V
 
@@ -5017,6 +5118,7 @@
 
 .method public setHolderCtl(Lcom/android/phone/ims/Participant;)V
     .locals 3
+    .param p1    # Lcom/android/phone/ims/Participant;
 
     const/4 v2, 0x0
 
@@ -5059,6 +5161,9 @@
 
 .method public setHolderData(Landroid/view/View;Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;Lcom/android/phone/ims/Participant;)V
     .locals 5
+    .param p1    # Landroid/view/View;
+    .param p2    # Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;
+    .param p3    # Lcom/android/phone/ims/Participant;
 
     const/4 v4, 0x0
 
@@ -5165,6 +5270,8 @@
 
 .method public setParticipantHolder(Landroid/view/View;Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;)V
     .locals 2
+    .param p1    # Landroid/view/View;
+    .param p2    # Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;
 
     const/16 v1, 0x8
 
@@ -5288,6 +5395,9 @@
 
 .method public showParticipantHolder(Landroid/view/View;Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;Lcom/android/phone/ims/Participant;)V
     .locals 5
+    .param p1    # Landroid/view/View;
+    .param p2    # Lcom/android/phone/ims/IMSConferenceCallActivity$ParticipantHolder;
+    .param p3    # Lcom/android/phone/ims/Participant;
 
     const v4, 0x7f0a0764
 
