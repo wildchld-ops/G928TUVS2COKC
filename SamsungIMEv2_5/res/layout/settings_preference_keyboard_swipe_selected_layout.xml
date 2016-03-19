@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/keyboard_swipe_group" android:layout_width="wrap_content" android:layout_height="@dimen/preference_hold_delay_selected_layout_linearlayout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:persistent="true" android:id="@id/keyboard_swipe_radio" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/preference_hold_delay_selected_layout_radiobutton_height" />
+</LinearLayout>

@@ -59,8 +59,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/PhoneVoiceRecorder;Lcom/android/phone/PhoneVoiceRecorder$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p2    # Lcom/android/phone/PhoneVoiceRecorder$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneVoiceRecorder$RecorderThread;-><init>(Lcom/android/phone/PhoneVoiceRecorder;)V
 
@@ -209,7 +207,6 @@
 
 .method private isPhoneNumberChar(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x30
 
@@ -232,7 +229,6 @@
 
 .method private stripNonPhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -398,8 +394,6 @@
 
 .method public checkFileNumber(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -713,9 +707,6 @@
 
 .method public onError(Lcom/sec/android/secmediarecorder/SecMediaRecorder;II)V
     .locals 3
-    .param p1    # Lcom/sec/android/secmediarecorder/SecMediaRecorder;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder$RecorderThread;->this$0:Lcom/android/phone/PhoneVoiceRecorder;
 
@@ -759,9 +750,6 @@
 
 .method public onInfo(Lcom/sec/android/secmediarecorder/SecMediaRecorder;II)V
     .locals 4
-    .param p1    # Lcom/sec/android/secmediarecorder/SecMediaRecorder;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/EditFdnContactScreen;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -34,18 +33,12 @@
 # virtual methods
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     return-void
 .end method
 
 .method protected onInsertComplete(ILjava/lang/Object;Landroid/net/Uri;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 
@@ -165,9 +158,6 @@
 
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v7, 0x3
 
@@ -676,9 +666,6 @@
 
 .method protected onUpdateComplete(ILjava/lang/Object;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     const/4 v5, 0x1
 

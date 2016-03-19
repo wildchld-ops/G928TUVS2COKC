@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/NetworkSetting;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/NetworkSetting$NetworkModePhoneStateListener;->this$0:Lcom/android/phone/NetworkSetting;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting$NetworkModePhoneStateListener;->this$0:Lcom/android/phone/NetworkSetting;
 
@@ -101,7 +98,6 @@
 
 .method public onDataConnectionStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting$NetworkModePhoneStateListener;->this$0:Lcom/android/phone/NetworkSetting;
 

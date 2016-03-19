@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/services/telephony/TelephonyConnectionService;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/TelephonyConnectionService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/TelephonyConferenceController;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/TelephonyConferenceController;
 
     invoke-direct {p0}, Lcom/android/services/telephony/TelephonyConferenceController;->recalculate()V
 
@@ -57,7 +55,6 @@
 
 .method private isFullConference(Landroid/telecom/Conference;)Z
     .locals 4
-    .param p1    # Landroid/telecom/Conference;
 
     const/4 v0, 0x1
 
@@ -112,7 +109,6 @@
 
 .method private participatesInFullConference(Landroid/telecom/Connection;)Z
     .locals 1
-    .param p1    # Landroid/telecom/Connection;
 
     invoke-virtual {p1}, Landroid/telecom/Connection;->getConference()Landroid/telecom/Conference;
 
@@ -712,7 +708,6 @@
 # virtual methods
 .method add(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConferenceController;->mTelephonyConnections:Ljava/util/List;
 
@@ -729,7 +724,6 @@
 
 .method remove(Landroid/telecom/Connection;)V
     .locals 1
-    .param p1    # Landroid/telecom/Connection;
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConferenceController;->mConnectionListener:Landroid/telecom/Connection$Listener;
 

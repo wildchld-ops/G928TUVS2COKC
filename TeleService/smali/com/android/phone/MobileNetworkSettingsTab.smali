@@ -117,7 +117,6 @@
 
 .method private getSimImage(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x65
 
@@ -130,7 +129,6 @@
 
 .method private setupTab(I)V
     .locals 10
-    .param p1    # I
 
     const v9, 0x1020006
 
@@ -425,7 +423,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -616,7 +613,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -656,7 +652,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -690,7 +685,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -745,7 +739,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/MobileNetworkSettingsTab;->mTabHost:Landroid/widget/TabHost;
 

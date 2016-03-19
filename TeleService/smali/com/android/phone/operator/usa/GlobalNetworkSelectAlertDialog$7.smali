@@ -33,7 +33,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 2
-    .param p1    # Landroid/telephony/ServiceState;
 
     if-eqz p1, :cond_0
 

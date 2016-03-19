@@ -105,7 +105,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/GsmUmtsVideoCallForwardOptions;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/GsmUmtsVideoCallForwardOptions;
 
     invoke-direct {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->isAirplaneModeOn()Z
 
@@ -143,7 +142,6 @@
 
 .method private simulatePreferenceClick(Landroid/preference/Preference;)V
     .locals 7
-    .param p1    # Landroid/preference/Preference;
 
     invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->isAdded()Z
 
@@ -213,9 +211,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -321,7 +316,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -536,7 +530,6 @@
 
 .method public onCreateMultiSIM(Landroid/preference/PreferenceScreen;)V
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const/4 v6, 0x5
 
@@ -726,8 +719,6 @@
 
 .method public onFinished(Landroid/preference/Preference;Z)V
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -841,7 +832,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1060,7 +1050,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

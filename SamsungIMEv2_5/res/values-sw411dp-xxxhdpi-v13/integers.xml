@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="floating_preview_arrow_position_y">70</integer>
+    <integer name="floating_phonepad_preview_arrow_position_y">48</integer>
+    <integer name="preview_arrow_position_y">95</integer>
+    <integer name="handwriting_vopanel_text_margin">267</integer>
+    <integer name="handwriting_floating_vopanel_text_margin">200</integer>
+    <integer name="handwriting_vopanel_baseline_position">440</integer>
+    <integer name="handwriting_floating_vopanel_baseline_position">320</integer>
+    <integer name="handwriting_vopanel_font_size">320</integer>
+    <integer name="handwriting_floating_vopanel_font_size">267</integer>
+    <integer name="mobile_keyboard_symbol_count">30</integer>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/fullmodeinputview" android:background="@color/keypad_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:background="@color/keypad_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/qwerty_emoticon_no_recent_text_size" android:gravity="center" android:id="@id/no_recentemoticon_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ime.implement.view.emoticon.EmoticonLayout android:id="@id/emoticonLayout" android:paddingTop="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.ime.implement.view.KeyboardView android:id="@id/keyboardView" android:paddingTop="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

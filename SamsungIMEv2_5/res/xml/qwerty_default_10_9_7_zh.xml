@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/qwerty_default_key_width" android:keyHeight="@dimen/qwerty_default_key_height" android:horizontalGap="@dimen/qwerty_default_key_horizontal_gap" android:verticalGap="@dimen/qwerty_default_key_vertical_gap" android:paddingLeft="@dimen/qwerty_default_row2_padding_left" android:paddingRight="@dimen/qwerty_default_padding_right" android:paddingTop="@dimen/qwerty_default_padding_top" android:paddingBottom="@dimen/qwerty_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/qwerty_default_number_key_width" android:keyHeight="@dimen/qwerty_default_number_key_height" android:horizontalGap="@dimen/qwerty_default_number_key_horizontal_gap" android:property="numberRow" android:paddingLeft="@dimen/qwerty_default_number_padding_left" android:paddingRight="@dimen/qwerty_default_padding_right" android:rowEdgeFlags="top">
+        <include android:keys="@xml/qwerty_default_number_row" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_delete" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_qwerty_btn_number_xml" android:property="tablet" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left">
+        <include android:keys="@xml/qwerty_default_row1_col10" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left" android:paddingRight="@dimen/qwerty_default_padding_right">
+        <include android:keys="@xml/qwerty_default_row2_col9" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-208" android:keyLabel="速" />
+        <include android:keys="@xml/qwerty_default_row3_col7" android:padding="@dimen/qwerty_default_horizontal_gap_function_key" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="-124" android:keyIcon="@drawable/textinput_qwerty_ic_exclamation_01_xml" />
+        <Key android:property="tablet" android:codes="-122" android:keyIcon="@drawable/textinput_qwerty_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/qwerty_row_bottom" />
+</Keyboard>

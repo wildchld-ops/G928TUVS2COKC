@@ -58,7 +58,6 @@
 
 .method private static handleAdnEntry(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -154,8 +153,6 @@
 
 .method static handleChars(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -168,9 +165,6 @@
 
 .method static handleChars(Landroid/content/Context;Ljava/lang/String;Landroid/app/Activity;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Activity;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->stripSeparators(Ljava/lang/String;)Ljava/lang/String;
 
@@ -220,9 +214,6 @@
 
 .method static handleCharsForLockedDevice(Landroid/content/Context;Ljava/lang/String;Landroid/app/Activity;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Activity;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->stripSeparators(Ljava/lang/String;)Ljava/lang/String;
 
@@ -247,8 +238,6 @@
 
 .method private static handleIMEIDisplay(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "*#06#"
 
@@ -273,8 +262,6 @@
 
 .method private static handlePinEntry(Ljava/lang/String;Landroid/app/Activity;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/app/Activity;
 
     const-string v2, "**04"
 
@@ -337,8 +324,6 @@
 
 .method private static handleRegulatoryInfoDisplay(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "*#07#"
 
@@ -404,8 +389,6 @@
 
 .method private static handleSecretCode(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -482,7 +465,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneApp"
 
@@ -511,7 +493,6 @@
 
 .method private static showDeviceIdPanel(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/phone/SpecialCharSequenceMgr;->getPhone()Lcom/android/internal/telephony/Phone;
 

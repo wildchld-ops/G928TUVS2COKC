@@ -555,10 +555,6 @@
 
 .method private putValues(Ljava/lang/String;III)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/phone/SettingSearchManagerReceiver;->values:Landroid/content/ContentValues;
 
@@ -684,8 +680,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     if-nez p2, :cond_1
 

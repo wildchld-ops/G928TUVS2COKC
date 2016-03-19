@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_indian_10_10_10_10_8_key_width" android:keyHeight="@dimen/split_indian_10_10_10_10_8_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_indian_10_10_10_10_8_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row>
+        <Key android:codes="2675" android:keyLabel="ੳ" />
+        <Key android:codes="2565" android:keyLabel="ਅ" />
+        <Key android:codes="2674" android:keyLabel="ੲ" />
+        <Key android:codes="2616" android:keyLabel="ਸ" />
+        <Key android:codes="2617" android:keyLabel="ਹ" />
+    </Row>
+    <Row>
+        <Key android:codes="2581" android:keyLabel="ਕ" />
+        <Key android:codes="2582" android:keyLabel="ਖ" />
+        <Key android:codes="2583" android:keyLabel="ਗ" />
+        <Key android:codes="2584" android:keyLabel="ਘ" />
+        <Key android:codes="2585" android:keyLabel="ਙ" />
+        <Key android:keyWidth="@dimen/split_indian_10_10_10_10_8_function_key_width" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row>
+        <Key android:codes="2591" android:keyLabel="ਟ" />
+        <Key android:codes="2592" android:keyLabel="ਠ" />
+        <Key android:codes="2593" android:keyLabel="ਡ" />
+        <Key android:codes="2594" android:keyLabel="ਢ" />
+        <Key android:codes="2595" android:keyLabel="ਣ" />
+        <Key android:keyWidth="@dimen/split_indian_10_10_10_10_8_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row>
+        <Key android:codes="2602" android:keyLabel="ਪ" />
+        <Key android:codes="2603" android:keyLabel="ਫ" />
+        <Key android:codes="2604" android:keyLabel="ਬ" />
+        <Key android:codes="2605" android:keyLabel="ਭ" />
+        <Key android:codes="2606" android:keyLabel="ਮ" />
+        <Key android:keyWidth="@dimen/split_indian_10_10_10_10_8_function_key_width" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:codes="2614" android:keyLabel="ਸ਼" />
+        <Key android:codes="2672" android:keyLabel="ੰ" />
+        <Key android:codes="2562" android:keyLabel="ਂ" />
+        <Key android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/split_indian_10_10_10_10_8_function_key_width" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/split_indian_row_bottom_right" />
+</Keyboard>

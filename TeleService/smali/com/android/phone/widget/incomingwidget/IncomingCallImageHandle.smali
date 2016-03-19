@@ -103,8 +103,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -259,7 +257,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mParent:Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -268,7 +265,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -277,7 +273,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-boolean v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mEnableArrowAnimation:Z
 
@@ -286,7 +281,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)I
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mHandleType:I
 
@@ -295,7 +289,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)I
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrowAnimationIndex:I
 
@@ -304,8 +297,6 @@
 
 .method static synthetic access$402(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrowAnimationIndex:I
 
@@ -314,7 +305,6 @@
 
 .method static synthetic access$408(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)I
     .locals 2
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrowAnimationIndex:I
 
@@ -327,7 +317,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)[I
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrowLeftAnimation:[I
 
@@ -336,7 +325,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mHandler:Landroid/os/Handler;
 
@@ -345,7 +333,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;)[I
     .locals 1
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrowRightAnimation:[I
 
@@ -354,8 +341,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mDuringSwingAnimation:Z
 
@@ -364,7 +349,6 @@
 
 .method private handleEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -687,7 +671,6 @@
 
 .method private showTarget(F)V
     .locals 10
-    .param p1    # F
 
     const/4 v9, 0x1
 
@@ -776,7 +759,6 @@
 
 .method private updateArrowLayout(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -859,8 +841,6 @@
 
 .method private updateMovingCircle(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -943,7 +923,6 @@
 
 .method public enableArrowAnimation(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -972,8 +951,6 @@
 
 .method public getTargetProximityRatio(FF)D
     .locals 14
-    .param p1    # F
-    .param p2    # F
 
     iget-object v9, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mTargetCircle:Landroid/widget/ImageView;
 
@@ -1061,7 +1038,6 @@
 
 .method public isInTabCircle(Landroid/view/MotionEvent;)Z
     .locals 23
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1332,8 +1308,6 @@
 
 .method public isThresholdReached(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->getTargetProximityRatio(FF)D
 
@@ -1358,7 +1332,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "IncomingCallImageHandle"
 
@@ -1369,8 +1342,6 @@
 
 .method public needToHideArrow(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->getTargetProximityRatio(FF)D
 
@@ -1407,7 +1378,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1512,7 +1482,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->getContext()Landroid/content/Context;
 
@@ -1559,7 +1528,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1617,7 +1585,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1648,7 +1615,6 @@
 
 .method public processMoveEvent(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1725,7 +1691,6 @@
 
 .method public setArrowBottomMargin(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -1746,7 +1711,6 @@
 
 .method public setArrowTopMargin(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -1767,7 +1731,6 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mHandleImageView:Landroid/widget/ImageView;
 
@@ -1784,7 +1747,6 @@
 
 .method public setEasyTouchModeEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mEasyTouchModeEnabled:Z
 
@@ -1793,7 +1755,6 @@
 
 .method public setHandleState(Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 0
-    .param p1    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     iput-object p1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mHandleState:Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
@@ -1804,7 +1765,6 @@
 
 .method public setParent(Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;)V
     .locals 0
-    .param p1    # Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;
 
     iput-object p1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mParent:Lcom/android/phone/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -1813,7 +1773,6 @@
 
 .method public setWidgetTypeTag(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/widget/incomingwidget/IncomingCallImageHandle;->mTag:Ljava/lang/String;
 

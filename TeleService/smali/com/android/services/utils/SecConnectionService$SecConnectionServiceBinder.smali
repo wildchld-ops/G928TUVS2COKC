@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/services/utils/SecConnectionService;Lcom/android/services/utils/SecConnectionService$1;)V
     .locals 0
-    .param p1    # Lcom/android/services/utils/SecConnectionService;
-    .param p2    # Lcom/android/services/utils/SecConnectionService$1;
 
     invoke-direct {p0, p1}, Lcom/android/services/utils/SecConnectionService$SecConnectionServiceBinder;-><init>(Lcom/android/services/utils/SecConnectionService;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public getNameFromFDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 
@@ -58,7 +55,6 @@
 
 .method public getNameFromSDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 
@@ -97,8 +93,6 @@
 
 .method public requestModifyCall(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -132,7 +126,6 @@
 
 .method public requestOllehPhoneStart(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -178,7 +171,6 @@
 
 .method public requestTPhoneStart(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -210,9 +202,6 @@
 
 .method public respondModifyCall(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -265,8 +254,6 @@
 
 .method public setAudioEffect(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -304,7 +291,6 @@
 
 .method public setSecConnectionServiceAdapter(Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/ISecConnectionServiceAdapter;
 
     iget-object v0, p0, Lcom/android/services/utils/SecConnectionService$SecConnectionServiceBinder;->this$0:Lcom/android/services/utils/SecConnectionService;
 
@@ -326,7 +312,6 @@
 
 .method public transfer(Landroid/telecom/PhoneAccountHandle;)V
     .locals 2
-    .param p1    # Landroid/telecom/PhoneAccountHandle;
 
     iget-object v0, p0, Lcom/android/services/utils/SecConnectionService$SecConnectionServiceBinder;->this$0:Lcom/android/services/utils/SecConnectionService;
 

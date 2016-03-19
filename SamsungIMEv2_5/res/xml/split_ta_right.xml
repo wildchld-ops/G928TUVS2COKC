@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_ta_key_width" android:keyHeight="@dimen/split_ta_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_ta_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row>
+        <Key android:codes="2965" android:keyLabel="க" />
+        <Key android:codes="2969" android:keyLabel="ங" />
+        <Key android:codes="2970" android:keyLabel="ச" />
+        <Key android:codes="2974" android:keyLabel="ஞ" />
+    </Row>
+    <Row>
+        <Key android:codes="2975" android:keyLabel="ட" />
+        <Key android:codes="2979" android:keyLabel="ண" />
+        <Key android:codes="2980" android:keyLabel="த" />
+        <Key android:codes="2984" android:keyLabel="ந" />
+        <Key android:keyWidth="@dimen/split_ta_function_key_width" android:horizontalGap="@dimen/split_ta_function_key_horizontal_gap" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row>
+        <Key android:codes="2986" android:keyLabel="ப" />
+        <Key android:codes="2990" android:keyLabel="ம" />
+        <Key android:codes="2991" android:keyLabel="ய" />
+        <Key android:codes="2992" android:keyLabel="ர" />
+        <Key android:keyWidth="@dimen/split_ta_function_key_width" android:horizontalGap="@dimen/split_ta_function_key_horizontal_gap" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_ta_right_row3_padding_left">
+        <Key android:codes="2995" android:keyLabel="ள" />
+        <Key android:codes="2993" android:keyLabel="ற" />
+        <Key android:codes="2985" android:keyLabel="ன" />
+        <Key android:codes="-259" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/split_ta_function_key_width" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_ta_right_row3_padding_left">
+        <Key android:codes="3000,3021,2992,3008" android:keyLabel="ஸ்ரீ" />
+        <Key android:codes="2947" android:keyLabel="ஃ" />
+        <Key android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/split_ta_function_key_width" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/split_indian_row_bottom_right" />
+</Keyboard>

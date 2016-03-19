@@ -86,7 +86,6 @@
 
 .method public static checkPendingEmergencyDialer(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "feature_lgt"
 
@@ -302,7 +301,6 @@
 
 .method public static getMultiSimIccType(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v1, "0"
 
@@ -344,7 +342,6 @@
 
 .method public static getSimState(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -359,7 +356,6 @@
 
 .method public static getSubIdUsingPhoneId(I)I
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
 
@@ -538,7 +534,6 @@
 
 .method public static isExtraOrigin(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     if-nez p0, :cond_0
 
@@ -704,7 +699,6 @@
 
 .method public static isSimCardInserted(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/phone/EmergencyDialerUtils;->getMultiSimIccType(I)Ljava/lang/String;
 
@@ -756,7 +750,6 @@
 
 .method public static isSimCardStatusOn(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -842,7 +835,6 @@
 
 .method public static isSimReady(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x5
 
@@ -889,7 +881,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "EmergencyDialerUtils"
 
@@ -900,8 +891,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "EmergencyDialerUtils"
 
@@ -912,8 +901,6 @@
 
 .method public static selectSimForEmergency(IZ)I
     .locals 18
-    .param p0    # I
-    .param p1    # Z
 
     move/from16 v5, p0
 
@@ -1427,8 +1414,6 @@
 
 .method public static sendDualmodeSettingBroadcast(Landroid/content/Context;I)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1485,7 +1470,6 @@
 
 .method private static setBootCompleted(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/EmergencyDialerUtils;->mBootCompleted:Z
 
@@ -1494,7 +1478,6 @@
 
 .method public static startEmergencyDialerActivity(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1513,7 +1496,6 @@
 
 .method public static startPendingEmergencyDialerActivity(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -1543,8 +1525,6 @@
 
 .method public static startSafeActivity(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V

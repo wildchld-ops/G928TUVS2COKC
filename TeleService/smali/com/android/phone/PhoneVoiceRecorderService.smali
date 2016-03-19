@@ -53,8 +53,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/PhoneVoiceRecorderService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorderService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneVoiceRecorderService;->log(Ljava/lang/String;)V
 
@@ -63,8 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/PhoneVoiceRecorderService;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorderService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneVoiceRecorderService;->sendMessageCallback(I)V
 
@@ -73,7 +69,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneVoiceRecorderService"
 
@@ -88,8 +83,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "PhoneVoiceRecorderService"
 
@@ -112,7 +105,6 @@
 
 .method private sendMessageCallback(I)V
     .locals 5
-    .param p1    # I
 
     :try_start_0
     iget-object v4, p0, Lcom/android/phone/PhoneVoiceRecorderService;->mCallbacks:Landroid/os/RemoteCallbackList;
@@ -291,7 +283,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "onBind()"
 
@@ -388,7 +379,6 @@
 
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "onUnbind()"
 
@@ -433,7 +423,6 @@
 
 .method public setCallerNumber(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorderService;->recorder:Lcom/android/phone/PhoneVoiceRecorder;
 

@@ -282,7 +282,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/EditFdnContactScreen;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->mNameField:Landroid/widget/EditText;
 
@@ -291,7 +290,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/EditFdnContactScreen;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -300,7 +298,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/EditFdnContactScreen;)I
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget v0, p0, Lcom/android/phone/EditFdnContactScreen;->mUsedCount:I
 
@@ -309,8 +306,6 @@
 
 .method static synthetic access$1002(Lcom/android/phone/EditFdnContactScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/EditFdnContactScreen;->mUsedCount:I
 
@@ -319,7 +314,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/EditFdnContactScreen;)I
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget v0, p0, Lcom/android/phone/EditFdnContactScreen;->mName_MaxLength:I
 
@@ -328,8 +322,6 @@
 
 .method static synthetic access$1102(Lcom/android/phone/EditFdnContactScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/EditFdnContactScreen;->mName_MaxLength:I
 
@@ -338,7 +330,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/EditFdnContactScreen;)I
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget v0, p0, Lcom/android/phone/EditFdnContactScreen;->mNumber_MaxLength:I
 
@@ -347,8 +338,6 @@
 
 .method static synthetic access$1202(Lcom/android/phone/EditFdnContactScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/EditFdnContactScreen;->mNumber_MaxLength:I
 
@@ -357,7 +346,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/EditFdnContactScreen;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->toastAlert:Landroid/widget/Toast;
 
@@ -366,7 +354,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/EditFdnContactScreen;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/EditFdnContactScreen;->mAddContact:Z
 
@@ -375,7 +362,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/EditFdnContactScreen;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     invoke-direct {p0}, Lcom/android/phone/EditFdnContactScreen;->addContact()V
 
@@ -384,7 +370,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/EditFdnContactScreen;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     invoke-direct {p0}, Lcom/android/phone/EditFdnContactScreen;->updateContact()V
 
@@ -393,9 +378,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/EditFdnContactScreen;ZLjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/EditFdnContactScreen;->handleResult(ZLjava/lang/String;)V
 
@@ -404,7 +386,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/EditFdnContactScreen;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->mNumberField:Landroid/widget/EditText;
 
@@ -413,7 +394,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/EditFdnContactScreen;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen;->mPin2Field:Landroid/widget/EditText;
 
@@ -422,8 +402,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/EditFdnContactScreen;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EditFdnContactScreen;->showStatus(Ljava/lang/CharSequence;)V
 
@@ -432,9 +410,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/EditFdnContactScreen;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/EditFdnContactScreen;->log(Ljava/lang/String;Z)V
 
@@ -443,8 +418,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/EditFdnContactScreen;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EditFdnContactScreen;->log(Ljava/lang/String;)V
 
@@ -453,8 +426,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/EditFdnContactScreen;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/EditFdnContactScreen;->displayProgress(Z)V
 
@@ -463,7 +434,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/EditFdnContactScreen;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget-boolean v0, p0, Lcom/android/phone/EditFdnContactScreen;->mIsRefreshingSIM:Z
 
@@ -472,8 +442,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/EditFdnContactScreen;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EditFdnContactScreen;->mIsRefreshingSIM:Z
 
@@ -482,7 +450,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/EditFdnContactScreen;)I
     .locals 1
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
 
     iget v0, p0, Lcom/android/phone/EditFdnContactScreen;->mMax_Count:I
 
@@ -491,8 +458,6 @@
 
 .method static synthetic access$902(Lcom/android/phone/EditFdnContactScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/EditFdnContactScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/EditFdnContactScreen;->mMax_Count:I
 
@@ -688,7 +653,6 @@
 
 .method private displayProgress(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -957,8 +921,6 @@
 
 .method private handleResult(ZLjava/lang/String;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v4, 0x7d0
 
@@ -1248,7 +1210,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EditFdnContactScreen"
 
@@ -1259,8 +1220,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "EditFdnContactScreen"
 
@@ -1399,7 +1358,6 @@
 
 .method private setupView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -1672,7 +1630,6 @@
 
 .method private showStatus(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_0
 
@@ -1792,7 +1749,6 @@
 
 .method private validatePin2(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1883,7 +1839,6 @@
 
 .method public getByteArrayText(Ljava/lang/String;)[B
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1993,9 +1948,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, -0x1
 
@@ -2345,7 +2297,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2360,8 +2311,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v7, 0x7f0a020b
 
@@ -2474,9 +2423,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -2694,8 +2640,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2743,7 +2687,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -2828,7 +2771,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x3
 

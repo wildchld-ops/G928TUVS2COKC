@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/tw_list_icon_create_mtrl" android:tint="@color/tw_list_icon_create_mtrl_color" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/tw_list_icon_create_mtrl" android:tint="@color/tw_list_icon_create_mtrl_color" />
+    </item>
+</selector>

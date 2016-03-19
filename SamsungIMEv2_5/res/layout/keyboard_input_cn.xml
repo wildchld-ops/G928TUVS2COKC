@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ime.implement.view.KeyboardView android:id="@id/keyboardView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ime.implement.view.chinesespell.PhoneticSpellScrollLayout android:id="@id/scroll_view_parent" android:background="@color/phonetic_spell_candidate_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/scroll_view_effect_up" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phonetic_spell_scrollview__more_up" android:scaleType="fitStart" />
+        <com.ime.implement.view.chinesespell.PhoneticSpellScrollView android:id="@id/spell_scroll_view" android:paddingTop="@dimen/phonepad_chinese_spell_scroll_view_padding_top" android:paddingBottom="@dimen/phonepad_chinese_spell_scroll_view_padding_bottom" android:scrollbars="none" android:fadingEdgeLength="@dimen/spell_scroll_view_fading_edge_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/phonepad_chinese_spell_scroll_view_padding_left_right" android:paddingEnd="@dimen/phonepad_chinese_spell_scroll_view_padding_left_right">
+            <LinearLayout android:orientation="vertical" android:id="@id/spell_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.ime.implement.view.chinesespell.PhoneticSpellScrollView>
+        <ImageView android:layout_gravity="bottom" android:id="@id/scroll_view_effect_down" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phonetic_spell_scrollview_more_down" android:scaleType="fitEnd" />
+    </com.ime.implement.view.chinesespell.PhoneticSpellScrollLayout>
+</FrameLayout>

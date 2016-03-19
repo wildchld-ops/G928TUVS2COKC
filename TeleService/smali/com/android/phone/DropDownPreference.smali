@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -55,8 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -121,7 +118,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/DropDownPreference;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/phone/DropDownPreference;
 
     iget-object v0, p0, Lcom/android/phone/DropDownPreference;->mSpinner:Landroid/widget/Spinner;
 
@@ -132,8 +128,6 @@
 # virtual methods
 .method public addItem(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/phone/DropDownPreference;->mAdapter:Landroid/widget/ArrayAdapter;
 
@@ -162,7 +156,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -230,7 +223,6 @@
 
 .method public setCallback(Lcom/android/phone/DropDownPreference$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/phone/DropDownPreference$Callback;
 
     iput-object p1, p0, Lcom/android/phone/DropDownPreference;->mCallback:Lcom/android/phone/DropDownPreference$Callback;
 
@@ -239,7 +231,6 @@
 
 .method public setSelectedItem(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -250,8 +241,6 @@
 
 .method public setSelectedItem(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/phone/DropDownPreference;->mValues:Ljava/util/ArrayList;
 
@@ -308,7 +297,6 @@
 
 .method public setSelectedValue(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/android/phone/DropDownPreference;->mValues:Ljava/util/ArrayList;
 

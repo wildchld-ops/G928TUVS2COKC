@@ -36,7 +36,6 @@
 # virtual methods
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/android/phone/operator/usa/AssistedDialingList$3;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 
@@ -289,7 +288,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/AssistedDialingList$3;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 

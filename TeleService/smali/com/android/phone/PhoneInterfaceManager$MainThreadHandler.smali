@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/PhoneInterfaceManager;Lcom/android/phone/PhoneInterfaceManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/PhoneInterfaceManager;
-    .param p2    # Lcom/android/phone/PhoneInterfaceManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;-><init>(Lcom/android/phone/PhoneInterfaceManager;)V
 
@@ -41,8 +39,6 @@
 
 .method private handleNullReturnEvent(Landroid/os/Message;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -159,7 +155,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 47
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pinch_zoom_guide_moving_content">Touch and hold with two fingers, then drag to move keyboards</string>
+    <string name="hwr_gesture_guide_dont_show">Do not show again.</string>
+    <string name="settings_hold_delay_title">Touch and hold delay</string>
+</resources>

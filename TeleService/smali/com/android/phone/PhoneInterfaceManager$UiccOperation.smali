@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/PhoneInterfaceManager;Lcom/android/phone/PhoneInterfaceManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/PhoneInterfaceManager;
-    .param p2    # Lcom/android/phone/PhoneInterfaceManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneInterfaceManager$UiccOperation;-><init>(Lcom/android/phone/PhoneInterfaceManager;)V
 
@@ -55,8 +53,6 @@
 
 .method static synthetic access$1202(Lcom/android/phone/PhoneInterfaceManager$UiccOperation;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneInterfaceManager$UiccOperation;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$UiccOperation;->mDone:Z
 
@@ -65,8 +61,6 @@
 
 .method static synthetic access$1302(Lcom/android/phone/PhoneInterfaceManager$UiccOperation;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneInterfaceManager$UiccOperation;
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/android/phone/PhoneInterfaceManager$UiccOperation;->mResult:Ljava/lang/Object;
 
@@ -153,8 +147,6 @@
 # virtual methods
 .method declared-synchronized calculateAka([B[B)Ljava/lang/String;
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
 
     monitor-enter p0
 
@@ -256,9 +248,6 @@
 
 .method declared-synchronized setGbaBootstrappingParams([BLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 

@@ -1,0 +1,143 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: xFyef6q9yL2GidnIgrRWF7FwJFY=
+
+Name: com/sun/org/apache/xml/internal/security/resource/xmlsecurity_en
+ .properties
+SHA1-Digest: nV5SD+ZsY1CoswfJABuXuQAHN8M=
+
+Name: mf/org/apache/xerces/jaxp/datatype/javax.xml.datatype.DatatypeFa
+ ctory
+SHA1-Digest: 1Z9x6WaoeOeD76tZL75xjGK3/Jw=
+
+Name: mf/org/apache/xml/serialize/HTMLEntities.res
+SHA1-Digest: WPMl2jnqv2IbnqzdO3UF9jTHQ2s=
+
+Name: com/sun/org/apache/xml/internal/security/resource/schema/xenc-sc
+ hema.xsd
+SHA1-Digest: q/Z/AYGSP5EzZDSk92NZ/Gh+g1M=
+
+Name: mf/org/apache/xerces/impl/msg/DOMMessages.properties
+SHA1-Digest: L4VgFKODQtT5WAJLpMSwqoAb5rA=
+
+Name: mf/org/apache/xerces/jaxp/javax.xml.parsers.DocumentBuilderFacto
+ ry
+SHA1-Digest: IyS4a9VPCTB2PPi5HN+pp7eiudk=
+
+Name: com/sun/org/apache/xml/internal/security/resource/schema/etsi.xs
+ d
+SHA1-Digest: 7RTeOUCIbE2ZMYUPlyOnzbk5cGc=
+
+Name: com/sun/org/apache/xml/internal/security/resource/schema/xmldsig
+ -core-schema.xsd
+SHA1-Digest: 5q8KqF0O/4JdFMdlfTFCUY4gYBI=
+
+Name: mf/org/apache/xerces/impl/xpath/regex/message.properties
+SHA1-Digest: 4jYewYF5VInVfMsKaq2adW/MD6o=
+
+Name: mf/org/apache/xerces/parsers/org.apache.xerces.xni.parser.DTDCon
+ figuration
+SHA1-Digest: D0xUd4jcPt4Gv0tlNr0jf7U4/Nk=
+
+Name: mf/org/apache/xerces/impl/xpath/regex/message_ja.properties
+SHA1-Digest: vP34Ug1AkyMaGS1+FYjQ4Wx9Gp4=
+
+Name: mf/org/apache/xerces/parsers/org.apache.xerces.xni.parser.XMLPar
+ serConfiguration
+SHA1-Digest: FZZdw2uNm6lWi5qu7M6G2Eql1wI=
+
+Name: com/sun/org/apache/xml/internal/security/resource/log4j.properti
+ es
+SHA1-Digest: oV9+BFSQLeg2SLszvjjlZiq9otk=
+
+Name: mf/org/apache/xerces/impl/msg/SAXMessages.properties
+SHA1-Digest: bfmQXTt0f13ft94Lb7BT6JrotN8=
+
+Name: mf/org/apache/xerces/parsers/org.apache.xerces.xni.parser.XML11C
+ onfiguration
+SHA1-Digest: fGHoatQgAYyWoBMjWKaNIXtHv/w=
+
+Name: mf/org/apache/xml/resolver/Version.src
+SHA1-Digest: hTuHUgUA2NQ1B3dh5MKFY4ilXwU=
+
+Name: mf/org/apache/xerces/jaxp/javax.xml.parsers.SAXParserFactory
+SHA1-Digest: DxwxyFSu7r3sdONK8RayeN13nWQ=
+
+Name: mf/org/apache/xerces/impl/msg/XMLSchemaMessages.properties
+SHA1-Digest: +uZFfbo+K/OsY6f/1wQxhv5wzE4=
+
+Name: mf/org/apache/xerces/jaxp/validation/javax.xml.validation.Schema
+ Factory
+SHA1-Digest: p9x8xCCf9q3CBrcrKTnY1XMwvXY=
+
+Name: com/sun/org/apache/xml/internal/security/resource/package.html
+SHA1-Digest: q+x0z5u7Bk4kiW002rE7lddG3Rc=
+
+Name: mf/org/apache/xml/resolver/LICENSE.resolver.txt
+SHA1-Digest: OPbK0Et21rXHEcEXqRo9FssAQUA=
+
+Name: mf/org/apache/xerces/impl/msg/JAXPValidationMessages.properties
+SHA1-Digest: t36VwkbiA4Cl8X8AyfH3J2KSBsE=
+
+Name: mf/org/apache/xerces/stax/javax.xml.stream.XMLEventFactory
+SHA1-Digest: B+f/zy7O3iJD7a2ZfVknVW9YC5I=
+
+Name: mf/org/apache/xerces/impl/msg/XPointerMessages.properties
+SHA1-Digest: mnlJGJN4w6y24Pdb95jRVgjlQLE=
+
+Name: classes.dex
+SHA1-Digest: ew9BWCTrl9nKPbl0IY/VYgF7w1o=
+
+Name: mf/org/apache/xerces/impl/msg/XMLMessages.properties
+SHA1-Digest: UAAHSwnulqjZFrg2Wpt5oeqhifw=
+
+Name: mf/org/apache/xerces/impl/msg/XMLSerializerMessages.properties
+SHA1-Digest: ZpQP5gR6GO0P8GkNTDe9mMgEwXc=
+
+Name: mf/org/apache/xerces/dom/org.w3c.dom.DOMImplementationSourceList
+SHA1-Digest: M7FyHQxi2/IlX79LImvUOQHYlw4=
+
+Name: com/sun/org/apache/xml/internal/security/resource/config.xml
+SHA1-Digest: NGzQLaw+Qp435BTYeaFxaap3wic=
+
+Name: com/sun/org/apache/xml/internal/security/resource/schema/xenc-sc
+ hema.rng
+SHA1-Digest: Vzs7AWoMuBbiusT8WXW8upwxKAo=
+
+Name: com/sun/org/apache/xml/internal/security/resource/config.dtd
+SHA1-Digest: 8bmnyp9lqe6e81/vu8Oc3IIOSl8=
+
+Name: mf/org/apache/xerces/parsers/org.xml.sax.driver
+SHA1-Digest: u9uOulISYgqFcVM+/GwcWbABZ+c=
+
+Name: mf/org/apache/xerces/impl/msg/DatatypeMessages.properties
+SHA1-Digest: CpCBVDbeih1VHP2V6RhhI2M+W4Y=
+
+Name: com/sun/org/apache/xml/internal/security/resource/xmlsecurity_de
+ .properties
+SHA1-Digest: gWcL4MERmjfX20ymom9sR7tb8XA=
+
+Name: mf/org/apache/xerces/impl/xpath/regex/message_fr.properties
+SHA1-Digest: B0twhjOZ1seLXkQtw95tdqllHTk=
+
+Name: com/sun/org/apache/xml/internal/security/resource/schema/xmldsig
+ -core-schema.dtd
+SHA1-Digest: leTg/bMpSEQchiphk6CXcN9Hm5g=
+
+Name: com/sun/org/apache/xml/internal/security/resource/schema/xmldsig
+ -core-schema.rng
+SHA1-Digest: IxPC2PEUp3lmFvBJ4f0fTLRoOmk=
+
+Name: mf/org/apache/xerces/dom/org.apache.xerces.dom.DOMImplementation
+ SourceImpl
+SHA1-Digest: edJ5oRvLhzN+Yzwim2iVTiPEC/k=
+
+Name: mf/org/apache/xerces/impl/msg/XIncludeMessages.properties
+SHA1-Digest: rcYstgH+g5AluXh9tXt1HxOBdLI=
+
+Name: mf/org/apache/xml/resolver/NOTICE-resolver.txt
+SHA1-Digest: BBEvevIjhYJ3j6JaGD/X1Qn6OQY=
+
+Name: mf/javax/xml/license.txt
+SHA1-Digest: oN0CnO5nkP/xY+E5MnZrj9qXVvo=
+

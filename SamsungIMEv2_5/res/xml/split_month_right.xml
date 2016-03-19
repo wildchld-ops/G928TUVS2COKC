@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_yeardatetime_default_key_width" android:keyHeight="@dimen/split_phonepad_default_key_height" android:horizontalGap="@dimen/split_yeardatetime_default_key_horizontal_gap" android:verticalGap="@dimen/split_phonepad_default_key_vertical_gap" android:paddingLeft="@dimen/split_yeardatetime_first_col_horizontal_gap" android:paddingRight="@dimen/split_yeardatetime_first_col_horizontal_gap" android:paddingTop="@dimen/split_phonepad_first_line_vertical_gap" android:paddingBottom="@dimen/split_phonepad_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row>
+        <Key android:codes="-141" />
+        <Key android:codes="-142" />
+        <Key android:codes="-143" />
+    </Row>
+    <Row>
+        <Key android:codes="-144" />
+        <Key android:codes="-145" />
+        <Key android:codes="-146" />
+    </Row>
+    <Row>
+        <Key android:codes="-147" />
+        <Key android:codes="-148" />
+        <Key android:codes="-149" />
+    </Row>
+    <Row>
+        <Key android:codes="-150" />
+        <Key android:codes="-151" />
+        <Key android:codes="-152" />
+    </Row>
+</Keyboard>

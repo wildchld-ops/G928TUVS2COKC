@@ -158,7 +158,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -169,8 +168,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -432,7 +429,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/NetworkModePreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->LOG_TAG:Ljava/lang/String;
 
@@ -441,7 +437,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/NetworkModePreference;)[Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mPhones:[Lcom/android/internal/telephony/Phone;
 
@@ -450,7 +445,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/NetworkModePreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget v0, p0, Lcom/android/phone/NetworkModePreference;->mActivePhoneId:I
 
@@ -467,7 +461,6 @@
 
 .method static synthetic access$1202(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/phone/NetworkModePreference;->sChangeNetworkType_Step2:I
 
@@ -476,7 +469,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/NetworkModePreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget v0, p0, Lcom/android/phone/NetworkModePreference;->mNetworkTypeForStep2:I
 
@@ -485,8 +477,6 @@
 
 .method static synthetic access$1302(Lcom/android/phone/NetworkModePreference;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkModePreference;->mNetworkTypeForStep2:I
 
@@ -503,7 +493,6 @@
 
 .method static synthetic access$1402(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/phone/NetworkModePreference;->sNetworkTypeSim0:I
 
@@ -520,7 +509,6 @@
 
 .method static synthetic access$1502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/phone/NetworkModePreference;->sNetworkTypeSim1:I
 
@@ -529,7 +517,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/NetworkModePreference;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->summaryString:[Ljava/lang/String;
 
@@ -538,7 +525,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/NetworkModePreference;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -555,7 +541,6 @@
 
 .method static synthetic access$1802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/NetworkModePreference;->sSetEnabled:Z
 
@@ -564,8 +549,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/NetworkModePreference;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModePreference;->setMobileDataEnabled(Z)V
 
@@ -574,7 +557,6 @@
 
 .method static synthetic access$2000(Lcom/android/phone/NetworkModePreference;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkModePreference;->mIsDisconnectingData:Z
 
@@ -583,8 +565,6 @@
 
 .method static synthetic access$2002(Lcom/android/phone/NetworkModePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModePreference;->mIsDisconnectingData:Z
 
@@ -593,8 +573,6 @@
 
 .method static synthetic access$2102(Lcom/android/phone/NetworkModePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModePreference;->mTriggerChangeNetwork:Z
 
@@ -603,7 +581,6 @@
 
 .method static synthetic access$2200(Lcom/android/phone/NetworkModePreference;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mDialog:Landroid/app/AlertDialog;
 
@@ -612,8 +589,6 @@
 
 .method static synthetic access$2300(Lcom/android/phone/NetworkModePreference;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModePreference;->setEnabledMenu(Z)V
 
@@ -622,7 +597,6 @@
 
 .method static synthetic access$2400(Lcom/android/phone/NetworkModePreference;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkModePreference;->mDisplayDataPreferredSlotChangeDialog:Z
 
@@ -631,8 +605,6 @@
 
 .method static synthetic access$2402(Lcom/android/phone/NetworkModePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModePreference;->mDisplayDataPreferredSlotChangeDialog:Z
 
@@ -641,7 +613,6 @@
 
 .method static synthetic access$2502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/NetworkModePreference;->sSetEnableForCrossMapping:Z
 
@@ -650,7 +621,6 @@
 
 .method static synthetic access$2600(Lcom/android/phone/NetworkModePreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference;->displayDataPreferredSlotChangeDialog()V
 
@@ -659,7 +629,6 @@
 
 .method static synthetic access$2700(Lcom/android/phone/NetworkModePreference;)Landroid/preference/TwoStatePreference;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mButtonDataEnabled:Landroid/preference/TwoStatePreference;
 
@@ -668,8 +637,6 @@
 
 .method static synthetic access$2702(Lcom/android/phone/NetworkModePreference;Landroid/preference/TwoStatePreference;)Landroid/preference/TwoStatePreference;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Landroid/preference/TwoStatePreference;
 
     iput-object p1, p0, Lcom/android/phone/NetworkModePreference;->mButtonDataEnabled:Landroid/preference/TwoStatePreference;
 
@@ -678,7 +645,6 @@
 
 .method static synthetic access$2800(Lcom/android/phone/NetworkModePreference;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference;->getLTEsummary()[Ljava/lang/String;
 
@@ -689,7 +655,6 @@
 
 .method static synthetic access$2900(Lcom/android/phone/NetworkModePreference;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference;->get3Gsummary()[Ljava/lang/String;
 
@@ -700,7 +665,6 @@
 
 .method static synthetic access$3000(Lcom/android/phone/NetworkModePreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference;->setLTElist()V
 
@@ -717,8 +681,6 @@
 
 .method static synthetic access$3202(Lcom/android/phone/NetworkModePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModePreference;->mIsOtherPhone3G:Z
 
@@ -727,7 +689,6 @@
 
 .method static synthetic access$3300(Lcom/android/phone/NetworkModePreference;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -736,7 +697,6 @@
 
 .method static synthetic access$3402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/NetworkModePreference;->mImsDereg:Z
 
@@ -745,7 +705,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/NetworkModePreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference;->changeNetworkType()V
 
@@ -754,7 +713,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/NetworkModePreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mContext:Landroid/content/Context;
 
@@ -763,7 +721,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/NetworkModePreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference;->changeDataServiceForMultisim()V
 
@@ -772,8 +729,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/NetworkModePreference;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkModePreference;->mOldNetworkType:I
 
@@ -782,7 +737,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/NetworkModePreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget v0, p0, Lcom/android/phone/NetworkModePreference;->mNetworkType:I
 
@@ -791,8 +745,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/NetworkModePreference;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkModePreference;->mNetworkType:I
 
@@ -801,7 +753,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/NetworkModePreference;)Lcom/android/phone/NetworkModePreference$MyHandler;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkModePreference;
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
@@ -1441,7 +1392,6 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1779,7 +1729,6 @@
 
 .method private dualSimMPS_DataLock(I)Z
     .locals 5
-    .param p1    # I
 
     const-string v2, "AddDataLock"
 
@@ -2945,7 +2894,6 @@
 
 .method private isShouldDimNetworkMode(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3301,7 +3249,6 @@
 
 .method private setEnabledMenu(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
@@ -3725,7 +3672,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "dcm_change_data_enable_function"
 
@@ -4565,7 +4511,6 @@
 
 .method public dataConnectionStateChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -4913,7 +4858,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 8
-    .param p1    # Z
 
     const v7, 0x7f0a0282
 
@@ -5320,7 +5264,6 @@
 
 .method public sendBroadcastButtonEnableIntent(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5389,7 +5332,6 @@
 
 .method public setActivityExist(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkModePreference;->mActivityExist:Z
 
@@ -5398,7 +5340,6 @@
 
 .method public setNetworkModePreference(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 

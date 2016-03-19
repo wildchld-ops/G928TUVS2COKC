@@ -122,7 +122,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -144,8 +143,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -285,7 +282,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CallForwardEditPreference;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mTimePicker:Landroid/app/Dialog;
 
@@ -294,7 +290,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/CallForwardEditPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mForwardNumber:Ljava/lang/String;
 
@@ -303,8 +298,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/CallForwardEditPreference;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # Landroid/app/Dialog;
 
     iput-object p1, p0, Lcom/android/phone/CallForwardEditPreference;->mTimePicker:Landroid/app/Dialog;
 
@@ -313,7 +306,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/CallForwardEditPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-boolean v0, p0, Lcom/android/phone/CallForwardEditPreference;->mProcessing:Z
 
@@ -322,7 +314,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/CallForwardEditPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-boolean v0, p0, Lcom/android/phone/CallForwardEditPreference;->mCFU:Z
 
@@ -331,8 +322,6 @@
 
 .method static synthetic access$1202(Lcom/android/phone/CallForwardEditPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CallForwardEditPreference;->mCFU:Z
 
@@ -341,7 +330,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/CallForwardEditPreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget v0, p0, Lcom/android/phone/CallForwardEditPreference;->mServiceClass:I
 
@@ -350,8 +338,6 @@
 
 .method static synthetic access$1302(Lcom/android/phone/CallForwardEditPreference;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CallForwardEditPreference;->mServiceClass:I
 
@@ -360,8 +346,6 @@
 
 .method static synthetic access$1402(Lcom/android/phone/CallForwardEditPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CallForwardEditPreference;->mUpdateSummaryWithNoQuery:Z
 
@@ -370,7 +354,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/CallForwardEditPreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     invoke-direct {p0}, Lcom/android/phone/CallForwardEditPreference;->updateSummaryTextKDDI()V
 
@@ -379,7 +362,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/CallForwardEditPreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     invoke-direct {p0}, Lcom/android/phone/CallForwardEditPreference;->updateSummaryText()V
 
@@ -388,7 +370,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/CallForwardEditPreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mContext:Landroid/content/Context;
 
@@ -397,7 +378,6 @@
 
 .method static synthetic access$1800(Lcom/android/phone/CallForwardEditPreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget v0, p0, Lcom/android/phone/CallForwardEditPreference;->mSimSlot:I
 
@@ -406,7 +386,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/CallForwardEditPreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget v0, p0, Lcom/android/phone/CallForwardEditPreference;->mSelectedButton:I
 
@@ -415,8 +394,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/CallForwardEditPreference;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CallForwardEditPreference;->mSelectedButton:I
 
@@ -425,7 +402,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/CallForwardEditPreference;)Landroid/app/TimePickerDialog$OnTimeSetListener;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mTimeSetListener:Landroid/app/TimePickerDialog$OnTimeSetListener;
 
@@ -434,7 +410,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/CallForwardEditPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mTimeStart:Ljava/lang/String;
 
@@ -443,8 +418,6 @@
 
 .method static synthetic access$402(Lcom/android/phone/CallForwardEditPreference;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/CallForwardEditPreference;->mTimeStart:Ljava/lang/String;
 
@@ -453,7 +426,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/CallForwardEditPreference;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mEditStart:Landroid/widget/Button;
 
@@ -462,7 +434,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/CallForwardEditPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mTimeEnd:Ljava/lang/String;
 
@@ -471,8 +442,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/CallForwardEditPreference;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/CallForwardEditPreference;->mTimeEnd:Ljava/lang/String;
 
@@ -481,7 +450,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/CallForwardEditPreference;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mEditEnd:Landroid/widget/Button;
 
@@ -490,7 +458,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/CallForwardEditPreference;)Landroid/widget/RadioButton;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mVoiceMail_kddi:Landroid/widget/RadioButton;
 
@@ -499,7 +466,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/CallForwardEditPreference;)Landroid/widget/RadioButton;
     .locals 1
-    .param p0    # Lcom/android/phone/CallForwardEditPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallForwardEditPreference;->mCallForward_kddi:Landroid/widget/RadioButton;
 
@@ -1203,8 +1169,6 @@
 # virtual methods
 .method handleCallForwardResult(Lcom/android/internal/telephony/CallForwardInfo;Landroid/os/Message;)V
     .locals 8
-    .param p1    # Lcom/android/internal/telephony/CallForwardInfo;
-    .param p2    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -1462,8 +1426,6 @@
 
 .method init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
     .locals 7
-    .param p1    # Lcom/android/phone/TimeConsumingPreferenceListener;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -1587,9 +1549,6 @@
 
 .method init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
     .locals 3
-    .param p1    # Lcom/android/phone/TimeConsumingPreferenceListener;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v0, "feature_multisim"
 
@@ -1641,7 +1600,6 @@
 
 .method public initCheckBoxKDDI(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -1750,7 +1708,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -2125,8 +2082,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/android/phone/EditPhoneNumberPreference;->onClick(Landroid/content/DialogInterface;I)V
 
@@ -2137,7 +2092,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v8, 0x2
 

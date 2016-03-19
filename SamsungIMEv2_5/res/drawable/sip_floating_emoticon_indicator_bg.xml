@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/stroke_width" android:right="@dimen/stroke_width" android:bottom="@dimen/stroke_width">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="2.0dip" android:bottomRightRadius="2.0dip" />
+            <solid android:color="@color/emoticon_button_bg_color" />
+        </shape>
+    </item>
+</layer-list>

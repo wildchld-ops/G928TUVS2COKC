@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/qwerty_key_icon_floating_language_kr_selected_pressed" android:tint="@color/drawable_color_normal_pressed" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/qwerty_key_icon_floating_language_kr_selected" android:tint="@color/drawable_color_normal" />
+    </item>
+</selector>

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/TimeConsumingPreferenceActivity;Lcom/android/phone/TimeConsumingPreferenceActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/TimeConsumingPreferenceActivity;
-    .param p2    # Lcom/android/phone/TimeConsumingPreferenceActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity$DismissOnClickListener;-><init>(Lcom/android/phone/TimeConsumingPreferenceActivity;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const-string v0, "TimeConsumingPreferenceActivity"
 

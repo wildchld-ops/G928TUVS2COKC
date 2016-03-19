@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_qwerty_12_12_8_key_width" android:keyHeight="@dimen/floating_qwerty_default_key_height" android:horizontalGap="@dimen/floating_qwerty_12_12_8_horizontal_gap" android:verticalGap="@dimen/floating_qwerty_default_key_vertical_gap" android:paddingLeft="@dimen/floating_qwerty_first_col_horizontal_gap" android:paddingRight="@dimen/floating_qwerty_first_col_horizontal_gap" android:paddingTop="@dimen/floating_qwerty_first_line_vertical_gap" android:paddingBottom="@dimen/floating_qwerty_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/floating_qwerty_default_key_width" android:keyHeight="@dimen/floating_qwerty_default_number_key_height" android:horizontalGap="@dimen/floating_qwerty_default_number_key_horizontal_gap" android:verticalGap="@dimen/floating_qwerty_default_number_key_vertical_gap" android:rowEdgeFlags="top" android:keyIcon="@drawable/textinput_floating_qwerty_btn_number_xml">
+        <include android:keys="@xml/floating_qwerty_default_number_row" />
+        <Key android:property="tablet" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_12_12_8_row0_padding_left">
+        <Key android:codes="102" android:popupCharacters="@string/default_umlaut_f" android:keyLabel="f" />
+        <Key android:codes="103" android:popupCharacters="@string/default_umlaut_g" android:keyLabel="g" />
+        <Key android:codes="0x11f" android:keyLabel="ğ" />
+        <Key android:codes="0x131" android:popupCharacters="@string/default_umlaut_i" android:keyLabel="ı" />
+        <Key android:codes="111" android:popupCharacters="@string/default_umlaut_o" android:keyLabel="o" />
+        <Key android:codes="100" android:popupCharacters="@string/default_umlaut_d" android:keyLabel="d" />
+        <Key android:codes="114" android:popupCharacters="@string/default_umlaut_r" android:keyLabel="r" />
+        <Key android:codes="110" android:popupCharacters="@string/default_umlaut_n" android:keyLabel="n" />
+        <Key android:codes="104" android:popupCharacters="@string/default_umlaut_h" android:keyLabel="h" />
+        <Key android:codes="112" android:popupCharacters="@string/default_umlaut_p" android:keyLabel="p" />
+        <Key android:codes="113" android:popupCharacters="@string/default_umlaut_q" android:keyLabel="q" />
+        <Key android:codes="119" android:popupCharacters="@string/default_umlaut_w" android:keyLabel="w" />
+        <Key android:keyWidth="@dimen/floating_qwerty_12_12_10_key_width_backspace" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_12_12_8_row1_padding_left">
+        <Key android:codes="117" android:popupCharacters="@string/default_umlaut_u" android:keyLabel="u" />
+        <Key android:codes="105" android:popupCharacters="@string/default_umlaut_i" android:keyLabel="i" />
+        <Key android:codes="101" android:popupCharacters="@string/default_umlaut_e" android:keyLabel="e" />
+        <Key android:codes="97" android:popupCharacters="@string/default_umlaut_a" android:keyLabel="a" />
+        <Key android:codes="0xfc" android:keyLabel="ü" />
+        <Key android:codes="116" android:popupCharacters="@string/default_umlaut_t" android:keyLabel="t" />
+        <Key android:codes="107" android:popupCharacters="@string/default_umlaut_k" android:keyLabel="k" />
+        <Key android:codes="109" android:popupCharacters="@string/default_umlaut_m" android:keyLabel="m" />
+        <Key android:codes="108" android:popupCharacters="@string/default_umlaut_l" android:keyLabel="l" />
+        <Key android:codes="121" android:popupCharacters="@string/default_umlaut_y" android:keyLabel="y" />
+        <Key android:codes="0x15f" android:keyLabel="ş" />
+        <Key android:codes="120" android:popupCharacters="@string/default_umlaut_x" android:keyLabel="x" />
+        <Key android:keyWidth="@dimen/floating_qwerty_12_12_8_key_width_enter" android:backgroundDrawable="@drawable/textinput_floating_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_12_12_8_row2_padding_left">
+        <Key android:keyWidth="@dimen/floating_qwerty_12_12_8_key_width_shift_left" android:backgroundDrawable="@drawable/floating_sip_key_bg_shift_xml" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/floating_qwerty_12_12_8_horizontal_gap_leftShift" android:codes="106" android:popupCharacters="@string/default_umlaut_j" android:keyLabel="j" />
+        <Key android:codes="0xf6" android:keyLabel="ö" />
+        <Key android:codes="118" android:popupCharacters="@string/default_umlaut_v" android:keyLabel="v" />
+        <Key android:codes="99" android:popupCharacters="@string/default_umlaut_c" android:keyLabel="c" />
+        <Key android:codes="0xe7" android:keyLabel="ç" />
+        <Key android:codes="122" android:popupCharacters="@string/default_umlaut_z" android:keyLabel="z" />
+        <Key android:codes="115" android:popupCharacters="@string/default_umlaut_s" android:keyLabel="s" />
+        <Key android:codes="98" android:popupCharacters="@string/default_umlaut_b" android:keyLabel="b" />
+        <Key android:keyWidth="@dimen/floating_qwerty_12_12_8_key_width_backspace" android:horizontalGap="@dimen/floating_qwerty_12_12_8_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_floating_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:property="tablet" android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/floating_qwerty_12_12_8_key_width_shift_right" android:backgroundDrawable="@drawable/floating_sip_key_bg_shift_xml" android:property="tablet" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/floating_qwerty_row_bottom" />
+</Keyboard>

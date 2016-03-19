@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/textAppearanceMedium" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/shortcutphrase_margin" android:layout_marginBottom="@dimen/shortcutphrase_margin" android:text="@string/use_shortcuts_desc" android:lineSpacingExtra="@dimen/textAppearanceMedium_lineSpacingExtra" android:layout_marginStart="@dimen/shortcut_settings_text_left_margin" android:layout_marginEnd="@dimen/shortcut_settings_text_right_margin" />
+    <ListView android:id="@id/autotext_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#00ffffff" android:dividerHeight="0.0px" />
+</LinearLayout>

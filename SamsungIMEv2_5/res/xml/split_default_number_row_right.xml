@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Key android:codes="0x36" android:keyLabel="\ 6" />
+    <Key android:codes="0x37" android:keyLabel="\ 7" />
+    <Key android:codes="0x38" android:keyLabel="\ 8" />
+    <Key android:codes="0x39" android:keyLabel="\ 9" />
+    <Key android:codes="0x30" android:keyLabel="\ 0" />
+</merge>

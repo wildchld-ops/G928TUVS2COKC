@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/setting_db_update_title" android:key="@string/setting_db_update_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_db_update_setting" android:key="setting_db_update_setting_prefrence_key">
+        <SwitchPreference android:persistent="true" android:title="@string/setting_db_update_auto_wlan_title" android:key="@string/setting_db_update_auto_wlan_key" android:summaryOn="@string/setting_db_update_auto_wlan_summary" android:summaryOff="@string/setting_db_update_auto_wlan_summary" />
+    </PreferenceCategory>
+    <com.ime.implement.setting.dbmanager.DbScanningPrefrence android:title="@string/setting_db_update_download_title" android:key="@string/setting_db_update_download_key" />
+    <com.ime.implement.setting.dbmanager.DbScanningPrefrence android:title="@string/setting_db_update_available_title" android:key="@string/setting_db_update_available_key" />
+</PreferenceScreen>

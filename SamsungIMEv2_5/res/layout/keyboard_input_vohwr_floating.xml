@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/textinput_floating_vohwr_panel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.myscript.atk.sltw.SingleLineTextWidget android:id="@id/HWRPanel" android:paddingBottom="@dimen/handwriting_floating_vopanel_keypad_height" android:layout_width="@dimen/handwriting_floating_panel_width" android:layout_height="@dimen/handwriting_floating_vopanel_height" android:paddingStart="@dimen/handwriting_floating_panel_padding" android:paddingEnd="@dimen/handwriting_floating_panel_padding" />
+    <com.ime.implement.view.HwrKeyboardView android:layout_gravity="bottom" android:id="@id/HWRkeyboardView" android:layout_width="@dimen/handwriting_floating_panel_width" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -60,7 +60,6 @@
 
 .method private static IsVoiceCallEqOff(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -184,8 +183,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/phone/PhoneUtilsCommon;->log(Ljava/lang/String;Z)V
 
@@ -194,7 +191,6 @@
 
 .method static canEnableNoiseSuppression(Landroid/content/Context;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -435,7 +431,6 @@
 
 .method static displayToast(I)V
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -452,7 +447,6 @@
 
 .method static displayToast(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/PhoneUtilsCommon;->mToast:Landroid/widget/Toast;
 
@@ -484,7 +478,6 @@
 
 .method public static getInternationalVoicecallTypeValue(Landroid/content/ContentResolver;)I
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
 
     const-string v1, "volte_settings_in_mobile_networks"
 
@@ -513,7 +506,6 @@
 
 .method public static getRejectMessageCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 18
-    .param p0    # Landroid/database/Cursor;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -807,7 +799,6 @@
 
 .method public static getRejectMessageIconModeCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 22
-    .param p0    # Landroid/database/Cursor;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1204,7 +1195,6 @@
 
 .method private static getVoiceCallEqParamValue(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1316,7 +1306,6 @@
 
 .method public static getVoiceEqListValue(Landroid/content/Context;)I
     .locals 12
-    .param p0    # Landroid/content/Context;
 
     const/4 v11, 0x4
 
@@ -1612,7 +1601,6 @@
 
 .method private static initVoiceCallEq(Lcom/android/phone/PhoneGlobals;)V
     .locals 4
-    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     const-string v1, "dha=0,0,0,0,0,0,0,0,0,0,0,0,0,0"
 
@@ -1695,7 +1683,6 @@
 
 .method public static isCIFVideoCall(Lcom/android/internal/telephony/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -1721,7 +1708,6 @@
 
 .method static isExtraVolOn(Landroid/content/Context;)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -2044,7 +2030,6 @@
 
 .method public static isHD720VideoCall(Lcom/android/internal/telephony/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -2070,7 +2055,6 @@
 
 .method public static isHDVideoCall(Lcom/android/internal/telephony/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -2215,7 +2199,6 @@
 
 .method public static isIMSVideoCall(Lcom/android/internal/telephony/Call;)Z
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -2270,7 +2253,6 @@
 
 .method public static isInternationalRoaming(Lcom/android/internal/telephony/Phone;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     if-nez p0, :cond_0
 
@@ -2364,7 +2346,6 @@
 
 .method public static isOnVoLTECall(Lcom/android/internal/telephony/CallManager;)Z
     .locals 6
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     const/4 v3, 0x0
 
@@ -2419,7 +2400,6 @@
 
 .method public static isOnVoLTEVideoCall(Lcom/android/internal/telephony/CallManager;)Z
     .locals 8
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     const/4 v4, 0x1
 
@@ -2518,7 +2498,6 @@
 
 .method public static isPackageInstalled(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2677,7 +2656,6 @@
 
 .method public static isQCIFVideoCall(Lcom/android/internal/telephony/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -2703,7 +2681,6 @@
 
 .method public static isQVGAVideoCall(Lcom/android/internal/telephony/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -2948,7 +2925,6 @@
 
 .method public static isServiceRegistered(I)Z
     .locals 8
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -3261,7 +3237,6 @@
 
 .method public static isVideoConfCall(Lcom/android/internal/telephony/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -3270,7 +3245,6 @@
 
 .method public static isVoLTECall(Lcom/android/internal/telephony/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -3418,7 +3392,6 @@
 
 .method public static isVoiceCallEqEnabled(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -3538,7 +3511,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneUtilsCommon"
 
@@ -3549,8 +3521,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "PhoneUtilsCommon"
 
@@ -3561,8 +3531,6 @@
 
 .method public static naturalSoundBroadcast(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -3613,8 +3581,6 @@
 
 .method public static noiseReductionBroadcast(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -3681,8 +3647,6 @@
 
 .method public static onPostDialChars(Landroid/os/AsyncResult;C)V
     .locals 8
-    .param p0    # Landroid/os/AsyncResult;
-    .param p1    # C
 
     const/4 v4, 0x0
 
@@ -3857,10 +3821,6 @@
 
 .method public static queryCount(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -3948,7 +3908,6 @@
 
 .method public static setAudioEffect(Z)V
     .locals 3
-    .param p0    # Z
 
     const/4 v2, 0x1
 
@@ -3994,7 +3953,6 @@
 
 .method public static setHideLandscapeIndicatorBar(Landroid/app/Activity;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -4086,8 +4044,6 @@
 
 .method public static setVoiceCallEq(ZZ)V
     .locals 13
-    .param p0    # Z
-    .param p1    # Z
 
     const/4 v12, -0x1
 
@@ -4423,7 +4379,6 @@
 
 .method static setWBMode(Z)V
     .locals 2
-    .param p0    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4454,7 +4409,6 @@
 
 .method public static startMySoundDirectionListening(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -4513,7 +4467,6 @@
 
 .method public static stopMySoundDirectionListening(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 

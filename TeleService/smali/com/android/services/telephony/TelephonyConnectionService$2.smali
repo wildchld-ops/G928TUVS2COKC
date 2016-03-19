@@ -48,7 +48,6 @@
 # virtual methods
 .method public onComplete(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 

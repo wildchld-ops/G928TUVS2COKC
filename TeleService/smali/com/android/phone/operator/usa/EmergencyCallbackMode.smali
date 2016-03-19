@@ -29,7 +29,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/EmergencyCallbackMode;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/EmergencyCallbackMode;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/EmergencyCallbackMode;->emergencyCall()V
 
@@ -38,7 +37,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/EmergencyCallbackMode;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/EmergencyCallbackMode;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/EmergencyCallbackMode;->exitEmergencyCallbackMode()V
 
@@ -47,7 +45,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/usa/EmergencyCallbackMode;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/EmergencyCallbackMode;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/EmergencyCallbackMode;->finishEmergencyCallbackMode()V
 
@@ -148,8 +145,6 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/operator/usa/EmergencyCallbackMode;->mWindowManager:Landroid/view/IWindowManager;
@@ -199,7 +194,6 @@
 
 .method private updateKeyguardPolicy(Z)V
     .locals 3
-    .param p1    # Z
 
     const/high16 v2, 0x400000
 
@@ -252,7 +246,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -339,7 +332,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -427,16 +419,12 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -561,8 +549,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_10_10_7_key_width" android:keyHeight="@dimen/split_default_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_number_key_width" android:keyHeight="@dimen/split_default_number_key_height" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_delete" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row>
+        <include android:keys="@xml/split_default_row1_col5_right" />
+        <Key android:keyWidth="@dimen/split_10_10_7_backspace_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_10_10_7_right_row2_padding_left">
+        <include android:keys="@xml/split_default_row2_col4_right" />
+        <Key android:codes="769,768,777,771,803" android:popupKeyboard="@xml/popup_template_keyboard" android:popupCharacters="@string/vietnamese_tone" android:iconPreview="@drawable/textinput_floating_preview_ic_vietnam_xml" android:keyIcon="@drawable/textinput_floating_qwerty_key_vietnam_ic_accen_xml" />
+        <Key android:keyWidth="@dimen/split_10_10_7_enter_key_width" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <include android:keys="@xml/split_default_row3_col3_right" />
+        <Key android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/split_10_10_7_r_shift_key_width" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/split_row_bottom_right" />
+</Keyboard>

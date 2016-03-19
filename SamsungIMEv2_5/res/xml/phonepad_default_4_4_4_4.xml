@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/phonepad_default_key_width" android:keyHeight="@dimen/phonepad_default_key_height" android:horizontalGap="@dimen/phonepad_default_key_horizontal_gap" android:verticalGap="@dimen/phonepad_default_key_vertical_gap" android:paddingLeft="@dimen/phonepad_first_col_horizontal_gap" android:paddingRight="@dimen/phonepad_first_col_horizontal_gap" android:paddingTop="@dimen/phonepad_first_line_vertical_gap" android:paddingBottom="@dimen/phonepad_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="0.0px">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:codeIndex="0" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:codeIndex="0" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:codeIndex="3" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:codeIndex="3" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:codeIndex="4" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:codeIndex="4" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row>
+        <Key android:codeIndex="5" />
+        <Key android:codeIndex="6" />
+        <Key android:codeIndex="7" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:country="china" android:codes="-400" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+        <Key android:codeIndex="10" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:country="common" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="48" android:keyLabel="\ 0" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+        <Key android:codeIndex="10" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:country="common" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="48" android:keyLabel="\ 0" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+        <Key android:codeIndex="10" />
+        <Key android:country="common" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="48" android:keyLabel="\ 0" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+        <Key android:codeIndex="10" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-113" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="48" android:keyLabel="\ 0" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+        <Key android:codeIndex="10" />
+        <Key android:country="common" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="48" android:keyLabel="\ 0" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+        <Key android:codeIndex="10" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-113" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="48" android:keyLabel="\ 0" />
+    </Row>
+    <include android:rows="@xml/phonepad_default_row_bottom" />
+</Keyboard>

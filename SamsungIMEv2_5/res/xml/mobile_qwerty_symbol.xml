@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/mobile_qwerty_default_key_width" android:keyHeight="@dimen/mobile_qwerty_default_key_height" android:horizontalGap="@dimen/mobile_qwerty_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_qwerty_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_qwerty_default_padding_left" android:paddingRight="@dimen/mobile_qwerty_default_padding_right" android:paddingTop="@dimen/mobile_qwerty_default_padding_top" android:paddingBottom="@dimen/mobile_qwerty_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/mobile_symbol_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/mobile_symbol_default_key_width" android:keyHeight="@dimen/mobile_symbol_default_key_height" android:horizontalGap="@dimen/mobile_symbol_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_symbol_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_symbol_default_padding_left" android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:codeIndex="27" />
+        <Key android:codeIndex="28" />
+        <Key android:codeIndex="29" />
+        <Key android:codeIndex="30" />
+        <Key android:codeIndex="31" />
+        <Key android:codeIndex="32" />
+        <Key android:codeIndex="33" />
+        <Key android:codeIndex="34" />
+        <Key android:codeIndex="35" />
+        <Key android:codeIndex="36" />
+    </Row>
+    <Row android:keyWidth="@dimen/mobile_symbol_default_key_width" android:keyHeight="@dimen/mobile_symbol_default_key_height" android:horizontalGap="@dimen/mobile_symbol_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_symbol_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_symbol_default_padding_left" android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:codeIndex="37" />
+        <Key android:codeIndex="38" />
+        <Key android:codeIndex="39" />
+        <Key android:codeIndex="40" />
+        <Key android:codeIndex="41" />
+        <Key android:codeIndex="42" />
+        <Key android:codeIndex="43" />
+        <Key android:codeIndex="44" />
+        <Key android:codeIndex="45" />
+        <Key android:codeIndex="46" />
+    </Row>
+    <Row android:keyWidth="@dimen/mobile_symbol_default_key_width" android:keyHeight="@dimen/mobile_symbol_default_key_height" android:horizontalGap="@dimen/mobile_symbol_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_symbol_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_symbol_default_padding_left" android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:keyWidth="@dimen/mobile_symbol_bottom_first_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <Key android:horizontalGap="@dimen/mobile_symbol_bottom_second_key_horizontal_gap" android:codeIndex="47" />
+        <Key android:codeIndex="48" />
+        <Key android:codeIndex="49" />
+        <Key android:codeIndex="50" />
+        <Key android:codeIndex="51" />
+        <Key android:codeIndex="52" />
+        <Key android:codeIndex="53" />
+        <Key android:keyWidth="@dimen/mobile_symbol_bottom_first_key_width" android:horizontalGap="@dimen/mobile_symbol_bottom_second_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-330" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_kdb_ic_close_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/mobile_symbol_default_key_width" android:keyHeight="@dimen/mobile_symbol_default_key_height" android:horizontalGap="@dimen/mobile_symbol_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_symbol_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_symbol_default_padding_left" android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:codeIndex="54" />
+        <Key android:codeIndex="55" />
+        <Key android:codeIndex="56" />
+        <Key android:codeIndex="57" />
+        <Key android:codeIndex="58" />
+        <Key android:codeIndex="59" />
+        <Key android:codeIndex="60" />
+        <Key android:codeIndex="61" />
+        <Key android:codeIndex="62" />
+        <Key android:codeIndex="63" />
+    </Row>
+    <Row android:keyWidth="@dimen/mobile_symbol_default_key_width" android:keyHeight="@dimen/mobile_symbol_default_key_height" android:horizontalGap="@dimen/mobile_symbol_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_symbol_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_symbol_default_padding_left" android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:codeIndex="64" />
+        <Key android:codeIndex="65" />
+        <Key android:codeIndex="66" />
+        <Key android:codeIndex="67" />
+        <Key android:codeIndex="68" />
+        <Key android:codeIndex="69" />
+        <Key android:codeIndex="70" />
+        <Key android:codeIndex="71" />
+        <Key android:codeIndex="72" />
+        <Key android:codeIndex="73" />
+    </Row>
+    <Row android:keyWidth="@dimen/mobile_symbol_default_key_width" android:keyHeight="@dimen/mobile_symbol_default_key_height" android:horizontalGap="@dimen/mobile_symbol_default_key_horizontal_gap" android:verticalGap="@dimen/mobile_symbol_default_key_vertical_gap" android:paddingLeft="@dimen/mobile_symbol_default_padding_left" android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:keyWidth="@dimen/mobile_symbol_bottom_first_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <Key android:horizontalGap="@dimen/mobile_symbol_bottom_second_key_horizontal_gap" android:codeIndex="74" />
+        <Key android:codeIndex="75" />
+        <Key android:codeIndex="76" />
+        <Key android:codeIndex="77" />
+        <Key android:codeIndex="78" />
+        <Key android:codeIndex="79" />
+        <Key android:codeIndex="80" />
+        <Key android:keyWidth="@dimen/mobile_symbol_bottom_first_key_width" android:horizontalGap="@dimen/mobile_symbol_bottom_second_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-330" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_kdb_ic_close_xml" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/mobile_symbol_default_padding_bottom">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/mobile_symbol_default_keyboard_horizontal_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/mobile_qwerty_first_key_width" android:codeIndex="0" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_second_key_width" android:horizontalGap="@dimen/mobile_qwerty_second_key_horizontal_gap" android:codeIndex="1" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_third_key_width" android:horizontalGap="@dimen/mobile_qwerty_third_key_horizontal_gap" android:codeIndex="2" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_fourth_key_width" android:horizontalGap="@dimen/mobile_qwerty_fourth_key_horizontal_gap" android:codeIndex="3" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_fifth_key_width" android:horizontalGap="@dimen/mobile_qwerty_fifth_key_horizontal_gap" android:codeIndex="4" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_sixth_key_width" android:horizontalGap="@dimen/mobile_qwerty_sixth_key_horizontal_gap" android:codeIndex="5" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_seventh_key_width" android:horizontalGap="@dimen/mobile_qwerty_seventh_key_horizontal_gap" android:codeIndex="6" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_eighth_key_width" android:horizontalGap="@dimen/mobile_qwerty_eighth_key_horizontal_gap" android:codeIndex="7" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_ninth_key_width" android:horizontalGap="@dimen/mobile_qwerty_ninth_key_horizontal_gap" android:codeIndex="8" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_tenth_key_width" android:horizontalGap="@dimen/mobile_qwerty_tenth_key_horizontal_gap" android:codeIndex="9" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/mobile_qwerty_first_key_width" android:codeIndex="10" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_second_key_width" android:horizontalGap="@dimen/mobile_qwerty_second_key_horizontal_gap" android:codeIndex="11" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_third_key_width" android:horizontalGap="@dimen/mobile_qwerty_third_key_horizontal_gap" android:codeIndex="12" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_fourth_key_width" android:horizontalGap="@dimen/mobile_qwerty_fourth_key_horizontal_gap" android:codeIndex="13" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_fifth_key_width" android:horizontalGap="@dimen/mobile_qwerty_fifth_key_horizontal_gap" android:codeIndex="14" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_sixth_key_width" android:horizontalGap="@dimen/mobile_qwerty_sixth_key_horizontal_gap" android:codeIndex="15" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_seventh_key_width" android:horizontalGap="@dimen/mobile_qwerty_seventh_key_horizontal_gap" android:codeIndex="16" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_eighth_key_width" android:horizontalGap="@dimen/mobile_qwerty_eighth_key_horizontal_gap" android:codeIndex="17" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_ninth_key_width" android:horizontalGap="@dimen/mobile_qwerty_ninth_key_horizontal_gap" android:codeIndex="18" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_tenth_key_width" android:horizontalGap="@dimen/mobile_qwerty_tenth_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/mobile_qwerty_first_key_width" android:codes="-1000" android:keyLabel="Alt" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_second_key_width" android:horizontalGap="@dimen/mobile_qwerty_second_key_horizontal_gap" android:codeIndex="19" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_third_key_width" android:horizontalGap="@dimen/mobile_qwerty_third_key_horizontal_gap" android:codeIndex="20" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_fourth_key_width" android:horizontalGap="@dimen/mobile_qwerty_fourth_key_horizontal_gap" android:codeIndex="21" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_fifth_key_width" android:horizontalGap="@dimen/mobile_qwerty_fifth_key_horizontal_gap" android:codeIndex="22" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_sixth_key_width" android:horizontalGap="@dimen/mobile_qwerty_sixth_key_horizontal_gap" android:codeIndex="23" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_seventh_key_width" android:horizontalGap="@dimen/mobile_qwerty_seventh_key_horizontal_gap" android:codeIndex="24" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_eighth_key_width" android:horizontalGap="@dimen/mobile_qwerty_eighth_key_horizontal_gap" android:codeIndex="25" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_ninth_key_width" android:horizontalGap="@dimen/mobile_qwerty_ninth_key_horizontal_gap" android:codeIndex="26" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_tenth_key_width" android:horizontalGap="@dimen/mobile_qwerty_tenth_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="@dimen/mobile_qwerty_bottom_height" android:paddingLeft="@dimen/mobile_qwerty_bottom_padding_left" android:paddingRight="@dimen/mobile_qwerty_bottom_padding_right">
+        <Key android:keyWidth="@dimen/mobile_qwerty_bottom_first_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_bottom_second_key_width" android:horizontalGap="@dimen/mobile_qwerty_bottom_second_key_horizontal_gap" android:codeIndex="27" android:codes="-117" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_bottom_third_key_width" android:horizontalGap="@dimen/mobile_qwerty_bottom_third_key_horizontal_gap" android:codes="32" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_bottom_fourth_key_width" android:horizontalGap="@dimen/mobile_qwerty_bottom_fourth_key_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/mobile_qwerty_bottom_fifth_key_width" android:horizontalGap="@dimen/mobile_qwerty_bottom_fifth_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/mobile_qwerty_bottom_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

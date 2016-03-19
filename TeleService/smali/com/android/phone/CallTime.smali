@@ -43,7 +43,6 @@
 
 .method public constructor <init>(Lcom/android/phone/CallTime$OnTickListener;)V
     .locals 1
-    .param p1    # Lcom/android/phone/CallTime$OnTickListener;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -60,8 +59,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/CallTime;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/CallTime;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/CallTime;->mTimerRunning:Z
 
@@ -70,7 +67,6 @@
 
 .method static getCallDuration(Lcom/android/internal/telephony/Call;)J
     .locals 9
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const-wide/16 v4, 0x0
 
@@ -131,7 +127,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PHONE/CallTime"
 
@@ -160,7 +155,6 @@
 
 .method private updateElapsedTime(Lcom/android/internal/telephony/Call;)V
     .locals 6
-    .param p1    # Lcom/android/internal/telephony/Call;
 
     iget-object v2, p0, Lcom/android/phone/CallTime;->mListener:Lcom/android/phone/CallTime$OnTickListener;
 
@@ -324,7 +318,6 @@
 
 .method public setActiveCallMode(Lcom/android/internal/telephony/Call;)V
     .locals 2
-    .param p1    # Lcom/android/internal/telephony/Call;
 
     iput-object p1, p0, Lcom/android/phone/CallTime;->mCall:Lcom/android/internal/telephony/Call;
 

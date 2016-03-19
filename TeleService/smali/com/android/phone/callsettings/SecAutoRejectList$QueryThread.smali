@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/callsettings/SecAutoRejectList;Lcom/android/phone/callsettings/SecAutoRejectList$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p2    # Lcom/android/phone/callsettings/SecAutoRejectList$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectList$QueryThread;-><init>(Lcom/android/phone/callsettings/SecAutoRejectList;)V
 

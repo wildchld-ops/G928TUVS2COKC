@@ -149,7 +149,6 @@
 
 .method private englog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/phone/ims/IMSConferenceCallMgr;->DBG:Z
 
@@ -163,8 +162,6 @@
 
 .method public static getAddUserToConfCall(Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/phone/ims/IMSConferenceCallUtils;->addUserToConfCall(Ljava/lang/String;Z)V
 
@@ -265,7 +262,6 @@
 
 .method public static isIMSConfCall(Lcom/android/internal/telephony/Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     invoke-static {p0}, Lcom/android/phone/ims/IMSConferenceCallUtils;->isIMSConfCall(Lcom/android/internal/telephony/Connection;)Z
 
@@ -276,7 +272,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[IMSConferenceCallMgr]"
 
@@ -289,9 +284,6 @@
 # virtual methods
 .method public addParticipant(Ljava/lang/String;Lcom/android/phone/ims/Participant$State;Lcom/android/internal/telephony/Connection;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/phone/ims/Participant$State;
-    .param p3    # Lcom/android/internal/telephony/Connection;
 
     const/4 v1, 0x1
 
@@ -391,7 +383,6 @@
 
 .method public alreadyAddedUser(Ljava/lang/String;)Lcom/android/phone/ims/Participant;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v4, "alreadyAddedUser enter"
 
@@ -601,8 +592,6 @@
 
 .method public disconnectParticipant(Lcom/android/phone/ims/Participant;Lcom/android/internal/telephony/Connection;)V
     .locals 2
-    .param p1    # Lcom/android/phone/ims/Participant;
-    .param p2    # Lcom/android/internal/telephony/Connection;
 
     iget-object v1, p0, Lcom/android/phone/ims/IMSConferenceCallMgr;->mParticipantsList:Ljava/util/ArrayList;
 
@@ -646,7 +635,6 @@
 
 .method public disconnectedAllParticipants(Lcom/android/internal/telephony/Connection;)V
     .locals 5
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v4, 0x0
 
@@ -1647,7 +1635,6 @@
 
 .method public getDeletableParticipant(I)Lcom/android/phone/ims/Participant;
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1914,7 +1901,6 @@
 
 .method public getIMSConferenceParticipantState(Lcom/android/phone/ims/Participant$State;)I
     .locals 3
-    .param p1    # Lcom/android/phone/ims/Participant$State;
 
     const/4 v0, 0x1
 
@@ -2043,7 +2029,6 @@
 
 .method public getIMSConferenceParticipantStatus(Lcom/android/phone/ims/Participant$Status;)I
     .locals 3
-    .param p1    # Lcom/android/phone/ims/Participant$Status;
 
     const/4 v0, 0x1
 
@@ -2326,7 +2311,6 @@
 
 .method public getParticipant(I)Lcom/android/phone/ims/Participant;
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -2382,7 +2366,6 @@
 
 .method public getParticipant(Ljava/lang/String;)Lcom/android/phone/ims/Participant;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2455,7 +2438,6 @@
 
 .method public getParticipantState(I)Lcom/android/phone/ims/Participant$State;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -2489,7 +2471,6 @@
 
 .method public getParticipantState(Ljava/lang/String;)Lcom/android/phone/ims/Participant$State;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -2895,7 +2876,6 @@
 
 .method public mapConfState(I)Lcom/android/phone/ims/Participant$State;
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/phone/ims/Participant$State;->INVALID:Lcom/android/phone/ims/Participant$State;
 
@@ -2972,7 +2952,6 @@
 
 .method public onConferenceDisconnect(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v3, 0x0
 
@@ -3044,7 +3023,6 @@
 
 .method public onConferenceStateChanged(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 6
-    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v5, 0x0
 
@@ -3212,7 +3190,6 @@
 
 .method public onTickForCallTimeElapsed(J)V
     .locals 3
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3245,7 +3222,6 @@
 
 .method public prepareDial(Lcom/android/internal/telephony/Connection;)V
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const-string v2, "[prepareDial] ender"
 
@@ -3295,8 +3271,6 @@
 
 .method public prepareDialNumber(Ljava/lang/String;Lcom/android/internal/telephony/Connection;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/telephony/Connection;
 
     const-string v4, "[prepareDialNumber] ender"
 
@@ -3414,7 +3388,6 @@
 
 .method public removeParticipant(Lcom/android/phone/ims/Participant;)V
     .locals 2
-    .param p1    # Lcom/android/phone/ims/Participant;
 
     if-nez p1, :cond_1
 
@@ -3458,8 +3431,6 @@
 
 .method public saveParticipantLog(Lcom/android/phone/ims/Participant;Lcom/android/internal/telephony/Connection;)V
     .locals 6
-    .param p1    # Lcom/android/phone/ims/Participant;
-    .param p2    # Lcom/android/internal/telephony/Connection;
 
     if-eqz p2, :cond_0
 
@@ -3535,7 +3506,6 @@
 
 .method public setActivity(Lcom/android/phone/ims/IMSConferenceCallActivity;)V
     .locals 0
-    .param p1    # Lcom/android/phone/ims/IMSConferenceCallActivity;
 
     sput-object p1, Lcom/android/phone/ims/IMSConferenceCallMgr;->mainActivity:Lcom/android/phone/ims/IMSConferenceCallActivity;
 
@@ -3544,7 +3514,6 @@
 
 .method public setDirectConfCall(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/ims/IMSConferenceCallMgr;->mDirectConfCall:Z
 
@@ -3592,7 +3561,6 @@
 
 .method public setStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/ims/IMSConferenceCallMgr;->mStateChanged:Z
 
@@ -3601,7 +3569,6 @@
 
 .method public showConnectedToast(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->getContext()Landroid/content/Context;
 
@@ -3646,7 +3613,6 @@
 
 .method public showDisconnectedToast(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3695,8 +3661,6 @@
 
 .method public showUserMessage(ILjava/lang/String;)V
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v14, -0x1
 
@@ -3916,7 +3880,6 @@
 
 .method startTimer(Lcom/android/internal/telephony/Call;)V
     .locals 2
-    .param p1    # Lcom/android/internal/telephony/Call;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4015,7 +3978,6 @@
 
 .method public update(Lcom/android/internal/telephony/Connection;)V
     .locals 21
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     if-nez p1, :cond_1
 
@@ -4458,7 +4420,6 @@
 
 .method public updateElapsedTime(J)V
     .locals 7
-    .param p1    # J
 
     invoke-virtual {p0}, Lcom/android/phone/ims/IMSConferenceCallMgr;->getActiveCount()I
 
@@ -4536,9 +4497,6 @@
 
 .method public updateParticipant(Lcom/android/phone/ims/Participant;Lcom/android/phone/ims/Participant$State;Lcom/android/internal/telephony/Connection;)V
     .locals 1
-    .param p1    # Lcom/android/phone/ims/Participant;
-    .param p2    # Lcom/android/phone/ims/Participant$State;
-    .param p3    # Lcom/android/internal/telephony/Connection;
 
     if-nez p1, :cond_0
 
@@ -4559,9 +4517,6 @@
 
 .method public updateParticipant(Ljava/lang/String;Lcom/android/phone/ims/Participant$State;Lcom/android/internal/telephony/Connection;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/phone/ims/Participant$State;
-    .param p3    # Lcom/android/internal/telephony/Connection;
 
     const/4 v1, -0x1
 

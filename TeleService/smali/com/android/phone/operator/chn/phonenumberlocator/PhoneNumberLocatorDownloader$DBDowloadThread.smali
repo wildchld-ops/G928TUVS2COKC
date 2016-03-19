@@ -55,8 +55,6 @@
 
 .method private doUnZip(Ljava/lang/String;Ljava/lang/String;)I
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v4, 0x2000
 
@@ -656,9 +654,6 @@
 
 .method private downLoadZipFileAndUnZip(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/phone/operator/chn/phonenumberlocator/DownloadFileInfo;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -768,8 +763,6 @@
 
 .method private downloadFileByWebkit(Ljava/lang/String;Ljava/lang/String;)Lcom/android/phone/operator/chn/phonenumberlocator/DownloadFileInfo;
     .locals 48
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

@@ -57,7 +57,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/services/telephony/sip/SipEditor;->scramble(Ljava/lang/String;)Ljava/lang/String;
 
@@ -78,8 +77,6 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/sip/SipEditor;Landroid/net/sip/SipProfile;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/sip/SipEditor;
-    .param p1    # Landroid/net/sip/SipProfile;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipEditor;->deleteAndUnregisterProfile(Landroid/net/sip/SipProfile;)V
 
@@ -88,8 +85,6 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/sip/SipEditor;Landroid/net/sip/SipProfile;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/sip/SipEditor;
-    .param p1    # Landroid/net/sip/SipProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -103,7 +98,6 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/services/telephony/sip/SipEditor;->log(Ljava/lang/String;)V
 
@@ -112,8 +106,6 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/sip/SipEditor;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/sip/SipEditor;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipEditor;->showAlert(Ljava/lang/Throwable;)V
 
@@ -122,8 +114,6 @@
 
 .method static synthetic access$600(Lcom/android/services/telephony/sip/SipEditor;Landroid/preference/Preference;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/sip/SipEditor;
-    .param p1    # Landroid/preference/Preference;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipEditor;->setupPreference(Landroid/preference/Preference;)V
 
@@ -311,7 +301,6 @@
 
 .method private deleteAndUnregisterProfile(Landroid/net/sip/SipProfile;)V
     .locals 2
-    .param p1    # Landroid/net/sip/SipProfile;
 
     if-nez p1, :cond_0
 
@@ -348,7 +337,6 @@
 
 .method private getPreferenceKey(Landroid/preference/Preference;)Lcom/android/services/telephony/sip/SipEditor$PreferenceKey;
     .locals 6
-    .param p1    # Landroid/preference/Preference;
 
     invoke-static {}, Lcom/android/services/telephony/sip/SipEditor$PreferenceKey;->values()[Lcom/android/services/telephony/sip/SipEditor$PreferenceKey;
 
@@ -452,7 +440,6 @@
 
 .method private isEditTextEmpty(Lcom/android/services/telephony/sip/SipEditor$PreferenceKey;)Z
     .locals 3
-    .param p1    # Lcom/android/services/telephony/sip/SipEditor$PreferenceKey;
 
     iget-object v0, p1, Lcom/android/services/telephony/sip/SipEditor$PreferenceKey;->preference:Landroid/preference/Preference;
 
@@ -498,7 +485,6 @@
 
 .method private loadPreferencesFromProfile(Landroid/net/sip/SipProfile;)V
     .locals 10
-    .param p1    # Landroid/net/sip/SipProfile;
 
     if-eqz p1, :cond_4
 
@@ -695,7 +681,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -724,8 +709,6 @@
 
 .method private replaceProfile(Landroid/net/sip/SipProfile;Landroid/net/sip/SipProfile;)V
     .locals 3
-    .param p1    # Landroid/net/sip/SipProfile;
-    .param p2    # Landroid/net/sip/SipProfile;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -744,7 +727,6 @@
 
 .method private saveAndRegisterProfile(Landroid/net/sip/SipProfile;)V
     .locals 2
-    .param p1    # Landroid/net/sip/SipProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -774,7 +756,6 @@
 
 .method private static scramble(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -827,7 +808,6 @@
 
 .method private setupPreference(Landroid/preference/Preference;)V
     .locals 7
-    .param p1    # Landroid/preference/Preference;
 
     invoke-virtual {p1, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -886,7 +866,6 @@
 
 .method private showAlert(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/services/telephony/sip/SipEditor;->mHomeButtonClicked:Z
 
@@ -907,7 +886,6 @@
 
 .method private showAlert(Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
@@ -1249,7 +1227,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1295,7 +1272,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x400
 
@@ -1475,7 +1451,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -1516,8 +1491,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1547,7 +1520,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1624,8 +1596,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -1717,7 +1687,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 

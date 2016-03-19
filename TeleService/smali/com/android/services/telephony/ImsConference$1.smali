@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDestroyed(Landroid/telecom/Connection;)V
     .locals 2
-    .param p1    # Landroid/telecom/Connection;
 
     move-object v0, p1
 

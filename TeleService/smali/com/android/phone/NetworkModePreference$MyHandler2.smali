@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/NetworkModePreference;Lcom/android/phone/NetworkModePreference$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/NetworkModePreference;
-    .param p2    # Lcom/android/phone/NetworkModePreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkModePreference$MyHandler2;-><init>(Lcom/android/phone/NetworkModePreference;)V
 
@@ -41,7 +39,6 @@
 
 .method private handleGetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x1
 
@@ -150,7 +147,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

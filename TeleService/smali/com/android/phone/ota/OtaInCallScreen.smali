@@ -67,8 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/ota/OtaInCallScreen;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/ota/OtaInCallScreen;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ota/OtaInCallScreen;->log(Ljava/lang/String;)V
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/ota/OtaInCallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/phone/ota/OtaInCallScreen;
 
     invoke-direct {p0}, Lcom/android/phone/ota/OtaInCallScreen;->onPhoneStateChanged()V
 
@@ -94,8 +91,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/ota/OtaInCallScreen;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/phone/ota/OtaInCallScreen;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ota/OtaInCallScreen;->onDisconnect(Landroid/os/AsyncResult;)V
 
@@ -104,7 +99,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/ota/OtaInCallScreen;)Lcom/android/phone/PhoneGlobals;
     .locals 1
-    .param p0    # Lcom/android/phone/ota/OtaInCallScreen;
 
     iget-object v0, p0, Lcom/android/phone/ota/OtaInCallScreen;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -113,7 +107,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/ota/OtaInCallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/phone/ota/OtaInCallScreen;
 
     invoke-direct {p0}, Lcom/android/phone/ota/OtaInCallScreen;->updateScreen()V
 
@@ -252,7 +245,6 @@
 
 .method private endInCallScreenSession(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -351,7 +343,6 @@
 
 .method private internalResolveIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 
@@ -528,7 +519,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "OtaInCallScreen"
 
@@ -539,7 +529,6 @@
 
 .method private onDisconnect(Landroid/os/AsyncResult;)V
     .locals 5
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v3, p0, Lcom/android/phone/ota/OtaInCallScreen;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -738,7 +727,6 @@
 
 .method private setInCallScreenMode(Lcom/android/phone/ota/InCallUiState$InCallScreenMode;)V
     .locals 2
-    .param p1    # Lcom/android/phone/ota/InCallUiState$InCallScreenMode;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1287,7 +1275,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1417,7 +1404,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1534,7 +1520,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1780,7 +1765,6 @@
 
 .method public requestCloseOtaFailureNotice(J)V
     .locals 3
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1813,7 +1797,6 @@
 
 .method public requestCloseSpcErrorNotice(J)V
     .locals 3
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1866,7 +1849,6 @@
 
 .method setPhone(Lcom/android/internal/telephony/Phone;)V
     .locals 0
-    .param p1    # Lcom/android/internal/telephony/Phone;
 
     iput-object p1, p0, Lcom/android/phone/ota/OtaInCallScreen;->mPhone:Lcom/android/internal/telephony/Phone;
 

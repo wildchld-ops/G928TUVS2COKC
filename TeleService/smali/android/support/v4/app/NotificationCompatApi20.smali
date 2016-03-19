@@ -14,8 +14,6 @@
 # direct methods
 .method public static addAction(Landroid/app/Notification$Builder;Landroid/support/v4/app/NotificationCompatBase$Action;)V
     .locals 8
-    .param p0    # Landroid/app/Notification$Builder;
-    .param p1    # Landroid/support/v4/app/NotificationCompatBase$Action;
 
     new-instance v0, Landroid/app/Notification$Action$Builder;
 

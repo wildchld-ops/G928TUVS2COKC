@@ -18,7 +18,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CarrierMatchAutoCSPDialogFragment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/phone/CarrierMatchAutoCSPDialogFragment;
 
     iget-object v0, p0, Lcom/android/phone/CarrierMatchAutoCSPDialogFragment;->mActivity:Landroid/app/Activity;
 
@@ -29,7 +28,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -40,7 +38,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v2, p0, Lcom/android/phone/CarrierMatchAutoCSPDialogFragment;->mActivity:Landroid/app/Activity;
 

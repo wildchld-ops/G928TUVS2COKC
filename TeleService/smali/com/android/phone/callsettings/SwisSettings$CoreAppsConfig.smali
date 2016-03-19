@@ -31,7 +31,6 @@
 
 .method public static getEasySignupAccount(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -70,7 +69,6 @@
 
 .method public static isEasySignupRegistered(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/callsettings/SwisSettings$CoreAppsConfig;->isServiceSupported(Landroid/content/Context;)Z
 
@@ -159,7 +157,6 @@
 
 .method public static isServiceSupported(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -210,7 +207,6 @@
 
 .method public static serviceOff(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/callsettings/SwisSettings$CoreAppsConfig;->isServiceSupported(Landroid/content/Context;)Z
 
@@ -228,7 +224,6 @@
 
 .method public static serviceOn(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/callsettings/SwisSettings$CoreAppsConfig;->isServiceSupported(Landroid/content/Context;)Z
 

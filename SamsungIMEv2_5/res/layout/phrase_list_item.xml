@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/phrase_list_item_padding_top" android:paddingBottom="@dimen/phrase_list_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/phrase_list_item_padding_start" android:paddingEnd="@dimen/phrase_list_item_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/phrase_list_item_phrase_category_text_size" android:id="@id/phrase_category" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:textSize="@dimen/phrase_list_item_phrase_edittext_text_size" android:id="@id/phrase_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/phrase_list_item_phrase_edittext_margin_top" android:hint="@string/use_shortcut_phrase_hint" android:maxLength="@integer/shortcut_max_length" android:inputType="textCapSentences" android:imeOptions="flagNoExtractUi" />
+</LinearLayout>

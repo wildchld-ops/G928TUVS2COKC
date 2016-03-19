@@ -44,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/LGTNetworkAutoRebootPopup;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootPopup;
 
     iget-boolean v0, p0, Lcom/android/phone/LGTNetworkAutoRebootPopup;->isWaitRadioPowerOff:Z
 
@@ -53,8 +52,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/LGTNetworkAutoRebootPopup;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootPopup;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/LGTNetworkAutoRebootPopup;->isWaitRadioPowerOff:Z
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/LGTNetworkAutoRebootPopup;)V
     .locals 0
-    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootPopup;
 
     invoke-direct {p0}, Lcom/android/phone/LGTNetworkAutoRebootPopup;->setAuto()V
 
@@ -72,7 +68,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/LGTNetworkAutoRebootPopup;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/LGTNetworkAutoRebootPopup;
 
     iget-object v0, p0, Lcom/android/phone/LGTNetworkAutoRebootPopup;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -81,8 +76,6 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/LGTNetworkAutoRebootPopup;->mWindowManager:Landroid/view/IWindowManager;
@@ -187,7 +180,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -358,8 +350,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 

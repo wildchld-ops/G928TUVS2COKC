@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_indian_10_10_10_10_8_key_width" android:keyHeight="@dimen/split_indian_10_10_10_10_8_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_indian_10_10_10_10_8_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codeIndex="0" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="1" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="3" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="4" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="10" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="11" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="12" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="13" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="14" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="21" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="22" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="23" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="24" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codeIndex="30" />
+        <Key android:codeIndex="31" />
+        <Key android:codeIndex="32" />
+        <Key android:codeIndex="33" />
+        <Key android:codeIndex="34" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codeIndex="40" />
+        <Key android:codeIndex="41" />
+        <Key android:codeIndex="42" />
+        <Key android:codeIndex="43" />
+        <Key android:codeIndex="44" />
+    </Row>
+    <include android:rows="@xml/split_indian_row_bottom_left" />
+</Keyboard>

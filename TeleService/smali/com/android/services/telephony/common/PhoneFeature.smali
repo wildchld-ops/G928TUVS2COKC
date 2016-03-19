@@ -134,7 +134,6 @@
 
 .method public static hasCallPoseFeature(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -242,7 +241,6 @@
 
 .method public static hasFeature(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -458,8 +456,6 @@
 
 .method public static hasPackage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -630,7 +626,6 @@
 
 .method public static hasSensorHub(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -716,7 +711,6 @@
 
 .method public static hasVTSupport(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1481,7 +1475,6 @@
 
 .method public static isSupportHoveringUI(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -1867,7 +1860,6 @@
 
 .method public static makeFeature(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/services/telephony/common/PhoneFeature;->mContext:Landroid/content/Context;
 
@@ -30346,8 +30338,6 @@
 
 .method public static putFeature(Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Boolean;
 
     sget-object v0, Lcom/android/services/telephony/common/PhoneFeature;->mFeatureList:Ljava/util/HashMap;
 

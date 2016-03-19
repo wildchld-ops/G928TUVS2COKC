@@ -70,7 +70,7 @@
     <style name="widget_big_thin" parent="@style/big_thin">
         <item name="android:textSize">@dimen/widget_big_font_size</item>
     </style>
-    <style name="Widget.TransportControl.SeekBar" parent="@android:style/Widget.DeviceDefault.Light.SeekBar">
+    <style name="Widget.TransportControl.SeekBar" parent="@android:style/Widget.DeviceDefault.SeekBar">
         <item name="android:focusable">true</item>
         <item name="android:maxHeight">13.0dip</item>
         <item name="android:indeterminateOnly">false</item>
@@ -89,7 +89,7 @@
     <style name="PasswordTheme" parent="@android:style/Theme.DeviceDefault">
         <item name="android:colorControlNormal">#80ffffff</item>
         <item name="android:colorControlActivated">#80ffffff</item>
-        <item name="android:colorPrimary">#ff52bddc</item>
+        <item name="android:colorPrimary">#ffc62828</item>
     </style>
     <style name="keyguard_text_shadow">
         <item name="android:shadowDy">2.0</item>
@@ -117,7 +117,7 @@
     <style name="RecentsStyle" parent="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/Animation.RecentsActivity</item>
     </style>
-    <style name="RecentsMultiWindowStyle" parent="@android:style/Theme.Light.NoTitleBar">
+    <style name="RecentsMultiWindowStyle" parent="@android:style/Theme.NoTitleBar">
         <item name="android:windowBackground">@color/recents_panel_background_color</item>
         <item name="android:windowAnimationStyle">@style/Animation.RecentsActivity</item>
         <item name="android:windowShowWallpaper">true</item>
@@ -131,7 +131,7 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:ambientShadowAlpha">0.35</item>
     </style>
-    <style name="RecentsTheme.Wallpaper" parent="@android:style/Theme.Light.NoTitleBar">
+    <style name="RecentsTheme.Wallpaper" parent="@android:style/Theme.NoTitleBar">
         <item name="android:windowBackground">@color/recents_panel_background_color</item>
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
@@ -221,7 +221,7 @@
     </style>
     <style name="TextAppearance.QS.TwDetailItemPrimary" parent="@style/TextAppearance.QS.DetailItemPrimary">
         <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">#ff000000</item>
+        <item name="android:textColor">#ffc62828</item>
         <item name="android:fontFamily">sec-roboto-light</item>
     </style>
     <style name="TextAppearance.QS.DetailItemSecondary" parent="@style/TextAppearance.QS">
@@ -254,7 +254,7 @@
     </style>
     <style name="TextAppearance.QS.TwZenToast" parent="@style/TextAppearance.QS">
         <item name="android:textSize">15.0sp</item>
-        <item name="android:textColor">#ff000000</item>
+        <item name="android:textColor">#ffc62828</item>
         <item name="android:fontFamily">sec-roboto-light</item>
     </style>
     <style name="TextAppearance.QS.SegmentedButton" parent="@style/TextAppearance.QS">
@@ -299,12 +299,12 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:fontFamily">sec-roboto-light</item>
     </style>
-    <style name="systemui_theme" parent="@android:style/Theme.DeviceDefault.Light">
-        <item name="android:alertDialogTheme">@android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
+    <style name="systemui_theme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:alertDialogTheme">@android:style/Theme.DeviceDefault.Dialog.Alert</item>
         <item name="android:colorControlActivated">@color/system_accent_color</item>
         <item name="android:colorPrimary">@color/system_primary_color</item>
     </style>
-    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <style name="Theme.SystemUI.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
         <item name="android:colorControlActivated">@color/system_accent_color</item>
         <item name="android:colorPrimary">@color/system_primary_color</item>
     </style>
@@ -433,7 +433,7 @@
         <item name="android:shadowColor">#ff000000</item>
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">2.0</item>
-        <item name="android:fontFamily">samsung-neo-num3T</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
     </style>
     <style name="DateFontStyle">
         <item name="android:textSize">16.0dip</item>

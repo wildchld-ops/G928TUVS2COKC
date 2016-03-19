@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/callsettings/PresetImage;Lcom/android/phone/callsettings/PresetImage$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/callsettings/PresetImage;
-    .param p2    # Lcom/android/phone/callsettings/PresetImage$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/PresetImage$NotDefaultClickListener;-><init>(Lcom/android/phone/callsettings/PresetImage;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 9
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const v6, 0x7f0a0648
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -19,8 +18,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -31,7 +28,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -84,7 +80,6 @@
 
 .method public setDialer(Lcom/android/phone/ota/DTMFTwelveKeyDialer;)V
     .locals 0
-    .param p1    # Lcom/android/phone/ota/DTMFTwelveKeyDialer;
 
     iput-object p1, p0, Lcom/android/phone/ota/DTMFTwelveKeyDialerView;->mDialer:Lcom/android/phone/ota/DTMFTwelveKeyDialer;
 

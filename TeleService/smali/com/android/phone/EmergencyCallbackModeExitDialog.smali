@@ -93,7 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyCallbackModeExitDialog;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyCallbackModeExitDialog;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog;->mConnection:Landroid/content/ServiceConnection;
 
@@ -102,8 +101,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/EmergencyCallbackModeExitDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyCallbackModeExitDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog;->mInEmergencyCall:Z
 
@@ -112,7 +109,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/EmergencyCallbackModeExitDialog;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyCallbackModeExitDialog;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->showEmergencyCallbackModeExitDialog()V
 
@@ -121,8 +117,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/EmergencyCallbackModeExitDialog;J)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyCallbackModeExitDialog;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->getDialogText(J)Ljava/lang/CharSequence;
 
@@ -133,7 +127,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/EmergencyCallbackModeExitDialog;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyCallbackModeExitDialog;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -142,7 +135,6 @@
 
 .method private getDialogText(J)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # J
 
     const-wide/32 v6, 0xea60
 
@@ -387,7 +379,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -480,7 +471,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0a0229
 
@@ -671,7 +661,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v0, -0x1
 
@@ -696,7 +685,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -713,7 +701,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

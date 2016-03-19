@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;Lcom/android/phone/photoring/CallMessageConstants$RequestType;)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Lcom/android/phone/photoring/CallMessageConstants$RequestType;
 
     const/4 v1, 0x0
 
@@ -52,10 +50,6 @@
 
 .method public constructor <init>(Landroid/os/Handler;Lcom/android/phone/photoring/CallMessageConstants$RequestType;Ljava/lang/String;Ljava/lang/Thread;)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Lcom/android/phone/photoring/CallMessageConstants$RequestType;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Thread;
 
     const/4 v1, 0x0
 
@@ -90,7 +84,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/http/HTTPRequestHelper;)Ljava/util/Timer;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/http/HTTPRequestHelper;
 
     iget-object v0, p0, Lcom/android/phone/photoring/http/HTTPRequestHelper;->mUploadTimeoutTimer:Ljava/util/Timer;
 
@@ -118,8 +111,6 @@
 
 .method private convertToJSONString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Lorg/json/JSONObject;
@@ -177,7 +168,6 @@
 
 .method private dumpHttpGet(Lorg/apache/http/client/methods/HttpGet;)V
     .locals 9
-    .param p1    # Lorg/apache/http/client/methods/HttpGet;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -260,7 +250,6 @@
 
 .method private dumpHttpPost(Lorg/apache/http/client/methods/HttpPost;)V
     .locals 11
-    .param p1    # Lorg/apache/http/client/methods/HttpPost;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -382,7 +371,6 @@
 
 .method private dumpHttpResponse(Lorg/apache/http/HttpResponse;)V
     .locals 9
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -465,7 +453,6 @@
 
 .method public static englog(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "eng"
 
@@ -485,7 +472,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "HTTPRequestHelper"
 
@@ -496,8 +482,6 @@
 
 .method private setUploadTimeout(Lcom/android/phone/photoring/http/multipart/MultipartEntity;Lorg/apache/http/client/HttpClient;)V
     .locals 7
-    .param p1    # Lcom/android/phone/photoring/http/multipart/MultipartEntity;
-    .param p2    # Lorg/apache/http/client/HttpClient;
 
     const/16 v6, 0x1f4
 
@@ -531,7 +515,6 @@
 # virtual methods
 .method public convertToString(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
     .locals 11
-    .param p1    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -645,7 +628,6 @@
 
 .method public get(Ljava/lang/String;Ljava/util/Map;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -897,7 +879,6 @@
 
 .method public handleResponse(Lorg/apache/http/HttpResponse;)V
     .locals 8
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     iget-object v5, p0, Lcom/android/phone/photoring/http/HTTPRequestHelper;->mHandler:Landroid/os/Handler;
 
@@ -1144,7 +1125,6 @@
 
 .method public post(Ljava/lang/String;Ljava/util/Map;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1339,8 +1319,6 @@
 
 .method public postMultipart(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

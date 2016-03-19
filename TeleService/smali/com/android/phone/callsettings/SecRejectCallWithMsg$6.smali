@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/callsettings/SecRejectCallWithMsg;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg$6;->this$0:Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
@@ -36,12 +35,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     invoke-interface {p4}, Landroid/text/Spanned;->length()I
 

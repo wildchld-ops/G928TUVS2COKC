@@ -32,7 +32,6 @@
 
 .method public static addPrefixIfNeeded(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -89,8 +88,6 @@
 
 .method public static addUserToConfCall(Ljava/lang/String;Z)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Lcom/android/internal/telephony/CallManager;->getInstance()Lcom/android/internal/telephony/CallManager;
@@ -171,7 +168,6 @@
 
 .method private static englog(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/phone/ims/IMSConferenceCallUtils;->DBG:Z
 
@@ -185,7 +181,6 @@
 
 .method public static getCallerName(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -352,7 +347,6 @@
 
 .method public static getContactImage(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->getContext()Landroid/content/Context;
 
@@ -491,7 +485,6 @@
 
 .method private static getMobileNumberPrefix(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -666,7 +659,6 @@
 
 .method public static isDialable(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -705,7 +697,6 @@
 
 .method public static isIMSConfCall(Lcom/android/internal/telephony/Connection;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     const/4 v2, 0x0
 
@@ -747,7 +738,6 @@
 
 .method private static loadPhoto(Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 14
-    .param p0    # Landroid/net/Uri;
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->getContext()Landroid/content/Context;
 
@@ -957,7 +947,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "[IMSConferenceCallUtils]"
 
@@ -968,7 +957,6 @@
 
 .method public static makeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -1083,7 +1071,6 @@
 
 .method public static makeNumber(ZLjava/util/ArrayList;)Ljava/lang/String;
     .locals 5
-    .param p0    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -1163,7 +1150,6 @@
 
 .method public static modifiedNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "*23#"
 
@@ -1213,8 +1199,6 @@
 
 .method public static outUserFromConfCall(Ljava/lang/String;Z)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -1345,7 +1329,6 @@
 
 .method public static phoneIsInUse(Lcom/android/internal/telephony/Connection;)Z
     .locals 6
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     const/4 v2, 0x1
 
@@ -1405,8 +1388,6 @@
 
 .method private static reSizeBitMap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     const/high16 v5, 0x42c80000    # 100.0f
 
@@ -1458,7 +1439,6 @@
 
 .method public static showLongToast(Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->getContext()Landroid/content/Context;
 
@@ -1523,7 +1503,6 @@
 
 .method public static showToast(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/ims/IMSConferenceCallUtils;->mToastObj:Landroid/widget/Toast;
 

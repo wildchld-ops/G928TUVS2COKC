@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/qwerty_key_preview_default_label_size" android:textColor="@color/preview_text_color" android:gravity="center" android:id="@id/preview_main_text" android:paddingBottom="@dimen/preview_layout_textview_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/preview_layout_textview_padding_start" android:paddingEnd="@dimen/preview_layout_textview_padding_end" />
+    <TextView android:textSize="@dimen/qwerty_key_preview_default_label_size" android:gravity="center" android:id="@id/preview_key_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

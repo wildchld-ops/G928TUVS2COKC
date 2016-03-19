@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/callsettings/RejectCallWithMsg;Landroid/app/Activity;Ljava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/app/Activity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,8 +74,6 @@
 
 .method private drawNormalScreen(ILandroid/view/View;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     new-instance v2, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter$ViewHolder;
 
@@ -214,7 +211,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->getItem(I)Ljava/lang/String;
 
@@ -225,7 +221,6 @@
 
 .method public getItem(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -240,7 +235,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -249,9 +243,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 

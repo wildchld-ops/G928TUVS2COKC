@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_indian_10_10_10_10_8_key_width" android:keyHeight="@dimen/split_indian_10_10_10_10_8_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_indian_10_10_10_10_8_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codes="-500" android:keyLabel="◌–|" />
+        <Key android:codes="2566" android:keyLabel="ਆ" />
+        <Key android:codes="2567" android:keyLabel="ਇ" />
+        <Key android:codes="2568" android:keyLabel="ਈ" />
+        <Key android:codes="2569" android:keyLabel="ਉ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codes="2570" android:keyLabel="ਊ" />
+        <Key android:codes="2575" android:keyLabel="ਏ" />
+        <Key android:codes="2576" android:keyLabel="ਐ" />
+        <Key android:codes="2579" android:keyLabel="ਓ" />
+        <Key android:codes="2580" android:keyLabel="ਔ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codes="2586" android:keyLabel="ਚ" />
+        <Key android:codes="2587" android:keyLabel="ਛ" />
+        <Key android:codes="2588" android:keyLabel="ਜ" />
+        <Key android:codes="2589" android:keyLabel="ਝ" />
+        <Key android:codes="2590" android:keyLabel="ਞ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codes="2596" android:keyLabel="ਤ" />
+        <Key android:codes="2597" android:keyLabel="ਥ" />
+        <Key android:codes="2598" android:keyLabel="ਦ" />
+        <Key android:codes="2599" android:keyLabel="ਧ" />
+        <Key android:codes="2600" android:keyLabel="ਨ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_indian_10_10_10_10_8_left_padding_left">
+        <Key android:codes="2607" android:keyLabel="ਯ" />
+        <Key android:codes="2608" android:keyLabel="ਰ" />
+        <Key android:codes="2610" android:keyLabel="ਲ" />
+        <Key android:codes="2613" android:keyLabel="ਵ" />
+        <Key android:codes="2652" android:keyLabel="ੜ" />
+    </Row>
+    <include android:rows="@xml/split_indian_row_bottom_left" />
+</Keyboard>

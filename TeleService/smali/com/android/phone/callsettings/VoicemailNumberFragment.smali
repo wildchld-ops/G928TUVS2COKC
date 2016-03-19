@@ -20,7 +20,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -58,8 +57,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -100,7 +97,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -186,8 +182,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VoicemailNumberFragment;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
 

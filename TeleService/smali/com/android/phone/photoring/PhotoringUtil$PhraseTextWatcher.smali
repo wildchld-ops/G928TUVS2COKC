@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/EditText;Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/EditText;
-    .param p3    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +64,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 6
-    .param p1    # Landroid/text/Editable;
 
     iget-object v3, p0, Lcom/android/phone/photoring/PhotoringUtil$PhraseTextWatcher;->et:Landroid/widget/EditText;
 
@@ -202,20 +198,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

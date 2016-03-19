@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/IpNumberDelete;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/IpNumberDelete;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpNumberDelete;->mNumberItem:Ljava/util/ArrayList;
 
@@ -89,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/IpNumberDelete;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/IpNumberDelete;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpNumberDelete;->mDeleteStatus:Landroid/widget/CheckBox;
 
@@ -98,8 +96,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/callsettings/IpNumberDelete;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/IpNumberDelete;
-    .param p1    # Landroid/widget/CheckBox;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpNumberDelete;->mDeleteStatus:Landroid/widget/CheckBox;
 
@@ -371,7 +367,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -489,7 +484,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -566,10 +560,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 8
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v4, 0x1
 
@@ -691,7 +681,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -722,7 +711,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -743,7 +731,6 @@
 
 .method public readString(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

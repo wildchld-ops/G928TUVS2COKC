@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/setting_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/action_bar_switch" android:background="@drawable/tw_sub_action_bar_bg_mtrl_xml" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_switch_view_height">
+        <TextView android:textSize="@dimen/action_bar_switch_text_size" android:textColor="@color/action_bar_switch_text_color" android:ellipsize="marquee" android:gravity="start|center" android:id="@id/action_bar_switch_title" android:layout_width="0.0dip" android:layout_height="@dimen/action_bar_switch_view_height" android:text="@string/predictive_text_off" android:singleLine="true" android:layout_weight="1.0" android:textAlignment="viewStart" android:layout_marginStart="@dimen/action_bar_switch_left_padding" />
+        <Switch android:gravity="end|center" android:id="@id/action_bar_switch_switchWidget" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_switch_view_height" android:layout_marginEnd="@dimen/action_bar_switch_right_padding" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:id="@id/leftside" android:background="@color/settings_fullscreen_blank_background_color" android:layout_width="@dimen/preference_main_layout_linearlayout_width" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_side" />
+        <ListView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@android:id/list" android:background="@drawable/tw_fullscreen_background" android:layout_width="@dimen/preference_main_layout_listview_width" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_middle" android:paddingStart="@dimen/preference_setting_layout_padding_side" android:paddingEnd="@dimen/preference_setting_layout_padding_side" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rightside" android:background="@color/settings_fullscreen_blank_background_color" android:layout_width="@dimen/preference_main_layout_linearlayout_width" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_side" />
+    </LinearLayout>
+</LinearLayout>

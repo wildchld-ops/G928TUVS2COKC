@@ -46,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/CallTypeSelectForForwarding;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CallTypeSelectForForwarding;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/CallTypeSelectForForwarding;->isAirplaneModeOn()Z
 
@@ -57,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/CallTypeSelectForForwarding;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CallTypeSelectForForwarding;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallTypeSelectForForwarding;->mVoiceCall:Landroid/preference/PreferenceScreen;
 
@@ -66,7 +64,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/CallTypeSelectForForwarding;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CallTypeSelectForForwarding;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallTypeSelectForForwarding;->mVideoCall:Landroid/preference/PreferenceScreen;
 
@@ -104,7 +101,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -480,7 +476,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -553,8 +548,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 

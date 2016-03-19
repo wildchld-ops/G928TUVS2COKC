@@ -27,9 +27,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/phone/photoring/PhotoringPhrasesEdit;Lcom/samsung/android/saiv/codec/VideoTranscoder;Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeProgress;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Lcom/samsung/android/saiv/codec/VideoTranscoder;
-    .param p3    # Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeProgress;
-    .param p4    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeThread;->this$0:Lcom/android/phone/photoring/PhotoringPhrasesEdit;
 
@@ -46,11 +43,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/photoring/PhotoringPhrasesEdit;Lcom/samsung/android/saiv/codec/VideoTranscoder;Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeProgress;Landroid/os/Handler;Lcom/android/phone/photoring/PhotoringPhrasesEdit$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/photoring/PhotoringPhrasesEdit;
-    .param p2    # Lcom/samsung/android/saiv/codec/VideoTranscoder;
-    .param p3    # Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeProgress;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Lcom/android/phone/photoring/PhotoringPhrasesEdit$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeThread;-><init>(Lcom/android/phone/photoring/PhotoringPhrasesEdit;Lcom/samsung/android/saiv/codec/VideoTranscoder;Lcom/android/phone/photoring/PhotoringPhrasesEdit$ResizeProgress;Landroid/os/Handler;)V
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public dump(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "eng"
 
@@ -135,7 +134,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 

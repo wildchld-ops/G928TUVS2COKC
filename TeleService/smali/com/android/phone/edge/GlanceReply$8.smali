@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/edge/GlanceReply;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/edge/GlanceReply$8;->this$0:Lcom/android/phone/edge/GlanceReply;
 
@@ -36,12 +35,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     # getter for: Lcom/android/phone/edge/GlanceReply;->MAX_LENGTH_EDIT_TEXT:I
     invoke-static {}, Lcom/android/phone/edge/GlanceReply;->access$400()I

@@ -72,8 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/DataNetworkMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
 
@@ -82,7 +80,6 @@
 
 .method private displayBandSelectionResult(Ljava/lang/Throwable;)V
     .locals 5
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v4, 0x0
 
@@ -338,7 +335,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -372,7 +368,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -508,10 +503,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 4
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-super/range {p0 .. p5}, Landroid/app/ListActivity;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
@@ -614,7 +605,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

@@ -181,7 +181,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/SecRejectCallWithMsg;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mIsForeground:Z
 
@@ -190,8 +189,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/SecRejectCallWithMsg;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mUpdateScreen:Z
 
@@ -200,7 +197,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/SecRejectCallWithMsg;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -209,7 +205,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/SecRejectCallWithMsg;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
 
@@ -218,8 +213,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/SecRejectCallWithMsg;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->deleteRejectMessage(I)V
 
@@ -228,7 +221,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/SecRejectCallWithMsg;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->updateRejectMessage()V
 
@@ -237,7 +229,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/SecRejectCallWithMsg;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->refreshRejectList()V
 
@@ -246,9 +237,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/SecRejectCallWithMsg;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecRejectCallWithMsg;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->log(Ljava/lang/String;Z)V
 
@@ -257,8 +245,6 @@
 
 .method private addRejectMessage(Ljava/lang/String;I)J
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -349,7 +335,6 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -510,7 +495,6 @@
 
 .method private deleteRejectMessage(I)V
     .locals 6
-    .param p1    # I
 
     sget-object v2, Lcom/android/phone/callsettings/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
 
@@ -571,7 +555,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
@@ -614,7 +597,6 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/16 v4, 0x8
 
@@ -718,8 +700,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "SecRejectCallWithMsg"
 
@@ -817,7 +797,6 @@
 
 .method private showRejectMessage(Landroid/database/Cursor;)V
     .locals 13
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -1084,9 +1063,6 @@
 
 .method private updateRejectMessage(Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1255,7 +1231,6 @@
 
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 12
-    .param p1    # Landroid/text/Editable;
 
     const/16 v11, 0x46
 
@@ -1571,17 +1546,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public getStringByteSize(Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/16 v9, 0x7f
 
@@ -1728,7 +1698,6 @@
 
 .method public goToEditRejectMsgScreen(I)V
     .locals 6
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mSelectedItem:I
 
@@ -1881,9 +1850,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -1927,7 +1893,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -1964,7 +1929,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -2030,9 +1994,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -2451,7 +2412,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "editString"
 
@@ -2484,10 +2444,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecRejectCallWithMsg;->mCreateEdit:Landroid/widget/EditText;
 
@@ -2512,8 +2468,6 @@
 
 .method public saveRejectMessage(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     move-object v4, p1
 
@@ -2860,7 +2814,6 @@
 
 .method public updateTextCounter(Ljava/lang/CharSequence;)V
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v8, 0xa0
 

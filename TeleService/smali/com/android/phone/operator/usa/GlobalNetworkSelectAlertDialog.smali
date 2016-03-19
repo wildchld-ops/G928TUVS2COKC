@@ -34,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;->mHandler:Landroid/os/Handler;
 
@@ -43,7 +42,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;)Landroid/telephony/PhoneStateListener;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
@@ -52,7 +50,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/GlobalNetworkSelectAlertDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -63,7 +60,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 

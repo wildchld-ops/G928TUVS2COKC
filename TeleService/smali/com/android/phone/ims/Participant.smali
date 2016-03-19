@@ -57,7 +57,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v2, 0x0
 
@@ -88,7 +87,6 @@
 
 .method private englog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/phone/ims/Participant;->DBG:Z
 
@@ -102,7 +100,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[Participant]"
 
@@ -115,7 +112,6 @@
 # virtual methods
 .method public dump(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -410,7 +406,6 @@
 
 .method public setCallerDetailInfo(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -640,8 +635,6 @@
 
 .method public setStatus(Lcom/android/phone/ims/Participant$State;Lcom/android/phone/ims/Participant$State;)V
     .locals 2
-    .param p1    # Lcom/android/phone/ims/Participant$State;
-    .param p2    # Lcom/android/phone/ims/Participant$State;
 
     if-ne p1, p2, :cond_0
 
@@ -753,8 +746,6 @@
 
 .method public update(Lcom/android/phone/ims/Participant$State;Lcom/android/internal/telephony/Connection;)V
     .locals 4
-    .param p1    # Lcom/android/phone/ims/Participant$State;
-    .param p2    # Lcom/android/internal/telephony/Connection;
 
     const-wide/16 v2, 0x0
 

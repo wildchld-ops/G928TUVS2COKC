@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/NetworkSetting;JJ)V
     .locals 2
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/phone/NetworkSetting$20;->this$0:Lcom/android/phone/NetworkSetting;
 
@@ -66,7 +64,6 @@
 
 .method public onTick(J)V
     .locals 2
-    .param p1    # J
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkSetting$20;->mCalled:Z
 

@@ -100,7 +100,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
@@ -109,7 +108,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
@@ -118,7 +116,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/DsaPhoneNumber;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-boolean v0, p0, Lcom/android/phone/DsaPhoneNumber;->mIsFirst:Z
 
@@ -127,7 +124,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/DsaPhoneNumber;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-boolean v0, p0, Lcom/android/phone/DsaPhoneNumber;->mFromSetupWizard:Z
 
@@ -136,7 +132,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
@@ -145,7 +140,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftText:Landroid/widget/TextView;
 
@@ -154,7 +148,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftImage:Landroid/widget/ImageView;
 
@@ -163,7 +156,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
@@ -172,7 +164,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/DsaPhoneNumber;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftImage:Landroid/widget/ImageView;
 
@@ -181,7 +172,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/DsaPhoneNumber;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaPhoneNumber;
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mMenuOk:Landroid/view/MenuItem;
 
@@ -190,7 +180,6 @@
 
 .method private dsaLog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "DsaPhoneNumber"
 
@@ -821,7 +810,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1276,7 +1264,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 8
-    .param p1    # Landroid/view/Menu;
 
     const/4 v7, 0x6
 
@@ -1417,8 +1404,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x0
 
@@ -1526,7 +1511,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 
@@ -1768,7 +1752,6 @@
 
 .method public softkeyRun1(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -2289,7 +2272,6 @@
 
 .method public softkeyRun2(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x0
 

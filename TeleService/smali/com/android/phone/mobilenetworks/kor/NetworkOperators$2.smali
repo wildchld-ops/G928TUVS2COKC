@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDataConnectionStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators$2;->this$0:Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
@@ -45,7 +44,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 2
-    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 

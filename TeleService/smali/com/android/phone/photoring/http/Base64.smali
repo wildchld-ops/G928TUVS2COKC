@@ -305,7 +305,6 @@
 
 .method private static correctInput([B)[B
     .locals 8
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/RuntimeException;
@@ -367,7 +366,6 @@
 
 .method public static decode([B)[B
     .locals 14
-    .param p0    # [B
 
     const/16 v13, 0x3d
 
@@ -589,7 +587,6 @@
 
 .method public static encode([B)[B
     .locals 1
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -602,8 +599,6 @@
 
 .method public static encode([BZ)[B
     .locals 13
-    .param p0    # [B
-    .param p1    # Z
 
     const/4 v12, 0x2
 

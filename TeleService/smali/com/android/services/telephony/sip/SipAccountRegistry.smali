@@ -57,8 +57,6 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/sip/SipAccountRegistry;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/sip/SipAccountRegistry;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipAccountRegistry;->log(Ljava/lang/String;)V
 
@@ -67,9 +65,6 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/sip/SipAccountRegistry;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/sip/SipAccountRegistry;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/services/telephony/sip/SipAccountRegistry;->startSipProfiles(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -78,7 +73,6 @@
 
 .method private getAccountEntry(Ljava/lang/String;)Lcom/android/services/telephony/sip/SipAccountRegistry$AccountEntry;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/services/telephony/sip/SipAccountRegistry;->mAccounts:Ljava/util/List;
 
@@ -132,7 +126,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -161,8 +154,6 @@
 
 .method private startSipProfiles(Landroid/content/Context;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v8, Lcom/android/services/telephony/sip/SipSharedPreferences;
 
@@ -258,8 +249,6 @@
 
 .method private startSipProfilesAsync(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -276,10 +265,6 @@
 
 .method private startSipServiceForProfile(Landroid/net/sip/SipProfile;Landroid/net/sip/SipManager;Landroid/content/Context;Z)V
     .locals 2
-    .param p1    # Landroid/net/sip/SipProfile;
-    .param p2    # Landroid/net/sip/SipManager;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/net/sip/SipProfile;->getUriString()Ljava/lang/String;
 
@@ -309,7 +294,6 @@
 # virtual methods
 .method removeSipProfile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/sip/SipAccountRegistry;->getAccountEntry(Ljava/lang/String;)Lcom/android/services/telephony/sip/SipAccountRegistry$AccountEntry;
 
@@ -327,7 +311,6 @@
 
 .method public restartSipService(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -338,7 +321,6 @@
 
 .method setup(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -351,8 +333,6 @@
 
 .method startSipService(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/services/telephony/sip/SipAccountRegistry;->startSipProfilesAsync(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -361,8 +341,6 @@
 
 .method stopSipService(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/services/telephony/sip/SipAccountRegistry;->getAccountEntry(Ljava/lang/String;)Lcom/android/services/telephony/sip/SipAccountRegistry$AccountEntry;
 

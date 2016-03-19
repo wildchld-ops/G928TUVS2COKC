@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/textinput_floating_qwerty_ic_longpressable" android:tint="@color/pressedkey_extra_labelcolor" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/textinput_floating_qwerty_ic_longpressable" android:tint="@color/normalkey_extra_labelcolor" />
+    </item>
+</selector>

@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/services/telephony/sip/SipSettings;Landroid/content/Context;Landroid/net/sip/SipProfile;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/net/sip/SipProfile;
 
     iput-object p1, p0, Lcom/android/services/telephony/sip/SipSettings$SipPreference;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method setProfile(Landroid/net/sip/SipProfile;)V
     .locals 2
-    .param p1    # Landroid/net/sip/SipProfile;
 
     iput-object p1, p0, Lcom/android/services/telephony/sip/SipSettings$SipPreference;->mProfile:Landroid/net/sip/SipProfile;
 
@@ -92,7 +89,6 @@
 
 .method updateSummary(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/services/telephony/sip/SipSettings$SipPreference;->mProfile:Landroid/net/sip/SipProfile;
 

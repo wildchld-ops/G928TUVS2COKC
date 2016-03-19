@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Key android:codeIndex="64" />
+    <Key android:codeIndex="65" />
+    <Key android:codeIndex="66" />
+    <Key android:codeIndex="67" />
+    <Key android:codeIndex="68" />
+    <Key android:codeIndex="69" />
+    <Key android:codeIndex="70" />
+    <Key android:codeIndex="71" />
+    <Key android:codeIndex="72" />
+</merge>

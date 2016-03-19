@@ -540,15 +540,15 @@
         <receiver android:exported="true" android:name="UsimDownloadBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE"/>
-                <data android:host="288683785399" android:scheme="android_secret_code"/>
+                <data android:host="\ 288683785399" android:scheme="android_secret_code"/>
             </intent-filter>
         </receiver>
         <receiver android:exported="true" android:name="UsimDownloadBroadcastReceiver" android:permission="com.sec.android.phone.permission.WRITE_OTA_KEYSTRING">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE"/>
-                <data android:host="758353266" android:scheme="android_secret_code"/>
-                <data android:host="5487587" android:scheme="android_secret_code"/>
-                <data android:host="147359" android:scheme="android_secret_code"/>
+                <data android:host="\ 758353266" android:scheme="android_secret_code"/>
+                <data android:host="\ 5487587" android:scheme="android_secret_code"/>
+                <data android:host="\ 147359" android:scheme="android_secret_code"/>
             </intent-filter>
             <intent-filter>
                 <action android:name="com.samsung.intent.action.NO_SIM_NOTY"/>
@@ -1001,11 +1001,11 @@
         <receiver android:name=".mobilenetworks.kor.KeyStringReceiver">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE"/>
-                <data android:host="232580" android:scheme="android_secret_code"/>
+                <data android:host="\ 232580" android:scheme="android_secret_code"/>
             </intent-filter>
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE"/>
-                <data android:host="47359" android:scheme="android_secret_code"/>
+                <data android:host="\ 47359" android:scheme="android_secret_code"/>
             </intent-filter>
         </receiver>
         <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/ic_launcher_settings" android:label="@string/data_usage_title" android:name="Enhanced4GLTE" android:theme="@style/Theme.Settings_MobileNetwork">

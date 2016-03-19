@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/FlatRateAlertActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/FlatRateAlertActivity;
 
     iget-object v0, p0, Lcom/android/phone/FlatRateAlertActivity;->mContext:Landroid/content/Context;
 
@@ -47,7 +46,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/FlatRateAlertActivity;)Landroid/widget/RadioButton;
     .locals 1
-    .param p0    # Lcom/android/phone/FlatRateAlertActivity;
 
     iget-object v0, p0, Lcom/android/phone/FlatRateAlertActivity;->radioOption1:Landroid/widget/RadioButton;
 
@@ -64,15 +62,12 @@
 
 .method public onCheckedChanged(Landroid/widget/RadioGroup;I)V
     .locals 0
-    .param p1    # Landroid/widget/RadioGroup;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     check-cast p1, Landroid/widget/CheckedTextView;
 
@@ -83,7 +78,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x1
 

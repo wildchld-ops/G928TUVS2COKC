@@ -39,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/AllowDataAccess;)I
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AllowDataAccess;
 
     iget v0, p0, Lcom/android/phone/operator/usa/AllowDataAccess;->mCurrentMode:I
 
@@ -153,7 +152,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -336,10 +334,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 7
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v6, 0x1
 
@@ -479,7 +473,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "AllowDataAccess"
 

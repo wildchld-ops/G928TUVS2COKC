@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDestroyed(Landroid/telecom/Connection;)V
     .locals 1
-    .param p1    # Landroid/telecom/Connection;
 
     iget-object v0, p0, Lcom/android/services/telephony/CdmaConferenceController$1;->this$0:Lcom/android/services/telephony/CdmaConferenceController;
 
@@ -47,8 +46,6 @@
 
 .method public onDisconnected(Landroid/telecom/Connection;Landroid/telecom/DisconnectCause;)V
     .locals 1
-    .param p1    # Landroid/telecom/Connection;
-    .param p2    # Landroid/telecom/DisconnectCause;
 
     iget-object v0, p0, Lcom/android/services/telephony/CdmaConferenceController$1;->this$0:Lcom/android/services/telephony/CdmaConferenceController;
 
@@ -60,8 +57,6 @@
 
 .method public onStateChanged(Landroid/telecom/Connection;I)V
     .locals 1
-    .param p1    # Landroid/telecom/Connection;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/services/telephony/CdmaConferenceController$1;->this$0:Lcom/android/services/telephony/CdmaConferenceController;
 

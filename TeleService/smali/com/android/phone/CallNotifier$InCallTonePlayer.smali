@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/CallNotifier;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/CallNotifier$InCallTonePlayer;->this$0:Lcom/android/phone/CallNotifier;
 

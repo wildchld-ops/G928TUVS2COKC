@@ -94,7 +94,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/AssistedDialingActivity;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingActivity;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -103,7 +102,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/AssistedDialingActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingActivity;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingActivity;->mContext:Landroid/content/Context;
 
@@ -514,9 +512,6 @@
 
 .method private updateDetails(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v1, "AssistedDialingActivity"
 
@@ -574,8 +569,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "AssistedDialingActivity"
 
@@ -661,7 +654,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -681,7 +673,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x10
 
@@ -967,7 +958,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1000,7 +990,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1067,8 +1056,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const-string v3, "AssistedDialingActivity"
 
@@ -1326,8 +1313,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v1, "AssistedDialingActivity"
 
@@ -1574,7 +1559,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 

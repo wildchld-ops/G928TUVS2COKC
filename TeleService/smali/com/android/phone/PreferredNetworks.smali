@@ -128,7 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/PreferredNetworks;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/PreferredNetworks;
 
     iget-boolean v0, p0, Lcom/android/phone/PreferredNetworks;->isDialogShown:Z
 
@@ -137,8 +136,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/PreferredNetworks;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/PreferredNetworks;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PreferredNetworks;->isDialogShown:Z
 
@@ -147,8 +144,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/PreferredNetworks;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/phone/PreferredNetworks;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PreferredNetworks;->displayList(Landroid/os/AsyncResult;)V
 
@@ -157,7 +152,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/PreferredNetworks;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/PreferredNetworks;
 
     iget-object v0, p0, Lcom/android/phone/PreferredNetworks;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -166,7 +160,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/PreferredNetworks;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/PreferredNetworks;
 
     iget-object v0, p0, Lcom/android/phone/PreferredNetworks;->mArrayList:Ljava/util/ArrayList;
 
@@ -175,7 +168,6 @@
 
 .method private displayList(Landroid/os/AsyncResult;)V
     .locals 6
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v5, 0x1
 
@@ -317,7 +309,6 @@
 
 .method private saveIndex(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworks;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -362,7 +353,6 @@
 
 .method private setEmptyView(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -397,7 +387,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "PreferredNetworks"
 
@@ -428,7 +417,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -608,7 +596,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateDialog(I)Landroid/app/Dialog;
 
@@ -654,7 +641,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x0
 
@@ -746,7 +732,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 

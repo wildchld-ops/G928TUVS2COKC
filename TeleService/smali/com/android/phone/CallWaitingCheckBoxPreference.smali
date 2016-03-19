@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -53,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101008f
 
@@ -76,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -213,7 +207,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CallWaitingCheckBoxPreference;)Lcom/android/phone/TimeConsumingPreferenceListener;
     .locals 1
-    .param p0    # Lcom/android/phone/CallWaitingCheckBoxPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mTcpListener:Lcom/android/phone/TimeConsumingPreferenceListener;
 
@@ -222,7 +215,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/CallWaitingCheckBoxPreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/CallWaitingCheckBoxPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mContext:Landroid/content/Context;
 
@@ -231,7 +223,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/CallWaitingCheckBoxPreference;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/CallWaitingCheckBoxPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -240,7 +231,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/CallWaitingCheckBoxPreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/CallWaitingCheckBoxPreference;
 
     iget v0, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mSimId:I
 
@@ -251,8 +241,6 @@
 # virtual methods
 .method init(Lcom/android/phone/TimeConsumingPreferenceListener;Z)V
     .locals 3
-    .param p1    # Lcom/android/phone/TimeConsumingPreferenceListener;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -286,9 +274,6 @@
 
 .method init(Lcom/android/phone/TimeConsumingPreferenceListener;ZI)V
     .locals 1
-    .param p1    # Lcom/android/phone/TimeConsumingPreferenceListener;
-    .param p2    # Z
-    .param p3    # I
 
     iput p3, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mSimId:I
 

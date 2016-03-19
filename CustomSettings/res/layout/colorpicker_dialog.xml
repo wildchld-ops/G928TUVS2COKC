@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:id="@id/colorpicker_dialogView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/colorpicker_viewContainer" android:paddingLeft="@dimen/colorpicker_spacer" android:paddingTop="@dimen/colorpicker_spacer" android:paddingRight="@dimen/colorpicker_spacer" android:paddingBottom="@dimen/colorpicker_spacer" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ficeto.customsettings.ColorPickerView android:id="@id/colorpicker_viewSatBri" android:layout_width="@dimen/colorpicker_hsvWidth" android:layout_height="@dimen/colorpicker_hsvHeight" android:layerType="software" />
+        <ImageView android:id="@id/colorpicker_viewHue" android:layout_width="@dimen/colorpicker_hueWidth" android:layout_height="@dimen/colorpicker_hsvHeight" android:layout_marginLeft="@dimen/colorpicker_spacer" android:src="@drawable/colorpicker_hue" android:scaleType="fitXY" android:layout_toRightOf="@id/colorpicker_viewSatBri" />
+        <ImageView android:id="@id/colorpicker_cursor" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/colorpicker_cursor" android:scaleType="matrix" />
+        <ImageView android:id="@id/colorpicker_target" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/colorpicker_target" android:scaleType="matrix" />
+        <LinearLayout android:gravity="center" android:id="@id/colorpicker_opacityView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/colorpicker_spacer" android:layout_below="@id/colorpicker_viewSatBri" android:layout_alignLeft="@id/colorpicker_viewSatBri" android:layout_alignRight="@id/colorpicker_viewHue" android:layout_centerHorizontal="true">
+            <CheckBox android:id="@id/opacityActive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/opacityLabel" />
+            <SeekBar android:id="@id/opacityValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="@integer/max_opacity" android:indeterminate="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/colorpicker_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/colorpicker_spacer" android:layout_below="@id/colorpicker_opacityView" android:layout_centerHorizontal="true">
+            <View android:id="@id/colorpicker_warnaLama" android:background="#ffffaaaa" android:layout_width="50.0dip" android:layout_height="30.0dip" />
+            <ImageView android:paddingLeft="@dimen/colorpicker_spacer" android:paddingRight="@dimen/colorpicker_spacer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/colorpicker_arrow_right" />
+            <View android:id="@id/colorpicker_warnaBaru" android:background="#ffaaaaff" android:layout_width="50.0dip" android:layout_height="30.0dip" />
+            <EditText android:gravity="center_vertical" android:id="@id/color_rgb" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:ems="10" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

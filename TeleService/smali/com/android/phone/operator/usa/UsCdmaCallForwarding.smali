@@ -14,9 +14,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/UsCdmaCallForwarding;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/UsCdmaCallForwarding;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/usa/UsCdmaCallForwarding;->log(Ljava/lang/String;Z)V
 
@@ -25,8 +22,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/UsCdmaCallForwarding;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/UsCdmaCallForwarding;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/phone/operator/usa/UsCdmaCallForwarding;->showDialog(I)V
 
@@ -35,8 +30,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "UsCdmaCallForwarding"
 
@@ -49,7 +42,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -105,7 +97,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 

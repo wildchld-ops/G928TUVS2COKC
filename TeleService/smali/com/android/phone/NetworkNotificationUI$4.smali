@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDataConnectionStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI$4;->this$0:Lcom/android/phone/NetworkNotificationUI;
 
@@ -44,7 +43,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 1
-    .param p1    # Landroid/telephony/ServiceState;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI$4;->this$0:Lcom/android/phone/NetworkNotificationUI;
 

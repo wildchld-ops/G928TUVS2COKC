@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     # getter for: Lcom/android/phone/callsettings/KddiCBarring;->LOG_TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/phone/callsettings/KddiCBarring;->access$200()Ljava/lang/String;

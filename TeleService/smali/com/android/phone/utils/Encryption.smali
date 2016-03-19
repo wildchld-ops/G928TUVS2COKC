@@ -12,9 +12,6 @@
 # direct methods
 .method public static decrypt(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -240,7 +237,6 @@
 
 .method public static decryptStream(Ljava/io/InputStream;)Ljava/io/InputStream;
     .locals 5
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -280,8 +276,6 @@
 
 .method public static encrypt(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
     .locals 12
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -459,7 +453,6 @@
 
 .method public static encryptStream(Ljava/io/OutputStream;)Ljava/io/OutputStream;
     .locals 5
-    .param p0    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -505,7 +498,6 @@
 
 .method public static streamCrypt(Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

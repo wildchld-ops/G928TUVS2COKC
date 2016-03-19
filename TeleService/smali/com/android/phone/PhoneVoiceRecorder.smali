@@ -148,7 +148,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/PhoneVoiceRecorder;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-boolean v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mIsServiceAlive:Z
 
@@ -157,7 +156,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/PhoneVoiceRecorder;)Landroid/os/RegistrantList;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mStateChangedRegistrantList:Landroid/os/RegistrantList;
 
@@ -166,7 +164,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/PhoneVoiceRecorder;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mHandler:Landroid/os/Handler;
 
@@ -175,7 +172,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/PhoneVoiceRecorder;)Lcom/sec/android/secmediarecorder/SecMediaRecorder;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mRecorder:Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
@@ -184,8 +180,6 @@
 
 .method static synthetic access$1102(Lcom/android/phone/PhoneVoiceRecorder;Lcom/sec/android/secmediarecorder/SecMediaRecorder;)Lcom/sec/android/secmediarecorder/SecMediaRecorder;
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
     iput-object p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mRecorder:Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
@@ -194,7 +188,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/PhoneVoiceRecorder;)J
     .locals 2
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneVoiceRecorder;->getAvailableStorage()J
 
@@ -205,8 +198,6 @@
 
 .method static synthetic access$1302(Lcom/android/phone/PhoneVoiceRecorder;J)J
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mStartRecordTime:J
 
@@ -215,8 +206,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/PhoneVoiceRecorder;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneVoiceRecorder;->setRecordSaveFilePath(Ljava/lang/String;)V
 
@@ -225,7 +214,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/PhoneVoiceRecorder;)I
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mRecordedDurationMSec:I
 
@@ -234,8 +222,6 @@
 
 .method static synthetic access$1502(Lcom/android/phone/PhoneVoiceRecorder;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mRecordedDurationMSec:I
 
@@ -244,9 +230,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/PhoneVoiceRecorder;Ljava/lang/String;J)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/PhoneVoiceRecorder;->sendStopRecordSucceed(Ljava/lang/String;J)V
 
@@ -255,8 +238,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/PhoneVoiceRecorder;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/PhoneVoiceRecorder;->log(Ljava/lang/String;)V
 
@@ -265,7 +246,6 @@
 
 .method static synthetic access$1800(Lcom/android/phone/PhoneVoiceRecorder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mCallerNumber:Ljava/lang/String;
 
@@ -274,8 +254,6 @@
 
 .method static synthetic access$1802(Lcom/android/phone/PhoneVoiceRecorder;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mCallerNumber:Ljava/lang/String;
 
@@ -284,7 +262,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/PhoneVoiceRecorder;)Lcom/android/internal/telephony/CallManager;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -293,7 +270,6 @@
 
 .method static synthetic access$2000(Lcom/android/phone/PhoneVoiceRecorder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mCallerName:Ljava/lang/String;
 
@@ -302,9 +278,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/PhoneVoiceRecorder;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/PhoneVoiceRecorder;->log(Ljava/lang/String;Z)V
 
@@ -313,7 +286,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/PhoneVoiceRecorder;)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneVoiceRecorder;->sendStartRecordSucceed()V
 
@@ -322,7 +294,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/PhoneVoiceRecorder;)Lcom/android/phone/PhoneGlobals;
     .locals 1
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -331,7 +302,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/PhoneVoiceRecorder;)V
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
 
     invoke-direct {p0}, Lcom/android/phone/PhoneVoiceRecorder;->sendStartRecordFailed()V
 
@@ -340,8 +310,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/PhoneVoiceRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mIsRecording:Z
 
@@ -350,8 +318,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/PhoneVoiceRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mIsPaused:Z
 
@@ -360,8 +326,6 @@
 
 .method static synthetic access$902(Lcom/android/phone/PhoneVoiceRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneVoiceRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mIsPreparing:Z
 
@@ -445,7 +409,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhoneVoiceRecorder"
 
@@ -460,8 +423,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "PhoneVoiceRecorder"
 
@@ -657,8 +618,6 @@
 
 .method private sendStopRecordSucceed(Ljava/lang/String;J)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const/4 v3, 0x1
 
@@ -724,7 +683,6 @@
 
 .method private setRecordSaveFilePath(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -777,7 +735,6 @@
 # virtual methods
 .method public checkMediaScannerRunning(Landroid/content/ContentResolver;)Z
     .locals 11
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v10, 0x1
 
@@ -969,9 +926,6 @@
 
 .method public registerForInfoStateChanged(Landroid/os/Handler;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mStateChangedRegistrantList:Landroid/os/RegistrantList;
 
@@ -1027,7 +981,6 @@
 
 .method public setCallerNumber(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mCallerNumber:Ljava/lang/String;
 
@@ -1036,7 +989,6 @@
 
 .method public setServiceAlive(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneVoiceRecorder;->mIsServiceAlive:Z
 
@@ -1069,7 +1021,6 @@
 
 .method public declared-synchronized startRecord(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1683,7 +1634,6 @@
 
 .method public unregisterForInfoStateChanged(Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/android/phone/PhoneVoiceRecorder;->mStateChangedRegistrantList:Landroid/os/RegistrantList;
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CallForwardEditPreference;Lcom/android/phone/CallForwardEditPreference$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/CallForwardEditPreference;
-    .param p2    # Lcom/android/phone/CallForwardEditPreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallForwardEditPreference$MyHandler;-><init>(Lcom/android/phone/CallForwardEditPreference;)V
 
@@ -41,7 +39,6 @@
 
 .method private handleGetCFResponse(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const-string v8, "CallForwardEditPreference"
 
@@ -669,7 +666,6 @@
 
 .method private handleReGetCFResponse(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const/4 v8, 0x0
 
@@ -836,7 +832,6 @@
 
 .method private handleSetCFResponse(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x1
 
@@ -1015,7 +1010,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

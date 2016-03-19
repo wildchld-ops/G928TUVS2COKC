@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/popup_keyboard_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/textinput_select_bg" android:layout_width="@dimen/textinput_keypad_select_popup_width" android:layout_height="@dimen/textinput_keypad_select_popup_height" android:paddingStart="@dimen/textinput_keypad_select_layout_padding_left" android:paddingEnd="@dimen/textinput_keypad_select_layout_padding_right">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/textinput_keypad_select_layout_margin_top" android:layout_marginBottom="@dimen/textinput_keypad_select_layout_margin_bottom" android:layout_marginStart="@dimen/textinput_keypad_select_layout_margin_right">
+            <LinearLayout android:id="@id/mode_qwerty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/popup_keyboard_qwerty" android:background="@drawable/textinput_select_qwerty_xml" android:layout_width="@dimen/textinput_keypad_select_image_button_width" android:layout_height="@dimen/textinput_keypad_select_image_button_height" android:contentDescription="@string/input_method_type_normal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/textinput_keypad_select_layout_text_margin_top">
+                <TextView android:textSize="@dimen/textinput_keypad_select_text_size" android:typeface="sans" android:textColor="#ff2d2d2d" android:layout_gravity="center" android:id="@id/mode_qwerty_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_method_type_normal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/textinput_keypad_select_layout_margin_top" android:layout_marginBottom="@dimen/textinput_keypad_select_layout_margin_bottom" android:layout_marginStart="@dimen/textinput_keypad_select_layout_margin_left">
+            <LinearLayout android:id="@id/mode_floating" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/popup_keyboard_floating" android:background="@drawable/textinput_select_floating_xml" android:layout_width="@dimen/textinput_keypad_select_image_button_width" android:layout_height="@dimen/textinput_keypad_select_image_button_height" android:contentDescription="@string/input_method_type_floating" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/textinput_keypad_select_layout_text_margin_top">
+                <TextView android:textSize="@dimen/textinput_keypad_select_text_size" android:typeface="sans" android:textColor="#ff2d2d2d" android:layout_gravity="center" android:id="@id/mode_floating_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_method_type_floating" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/textinput_keypad_select_layout_margin_top" android:layout_marginBottom="@dimen/textinput_keypad_select_layout_margin_bottom" android:layout_marginStart="@dimen/textinput_keypad_select_layout_margin_left" android:layout_marginEnd="@dimen/textinput_keypad_select_layout_margin_right">
+            <LinearLayout android:id="@id/mode_split" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/popup_keyboard_split" android:background="@drawable/textinput_select_split_xml" android:layout_width="@dimen/textinput_keypad_select_image_button_width" android:layout_height="@dimen/textinput_keypad_select_image_button_height" android:contentDescription="@string/input_method_type_split" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/textinput_keypad_select_layout_text_margin_top">
+                <TextView android:textSize="@dimen/textinput_keypad_select_text_size" android:typeface="sans" android:textColor="#ff2d2d2d" android:layout_gravity="center" android:id="@id/mode_split_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_method_type_split" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -161,7 +161,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/CaptureImageViewer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mSelectedFilePath:Ljava/lang/String;
 
@@ -170,8 +169,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/callsettings/CaptureImageViewer;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mSelectedFilePath:Ljava/lang/String;
 
@@ -180,7 +177,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/CaptureImageViewer;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->isLongKeypress:Z
 
@@ -189,8 +185,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/CaptureImageViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->isLongKeypress:Z
 
@@ -199,7 +193,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/CaptureImageViewer;)Landroid/widget/Gallery;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mImageGallery:Landroid/widget/Gallery;
 
@@ -208,7 +201,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/CaptureImageViewer;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mUri:Landroid/net/Uri;
 
@@ -217,7 +209,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/CaptureImageViewer;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -226,8 +217,6 @@
 
 .method static synthetic access$500(Landroid/database/Cursor;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/phone/callsettings/CaptureImageViewer;->getCursorString(Landroid/database/Cursor;I)Ljava/lang/String;
 
@@ -238,7 +227,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/CaptureImageViewer;)Landroid/widget/ImageSwitcher;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mSwitcher:Landroid/widget/ImageSwitcher;
 
@@ -247,7 +235,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/CaptureImageViewer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mImageName:Landroid/widget/TextView;
 
@@ -256,8 +243,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/callsettings/CaptureImageViewer;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/CaptureImageViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mSelectedPosition:I
 
@@ -266,8 +251,6 @@
 
 .method private static getCursorString(Landroid/database/Cursor;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
 
     :try_start_0
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -297,8 +280,6 @@
 
 .method private showToast(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/CaptureImageViewer;->getActivity()Landroid/app/Activity;
 
@@ -326,7 +307,6 @@
 # virtual methods
 .method public CaptureImageViewer_hasStorage(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -393,9 +373,6 @@
 
 .method public imageSelected(Landroid/view/View;IJ)V
     .locals 20
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v2, 0x3
 
@@ -885,7 +862,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "CaptureImageViewer"
 
@@ -900,7 +876,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -920,7 +895,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -984,9 +958,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -1197,10 +1168,6 @@
 
 .method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
     .locals 2
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer;->mImageGallery:Landroid/widget/Gallery;
 
@@ -1224,10 +1191,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p0, p2, p3, p4, p5}, Lcom/android/phone/callsettings/CaptureImageViewer;->imageSelected(Landroid/view/View;IJ)V
 
@@ -1236,7 +1199,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -1265,7 +1227,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/popup_trace_guide_textview_text_size" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:id="@id/trace_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_hwr_install_guide_dialog_top_margin" android:text="@string/trace_summary" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/popup_hwr_install_guide_dialog_left_padding" android:layout_marginEnd="@dimen/popup_hwr_install_guide_dialog_right_padding" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_trace_guide_linearlayout_imageview_margin_top" android:layout_marginBottom="@dimen/popup_trace_guide_linearlayout_imageview_margin_bottom" android:layout_marginStart="@dimen/popup_hwr_install_guide_dialog_left_padding" android:layout_marginEnd="@dimen/popup_hwr_install_guide_dialog_right_padding">
+                <ImageView android:layout_width="@dimen/popup_trace_guide_imageview_width" android:layout_height="@dimen/popup_trace_guide_imageview_height" android:src="@drawable/textinput_tutorial_voice_input_default" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/popup_trace_guide_linearlayout_checkbox_height" android:layout_marginBottom="@dimen/popup_hwr_install_guide_dialog_bottom_margin" android:paddingStart="@dimen/popup_trace_guide_linearlayout_checkbox_padding_start">
+        <CheckBox android:textSize="@dimen/popup_trace_guide_checkbox_text_size" android:layout_gravity="center_vertical" android:id="@id/trace_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/popup_dialog_checkbox_right_padding" />
+    </LinearLayout>
+</LinearLayout>

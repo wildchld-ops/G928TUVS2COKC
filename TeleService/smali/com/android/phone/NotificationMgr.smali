@@ -119,7 +119,6 @@
 
 .method private constructor <init>(Lcom/android/phone/PhoneGlobals;)V
     .locals 5
-    .param p1    # Lcom/android/phone/PhoneGlobals;
 
     const/4 v4, 0x1
 
@@ -320,7 +319,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/NotificationMgr;)Landroid/app/Notification;
     .locals 1
-    .param p0    # Lcom/android/phone/NotificationMgr;
 
     iget-object v0, p0, Lcom/android/phone/NotificationMgr;->mSpamCallsFilterNotification:Landroid/app/Notification;
 
@@ -337,8 +335,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/NotificationMgr;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NotificationMgr;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NotificationMgr;->log(Ljava/lang/String;)V
 
@@ -347,7 +343,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/NotificationMgr;)Landroid/app/StatusBarManager;
     .locals 1
-    .param p0    # Lcom/android/phone/NotificationMgr;
 
     iget-object v0, p0, Lcom/android/phone/NotificationMgr;->mStatusBarManager:Landroid/app/StatusBarManager;
 
@@ -356,7 +351,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/NotificationMgr;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/NotificationMgr;
 
     iget-object v0, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
@@ -365,7 +359,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/NotificationMgr;)Landroid/app/NotificationManager;
     .locals 1
-    .param p0    # Lcom/android/phone/NotificationMgr;
 
     iget-object v0, p0, Lcom/android/phone/NotificationMgr;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -374,8 +367,6 @@
 
 .method private applyIcon(ILandroid/widget/RemoteViews;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     const v1, 0x7f1001bc
 
@@ -441,8 +432,6 @@
 
 .method private cancelAsUser(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -545,7 +534,6 @@
 
 .method private cancelNetworkSelection(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -638,7 +626,6 @@
 
 .method static init(Lcom/android/phone/PhoneGlobals;)Lcom/android/phone/NotificationMgr;
     .locals 4
-    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     const-class v1, Lcom/android/phone/NotificationMgr;
 
@@ -701,7 +688,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/NotificationMgr;->LOG_TAG:Ljava/lang/String;
 
@@ -712,9 +698,6 @@
 
 .method private notifyAsUser(IILandroid/app/Notification;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/app/Notification;
 
     const/4 v6, 0x1
 
@@ -797,8 +780,6 @@
 
 .method private showNetworkSelection(Ljava/lang/String;I)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -1594,7 +1575,6 @@
 
 .method refreshMwi(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -1725,10 +1705,6 @@
 
 .method sendVoiceMailInfo(ZIJLjava/lang/String;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2344,7 +2320,6 @@
 
 .method public updateCdmaCfi(Z)V
     .locals 13
-    .param p1    # Z
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -2606,8 +2581,6 @@
 
 .method updateCfi(IZ)V
     .locals 17
-    .param p1    # I
-    .param p2    # Z
 
     sget-boolean v13, Lcom/android/phone/NotificationMgr;->DBG:Z
 
@@ -3130,8 +3103,6 @@
 
 .method updateCfiMultiSIM(IZ)V
     .locals 25
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v20, Ljava/lang/StringBuilder;
 
@@ -4110,7 +4081,6 @@
 
 .method public updateDisableAutoRejectStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
@@ -4133,7 +4103,6 @@
 
 .method public updateDisableBlockModeStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
 
@@ -4156,8 +4125,6 @@
 
 .method updateMwi(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -4168,9 +4135,6 @@
 
 .method updateMwi(IZZ)V
     .locals 38
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     sget-boolean v5, Lcom/android/phone/PhoneGlobals;->sVoiceCapable:Z
 
@@ -5111,7 +5075,6 @@
 
 .method updateNetworkSelection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/NotificationMgr;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -5126,8 +5089,6 @@
 
 .method updateNetworkSelection(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x2
 
@@ -5522,7 +5483,6 @@
 
 .method public updateRoamingNotification(Z)V
     .locals 14
-    .param p1    # Z
 
     const v13, 0x7f0200e8
 

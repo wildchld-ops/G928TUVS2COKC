@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     const/4 v0, 0x0
 
@@ -83,7 +82,6 @@
 
 .method public static getInstance(Lcom/android/internal/telephony/Connection;)Lcom/android/services/utils/SecModifyCallHandler;
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     invoke-static {p0}, Lcom/android/services/telephony/TelephonyConnectionUtils;->getTelephonyConnection(Lcom/android/internal/telephony/Connection;)Lcom/android/services/telephony/TelephonyConnection;
 
@@ -106,7 +104,6 @@
 
 .method public static getInstance(Ljava/lang/String;)Lcom/android/services/utils/SecModifyCallHandler;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/services/telephony/TelephonyConnectionUtils;->getTelephonyConnection(Ljava/lang/String;)Lcom/android/services/telephony/TelephonyConnection;
 
@@ -129,7 +126,6 @@
 
 .method private static handleModifyCallException(Landroid/os/AsyncResult;)I
     .locals 7
-    .param p0    # Landroid/os/AsyncResult;
 
     const/4 v6, 0x0
 
@@ -237,8 +233,6 @@
 
 .method private handleModifyCallResult(Landroid/os/AsyncResult;I)V
     .locals 9
-    .param p1    # Landroid/os/AsyncResult;
-    .param p2    # I
 
     const/4 v8, 0x2
 
@@ -471,7 +465,6 @@
 
 .method public static isSessionModifyPossible(Lcom/android/internal/telephony/Connection;)Z
     .locals 14
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     const/4 v13, 0x0
 
@@ -615,7 +608,6 @@
 
 .method public static isSessionModifyPossible(Lcom/android/services/telephony/TelephonyConnection;)Z
     .locals 2
-    .param p0    # Lcom/android/services/telephony/TelephonyConnection;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/TelephonyConnection;->getOriginalConnection()Lcom/android/internal/telephony/Connection;
 
@@ -630,7 +622,6 @@
 
 .method private onIncomingModifyCall(Landroid/os/AsyncResult;)V
     .locals 16
-    .param p1    # Landroid/os/AsyncResult;
 
     move-object/from16 v0, p1
 
@@ -1179,7 +1170,6 @@
 
 .method public createModifyCallResultMessage(I)Landroid/os/Message;
     .locals 3
-    .param p1    # I
 
     const/16 v0, 0x65
 
@@ -1196,7 +1186,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x1
 
@@ -1305,7 +1294,6 @@
 
 .method public requestModifyCall(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -1452,8 +1440,6 @@
 
 .method public respondModifyCall(ZLjava/lang/String;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1580,7 +1566,6 @@
 
 .method public simulationModifyProgressing(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x0
 

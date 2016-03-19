@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CLIRListPreference;Lcom/android/phone/CLIRListPreference$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/CLIRListPreference;
-    .param p2    # Lcom/android/phone/CLIRListPreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CLIRListPreference$MyHandler;-><init>(Lcom/android/phone/CLIRListPreference;)V
 
@@ -41,7 +39,6 @@
 
 .method private handleGetCLIRResponse(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const/16 v4, 0x190
 
@@ -255,7 +252,6 @@
 
 .method private handleSetCLIRResponse(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x1
 
@@ -322,7 +318,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

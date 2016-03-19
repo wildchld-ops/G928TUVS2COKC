@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const v4, 0x7f0a0382
 

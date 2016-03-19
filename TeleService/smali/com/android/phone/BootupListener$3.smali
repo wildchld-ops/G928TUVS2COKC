@@ -31,7 +31,6 @@
 
 .method private handleGetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x1
 
@@ -112,7 +111,6 @@
 
 .method private handleSetPreferredNetworkTypeResponse(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -226,7 +224,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

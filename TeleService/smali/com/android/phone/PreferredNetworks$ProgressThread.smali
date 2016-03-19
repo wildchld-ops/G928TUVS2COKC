@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/PreferredNetworks;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/PreferredNetworks$ProgressThread;->this$0:Lcom/android/phone/PreferredNetworks;
 

@@ -58,7 +58,6 @@
 
 .method public queryNonIndexableKeys([Ljava/lang/String;)Landroid/database/Cursor;
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -106,7 +105,6 @@
 
 .method public queryRawData([Ljava/lang/String;)Landroid/database/Cursor;
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -158,7 +156,6 @@
 
 .method public queryXmlResources([Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 

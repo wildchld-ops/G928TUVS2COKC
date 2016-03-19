@@ -36,8 +36,6 @@
 # virtual methods
 .method public onReceive(Lcom/android/phone/photoring/CallMessageConstants$RequestType;Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Lcom/android/phone/photoring/CallMessageConstants$RequestType;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v7, p0, Lcom/android/phone/photoring/PhotoRingScreen$6;->this$0:Lcom/android/phone/photoring/PhotoRingScreen;
 

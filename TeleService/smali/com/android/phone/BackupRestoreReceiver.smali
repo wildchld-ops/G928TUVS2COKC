@@ -282,10 +282,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/BackupRestoreReceiver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/BackupRestoreReceiver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/BackupRestoreReceiver;->backupData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -294,10 +290,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/BackupRestoreReceiver;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/BackupRestoreReceiver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/BackupRestoreReceiver;->restoreData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -306,9 +298,6 @@
 
 .method private backupData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -751,8 +740,6 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -864,8 +851,6 @@
 
 .method private copy(Ljava/io/File;Ljava/io/File;)V
     .locals 9
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1233,8 +1218,6 @@
 
 .method private duplicationCheck(ILjava/lang/String;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1484,7 +1467,6 @@
 
 .method private getBackupAutoRejectNumber(Ljava/lang/String;)Ljava/io/File;
     .locals 17
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1837,7 +1819,6 @@
 
 .method private getBackupPreference(Ljava/lang/String;)Ljava/io/File;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1922,7 +1903,6 @@
 
 .method private getBackupRejectMessage(Ljava/lang/String;)Ljava/io/File;
     .locals 17
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2275,8 +2255,6 @@
 
 .method private getOrUpdateTag(Lorg/w3c/dom/Document;Z)V
     .locals 14
-    .param p1    # Lorg/w3c/dom/Document;
-    .param p2    # Z
 
     const/4 v11, 0x3
 
@@ -2630,7 +2608,6 @@
 
 .method private makeXmlFromDom(Lorg/w3c/dom/Document;)V
     .locals 6
-    .param p1    # Lorg/w3c/dom/Document;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/transform/TransformerFactoryConfigurationError;,
@@ -2676,8 +2653,6 @@
 
 .method private readSourcePrefFile(Ljavax/xml/parsers/DocumentBuilder;Ljava/io/File;Ljava/util/ArrayList;)V
     .locals 2
-    .param p1    # Ljavax/xml/parsers/DocumentBuilder;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2718,7 +2693,6 @@
 
 .method private removeBlackListKey(Lorg/w3c/dom/Document;Ljava/util/ArrayList;)V
     .locals 13
-    .param p1    # Lorg/w3c/dom/Document;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2928,7 +2902,6 @@
 
 .method private restoreAutoRejectNumber(Ljava/io/File;)V
     .locals 10
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3144,9 +3117,6 @@
 
 .method private restoreData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v6, 0x0
 
@@ -3567,7 +3537,6 @@
 
 .method private restoreRejectMessage(Ljava/io/File;)V
     .locals 12
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3813,8 +3782,6 @@
 
 .method private static setPreferenceValue(Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const-string v0, "BackupRestoreReceiver"
 
@@ -3884,8 +3851,6 @@
 
 .method private static setPreferenceValue(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "BackupRestoreReceiver"
 
@@ -3955,8 +3920,6 @@
 
 .method private static setPreferenceValue(Ljava/lang/String;Z)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v7, 0x2
 
@@ -4845,7 +4808,6 @@
 
 .method private updatePreferenceFile(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/parsers/ParserConfigurationException;,
@@ -4945,8 +4907,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/phone/BackupRestoreReceiver;->mContext:Landroid/content/Context;
 

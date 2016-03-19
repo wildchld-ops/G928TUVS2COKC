@@ -100,7 +100,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/FdnSetting;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mFDNHandler:Landroid/os/Handler;
 
@@ -109,7 +108,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/FdnSetting;)I
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget v0, p0, Lcom/android/phone/FdnSetting;->mAttempt:I
 
@@ -118,7 +116,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/FdnSetting;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getApplicationContext()Landroid/content/Context;
 
@@ -129,8 +126,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/FdnSetting;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/FdnSetting;->mAttempt:I
 
@@ -139,7 +134,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/FdnSetting;)V
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->updateEnableFDN()V
 
@@ -148,7 +142,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -159,7 +152,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/FdnSetting;)V
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->resetPinChangeState()V
 
@@ -168,7 +160,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -179,8 +170,6 @@
 
 .method static synthetic access$1502(Lcom/android/phone/FdnSetting;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/FdnSetting;->mPinChangeState:I
 
@@ -189,7 +178,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -200,7 +188,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/FdnSetting;)I
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget v0, p0, Lcom/android/phone/FdnSetting;->mAttemptPuk2:I
 
@@ -209,8 +196,6 @@
 
 .method static synthetic access$1702(Lcom/android/phone/FdnSetting;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/FdnSetting;->mAttemptPuk2:I
 
@@ -219,7 +204,6 @@
 
 .method static synthetic access$1800(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -230,7 +214,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/FdnSetting;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -239,7 +222,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/FdnSetting;)V
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->resetPinChangeStateForPUK2()V
 
@@ -248,7 +230,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/FdnSetting;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/FdnSetting;->mSkipOldPin:Z
 
@@ -257,8 +238,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/FdnSetting;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/FdnSetting;->mSkipOldPin:Z
 
@@ -267,7 +246,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/FdnSetting;)Lcom/android/phone/EditPinPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
@@ -276,7 +254,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/FdnSetting;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonFDNList:Landroid/preference/PreferenceScreen;
 
@@ -285,7 +262,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/FdnSetting;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/FdnSetting;->mpukState:Z
 
@@ -294,8 +270,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/FdnSetting;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/FdnSetting;->mpukState:Z
 
@@ -304,7 +278,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/FdnSetting;)Lcom/android/phone/EditPinPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
@@ -313,8 +286,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/FdnSetting;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/FdnSetting;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/FdnSetting;->displayMessage(I)V
 
@@ -323,7 +294,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/FdnSetting;
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -334,7 +304,6 @@
 
 .method private final displayMessage(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
@@ -369,8 +338,6 @@
 
 .method private final displayPinChangeDialog(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const v7, 0x7f0a01df
 
@@ -876,7 +843,6 @@
 
 .method private static toDigitChar(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v0, "%d"
 
@@ -901,7 +867,6 @@
 
 .method private toggleFDNEnable(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v8, 0x0
 
@@ -1218,7 +1183,6 @@
 
 .method private updatePINChangeState(Z)V
     .locals 8
-    .param p1    # Z
 
     const v7, 0x7f0a01da
 
@@ -1519,8 +1483,6 @@
 
 .method private validatePin(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v1, 0x8
 
@@ -1644,7 +1606,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     const-string v0, "FdnSetting"
 
@@ -1663,7 +1624,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1999,7 +1959,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -2010,8 +1969,6 @@
 
 .method public onPinEntered(Lcom/android/phone/EditPinPreference;Z)V
     .locals 1
-    .param p1    # Lcom/android/phone/EditPinPreference;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
@@ -2044,8 +2001,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "FdnSetting"
 
@@ -2283,7 +2238,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

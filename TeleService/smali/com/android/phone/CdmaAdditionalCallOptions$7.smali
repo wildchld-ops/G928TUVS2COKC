@@ -33,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v1, Lcom/android/phone/CdmaAdditionalCallOptions;->DBG:Z
 

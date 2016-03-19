@@ -41,14 +41,14 @@
         <item name="android:shadowRadius">2.0</item>
         <item name="android:alpha">0.75</item>
     </style>
-    <style name="cust_dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+    <style name="cust_dialog" parent="@android:style/Theme.Material.Dialog.Alert">
         <item name="android:windowTitleStyle">@style/dialog_title_style</item>
     </style>
     <style name="dialog_title_style" parent="@android:style/Widget.TextView">
         <item name="android:textSize">19.0sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ff000000</item>
-        <item name="android:background">#fffafafa</item>
+        <item name="android:textColor">#ffc62828</item>
+        <item name="android:background">#ff464646</item>
         <item name="android:fontFamily">sec-roboto-light</item>
     </style>
     <style name="wifi_ap_item_label">
@@ -190,7 +190,7 @@
         <item name="android:layout_marginRight">@dimen/bluetooth_no_nearby_dialog_text_margin_left_right</item>
         <item name="android:fontFamily">sec-roboto-light</item>
     </style>
-    <style name="BluetoothSettings.DevicePicker" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="BluetoothSettings.DevicePicker" parent="@android:style/Theme.Material" />
     <style name="BluetoothPreferenceVisibilitySummaryText">
         <item name="android:textSize">@dimen/bluetooth_is_visible_message_text_size</item>
         <item name="android:textStyle">normal</item>
@@ -221,7 +221,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/highlight_text_color</item>
     </style>
-    <style name="BluetoothSettings.Picker" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="BluetoothSettings.Picker" parent="@android:style/Theme.Material.Dialog.Alert" />
     <style name="PrintingSettings">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textStyle">normal</item>
@@ -341,10 +341,10 @@
     <style name="wifi_dialog_spinner_layout_style" parent="@style/wifi_item">
         <item name="android:layout_marginBottom">@dimen/wifi_dialog_margin_bottom_p</item>
     </style>
-    <style name="custom_spinner_item_content" parent="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem">
+    <style name="custom_spinner_item_content" parent="@android:style/Widget.Material.TextView.SpinnerItem">
         <item name="android:textSize">@dimen/dialog_body_text_size</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textColor">@color/wifi_ap_dialog_spinner_text_color</item>
+        <item name="android:textColor">#ffc62828</item>
     </style>
     <style name="wifi_spinner_item_content">
         <item name="android:textSize">@dimen/dialog_body_text_size</item>
@@ -405,7 +405,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="Transparent" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="Transparent" parent="@android:style/Theme.Material">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -420,7 +420,7 @@
     <style name="CryptKeeperBlankTheme" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:background">#ff000000</item>
     </style>
-    <style name="LockScreenTheme" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="LockScreenTheme" parent="@android:style/Theme.Material" />
     <style name="CryptKeeperButtonContainer" parent="@style/bottom_bar_container">
         <item name="android:background">@drawable/security_bottom_transparent_mtrl</item>
         <item name="android:layout_width">fill_parent</item>
@@ -490,7 +490,7 @@
     <style name="KeyguardAppWidgetItem">
         <item name="android:textSize">18.0sp</item>
     </style>
-    <style name="WifiSettings.Picker" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="WifiSettings.Picker" parent="@android:style/Theme.Material.Dialog.Alert" />
     <style name="ApnPreference">
         <item name="android:layout">@layout/apn_preference_layout</item>
     </style>
@@ -525,22 +525,22 @@
         <item name="android:paddingStart">@dimen/dashboard_tile_start_padding</item>
         <item name="android:paddingEnd">@dimen/dashboard_tile_end_padding</item>
     </style>
-    <style name="Widget.TimePicker" parent="@android:style/Widget.Material.Light.TimePicker">
+    <style name="Widget.TimePicker" parent="@android:style/Widget.Material.TimePicker">
         <item name="android:numbersBackgroundColor">@android:color/white</item>
     </style>
     <style name="PreferencePanelSinglePaneStyle" parent="@android:style/PreferencePanel" />
-    <style name="SettingsTheme.DialogWhenLarge" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="SettingsTheme.DialogWhenLarge" parent="@android:style/Theme.Material">
         <item name="android:actionModeCloseButtonStyle">@style/NoCloseButton</item>
     </style>
     <style name="NoCloseButton" parent="@android:style/Widget.ActionButton.CloseMode">
         <item name="android:visibility">gone</item>
     </style>
-    <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="SettingsTheme" parent="@android:style/Theme.Material" />
     <style name="WifiSetupWizardTheme" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@style/WifiSetupWizardActionBar</item>
         <item name="android:statusBarColor">@color/wifi_setupwizard_statusbar_color</item>
     </style>
-    <style name="WifiSetupWizardActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+    <style name="WifiSetupWizardActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:background">#ff15acba</item>
         <item name="android:contentInsetStart">21.0dip</item>
     </style>
@@ -549,10 +549,10 @@
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">2.0</item>
     </style>
-    <style name="Theme.vzwSetupWiFi" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+    <style name="Theme.vzwSetupWiFi" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">@drawable/setupwizard_bg</item>
     </style>
-    <style name="Theme.OffloadDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <style name="Theme.OffloadDialog" parent="@android:style/Theme.Material.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -713,7 +713,7 @@
     <style name="CommonListItemBackground">
         <item name="android:background">@drawable/tw_common_list_item_background</item>
     </style>
-    <style name="FingerprintConfirmStyle" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+    <style name="FingerprintConfirmStyle" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -866,12 +866,12 @@
         <item name="android:textColor">@color/dialog_body_text_color</item>
     </style>
     <style name="LoadingTheme" parent="@style/Theme.Panel">
-        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorPrimary">#ffc62828</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
         <item name="android:textSize">12.0sp</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">#ffc62828</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
     <style name="CustomAlertDialogStyle">
@@ -1025,7 +1025,7 @@
         <item name="wifi_signal_color">@color/setup_wizard_wifi_color_dark</item>
         <item name="wifi_signal">@drawable/wifi_signal_teal</item>
     </style>
-    <style name="Theme.AccessibilitySettingsSetupWizard" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+    <style name="Theme.AccessibilitySettingsSetupWizard" parent="@android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowActionBar">false</item>
         <item name="preferenceBackgroundColor">@drawable/preference_background</item>
     </style>
@@ -1091,21 +1091,21 @@
         <item name="android:activityCloseEnterAnimation">@anim/slide_back_in</item>
         <item name="android:activityCloseExitAnimation">@anim/slide_back_out</item>
     </style>
-    <style name="Theme.WifiDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+    <style name="Theme.WifiDialog" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
         <item name="android:spinnerItemStyle">@style/custom_spinner_item_content</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="ic_menu_add">@drawable/ic_menu_add_dark</item>
         <item name="ic_menu_moreoverflow">@android:drawable/ic_menu_moreoverflow_material</item>
         <item name="ic_wps">@drawable/APKTOOL_DUMMY_01c3</item>
     </style>
-    <style name="Theme.Light.WifiDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+    <style name="Theme.Light.WifiDialog" parent="@android:style/Theme.Material.Dialog.Alert">
         <item name="android:spinnerItemStyle">@style/custom_spinner_item_content</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="ic_menu_add">@drawable/ic_menu_add_light</item>
         <item name="ic_menu_moreoverflow">@android:drawable/ic_menu_moreoverflow_material</item>
         <item name="ic_wps">@drawable/ic_wps_light</item>
     </style>
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="Theme.SettingsBase" parent="@android:style/Theme.Material" />
     <style name="Theme.Settings" parent="@style/Theme.SettingsBase">
         <item name="android:windowNoTitle">false</item>
         <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
@@ -1137,34 +1137,34 @@
         <item name="android:actionBarStyle">@style/Theme.ActionBar.SubSettings</item>
         <item name="switchBarTheme">@style/Theme.SwitchBar.SubSettings</item>
     </style>
-    <style name="Theme.ActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+    <style name="Theme.ActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:displayOptions">showTitle</item>
         <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
     </style>
     <style name="Theme.ActionBar.SubSettings" parent="@style/Theme.ActionBar">
         <item name="android:contentInsetStart">@dimen/actionbar_contentInsetStart</item>
     </style>
-    <style name="Theme.SwitchBar.Settings" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="Theme.SwitchBar.Settings" parent="@android:style/Theme.Material">
         <item name="switchBarMarginStart">@dimen/switchbar_margin_start</item>
         <item name="switchBarMarginEnd">@dimen/switchbar_margin_end</item>
     </style>
-    <style name="Theme.SwitchBar.SubSettings" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="Theme.SwitchBar.SubSettings" parent="@android:style/Theme.Material">
         <item name="switchBarMarginStart">@dimen/switchbar_subsettings_margin_start</item>
         <item name="switchBarMarginEnd">@dimen/switchbar_subsettings_margin_end</item>
     </style>
-    <style name="Theme.DialogWhenLarge" parent="@android:style/Theme.DeviceDefault.Light.DialogWhenLarge">
-        <item name="android:colorBackground">@android:color/white</item>
+    <style name="Theme.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
+        <item name="android:colorBackground">@android:color/transparent</item>
         <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
         <item name="preferenceBackgroundColor">@drawable/preference_background</item>
     </style>
     <style name="Theme.ScreenModeSettings" parent="@style/Theme.SettingsBase">
         <item name="android:actionBarStyle">@style/Theme.ScreenModeActionBar</item>
     </style>
-    <style name="Theme.ScreenModeActionBar" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+    <style name="Theme.ScreenModeActionBar" parent="@android:style/Widget.Material.ActionBar">
         <item name="android:displayOptions">showTitle</item>
         <item name="android:contentInsetStart">0.0dip</item>
     </style>
-    <style name="Theme.NoActionBar" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+    <style name="Theme.NoActionBar" parent="@android:style/Theme.Material.NoActionBar">
         <item name="android:windowActionBar">false</item>
     </style>
     <style name="Theme.CryptKeeper" parent="@android:style/Theme.Material.NoActionBar">
@@ -1186,20 +1186,20 @@
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:windowActionBar">false</item>
     </style>
-    <style name="Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog" />
-    <style name="Theme.Dialog.NoWindowDisplay" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    <style name="Theme.Dialog" parent="@android:style/Theme.Material.Dialog" />
+    <style name="Theme.Dialog.NoWindowDisplay" parent="@android:style/Theme.Material.Dialog">
         <item name="android:windowNoDisplay">true</item>
     </style>
-    <style name="Theme.AlertDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
+    <style name="Theme.AlertDialog" parent="@android:style/Theme.Material.Dialog.Alert">
         <item name="android:spinnerItemStyle">@style/custom_spinner_item_content</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:actionBarStyle">@style/Theme.ActionBar</item>
     </style>
-    <style name="Theme.NotificationStation" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="Theme.NotificationStation" parent="@android:style/Theme.Material">
         <item name="android:actionBarStyle">@style/Theme.ActionBar.SubSettings</item>
         <item name="android:actionBarSize">@dimen/actionbar_size</item>
         <item name="preferenceBackgroundColor">@android:color/transparent</item>
     </style>
-    <style name="Theme.Panel" parent="@android:style/Theme.DeviceDefault.Light.Panel" />
+    <style name="Theme.Panel" parent="@android:style/Theme.Material.Panel" />
     <style name="ThemeOverlay.SwitchBar" parent="@android:style/ThemeOverlay" />
 </resources>

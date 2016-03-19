@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/GetPin2Screen;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/GetPin2Screen;
 
     iget-object v0, p0, Lcom/android/phone/GetPin2Screen;->mPin2Field:Landroid/widget/EditText;
 
@@ -49,7 +48,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/GetPin2Screen;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/GetPin2Screen;
 
     iget-object v0, p0, Lcom/android/phone/GetPin2Screen;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -58,7 +56,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/GetPin2Screen;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/phone/GetPin2Screen;
 
     iget-object v0, p0, Lcom/android/phone/GetPin2Screen;->toastAlert:Landroid/widget/Toast;
 
@@ -67,7 +64,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/GetPin2Screen;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/GetPin2Screen;
 
     iget-object v0, p0, Lcom/android/phone/GetPin2Screen;->handler:Landroid/os/Handler;
 
@@ -76,7 +72,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/GetPin2Screen;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/GetPin2Screen;
 
     invoke-direct {p0}, Lcom/android/phone/GetPin2Screen;->getPin2()Ljava/lang/String;
 
@@ -87,8 +82,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/GetPin2Screen;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/GetPin2Screen;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/GetPin2Screen;->validatePin2(Ljava/lang/String;)Z
 
@@ -99,7 +92,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/GetPin2Screen;)V
     .locals 0
-    .param p0    # Lcom/android/phone/GetPin2Screen;
 
     invoke-direct {p0}, Lcom/android/phone/GetPin2Screen;->returnResult()V
 
@@ -251,7 +243,6 @@
 
 .method private validatePin2(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -287,7 +278,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -323,7 +313,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

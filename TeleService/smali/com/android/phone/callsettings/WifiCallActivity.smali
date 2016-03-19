@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/WifiCallActivity;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/WifiCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -64,8 +63,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/WifiCallActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/WifiCallActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/WifiCallActivity;->updateLayout(Z)V
 
@@ -74,7 +71,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/WifiCallActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/WifiCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity;->mListView:Landroid/widget/ListView;
 
@@ -83,8 +79,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/WifiCallActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/WifiCallActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/WifiCallActivity;->setWiFiPrefValue(I)V
 
@@ -93,7 +87,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/WifiCallActivity;)Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/WifiCallActivity;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/WifiCallActivity;->mWifiCallAdapter:Lcom/android/phone/callsettings/WifiCallActivity$WifiCallAdapter;
 
@@ -102,7 +95,6 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f10001a
 
@@ -267,7 +259,6 @@
 
 .method private setWiFiPrefValue(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "WifiCallActivity"
 
@@ -308,7 +299,6 @@
 
 .method private updateLayout(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/phone/callsettings/WifiCallActivity;->mListView:Landroid/widget/ListView;
 
@@ -331,8 +321,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -423,7 +411,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -449,9 +436,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 

@@ -58,9 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ZLcom/android/phone/BluetoothManager;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Lcom/android/phone/BluetoothManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,7 +94,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/OtaUtils;->log(Ljava/lang/String;)V
 
@@ -106,7 +102,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/OtaUtils;)V
     .locals 0
-    .param p0    # Lcom/android/phone/OtaUtils;
 
     invoke-direct {p0}, Lcom/android/phone/OtaUtils;->otaSkipActivation()V
 
@@ -115,7 +110,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/OtaUtils;)V
     .locals 0
-    .param p0    # Lcom/android/phone/OtaUtils;
 
     invoke-direct {p0}, Lcom/android/phone/OtaUtils;->rebootSystemAfterOtaSuccess()V
 
@@ -124,7 +118,6 @@
 
 .method public static checkForOtaspCall(Landroid/net/Uri;)Z
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     invoke-static {p0}, Lcom/android/phone/OtaUtils;->isOtaspCallUri(Landroid/net/Uri;)Z
 
@@ -169,7 +162,6 @@
 
 .method private static getLteOnCdmaMode(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, -0x1
 
@@ -615,7 +607,6 @@
 
 .method public static isOtaspCallIntent(Landroid/content/Intent;)Z
     .locals 8
-    .param p0    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -784,7 +775,6 @@
 
 .method public static isOtaspCallUri(Landroid/net/Uri;)Z
     .locals 6
-    .param p0    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -906,7 +896,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "OtaUtils"
 
@@ -917,7 +906,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "OtaUtils"
 
@@ -928,9 +916,6 @@
 
 .method public static maybeDoOtaCall(Landroid/content/Context;Landroid/os/Handler;I)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -1438,7 +1423,6 @@
 
 .method private static otaProvisionStatusToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1940,7 +1924,6 @@
 
 .method private otaShowProgramFailure(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "otaShowProgramFailure()..."
 
@@ -2092,7 +2075,6 @@
 
 .method private otaShowProgramFailureNotice(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "otaShowProgramFailureNotice()..."
 
@@ -2221,7 +2203,6 @@
 
 .method private otaShowSpcErrorNotice(I)V
     .locals 6
-    .param p1    # I
 
     const-string v1, "otaShowSpcErrorNotice()..."
 
@@ -2583,7 +2564,6 @@
 
 .method private sendOtaspResult(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2719,7 +2699,6 @@
 
 .method private setSpeaker(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2802,7 +2781,6 @@
 
 .method public static setupOtaspCall(Landroid/content/Intent;)V
     .locals 5
-    .param p0    # Landroid/content/Intent;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2905,7 +2883,6 @@
 
 .method public static setupOtaspCall(Landroid/net/Uri;)V
     .locals 6
-    .param p0    # Landroid/net/Uri;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3095,7 +3072,6 @@
 
 .method public static startInteractiveOtasp(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "startInteractiveOtasp()..."
 
@@ -3165,7 +3141,6 @@
 
 .method public static startNonInteractiveOtasp(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -3410,7 +3385,6 @@
 # virtual methods
 .method public cleanOtaScreen(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -3712,7 +3686,6 @@
 
 .method public onClickHandler(I)V
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3864,7 +3837,6 @@
 
 .method public onOtaProvisionStatusChanged(Landroid/os/AsyncResult;)V
     .locals 4
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v3, 0x0
 
@@ -4064,7 +4036,6 @@
 
 .method public otaPlaceCall(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "otaPlaceCall()..."
 
@@ -4419,7 +4390,6 @@
 
 .method public setCdmaOtaInCallScreenUiState(Lcom/android/phone/OtaUtils$CdmaOtaInCallScreenUiState$State;)V
     .locals 2
-    .param p1    # Lcom/android/phone/OtaUtils$CdmaOtaInCallScreenUiState$State;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4452,7 +4422,6 @@
 
 .method public updateUiWidgets(Lcom/android/phone/ota/OtaInCallScreen;)V
     .locals 3
-    .param p1    # Lcom/android/phone/ota/OtaInCallScreen;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

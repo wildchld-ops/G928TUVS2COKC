@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/popup_one_handed_guide_textview_text_size" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/popup_one_handed_guide_textview_margin_bottom" android:text="@string/one_hand_guide_for_app" android:paddingStart="@dimen/popup_one_handed_guide_textview_padding_start" android:paddingEnd="@dimen/popup_one_handed_guide_textview_padding_end" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_one_handed_guide_linearlayout_imageview_margin_top" android:layout_marginBottom="@dimen/popup_one_handed_guide_linearlayout_imageview_margin_bottom">
+                <ImageView android:id="@id/one_handed_tutorial_imageview" android:layout_width="@dimen/popup_one_handed_guide_imageview_width" android:layout_height="@dimen/popup_one_handed_guide_imageview_height" android:src="@drawable/one_hand_motion_tutorial_animation" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/popup_one_handed_guide_linearlayout_checkbox_height" android:layout_marginBottom="@dimen/popup_one_handed_guide_linearlayout_checkbox_margin_bottom" android:paddingStart="@dimen/popup_one_handed_guide_linearlayout_checkbox_padding_start">
+        <CheckBox android:textSize="@dimen/popup_one_handed_guide_checkbox_text_size" android:layout_gravity="center_vertical" android:id="@id/one_handed_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

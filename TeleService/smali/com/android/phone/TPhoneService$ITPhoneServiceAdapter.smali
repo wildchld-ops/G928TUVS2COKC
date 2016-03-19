@@ -144,7 +144,6 @@
 
 .method public acceptVideoCall(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -285,7 +284,6 @@
 
 .method public connectBluetoothAudio(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -332,10 +330,6 @@
 
 .method public dial(Ljava/lang/String;Ljava/lang/String;ZI)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -531,7 +525,6 @@
 
 .method public enableExpandedView(Z)V
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -599,8 +592,6 @@
 
 .method public enableSystemNavigation(ZI)V
     .locals 8
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -989,7 +980,6 @@
 
 .method public getSettingValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1234,7 +1224,6 @@
 
 .method public registerCallBack(Lcom/android/phone/ITPhoneEventListener;)Z
     .locals 5
-    .param p1    # Lcom/android/phone/ITPhoneEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1348,7 +1337,6 @@
 
 .method public screenOnImmediately(Z)V
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1445,7 +1433,6 @@
 
 .method public sendDtmf(C)V
     .locals 6
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1522,8 +1509,6 @@
 
 .method public sendSms(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1553,7 +1538,6 @@
 
 .method public setMute(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1605,8 +1589,6 @@
 
 .method public setSettingValue(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1748,7 +1730,6 @@
 
 .method public startRecord(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1838,7 +1819,6 @@
 
 .method public startVideoCall(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2144,7 +2124,6 @@
 
 .method public turnOnSpeaker(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -2191,7 +2170,6 @@
 
 .method public unregisterCallBack(Lcom/android/phone/ITPhoneEventListener;)Z
     .locals 3
-    .param p1    # Lcom/android/phone/ITPhoneEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

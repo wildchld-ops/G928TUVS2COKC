@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/qwerty_keypad_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/one_hand_left_area_layout" android:layout_width="@dimen/one_hand_left_area_layout_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/one_hand_left_area_layout_margin_top" android:layout_marginBottom="@dimen/one_hand_left_area_layout_margin_bottom" android:layout_marginStart="@dimen/one_hand_left_area_layout_margin_start" android:layout_marginEnd="@dimen/one_hand_left_right_view_horizontal_gap_arrow">
+            <ImageButton android:id="@id/one_hand_left_area" android:background="@drawable/one_hand_button_bg_xml" android:layout_width="@dimen/one_hand_arrow_width" android:layout_height="@dimen/one_hand_arrow_height" android:layout_marginTop="@dimen/one_hand_left_area_padding_top" android:layout_marginBottom="@dimen/one_hand_left_area_padding_bottom" android:src="@drawable/one_hand_left_btn_xml" android:contentDescription="@string/accessibility_description_left_handed" android:layout_marginStart="@dimen/one_hand_left_area_padding_start" android:layout_marginEnd="@dimen/one_hand_left_area_padding_end" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/one_hand_keyboard_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ime.implement.view.KeyboardView android:id="@id/keyboardView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:id="@id/one_hand_right_area_layout" android:layout_width="@dimen/one_hand_right_area_layout_width" android:layout_height="fill_parent" android:layout_marginTop="@dimen/one_hand_right_area_layout_margin_top" android:layout_marginBottom="@dimen/one_hand_right_area_layout_margin_bottom" android:layout_marginStart="@dimen/one_hand_left_right_view_horizontal_gap_arrow" android:layout_marginEnd="@dimen/one_hand_right_area_layout_margin_end">
+            <ImageButton android:id="@id/one_hand_right_area" android:background="@drawable/one_hand_button_bg_xml" android:layout_width="@dimen/one_hand_arrow_width" android:layout_height="@dimen/one_hand_arrow_height" android:layout_marginTop="@dimen/one_hand_right_area_padding_top" android:layout_marginBottom="@dimen/one_hand_right_area_padding_bottom" android:src="@drawable/one_hand_right_btn_xml" android:contentDescription="@string/accessibility_description_right_handed" android:layout_marginStart="@dimen/one_hand_right_area_padding_start" android:layout_marginEnd="@dimen/one_hand_right_area_padding_end" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/one_hand_dim_view" android:background="#7f000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

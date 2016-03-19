@@ -104,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CdmaCallWaitingSetting;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaCallWaitingSetting;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CdmaCallWaitingSetting;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaCallWaitingSetting;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -137,7 +135,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CDMA call waiting settings"
 
@@ -219,7 +216,6 @@
 
 .method private setAppState(Lcom/android/phone/CdmaCallWaitingSetting$AppState;)V
     .locals 2
-    .param p1    # Lcom/android/phone/CdmaCallWaitingSetting$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -248,8 +244,6 @@
 
 .method private setAppState(Lcom/android/phone/CdmaCallWaitingSetting$AppState;I)V
     .locals 4
-    .param p1    # Lcom/android/phone/CdmaCallWaitingSetting$AppState;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -480,9 +474,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -567,8 +558,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
@@ -598,7 +587,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const v7, 0x7f0a03e3
 
@@ -813,7 +801,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -987,8 +974,6 @@
 
 .method public onDialogClosed(Lcom/android/phone/EditPhoneNumberPreference;I)V
     .locals 6
-    .param p1    # Lcom/android/phone/EditPhoneNumberPreference;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mAppState:Lcom/android/phone/CdmaCallWaitingSetting$AppState;
 
@@ -1087,7 +1072,6 @@
 
 .method public onGetDefaultNumber(Lcom/android/phone/EditPhoneNumberPreference;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW:Lcom/android/phone/EditPhoneNumberPreference;
 
@@ -1115,7 +1099,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1142,8 +1125,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
@@ -1222,7 +1203,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1259,7 +1239,6 @@
 
 .method public setDisplayMode(I)V
     .locals 5
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mDisplayMode:I
 
@@ -1350,8 +1329,6 @@
 
 .method public startActivityForResult(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v0, -0x1
 

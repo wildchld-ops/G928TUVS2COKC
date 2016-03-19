@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ime.framework.view.toolbar.ToolBarContainer android:orientation="horizontal" android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/tool_bar_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ime.framework.view.toolbar.ToolBarView android:orientation="horizontal" android:id="@id/tool_bar_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:divider="@drawable/toolbar_vertical_divider" android:showDividers="middle" android:dividerPadding="4.0dip" />
+    </HorizontalScrollView>
+    <ImageButton android:id="@id/toolbar_close" android:background="@drawable/toolbar_btn_close_bg" android:clickable="false" android:layout_width="@dimen/toolbar_sip_hide_width" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:src="@drawable/toolbar_icon_close" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+</com.ime.framework.view.toolbar.ToolBarContainer>

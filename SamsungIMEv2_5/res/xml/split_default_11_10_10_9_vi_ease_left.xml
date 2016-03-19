@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_11_10_10_9_key_width" android:keyHeight="@dimen/split_11_10_10_9_key_height" android:horizontalGap="@dimen/split_11_10_10_9_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/split_11_10_10_9_left_row0_padding_left" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_left_vi_ease" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_11_10_10_9_left_row1_padding_left">
+        <include android:keys="@xml/split_default_row1_col5_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_10_10_7_left_row2_padding_left">
+        <include android:keys="@xml/split_default_row2_col5_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_11_10_10_9_left_row3_padding_left">
+        <Key android:keyWidth="@dimen/split_10_10_7_l_shift_key_width" android:codes="-400" android:keyLabel="StrEmpty" />
+        <include android:keys="@xml/split_default_row3_col4_left" />
+    </Row>
+    <include android:rows="@xml/split_row_bottom_left" />
+</Keyboard>

@@ -63,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CallLockSettings;)Lcom/android/phone/EditPinPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/CallLockSettings;
 
     iget-object v0, p0, Lcom/android/phone/CallLockSettings;->mPinDialog:Lcom/android/phone/EditPinPreference;
 
@@ -72,7 +71,6 @@
 
 .method private reasonablePin(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -298,7 +296,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x65
 
@@ -496,8 +493,6 @@
 
 .method public onPinEntered(Lcom/android/phone/EditPinPreference;Z)V
     .locals 9
-    .param p1    # Lcom/android/phone/EditPinPreference;
-    .param p2    # Z
 
     const v8, 0x7f0a03e1
 
@@ -846,7 +841,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "call_lock_state"
 

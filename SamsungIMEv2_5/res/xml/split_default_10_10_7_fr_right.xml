@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/APKTOOL_DUMMY_107f" android:keyHeight="@dimen/split_default_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_number_key_width" android:keyHeight="@dimen/split_default_number_key_height" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_delete" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row>
+        <include android:keys="@xml/split_default_row1_col5_right" />
+        <Key android:keyWidth="@dimen/APKTOOL_DUMMY_1080" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/APKTOOL_DUMMY_1085">
+        <include android:keys="@xml/split_default_row2_col4_right" />
+        <Key android:codeIndex="26" />
+        <Key android:keyWidth="@dimen/APKTOOL_DUMMY_1081" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:codeIndex="23" />
+        <Key android:codeIndex="24" />
+        <Key android:property="tablet" android:codes="-129" android:keyIcon="@drawable/textinput_floating_ic_quote_02_xml" />
+        <Key android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:codes="-770" android:keyLabel="´" />
+        <Key android:keyWidth="@dimen/floating_qwerty_10_10_7_fr_key_width_backspace" android:horizontalGap="@dimen/floating_qwerty_default_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_floating_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+    </Row>
+    <include android:rows="@xml/split_row_bottom_right" />
+</Keyboard>

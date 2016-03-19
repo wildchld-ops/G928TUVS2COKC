@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_ta_key_width" android:keyHeight="@dimen/split_ta_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_ta_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/split_ta_left_row0_padding_left">
+        <Key android:codes="-500" android:keyLabel="◌–|" />
+        <Key android:codes="2949" android:keyLabel="அ" />
+        <Key android:codes="2950" android:keyLabel="ஆ" />
+        <Key android:codes="2951" android:keyLabel="இ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_ta_left_row0_padding_left">
+        <Key android:codes="2952" android:keyLabel="ஈ" />
+        <Key android:codes="2953" android:keyLabel="உ" />
+        <Key android:codes="2954" android:keyLabel="ஊ" />
+        <Key android:codes="2958" android:keyLabel="எ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_ta_left_row0_padding_left">
+        <Key android:codes="2959" android:keyLabel="ஏ" />
+        <Key android:codes="2960" android:keyLabel="ஐ" />
+        <Key android:codes="2962" android:keyLabel="ஒ" />
+        <Key android:codes="2963" android:keyLabel="ஓ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_ta_left_row3_padding_left">
+        <Key android:codes="2964" android:keyLabel="ஔ" />
+        <Key android:codes="2994" android:keyLabel="ல" />
+        <Key android:codes="2997" android:keyLabel="வ" />
+        <Key android:codes="2996" android:keyLabel="ழ" />
+    </Row>
+    <Row>
+        <Key android:codes="2972" android:keyLabel="ஜ" />
+        <Key android:codes="2999" android:keyLabel="ஷ" />
+        <Key android:codes="3000" android:keyLabel="ஸ" />
+        <Key android:codes="3001" android:keyLabel="ஹ" />
+        <Key android:codes="2965,3021,2999" android:keyLabel="க்ஷ" />
+    </Row>
+    <include android:rows="@xml/split_indian_row_bottom_left" />
+</Keyboard>

@@ -7690,6 +7690,32 @@
     <public type="string" name="nfc_osaifukeitai_summary_on_clf_not_support_uim" id="0x7f0a1645" />
     <public type="string" name="nfc_osaifukeitai_summary_not_insert_uim" id="0x7f0a1646" />
     <public type="string" name="nfc_osaifukeitai_summary_not_support_uim" id="0x7f0a1647" />
+    <public type="string" name="SS_CS" id="0x7f0a1648" />
+    <public type="string" name="rom_info" id="0x7f0a1649" />
+    <public type="string" name="SS_Settings" id="0x7f0a164a" />
+    <public type="string" name="toolbox" id="0x7f0a164b" />
+    <public type="string" name="6thGearTWSwipe" id="0x7f0a164c" />
+    <public type="string" name="autostarts_title" id="0x7f0a164d" />
+    <public type="string" name="autostarts_summary" id="0x7f0a164e" />
+    <public type="string" name="autostarts_allowed" id="0x7f0a164f" />
+    <public type="string" name="autostarts_prohibited" id="0x7f0a1650" />
+    <public type="string" name="autostarts_allow_progress_msg" id="0x7f0a1651" />
+    <public type="string" name="autostarts_prohibit_progress_msg" id="0x7f0a1652" />
+    <public type="string" name="autostarts_empty_msg" id="0x7f0a1653" />
+    <public type="string" name="autostarts_optimize_empty_msg" id="0x7f0a1654" />
+    <public type="string" name="autostarts_optimize_btn_title" id="0x7f0a1655" />
+    <public type="string" name="autostarts_all_btn_title" id="0x7f0a1656" />
+    <public type="string" name="mw" id="0x7f0a1657" />
+    <public type="string" name="smart_options" id="0x7f0a1658" />
+    <public type="string" name="notification_panel_flashlight" id="0x7f0a1659" />
+    <public type="string" name="notification_panel_brightness" id="0x7f0a165a" />
+    <public type="string" name="notification_panel_camera" id="0x7f0a165b" />
+    <public type="string" name="notification_panel_battery" id="0x7f0a165c" />
+    <public type="string" name="notification_panel_poweroff" id="0x7f0a165d" />
+    <public type="string" name="notification_panel_restart" id="0x7f0a165e" />
+    <public type="string" name="notification_panel_reboot" id="0x7f0a165f" />
+    <public type="string" name="notification_panel_memory" id="0x7f0a1660" />
+    <public type="string" name="notification_panel_aircommand" id="0x7f0a1661" />
     <public type="style" name="setup_wizard_navbar_style" id="0x7f0b0000" />
     <public type="style" name="setup_wizard_navbar_theme_dark" id="0x7f0b0001" />
     <public type="style" name="setup_wizard_navbar_theme_light" id="0x7f0b0002" />

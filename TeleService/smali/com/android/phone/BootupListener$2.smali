@@ -36,9 +36,6 @@
 # virtual methods
 .method public onReceive(IILcom/samsung/commonimsinterface/imscommon/IMSParameter;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/samsung/commonimsinterface/imscommon/IMSParameter;
 
     const/4 v6, 0x0
 

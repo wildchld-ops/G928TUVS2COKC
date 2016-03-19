@@ -41,7 +41,6 @@
 
 .method private domesticCdmaDataRoamingGuardTreeClick(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -113,7 +112,6 @@
 
 .method private domesticCdmaVoiceRoamingGuardTreeClick(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "RoamingGuard"
 
@@ -156,7 +154,6 @@
 
 .method private internationalCdmaDataRoamingGuardTreeClick(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -228,7 +225,6 @@
 
 .method private internationalCdmaSmsRoamingGuardTreeClick(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "RoamingGuard"
 
@@ -271,7 +267,6 @@
 
 .method private internationalCdmaVoiceRoamingGuardTreeClick(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "RoamingGuard"
 
@@ -314,7 +309,6 @@
 
 .method private internationalGsmDataRoamingGuardTreeClick(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -366,7 +360,6 @@
 
 .method private internationalGsmSmsRoamingGuardTreeClick(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "RoamingGuard"
 
@@ -409,7 +402,6 @@
 
 .method private internationalGsmVoiceRoamingGuardTreeClick(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "RoamingGuard"
 
@@ -1166,7 +1158,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1193,7 +1184,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1437,7 +1427,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1464,8 +1453,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const-string v0, "RoamingGuard"
 
@@ -1615,8 +1602,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "RoamingGuard"
 

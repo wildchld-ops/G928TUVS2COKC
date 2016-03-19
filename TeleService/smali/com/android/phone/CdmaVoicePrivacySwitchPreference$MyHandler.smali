@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/CdmaVoicePrivacySwitchPreference;Lcom/android/phone/CdmaVoicePrivacySwitchPreference$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/CdmaVoicePrivacySwitchPreference;
-    .param p2    # Lcom/android/phone/CdmaVoicePrivacySwitchPreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CdmaVoicePrivacySwitchPreference$MyHandler;-><init>(Lcom/android/phone/CdmaVoicePrivacySwitchPreference;)V
 
@@ -41,7 +39,6 @@
 
 .method private handleGetVPResponse(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 
@@ -102,7 +99,6 @@
 
 .method private handleSetVPResponse(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -132,7 +128,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

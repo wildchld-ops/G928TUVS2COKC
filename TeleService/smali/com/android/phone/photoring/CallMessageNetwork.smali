@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,7 +74,6 @@
 
 .method private AES256_Decrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -129,7 +127,6 @@
 
 .method private AES256_Encrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -183,8 +180,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/CallMessageNetwork;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/CallMessageNetwork;->log(Ljava/lang/String;)V
 
@@ -193,8 +188,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/CallMessageNetwork;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/CallMessageNetwork;->AES256_Decrypt(Ljava/lang/String;)Ljava/lang/String;
 
@@ -205,7 +198,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/photoring/CallMessageNetwork;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
 
     iget-object v0, p0, Lcom/android/phone/photoring/CallMessageNetwork;->mListenerList:Ljava/util/List;
 
@@ -214,8 +206,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/photoring/CallMessageNetwork;Ljava/util/LinkedHashMap;)V
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
-    .param p1    # Ljava/util/LinkedHashMap;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/CallMessageNetwork;->getBaseParameters(Ljava/util/LinkedHashMap;)V
 
@@ -224,7 +214,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/photoring/CallMessageNetwork;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
 
     iget-object v0, p0, Lcom/android/phone/photoring/CallMessageNetwork;->mHttpResponseHandler:Landroid/os/Handler;
 
@@ -233,8 +222,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/photoring/CallMessageNetwork;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/CallMessageNetwork;->isVideoContent(Ljava/lang/String;)Z
 
@@ -245,8 +232,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/photoring/CallMessageNetwork;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/CallMessageNetwork;->AES256_Encrypt(Ljava/lang/String;)Ljava/lang/String;
 
@@ -257,7 +242,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/photoring/CallMessageNetwork;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/CallMessageNetwork;
 
     invoke-direct {p0}, Lcom/android/phone/photoring/CallMessageNetwork;->getUserCTN()Ljava/lang/String;
 
@@ -268,7 +252,6 @@
 
 .method private englog(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "eng"
 
@@ -602,7 +585,6 @@
 
 .method static init(Landroid/content/Context;)Lcom/android/phone/photoring/CallMessageNetwork;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -665,7 +647,6 @@
 
 .method private isVideoContent(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -732,7 +713,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "CallMessageNetwork"
 
@@ -745,7 +725,6 @@
 # virtual methods
 .method public deregisterCallMessageNetworkListener(Lcom/android/phone/photoring/ICallMessageNetworkListener;)V
     .locals 1
-    .param p1    # Lcom/android/phone/photoring/ICallMessageNetworkListener;
 
     iget-object v0, p0, Lcom/android/phone/photoring/CallMessageNetwork;->mListenerList:Ljava/util/List;
 
@@ -769,8 +748,6 @@
 
 .method public downloadContent(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/photoring/CallMessageNetwork;->interruptDownload()V
 
@@ -914,7 +891,6 @@
 
 .method public getCallMessageCall(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/phone/photoring/CallMessageNetwork$5;
 
@@ -939,9 +915,6 @@
 
 .method public getCallMessageChgCall(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/phone/photoring/CallMessageNetwork$6;
 
@@ -997,7 +970,6 @@
 
 .method public registerCallMessageNetworkListener(Lcom/android/phone/photoring/ICallMessageNetworkListener;)V
     .locals 1
-    .param p1    # Lcom/android/phone/photoring/ICallMessageNetworkListener;
 
     iget-object v0, p0, Lcom/android/phone/photoring/CallMessageNetwork;->mListenerList:Ljava/util/List;
 
@@ -1021,9 +993,6 @@
 
 .method public setRealtimeServiceInfoCall(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/phone/photoring/CallMessageNetwork$4;
 
@@ -1036,7 +1005,6 @@
 
 .method public uploadContentCall(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/phone/photoring/CallMessageNetwork$3;
 

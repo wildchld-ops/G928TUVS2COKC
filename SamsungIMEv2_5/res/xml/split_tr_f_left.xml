@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_12_11_9_key_width" android:keyHeight="@dimen/split_default_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_number_key_width" android:keyHeight="@dimen/split_default_number_key_height" android:paddingLeft="@dimen/split_default_left_row0_padding_left" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_12_11_9_left_row1_padding_left">
+        <Key android:codes="102" android:popupCharacters="@string/default_umlaut_f" android:keyLabel="f" />
+        <Key android:codes="103" android:popupCharacters="@string/default_umlaut_g" android:keyLabel="g" />
+        <Key android:codes="0x11f" android:keyLabel="ğ" />
+        <Key android:codes="0x131" android:popupCharacters="@string/default_umlaut_i" android:keyLabel="ı" />
+        <Key android:codes="111" android:popupCharacters="@string/default_umlaut_o" android:keyLabel="o" />
+        <Key android:codes="100" android:popupCharacters="@string/default_umlaut_d" android:keyLabel="d" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_12_11_9_left_row2_padding_left">
+        <Key android:codes="117" android:popupCharacters="@string/default_umlaut_u" android:keyLabel="u" />
+        <Key android:codes="105" android:popupCharacters="@string/default_umlaut_i" android:keyLabel="i" />
+        <Key android:codes="101" android:popupCharacters="@string/default_umlaut_e" android:keyLabel="e" />
+        <Key android:codes="97" android:popupCharacters="@string/default_umlaut_a" android:keyLabel="a" />
+        <Key android:codes="0xfc" android:keyLabel="ü" />
+        <Key android:codes="116" android:popupCharacters="@string/default_umlaut_t" android:keyLabel="t" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/split_12_11_9_l_shift_key_width" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:codes="106" android:popupCharacters="@string/default_umlaut_j" android:keyLabel="j" />
+        <Key android:codes="0xf6" android:keyLabel="ö" />
+        <Key android:codes="118" android:popupCharacters="@string/default_umlaut_v" android:keyLabel="v" />
+        <Key android:codes="99" android:popupCharacters="@string/default_umlaut_c" android:keyLabel="c" />
+        <Key android:codes="0xe7" android:keyLabel="ç" />
+    </Row>
+    <include android:rows="@xml/split_row_bottom_left" />
+</Keyboard>

@@ -64,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/PreferredNetworkDetailView;)I
     .locals 1
-    .param p0    # Lcom/android/phone/PreferredNetworkDetailView;
 
     iget v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->actionType:I
 
@@ -170,13 +169,6 @@
 
 .method private savePreferredNetworkInfo(ILjava/lang/String;Ljava/lang/String;IIII)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const-string v1, "PreferredNetworksDetailView"
 
@@ -297,7 +289,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, -0x1
 
@@ -711,7 +702,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 10
-    .param p1    # I
 
     const v7, 0x7f0a00ef
 
@@ -865,7 +855,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -929,7 +918,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 12
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 

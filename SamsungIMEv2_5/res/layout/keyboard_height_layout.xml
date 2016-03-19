@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/keyboard_height_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyboard_height_layout_margin_top" android:layout_marginStart="@dimen/keyboard_height_layout_margin_start" android:layout_marginEnd="@dimen/keyboard_height_layout_margin_end">
+        <TextView android:textAppearance="@style/textAppearanceMedium" android:id="@id/keyboard_height_setting_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/keyboard_height_help" android:lineSpacingExtra="@dimen/textAppearanceMedium_lineSpacingExtra" />
+        <EditText android:textSize="@dimen/edittext_textsize" android:textColor="@color/edittext_textcolor" android:id="@id/input_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/keyboard_height_layout_edittext_margin_top" android:layout_marginBottom="@dimen/keyboard_height_layout_edittext_margin_top" android:hint="@string/keyboard_height_hint" android:maxLength="100" android:privateImeOptions="inputType=EngToggle;disableClipboard=true;disableVoiceInput=true;disableHWRInput=true;disableHanjaInput=true;disableEmoticonInput=true;disableModeChange=true;keyboard_height=true" android:imeOptions="flagNoExtractUi" />
+    </LinearLayout>
+</ScrollView>

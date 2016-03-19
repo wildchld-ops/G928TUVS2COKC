@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/LGTRoamingReceiver;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/LGTRoamingReceiver;
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingReceiver;->mEfRoaming:Ljava/lang/String;
 
@@ -47,7 +46,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/LGTRoamingReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/LGTRoamingReceiver;
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingReceiver;->mcontext:Landroid/content/Context;
 
@@ -56,7 +54,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/LGTRoamingReceiver;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/LGTRoamingReceiver;
 
     iget-boolean v0, p0, Lcom/android/phone/LGTRoamingReceiver;->enable:Z
 
@@ -65,7 +62,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/LGTRoamingReceiver;)V
     .locals 0
-    .param p0    # Lcom/android/phone/LGTRoamingReceiver;
 
     invoke-direct {p0}, Lcom/android/phone/LGTRoamingReceiver;->sendImsiStatusChangeNotiForNoWait()V
 
@@ -167,7 +163,6 @@
 
 .method private setLteRoamingIMSI(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -309,7 +304,6 @@
 
 .method private updateCountryInfo(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -498,8 +492,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

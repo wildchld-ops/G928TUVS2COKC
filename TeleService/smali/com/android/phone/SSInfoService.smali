@@ -41,7 +41,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/SSInfoService;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/phone/SSInfoService;
 
     iget-object v0, p0, Lcom/android/phone/SSInfoService;->mCallbacks:Landroid/os/RemoteCallbackList;
 
@@ -52,7 +51,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/phone/SSInfoService;->mSSInfoService:Lcom/android/phone/ISSInfoService$Stub;
 
@@ -103,7 +101,6 @@
 
 .method public onSSInfo(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/SSInfoService;->mSSInfoService:Lcom/android/phone/ISSInfoService$Stub;
 

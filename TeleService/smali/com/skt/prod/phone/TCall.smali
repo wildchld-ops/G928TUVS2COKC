@@ -78,8 +78,6 @@
 
 .method static synthetic access$000(Lcom/skt/prod/phone/TCall;Landroid/os/Parcel;)V
     .locals 0
-    .param p0    # Lcom/skt/prod/phone/TCall;
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Lcom/skt/prod/phone/TCall;->readFromParcel(Landroid/os/Parcel;)V
 
@@ -98,7 +96,6 @@
 
 .method private final readFromParcel(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -215,8 +212,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

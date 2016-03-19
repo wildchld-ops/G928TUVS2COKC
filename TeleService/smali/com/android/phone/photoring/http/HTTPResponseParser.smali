@@ -70,7 +70,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -163,7 +162,6 @@
 
 .method public static englog(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "eng"
 
@@ -183,7 +181,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "HTTPResponse"
 
@@ -230,8 +227,6 @@
 # virtual methods
 .method public convertIsToFile(Ljava/io/InputStream;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -376,7 +371,6 @@
 
 .method public convertIsToString(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/io/InputStream;
 
     const/16 v7, 0x7d0
 
@@ -909,7 +903,6 @@
 
 .method public parsing(Lorg/apache/http/HttpResponse;)I
     .locals 4
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v3, 0x1
 
@@ -953,7 +946,6 @@
 
 .method public setKTContentLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/photoring/http/HTTPResponseParser;->mKTContentLength:I
 
@@ -962,7 +954,6 @@
 
 .method public setKTContentType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/http/HTTPResponseParser;->mKTContentType:Ljava/lang/String;
 

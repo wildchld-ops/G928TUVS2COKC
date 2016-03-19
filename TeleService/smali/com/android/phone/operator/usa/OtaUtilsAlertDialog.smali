@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -97,7 +96,6 @@
 
 .method public static show(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/phone/operator/usa/OtaUtilsAlertDialog;->mOtaUtilsAlertDialog:Lcom/android/phone/operator/usa/OtaUtilsAlertDialog;
 

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:horizontalGap="@dimen/onehand_emoticon_key_horizontal_gap" android:verticalGap="@dimen/onehand_emoticon_first_line_vertical_gap" android:paddingLeft="@dimen/onehand_qwerty_first_col_horizontal_gap" android:paddingRight="@dimen/onehand_emoticon_first_col_horizontal_gap" android:paddingTop="@dimen/onehand_emoticon_first_line_vertical_gap" android:paddingBottom="@dimen/onehand_emoticon_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0%" />
+</Keyboard>

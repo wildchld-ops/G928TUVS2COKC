@@ -122,8 +122,6 @@
 
 .method public static getLengthOfParts([Lcom/android/phone/photoring/http/multipart/Part;[B)J
     .locals 8
-    .param p0    # [Lcom/android/phone/photoring/http/multipart/Part;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -222,9 +220,6 @@
 
 .method public static sendParts(Ljava/io/OutputStream;[Lcom/android/phone/photoring/http/multipart/Part;[B)V
     .locals 3
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # [Lcom/android/phone/photoring/http/multipart/Part;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -406,7 +401,6 @@
 
 .method public send(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -438,7 +432,6 @@
 
 .method protected sendContentTypeHeader(Ljava/io/OutputStream;)V
     .locals 4
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -501,7 +494,6 @@
 
 .method protected sendDispositionHeader(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -541,7 +533,6 @@
 
 .method protected sendEnd(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -563,7 +554,6 @@
 
 .method protected sendEndOfHeader(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -589,7 +579,6 @@
 
 .method protected sendStart(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -621,7 +610,6 @@
 
 .method protected sendTransferEncodingHeader(Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -660,7 +648,6 @@
 
 .method setPartBoundary([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/phone/photoring/http/multipart/Part;->boundaryBytes:[B
 

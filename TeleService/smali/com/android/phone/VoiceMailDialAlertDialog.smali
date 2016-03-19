@@ -34,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/VoiceMailDialAlertDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/VoiceMailDialAlertDialog;
 
     iget-object v0, p0, Lcom/android/phone/VoiceMailDialAlertDialog;->vmNumber:Ljava/lang/String;
 
@@ -43,7 +42,6 @@
 
 .method private useJapanNetwork(Landroid/telephony/TelephonyManager;)Z
     .locals 8
-    .param p1    # Landroid/telephony/TelephonyManager;
 
     const/4 v7, 0x3
 
@@ -143,7 +141,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 

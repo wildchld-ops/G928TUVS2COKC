@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/operator/jpn/SyncCallServiceMgr;Ljava/lang/String;IJZ)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Z
 
     iput-object p1, p0, Lcom/android/phone/operator/jpn/SyncCallServiceMgr$StateCheckList;->this$0:Lcom/android/phone/operator/jpn/SyncCallServiceMgr;
 

@@ -170,9 +170,6 @@
 
 .method public static getBooleanFromPreference(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v1, "telephony.GlanceReplyManager"
 
@@ -221,7 +218,6 @@
 
 .method public static getColor(Landroid/database/Cursor;)I
     .locals 3
-    .param p0    # Landroid/database/Cursor;
 
     const-string v2, "data2"
 
@@ -242,9 +238,6 @@
 
 .method public static getDataFromPreference(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "telephony.GlanceReplyManager"
 
@@ -293,7 +286,6 @@
 
 .method public static getGlanceReplyDefaultMessage(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -377,7 +369,6 @@
 
 .method public static getGlanceReplyInfoList(Landroid/content/Context;)Ljava/util/ArrayList;
     .locals 9
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -570,8 +561,6 @@
 
 .method public static getGlanceReplyMessage(Landroid/content/Context;J)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {p0}, Lcom/android/phone/edge/GlanceReplyManager;->logWhenRequestReplyMessage(Landroid/content/Context;)V
 
@@ -602,7 +591,6 @@
 
 .method public static getGlanceReplyState(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -651,7 +639,6 @@
 
 .method public static getID(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
 
     const-string v1, "raw_contact_id"
 
@@ -668,7 +655,6 @@
 
 .method public static getName(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
 
     const-string v1, "display_name"
 
@@ -685,7 +671,6 @@
 
 .method public static getPhotoURI(Landroid/database/Cursor;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/database/Cursor;
 
     const-string v2, "photo_thumb_uri"
 
@@ -718,8 +703,6 @@
 
 .method public static getReplyMessage(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "telephony.GlanceReplyManager"
 
@@ -769,7 +752,6 @@
 
 .method public static logWhenRequestReplyMessage(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -939,7 +921,6 @@
 
 .method public static queryforPeopleData(Landroid/content/Context;)Landroid/database/Cursor;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -994,9 +975,6 @@
 
 .method public static setBooleanToPreference(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v2, "telephony.GlanceReplyManager"
 
@@ -1049,9 +1027,6 @@
 
 .method public static setDatatoPreference(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "telephony.GlanceReplyManager"
 
@@ -1104,8 +1079,6 @@
 
 .method public static setGlanceReplyState(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v0, "telephony.GlanceReplyManager"
 
@@ -1152,9 +1125,6 @@
 
 .method public static setReplyMessage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

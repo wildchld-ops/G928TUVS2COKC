@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dragon.android.voiceime.ui.MicEffectView android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom|center" android:id="@id/layout_voice_input_effect_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="100.0">
+        <ImageView android:id="@id/image_view_voice_input_animation_listening01" android:background="@drawable/s_voice_eq_bg_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/image_view_voice_input_animation_listening02" android:background="@drawable/s_voice_eq_bg_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/image_view_voice_input_animation_listening03" android:background="@drawable/s_voice_eq_bg_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/image_view_voice_input_animation_listening04" android:background="@drawable/s_voice_eq_bg_04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.dragon.android.voiceime.ui.sandglass.ButtonView android:id="@id/image_view_voice_input_animation_recognizing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/image_view_que" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/image_view_voice_input_microphone" android:background="@drawable/voice_view_mic_prepare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/image_button_voice_input_microphone_circle" android:background="@drawable/button_mic_prepare_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/microphone" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/voice_input_dialog_title_big_font_size" android:textColor="@color/drawable_color_normal" android:gravity="center|top" android:id="@id/text_view_voice_input_message_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/voice_input_dialog_title_min_height" android:text="@string/voice_preparing" android:layout_weight="@integer/voice_input_title_weight" />
+</com.dragon.android.voiceime.ui.MicEffectView>

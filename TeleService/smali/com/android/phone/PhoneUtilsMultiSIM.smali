@@ -505,7 +505,6 @@
 
 .method public static getMultiSIMPhoneType(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -717,7 +716,6 @@
 
 .method public static getMultiSimIccType(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v1, "0"
 
@@ -786,7 +784,6 @@
 
 .method public static getMultiSimNumeric(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v0, "0"
 
@@ -816,7 +813,6 @@
 
 .method public static getMultiSimStatus(I)I
     .locals 4
-    .param p0    # I
 
     const-string v2, "gsm.sim.currentcardstatus"
 
@@ -853,7 +849,6 @@
 
 .method public static getPhone(I)Lcom/android/internal/telephony/Phone;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -889,7 +884,6 @@
 
 .method public static getPhoneBySubId(I)Lcom/android/internal/telephony/Phone;
     .locals 4
-    .param p0    # I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -952,7 +946,6 @@
 
 .method public static getPhoneId(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/telephony/SubscriptionManager;->getPhoneId(I)I
 
@@ -963,7 +956,6 @@
 
 .method public static getSafePhoneId(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -1079,7 +1071,6 @@
 
 .method public static getSimIconIndex(I)I
     .locals 6
-    .param p0    # I
 
     const/4 v5, 0x1
 
@@ -1174,8 +1165,6 @@
 
 .method public static getSimImage(II)I
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1229,7 +1218,6 @@
 
 .method public static getSimName(I)Ljava/lang/String;
     .locals 6
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -1356,7 +1344,6 @@
 
 .method public static getSimState(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -1371,7 +1358,6 @@
 
 .method public static getSubIdUsingPhoneId(I)I
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
 
@@ -1470,7 +1456,6 @@
 
 .method public static isBoltSIM(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1638,7 +1623,6 @@
 
 .method public static isNetworkRoaming(I)Z
     .locals 5
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -1672,7 +1656,6 @@
 
 .method public static isSimCardInserted(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimIccType(I)Ljava/lang/String;
 
@@ -1697,7 +1680,6 @@
 
 .method public static isSimCardStatusOn(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -1783,7 +1765,6 @@
 
 .method public static isSimReady(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x5
 
@@ -1830,7 +1811,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneMultiSimUtils"
 
@@ -1951,7 +1931,6 @@
 
 .method public static setDefaultDataSubId(I)V
     .locals 6
-    .param p0    # I
 
     const/4 v5, 0x0
 
@@ -2008,7 +1987,6 @@
 
 .method public static setMultiSimForegroundPhoneId(I)V
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2037,7 +2015,6 @@
 
 .method public static setMultiSimLastRejectIncomingCallPhoneId(I)V
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_qwerty_indian_10_10_10_10_8_key_width" android:keyHeight="@dimen/floating_qwerty_indian_10_10_10_10_8_key_height" android:horizontalGap="@dimen/floating_qwerty_default_key_horizontal_gap" android:verticalGap="@dimen/floating_qwerty_indian_10_10_10_10_8_key_vertical_gap" android:paddingLeft="@dimen/floating_qwerty_default_padding_left" android:paddingRight="@dimen/floating_qwerty_default_padding_right" android:paddingTop="@dimen/floating_qwerty_default_padding_top" android:paddingBottom="@dimen/floating_qwerty_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/floating_qwerty_indian_10_10_10_10_8_padding_left">
+        <Key android:codeIndex="0" />
+        <Key android:codeIndex="1" />
+        <Key android:codeIndex="2" />
+        <Key android:codeIndex="3" />
+        <Key android:codeIndex="4" />
+        <Key android:codeIndex="5" />
+        <Key android:codeIndex="6" />
+        <Key android:codeIndex="7" />
+        <Key android:codeIndex="8" />
+        <Key android:codeIndex="9" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_indian_10_10_10_10_8_padding_left">
+        <Key android:codeIndex="10" />
+        <Key android:codeIndex="11" />
+        <Key android:codeIndex="12" />
+        <Key android:codeIndex="13" />
+        <Key android:codeIndex="14" />
+        <Key android:codeIndex="15" />
+        <Key android:codeIndex="16" />
+        <Key android:codeIndex="17" />
+        <Key android:codeIndex="18" />
+        <Key android:codeIndex="19" />
+        <Key android:keyWidth="@dimen/floating_qwerty_indian_10_10_10_10_8_key_width_function" android:property="tablet" android:codes="-1003" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_indian_10_10_10_10_8_padding_left">
+        <Key android:codeIndex="20" />
+        <Key android:codeIndex="21" />
+        <Key android:codeIndex="22" />
+        <Key android:codeIndex="23" />
+        <Key android:codeIndex="24" />
+        <Key android:codeIndex="25" />
+        <Key android:codeIndex="26" />
+        <Key android:codeIndex="27" />
+        <Key android:codeIndex="28" />
+        <Key android:codeIndex="29" />
+        <Key android:keyWidth="@dimen/floating_qwerty_indian_10_10_10_10_8_key_width_function" android:property="tablet" android:codes="-5" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_indian_10_10_10_10_8_padding_left">
+        <Key android:codeIndex="30" />
+        <Key android:codeIndex="31" />
+        <Key android:codeIndex="32" />
+        <Key android:codeIndex="33" />
+        <Key android:codeIndex="34" />
+        <Key android:codeIndex="35" />
+        <Key android:codeIndex="36" />
+        <Key android:codeIndex="37" />
+        <Key android:codeIndex="38" />
+        <Key android:codeIndex="39" />
+        <Key android:keyWidth="@dimen/floating_qwerty_indian_10_10_10_10_8_key_width_function" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:verticalGap="@dimen/floating_qwerty_indian_10_10_10_10_8_bottom_row_vertical_gap">
+        <Key android:codeIndex="40" />
+        <Key android:codeIndex="41" />
+        <Key android:codeIndex="42" />
+        <Key android:codeIndex="43" />
+        <Key android:codeIndex="44" />
+        <Key android:codeIndex="45" />
+        <Key android:codeIndex="46" />
+        <Key android:codeIndex="47" />
+        <Key android:keyWidth="@dimen/floating_qwerty_indian_10_10_10_10_8_key_width_function" android:backgroundDrawable="@drawable/textinput_floating_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:property="tablet" android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/floating_qwerty_indian_10_10_10_10_8_key_width_function" android:backgroundDrawable="@drawable/floating_sip_key_bg_shift_xml" android:property="tablet" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/floating_qwerty_default_indian_row_bottom" />
+</Keyboard>

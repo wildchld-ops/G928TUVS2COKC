@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width" android:keyHeight="@dimen/floating_qwerty_x_x_x_x_key_height" android:horizontalGap="@dimen/floating_qwerty_11_10_10_10_key_horizontal_gap" android:verticalGap="@dimen/floating_qwerty_x_x_x_x_vertical_gap" android:paddingLeft="@dimen/floating_qwerty_default_padding_left" android:paddingRight="@dimen/floating_qwerty_default_padding_right" android:paddingTop="@dimen/floating_qwerty_x_x_x_x_padding_top" android:paddingBottom="@dimen/floating_qwerty_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/floating_qwerty_11_10_10_10_row0_padding_left">
+        <Key android:codes="0x3105" android:keyEdgeFlags="left" android:keyLabel="ㄅ" />
+        <Key android:codes="0x3109" android:keyLabel="ㄉ" />
+        <Key android:codes="0x2c7" android:keyLabel="ˇ" />
+        <Key android:codes="0x2cb" android:keyLabel="ˋ" />
+        <Key android:codes="0x3113" android:keyLabel="ㄓ" />
+        <Key android:codes="0x2ca" android:keyLabel="ˊ" />
+        <Key android:codes="0x2d9" android:keyLabel="˙" />
+        <Key android:codes="0x311a" android:keyLabel="ㄚ" />
+        <Key android:codes="0x311e" android:keyLabel="ㄞ" />
+        <Key android:codes="0x3122" android:keyLabel="ㄢ" />
+        <Key android:codes="0x3126" android:keyLabel="ㄦ" />
+        <Key android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width_delete" android:property="tablet" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_11_10_10_10_row1_padding_left">
+        <Key android:codes="0x3106" android:keyEdgeFlags="left" android:keyLabel="ㄆ" />
+        <Key android:codes="0x310a" android:keyLabel="ㄊ" />
+        <Key android:codes="0x310d" android:keyLabel="ㄍ" />
+        <Key android:codes="0x3110" android:keyLabel="ㄐ" />
+        <Key android:codes="0x3114" android:keyLabel="ㄔ" />
+        <Key android:codes="0x3117" android:keyLabel="ㄗ" />
+        <Key android:codes="0x3127" android:keyLabel="ㄧ" />
+        <Key android:codes="0x311b" android:keyLabel="ㄛ" />
+        <Key android:codes="0x311f" android:keyLabel="ㄟ" />
+        <Key android:codes="0x3123" android:keyLabel="ㄣ" />
+        <Key android:property="tablet" android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width_backspace" android:backgroundDrawable="@drawable/textinput_floating_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/floating_qwerty_11_10_10_10_row2_padding_left">
+        <Key android:codes="0x3107" android:keyEdgeFlags="left" android:keyLabel="ㄇ" />
+        <Key android:codes="0x310b" android:keyLabel="ㄋ" />
+        <Key android:codes="0x310e" android:keyLabel="ㄎ" />
+        <Key android:codes="0x3111" android:keyLabel="ㄑ" />
+        <Key android:codes="0x3115" android:keyLabel="ㄕ" />
+        <Key android:codes="0x3118" android:keyLabel="ㄘ" />
+        <Key android:codes="0x3128" android:keyLabel="ㄨ" />
+        <Key android:codes="0x311c" android:keyLabel="ㄜ" />
+        <Key android:codes="0x3120" android:keyLabel="ㄠ" />
+        <Key android:codes="0x3124" android:keyLabel="ㄤ" />
+        <Key android:property="tablet" android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width_enter" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:verticalGap="@dimen/floating_qwerty_x_x_x_x_row3_vertical_gap" android:paddingLeft="@dimen/floating_qwerty_11_10_10_10_row3_padding_left">
+        <Key android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width_shift_left" android:backgroundDrawable="@drawable/floating_sip_key_bg_shift_xml" android:property="tablet" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:codes="0x3108" android:keyLabel="ㄈ" />
+        <Key android:codes="0x310c" android:keyLabel="ㄌ" />
+        <Key android:codes="0x310f" android:keyLabel="ㄏ" />
+        <Key android:codes="0x3112" android:keyLabel="ㄒ" />
+        <Key android:codes="0x3116" android:keyLabel="ㄖ" />
+        <Key android:codes="0x3119" android:keyLabel="ㄙ" />
+        <Key android:codes="0x3129" android:keyLabel="ㄩ" />
+        <Key android:codes="0x311d" android:keyLabel="ㄝ" />
+        <Key android:codes="0x3121" android:keyLabel="ㄡ" />
+        <Key android:codes="0x3125" android:keyLabel="ㄥ" />
+        <Key android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width_backspace" android:property="phone" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_qwerty_11_10_10_10_key_width_shift_right" android:backgroundDrawable="@drawable/floating_sip_key_bg_shift_xml" android:property="tablet" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/floating_qwerty_row_bottom" />
+</Keyboard>

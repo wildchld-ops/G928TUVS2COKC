@@ -1,4 +1,4 @@
-version: 2.0.2
+version: 2.0.3
 apkFileName: PackageInstaller.apk
 isFrameworkApk: false
 usesFramework:
@@ -14,6 +14,7 @@ versionInfo:
   versionName: 5.1.1-G928TUVS2COKC
 sharedLibrary: false
 doNotCompress:
-- resources.arsc
-- res/drawable-xxxhdpi-v4/ic_fail.qmg
-- res/drawable-xxxhdpi-v4/ic_success.qmg
+- xml
+- dex
+- arsc
+- qmg

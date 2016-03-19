@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_left_pane" android:layout_width="@dimen/settings_actionbar_width" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/settings_sub_title_text_size" android:textColor="@color/settings_actionbar_text_color" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/settings_actionbar_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/actionbar_left_transparent_split_bar" android:background="@android:color/transparent" android:layout_width="@dimen/settings_transparent_split_bar_width" android:layout_height="@dimen/settings_actionbar_height" />
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/actionbar_focused_split_bar" android:background="@drawable/tw_preference_contents_list_left_press_mtrl" android:layout_width="wrap_content" android:layout_height="@dimen/settings_actionbar_height" />
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/actionbar_split_bar" android:background="@drawable/tw_preference_contents_list_left_mtrl" android:layout_width="wrap_content" android:layout_height="@dimen/settings_actionbar_height" />
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/actionbar_splitHover" android:background="@android:color/transparent" android:layout_width="@dimen/settings_transparent_split_bar_width" android:layout_height="@dimen/settings_actionbar_height" />
+    </FrameLayout>
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@id/actionbar_right_transparent_split_bar" android:background="@android:color/transparent" android:layout_width="@dimen/settings_transparent_split_bar_width" android:layout_height="@dimen/settings_actionbar_height" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/actionbar_right_pane" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/settings_actionbar_arrow" android:background="?android:actionBarItemBackground" android:layout_width="@dimen/settings_sub_title_arrow_width" android:layout_height="@dimen/settings_sub_title_arrow_height" android:src="?android:homeAsUpIndicator" android:contentDescription="@string/settings_navigate_up" />
+            <TextView android:textSize="@dimen/settings_sub_title_text_size" android:textColor="@color/settings_actionbar_text_color" android:layout_gravity="center" android:id="@id/settings_actionbar_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@id/movable_focused_actionbar" android:background="@drawable/tw_preference_contents_list_left_press_mtrl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/settings_actionbar_height" />
+</LinearLayout>

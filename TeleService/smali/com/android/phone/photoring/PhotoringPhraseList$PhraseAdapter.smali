@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/photoring/PhotoringPhraseList;Landroid/app/Activity;Ljava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/app/Activity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -110,7 +109,6 @@
 
 .method public getItem(I)Lcom/android/phone/photoring/PhotoringPhrase;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringPhraseList$PhraseAdapter;->mList:Ljava/util/ArrayList;
 
@@ -125,7 +123,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/phone/photoring/PhotoringPhraseList$PhraseAdapter;->getItem(I)Lcom/android/phone/photoring/PhotoringPhrase;
 
@@ -136,7 +133,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringPhraseList$PhraseAdapter;->mList:Ljava/util/ArrayList;
 
@@ -153,9 +149,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v9, 0x0
 
@@ -265,7 +258,6 @@
 
 .method public isChecked(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoringPhraseList$PhraseAdapter;->maCBox:Ljava/util/ArrayList;
 
@@ -362,7 +354,6 @@
 
 .method public setCheckedAll(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/phone/photoring/PhotoringPhraseList$PhraseAdapter;->maCBox:Ljava/util/ArrayList;
 

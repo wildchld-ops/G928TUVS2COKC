@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/EmergencyContactItemContainer;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/phone/EmergencyContactItemContainer$EmergencyContactAsyncQuery;->this$0:Lcom/android/phone/EmergencyContactItemContainer;
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 16
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v6, 0x0
 
@@ -568,7 +564,6 @@
 
 .method public startQuery(Lcom/android/phone/EmergencyContactItemContainer$ItemType;)V
     .locals 9
-    .param p1    # Lcom/android/phone/EmergencyContactItemContainer$ItemType;
 
     const/4 v2, 0x0
 

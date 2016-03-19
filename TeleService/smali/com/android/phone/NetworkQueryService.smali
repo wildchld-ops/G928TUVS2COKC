@@ -89,7 +89,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/NetworkQueryService;)Lcom/android/phone/INetworkQueryService$Stub;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkQueryService;
 
     iget-object v0, p0, Lcom/android/phone/NetworkQueryService;->mBinder:Lcom/android/phone/INetworkQueryService$Stub;
 
@@ -98,9 +97,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/NetworkQueryService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkQueryService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/NetworkQueryService;->log(Ljava/lang/String;Z)V
 
@@ -109,8 +105,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/NetworkQueryService;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkQueryService;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkQueryService;->broadcastQueryResults(Landroid/os/AsyncResult;)V
 
@@ -119,7 +113,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/NetworkQueryService;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkQueryService;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkQueryService;->setPhone()V
 
@@ -128,7 +121,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/NetworkQueryService;)I
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkQueryService;
 
     iget v0, p0, Lcom/android/phone/NetworkQueryService;->mState:I
 
@@ -137,8 +129,6 @@
 
 .method static synthetic access$402(Lcom/android/phone/NetworkQueryService;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkQueryService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkQueryService;->mState:I
 
@@ -147,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/NetworkQueryService;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkQueryService;
 
     iget-object v0, p0, Lcom/android/phone/NetworkQueryService;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -156,7 +145,6 @@
 
 .method static synthetic access$600(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/NetworkQueryService;->log(Ljava/lang/String;)V
 
@@ -165,7 +153,6 @@
 
 .method private broadcastQueryResults(Landroid/os/AsyncResult;)V
     .locals 6
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v1, 0x1
 
@@ -314,7 +301,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "NetworkQuery"
 
@@ -325,8 +311,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "NetworkQuery"
 
@@ -459,7 +443,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "binding service implementation"
 
@@ -519,8 +502,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     return-void
 .end method

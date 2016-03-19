@@ -226,7 +226,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/SecAutoRejectList;)Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mAutoRejectAdapter:Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;
 
@@ -235,7 +234,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/SecAutoRejectList;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->stopContactQuery()V
 
@@ -244,7 +242,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/SecAutoRejectList;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectList;->makeScreen()V
 
@@ -253,8 +250,6 @@
 
 .method static synthetic access$1102(Lcom/android/phone/callsettings/SecAutoRejectList;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mFirstVisibleItem:I
 
@@ -263,8 +258,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/SecAutoRejectList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectList;->log(Ljava/lang/String;)V
 
@@ -273,7 +266,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/callsettings/SecAutoRejectList;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mListView:Landroid/widget/ListView;
 
@@ -282,7 +274,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/callsettings/SecAutoRejectList;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->is_first:Z
 
@@ -291,8 +282,6 @@
 
 .method static synthetic access$1402(Lcom/android/phone/callsettings/SecAutoRejectList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->is_first:Z
 
@@ -301,8 +290,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/SecAutoRejectList;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectList;->deleteAutoRejectNumber(I)V
 
@@ -311,9 +298,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/callsettings/SecAutoRejectList;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/SecAutoRejectList;->log(Ljava/lang/String;Z)V
 
@@ -322,7 +306,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/SecAutoRejectList;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mIsForeground:Z
 
@@ -331,8 +314,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/callsettings/SecAutoRejectList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mUpdateScreen:Z
 
@@ -341,7 +322,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/SecAutoRejectList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
@@ -350,7 +330,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/SecAutoRejectList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->defaultName:Ljava/lang/String;
 
@@ -359,7 +338,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/SecAutoRejectList;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -368,8 +346,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/SecAutoRejectList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectList;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectList;->displayToast(Ljava/lang/String;)V
 
@@ -386,8 +362,6 @@
 
 .method private addAutoRejectNumber(Ljava/lang/String;I)J
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -551,7 +525,6 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -697,7 +670,6 @@
 
 .method private deleteAutoRejectNumber(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mContentURI:Landroid/net/Uri;
 
@@ -758,7 +730,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->mToast:Landroid/widget/Toast;
 
@@ -802,7 +773,6 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f10002b
 
@@ -841,7 +811,6 @@
 
 .method private isAvaliableNumber(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -883,7 +852,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SecAutoRejectList"
 
@@ -894,8 +862,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "SecAutoRejectList"
 
@@ -1160,10 +1126,6 @@
 
 .method private updateAutoRejectNumber(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/Integer;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -1284,17 +1246,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -1575,7 +1532,6 @@
 
 .method isUnknownNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "-1"
 
@@ -1618,9 +1574,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -1833,7 +1786,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "SecAutoRejectList"
 
@@ -1854,7 +1806,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1998,7 +1949,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x4
 
@@ -2251,9 +2201,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v9, 0x1
 
@@ -2544,7 +2491,6 @@
 
 .method public onPrepareDialog(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -2608,7 +2554,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2623,10 +2568,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList;->editBox:Landroid/widget/EditText;
 

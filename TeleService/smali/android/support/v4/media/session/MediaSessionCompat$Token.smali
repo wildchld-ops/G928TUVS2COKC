@@ -49,7 +49,6 @@
 
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,8 +69,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 

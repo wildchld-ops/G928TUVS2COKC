@@ -49,7 +49,6 @@
 
 .method private static notifyCallDomain(Lcom/android/internal/telephony/Call;)V
     .locals 8
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     if-eqz p0, :cond_0
 
@@ -138,7 +137,6 @@
 
 .method public static onPhoneStateChanged(Lcom/android/internal/telephony/Call;)V
     .locals 0
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     invoke-static {p0}, Lcom/android/phone/WfcCallNotifier;->notifyCallDomain(Lcom/android/internal/telephony/Call;)V
 
@@ -149,7 +147,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     sget-object v2, Lcom/android/phone/WfcCallNotifier;->TAG:Ljava/lang/String;
 

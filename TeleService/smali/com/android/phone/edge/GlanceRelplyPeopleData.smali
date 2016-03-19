@@ -50,7 +50,6 @@
 
 .method public setDefaultItem(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/phone/edge/GlanceReplyInfoItem;
 

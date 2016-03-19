@@ -77,9 +77,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/kor/LGTCountryList;JLjava/lang/String;)[Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/kor/LGTCountryList;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/operator/kor/LGTCountryList;->columnValuesOfWord(JLjava/lang/String;)[Ljava/lang/Object;
 
@@ -90,7 +87,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/kor/LGTCountryList;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/kor/LGTCountryList;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTCountryList;->mAllcontext:Landroid/content/Context;
 
@@ -99,8 +95,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/operator/kor/LGTCountryList;Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTCountryList;
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTCountryList;->mAllcontext:Landroid/content/Context;
 
@@ -109,8 +103,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/operator/kor/LGTCountryList;Landroid/database/MatrixCursor;)Landroid/database/MatrixCursor;
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTCountryList;
-    .param p1    # Landroid/database/MatrixCursor;
 
     iput-object p1, p0, Lcom/android/phone/operator/kor/LGTCountryList;->mAllCursor:Landroid/database/MatrixCursor;
 
@@ -119,9 +111,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/kor/LGTCountryList;Landroid/content/Context;Landroid/database/MatrixCursor;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTCountryList;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/MatrixCursor;
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/kor/LGTCountryList;->getCountryList(Landroid/content/Context;Landroid/database/MatrixCursor;)V
 
@@ -130,8 +119,6 @@
 
 .method private columnValuesOfWord(JLjava/lang/String;)[Ljava/lang/Object;
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -154,8 +141,6 @@
 
 .method private getCountryList(Landroid/content/Context;Landroid/database/MatrixCursor;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/MatrixCursor;
 
     const/4 v5, 0x1
 
@@ -194,7 +179,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -379,9 +363,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -15,8 +15,6 @@
 # direct methods
 .method public static equal(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-eq p0, p1, :cond_0
 
@@ -114,7 +112,6 @@
 
 .method public static toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/Objects$ToStringHelper;
     .locals 3
-    .param p0    # Ljava/lang/Object;
 
     new-instance v0, Lcom/google/common/base/Objects$ToStringHelper;
 
@@ -135,7 +132,6 @@
 
 .method public static toStringHelper(Ljava/lang/String;)Lcom/google/common/base/Objects$ToStringHelper;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/common/base/Objects$ToStringHelper;
 

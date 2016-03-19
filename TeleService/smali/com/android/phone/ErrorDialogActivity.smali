@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/ErrorDialogActivity;)V
     .locals 0
-    .param p0    # Lcom/android/phone/ErrorDialogActivity;
 
     invoke-direct {p0}, Lcom/android/phone/ErrorDialogActivity;->dontAddVoiceMailNumber()V
 
@@ -41,8 +40,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/ErrorDialogActivity;Landroid/content/DialogInterface;)V
     .locals 0
-    .param p0    # Lcom/android/phone/ErrorDialogActivity;
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-direct {p0, p1}, Lcom/android/phone/ErrorDialogActivity;->addVoiceMailNumberPanel(Landroid/content/DialogInterface;)V
 
@@ -51,7 +48,6 @@
 
 .method private addVoiceMailNumberPanel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     if-eqz p1, :cond_0
 
@@ -85,7 +81,6 @@
 
 .method private showGenericErrorDialog(I)V
     .locals 6
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getResources()Landroid/content/res/Resources;
 
@@ -188,7 +183,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, -0x1
 

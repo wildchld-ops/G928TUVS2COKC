@@ -155,8 +155,6 @@
 
 .method private StartQcomCrossMapping(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -205,7 +203,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyModeManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyModeManager;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyModeManager;->mContext:Landroid/content/Context;
 
@@ -214,7 +211,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/EmergencyModeManager;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyModeManager;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyModeManager;->getCurrentNetworkType()V
 
@@ -223,7 +219,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/EmergencyModeManager;->mRetry:Z
 
@@ -232,7 +227,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/EmergencyModeManager;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyModeManager;
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyModeManager;->emergencyModeRestoreNetworkMode()V
 
@@ -241,9 +235,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/EmergencyModeManager;II)V
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyModeManager;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/EmergencyModeManager;->checkNetworkTypeAndChange(II)V
 
@@ -252,8 +243,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/EmergencyModeManager;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyModeManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/EmergencyModeManager;->setNetworkInfo(I)V
 
@@ -262,8 +251,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/EmergencyModeManager;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/EmergencyModeManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/EmergencyModeManager;->setMobileDataEnabled(Z)V
 
@@ -272,7 +259,6 @@
 
 .method private changeNetworkType4LongLife(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x2
 
@@ -538,8 +524,6 @@
 
 .method private checkNetworkTypeAndChange(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -876,7 +860,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/phone/EmergencyModeManager;->mContext:Landroid/content/Context;
 
@@ -908,7 +891,6 @@
 
 .method private setNetworkInfo(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1437,7 +1419,6 @@
 
 .method public onChange(Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
 
     const-string v8, "reason"
 

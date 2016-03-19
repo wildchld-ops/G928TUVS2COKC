@@ -88,7 +88,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CallerInfoCache;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/CallerInfoCache;
 
     iget-object v0, p0, Lcom/android/phone/CallerInfoCache;->mContext:Landroid/content/Context;
 
@@ -130,7 +128,6 @@
 
 .method static synthetic access$300(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/CallerInfoCache;->log(Ljava/lang/String;)V
 
@@ -139,7 +136,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/CallerInfoCache;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallerInfoCache;
 
     invoke-direct {p0}, Lcom/android/phone/CallerInfoCache;->refreshCacheEntry()V
 
@@ -148,7 +144,6 @@
 
 .method public static init(Landroid/content/Context;)Lcom/android/phone/CallerInfoCache;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/android/phone/CallerInfoCache;->DBG:Z
 
@@ -170,7 +165,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/CallerInfoCache;->LOG_TAG:Ljava/lang/String;
 
@@ -181,9 +175,6 @@
 
 .method private putNewEntryWhenAppropriate(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

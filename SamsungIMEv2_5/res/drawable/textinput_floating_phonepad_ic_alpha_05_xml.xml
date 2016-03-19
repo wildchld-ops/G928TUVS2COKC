@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/textinput_floating_phonepad_ic_alpha_05_pressed" android:tint="@color/pressedkey_labelcolor" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/textinput_floating_phonepad_ic_alpha_05" android:tint="@color/normalkey_labelcolor" />
+    </item>
+</animated-selector>

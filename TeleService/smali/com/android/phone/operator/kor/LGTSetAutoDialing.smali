@@ -30,7 +30,6 @@
 
 .method private setCurrentView(Ljava/lang/Boolean;)V
     .locals 10
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -261,7 +260,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -529,8 +527,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -614,7 +610,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const-string v0, "country_code"
 

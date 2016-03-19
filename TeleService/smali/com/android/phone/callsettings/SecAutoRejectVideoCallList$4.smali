@@ -36,8 +36,6 @@
 # virtual methods
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList$4;->this$0:Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 

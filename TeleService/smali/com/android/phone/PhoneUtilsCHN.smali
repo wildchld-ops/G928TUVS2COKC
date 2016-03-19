@@ -89,7 +89,6 @@
 
 .method public static isCMCCSIM(I)Z
     .locals 4
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
@@ -163,7 +162,6 @@
 
 .method public static isCMCCUSIM(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -299,7 +297,6 @@
 
 .method public static isCTCSIM(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -386,7 +383,6 @@
 
 .method public static isChinaSIM(I)Z
     .locals 4
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtilsMultiSIM;->getMultiSimNumeric(I)Ljava/lang/String;
 
@@ -638,7 +634,6 @@
 
 .method public static isUSIM(I)Z
     .locals 2
-    .param p0    # I
 
     const-string v0, "2"
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/autotext_add_menu" android:title="@string/autotext_add" android:showAsAction="always" />
+    <item android:id="@id/autotext_delete_menu" android:title="@string/autotext_title_bar_delete_button" android:showAsAction="always" />
+    <item android:id="@id/autotext_select_menu" android:title="@string/autotext_title_bar_delete_button" android:showAsAction="always" />
+</menu>

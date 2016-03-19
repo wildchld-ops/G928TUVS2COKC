@@ -112,7 +112,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -196,7 +195,6 @@
 
 .method public final remove(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

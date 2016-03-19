@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/qwerty_default_key_width_dual_full" android:keyHeight="@dimen/qwerty_default_key_height" android:horizontalGap="@dimen/qwerty_default_key_horizontal_gap_dual_full" android:verticalGap="@dimen/qwerty_default_key_vertical_gap" android:paddingLeft="@dimen/qwerty_default_row2_padding_left_dual_full" android:paddingRight="@dimen/qwerty_default_padding_right_dual_full" android:paddingTop="@dimen/qwerty_default_padding_top" android:paddingBottom="@dimen/qwerty_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/qwerty_default_number_key_width_dual_full" android:keyHeight="@dimen/qwerty_default_number_key_height" android:horizontalGap="@dimen/qwerty_default_number_key_horizontal_gap_dual_full" android:property="numberRow" android:paddingLeft="@dimen/qwerty_default_number_padding_left_dual_full" android:paddingRight="@dimen/qwerty_default_padding_right_dual_full" android:rowEdgeFlags="top">
+        <include android:keys="@xml/qwerty_default_number_row_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace_dual_full" android:codes="-600" android:keyIcon="@drawable/textinput_qwerty_ic_expand_up_xml" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_delete" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_number_xml" android:property="tablet" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row2" />
+        <Key android:property="phone" android:codeIndex="19" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="0x2c" android:keyLabel="," />
+        <Key android:property="tablet" android:codes="0x2e" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row2" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:codes="0x2c" android:keyLabel="," />
+        <Key android:codes="0x2e" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:paddingRight="@dimen/qwerty_default_padding_right" android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row2" />
+        <Key android:property="phone" android:codeIndex="46" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codeIndex="84" />
+        <Key android:property="tablet" android:codeIndex="85" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row2" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:codeIndex="84" />
+        <Key android:codeIndex="85" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_3_normal">
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_3_normal">
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row2" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_normal">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="-124" />
+        <Key android:property="tablet" android:codes="-122" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_3_single_language">
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_3_single_language">
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row2" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_single_language">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:codes="-124" />
+        <Key android:codes="-122" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_1_comma">
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_1_comma">
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row2" />
+        <Key android:property="phone" android:codeIndex="19" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_comma">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page1_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="0x2c" android:keyLabel="," />
+        <Key android:property="tablet" android:codes="0x2e" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_2_comma">
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_2_comma">
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row2" />
+        <Key android:property="phone" android:codeIndex="46" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_comma">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page2_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codeIndex="84" />
+        <Key android:property="tablet" android:codeIndex="85" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-109" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row0_padding_left_dual_full" android:keyboardMode="@id/symbol_page_3_comma">
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row1" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_default_row1_padding_left_dual_full" android:keyboardMode="@id/symbol_page_3_comma">
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row2" />
+        <Key android:property="phone" android:codeIndex="73" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_enter" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_comma">
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_left_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:codes="-109" />
+        <include android:keys="@xml/qwerty_number_symbol_default_page3_row3" android:padding="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_backspace" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="-124" />
+        <Key android:property="tablet" android:codes="-122" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_shift_right_dual_full" android:horizontalGap="@dimen/qwerty_default_horizontal_gap_function_key_dual_full" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-109" />
+    </Row>
+    <include android:rows="@xml/qwerty_number_symbols_row_bottom_dual_full" />
+</Keyboard>

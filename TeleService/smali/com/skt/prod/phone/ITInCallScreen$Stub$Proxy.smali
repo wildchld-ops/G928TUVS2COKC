@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,8 +93,6 @@
 
 .method public getCallFilterType(Ljava/lang/String;I)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -153,7 +150,6 @@
 
 .method public getRingtoneUri(Lcom/skt/prod/phone/TCall;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/skt/prod/phone/TCall;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -293,7 +289,6 @@
 
 .method public notifyServiceChanged(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -394,8 +389,6 @@
 
 .method public startTPhone(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

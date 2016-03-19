@@ -6,7 +6,6 @@
 # direct methods
 .method static computeArrayListCapacity(I)I
     .locals 4
-    .param p0    # I
 
     if-ltz p0, :cond_0
 

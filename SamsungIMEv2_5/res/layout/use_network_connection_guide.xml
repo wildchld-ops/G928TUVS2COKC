@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/popup_swiftkey_guide_linearlayout_text_size" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_hwr_install_guide_dialog_top_margin" android:layout_marginBottom="@dimen/popup_dialog_checkbox_top_margin" android:text="@string/use_network_connection_dialog_msg" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/popup_hwr_install_guide_dialog_left_padding" android:layout_marginEnd="@dimen/popup_hwr_install_guide_dialog_right_padding" />
+        <CheckBox android:textSize="@dimen/popup_swiftkey_guide_linearlayout_text_size" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:layout_gravity="center_vertical" android:id="@id/do_not_show_again_check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hwr_gesture_guide_dont_show" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/popup_dialog_checkbox_left_padding" android:paddingEnd="@dimen/popup_dialog_checkbox_right_padding" android:layout_marginStart="@dimen/popup_dialog_checkbox_left_margin" android:layout_marginEnd="@dimen/popup_dialog_checkbox_right_margin" />
+    </LinearLayout>
+</ScrollView>

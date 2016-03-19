@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/EmergencyCallbackModeExitDialog;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$2;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
 
@@ -41,7 +39,6 @@
 
 .method public onTick(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$2;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
 

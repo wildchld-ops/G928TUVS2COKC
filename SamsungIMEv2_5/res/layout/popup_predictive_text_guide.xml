@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/popup_predictive_text_guide_linearlayout_width" android:layout_height="wrap_content" android:minWidth="@dimen/popup_predictive_text_guide_linearlayout_min_width" android:minHeight="@dimen/popup_predictive_text_guide_linearlayout_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/popup_predictive_text_guide_linearlayout_padding_start" android:paddingEnd="@dimen/popup_predictive_text_guide_linearlayout_padding_end">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_predictive_text_guide_linearlayout_margin_top" android:layout_marginBottom="@dimen/popup_predictive_text_guide_linearlayout_margin_bottom">
+                <TextView android:textSize="@dimen/popup_predictive_text_guide_textview_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/predictive_text_guide_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="#ff606060" android:layout_width="fill_parent" android:layout_height="@dimen/popup_predictive_text_guide_view_height" android:layout_marginStart="@dimen/popup_predictive_text_guide_view_margin_start" android:layout_marginEnd="@dimen/popup_predictive_text_guide_view_margin_end" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/popup_predictive_text_guide_linearlayout_height">
+        <CheckBox android:textSize="@dimen/popup_predictive_text_guide_checkbox_text_size" android:textColor="@color/hwr_popup_guide_sub_text_color" android:layout_gravity="center_vertical" android:id="@id/predictive_text_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_check_holo_light" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" android:layout_marginStart="@dimen/popup_predictive_text_guide_checkbox_margin_start" />
+    </LinearLayout>
+</LinearLayout>

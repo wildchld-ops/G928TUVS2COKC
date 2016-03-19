@@ -263,7 +263,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -966,7 +965,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/NetworkNotificationUI;)Landroid/net/NetworkPolicyManager;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mPolicyManager:Landroid/net/NetworkPolicyManager;
 
@@ -975,8 +973,6 @@
 
 .method static synthetic access$1002(Lcom/android/phone/NetworkNotificationUI;Landroid/net/NetworkPolicyManager;)Landroid/net/NetworkPolicyManager;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/net/NetworkPolicyManager;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mPolicyManager:Landroid/net/NetworkPolicyManager;
 
@@ -993,7 +989,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->showRoamingDataSelectionPopUp()V
 
@@ -1002,8 +997,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/NetworkNotificationUI;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkNotificationUI;->updateConnectivity(Landroid/content/Intent;)V
 
@@ -1012,7 +1005,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkNotificationUI;->mIsWifiConnected:Z
 
@@ -1021,8 +1013,6 @@
 
 .method static synthetic access$1402(Lcom/android/phone/NetworkNotificationUI;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkNotificationUI;->mIsWifiConnected:Z
 
@@ -1031,8 +1021,6 @@
 
 .method static synthetic access$1502(Lcom/android/phone/NetworkNotificationUI;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkNotificationUI;->m3gwarningPopup:Z
 
@@ -1041,8 +1029,6 @@
 
 .method static synthetic access$1602(Lcom/android/phone/NetworkNotificationUI;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/NetworkNotificationUI;->mPrevDataState:I
 
@@ -1051,7 +1037,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isRtsPopupAllowed()Z
 
@@ -1070,7 +1055,6 @@
 
 .method static synthetic access$1802(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/android/phone/NetworkNotificationUI;->mAutoTimesetDialog:Landroid/app/AlertDialog;
 
@@ -1079,7 +1063,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->showAutoTimeSetDialog()V
 
@@ -1088,7 +1071,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/NetworkNotificationUI;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
@@ -1097,7 +1079,6 @@
 
 .method static synthetic access$2000(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkNotificationUI;->mAirplaneMode:Z
 
@@ -1106,8 +1087,6 @@
 
 .method static synthetic access$2002(Lcom/android/phone/NetworkNotificationUI;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkNotificationUI;->mAirplaneMode:Z
 
@@ -1116,7 +1095,6 @@
 
 .method static synthetic access$2100(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->LGTRebootPopup()V
 
@@ -1125,8 +1103,6 @@
 
 .method static synthetic access$2200(Lcom/android/phone/NetworkNotificationUI;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkNotificationUI;->saveLteThroughtputResult(Ljava/lang/String;)V
 
@@ -1135,7 +1111,6 @@
 
 .method static synthetic access$2300(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->displayCtcSimInSlot1WarningToast()V
 
@@ -1144,7 +1119,6 @@
 
 .method static synthetic access$2400(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->displayCtcSimInSlot2WarningToast()V
 
@@ -1153,8 +1127,6 @@
 
 .method static synthetic access$2500(Lcom/android/phone/NetworkNotificationUI;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkNotificationUI;->enableDataConnection(Z)V
 
@@ -1163,8 +1135,6 @@
 
 .method static synthetic access$2602(Lcom/android/phone/NetworkNotificationUI;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mDataConnectSelectDialog:Landroid/app/AlertDialog;
 
@@ -1173,7 +1143,6 @@
 
 .method static synthetic access$2700(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkNotificationUI;->isRoamingDataset:Z
 
@@ -1182,8 +1151,6 @@
 
 .method static synthetic access$2702(Lcom/android/phone/NetworkNotificationUI;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkNotificationUI;->isRoamingDataset:Z
 
@@ -1192,8 +1159,6 @@
 
 .method static synthetic access$2800(Lcom/android/phone/NetworkNotificationUI;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkNotificationUI;->setDataRoamingEnabled(Z)V
 
@@ -1202,7 +1167,6 @@
 
 .method static synthetic access$2900(Lcom/android/phone/NetworkNotificationUI;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mDataRoamingUseSwtich:Landroid/widget/Switch;
 
@@ -1211,7 +1175,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/NetworkNotificationUI;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mPhone:Landroid/telephony/TelephonyManager;
 
@@ -1220,7 +1183,6 @@
 
 .method static synthetic access$3000(Lcom/android/phone/NetworkNotificationUI;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mBackGroundData:Landroid/view/View;
 
@@ -1229,7 +1191,6 @@
 
 .method static synthetic access$3200(Lcom/android/phone/NetworkNotificationUI;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mDataUsage:Landroid/view/View;
 
@@ -1238,7 +1199,6 @@
 
 .method static synthetic access$3300(Lcom/android/phone/NetworkNotificationUI;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mAutoUpdate:Landroid/view/View;
 
@@ -1247,8 +1207,6 @@
 
 .method static synthetic access$3400(Lcom/android/phone/NetworkNotificationUI;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/NetworkNotificationUI;->setRoamingButtonEnable(Z)V
 
@@ -1257,7 +1215,6 @@
 
 .method static synthetic access$3500(Lcom/android/phone/NetworkNotificationUI;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mBackGroundMsgView:Landroid/widget/TextView;
 
@@ -1266,7 +1223,6 @@
 
 .method static synthetic access$3602(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/android/phone/NetworkNotificationUI;->mCarrierLockWarningDialog:Landroid/app/AlertDialog;
 
@@ -1275,8 +1231,6 @@
 
 .method static synthetic access$3702(Lcom/android/phone/NetworkNotificationUI;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialogDataKey:Landroid/app/AlertDialog;
 
@@ -1285,7 +1239,6 @@
 
 .method static synthetic access$3800(Lcom/android/phone/NetworkNotificationUI;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelectionDialog:Landroid/app/AlertDialog;
 
@@ -1294,8 +1247,6 @@
 
 .method static synthetic access$3802(Lcom/android/phone/NetworkNotificationUI;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelectionDialog:Landroid/app/AlertDialog;
 
@@ -1304,7 +1255,6 @@
 
 .method static synthetic access$3900(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-boolean v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNoservicePopupSelectionNagativeButton:Z
 
@@ -1313,8 +1263,6 @@
 
 .method static synthetic access$3902(Lcom/android/phone/NetworkNotificationUI;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/NetworkNotificationUI;->mNoservicePopupSelectionNagativeButton:Z
 
@@ -1323,7 +1271,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/NetworkNotificationUI;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -1332,7 +1279,6 @@
 
 .method static synthetic access$4000(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->showNoServiceAndManualSelecionDialog()V
 
@@ -1341,7 +1287,6 @@
 
 .method static synthetic access$4100(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->addRoamingRegFailNotification()V
 
@@ -1350,7 +1295,6 @@
 
 .method static synthetic access$4200(Lcom/android/phone/NetworkNotificationUI;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNetworkRegNotiDialog:Landroid/app/AlertDialog;
 
@@ -1359,8 +1303,6 @@
 
 .method static synthetic access$4202(Lcom/android/phone/NetworkNotificationUI;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mNetworkRegNotiDialog:Landroid/app/AlertDialog;
 
@@ -1369,7 +1311,6 @@
 
 .method static synthetic access$4300(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->showNetworkRegNotiPopUp()V
 
@@ -1378,7 +1319,6 @@
 
 .method static synthetic access$4400(Lcom/android/phone/NetworkNotificationUI;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyRTSDialog:Landroid/app/AlertDialog;
 
@@ -1387,8 +1327,6 @@
 
 .method static synthetic access$4402(Lcom/android/phone/NetworkNotificationUI;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyRTSDialog:Landroid/app/AlertDialog;
 
@@ -1397,7 +1335,6 @@
 
 .method static synthetic access$4500(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->NotifyNetworkRegistering()V
 
@@ -1406,8 +1343,6 @@
 
 .method static synthetic access$4602(Lcom/android/phone/NetworkNotificationUI;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyNetworkRegisteringDialog:Landroid/app/AlertDialog;
 
@@ -1416,7 +1351,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->isOtaRegistering()Z
 
@@ -1427,9 +1361,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/NetworkNotificationUI;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/NetworkNotificationUI;->sendDataConnectionIntent(ZZ)V
 
@@ -1438,7 +1369,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->getDataSelectionPopupIsSet()Z
 
@@ -1449,7 +1379,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/NetworkNotificationUI;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->showDataSelectionPopUp()V
 
@@ -1458,7 +1387,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/NetworkNotificationUI;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/NetworkNotificationUI;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkNotificationUI;->getDataSelectionEnableSet()Z
 
@@ -1730,7 +1658,6 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1913,7 +1840,6 @@
 
 .method private enableDataConnection(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mContext:Landroid/content/Context;
 
@@ -3048,7 +2974,6 @@
 
 .method private saveLteThroughtputResult(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     new-instance v5, Ljava/io/File;
 
@@ -3680,8 +3605,6 @@
 
 .method private sendDataConnectionIntent(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -3723,7 +3646,6 @@
 
 .method private setDataRoamingEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-boolean v1, Lcom/android/phone/NetworkNotificationUI;->DBG:Z
 
@@ -3783,7 +3705,6 @@
 
 .method private final setRoamingButtonEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -5048,7 +4969,6 @@
 
 .method private updateConnectivity(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "networkInfo"
 
@@ -5129,7 +5049,6 @@
 # virtual methods
 .method public dataConnectionStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "NetworkNotificationUI"
 
@@ -5276,7 +5195,6 @@
 
 .method public serviceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 12
-    .param p1    # Landroid/telephony/ServiceState;
 
     sget-boolean v8, Lcom/android/phone/NetworkNotificationUI;->VDBG:Z
 

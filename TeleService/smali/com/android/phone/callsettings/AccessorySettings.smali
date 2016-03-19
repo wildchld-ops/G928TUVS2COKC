@@ -29,7 +29,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/AccessorySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/AccessorySettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AccessorySettings;->mAutoAnsweringPreference:Landroid/preference/CheckBoxPreference;
 
@@ -38,8 +37,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/AccessorySettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/AccessorySettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/AccessorySettings;->putAutoAnswerSetting(Z)V
 
@@ -48,7 +45,6 @@
 
 .method private confirmSelectionDialog(Landroid/content/SharedPreferences;)V
     .locals 4
-    .param p1    # Landroid/content/SharedPreferences;
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -145,7 +141,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EarsetSettings"
 
@@ -156,7 +151,6 @@
 
 .method private putAutoAnswerSetting(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/AccessorySettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -181,7 +175,6 @@
 
 .method private setSystemSettingsForAutoAnswer(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/AccessorySettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -432,7 +425,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -523,8 +515,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v6, 0x2
 
@@ -698,8 +688,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const v10, 0x7f09000b
 
@@ -912,9 +900,6 @@
 
 .method public updateBTSummary(Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/AccessorySettings;->getActivity()Landroid/app/Activity;
 

@@ -46,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CallSoundPreference;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/phone/CallSoundPreference;
 
     iget-object v0, p0, Lcom/android/phone/CallSoundPreference;->mVoicemailNotificationSound:Landroid/preference/Preference;
 
@@ -55,10 +54,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CallSoundPreference;ILandroid/preference/Preference;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallSoundPreference;
-    .param p1    # I
-    .param p2    # Landroid/preference/Preference;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/CallSoundPreference;->updateRingtoneName(ILandroid/preference/Preference;I)V
 
@@ -81,7 +76,6 @@
 
 .method public static migrateVoicemailVibrationSettingsIfNeeded(Landroid/content/SharedPreferences;)Z
     .locals 5
-    .param p0    # Landroid/content/SharedPreferences;
 
     const-string v3, "button_voicemail_notification_vibrate_key"
 
@@ -128,14 +122,12 @@
 
 .method private setNaturalSound(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method private setNoiseReduction(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -442,9 +434,6 @@
 
 .method private updateRingtoneName(ILandroid/preference/Preference;I)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/preference/Preference;
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -638,7 +627,6 @@
 # virtual methods
 .method protected initSoundSetting(Z)V
     .locals 7
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -865,7 +853,6 @@
 
 .method protected initVoicemailSetting(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -911,7 +898,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -958,8 +944,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

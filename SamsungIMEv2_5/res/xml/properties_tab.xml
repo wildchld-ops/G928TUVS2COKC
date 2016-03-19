@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+    <Property key="TABLET_MODE" value="true" type="bool" />
+    <Property key="USE_SPLIT_KEYBOARD" value="true" type="bool" />
+    <Property key="USE_SPLIT_FLOATING_KEYBOARD" value="true" type="bool" />
+    <Property key="EXTRACT_UI" value="false" type="bool" />
+    <Property key="USE_BOLD_FONT_ON_MONTH_EDITTEXT" value="true" type="bool" />
+    <Property key="USE_EMOTICON_POPUP_ON_ENTER" value="false" type="bool" />
+    <Property key="SETTINGS_DEFAULT_USE_PREVIEW" value="false" type="bool" />
+    <Property key="SETTINGS_DEFAULT_USE_SYSTEM_LANGUAGE" value="true" type="bool" />
+    <Property key="NOTE_KEYPAD_TYPE" value="false" type="bool" />
+    <Property key="FILTERING_EVENT_THRESHOLD_DISTANCE" value="50" type="int" />
+    <Property key="FILTERING_EVENT_THRESHOLD_DISTANCE_LAND" value="50" type="int" />
+</Properties>

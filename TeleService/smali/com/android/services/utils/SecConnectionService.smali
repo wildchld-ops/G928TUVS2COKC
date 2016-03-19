@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/services/utils/SecConnectionService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/services/utils/SecConnectionService;
 
     iget-object v0, p0, Lcom/android/services/utils/SecConnectionService;->mHandler:Landroid/os/Handler;
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Lcom/android/services/utils/SecConnectionService$SecConnectionServiceBinder;
 
@@ -60,7 +58,6 @@
 
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 

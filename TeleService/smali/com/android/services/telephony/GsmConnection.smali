@@ -6,7 +6,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/telephony/Connection;)V
     .locals 0
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/TelephonyConnection;-><init>(Lcom/android/internal/telephony/Connection;)V
 
@@ -88,7 +87,6 @@
 
 .method public onPlayDtmfTone(C)V
     .locals 1
-    .param p1    # C
 
     invoke-virtual {p0}, Lcom/android/services/telephony/GsmConnection;->getPhone()Lcom/android/internal/telephony/Phone;
 
@@ -127,7 +125,6 @@
 
 .method public performConference(Lcom/android/services/telephony/TelephonyConnection;)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
 
     invoke-virtual {p0}, Lcom/android/services/telephony/GsmConnection;->getPhone()Lcom/android/internal/telephony/Phone;
 

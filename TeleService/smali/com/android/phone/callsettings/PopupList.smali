@@ -55,7 +55,6 @@
 # direct methods
 .method static synthetic access$000(Lcom/android/phone/callsettings/PopupList;)Landroid/widget/PopupWindow;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->mPopupWindow:Landroid/widget/PopupWindow;
 
@@ -64,8 +63,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/callsettings/PopupList;Landroid/widget/PopupWindow;)Landroid/widget/PopupWindow;
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
-    .param p1    # Landroid/widget/PopupWindow;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/PopupList;->mPopupWindow:Landroid/widget/PopupWindow;
 
@@ -74,7 +71,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/PopupList;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->mAnchorView:Landroid/view/View;
 
@@ -83,7 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/PopupList;)Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->mOnGLobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
@@ -92,7 +87,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/PopupList;)Lcom/android/phone/callsettings/PopupList$OnPopupItemClickListener;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->mOnPopupItemClickListener:Lcom/android/phone/callsettings/PopupList$OnPopupItemClickListener;
 
@@ -101,7 +95,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/PopupList;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/PopupList;->updatePopupLayoutParams()V
 
@@ -110,7 +103,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/PopupList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->mItems:Ljava/util/ArrayList;
 
@@ -119,7 +111,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/PopupList;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->mContext:Landroid/content/Context;
 
@@ -128,7 +119,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/PopupList;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PopupList;->text:Landroid/widget/TextView;
 
@@ -137,8 +127,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/callsettings/PopupList;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/PopupList;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/PopupList;->text:Landroid/widget/TextView;
 

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: classes.dex
+SHA1-Digest: V6Sv0QGczAgb1jigCQMjr2Mk/8U=
+

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/RoamingAutoDialSettings;Lcom/android/phone/RoamingAutoDialSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/RoamingAutoDialSettings;
-    .param p2    # Lcom/android/phone/RoamingAutoDialSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/RoamingAutoDialSettings$OkClickListener;-><init>(Lcom/android/phone/RoamingAutoDialSettings;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/phone/RoamingAutoDialSettings$OkClickListener;->this$0:Lcom/android/phone/RoamingAutoDialSettings;
 

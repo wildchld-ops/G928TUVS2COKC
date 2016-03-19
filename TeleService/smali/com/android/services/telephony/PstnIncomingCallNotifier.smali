@@ -16,7 +16,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/telephony/PhoneProxy;)V
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/PhoneProxy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,8 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/PstnIncomingCallNotifier;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/PstnIncomingCallNotifier;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/PstnIncomingCallNotifier;->handleNewRingingConnection(Landroid/os/AsyncResult;)V
 
@@ -69,8 +66,6 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/PstnIncomingCallNotifier;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/PstnIncomingCallNotifier;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/PstnIncomingCallNotifier;->handleCdmaCallWaiting(Landroid/os/AsyncResult;)V
 
@@ -79,8 +74,6 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/PstnIncomingCallNotifier;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/PstnIncomingCallNotifier;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/PstnIncomingCallNotifier;->handleNewUnknownConnection(Landroid/os/AsyncResult;)V
 
@@ -89,7 +82,6 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/PstnIncomingCallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/PstnIncomingCallNotifier;
 
     invoke-direct {p0}, Lcom/android/services/telephony/PstnIncomingCallNotifier;->registerForNotifications()V
 
@@ -98,7 +90,6 @@
 
 .method private addNewUnknownCall(Lcom/android/internal/telephony/Connection;)V
     .locals 6
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v5, 0x0
 
@@ -217,7 +208,6 @@
 
 .method private handleCdmaCallWaiting(Landroid/os/AsyncResult;)V
     .locals 7
-    .param p1    # Landroid/os/AsyncResult;
 
     const-string v5, "handleCdmaCallWaiting"
 
@@ -283,7 +273,6 @@
 
 .method private handleNewRingingConnection(Landroid/os/AsyncResult;)V
     .locals 7
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v6, 0x0
 
@@ -405,7 +394,6 @@
 
 .method private handleNewUnknownConnection(Landroid/os/AsyncResult;)V
     .locals 5
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v4, 0x0
 
@@ -461,7 +449,6 @@
 
 .method private maybeSwapAnyWithUnknownConnection(Lcom/android/internal/telephony/Connection;)Z
     .locals 5
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/Connection;->isIncoming()Z
 
@@ -525,8 +512,6 @@
 
 .method private maybeSwapWithUnknownConnection(Lcom/android/services/telephony/TelephonyConnection;Lcom/android/internal/telephony/Connection;)Z
     .locals 3
-    .param p1    # Lcom/android/services/telephony/TelephonyConnection;
-    .param p2    # Lcom/android/internal/telephony/Connection;
 
     invoke-virtual {p1}, Lcom/android/services/telephony/TelephonyConnection;->getOriginalConnection()Lcom/android/internal/telephony/Connection;
 
@@ -638,8 +623,6 @@
 
 .method private sendIncomingCallIntent(Lcom/android/internal/telephony/Connection;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Lcom/android/internal/telephony/Connection;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p1}, Lcom/android/internal/telephony/Connection;->getNumberPresentation()I
 

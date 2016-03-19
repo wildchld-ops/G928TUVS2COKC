@@ -41,8 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CustomListPreference;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/phone/CustomListPreference;
 
     iget-object v0, p0, Lcom/android/phone/CustomListPreference;->mInflater:Landroid/view/LayoutInflater;
 
@@ -96,7 +93,6 @@
 # virtual methods
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const/4 v2, 0x0
 

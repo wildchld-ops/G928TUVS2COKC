@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(JLjava/lang/String;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,7 +89,6 @@
 
 .method public setColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/edge/GlanceReplyInfoItem;->color:I
 
@@ -101,8 +97,6 @@
 
 .method public setDefaultMessageforPref(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p2}, Lcom/android/phone/edge/GlanceReplyInfoItem;->setMessage(Ljava/lang/String;)V
 
@@ -115,7 +109,6 @@
 
 .method public setMessage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/edge/GlanceReplyInfoItem;->message:Ljava/lang/String;
 

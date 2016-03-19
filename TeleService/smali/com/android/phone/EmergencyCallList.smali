@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/EmergencyCallList;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyCallList;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallList;->mNumberList:[Ljava/lang/String;
 
@@ -89,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/EmergencyCallList;)I
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyCallList;
 
     iget v0, p0, Lcom/android/phone/EmergencyCallList;->mSelectedPosition:I
 
@@ -98,8 +96,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/phone/EmergencyCallList;->log(Ljava/lang/String;Z)V
 
@@ -108,8 +104,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/EmergencyCallList;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/phone/EmergencyCallList;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EmergencyCallList;->createCallIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -120,7 +114,6 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/EmergencyCallList;->log(Ljava/lang/String;)V
 
@@ -129,7 +122,6 @@
 
 .method private createCallIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -194,7 +186,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallList;->mToast:Landroid/widget/Toast;
 
@@ -270,7 +261,6 @@
 
 .method private isSystemKeyEventRequested(I)Z
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyCallList;->mWindowManager:Landroid/view/IWindowManager;
@@ -318,7 +308,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "EmergencyCallList"
 
@@ -329,8 +318,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "EmergencyCallList"
 
@@ -341,8 +328,6 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyCallList;->mWindowManager:Landroid/view/IWindowManager;
@@ -390,7 +375,6 @@
 
 .method private setCategoryOf119(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -1212,7 +1196,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1221,7 +1204,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x3
 
@@ -1370,8 +1352,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1451,10 +1431,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 8
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-super/range {p0 .. p5}, Landroid/app/ListActivity;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_12_11_10_key_width" android:keyHeight="@dimen/split_default_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_number_key_width" android:keyHeight="@dimen/split_default_number_key_height" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_delete" android:codes="-1003" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row>
+        <Key android:codes="1091" android:keyLabel="у" />
+        <Key android:codes="1080" android:keyLabel="и" />
+        <Key android:codes="1086" android:keyLabel="о" />
+        <Key android:codes="1087" android:keyLabel="п" />
+        <Key android:codes="1096" android:keyLabel="ш" />
+        <Key android:codes="1097" android:keyLabel="щ" />
+        <Key android:keyWidth="@dimen/split_12_11_10_backspace_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_12_11_10_right_row2_padding_left">
+        <Key android:codes="1093" android:keyLabel="х" />
+        <Key android:codes="1081" android:keyLabel="й" />
+        <Key android:codes="1082" android:keyLabel="к" />
+        <Key android:codes="1083" android:keyLabel="л" />
+        <Key android:codes="1102" android:keyLabel="ю" />
+        <Key android:keyWidth="@dimen/split_12_11_10_enter_key_width" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:codes="1085" android:keyLabel="н" />
+        <Key android:codes="1084" android:keyLabel="м" />
+        <Key android:codes="1095" android:keyLabel="ч" />
+        <Key android:codes="-124" android:keyIcon="@drawable/textinput_floating_ic_exclamation_01_xml" />
+        <Key android:codes="-122" android:keyIcon="@drawable/textinput_floating_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/split_12_11_10_r_shift_key_width" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/split_row_bottom_right" />
+</Keyboard>

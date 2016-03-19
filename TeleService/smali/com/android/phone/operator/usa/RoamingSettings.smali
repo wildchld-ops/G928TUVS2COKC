@@ -60,9 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/RoamingSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/RoamingSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/usa/RoamingSettings;->setCheckSecureSettingRoamValue(II)V
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/RoamingSettings;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/RoamingSettings;
 
     invoke-direct {p0}, Lcom/android/phone/operator/usa/RoamingSettings;->setCdmaRoaming()V
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/usa/RoamingSettings;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/RoamingSettings;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/RoamingSettings;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -89,8 +84,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/usa/RoamingSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/RoamingSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/usa/RoamingSettings;->sendDataRoamingGuardBroadcast(Ljava/lang/String;)V
 
@@ -99,7 +92,6 @@
 
 .method static synthetic access$500(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/operator/usa/RoamingSettings;->log(Ljava/lang/String;)V
 
@@ -108,7 +100,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/usa/RoamingSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/RoamingSettings;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/RoamingSettings;->mButtonPreferredNetworkMode:Landroid/preference/ListPreference;
 
@@ -702,7 +693,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "RoamingSettings"
 
@@ -713,7 +703,6 @@
 
 .method private sendDataRoamingGuardBroadcast(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -778,8 +767,6 @@
 
 .method private setCheckSecureSettingRoamValue(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1067,8 +1054,6 @@
 
 .method private setSecureSettingRoamValue(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "RoamingSettings"
 
@@ -1207,7 +1192,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1230,7 +1214,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1401,7 +1384,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1428,8 +1410,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "RoamingSettings"
 

@@ -67,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -76,7 +75,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getActivity()Landroid/app/Activity;
 
@@ -97,7 +95,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 12
-    .param p1    # Landroid/text/Editable;
 
     const/4 v7, 0x2
 
@@ -501,17 +498,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public getStringByteSize(Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/16 v9, 0x7f
 
@@ -658,7 +650,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Configuration"
 
@@ -690,7 +681,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -750,8 +740,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 10
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v9, 0x7f0a0287
 
@@ -890,9 +878,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v5, 0x7f040092
 
@@ -1353,7 +1338,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v4, 0x0
 
@@ -1405,7 +1389,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 8
-    .param p1    # Landroid/view/Menu;
 
     const/4 v5, 0x4
 
@@ -1647,7 +1630,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1676,10 +1658,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->mCreateEdit:Landroid/widget/EditText;
 
@@ -1773,7 +1751,6 @@
 
 .method public softkeyLeftRun(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getIntent()Landroid/content/Intent;
 
@@ -1875,7 +1852,6 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getActivity()Landroid/app/Activity;
 
@@ -1894,7 +1870,6 @@
 
 .method public updateTextCounter(Ljava/lang/CharSequence;)V
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v8, 0xa0
 

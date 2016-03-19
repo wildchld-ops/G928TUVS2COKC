@@ -85,9 +85,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/DsaSetting;II)V
     .locals 0
-    .param p0    # Lcom/android/phone/DsaSetting;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/DsaSetting;->setResultVariable(II)V
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/DsaSetting;)Lcom/android/phone/DsaSetting$ActivateHandler;
     .locals 1
-    .param p0    # Lcom/android/phone/DsaSetting;
 
     iget-object v0, p0, Lcom/android/phone/DsaSetting;->mActivateHandler:Lcom/android/phone/DsaSetting$ActivateHandler;
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/DsaSetting;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/DsaSetting;
 
     iget-boolean v0, p0, Lcom/android/phone/DsaSetting;->bDualSet:Z
 
@@ -114,8 +109,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/DsaSetting;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/DsaSetting;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/DsaSetting;->bDualSet:Z
 
@@ -124,7 +117,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/DsaSetting;)I
     .locals 1
-    .param p0    # Lcom/android/phone/DsaSetting;
 
     iget v0, p0, Lcom/android/phone/DsaSetting;->resultValue:I
 
@@ -133,7 +125,6 @@
 
 .method private dsaLog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "DsaSetting"
 
@@ -144,8 +135,6 @@
 
 .method private setResultVariable(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "DsaSetting"
 
@@ -245,8 +234,6 @@
 # virtual methods
 .method public DSAactivate(Ljava/util/ArrayList;IZ)V
     .locals 8
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

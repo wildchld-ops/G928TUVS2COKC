@@ -200,7 +200,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/telephony/Phone;)V
     .locals 0
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtils;->notifyMMIOperation(Lcom/android/internal/telephony/Phone;)V
 
@@ -209,7 +208,6 @@
 
 .method static synthetic access$1102(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/android/phone/PhoneUtils;->mRoamMccChangedDialog:Landroid/app/AlertDialog;
 
@@ -234,7 +232,6 @@
 
 .method static synthetic access$502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/PhoneUtils;->backKeyPressed:Z
 
@@ -251,7 +248,6 @@
 
 .method static synthetic access$702(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
@@ -260,7 +256,6 @@
 
 .method static synthetic access$802(Lcom/android/internal/telephony/MmiCode$State;)Lcom/android/internal/telephony/MmiCode$State;
     .locals 0
-    .param p0    # Lcom/android/internal/telephony/MmiCode$State;
 
     sput-object p0, Lcom/android/phone/PhoneUtils;->mMmiPendingState:Lcom/android/internal/telephony/MmiCode$State;
 
@@ -277,7 +272,6 @@
 
 .method static synthetic access$902(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/android/phone/PhoneUtils;->newDialog:Landroid/app/AlertDialog;
 
@@ -377,8 +371,6 @@
 
 .method static answerAndEndActive(Lcom/android/internal/telephony/CallManager;Lcom/android/internal/telephony/Call;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/CallManager;
-    .param p1    # Lcom/android/internal/telephony/Call;
 
     const/16 v4, 0x64
 
@@ -433,7 +425,6 @@
 
 .method public static answerCall(Lcom/android/internal/telephony/Call;)Z
     .locals 14
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -701,7 +692,6 @@
 
 .method static cancelMmiCode(Lcom/android/internal/telephony/Phone;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     invoke-interface {p0}, Lcom/android/internal/telephony/Phone;->getPendingMmiCodes()Ljava/util/List;
 
@@ -739,7 +729,6 @@
 
 .method private static checkCnapSpecialCases(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PRIVATE"
 
@@ -817,7 +806,6 @@
 
 .method public static displayLongToast(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mToast:Landroid/widget/Toast;
 
@@ -853,11 +841,6 @@
 
 .method static displayMMIComplete(Lcom/android/internal/telephony/Phone;Landroid/content/Context;Lcom/android/internal/telephony/MmiCode;Landroid/os/Message;Landroid/app/AlertDialog;)V
     .locals 19
-    .param p0    # Lcom/android/internal/telephony/Phone;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/telephony/MmiCode;
-    .param p3    # Landroid/os/Message;
-    .param p4    # Landroid/app/AlertDialog;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1708,10 +1691,6 @@
 
 .method static displayMMIInitiate(Landroid/content/Context;Lcom/android/internal/telephony/MmiCode;Landroid/os/Message;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/MmiCode;
-    .param p2    # Landroid/os/Message;
-    .param p3    # Landroid/app/Dialog;
 
     const/4 v2, 0x0
 
@@ -1834,7 +1813,6 @@
 
 .method public static displayToast(I)V
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1851,7 +1829,6 @@
 
 .method public static displayToast(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mToast:Landroid/widget/Toast;
 
@@ -1887,8 +1864,6 @@
 
 .method public static getCallerInfo(Landroid/content/Context;Lcom/android/internal/telephony/Connection;)Lcom/android/internal/telephony/CallerInfo;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v0, 0x0
 
@@ -1978,7 +1953,6 @@
 
 .method public static getCallerInfo(Lcom/android/internal/telephony/CallManager;)Lcom/android/internal/telephony/CallerInfo;
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     if-nez p0, :cond_0
 
@@ -2044,7 +2018,6 @@
 
 .method static getCallerName(Lcom/android/internal/telephony/CallManager;)Ljava/lang/String;
     .locals 15
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     const v14, 0x7f0a0087
 
@@ -2499,7 +2472,6 @@
 
 .method static getCallerNumber(Lcom/android/internal/telephony/CallManager;)Ljava/lang/String;
     .locals 10
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     const/4 v6, 0x0
 
@@ -2684,7 +2656,6 @@
 
 .method static getDigitCallerNumber(Lcom/android/internal/telephony/CallManager;)Ljava/lang/String;
     .locals 8
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     const/4 v4, 0x0
 
@@ -2748,7 +2719,6 @@
 
 .method public static getIMSPhone(Lcom/android/internal/telephony/CallManager;)Lcom/android/internal/telephony/Phone;
     .locals 4
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/CallManager;->getAllPhones()Ljava/util/List;
 
@@ -2824,7 +2794,6 @@
 
 .method public static getInitialNumber(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/phone/PhoneUtils$VoiceMailNumberMissingException;
@@ -2877,8 +2846,6 @@
 
 .method private static getNumberFromIntent(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/phone/PhoneUtils$VoiceMailNumberMissingException;
@@ -3056,8 +3023,6 @@
 
 .method public static getSipPhoneFromUri(Lcom/android/internal/telephony/CallManager;Ljava/lang/String;)Lcom/android/internal/telephony/Phone;
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/CallManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/CallManager;->getAllPhones()Ljava/util/List;
 
@@ -3421,7 +3386,6 @@
 
 .method public static hangup(Lcom/android/internal/telephony/Call;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     :try_start_0
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
@@ -3503,7 +3467,6 @@
 
 .method public static hangup(Lcom/android/internal/telephony/CallManager;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     const/4 v2, 0x0
 
@@ -3580,7 +3543,6 @@
 
 .method static hangupActiveCall(Lcom/android/internal/telephony/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtils;->hangup(Lcom/android/internal/telephony/Call;)Z
 
@@ -3591,7 +3553,6 @@
 
 .method static hangupAllCalls(Lcom/android/internal/telephony/CallManager;)V
     .locals 4
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/CallManager;->getFirstActiveRingingCall()Lcom/android/internal/telephony/Call;
 
@@ -3643,7 +3604,6 @@
 
 .method static hangupRingingAndActive(Lcom/android/internal/telephony/Phone;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const/4 v2, 0x0
 
@@ -3705,7 +3665,6 @@
 
 .method public static hangupRingingCall(Lcom/android/internal/telephony/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
 
@@ -4025,7 +3984,6 @@
 
 .method public static initializeConnectionHandler(Lcom/android/internal/telephony/CallManager;)V
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
@@ -4051,8 +4009,6 @@
 
 .method public static invokeSecImsInterface(Ljava/lang/String;Z)Ljava/lang/Object;
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -4334,7 +4290,6 @@
 
 .method public static isAbsentSimState(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -4470,7 +4425,6 @@
 
 .method static isConferenceCall(Lcom/android/internal/telephony/Call;)Z
     .locals 7
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const/4 v4, 0x1
 
@@ -5026,7 +4980,6 @@
 
 .method public static isIntIncomingCall(Ljava/lang/String;)Z
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v8, 0x3
 
@@ -5142,7 +5095,6 @@
 
 .method public static isIntIncomingCallLock(Lcom/android/internal/telephony/Connection;)Z
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     const/4 v0, 0x0
 
@@ -5182,7 +5134,6 @@
 
 .method public static isIntIncomingCallLock(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5392,7 +5343,6 @@
 
 .method static isPhoneInEcm(Lcom/android/internal/telephony/Phone;)Z
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     if-eqz p0, :cond_0
 
@@ -5427,7 +5377,6 @@
 
 .method public static isRealIncomingCall(Lcom/android/internal/telephony/Call$State;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/telephony/Call$State;
 
     sget-object v0, Lcom/android/internal/telephony/Call$State;->INCOMING:Lcom/android/internal/telephony/Call$State;
 
@@ -5620,7 +5569,6 @@
 
 .method private static isRoutableViaGateway(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -5733,7 +5681,6 @@
 
 .method static isSpeakerOn(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "audio"
 
@@ -5780,7 +5727,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneUtils"
 
@@ -5791,8 +5737,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "PhoneUtils"
 
@@ -5803,7 +5747,6 @@
 
 .method public static makePstnPhoneAccountHandle(Lcom/android/internal/telephony/Phone;)Landroid/telecom/PhoneAccountHandle;
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const-string v0, ""
 
@@ -5818,9 +5761,6 @@
 
 .method public static makePstnPhoneAccountHandleWithPrefix(Lcom/android/internal/telephony/Phone;Ljava/lang/String;Z)Landroid/telecom/PhoneAccountHandle;
     .locals 4
-    .param p0    # Lcom/android/internal/telephony/Phone;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v1, Landroid/content/ComponentName;
 
@@ -5873,10 +5813,6 @@
 
 .method static modifyForSpecialCnapCases(Landroid/content/Context;Lcom/android/internal/telephony/CallerInfo;Ljava/lang/String;I)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/CallerInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const v7, 0x7f0a0085
 
@@ -5974,7 +5910,6 @@
 
 .method private static notifyMMICompleteThread(Lcom/android/internal/telephony/Phone;)V
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -6001,7 +5936,6 @@
 
 .method private static notifyMMIOperation(Lcom/android/internal/telephony/Phone;)V
     .locals 12
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const/4 v11, 0x1
 
@@ -6167,11 +6101,6 @@
 
 .method public static pickPhoneBasedOnNumber(Lcom/android/internal/telephony/CallManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/ComponentName;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/internal/telephony/CallManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/ComponentName;
 
     if-eqz p3, :cond_0
 
@@ -6194,11 +6123,6 @@
 
 .method public static placeCall(Landroid/content/Context;Lcom/android/internal/telephony/Phone;Ljava/lang/String;Landroid/net/Uri;Z)I
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Phone;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
 
     sget-object v5, Lcom/android/phone/CallGatewayManager;->EMPTY_INFO:Lcom/android/phone/CallGatewayManager$RawGatewayInfo;
 
@@ -6223,13 +6147,6 @@
 
 .method public static placeCall(Landroid/content/Context;Lcom/android/internal/telephony/Phone;Ljava/lang/String;Landroid/net/Uri;ZLcom/android/phone/CallGatewayManager$RawGatewayInfo;Lcom/android/phone/CallGatewayManager;)I
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Phone;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
-    .param p5    # Lcom/android/phone/CallGatewayManager$RawGatewayInfo;
-    .param p6    # Lcom/android/phone/CallGatewayManager;
 
     move-object/from16 v0, p5
 
@@ -6597,7 +6514,6 @@
 
 .method static sendEmptyFlash(Lcom/android/internal/telephony/Phone;)V
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     invoke-interface {p0}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
 
@@ -6631,8 +6547,6 @@
 
 .method public static setActionbarBackground(Landroid/content/Context;Landroid/app/ActionBar;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/ActionBar;
 
     if-nez p1, :cond_0
 
@@ -6663,14 +6577,12 @@
 
 .method static setAudioMode(Lcom/android/internal/telephony/CallManager;)V
     .locals 0
-    .param p0    # Lcom/android/internal/telephony/CallManager;
 
     return-void
 .end method
 
 .method public static setConfigurationLocale(Ljava/util/Locale;)Ljava/util/Locale;
     .locals 6
-    .param p0    # Ljava/util/Locale;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -6735,7 +6647,6 @@
 
 .method public static setHasVzwVideoCall(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/PhoneUtils;->mHasVzwVideoCall:Z
 
@@ -6744,7 +6655,6 @@
 
 .method static final setRadioPower(Z)V
     .locals 4
-    .param p0    # Z
 
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getPhones()[Lcom/android/internal/telephony/Phone;
 
@@ -7129,7 +7039,6 @@
 
 .method public static showNetworkAutoRebootIfManualSelected(Z)V
     .locals 16
-    .param p0    # Z
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
 
@@ -7622,10 +7531,6 @@
 
 .method static startGetCallerInfo(Landroid/content/Context;Lcom/android/internal/telephony/Connection;Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;)Lcom/android/phone/PhoneUtils$CallerInfoToken;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Connection;
-    .param p2    # Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -7638,11 +7543,6 @@
 
 .method static startGetCallerInfo(Landroid/content/Context;Lcom/android/internal/telephony/Connection;Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;Lcom/android/phone/CallGatewayManager$RawGatewayInfo;)Lcom/android/phone/PhoneUtils$CallerInfoToken;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Connection;
-    .param p2    # Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Lcom/android/phone/CallGatewayManager$RawGatewayInfo;
 
     const/4 v6, 0x0
 
@@ -7997,7 +7897,6 @@
 
 .method public static startSafeActivity(Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Intent;
 
     if-eqz p0, :cond_0
 
@@ -8052,7 +7951,6 @@
 
 .method public static switchHoldingAndActive(Lcom/android/internal/telephony/Call;)V
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     const-string v2, "switchHoldingAndActive()..."
 
@@ -8124,7 +8022,6 @@
 
 .method static toLogSafePhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -8188,9 +8085,6 @@
 
 .method static turnOnSpeaker(Landroid/content/Context;ZZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -8222,7 +8116,6 @@
 
 .method private static updateCdmaCallStateOnNewOutgoingCall(Lcom/android/phone/PhoneGlobals;)V
     .locals 2
-    .param p0    # Lcom/android/phone/PhoneGlobals;
 
     iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->cdmaPhoneCallState:Lcom/android/phone/CdmaPhoneCallState;
 

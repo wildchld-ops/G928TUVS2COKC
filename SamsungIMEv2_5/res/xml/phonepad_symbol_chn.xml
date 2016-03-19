@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/phonepad_sym_chn_default_key_width" android:keyHeight="@dimen/phonepad_default_key_height" android:horizontalGap="@dimen/phonepad_sym_default_key_horizontal_gap" android:verticalGap="@dimen/phonepad_sym_default_key_vertical_gap" android:paddingLeft="@dimen/phonepad_sym_first_col_horizontal_gap" android:paddingRight="@dimen/phonepad_first_col_horizontal_gap" android:paddingTop="@dimen/phonepad_first_line_vertical_gap" android:paddingBottom="@dimen/phonepad_sym_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:startPosX="@fraction/symbol_last_col_start_pos_x">
+        <Key android:keyWidth="@dimen/phonepad_sym_chn_function_key_width" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:startPosX="@fraction/symbol_last_col_start_pos_x">
+        <Key android:keyWidth="@dimen/phonepad_sym_chn_function_key_width" android:codes="-1005" android:keyEdgeFlags="right" android:keyIcon="@drawable/page_arrow_up_xml" />
+    </Row>
+    <Row android:startPosX="@fraction/symbol_last_col_start_pos_x">
+        <Key android:keyWidth="@dimen/phonepad_sym_chn_function_key_width" android:codes="-1006" android:keyEdgeFlags="right" android:keyIcon="@drawable/page_arrow_down_xml" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/phonepad_chn_return_key_width" android:codes="-990" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_return_xml" />
+        <Key android:keyWidth="@dimen/phonepad_chn_space_key_width" android:codes="32" />
+        <Key android:codes="-1114" android:keyIcon="@drawable/lock_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_chn_function_key_width" android:codes="10" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>

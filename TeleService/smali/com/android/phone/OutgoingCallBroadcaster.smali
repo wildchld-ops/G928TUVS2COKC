@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/OutgoingCallBroadcaster;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/phone/OutgoingCallBroadcaster;
 
     iget-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster;->mWaitingSpinner:Landroid/widget/ProgressBar;
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/OutgoingCallBroadcaster;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/OutgoingCallBroadcaster;
 
     iget-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster;->mHandler:Landroid/os/Handler;
 
@@ -78,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/OutgoingCallBroadcaster;)V
     .locals 0
-    .param p0    # Lcom/android/phone/OutgoingCallBroadcaster;
 
     invoke-direct {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->startDelayedFinish()V
 
@@ -87,7 +84,6 @@
 
 .method private handleNonVoiceCapable(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     sget-boolean v0, Lcom/android/phone/OutgoingCallBroadcaster;->DBG:Z
 
@@ -131,7 +127,6 @@
 
 .method private processIntent(Landroid/content/Intent;)V
     .locals 24
-    .param p1    # Landroid/content/Intent;
 
     sget-boolean v2, Lcom/android/phone/OutgoingCallBroadcaster;->DBG:Z
 
@@ -960,7 +955,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
@@ -969,8 +963,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
@@ -979,7 +971,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1015,7 +1006,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1176,7 +1166,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

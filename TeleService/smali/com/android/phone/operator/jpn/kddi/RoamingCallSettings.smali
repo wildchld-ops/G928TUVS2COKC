@@ -47,8 +47,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->procDialCommand(Ljava/lang/String;)V
 
@@ -57,7 +55,6 @@
 
 .method private procDialCommand(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -469,7 +466,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -587,7 +583,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     sget-object v4, Lcom/android/phone/operator/jpn/kddi/RoamingCallSettings;->LOG_TAG:Ljava/lang/String;
 
@@ -704,7 +699,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -800,7 +794,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 

@@ -48,7 +48,6 @@
 
 .method public static contains(Ljava/util/Iterator;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

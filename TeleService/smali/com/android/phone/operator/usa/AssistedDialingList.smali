@@ -103,7 +103,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->mContext:Landroid/content/Context;
 
@@ -112,7 +111,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->listview:Landroid/widget/ListView;
 
@@ -121,7 +119,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/widget/SimpleCursorAdapter;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->la:Landroid/widget/SimpleCursorAdapter;
 
@@ -130,10 +127,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/operator/usa/AssistedDialingList;Ljava/lang/String;II)Landroid/text/SpannableString;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/operator/usa/AssistedDialingList;->getHighlightedString(Ljava/lang/String;II)Landroid/text/SpannableString;
 
@@ -144,7 +137,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->search_list:Landroid/widget/FrameLayout;
 
@@ -153,7 +145,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->text_r:Landroid/widget/TextView;
 
@@ -162,7 +153,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->searchtext:Landroid/widget/SearchView;
 
@@ -171,7 +161,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/usa/AssistedDialingList;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->issorted:Z
 
@@ -180,8 +169,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/operator/usa/AssistedDialingList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->issorted:Z
 
@@ -190,7 +177,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/usa/AssistedDialingList;)[I
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->list_sort_id:[I
 
@@ -199,7 +185,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/usa/AssistedDialingList;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-boolean v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->extra:Z
 
@@ -208,7 +193,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/usa/AssistedDialingList;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->mCursor:Landroid/database/Cursor;
 
@@ -217,7 +201,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/usa/AssistedDialingList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->mCountry_name:Ljava/lang/String;
 
@@ -226,8 +209,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/operator/usa/AssistedDialingList;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->mCountry_name:Ljava/lang/String;
 
@@ -236,7 +217,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/usa/AssistedDialingList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->mMCC:Ljava/lang/String;
 
@@ -245,8 +225,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/operator/usa/AssistedDialingList;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->mMCC:Ljava/lang/String;
 
@@ -263,7 +241,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/operator/usa/AssistedDialingList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/usa/AssistedDialingList;
 
     iget-object v0, p0, Lcom/android/phone/operator/usa/AssistedDialingList;->list_sort:Ljava/util/ArrayList;
 
@@ -272,9 +249,6 @@
 
 .method private getHighlightedString(Ljava/lang/String;II)Landroid/text/SpannableString;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -350,7 +324,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x1
 
@@ -591,7 +564,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

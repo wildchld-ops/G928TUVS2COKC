@@ -196,8 +196,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/photoring/PhotoRingMgr;Lcom/android/services/telephony/common/IMCIDService;)Lcom/android/services/telephony/common/IMCIDService;
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Lcom/android/services/telephony/common/IMCIDService;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mService:Lcom/android/services/telephony/common/IMCIDService;
 
@@ -206,8 +204,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/PhotoRingMgr;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/photoring/PhotoRingMgr;->log(Ljava/lang/String;)V
 
@@ -216,9 +212,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/photoring/PhotoRingMgr;Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/photoring/PhotoRingMgr;->updateState(Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;Z)V
 
@@ -227,7 +220,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/photoring/PhotoRingMgr;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->photoring_chg_key:Ljava/lang/String;
 
@@ -236,8 +228,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/photoring/PhotoRingMgr;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingMgr;->photoring_chg_key:Ljava/lang/String;
 
@@ -246,7 +236,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/photoring/PhotoRingMgr;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->photoring_svc_type:Ljava/lang/String;
 
@@ -255,8 +244,6 @@
 
 .method static synthetic access$402(Lcom/android/phone/photoring/PhotoRingMgr;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingMgr;->photoring_svc_type:Ljava/lang/String;
 
@@ -265,7 +252,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/photoring/PhotoRingMgr;)Lcom/android/phone/PhoneGlobals;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -274,7 +260,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/photoring/PhotoRingMgr;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->photoring_rcv_num:Ljava/lang/String;
 
@@ -283,7 +268,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/photoring/PhotoRingMgr;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
 
     iget-boolean v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mIncomingCallContentDownloadStarted:Z
 
@@ -292,8 +276,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/photoring/PhotoRingMgr;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mIncomingCallContentDownloadStarted:Z
 
@@ -302,7 +284,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/photoring/PhotoRingMgr;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mcid_chg_key:Ljava/lang/String;
 
@@ -311,8 +292,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/photoring/PhotoRingMgr;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/photoring/PhotoRingMgr;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mcid_chg_key:Ljava/lang/String;
 
@@ -321,7 +300,6 @@
 
 .method private englog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/phone/photoring/PhotoRingMgr;->DBG:Z
 
@@ -417,7 +395,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PhotoRingMgr"
 
@@ -428,7 +405,6 @@
 
 .method private readContent(Ljava/lang/String;)Landroid/net/Uri;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const-string v11, "PhotoRingMgr"
 
@@ -701,8 +677,6 @@
 
 .method private updateState(Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;Z)V
     .locals 6
-    .param p1    # Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
-    .param p2    # Z
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -963,7 +937,6 @@
 # virtual methods
 .method public checkMCID(Lcom/android/internal/telephony/Connection;)V
     .locals 22
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const-string v19, "ims_support_multimedia_caller_id"
 
@@ -1467,7 +1440,6 @@
 
 .method public deleteContentFile(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -1510,7 +1482,6 @@
 
 .method public deregisterCallMessageNetworkListener(Lcom/android/phone/photoring/ICallMessageNetworkListener;)V
     .locals 1
-    .param p1    # Lcom/android/phone/photoring/ICallMessageNetworkListener;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -1526,8 +1497,6 @@
 
 .method public downloadContent(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -1565,7 +1534,6 @@
 
 .method public getCallMessageCall(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -1596,9 +1564,6 @@
 
 .method public getCallMessageChgCall(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -1629,7 +1594,6 @@
 
 .method public getNumberFromIntent(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "getInitialListFromIntent - enter"
 
@@ -1700,7 +1664,6 @@
 
 .method public registerCallMessageNetworkListener(Lcom/android/phone/photoring/ICallMessageNetworkListener;)V
     .locals 1
-    .param p1    # Lcom/android/phone/photoring/ICallMessageNetworkListener;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -1728,9 +1691,6 @@
 
 .method public setRealtimeServiceInfoCall(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 
@@ -1746,8 +1706,6 @@
 
 .method public updateMcidIntentForCallState(Lcom/android/internal/telephony/CallManager;Lcom/android/internal/telephony/Connection;)V
     .locals 20
-    .param p1    # Lcom/android/internal/telephony/CallManager;
-    .param p2    # Lcom/android/internal/telephony/Connection;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/internal/telephony/CallManager;->getActiveFgCall()Lcom/android/internal/telephony/Call;
 
@@ -2190,7 +2148,6 @@
 
 .method public uploadContentCall(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/photoring/PhotoRingMgr;->mCallmessageNetwork:Lcom/android/phone/photoring/CallMessageNetwork;
 

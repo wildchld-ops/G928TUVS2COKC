@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/telephony/Connection;Landroid/telecom/ConferenceParticipant;)V
     .locals 2
-    .param p1    # Lcom/android/internal/telephony/Connection;
-    .param p2    # Landroid/telecom/ConferenceParticipant;
 
     const/4 v1, 0x1
 
@@ -148,7 +146,6 @@
 
 .method public updateState(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "updateState endPoint: %s state: %s"
 

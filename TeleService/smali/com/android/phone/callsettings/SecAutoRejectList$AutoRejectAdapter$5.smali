@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter$5;->this$1:Lcom/android/phone/callsettings/SecAutoRejectList$AutoRejectAdapter;
 

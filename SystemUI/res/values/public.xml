@@ -3344,6 +3344,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_08b0" id="0x7f0208b0" />
     <public type="drawable" name="APKTOOL_DUMMY_08b1" id="0x7f0208b1" />
     <public type="drawable" name="APKTOOL_DUMMY_08b2" id="0x7f0208b2" />
+    <public type="drawable" name="APKTOOL_DUMMY_0cb6" id="0x7f020cb6" />
     <public type="mipmap" name="ic_daydreams" id="0x7f030000" />
     <public type="mipmap" name="ic_launcher_dreams" id="0x7f030001" />
     <public type="layout" name="abnormal_charging" id="0x7f040000" />

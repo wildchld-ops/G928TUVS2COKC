@@ -569,4 +569,5 @@
     <item type="drawable" name="APKTOOL_DUMMY_08b0">false</item>
     <item type="drawable" name="APKTOOL_DUMMY_08b1">false</item>
     <item type="drawable" name="APKTOOL_DUMMY_08b2">false</item>
+    <item type="drawable" name="APKTOOL_DUMMY_0cb6">false</item>
 </resources>

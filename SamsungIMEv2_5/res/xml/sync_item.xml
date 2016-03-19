@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync_items>
+    <sync_item name="KEYBOARD_USER_DATA" client_impl_class="com.sec.android.inputmethod.scloudsync.SipSyncClientImpl" />
+</sync_items>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/onehand_qwerty_8_8_8_7_6_key_width" android:keyHeight="@dimen/onehand_qwerty_8_8_8_7_6_key_height" android:horizontalGap="@dimen/onehand_qwerty_8_8_8_7_6_key_horizontal_gap" android:verticalGap="@dimen/onehand_qwerty_8_8_8_7_6_key_vertical_gap" android:paddingLeft="@dimen/onehand_qwerty_default_row2_padding_left" android:paddingRight="@dimen/onehand_qwerty_default_padding_right" android:paddingTop="@dimen/onehand_qwerty_default_padding_top"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:paddingLeft="@dimen/onehand_qwerty_8_8_8_7_6_row0_padding_left">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-500" android:keyLabel="◌–|" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2949" android:keyLabel="அ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2950" android:keyLabel="ஆ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2951" android:keyLabel="இ" />
+        <Key android:codes="2965" android:keyLabel="க" />
+        <Key android:codes="2969" android:keyLabel="ங" />
+        <Key android:codes="2970" android:keyLabel="ச" />
+        <Key android:codes="2974" android:keyEdgeFlags="right" android:keyLabel="ஞ" />
+    </Row>
+    <Row android:paddingLeft="@dimen/onehand_qwerty_8_8_8_7_6_row0_padding_left">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2952" android:keyLabel="ஈ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2953" android:keyLabel="உ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2954" android:keyLabel="ஊ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2958" android:keyLabel="எ" />
+        <Key android:codes="2975" android:keyLabel="ட" />
+        <Key android:codes="2979" android:keyLabel="ண" />
+        <Key android:codes="2980" android:keyLabel="த" />
+        <Key android:codes="2984" android:keyLabel="ந" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_8_8_8_7_6_key_width_function" android:horizontalGap="@dimen/onehand_qwerty_default_horizontal_gap_function_key" android:property="tablet" android:codes="-1003" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/onehand_qwerty_8_8_8_7_6_row0_padding_left">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2959" android:keyLabel="ஏ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2960" android:keyLabel="ஐ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2962" android:keyLabel="ஒ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2963" android:keyLabel="ஓ" />
+        <Key android:codes="2986" android:keyLabel="ப" />
+        <Key android:codes="2990" android:keyLabel="ம" />
+        <Key android:codes="2991" android:keyLabel="ய" />
+        <Key android:codes="2992" android:keyLabel="ர" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_8_8_8_7_6_key_width_function" android:horizontalGap="@dimen/onehand_qwerty_default_horizontal_gap_function_key" android:property="tablet" android:codes="-5" />
+    </Row>
+    <Row android:paddingLeft="@dimen/onehand_qwerty_8_8_8_7_6_row3_padding_left">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="2964" android:keyLabel="ஔ" />
+        <Key android:codes="2994" android:keyLabel="ல" />
+        <Key android:codes="2997" android:keyLabel="வ" />
+        <Key android:codes="2996" android:keyLabel="ழ" />
+        <Key android:codes="2995" android:keyLabel="ள" />
+        <Key android:codes="2993" android:keyLabel="ற" />
+        <Key android:codes="2985" android:keyLabel="ன" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_8_8_8_7_6_key_width_function" android:horizontalGap="@dimen/onehand_qwerty_8_8_8_7_6_horizontal_gap_left_of_enter_key" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:paddingLeft="@dimen/onehand_qwerty_8_8_8_7_6_row4_padding_left">
+        <Key android:keyWidth="@dimen/onehand_qwerty_8_8_8_7_6_key_width_shift_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_shift_xml" android:property="tablet" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/onehand_qwerty_default_horizontal_gap_function_key" android:codes="2972" android:keyLabel="ஜ" />
+        <Key android:codes="2999" android:keyLabel="ஷ" />
+        <Key android:codes="3000" android:keyLabel="ஸ" />
+        <Key android:codes="3001" android:keyLabel="ஹ" />
+        <Key android:codes="2965,3021,2999" android:keyLabel="க்ஷ" />
+        <Key android:codes="3000,3021,2992,3008" android:keyLabel="ஸ்ரீ" />
+        <Key android:property="phone" android:codes="2947" android:keyLabel="ஃ" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_delete_xml" />
+        <Key android:property="tablet" android:codes="-124" android:keyIcon="@drawable/textinput_qwerty_ic_exclamation_01_xml" />
+        <Key android:property="tablet" android:codes="-122" android:keyIcon="@drawable/textinput_qwerty_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_8_8_8_7_6_key_width_shift_right" android:horizontalGap="@dimen/onehand_qwerty_default_horizontal_gap_function_key" android:property="tablet" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/onehand_qwerty_10_10_10_10_8_row4_vertical_gap">
+        <Key android:keyWidth="0.0px" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/onehand_qwerty_row_bottom_5row" />
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/onehand_qwerty_default_padding_bottom">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

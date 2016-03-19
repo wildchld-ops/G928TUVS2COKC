@@ -91,7 +91,6 @@
 
 .method private dismissDialogSafely(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TimeConsumingPreferenceActivity"
 
@@ -203,7 +202,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v0, 0x0
 
@@ -220,7 +218,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0x64
 
@@ -451,8 +448,6 @@
 
 .method public onError(Landroid/preference/Preference;I)V
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -526,8 +521,6 @@
 
 .method public onException(Landroid/preference/Preference;Lcom/android/internal/telephony/CommandException;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Lcom/android/internal/telephony/CommandException;
 
     const/4 v2, 0x0
 
@@ -580,8 +573,6 @@
 
 .method public onFinished(Landroid/preference/Preference;Z)V
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -703,8 +694,6 @@
 
 .method public onStarted(Landroid/preference/Preference;Z)V
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -793,7 +782,6 @@
 
 .method protected showDialog(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 

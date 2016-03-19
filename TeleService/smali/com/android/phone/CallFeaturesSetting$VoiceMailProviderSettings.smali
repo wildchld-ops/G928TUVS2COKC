@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/CallFeaturesSetting;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v3, 0x1
 
@@ -122,8 +119,6 @@
 
 .method public constructor <init>(Lcom/android/phone/CallFeaturesSetting;Ljava/lang/String;[Lcom/android/internal/telephony/CallForwardInfo;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Lcom/android/internal/telephony/CallForwardInfo;
 
     iput-object p1, p0, Lcom/android/phone/CallFeaturesSetting$VoiceMailProviderSettings;->this$0:Lcom/android/phone/CallFeaturesSetting;
 
@@ -138,8 +133,6 @@
 
 .method private forwardingSettingsEqual([Lcom/android/internal/telephony/CallForwardInfo;[Lcom/android/internal/telephony/CallForwardInfo;)Z
     .locals 7
-    .param p1    # [Lcom/android/internal/telephony/CallForwardInfo;
-    .param p2    # [Lcom/android/internal/telephony/CallForwardInfo;
 
     const/4 v3, 0x1
 
@@ -244,7 +237,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

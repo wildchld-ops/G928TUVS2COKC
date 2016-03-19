@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ime.implement.view.toolbar.ToolBarInputModePopupView android:gravity="center_horizontal" android:id="@id/keyboard_set_popup_window" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/keyboard_set_popup_table" android:paddingLeft="@dimen/toolbar_input_mode_popup_table_padding_left" android:paddingTop="@dimen/toolbar_input_mode_popup_table_padding_top" android:paddingRight="@dimen/toolbar_input_mode_popup_table_padding_right" android:paddingBottom="@dimen/toolbar_input_mode_popup_table_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@id/keyboard_set_popup_table_row_zero" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TableRow android:id="@id/keyboard_set_popup_table_row_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/toolbar_input_mode_popup_talberow_vertical_margin" />
+        <TableRow android:id="@id/keyboard_set_popup_table_row_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/toolbar_input_mode_popup_talberow_vertical_margin" />
+        <TableRow android:id="@id/keyboard_set_popup_table_row_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/toolbar_input_mode_popup_talberow_vertical_margin" />
+    </TableLayout>
+    <ImageView android:id="@id/keyboard_set_popup_pointer_up" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_keypad_separate_triangle_arrow_01_up" android:layout_alignParentTop="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/keyboard_set_popup_pointer_down" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_keypad_separate_triangle_arrow_01_down" android:layout_alignBottom="@id/keyboard_set_popup_table" android:contentDescription="@null" />
+</com.ime.implement.view.toolbar.ToolBarInputModePopupView>

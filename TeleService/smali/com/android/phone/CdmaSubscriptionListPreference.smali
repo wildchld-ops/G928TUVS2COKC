@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -32,8 +31,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -58,7 +55,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CdmaSubscriptionListPreference;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaSubscriptionListPreference;
 
     iget-object v0, p0, Lcom/android/phone/CdmaSubscriptionListPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -67,8 +63,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/CdmaSubscriptionListPreference;Lcom/android/internal/telephony/Phone;)Lcom/android/internal/telephony/Phone;
     .locals 0
-    .param p0    # Lcom/android/phone/CdmaSubscriptionListPreference;
-    .param p1    # Lcom/android/internal/telephony/Phone;
 
     iput-object p1, p0, Lcom/android/phone/CdmaSubscriptionListPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -109,7 +103,6 @@
 # virtual methods
 .method protected onDialogClosed(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
@@ -193,7 +186,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/android/phone/CdmaSubscriptionListPreference;->setCurrentCdmaSubscriptionModeValue()V
 

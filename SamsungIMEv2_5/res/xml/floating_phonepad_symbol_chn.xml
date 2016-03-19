@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_phonepad_sym_default_key_width" android:keyHeight="@dimen/floating_phonepad_default_key_height" android:horizontalGap="@dimen/floating_phonepad_sym_default_key_horizontal_gap" android:verticalGap="@dimen/floating_phonepad_default_key_vertical_gap" android:paddingLeft="@dimen/floating_phonepad_first_col_horizontal_gap" android:paddingRight="@dimen/floating_phonepad_first_col_horizontal_gap" android:paddingTop="@dimen/floating_phonepad_first_line_vertical_gap" android:paddingBottom="@dimen/floating_phonepad_sym_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:startPosX="@dimen/floating_symbol_last_col_start_pos_x">
+        <Key android:keyWidth="@dimen/floating_phonepad_sym_function_key_width" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:startPosX="@dimen/floating_symbol_last_col_start_pos_x">
+        <Key android:keyWidth="@dimen/floating_phonepad_sym_function_key_width" android:codes="-1005" android:keyEdgeFlags="right" android:keyIcon="@drawable/page_arrow_up_xml" />
+    </Row>
+    <Row android:startPosX="@dimen/floating_symbol_last_col_start_pos_x">
+        <Key android:keyWidth="@dimen/floating_phonepad_sym_function_key_width" android:codes="-1006" android:keyEdgeFlags="right" android:keyIcon="@drawable/page_arrow_down_xml" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/floating_phonepad_sym_space_key_width" android:codes="-990" android:keyEdgeFlags="left" android:keyIcon="@drawable/floating_phonepad_key_icon_return_xml" />
+        <Key android:keyWidth="@dimen/floating_phonepad_chn_space_key_width" android:codes="32" />
+        <Key android:codes="-1114" android:keyIcon="@drawable/lock_xml" />
+        <Key android:keyWidth="@dimen/floating_phonepad_sym_function_key_width" android:codes="10" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>

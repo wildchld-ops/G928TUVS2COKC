@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/services/telephony/sip/SipAccountRegistry;Landroid/net/sip/SipProfile;)V
     .locals 0
-    .param p2    # Landroid/net/sip/SipProfile;
 
     iput-object p1, p0, Lcom/android/services/telephony/sip/SipAccountRegistry$AccountEntry;->this$0:Lcom/android/services/telephony/sip/SipAccountRegistry;
 
@@ -46,9 +45,6 @@
 
 .method startSipService(Landroid/net/sip/SipManager;Landroid/content/Context;Z)Z
     .locals 4
-    .param p1    # Landroid/net/sip/SipManager;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipAccountRegistry$AccountEntry;->mProfile:Landroid/net/sip/SipProfile;
@@ -141,7 +137,6 @@
 
 .method stopSipService(Landroid/net/sip/SipManager;)Z
     .locals 4
-    .param p1    # Landroid/net/sip/SipManager;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipAccountRegistry$AccountEntry;->mProfile:Landroid/net/sip/SipProfile;

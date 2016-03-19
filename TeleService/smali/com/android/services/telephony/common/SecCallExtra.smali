@@ -584,7 +584,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -769,8 +768,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/android/services/telephony/common/SecCallExtra$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/android/services/telephony/common/SecCallExtra$1;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/common/SecCallExtra;-><init>(Landroid/os/Parcel;)V
 
@@ -779,7 +776,6 @@
 
 .method public static createSecCallExtraBundle(Lcom/android/services/telephony/common/SecCallExtra;)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/SecCallExtra;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -794,7 +790,6 @@
 
 .method public static getSecCallExtra(Landroid/os/Bundle;)Lcom/android/services/telephony/common/SecCallExtra;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     if-nez p0, :cond_0
 
@@ -825,8 +820,6 @@
 
 .method public static setSecCallExtraToBundle(Landroid/os/Bundle;Lcom/android/services/telephony/common/SecCallExtra;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Lcom/android/services/telephony/common/SecCallExtra;
 
     if-nez p1, :cond_0
 
@@ -1090,7 +1083,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -1517,7 +1509,6 @@
 
 .method public setAliveParticipantNumber(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mGetAliveParticipantNumber:Ljava/lang/String;
 
@@ -1526,7 +1517,6 @@
 
 .method public setAutoRejectCall(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1545,7 +1535,6 @@
 
 .method public setCVOStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mCVOStatus:I
 
@@ -1554,7 +1543,6 @@
 
 .method public setCWToneSignal(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mCWToneSignal:I
 
@@ -1563,7 +1551,6 @@
 
 .method public setCdnipNumber(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mCdnipNumber:Ljava/lang/String;
 
@@ -1572,7 +1559,6 @@
 
 .method public setConfParticipant(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1593,7 +1579,6 @@
 
 .method public setDomain(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mDomain:I
 
@@ -1602,7 +1587,6 @@
 
 .method public setDowngradeCall(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1621,7 +1605,6 @@
 
 .method public setEpdgCall(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1640,7 +1623,6 @@
 
 .method public setEpdgW2L(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1659,7 +1641,6 @@
 
 .method public setFirstCallerForIMSConference(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mFirstCallerForIMSConference:Ljava/lang/String;
 
@@ -1668,7 +1649,6 @@
 
 .method public setForwardingNumber(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mForwardingNumber:Ljava/lang/String;
 
@@ -1677,7 +1657,6 @@
 
 .method public setForwardingPresentation(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mForwardingPresentation:Ljava/lang/String;
 
@@ -1686,7 +1665,6 @@
 
 .method public setHDIcon(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mHDIcon:I
 
@@ -1705,7 +1683,6 @@
 
 .method public setHoldStateOfTheOtherParty(B)V
     .locals 0
-    .param p1    # B
 
     iput-byte p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mIsHoldedByTheOtherParty:B
 
@@ -1714,7 +1691,6 @@
 
 .method public setIMSConferenceCall(B)V
     .locals 0
-    .param p1    # B
 
     iput-byte p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mIMSConferenceCall:B
 
@@ -1723,7 +1699,6 @@
 
 .method public setIMSConferenceCallParticipantCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantCount:I
 
@@ -1732,7 +1707,6 @@
 
 .method public setIMSConferenceCallParticipantCreateTime([J)V
     .locals 0
-    .param p1    # [J
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantCreateTime:[J
 
@@ -1741,7 +1715,6 @@
 
 .method public setIMSConferenceCallParticipantDuration([J)V
     .locals 0
-    .param p1    # [J
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantDuration:[J
 
@@ -1750,7 +1723,6 @@
 
 .method public setIMSConferenceCallParticipantLookupKey([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantLookupKey:[Ljava/lang/String;
 
@@ -1759,7 +1731,6 @@
 
 .method public setIMSConferenceCallParticipantName([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantName:[Ljava/lang/String;
 
@@ -1768,7 +1739,6 @@
 
 .method public setIMSConferenceCallParticipantNumber([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantNumber:[Ljava/lang/String;
 
@@ -1777,7 +1747,6 @@
 
 .method public setIMSConferenceCallParticipantPhotoUri([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantPhotoUri:[Ljava/lang/String;
 
@@ -1786,7 +1755,6 @@
 
 .method public setIMSConferenceCallParticipantStartDuration([J)V
     .locals 0
-    .param p1    # [J
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantStartDuration:[J
 
@@ -1795,7 +1763,6 @@
 
 .method public setIMSConferenceCallParticipantState([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantState:[I
 
@@ -1804,7 +1771,6 @@
 
 .method public setIMSConferenceCallParticipantStatus([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->IMSConferenceParticipantStatus:[I
 
@@ -1813,7 +1779,6 @@
 
 .method public setIMSConferenceStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1832,7 +1797,6 @@
 
 .method public setInitModifiedLogType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mInitModifiedLogType:I
 
@@ -1841,7 +1805,6 @@
 
 .method public setIsVoicePartyCall(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mIsVoicePartyCall:I
 
@@ -1850,7 +1813,6 @@
 
 .method public setIsVolteGroupCall(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mIsVolteGroupCall:I
 
@@ -1859,7 +1821,6 @@
 
 .method public setLineCtrl(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1878,7 +1839,6 @@
 
 .method public setLogServiceType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mLogSeviceType:I
 
@@ -1887,7 +1847,6 @@
 
 .method public setModifiedLogType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mModifiedLogType:I
 
@@ -1896,7 +1855,6 @@
 
 .method public setModifiedTimeMillis(J)V
     .locals 1
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mModifiedTimeMillis:J
 
@@ -1905,7 +1863,6 @@
 
 .method public setNameForIMSConference(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mNameForIMSConference:Ljava/lang/String;
 
@@ -1914,7 +1871,6 @@
 
 .method public setNumberForIMSConference(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mNumberForIMSConference:Ljava/lang/String;
 
@@ -1923,7 +1879,6 @@
 
 .method public setPhoneTypeChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mIsPhoneTypeChanged:I
 
@@ -1932,7 +1887,6 @@
 
 .method public setReceivedCall(B)V
     .locals 0
-    .param p1    # B
 
     iput-byte p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mReceivedCall:B
 
@@ -1941,7 +1895,6 @@
 
 .method public setRecordSaveFilePath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mRecordSaveFilePath:Ljava/lang/String;
 
@@ -1950,7 +1903,6 @@
 
 .method public setSessionId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mSessionId:I
 
@@ -1959,7 +1911,6 @@
 
 .method public setSubId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mSubId:I
 
@@ -1968,7 +1919,6 @@
 
 .method public setTtyType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mTtyType:I
 
@@ -1977,7 +1927,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mType:I
 
@@ -1986,7 +1935,6 @@
 
 .method public setUpdateEmerencyCallState(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2005,7 +1953,6 @@
 
 .method public setVideoResolution(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/SecCallExtra;->mVideoResolution:I
 
@@ -2014,7 +1961,6 @@
 
 .method public setVolteConference(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2033,7 +1979,6 @@
 
 .method public setWaitingCall(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2616,8 +2561,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/services/telephony/common/SecCallExtra;->mTelecomCallId:Ljava/lang/String;
 

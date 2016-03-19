@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Key android:codes="0x103" android:keyLabel="ă" />
+    <Key android:codes="0xe2" android:keyLabel="â" />
+    <Key android:codes="0xea" android:keyLabel="ê" />
+    <Key android:codes="0xf4" android:keyLabel="ô" />
+    <Key android:codes="0x1b0" android:keyLabel="ư" />
+    <Key android:codes="0x1a1" android:keyLabel="ơ" />
+</merge>

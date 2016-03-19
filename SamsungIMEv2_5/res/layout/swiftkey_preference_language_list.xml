@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_group" android:layout_width="fill_parent" android:layout_height="@dimen/language_list_preference_height" android:layout_marginStart="@dimen/language_list_left_margin" android:layout_toStartOf="@id/icon_group" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:id="@id/langauge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <ProgressBar android:id="@id/progress" android:paddingTop="@dimen/language_list_progressbar_topmargin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/language_list_progressbar_rightmargin" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <TableLayout android:gravity="center_vertical" android:id="@id/icon_group" android:layout_width="wrap_content" android:layout_height="@dimen/language_list_button_table_height" android:shrinkColumns="*" android:layout_marginEnd="@dimen/language_list_right_margin" android:layout_alignParentEnd="true">
+        <TableRow>
+            <ImageView android:gravity="center" android:id="@id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/textinput_download_light_mtrl_xml" />
+            <Button android:gravity="center" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="@dimen/language_list_button_height" android:layout_marginTop="@dimen/language_list_button_top_padding" android:minHeight="@dimen/language_list_button_height" android:text="@string/cancel" android:requiresFadingEdge="none" android:textAlignment="center" android:paddingEnd="@dimen/language_list_button_padding" />
+            <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/update" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/language_list_button_height" android:minHeight="@dimen/language_list_button_height" android:text="@string/update" android:requiresFadingEdge="none" android:textAlignment="center" android:layout_marginEnd="@dimen/language_list_button_right_margin" />
+            <Switch android:id="@id/enable" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

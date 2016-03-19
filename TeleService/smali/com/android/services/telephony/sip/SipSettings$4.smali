@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Landroid/net/sip/SipProfile;Landroid/net/sip/SipProfile;)I
     .locals 2
-    .param p1    # Landroid/net/sip/SipProfile;
-    .param p2    # Landroid/net/sip/SipProfile;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings$4;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 
@@ -72,8 +70,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/sip/SipProfile;
 

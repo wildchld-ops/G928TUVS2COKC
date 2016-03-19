@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPostDialChar(C)V
     .locals 5
-    .param p1    # C
 
     iget-object v0, p0, Lcom/android/services/telephony/TelephonyConnection$2;->this$0:Lcom/android/services/telephony/TelephonyConnection;
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Key android:keyWidth="@dimen/onehand_qwerty_default_number_key_width_plus_1dp_for_align" android:codes="0x31" android:keyLabel="\ 1" />
+    <Key android:codes="0x32" android:keyLabel="\ 2" />
+    <Key android:codes="0x33" android:keyLabel="\ 3" />
+    <Key android:codes="0x34" android:keyLabel="\ 4" />
+    <Key android:codes="0x35" android:keyLabel="\ 5" />
+    <Key android:keyWidth="@dimen/onehand_qwerty_default_number_key_width_plus_1dp_for_align" android:codes="0x36" android:keyLabel="\ 6" />
+    <Key android:keyWidth="@dimen/onehand_qwerty_default_number_key_width_plus_1dp_for_align" android:codes="0x37" android:keyLabel="\ 7" />
+    <Key android:keyWidth="@dimen/onehand_qwerty_default_number_key_width_plus_1dp_for_align" android:codes="0x38" android:keyLabel="\ 8" />
+    <Key android:keyWidth="@dimen/onehand_qwerty_default_number_key_width_plus_1dp_for_align" android:codes="0x39" android:keyLabel="\ 9" />
+    <Key android:keyWidth="@dimen/onehand_qwerty_default_number_key_width_plus_1dp_for_align" android:codes="0x30" android:keyLabel="\ 0" />
+</merge>

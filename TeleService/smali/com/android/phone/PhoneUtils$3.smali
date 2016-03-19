@@ -30,7 +30,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     # getter for: Lcom/android/phone/PhoneUtils;->sUssdMsg:Ljava/lang/StringBuilder;
     invoke-static {}, Lcom/android/phone/PhoneUtils;->access$600()Ljava/lang/StringBuilder;

@@ -1,0 +1,26 @@
+version: 2.0.3
+apkFileName: SamsungIMEv2_5.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '22'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '4'
+  versionName: '4.0'
+sharedLibrary: false
+unknownFiles:
+  org/apache/commons/codec/overview.html: '8'
+  org/apache/commons/codec/package.html: '8'
+  org/apache/commons/codec/binary/package.html: '8'
+  org/apache/commons/codec/digest/package.html: '8'
+  org/apache/commons/codec/language/package.html: '8'
+  org/apache/commons/codec/net/package.html: '8'
+doNotCompress:
+- arsc
+- qmg
+- webp

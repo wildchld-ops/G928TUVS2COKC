@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/split_space_key_width" android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="32" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_qwerty_ic_language_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_normal_voice_off">
+        <Key android:keyWidth="@dimen/split_space_key_width" android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="32" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_qwerty_ic_language_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/split_space_key_width_no_voice" android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="32" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_single_language_voice_off">
+        <Key android:keyWidth="@dimen/split_space_key_width_no_voice" android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="32" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/split_space_key_width_email" android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="32" />
+        <Key android:property="tablet" android:codes="0x3b" android:keyLabel=";" />
+        <Key android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/split_space_key_width_email" android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="32" />
+        <Key android:property="tablet" android:codes="0x3a" android:keyLabel=":" />
+        <Key android:codes="-113" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_url">
+        <Key android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="47" android:keyLabel="/" />
+        <Key android:property="tablet" android:codes="0x3a" android:keyLabel=":" />
+        <Key android:codes="-113" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_qwerty_ic_language_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_indian_bottom_row_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_email">
+        <Key android:horizontalGap="@dimen/split_right_first_col_horizontal_gap" android:codes="64" android:keyLabel="\@" />
+        <Key android:property="tablet" android:codes="0x3b" android:keyLabel=";" />
+        <Key android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_qwerty_ic_language_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_left_arrow_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_qwerty_ic_right_arrow_xml" />
+    </Row>
+</merge>

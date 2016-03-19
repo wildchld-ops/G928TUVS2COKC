@@ -98,10 +98,6 @@
 
 .method private constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/phone/CallLogger;Lcom/android/phone/CallStateMonitor;Lcom/android/phone/BluetoothManager;)V
     .locals 4
-    .param p1    # Lcom/android/phone/PhoneGlobals;
-    .param p2    # Lcom/android/phone/CallLogger;
-    .param p3    # Lcom/android/phone/CallStateMonitor;
-    .param p4    # Lcom/android/phone/BluetoothManager;
 
     const/4 v2, 0x0
 
@@ -209,8 +205,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CallNotifier;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallNotifier;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/CallNotifier;->log(Ljava/lang/String;)V
 
@@ -219,7 +213,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CallNotifier;)Lcom/android/internal/telephony/CallManager;
     .locals 1
-    .param p0    # Lcom/android/phone/CallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -228,7 +221,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/CallNotifier;)Lcom/android/phone/PhoneGlobals;
     .locals 1
-    .param p0    # Lcom/android/phone/CallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier;->mApplication:Lcom/android/phone/PhoneGlobals;
 
@@ -237,7 +229,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/CallNotifier;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/phone/CallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier;->mAudioManager:Landroid/media/AudioManager;
 
@@ -254,7 +245,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/CallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallNotifier;
 
     invoke-direct {p0}, Lcom/android/phone/CallNotifier;->resetAudioStateAfterDisconnect()V
 
@@ -263,7 +253,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/CallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CallNotifier;
 
     invoke-direct {p0}, Lcom/android/phone/CallNotifier;->createSignalInfoToneGenerator()V
 
@@ -272,7 +261,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/CallNotifier;)Landroid/media/ToneGenerator;
     .locals 1
-    .param p0    # Lcom/android/phone/CallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier;->mSignalInfoToneGenerator:Landroid/media/ToneGenerator;
 
@@ -281,7 +269,6 @@
 
 .method private containsSubId(Ljava/util/List;I)Z
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -410,7 +397,6 @@
 
 .method private ignoreAllIncomingCalls(Lcom/android/internal/telephony/Phone;)Z
     .locals 8
-    .param p1    # Lcom/android/internal/telephony/Phone;
 
     const/4 v4, 0x1
 
@@ -570,10 +556,6 @@
 
 .method static init(Lcom/android/phone/PhoneGlobals;Lcom/android/phone/CallLogger;Lcom/android/phone/CallStateMonitor;Lcom/android/phone/BluetoothManager;)Lcom/android/phone/CallNotifier;
     .locals 4
-    .param p0    # Lcom/android/phone/PhoneGlobals;
-    .param p1    # Lcom/android/phone/CallLogger;
-    .param p2    # Lcom/android/phone/CallStateMonitor;
-    .param p3    # Lcom/android/phone/BluetoothManager;
 
     const-class v1, Lcom/android/phone/CallNotifier;
 
@@ -636,7 +618,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "CallNotifier"
 
@@ -647,7 +628,6 @@
 
 .method private onDisconnect(Landroid/os/AsyncResult;)V
     .locals 12
-    .param p1    # Landroid/os/AsyncResult;
 
     const-string v8, "enable_volte_hold_tone"
 
@@ -1016,7 +996,6 @@
 
 .method private onDisplayInfo(Landroid/os/AsyncResult;)V
     .locals 6
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v2, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -1071,7 +1050,6 @@
 
 .method private onNewRingingConnection(Landroid/os/AsyncResult;)V
     .locals 6
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v0, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -1171,7 +1149,6 @@
 
 .method private onPhoneStateChanged(Landroid/os/AsyncResult;)V
     .locals 7
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v5, 0x0
 
@@ -1324,7 +1301,6 @@
 
 .method private onSignalInfo(Landroid/os/AsyncResult;)V
     .locals 7
-    .param p1    # Landroid/os/AsyncResult;
 
     sget-boolean v5, Lcom/android/phone/PhoneGlobals;->sVoiceCapable:Z
 
@@ -1456,7 +1432,6 @@
 
 .method private onSuppServiceFailed(Landroid/os/AsyncResult;)V
     .locals 5
-    .param p1    # Landroid/os/AsyncResult;
 
     const v4, 0x7f0a01fe
 
@@ -1711,7 +1686,6 @@
 
 .method private onTtyModeReceived(Landroid/os/AsyncResult;)V
     .locals 4
-    .param p1    # Landroid/os/AsyncResult;
 
     sget-boolean v1, Lcom/android/phone/CallNotifier;->DBG:Z
 
@@ -1815,7 +1789,6 @@
 
 .method private onUnknownConnectionAppeared(Landroid/os/AsyncResult;)V
     .locals 2
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v1, p0, Lcom/android/phone/CallNotifier;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -1873,7 +1846,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 

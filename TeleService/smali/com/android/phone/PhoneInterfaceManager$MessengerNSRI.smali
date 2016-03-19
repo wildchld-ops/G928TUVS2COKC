@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/telephony/Phone;)V
     .locals 2
-    .param p1    # Lcom/android/internal/telephony/Phone;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -50,8 +49,6 @@
 
 .method static synthetic access$2102(Lcom/android/phone/PhoneInterfaceManager$MessengerNSRI;[B)[B
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneInterfaceManager$MessengerNSRI;
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/phone/PhoneInterfaceManager$MessengerNSRI;->mResult:[B
 
@@ -60,8 +57,6 @@
 
 .method static synthetic access$2202(Lcom/android/phone/PhoneInterfaceManager$MessengerNSRI;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/PhoneInterfaceManager$MessengerNSRI;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/PhoneInterfaceManager$MessengerNSRI;->mDone:Z
 
@@ -72,8 +67,6 @@
 # virtual methods
 .method declared-synchronized commonNSRIRequestProcCmd([BI)[B
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     monitor-enter p0
 

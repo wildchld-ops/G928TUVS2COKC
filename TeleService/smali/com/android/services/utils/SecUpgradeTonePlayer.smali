@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/services/utils/SecUpgradeTonePlayer;)Landroid/media/ToneGenerator;
     .locals 1
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
 
     iget-object v0, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mToneGenerator:Landroid/media/ToneGenerator;
 
@@ -67,8 +66,6 @@
 
 .method static synthetic access$002(Lcom/android/services/utils/SecUpgradeTonePlayer;Landroid/media/ToneGenerator;)Landroid/media/ToneGenerator;
     .locals 0
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
-    .param p1    # Landroid/media/ToneGenerator;
 
     iput-object p1, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mToneGenerator:Landroid/media/ToneGenerator;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/services/utils/SecUpgradeTonePlayer;)J
     .locals 2
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
 
     iget-wide v0, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mEventTime:J
 
@@ -86,8 +82,6 @@
 
 .method static synthetic access$102(Lcom/android/services/utils/SecUpgradeTonePlayer;J)J
     .locals 1
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mEventTime:J
 
@@ -96,8 +90,6 @@
 
 .method static synthetic access$202(Lcom/android/services/utils/SecUpgradeTonePlayer;I)I
     .locals 0
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mToneState:I
 
@@ -106,7 +98,6 @@
 
 .method static synthetic access$300(Lcom/android/services/utils/SecUpgradeTonePlayer;)I
     .locals 1
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
 
     iget v0, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mPlayCount:I
 
@@ -115,8 +106,6 @@
 
 .method static synthetic access$302(Lcom/android/services/utils/SecUpgradeTonePlayer;I)I
     .locals 0
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mPlayCount:I
 
@@ -125,7 +114,6 @@
 
 .method static synthetic access$308(Lcom/android/services/utils/SecUpgradeTonePlayer;)I
     .locals 2
-    .param p0    # Lcom/android/services/utils/SecUpgradeTonePlayer;
 
     iget v0, p0, Lcom/android/services/utils/SecUpgradeTonePlayer;->mPlayCount:I
 

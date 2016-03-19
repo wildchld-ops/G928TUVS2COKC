@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/ims/IMSConferenceCallActivity;Landroid/content/ContentResolver;Ljava/util/ArrayList;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity$4;->this$0:Lcom/android/phone/ims/IMSConferenceCallActivity;
 
@@ -38,9 +37,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     iget-object v1, p0, Lcom/android/phone/ims/IMSConferenceCallActivity$4;->this$0:Lcom/android/phone/ims/IMSConferenceCallActivity;
 

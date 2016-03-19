@@ -264,7 +264,6 @@
 
 .method private UpdatePreferredNetworkModeSummary(I)V
     .locals 3
-    .param p1    # I
 
     const v2, 0x7f0a0116
 
@@ -573,7 +572,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/MobileNetworkSettings;)Landroid/preference/TwoStatePreference;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mButtonDataEnabled:Landroid/preference/TwoStatePreference;
 
@@ -582,7 +580,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/MobileNetworkSettings;->log(Ljava/lang/String;)V
 
@@ -591,7 +588,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/MobileNetworkSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mButtonDun:Landroid/preference/CheckBoxPreference;
 
@@ -600,7 +596,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/MobileNetworkSettings;)Landroid/hardware/usb/UsbManager;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
@@ -609,7 +604,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/MobileNetworkSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mUsbMode:Ljava/lang/String;
 
@@ -618,8 +612,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/MobileNetworkSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/MobileNetworkSettings;->restoreUsbMode(Ljava/lang/String;)V
 
@@ -628,7 +620,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/MobileNetworkSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     invoke-direct {p0}, Lcom/android/phone/MobileNetworkSettings;->displayVolteSettingForChn()Z
 
@@ -639,7 +630,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/MobileNetworkSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mButtonPreferredDataRoamingMode:Landroid/preference/ListPreference;
 
@@ -648,8 +638,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/MobileNetworkSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/MobileNetworkSettings;->setSelectedDataRoamingMode(I)V
 
@@ -658,7 +646,6 @@
 
 .method static synthetic access$1800(Lcom/android/phone/MobileNetworkSettings;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     invoke-direct {p0}, Lcom/android/phone/MobileNetworkSettings;->updateSignalStrength()V
 
@@ -667,8 +654,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/MobileNetworkSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/MobileNetworkSettings;->UpdatePreferredNetworkModeSummary(I)V
 
@@ -677,7 +662,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/MobileNetworkSettings;)Landroid/preference/TwoStatePreference;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mButtonDataRoam:Landroid/preference/TwoStatePreference;
 
@@ -686,7 +670,6 @@
 
 .method static synthetic access$2000(Lcom/android/phone/MobileNetworkSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mButtonPreferredNetworkMode:Landroid/preference/ListPreference;
 
@@ -695,9 +678,6 @@
 
 .method static synthetic access$2100(Lcom/android/phone/MobileNetworkSettings;II)Z
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/MobileNetworkSettings;->setPreferredNetworkMode(II)Z
 
@@ -708,7 +688,6 @@
 
 .method static synthetic access$2200(Lcom/android/phone/MobileNetworkSettings;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     invoke-direct {p0}, Lcom/android/phone/MobileNetworkSettings;->setGlobalMode()V
 
@@ -717,7 +696,6 @@
 
 .method static synthetic access$2300(Lcom/android/phone/MobileNetworkSettings;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     invoke-direct {p0}, Lcom/android/phone/MobileNetworkSettings;->showGsmUmtsDialog()V
 
@@ -726,8 +704,6 @@
 
 .method static synthetic access$2400(Lcom/android/phone/MobileNetworkSettings;Landroid/telephony/ServiceState;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1}, Lcom/android/phone/MobileNetworkSettings;->roamingState(Landroid/telephony/ServiceState;)V
 
@@ -736,7 +712,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/MobileNetworkSettings;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     invoke-direct {p0}, Lcom/android/phone/MobileNetworkSettings;->updateEnterpriseDeviceManager()V
 
@@ -745,7 +720,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/MobileNetworkSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mVolteCall:Landroid/preference/CheckBoxPreference;
 
@@ -754,7 +728,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/MobileNetworkSettings;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -763,7 +736,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/MobileNetworkSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-boolean v0, p0, Lcom/android/phone/MobileNetworkSettings;->mDataClicked:Z
 
@@ -772,8 +744,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/MobileNetworkSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/MobileNetworkSettings;->mDataClicked:Z
 
@@ -782,8 +752,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/MobileNetworkSettings;Landroid/app/AlertDialog$Builder;)Landroid/app/AlertDialog$Builder;
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iput-object p1, p0, Lcom/android/phone/MobileNetworkSettings;->mDataWarningDialog:Landroid/app/AlertDialog$Builder;
 
@@ -792,8 +760,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/MobileNetworkSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/MobileNetworkSettings;->setMobileDataEnabled(Z)V
 
@@ -802,7 +768,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/MobileNetworkSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
 
     iget-boolean v0, p0, Lcom/android/phone/MobileNetworkSettings;->mOkClicked_two:Z
 
@@ -811,8 +776,6 @@
 
 .method static synthetic access$902(Lcom/android/phone/MobileNetworkSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/MobileNetworkSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/MobileNetworkSettings;->mOkClicked_two:Z
 
@@ -821,8 +784,6 @@
 
 .method private compositeSumaryMultiSim(Ljava/lang/String;I)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const v5, 0x7f0a07b2
 
@@ -873,8 +834,6 @@
 
 .method private compositeSummaryNetworkOperator(Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const v7, 0x7f0a07b2
 
@@ -1124,7 +1083,6 @@
 
 .method private createConnectionOptimizer(Landroid/preference/PreferenceScreen;)V
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v2, "connections_optimizer_key"
 
@@ -1248,8 +1206,6 @@
 
 .method private createGsmUmtsOptions(Landroid/preference/PreferenceActivity;Landroid/preference/PreferenceScreen;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceActivity;
-    .param p2    # Landroid/preference/PreferenceScreen;
 
     const-string v0, "feature_multisim"
 
@@ -1339,7 +1295,6 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "MobileNetworkSettings"
 
@@ -1498,7 +1453,6 @@
 
 .method private initMobileNetworkSettingForCtc(Landroid/preference/PreferenceScreen;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     if-nez p1, :cond_0
 
@@ -1512,7 +1466,6 @@
 
 .method private initPreference(Landroid/preference/PreferenceScreen;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v0, "feature_multisim"
 
@@ -1535,7 +1488,6 @@
 
 .method private initPreferenceForMultiSim(Landroid/preference/PreferenceScreen;)V
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const/4 v4, 0x0
 
@@ -1843,7 +1795,6 @@
 
 .method private initPreferenceForOpenVersion(Landroid/preference/PreferenceScreen;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const/4 v1, 0x1
 
@@ -1914,7 +1865,6 @@
 
 .method private isCdmaIncluded(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -1942,7 +1892,6 @@
 
 .method private isGsmIncluded(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -1978,7 +1927,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "MobileNetworkSettings"
 
@@ -1989,7 +1937,6 @@
 
 .method private menuSimplification(Landroid/preference/PreferenceScreen;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v0, "menu_simplification"
 
@@ -2095,7 +2042,6 @@
 
 .method public static neverShowVolteTipsAgain(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "MobileNetworkSettings"
 
@@ -2128,7 +2074,6 @@
 
 .method private onCreateMultiSim(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 
@@ -2625,7 +2570,6 @@
 
 .method private restoreUsbMode(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MobileNetworkSettings"
 
@@ -2844,7 +2788,6 @@
 
 .method private roamingState(Landroid/telephony/ServiceState;)V
     .locals 5
-    .param p1    # Landroid/telephony/ServiceState;
 
     const-string v2, "true"
 
@@ -2981,7 +2924,6 @@
 
 .method private setDontShowAgainDB(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3070,7 +3012,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettings;->getApplicationContext()Landroid/content/Context;
 
@@ -3091,8 +3032,6 @@
 
 .method private setPreferredNetworkMode(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -3234,7 +3173,6 @@
 
 .method private setSelectedDataRoamingMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -3481,8 +3419,6 @@
 
 .method private setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3519,7 +3455,6 @@
 
 .method private setUsbMode(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3693,7 +3628,6 @@
 
 .method public static shouldShowVolteTips(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -3768,8 +3702,6 @@
 
 .method private showRebootDialog(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -3826,9 +3758,6 @@
 
 .method private showSearchingForDialog(IILjava/lang/CharSequence;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -4687,9 +4616,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -4795,8 +4721,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -4856,7 +4780,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -4902,7 +4825,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 32
-    .param p1    # Landroid/os/Bundle;
 
     const-string v28, "onCreate:+"
 
@@ -7060,7 +6982,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/app/ProgressDialog;
 
@@ -7171,7 +7092,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettings;->mButtonDataRoam:Landroid/preference/TwoStatePreference;
 
@@ -7184,7 +7104,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -7320,8 +7239,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -7563,8 +7480,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const v12, 0x7f0a0419
 
@@ -10268,9 +10183,6 @@
 
 .method public showGlobalNetworkDialog(Ljava/lang/CharSequence;II)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -10550,9 +10462,6 @@
 
 .method public showGlobalNetworkDialog(Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "global_network_cdma_gsm_enable"
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/textinput_qwerty_cm_key_ic_clipboard" android:tint="@color/popup_pressedkey_iconcolor" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/textinput_qwerty_cm_key_ic_clipboard" android:tint="@color/popup_normalkey_iconcolor" />
+    </item>
+</animated-selector>

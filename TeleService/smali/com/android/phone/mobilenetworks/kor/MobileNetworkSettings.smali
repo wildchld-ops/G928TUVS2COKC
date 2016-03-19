@@ -121,7 +121,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)I
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mMobileNetworkStatus:I
 
@@ -130,8 +129,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mMobileNetworkStatus:I
 
@@ -140,7 +137,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mButtonNetworkStatus:Landroid/preference/ListPreference;
 
@@ -149,7 +145,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->log(Ljava/lang/String;)V
 
@@ -158,7 +153,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -167,7 +161,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Landroid/preference/TwoStatePreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mButtonDataRoam:Landroid/preference/TwoStatePreference;
 
@@ -176,7 +169,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Landroid/preference/TwoStatePreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mButtonDataEnabled:Landroid/preference/TwoStatePreference;
 
@@ -185,7 +177,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mDataNetworkDialog:Landroid/app/Dialog;
 
@@ -194,7 +185,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mButtonLTEDataRoam:Landroid/preference/CheckBoxPreference;
 
@@ -203,7 +193,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->setMobileNetwork()V
 
@@ -212,7 +201,6 @@
 
 .method private getDataWarningMessage(Z)I
     .locals 3
-    .param p1    # Z
 
     const v0, 0x7f0a0666
 
@@ -289,7 +277,6 @@
 
 .method public static isEmergencyMode(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -391,7 +378,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "MobileNetworkSettings"
 
@@ -402,7 +388,6 @@
 
 .method private menuSimplification(Landroid/preference/PreferenceScreen;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v0, "menu_simplification"
 
@@ -649,8 +634,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -668,7 +651,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -933,7 +915,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/MobileNetworkSettings;->mButtonDataRoam:Landroid/preference/TwoStatePreference;
 
@@ -950,7 +931,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1001,8 +981,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 11
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v10, 0x1
 
@@ -1163,8 +1141,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 11
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const v10, 0x1040013
 

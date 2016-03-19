@@ -44,7 +44,6 @@
 
 .method public static decrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -145,7 +144,6 @@
 
 .method public static encrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

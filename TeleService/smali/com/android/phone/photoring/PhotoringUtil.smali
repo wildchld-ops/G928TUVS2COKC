@@ -130,8 +130,6 @@
 
 .method public static DeletePhotoringImage(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -231,7 +229,6 @@
 
 .method public static convertCharacter(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -297,7 +294,6 @@
 
 .method public static final convertCharaterforKOR(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -437,7 +433,6 @@
 
 .method public static convertToMcidCallState(Lcom/android/internal/telephony/Call;)I
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Call;
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/Call;->getState()Lcom/android/internal/telephony/Call$State;
 
@@ -523,9 +518,6 @@
 
 .method public static copyFile(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -813,8 +805,6 @@
 
 .method public static createAttachMenuDialog(Landroid/content/Context;Landroid/view/View$OnClickListener;)Landroid/app/AlertDialog;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/View$OnClickListener;
 
     const v9, 0x7f100155
 
@@ -934,7 +924,6 @@
 
 .method public static getAttachIntent(I)Landroid/content/Intent;
     .locals 5
-    .param p0    # I
 
     const/high16 v4, 0x8000000
 
@@ -1108,7 +1097,6 @@
 
 .method public static getByteLength(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/photoring/PhotoringUtil;->convertCharaterforKOR(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1166,8 +1154,6 @@
 
 .method public static getImageFilePathFromUri(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -1247,7 +1233,6 @@
 
 .method public static getNewFileName(Z)Ljava/lang/String;
     .locals 3
-    .param p0    # Z
 
     new-instance v1, Ljava/text/SimpleDateFormat;
 
@@ -1348,8 +1333,6 @@
 
 .method public static getStringFromAsset(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -1446,8 +1429,6 @@
 
 .method public static getVideoFilePathFromUri(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -1527,7 +1508,6 @@
 
 .method public static isImagePath(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1572,8 +1552,6 @@
 
 .method public static isNeedProcessTrim(Landroid/content/Context;Landroid/net/Uri;)I
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1851,8 +1829,6 @@
 
 .method public static isPhotoringBlockNumber(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1985,7 +1961,6 @@
 
 .method public static modifiedBlockNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "+82"
 
@@ -2009,8 +1984,6 @@
 
 .method private static overlay(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v6, 0x0
 
@@ -2077,7 +2050,6 @@
 
 .method public static refleshAlertInfoValue(Ljava/lang/String;)Z
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -2334,9 +2306,6 @@
 
 .method public static renameFile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -2393,9 +2362,6 @@
 
 .method public static saveBitmap(Landroid/content/Context;Landroid/graphics/Bitmap;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2435,7 +2401,6 @@
 
 .method public static setB2C(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "0"
 
@@ -2462,7 +2427,6 @@
 
 .method public static setChgUrl(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/phone/photoring/PhotoringUtil;->chgUrl:Ljava/lang/String;
 
@@ -2471,7 +2435,6 @@
 
 .method public static setContentSpecFromBundle(Landroid/os/Bundle;)V
     .locals 5
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -2707,7 +2670,6 @@
 
 .method public static setContentUrl(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/phone/photoring/PhotoringUtil;->contentUrl:Ljava/lang/String;
 
@@ -2716,7 +2678,6 @@
 
 .method public static setDownloadableValue(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "0"
 
@@ -2743,7 +2704,6 @@
 
 .method public static setOutputX(I)V
     .locals 2
-    .param p0    # I
 
     if-lez p0, :cond_0
 
@@ -2769,7 +2729,6 @@
 
 .method public static setOutputY(I)V
     .locals 2
-    .param p0    # I
 
     if-lez p0, :cond_0
 
@@ -2795,7 +2754,6 @@
 
 .method public static setServicetypeValue(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "0"
 
@@ -2820,9 +2778,6 @@
 
 .method public static setVideo(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)J
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -2907,9 +2862,6 @@
 
 .method public static setVideoFromFile(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -2969,8 +2921,6 @@
 
 .method public static showToast(Landroid/content/Context;I)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v5, 0x1
 

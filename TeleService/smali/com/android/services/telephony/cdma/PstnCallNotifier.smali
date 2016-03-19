@@ -44,7 +44,6 @@
 
 .method public constructor <init>(Lcom/android/internal/telephony/PhoneProxy;)V
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/PhoneProxy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$000(Lcom/android/services/telephony/cdma/PstnCallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
 
     invoke-direct {p0}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->handlePhoneStateChanged()V
 
@@ -124,8 +122,6 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/cdma/PstnCallNotifier;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->handleNewRingingConnection(Landroid/os/AsyncResult;)V
 
@@ -134,7 +130,6 @@
 
 .method static synthetic access$200(Lcom/android/services/telephony/cdma/PstnCallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
 
     invoke-direct {p0}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->handleDisconnect()V
 
@@ -143,8 +138,6 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/cdma/PstnCallNotifier;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->handleSignalInfo(Landroid/os/AsyncResult;)V
 
@@ -153,7 +146,6 @@
 
 .method static synthetic access$400(Lcom/android/services/telephony/cdma/PstnCallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
 
     invoke-direct {p0}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->registerForNotifications()V
 
@@ -162,7 +154,6 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/cdma/PstnCallNotifier;)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
 
     invoke-direct {p0}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->createSignalInfoToneGenerator()V
 
@@ -171,7 +162,6 @@
 
 .method static synthetic access$600(Lcom/android/services/telephony/cdma/PstnCallNotifier;)Landroid/media/ToneGenerator;
     .locals 1
-    .param p0    # Lcom/android/services/telephony/cdma/PstnCallNotifier;
 
     iget-object v0, p0, Lcom/android/services/telephony/cdma/PstnCallNotifier;->mSignalInfoToneGenerator:Landroid/media/ToneGenerator;
 
@@ -268,7 +258,6 @@
 
 .method private handleNewRingingConnection(Landroid/os/AsyncResult;)V
     .locals 0
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->onNewRingingConnection(Landroid/os/AsyncResult;)V
 
@@ -285,7 +274,6 @@
 
 .method private handleSignalInfo(Landroid/os/AsyncResult;)V
     .locals 0
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/cdma/PstnCallNotifier;->onSignalInfo(Landroid/os/AsyncResult;)V
 
@@ -294,7 +282,6 @@
 
 .method private isRealIncomingCall(Lcom/android/internal/telephony/Call$State;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/Call$State;
 
     sget-object v0, Lcom/android/internal/telephony/Call$State;->INCOMING:Lcom/android/internal/telephony/Call$State;
 
@@ -395,7 +382,6 @@
 
 .method private onNewRingingConnection(Landroid/os/AsyncResult;)V
     .locals 5
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v4, 0x0
 
@@ -552,7 +538,6 @@
 
 .method private onSignalInfo(Landroid/os/AsyncResult;)V
     .locals 12
-    .param p1    # Landroid/os/AsyncResult;
 
     const/4 v11, 0x0
 

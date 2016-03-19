@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/phonepad_sym_function_key_width" android:keyHeight="@dimen/phonepad_default_key_height" android:horizontalGap="@dimen/phonepad_sym_default_key_horizontal_gap" android:verticalGap="@dimen/phonepad_default_key_vertical_gap" android:paddingLeft="@dimen/phonepad_sym_first_col_horizontal_gap" android:paddingRight="@dimen/phonepad_first_col_horizontal_gap" android:paddingTop="@dimen/phonepad_first_line_vertical_gap" android:paddingBottom="@dimen/phonepad_sym_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row>
+        <Key android:keyLabel="^_^" />
+        <Key android:keyLabel="(^_-)" />
+        <Key android:keyLabel="*^O^*" />
+        <Key android:keyLabel="＝0＝" />
+        <Key android:keyLabel="=皿=" />
+        <Key android:keyLabel="-_-#" />
+        <Key android:keyLabel="(>﹏&lt;)" />
+        <Key android:keyLabel="(╯з╰)" />
+        <Key android:keyLabel="(￣∇￣)" />
+        <Key android:keyLabel="Orz" />
+        <Key android:keyLabel="＼(^o^)／" />
+        <Key android:keyLabel="(^_^;)" />
+        <Key android:keyLabel="\@_@" />
+        <key android:keyLabel="⊙_⊙" />
+        <Key android:keyLabel="T_T" />
+        <Key android:keyLabel="( ´▽` )ﾉ" />
+        <Key android:keyLabel="Y(＾_＾)Y" />
+        <Key android:keyLabel="(-_-) zzz" />
+        <Key android:keyLabel="←_←" />
+        <Key android:keyLabel="╮(╯▽╰)╭" />
+        <Key android:keyLabel="ヽ(`Д´)ﾉ" />
+        <Key android:keyLabel="(￣Д￣)ﾉ" />
+        <Key android:keyLabel="ToT" />
+        <Key android:keyLabel="(>_&lt;)" />
+        <Key android:keyLabel="囧rz" />
+        <Key android:keyLabel="(^(エ)^)" />
+        <Key android:keyLabel="(=^･ｪ･^=)" />
+        <Key android:keyLabel="(=^･^=)" />
+        <Key android:keyLabel="└(=^‥^=)┐" />
+        <Key android:keyLabel="∪･ω･∪" />
+        <Key android:keyLabel="(￣▽￣)ノ" />
+        <Key android:keyLabel="L(^o^)」" />
+        <Key android:keyLabel="=3=" />
+        <Key android:keyLabel="(^ω^)" />
+        <Key android:keyLabel="(^ з^)" />
+        <Key android:keyLabel="~>_&lt;~" />
+        <Key android:keyLabel="-_-b" />
+        <Key android:keyLabel="(︶︹︺)" />
+        <Key android:keyLabel="(⌒∇⌒)" />
+        <Key android:keyLabel="o_O" />
+        <Key android:keyLabel="(¬_¬)ﾉ" />
+        <Key android:keyLabel="^(oo)^" />
+        <Key android:keyLabel="o(>?&lt;)o" />
+        <Key android:keyLabel="m(._.)m" />
+        <Key android:keyLabel="= =|||" />
+    </Row>
+</Keyboard>

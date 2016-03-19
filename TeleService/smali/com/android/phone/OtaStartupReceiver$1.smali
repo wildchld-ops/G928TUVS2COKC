@@ -33,7 +33,6 @@
 # virtual methods
 .method public onOtaspChanged(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/OtaStartupReceiver$1;->this$0:Lcom/android/phone/OtaStartupReceiver;
 

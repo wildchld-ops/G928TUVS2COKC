@@ -44,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/HfaService;)V
     .locals 0
-    .param p0    # Lcom/android/phone/HfaService;
 
     invoke-direct {p0}, Lcom/android/phone/HfaService;->onComplete()V
 
@@ -63,7 +62,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -84,9 +82,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "otasp_result_code_pending_intent"
 

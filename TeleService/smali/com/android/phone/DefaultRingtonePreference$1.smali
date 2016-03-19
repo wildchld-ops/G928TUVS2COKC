@@ -36,8 +36,6 @@
 # virtual methods
 .method public onResult(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x5
 

@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -142,7 +141,6 @@
 
 .method public htmlParsing(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/phone/photoring/http/HTMLElement;->Tag:Ljava/lang/String;
 

@@ -1,4 +1,4 @@
-version: 2.0.2
+version: 2.0.3
 apkFileName: Telecom.apk
 isFrameworkApk: false
 usesFramework:
@@ -14,23 +14,7 @@ versionInfo:
   versionName: 1.0.0
 sharedLibrary: false
 doNotCompress:
-- resources.arsc
-- res/drawable-xxxhdpi-v4/default_list_id_1.qmg
-- res/drawable-xxxhdpi-v4/ic_arrow_back_white_24dp.qmg
-- res/drawable-xxxhdpi-v4/ic_launcher_sip_call.qmg
-- res/drawable-xxxhdpi-v4/ic_more_vert_white_24dp.qmg
-- res/drawable-xxxhdpi-v4/lock_missedcall.qmg
-- res/drawable-xxxhdpi-v4/msg_list_id_1.qmg
-- res/drawable-xxxhdpi-v4/noti_event_icon_large_call_missed.qmg
-- res/drawable-xxxhdpi-v4/noti_list_ic_missed_call.qmg
-- res/drawable-xxxhdpi-v4/quick_panel_icon_notify_btn_call.qmg
-- res/drawable-xxxhdpi-v4/quick_panel_icon_notify_btn_message.qmg
-- res/drawable-xxxhdpi-v4/stat_notify_auto_rejected_call.qmg
-- res/drawable-xxxhdpi-v4/stat_notify_voice_input.qmg
-- res/drawable-xxxhdpi-v4/stat_sys_phone_call.qmg
-- res/mipmap-hdpi-v4/ic_launcher_phone.qmg
-- res/mipmap-mdpi-v4/ic_launcher_phone.qmg
-- res/mipmap-sw411dp-xxxhdpi-v13/ic_launcher_phone.qmg
-- res/mipmap-xhdpi-v4/ic_launcher_phone.qmg
-- res/mipmap-xxhdpi-v4/ic_launcher_phone.qmg
-- res/mipmap-xxxhdpi-v4/ic_launcher_phone.qmg
+- xml
+- dex
+- arsc
+- qmg

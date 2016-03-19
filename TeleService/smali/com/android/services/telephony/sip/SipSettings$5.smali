@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSettings$5;->this$0:Lcom/android/services/telephony/sip/SipSettings;
 

@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -37,9 +35,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const-string v4, "display_name"
 
@@ -108,7 +103,6 @@
 
 .method public convertToString(Landroid/database/Cursor;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     const-string v1, "data1"
 
@@ -141,9 +135,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     const v8, 0x109000a
 
@@ -278,7 +269,6 @@
 
 .method public runQueryOnBackgroundThread(Ljava/lang/CharSequence;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 

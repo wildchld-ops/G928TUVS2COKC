@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:id="@id/tos_xt9_living_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_swiftkey_guide_textview_margin_top" android:layout_marginBottom="@dimen/popup_swiftkey_guide_textview_margin_bottom" android:paddingStart="@dimen/popup_swiftkey_guide_textview_padding_start" android:paddingEnd="@dimen/popup_swiftkey_guide_textview_padding_end" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

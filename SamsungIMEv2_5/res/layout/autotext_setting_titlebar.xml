@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/autotext_title_checkbox_holder" android:layout_width="@dimen/action_bar_checkbox_layout_width" android:layout_height="fill_parent">
+        <CheckBox android:gravity="center|top" android:id="@id/autotext_title_checkbox" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/action_bar_checkbox_margin_top" android:checked="false" android:layout_marginStart="@dimen/action_bar_checkbox_margin" android:layout_marginEnd="@dimen/action_bar_checkbox_margin" />
+        <TextView android:textAppearance="@style/textAppearanceActionBarDeleteLanguagesAllText" android:gravity="center|top" android:id="@id/autotext_title_text" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_delete_languages_all_text_height" android:layout_marginTop="@dimen/action_bar_delete_languages_all_text_margin_top" android:layout_marginBottom="@dimen/action_bar_delete_languages_all_text_margin_bottom" android:text="@string/delete_languages_all" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/autotext_title_checkbox_text_size" android:textColor="@color/settings_actionbar_text_color" android:gravity="start|center" android:id="@id/autotext_title_checkbox_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/autotext_title_bar_selected_items" />
+</LinearLayout>

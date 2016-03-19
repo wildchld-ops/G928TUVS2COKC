@@ -50,7 +50,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/AnsweringCall;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/AnsweringCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdSwitched:Landroid/preference/SwitchPreference;
 
@@ -59,7 +58,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/AnsweringCall;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/AnsweringCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdChecked:Landroid/preference/CheckBoxPreference;
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/AnsweringCall;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/AnsweringCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnsweringExternalScreen:Landroid/preference/CheckBoxPreference;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/AnsweringCall;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/AnsweringCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeSwitched:Landroid/preference/SwitchPreference;
 
@@ -86,7 +82,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/AnsweringCall;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/AnsweringCall;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
@@ -95,7 +90,6 @@
 
 .method private broadcastAirCallAcceptChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -118,7 +112,6 @@
 
 .method private changeAirCallAccept(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -157,7 +150,6 @@
 
 .method private isAllAirMotionDisabled2014(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -218,8 +210,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "AnsweringCall"
 
@@ -742,7 +732,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const v7, 0x7f0a02c5
 
@@ -1214,7 +1203,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1257,8 +1245,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -1284,8 +1270,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
@@ -2022,8 +2006,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/NotificationMgr;Lcom/android/phone/NotificationMgr$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/NotificationMgr;
-    .param p2    # Lcom/android/phone/NotificationMgr$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/NotificationMgr$StatusBarHelper;-><init>(Lcom/android/phone/NotificationMgr;)V
 
@@ -148,7 +146,6 @@
 # virtual methods
 .method public enableNotificationAlerts(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/phone/NotificationMgr$StatusBarHelper;->mIsNotificationEnabled:Z
 

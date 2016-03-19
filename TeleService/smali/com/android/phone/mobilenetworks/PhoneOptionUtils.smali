@@ -49,8 +49,6 @@
 
 .method private static checkChinaMcc(Ljava/lang/Object;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/content/Context;
 
     instance-of v0, p0, Lcom/android/phone/CdmaOptions;
 
@@ -86,9 +84,6 @@
 
 .method public static checkCurrentMcc(Ljava/lang/Object;Landroid/content/Context;[I)Z
     .locals 11
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     const/4 v10, 0x0
 
@@ -185,9 +180,6 @@
 
 .method public static getIrNetworkSettingIntent(Ljava/lang/Object;Landroid/content/Context;I)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -236,8 +228,6 @@
 
 .method public static getOperatorSelectionExpandEnabled(Ljava/lang/Object;Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x2
 
@@ -326,10 +316,6 @@
 
 .method private static getTelephonyProperty(Ljava/lang/Object;ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/telephony/SubscriptionManager;->getSubId(I)[I
 

@@ -1590,8 +1590,8 @@ To unblock notifications from this app later, go to Settings > Sounds and notifi
     <string name="sub_screen_subhomesetting">SUB HOME SETTING</string>
     <string name="toggle_Slider_high_brightness_mode_enabled">High brightness mode enabled</string>
     <string name="toggle_Slider_high_brightness_mode_disabled">High brightness mode disabled</string>
-    <string name="date_format">E, d MMMM</string>
     <string name="quickpanel_cs_text">"ROM
 Control"</string>
     <string name="quickpanel_cs_content_description">ROM Control</string>
+    <string name="date_format">E, d MMMM</string>
 </resources>

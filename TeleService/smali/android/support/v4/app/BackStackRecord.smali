@@ -80,7 +80,6 @@
 # direct methods
 .method public constructor <init>(Landroid/support/v4/app/FragmentManagerImpl;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/FragmentManagerImpl;
 
     invoke-direct {p0}, Landroid/support/v4/app/FragmentTransaction;-><init>()V
 
@@ -99,10 +98,6 @@
 
 .method static synthetic access$000(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/support/v4/app/Fragment;)Landroid/support/v4/util/ArrayMap;
     .locals 1
-    .param p0    # Landroid/support/v4/app/BackStackRecord;
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Z
-    .param p3    # Landroid/support/v4/app/Fragment;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/support/v4/app/BackStackRecord;->mapSharedElementsIn(Landroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/support/v4/app/Fragment;)Landroid/support/v4/util/ArrayMap;
 
@@ -113,9 +108,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/util/ArrayMap;Landroid/support/v4/app/BackStackRecord$TransitionState;)V
     .locals 0
-    .param p0    # Landroid/support/v4/app/BackStackRecord;
-    .param p1    # Landroid/support/v4/util/ArrayMap;
-    .param p2    # Landroid/support/v4/app/BackStackRecord$TransitionState;
 
     invoke-direct {p0, p1, p2}, Landroid/support/v4/app/BackStackRecord;->setEpicenterIn(Landroid/support/v4/util/ArrayMap;Landroid/support/v4/app/BackStackRecord$TransitionState;)V
 
@@ -124,12 +116,6 @@
 
 .method static synthetic access$200(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLandroid/support/v4/util/ArrayMap;)V
     .locals 0
-    .param p0    # Landroid/support/v4/app/BackStackRecord;
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Landroid/support/v4/app/Fragment;
-    .param p4    # Z
-    .param p5    # Landroid/support/v4/util/ArrayMap;
 
     invoke-direct/range {p0 .. p5}, Landroid/support/v4/app/BackStackRecord;->callSharedElementEnd(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLandroid/support/v4/util/ArrayMap;)V
 
@@ -138,10 +124,6 @@
 
 .method static synthetic access$300(Landroid/support/v4/app/BackStackRecord;Landroid/support/v4/app/BackStackRecord$TransitionState;ILjava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/support/v4/app/BackStackRecord;
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/support/v4/app/BackStackRecord;->excludeHiddenFragments(Landroid/support/v4/app/BackStackRecord$TransitionState;ILjava/lang/Object;)V
 
@@ -150,7 +132,6 @@
 
 .method private beginTransition(Landroid/util/SparseArray;Landroid/util/SparseArray;Z)Landroid/support/v4/app/BackStackRecord$TransitionState;
     .locals 8
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -427,10 +408,6 @@
 
 .method private callSharedElementEnd(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLandroid/support/v4/util/ArrayMap;)V
     .locals 4
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Landroid/support/v4/app/Fragment;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -484,9 +461,6 @@
 
 .method private static captureExitingViews(Ljava/lang/Object;Landroid/support/v4/app/Fragment;Ljava/util/ArrayList;Landroid/support/v4/util/ArrayMap;Landroid/view/View;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p4    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -523,9 +497,6 @@
 
 .method private configureTransitions(ILandroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/util/SparseArray;Landroid/util/SparseArray;)Z
     .locals 38
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -902,10 +873,6 @@
 
 .method private doAddOp(ILandroid/support/v4/app/Fragment;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord;->mManager:Landroid/support/v4/app/FragmentManagerImpl;
 
@@ -1052,9 +1019,6 @@
 
 .method private excludeHiddenFragments(Landroid/support/v4/app/BackStackRecord$TransitionState;ILjava/lang/Object;)V
     .locals 4
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v2, p0, Landroid/support/v4/app/BackStackRecord;->mManager:Landroid/support/v4/app/FragmentManagerImpl;
 
@@ -1150,10 +1114,6 @@
 
 .method private excludeHiddenFragmentsAfterEnter(Landroid/view/View;Landroid/support/v4/app/BackStackRecord$TransitionState;ILjava/lang/Object;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -1180,8 +1140,6 @@
 
 .method private static getEnterTransition(Landroid/support/v4/app/Fragment;Z)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/support/v4/app/Fragment;
-    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -1214,8 +1172,6 @@
 
 .method private static getExitTransition(Landroid/support/v4/app/Fragment;Z)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/support/v4/app/Fragment;
-    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -1248,9 +1204,6 @@
 
 .method private static getSharedElementTransition(Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;Z)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/support/v4/app/Fragment;
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Z
 
     if-eqz p0, :cond_0
 
@@ -1286,9 +1239,6 @@
 
 .method private mapEnteringSharedElements(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Z)Landroid/support/v4/util/ArrayMap;
     .locals 4
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1343,9 +1293,6 @@
 
 .method private mapSharedElementsIn(Landroid/support/v4/app/BackStackRecord$TransitionState;ZLandroid/support/v4/app/Fragment;)Landroid/support/v4/util/ArrayMap;
     .locals 4
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Z
-    .param p3    # Landroid/support/v4/app/Fragment;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1404,12 +1351,6 @@
 
 .method private prepareSharedElementTransition(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/view/View;Ljava/lang/Object;Landroid/support/v4/app/Fragment;Landroid/support/v4/app/Fragment;ZLjava/util/ArrayList;)V
     .locals 10
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Landroid/view/View;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Landroid/support/v4/app/Fragment;
-    .param p5    # Landroid/support/v4/app/Fragment;
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1535,9 +1476,6 @@
 
 .method private remapSharedElements(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/app/Fragment;Z)Landroid/support/v4/util/ArrayMap;
     .locals 4
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1624,8 +1562,6 @@
 
 .method private setBackNameOverrides(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/util/ArrayMap;Z)V
     .locals 7
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1712,7 +1648,6 @@
 
 .method private setEpicenterIn(Landroid/support/v4/util/ArrayMap;Landroid/support/v4/app/BackStackRecord$TransitionState;)V
     .locals 3
-    .param p2    # Landroid/support/v4/app/BackStackRecord$TransitionState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1762,7 +1697,6 @@
 
 .method private static setFirstOut(Landroid/util/SparseArray;Landroid/support/v4/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1813,7 +1747,6 @@
 
 .method private setLastIn(Landroid/util/SparseArray;Landroid/support/v4/app/Fragment;)V
     .locals 1
-    .param p2    # Landroid/support/v4/app/Fragment;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1840,8 +1773,6 @@
 
 .method private static setNameOverride(Landroid/support/v4/util/ArrayMap;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1904,8 +1835,6 @@
 
 .method private setNameOverrides(Landroid/support/v4/app/BackStackRecord$TransitionState;Landroid/support/v4/util/ArrayMap;Z)V
     .locals 5
-    .param p1    # Landroid/support/v4/app/BackStackRecord$TransitionState;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1967,7 +1896,6 @@
 
 .method private static setNameOverrides(Landroid/support/v4/app/BackStackRecord$TransitionState;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 4
-    .param p0    # Landroid/support/v4/app/BackStackRecord$TransitionState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2022,9 +1950,6 @@
 # virtual methods
 .method public add(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -2035,7 +1960,6 @@
 
 .method addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/BackStackRecord$Op;
 
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mHead:Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -2086,7 +2010,6 @@
 
 .method public attach(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -2105,7 +2028,6 @@
 
 .method bumpBackStackNesting(I)V
     .locals 6
-    .param p1    # I
 
     iget-boolean v3, p0, Landroid/support/v4/app/BackStackRecord;->mAddToBackStack:Z
 
@@ -2441,7 +2363,6 @@
 
 .method commitInternal(Z)I
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -2534,7 +2455,6 @@
 
 .method public detach(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -2553,10 +2473,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -2567,9 +2483,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Z
 
     if-eqz p3, :cond_8
 
@@ -3069,8 +2982,6 @@
 
 .method public popFromBackStack(ZLandroid/support/v4/app/BackStackRecord$TransitionState;Landroid/util/SparseArray;Landroid/util/SparseArray;)Landroid/support/v4/app/BackStackRecord$TransitionState;
     .locals 17
-    .param p1    # Z
-    .param p2    # Landroid/support/v4/app/BackStackRecord$TransitionState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",

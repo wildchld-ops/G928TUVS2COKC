@@ -55,8 +55,6 @@
 
 .method public constructor <init>(Lcom/android/phone/callsettings/IpNumberDelete;Ljava/lang/String;Z)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpNumberDelete$DeleteItem;->this$0:Lcom/android/phone/callsettings/IpNumberDelete;
 
@@ -77,8 +75,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/callsettings/IpNumberDelete$DeleteItem;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/IpNumberDelete$DeleteItem;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/IpNumberDelete$DeleteItem;->number:Ljava/lang/String;
 
@@ -113,7 +109,6 @@
 
 .method public setChecked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/IpNumberDelete$DeleteItem;->checked:Z
 
@@ -122,8 +117,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpNumberDelete$DeleteItem;->number:Ljava/lang/String;
 

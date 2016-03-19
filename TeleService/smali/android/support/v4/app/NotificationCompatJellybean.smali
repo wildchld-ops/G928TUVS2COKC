@@ -42,13 +42,6 @@
 
 .method public static addBigPictureStyle(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Z)V
     .locals 3
-    .param p0    # Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/graphics/Bitmap;
-    .param p6    # Z
 
     new-instance v1, Landroid/app/Notification$BigPictureStyle;
 
@@ -81,11 +74,6 @@
 
 .method public static addBigTextStyle(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p0    # Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
 
     new-instance v1, Landroid/app/Notification$BigTextStyle;
 
@@ -113,10 +101,6 @@
 
 .method public static addInboxStyle(Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/util/ArrayList;)V
     .locals 5
-    .param p0    # Landroid/support/v4/app/NotificationBuilderWithBuilderAccessor;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -228,7 +212,6 @@
 
 .method public static getExtras(Landroid/app/Notification;)Landroid/os/Bundle;
     .locals 7
-    .param p0    # Landroid/app/Notification;
 
     const/4 v3, 0x0
 
@@ -382,8 +365,6 @@
 
 .method public static writeActionAndGetExtras(Landroid/app/Notification$Builder;Landroid/support/v4/app/NotificationCompatBase$Action;)Landroid/os/Bundle;
     .locals 4
-    .param p0    # Landroid/app/Notification$Builder;
-    .param p1    # Landroid/support/v4/app/NotificationCompatBase$Action;
 
     invoke-virtual {p1}, Landroid/support/v4/app/NotificationCompatBase$Action;->getIcon()I
 

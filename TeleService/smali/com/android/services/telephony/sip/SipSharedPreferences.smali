@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +32,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -197,7 +195,6 @@
 
 .method public setProfilesCount(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSharedPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -216,7 +213,6 @@
 
 .method public setReceivingCallsEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/services/telephony/sip/SipSharedPreferences;->mContext:Landroid/content/Context;
 
@@ -243,7 +239,6 @@
 
 .method public setSipCallOption(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/services/telephony/sip/SipSharedPreferences;->mContext:Landroid/content/Context;
 

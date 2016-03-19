@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/setting_category_enhanced_prediction" android:key="setting_prediction_screen_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/setting_db_update_title" android:key="setting_db_update_key" />
+    <ListPreference android:entries="@array/cloud_network_modes" android:title="@string/setting_cloud_input_title" android:key="SETTINGS_DEFAULT_CLOUD_LINK" android:summary="@string/setting_cloud_network_wlan" android:dialogTitle="@string/setting_cloud_input_title" android:entryValues="@array/cloud_network_modes_values" />
+    <SwitchPreference android:persistent="true" android:title="@string/setting_chn_eng_mixed_title" android:key="SETTINGS_DEFAULT_CHN_ENG_MIXED_INPUT" android:summaryOn="@string/setting_chn_eng_mixed_summary" android:summaryOff="@string/setting_chn_eng_mixed_summary" />
+    <SwitchPreference android:persistent="true" android:title="@string/setting_link_to_contacts_title" android:key="SETTINGS_DEFAULT_LINK_TO_CONTACTS" android:summaryOn="@string/setting_link_to_contacts_summary" android:summaryOff="@string/setting_link_to_contacts_summary" />
+    <Preference android:title="@string/setting_fuzzy_pinyin_input_title" android:key="setting_fuzzy_pinyin_input_key" />
+</PreferenceScreen>

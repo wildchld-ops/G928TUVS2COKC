@@ -39,8 +39,6 @@
 
 .method public constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/internal/telephony/Phone;)V
     .locals 2
-    .param p1    # Lcom/android/phone/PhoneGlobals;
-    .param p2    # Lcom/android/internal/telephony/Phone;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -110,8 +108,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/sec/SecCallNotifier;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/sec/SecCallNotifier;->log(Ljava/lang/String;)V
 
@@ -120,9 +116,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/sec/SecCallNotifier;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/operator/sec/SecCallNotifier;->log(Ljava/lang/String;Z)V
 
@@ -131,7 +124,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/sec/SecCallNotifier;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -140,7 +132,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/sec/SecCallNotifier;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -149,7 +140,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/sec/SecCallNotifier;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->mToneGeneratorLock:Ljava/lang/Object;
 
@@ -158,7 +148,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/sec/SecCallNotifier;)Landroid/media/ToneGenerator;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->mToneGenerator:Landroid/media/ToneGenerator;
 
@@ -167,8 +156,6 @@
 
 .method static synthetic access$502(Lcom/android/phone/operator/sec/SecCallNotifier;Landroid/media/ToneGenerator;)Landroid/media/ToneGenerator;
     .locals 0
-    .param p0    # Lcom/android/phone/operator/sec/SecCallNotifier;
-    .param p1    # Landroid/media/ToneGenerator;
 
     iput-object p1, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->mToneGenerator:Landroid/media/ToneGenerator;
 
@@ -177,7 +164,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -188,8 +174,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/sec/SecCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -578,8 +562,6 @@
 
 .method private playCallConnectTone(Landroid/content/Context;I)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -628,11 +610,6 @@
 
 .method private playMediaTone(Landroid/content/Context;ILandroid/media/MediaPlayer$OnCompletionListener;ILandroid/media/MediaPlayer$OnErrorListener;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/media/MediaPlayer$OnCompletionListener;
-    .param p4    # I
-    .param p5    # Landroid/media/MediaPlayer$OnErrorListener;
 
     new-instance v0, Landroid/media/MediaPlayer;
 
@@ -938,7 +915,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x1
 

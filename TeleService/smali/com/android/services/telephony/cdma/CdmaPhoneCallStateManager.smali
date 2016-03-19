@@ -350,7 +350,6 @@
 
 .method public setThreeWayCallOrigState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/services/telephony/cdma/CdmaPhoneCallStateManager;->mCdmaPhoneCallState:Lcom/android/phone/CdmaPhoneCallState;
 

@@ -78,7 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -129,7 +128,6 @@
 
 .method public static final ByteToInt([B)I
     .locals 2
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -271,7 +269,6 @@
 
 .method public static final IntToByte(I)[B
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x4
 
@@ -312,7 +309,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/ScrambleLib;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/ScrambleLib;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/ScrambleLib;->mContext:Landroid/content/Context;
 
@@ -321,7 +317,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/ScrambleLib;)Lcom/android/phone/callsettings/ScrambleLib$UUID;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/ScrambleLib;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/ScrambleLib;->myUUID:Lcom/android/phone/callsettings/ScrambleLib$UUID;
 
@@ -574,9 +569,6 @@
 
 .method public setScrambleData([BII)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/phone/callsettings/ScrambleLib;->mBuffer:[B
 

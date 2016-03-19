@@ -14,7 +14,6 @@
 # direct methods
 .method public static fromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     sget-object v0, Landroid/media/MediaDescription;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -27,7 +26,6 @@
 
 .method public static getDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -40,7 +38,6 @@
 
 .method public static getExtras(Ljava/lang/Object;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -53,7 +50,6 @@
 
 .method public static getIconBitmap(Ljava/lang/Object;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -66,7 +62,6 @@
 
 .method public static getIconUri(Ljava/lang/Object;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -79,7 +74,6 @@
 
 .method public static getMediaId(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -92,7 +86,6 @@
 
 .method public static getSubtitle(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -105,7 +98,6 @@
 
 .method public static getTitle(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription;
 
@@ -118,9 +110,6 @@
 
 .method public static writeToParcel(Ljava/lang/Object;Landroid/os/Parcel;I)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     check-cast p0, Landroid/media/MediaDescription;
 

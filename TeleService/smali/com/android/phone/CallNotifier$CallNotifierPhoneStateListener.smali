@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/CallNotifier;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/CallNotifier$CallNotifierPhoneStateListener;->this$0:Lcom/android/phone/CallNotifier;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onCallForwardingIndicatorChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "feature_kor"
 
@@ -90,7 +88,6 @@
 
 .method public onMessageWaitingIndicatorChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/phone/CallNotifier$CallNotifierPhoneStateListener;->this$0:Lcom/android/phone/CallNotifier;
 

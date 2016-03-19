@@ -46,8 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/MMIDialogActivity;Lcom/android/internal/telephony/MmiCode;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MMIDialogActivity;
-    .param p1    # Lcom/android/internal/telephony/MmiCode;
 
     invoke-direct {p0, p1}, Lcom/android/phone/MMIDialogActivity;->onMMIComplete(Lcom/android/internal/telephony/MmiCode;)V
 
@@ -56,7 +54,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/MMIDialogActivity;)V
     .locals 0
-    .param p0    # Lcom/android/phone/MMIDialogActivity;
 
     invoke-direct {p0}, Lcom/android/phone/MMIDialogActivity;->onMMICancel()V
 
@@ -117,7 +114,6 @@
 
 .method private onMMIComplete(Lcom/android/internal/telephony/MmiCode;)V
     .locals 5
-    .param p1    # Lcom/android/internal/telephony/MmiCode;
 
     const/4 v4, 0x0
 
@@ -251,7 +247,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 

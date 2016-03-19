@@ -56,9 +56,6 @@
 
 .method public constructor <init>(Landroid/preference/PreferenceActivity;Landroid/preference/PreferenceScreen;Lcom/android/internal/telephony/Phone;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceActivity;
-    .param p2    # Landroid/preference/PreferenceScreen;
-    .param p3    # Lcom/android/internal/telephony/Phone;
 
     const/4 v1, 0x0
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CdmaOptions;)Landroid/preference/PreferenceActivity;
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaOptions;
 
     iget-object v0, p0, Lcom/android/phone/CdmaOptions;->mPrefActivity:Landroid/preference/PreferenceActivity;
 
@@ -94,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CdmaOptions;)I
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaOptions;
 
     iget v0, p0, Lcom/android/phone/CdmaOptions;->mHomeSystemId:I
 
@@ -103,8 +98,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/CdmaOptions;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/CdmaOptions;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CdmaOptions;->mHomeSystemId:I
 
@@ -113,7 +106,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/CdmaOptions;)I
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaOptions;
 
     iget v0, p0, Lcom/android/phone/CdmaOptions;->mPrlPreferredOnly:I
 
@@ -122,8 +114,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/CdmaOptions;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/CdmaOptions;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/CdmaOptions;->mPrlPreferredOnly:I
 
@@ -132,7 +122,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/CdmaOptions;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CdmaOptions;
 
     invoke-direct {p0}, Lcom/android/phone/CdmaOptions;->checkPrlPreferredOnly()V
 
@@ -314,7 +303,6 @@
 
 .method private dunSetting(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -430,7 +418,6 @@
 
 .method protected static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CdmaOptions"
 
@@ -797,7 +784,6 @@
 
 .method public enableDUN(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x2
 
@@ -934,7 +920,6 @@
 
 .method public preferenceTreeClick(Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 
@@ -1053,7 +1038,6 @@
 
 .method public showDialog(Landroid/preference/Preference;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 
@@ -1099,7 +1083,6 @@
 
 .method public usbMode(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

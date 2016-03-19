@@ -46,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/OtaStartupReceiver;)I
     .locals 1
-    .param p0    # Lcom/android/phone/OtaStartupReceiver;
 
     iget v0, p0, Lcom/android/phone/OtaStartupReceiver;->mOtaspMode:I
 
@@ -55,8 +54,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/OtaStartupReceiver;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/OtaStartupReceiver;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/OtaStartupReceiver;->mOtaspMode:I
 
@@ -65,7 +62,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/OtaStartupReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/OtaStartupReceiver;
 
     iget-object v0, p0, Lcom/android/phone/OtaStartupReceiver;->mContext:Landroid/content/Context;
 
@@ -74,7 +70,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/OtaStartupReceiver;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/OtaStartupReceiver;
 
     iget-object v0, p0, Lcom/android/phone/OtaStartupReceiver;->mHandler:Landroid/os/Handler;
 
@@ -83,7 +78,6 @@
 
 .method private shouldPostpone(Landroid/content/Context;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -177,8 +171,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/16 v6, 0xa
 

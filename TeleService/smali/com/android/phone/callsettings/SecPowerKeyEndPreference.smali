@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/SwitchPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -39,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/SecPowerKeyEndPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/SecPowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
@@ -48,8 +44,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/callsettings/SecPowerKeyEndPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/SecPowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
@@ -58,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/SecPowerKeyEndPreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecPowerKeyEndPreference;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecPowerKeyEndPreference;->mContext:Landroid/content/Context;
 
@@ -69,7 +62,6 @@
 # virtual methods
 .method public checkProximitySeonsor(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

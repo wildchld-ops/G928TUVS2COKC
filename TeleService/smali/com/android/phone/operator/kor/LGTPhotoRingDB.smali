@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "photoring.db"
 
@@ -27,7 +26,6 @@
 
 .method private initPhotoringTemplate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v5, p0, Lcom/android/phone/operator/kor/LGTPhotoRingDB;->mcontext:Landroid/content/Context;
 
@@ -72,7 +70,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE photoring_reject_num (_id INTEGER PRIMARY KEY AUTOINCREMENT, photoring_reject_number TEXT NOT NULL,photoring_reject_checked INTEGER);"
 
@@ -93,9 +90,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x2
 

@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: com/absolute/android/persistence/MethodSpec.aidl
+SHA1-Digest: 1Q7n0BbF+GDKcpHhFi8jDWSe9D0=
+
+Name: com/absolute/android/persistence/IABTPing.aidl
+SHA1-Digest: lODzDsIt7H949ufoBMML36MO2O4=
+
+Name: com/absolute/android/persistence/IABTDownloadReceiver.aidl
+SHA1-Digest: cv46+QZEpnALX/O0RPQvVvz9zYo=
+
+Name: classes2.dex
+SHA1-Digest: Kg3dVqK2U24pAIWSG6Ko2Jaa9lc=
+
+Name: com/absolute/android/persistence/IABTPersistedFile.aidl
+SHA1-Digest: fjIHtWVi9Zb5wN8ymwcOETAo7h8=
+
+Name: com/absolute/android/persistence/IABTPersistenceLog.aidl
+SHA1-Digest: +SIy7tJQQ6cGDCPSnd8e7uy87bA=
+
+Name: classes.dex
+SHA1-Digest: x6N7Jx46M9EouHXd6jtzwKw6D+U=
+
+Name: com/absolute/android/persistence/IABTPersistence.aidl
+SHA1-Digest: QQTyXja48eQpukmZGTrIdoMRPdk=
+
+Name: com/absolute/android/persistence/LogEntry.aidl
+SHA1-Digest: B6FQj6nt1UD0A7t6WFgk+KKVdz8=
+
+Name: com/absolute/android/persistence/AppProfile.aidl
+SHA1-Digest: gB/4hZP78lTLrIsCkpSAyFMFykI=
+
+Name: com/absolute/android/persistence/MethodReturnValue.aidl
+SHA1-Digest: 4RhKKm3kwQLvm7TL7GJkORutBKo=
+
+Name: com/absolute/android/persistence/IABTLogIterator.aidl
+SHA1-Digest: w8Pjfgvko//m4z4uxvMEL4yUrvM=
+
+Name: com/absolute/android/persistence/IABTGetAppInfoReceiver.aidl
+SHA1-Digest: xPDtMzjX1vU3zZZWDcY8TRFvj4w=
+
+Name: com/absolute/android/persistence/AppInfoProperties.aidl
+SHA1-Digest: k/pWZ+r2mqT/ujBeS+AQDHgTgs0=
+
+Name: com/absolute/android/persistence/IABTResultReceiver.aidl
+SHA1-Digest: qmvhgj4V+Owft6fGdMUCDhO/9pw=
+

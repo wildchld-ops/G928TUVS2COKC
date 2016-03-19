@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:samsungime="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <item android:state_pressed="true" android:drawable="@drawable/textinput_qwerty_btn_pressed" />
+    <item android:drawable="@drawable/textinput_qwerty_btn_capslock" samsungime:state_caps="true" />
+    <item android:drawable="@drawable/textinput_qwerty_btn_option" />
+</selector>

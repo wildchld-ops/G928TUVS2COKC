@@ -69,7 +69,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/RingtoneKeytoneSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->mRingtonePreference:Landroid/preference/Preference;
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/RingtoneKeytoneSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->mRingtonePreferenceSim2:Landroid/preference/Preference;
 
@@ -87,10 +85,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/RingtoneKeytoneSettings;ILandroid/preference/Preference;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
-    .param p1    # I
-    .param p2    # Landroid/preference/Preference;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->updateRingtoneName(ILandroid/preference/Preference;I)V
 
@@ -99,7 +93,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/RingtoneKeytoneSettings;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->mMaterialVibrateWhenRinging:Landroid/preference/SwitchPreference;
 
@@ -108,7 +101,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/RingtoneKeytoneSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->mVibrateWhenRinging:Landroid/preference/CheckBoxPreference;
 
@@ -117,8 +109,6 @@
 
 .method private canSetRingtone(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -329,7 +319,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "RingtonesKeytonesSettings"
 
@@ -340,8 +329,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "RingtonesKeytonesSettings"
 
@@ -366,7 +353,6 @@
 
 .method private updateMediaDB(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 12
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x0
 
@@ -660,7 +646,6 @@
 
 .method private updateRingtoneData(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -680,9 +665,6 @@
 
 .method private updateRingtoneName(ILandroid/preference/Preference;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/preference/Preference;
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -783,8 +765,6 @@
 # virtual methods
 .method public handleRingtonePicked(Landroid/net/Uri;I)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const v6, 0x7f0a0647
 
@@ -1152,9 +1132,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, -0x1
 
@@ -1305,7 +1282,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -2074,7 +2050,6 @@
 
 .method public onMusicPickerChosen(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -2119,8 +2094,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -2208,8 +2181,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

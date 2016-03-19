@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ime.framework.view.toolbar.ToolBarPage android:textSize="@dimen/toolbar_titles_text_size" android:textColor="@color/textcolor_black" android:orientation="horizontal" android:id="@id/tool_bar_page" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

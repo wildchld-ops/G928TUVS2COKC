@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,10 +48,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

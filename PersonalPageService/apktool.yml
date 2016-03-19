@@ -1,4 +1,4 @@
-version: 2.0.2
+version: 2.0.3
 apkFileName: PersonalPageService.apk
 isFrameworkApk: false
 usesFramework:
@@ -14,13 +14,7 @@ versionInfo:
   versionName: '1.0'
 sharedLibrary: false
 doNotCompress:
-- resources.arsc
-- res/drawable-sw360dp-xxxhdpi-v13/ic_setting_grid_private_mode.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd_focus.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd_pressed_white.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_ic_pwd_white.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_line.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/private_mode_unlock_line_white.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/stat_notify_private_mode.qmg
-- res/drawable-sw360dp-xxxhdpi-v13/stat_sys_private_mode.qmg
+- xml
+- dex
+- arsc
+- qmg

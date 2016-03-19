@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/textinput_floating_keypad_handler" android:tint="@color/floating_keyboard_handler_color" />
+    </item>
+</animated-selector>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/onehand_phonepad_default_key_width" android:keyHeight="@dimen/onehand_phonepad_default_key_height" android:horizontalGap="@dimen/onehand_phonepad_default_key_horizontal_gap" android:verticalGap="@dimen/onehand_phonepad_default_key_vertical_gap" android:paddingLeft="@dimen/onehand_phonepad_first_col_horizontal_gap" android:paddingRight="@dimen/onehand_phonepad_first_col_horizontal_gap" android:paddingTop="@dimen/onehand_phonepad_first_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row>
+        <Key android:codes="3657" android:keyLabel="้" />
+        <Key android:codes="3658" android:keyLabel="๊" />
+        <Key android:codes="3659" android:keyLabel="๋" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_phonepad_ic_delete_xml" />
+    </Row>
+    <Row>
+        <Key android:codes="3660" android:keyLabel="์" />
+        <Key android:codes="3631" android:keyLabel="ฯ" />
+        <Key android:codes="3647" android:keyLabel="฿" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:codes="3654" android:keyLabel="ๆ" />
+        <Key android:codes="3661" android:keyLabel="ํ" />
+        <Key android:codes="3642" android:keyLabel="ฺ" />
+        <Key android:codes="-59" android:keyLabel="กขค" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/onehand_phonepad_half_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/onehand_phonepad_half_key_width" android:horizontalGap="@dimen/onehand_phonepad_half_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_floating_phonepad_ic_language_xml" />
+        <Key android:codes="-60" android:keyLabel="2/2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" android:keyIcon="@drawable/textinput_floating_phonepad_ic_space_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:codes="-60" android:keyLabel="2/2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" android:keyIcon="@drawable/textinput_floating_phonepad_ic_space_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:codes="-60" android:keyLabel="2/2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" android:keyIcon="@drawable/textinput_floating_phonepad_ic_space_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:codes="-60" android:keyLabel="2/2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" android:keyIcon="@drawable/textinput_floating_phonepad_ic_space_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/onehand_phonepad_half_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/onehand_phonepad_half_key_width" android:horizontalGap="@dimen/onehand_phonepad_half_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_floating_phonepad_ic_language_xml" />
+        <Key android:codes="-60" android:keyLabel="2/2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" android:keyIcon="@drawable/textinput_floating_phonepad_ic_space_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/onehand_phonepad_half_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/onehand_phonepad_half_key_width" android:horizontalGap="@dimen/onehand_phonepad_half_key_horizontal_gap" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_floating_phonepad_ic_language_xml" />
+        <Key android:codes="-60" android:keyLabel="2/2" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" android:keyIcon="@drawable/textinput_floating_phonepad_ic_space_xml" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/onehand_phonepad_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

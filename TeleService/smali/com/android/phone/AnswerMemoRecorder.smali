@@ -164,7 +164,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/AnswerMemoRecorder;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-boolean v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mIsServiceAlive:Z
 
@@ -173,7 +172,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/AnswerMemoRecorder;)Landroid/os/RegistrantList;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-object v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mStateChangedRegistrantList:Landroid/os/RegistrantList;
 
@@ -182,7 +180,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/AnswerMemoRecorder;)J
     .locals 2
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     invoke-direct {p0}, Lcom/android/phone/AnswerMemoRecorder;->getAvailableStorage()J
 
@@ -193,7 +190,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/AnswerMemoRecorder;)Lcom/android/internal/telephony/CallManager;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-object v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -202,8 +198,6 @@
 
 .method static synthetic access$1202(Lcom/android/phone/AnswerMemoRecorder;J)J
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/phone/AnswerMemoRecorder;->mStartRecordTime:J
 
@@ -212,7 +206,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/AnswerMemoRecorder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-object v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mCallerNumber:Ljava/lang/String;
 
@@ -221,8 +214,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/AnswerMemoRecorder;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/AnswerMemoRecorder;->getContactDisplayName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -233,8 +224,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/AnswerMemoRecorder;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/AnswerMemoRecorder;->log(Ljava/lang/String;)V
 
@@ -243,8 +232,6 @@
 
 .method static synthetic access$1602(Lcom/android/phone/AnswerMemoRecorder;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/AnswerMemoRecorder;->mRecordedDurationMSec:I
 
@@ -253,9 +240,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/AnswerMemoRecorder;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/AnswerMemoRecorder;->log(Ljava/lang/String;Z)V
 
@@ -264,7 +248,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/AnswerMemoRecorder;)Lcom/android/phone/PhoneGlobals;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-object v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -273,7 +256,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/AnswerMemoRecorder;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-object v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mHandler:Landroid/os/Handler;
 
@@ -282,8 +264,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/AnswerMemoRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/AnswerMemoRecorder;->mIsRecording:Z
 
@@ -292,8 +272,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/AnswerMemoRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/AnswerMemoRecorder;->mIsPaused:Z
 
@@ -302,8 +280,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/AnswerMemoRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/AnswerMemoRecorder;->mIsPreparing:Z
 
@@ -312,7 +288,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/AnswerMemoRecorder;)Lcom/sec/android/secmediarecorder/SecMediaRecorder;
     .locals 1
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
 
     iget-object v0, p0, Lcom/android/phone/AnswerMemoRecorder;->mRecorder:Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
@@ -321,8 +296,6 @@
 
 .method static synthetic access$902(Lcom/android/phone/AnswerMemoRecorder;Lcom/sec/android/secmediarecorder/SecMediaRecorder;)Lcom/sec/android/secmediarecorder/SecMediaRecorder;
     .locals 0
-    .param p0    # Lcom/android/phone/AnswerMemoRecorder;
-    .param p1    # Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
     iput-object p1, p0, Lcom/android/phone/AnswerMemoRecorder;->mRecorder:Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
@@ -385,7 +358,6 @@
 
 .method private getContactDisplayName(Ljava/lang/String;)Ljava/lang/String;
     .locals 18
-    .param p1    # Ljava/lang/String;
 
     const/4 v14, 0x0
 
@@ -635,7 +607,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "AnswerMemoRecorder"
 
@@ -646,8 +617,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "AnswerMemoRecorder"
 

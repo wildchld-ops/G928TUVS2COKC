@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -28,8 +27,6 @@
 # virtual methods
 .method public onMeasure(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 

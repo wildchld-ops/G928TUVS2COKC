@@ -36,9 +36,6 @@
 # virtual methods
 .method public onTimeSet(Landroid/widget/TimePicker;II)V
     .locals 7
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v4, 0xa
 

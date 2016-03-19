@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -96,8 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;->log(Ljava/lang/String;)V
 
@@ -106,7 +101,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "GlobalGsmUmtsSystemSelectListPreference"
 
@@ -117,8 +111,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "GlobalGsmUmtsSystemSelectListPreference"
 
@@ -131,7 +123,6 @@
 # virtual methods
 .method protected onDialogClosed(Z)V
     .locals 7
-    .param p1    # Z
 
     const v6, 0x7f0a0584
 
@@ -340,7 +331,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "ril.cdma.inecmmode"
 

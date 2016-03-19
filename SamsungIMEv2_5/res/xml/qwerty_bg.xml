@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/qwerty_11_11_9_key_width" android:keyHeight="@dimen/qwerty_default_key_height" android:horizontalGap="@dimen/qwerty_11_11_9_key_horizontal_gap" android:verticalGap="@dimen/qwerty_default_key_vertical_gap" android:paddingLeft="@dimen/qwerty_default_row2_padding_left" android:paddingRight="@dimen/qwerty_default_padding_right" android:paddingTop="@dimen/qwerty_default_padding_top" android:paddingBottom="@dimen/qwerty_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/qwerty_default_number_key_width" android:keyHeight="@dimen/qwerty_default_number_key_height" android:horizontalGap="@dimen/qwerty_default_number_key_horizontal_gap" android:paddingLeft="@dimen/qwerty_default_number_padding_left" android:paddingRight="@dimen/qwerty_default_padding_right" android:rowEdgeFlags="top">
+        <include android:keys="@xml/qwerty_default_number_row" />
+        <Key android:keyWidth="@dimen/qwerty_default_key_width_delete" android:horizontalGap="@dimen/qwerty_11_11_9_horizontal_gap_function_key" android:backgroundDrawable="@drawable/textinput_qwerty_btn_number_xml" android:property="tablet" android:codes="-1003" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_11_11_9_row0_padding_left">
+        <Key android:codes="0x2c" android:popupCharacters="ы" android:keyLabel="," />
+        <Key android:codes="1091" android:keyLabel="у" />
+        <Key android:codes="1077" android:keyLabel="е" />
+        <Key android:codes="1080" android:keyLabel="и" />
+        <Key android:codes="1096" android:keyLabel="ш" />
+        <Key android:codes="1097" android:keyLabel="щ" />
+        <Key android:codes="1082" android:keyLabel="к" />
+        <Key android:codes="1089" android:keyLabel="с" />
+        <Key android:codes="1076" android:keyLabel="д" />
+        <Key android:codes="1079" android:keyLabel="з" />
+        <Key android:codes="1094" android:keyLabel="ц" />
+        <Key android:keyWidth="@dimen/qwerty_11_11_9_key_width_backspace" android:horizontalGap="@dimen/qwerty_11_11_9_horizontal_gap_function_key" android:property="tablet" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/qwerty_11_11_9_row1_padding_left">
+        <Key android:codes="1100" android:keyLabel="ь" />
+        <Key android:codes="1103" android:keyLabel="я" />
+        <Key android:codes="1072" android:keyLabel="а" />
+        <Key android:codes="1086" android:keyLabel="о" />
+        <Key android:codes="1078" android:keyLabel="ж" />
+        <Key android:codes="1075" android:keyLabel="г" />
+        <Key android:codes="1090" android:keyLabel="т" />
+        <Key android:codes="1085" android:keyLabel="н" />
+        <Key android:codes="1074" android:keyLabel="в" />
+        <Key android:codes="1084" android:keyLabel="м" />
+        <Key android:codes="1095" android:keyLabel="ч" />
+        <Key android:keyWidth="@dimen/qwerty_11_11_9_key_width_enter" android:horizontalGap="@dimen/qwerty_11_11_9_horizontal_gap_function_key" android:property="tablet" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_11_11_9_key_width_shift_left" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:codes="1102" android:keyLabel="ю" />
+        <Key android:codes="1081" android:keyLabel="й" />
+        <Key android:codes="1098" android:keyLabel="ъ" />
+        <Key android:codes="1101" android:keyLabel="э" />
+        <Key android:codes="1092" android:keyLabel="ф" />
+        <Key android:codes="1093" android:keyLabel="х" />
+        <Key android:codes="1087" android:keyLabel="п" />
+        <Key android:codes="1088" android:keyLabel="р" />
+        <Key android:codes="1083" android:keyLabel="л" />
+        <Key android:codes="1073" android:keyLabel="б" />
+        <Key android:property="tablet" android:codes="-122" android:keyIcon="@drawable/textinput_qwerty_ic_question_01_xml" />
+        <Key android:keyWidth="@dimen/qwerty_11_11_9_key_width_shift_right" android:horizontalGap="@dimen/qwerty_11_11_9_horizontal_gap_function_key" android:property="tablet" android:codes="-410" android:keyLabel="StrEmpty" />
+    </Row>
+    <include android:rows="@xml/qwerty_row_bottom" />
+</Keyboard>

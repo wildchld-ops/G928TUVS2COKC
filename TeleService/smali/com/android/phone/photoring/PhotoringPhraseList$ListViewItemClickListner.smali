@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/photoring/PhotoringPhraseList;Ljava/util/ArrayList;Landroid/widget/ListView;)V
     .locals 0
-    .param p3    # Landroid/widget/ListView;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,9 +64,6 @@
 # virtual methods
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

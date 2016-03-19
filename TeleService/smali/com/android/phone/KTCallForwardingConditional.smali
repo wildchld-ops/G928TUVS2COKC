@@ -105,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/KTCallForwardingConditional;)I
     .locals 1
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
 
     iget v0, p0, Lcom/android/phone/KTCallForwardingConditional;->mServiceClass:I
 
@@ -114,8 +113,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/KTCallForwardingConditional;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/KTCallForwardingConditional;->mServiceClass:I
 
@@ -124,7 +121,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/KTCallForwardingConditional;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
 
     iget-boolean v0, p0, Lcom/android/phone/KTCallForwardingConditional;->mCheckedProgressDialog:Z
 
@@ -133,8 +129,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/KTCallForwardingConditional;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/KTCallForwardingConditional;->mCheckedProgressDialog:Z
 
@@ -143,8 +137,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/KTCallForwardingConditional;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/KTCallForwardingConditional;->mChecked:Z
 
@@ -153,7 +145,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/KTCallForwardingConditional;)Lcom/android/phone/KTCallForwardingConditional$MyHandler;
     .locals 1
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
 
     iget-object v0, p0, Lcom/android/phone/KTCallForwardingConditional;->mHandler:Lcom/android/phone/KTCallForwardingConditional$MyHandler;
 
@@ -162,7 +153,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/KTCallForwardingConditional;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
 
     iget-object v0, p0, Lcom/android/phone/KTCallForwardingConditional;->phone:Lcom/android/internal/telephony/Phone;
 
@@ -171,7 +161,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/KTCallForwardingConditional;)Ljava/lang/ref/WeakReference;
     .locals 1
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
 
     iget-object v0, p0, Lcom/android/phone/KTCallForwardingConditional;->mProgress:Ljava/lang/ref/WeakReference;
 
@@ -180,8 +169,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/KTCallForwardingConditional;Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
     .locals 0
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
-    .param p1    # Ljava/lang/ref/WeakReference;
 
     iput-object p1, p0, Lcom/android/phone/KTCallForwardingConditional;->mProgress:Ljava/lang/ref/WeakReference;
 
@@ -190,7 +177,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/KTCallForwardingConditional;)V
     .locals 0
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
 
     invoke-direct {p0}, Lcom/android/phone/KTCallForwardingConditional;->destoryProgressDialogFromNoResponse()V
 
@@ -199,8 +185,6 @@
 
 .method static synthetic access$802(Lcom/android/phone/KTCallForwardingConditional;Ljava/util/Timer;)Ljava/util/Timer;
     .locals 0
-    .param p0    # Lcom/android/phone/KTCallForwardingConditional;
-    .param p1    # Ljava/util/Timer;
 
     iput-object p1, p0, Lcom/android/phone/KTCallForwardingConditional;->mtimer:Ljava/util/Timer;
 
@@ -250,7 +234,6 @@
 # virtual methods
 .method handleCallForwardResult(Lcom/android/internal/telephony/CallForwardInfo;)V
     .locals 12
-    .param p1    # Lcom/android/internal/telephony/CallForwardInfo;
 
     const/16 v11, 0x8
 
@@ -662,7 +645,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "KTCallForwardingConditional"
 
@@ -693,7 +675,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -780,8 +761,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 11
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v10, 0x0
 
@@ -1014,7 +993,6 @@
 
 .method showReturnError(Ljava/lang/Throwable;)Z
     .locals 12
-    .param p1    # Ljava/lang/Throwable;
 
     const v11, 0x7f0a04ba
 

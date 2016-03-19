@@ -220,7 +220,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)Lcom/android/phone/callsettings/SecAutoRejectVideoCallList$AutoRejectAdapter;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mAutoRejectAdapter:Lcom/android/phone/callsettings/SecAutoRejectVideoCallList$AutoRejectAdapter;
 
@@ -229,7 +228,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->stopContactQuery()V
 
@@ -238,8 +236,6 @@
 
 .method static synthetic access$1002(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mFirstVisibleItem:I
 
@@ -248,8 +244,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->log(Ljava/lang/String;)V
 
@@ -258,7 +252,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mListView:Landroid/widget/ListView;
 
@@ -267,8 +260,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->deleteAutoRejectNumber(I)V
 
@@ -277,7 +268,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->makeScreen()V
 
@@ -286,9 +276,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->log(Ljava/lang/String;Z)V
 
@@ -297,7 +284,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     iget-boolean v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mIsForeground:Z
 
@@ -306,8 +292,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mUpdateScreen:Z
 
@@ -316,7 +300,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
@@ -325,7 +308,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->defaultName:Ljava/lang/String;
 
@@ -334,7 +316,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -343,8 +324,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->displayToast(Ljava/lang/String;)V
 
@@ -361,8 +340,6 @@
 
 .method private addAutoRejectNumber(Ljava/lang/String;I)J
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -484,7 +461,6 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -630,7 +606,6 @@
 
 .method private deleteAutoRejectNumber(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mContentURI:Landroid/net/Uri;
 
@@ -691,7 +666,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->mToast:Landroid/widget/Toast;
 
@@ -735,7 +709,6 @@
 
 .method private initLayout(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f10002b
 
@@ -774,7 +747,6 @@
 
 .method private isAvaliableNumber(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -816,7 +788,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SecAutoRejectVideoCallList"
 
@@ -827,8 +798,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "SecAutoRejectVideoCallList"
 
@@ -1077,10 +1046,6 @@
 
 .method private updateAutoRejectNumber(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/Integer;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -1186,17 +1151,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -1441,7 +1401,6 @@
 
 .method isUnknownNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "-1"
 
@@ -1484,9 +1443,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -1699,7 +1655,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "SecAutoRejectVideoCallList"
 
@@ -1720,7 +1675,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1851,9 +1805,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v9, 0x1
 
@@ -2201,7 +2152,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2216,10 +2166,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SecAutoRejectVideoCallList;->editBox:Landroid/widget/EditText;
 

@@ -50,7 +50,6 @@
 
 .method static synthetic access$3500(Lcom/android/phone/NetworkModePreference$10;)V
     .locals 0
-    .param p0    # Lcom/android/phone/NetworkModePreference$10;
 
     invoke-direct {p0}, Lcom/android/phone/NetworkModePreference$10;->ChangeNetworkMode()V
 
@@ -61,9 +60,6 @@
 # virtual methods
 .method public onReceive(IILcom/samsung/commonimsinterface/imscommon/IMSParameter;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/samsung/commonimsinterface/imscommon/IMSParameter;
 
     const/4 v4, 0x1
 

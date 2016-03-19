@@ -210,7 +210,6 @@
 
 .method public init(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -269,7 +268,6 @@
 
 .method public init(Lorg/json/JSONObject;)Z
     .locals 1
-    .param p1    # Lorg/json/JSONObject;
 
     if-nez p1, :cond_0
 
@@ -296,7 +294,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "JSONObjectParser"
 

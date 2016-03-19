@@ -6,7 +6,6 @@
 # direct methods
 .method public static callStateToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -78,7 +77,6 @@
 
 .method public static callTypeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -130,7 +128,6 @@
 
 .method public static phoneEventToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 

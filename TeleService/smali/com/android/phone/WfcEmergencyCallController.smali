@@ -298,7 +298,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/WfcEmergencyCallController;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -309,7 +308,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/WfcEmergencyCallController;)I
     .locals 1
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     iget v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyCallPreference:I
 
@@ -318,7 +316,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/WfcEmergencyCallController;)[B
     .locals 1
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->createRilRequestForLocalHangBeforeTimeout()[B
 
@@ -329,8 +326,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/WfcEmergencyCallController;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyCallPreference:I
 
@@ -339,7 +334,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/WfcEmergencyCallController;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mTelephony:Landroid/telephony/TelephonyManager;
 
@@ -356,7 +350,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/WfcEmergencyCallController;)V
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handleDelayedRegistration()V
 
@@ -365,8 +358,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/WfcEmergencyCallController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/phone/WfcEmergencyCallController;->handleCallDisconnect(Landroid/os/Message;)V
 
@@ -375,7 +366,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/WfcEmergencyCallController;)V
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handlePhoneStateChanged()V
 
@@ -384,7 +374,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/WfcEmergencyCallController;)V
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handleCSTimeoutForEmergency()V
 
@@ -393,7 +382,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/WfcEmergencyCallController;)V
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->placeEmergencyCallOverIMS()V
 
@@ -402,8 +390,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/WfcEmergencyCallController;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/WfcEmergencyCallController;->setFallbackMode(Z)V
 
@@ -637,7 +623,6 @@
 
 .method private handleCSDisconnect(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x3
 
@@ -827,7 +812,6 @@
 
 .method private handleCallDisconnect(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const/4 v6, 0x0
 
@@ -895,7 +879,6 @@
 
 .method private handleCornerCaseForWifiOnlyProfile(Lcom/android/internal/telephony/Call$State;)V
     .locals 5
-    .param p1    # Lcom/android/internal/telephony/Call$State;
 
     sget-object v3, Lcom/android/internal/telephony/Call$State;->IDLE:Lcom/android/internal/telephony/Call$State;
 
@@ -1274,7 +1257,6 @@
 
 .method private setFallbackMode(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x3
 
@@ -1434,8 +1416,6 @@
 
 .method public startTimerForCS(Lcom/android/internal/telephony/Phone;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Lcom/android/internal/telephony/Phone;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

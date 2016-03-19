@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Fragment;)V
     .locals 3
-    .param p1    # Landroid/app/Fragment;
 
     const/4 v0, 0x0
 
@@ -95,7 +94,6 @@
 
 .method private findItem(I)Ljava/util/HashMap;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -163,7 +161,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "RejectCallWithMsgIconModeAdapter"
 
@@ -188,7 +185,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter;->findItem(I)Ljava/util/HashMap;
 
@@ -199,7 +195,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -208,9 +203,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 23
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v19, 0x0
 
@@ -1122,7 +1114,6 @@
 
 .method public setRefreshScreenDoneListener(Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter$RefreshScreenDoneListener;)V
     .locals 0
-    .param p1    # Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter$RefreshScreenDoneListener;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter;->mRefreshDoneListener:Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter$RefreshScreenDoneListener;
 

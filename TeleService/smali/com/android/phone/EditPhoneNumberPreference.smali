@@ -107,7 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -118,8 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x1
 
@@ -269,7 +266,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/EditPhoneNumberPreference;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -278,7 +274,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/EditPhoneNumberPreference;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
@@ -287,7 +282,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/EditPhoneNumberPreference;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mParentFragment:Landroid/app/Fragment;
 
@@ -296,7 +290,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/EditPhoneNumberPreference;)I
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mPrefId:I
 
@@ -305,7 +298,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/EditPhoneNumberPreference;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mContactListIntent:Landroid/content/Intent;
 
@@ -314,8 +306,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/EditPhoneNumberPreference;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/EditPhoneNumberPreference;->displayToast(Ljava/lang/String;)V
 
@@ -324,7 +314,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/EditPhoneNumberPreference;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mParentActivity:Landroid/app/Activity;
 
@@ -333,7 +322,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/EditPhoneNumberPreference;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mDialog:Landroid/app/AlertDialog;
 
@@ -342,7 +330,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/EditPhoneNumberPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-boolean v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->isPositiveButton:Z
 
@@ -351,8 +338,6 @@
 
 .method static synthetic access$902(Lcom/android/phone/EditPhoneNumberPreference;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/EditPhoneNumberPreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mTimeSeconds:I
 
@@ -361,7 +346,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mToast:Landroid/widget/Toast;
 
@@ -525,8 +509,6 @@
 
 .method protected onAddEditTextToDialogView(Landroid/view/View;Landroid/widget/EditText;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/EditText;
 
     const/4 v0, 0x0
 
@@ -542,7 +524,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const v3, 0x7f100186
 
@@ -924,7 +905,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onBindView(Landroid/view/View;)V
 
@@ -1016,7 +996,6 @@
 
 .method public onCFtimeLayoutVisble(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mCFtimeLayout:Landroid/widget/LinearLayout;
 
@@ -1046,8 +1025,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1104,7 +1081,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1213,7 +1189,6 @@
 
 .method public onPickActivityResult(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
@@ -1251,7 +1226,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const/4 v2, 0x0
 
@@ -1295,8 +1269,6 @@
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -1321,7 +1293,6 @@
 
 .method protected persistString(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mEncodedText:Ljava/lang/String;
 
@@ -1334,7 +1305,6 @@
 
 .method public setContactPickIconActive(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mIsContactsBtn:Z
 
@@ -1343,7 +1313,6 @@
 
 .method public setDialogOnClosedListener(Lcom/android/phone/EditPhoneNumberPreference$OnDialogClosedListener;)V
     .locals 0
-    .param p1    # Lcom/android/phone/EditPhoneNumberPreference$OnDialogClosedListener;
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mDialogOnClosedListener:Lcom/android/phone/EditPhoneNumberPreference$OnDialogClosedListener;
 
@@ -1352,8 +1321,6 @@
 
 .method public setEditeBoxCFtimeKDDI(Landroid/view/View;I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/phone/EditPhoneNumberPreference;->mCFtimeSpinner:Landroid/widget/Spinner;
 
@@ -1504,8 +1471,6 @@
 
 .method protected setEnableCFPhoneNumber(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
@@ -1700,8 +1665,6 @@
 
 .method public setParentFragment(Landroid/app/Fragment;I)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mParentFragment:Landroid/app/Fragment;
 
@@ -1716,9 +1679,6 @@
 
 .method public setParentFragment(Landroid/app/Fragment;ILcom/android/phone/EditPhoneNumberPreference$GetDefaultNumberListener;)V
     .locals 0
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # Lcom/android/phone/EditPhoneNumberPreference$GetDefaultNumberListener;
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mParentFragment:Landroid/app/Fragment;
 
@@ -1731,10 +1691,6 @@
 
 .method public setParentFragment(Landroid/app/Fragment;ILcom/android/phone/EditPhoneNumberPreference$GetDefaultNumberListener;Z)V
     .locals 0
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # Lcom/android/phone/EditPhoneNumberPreference$GetDefaultNumberListener;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mParentFragment:Landroid/app/Fragment;
 
@@ -1749,9 +1705,6 @@
 
 .method public setParentFragment(Landroid/app/Fragment;IZ)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mParentFragment:Landroid/app/Fragment;
 
@@ -1768,7 +1721,6 @@
 
 .method public setPhoneNumber(Ljava/lang/String;)Lcom/android/phone/EditPhoneNumberPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mPhoneNumber:Ljava/lang/String;
 
@@ -1785,7 +1737,6 @@
 
 .method public setSummaryOn(Ljava/lang/CharSequence;)Lcom/android/phone/EditPhoneNumberPreference;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mSummaryOn:Ljava/lang/CharSequence;
 
@@ -1803,7 +1754,6 @@
 
 .method public setTimeSeconds(I)Lcom/android/phone/EditPhoneNumberPreference;
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mTimeSeconds:I
 
@@ -1902,7 +1852,6 @@
 
 .method public setToggled(Z)Lcom/android/phone/EditPhoneNumberPreference;
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mChecked:Z
 
@@ -1919,7 +1868,6 @@
 
 .method protected setValueFromString(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -2014,7 +1962,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, -0x1
 

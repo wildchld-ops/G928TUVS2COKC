@@ -318,7 +318,7 @@
 .end method
 
 .method private getDelayForDisconnect(Lcom/android/incallui/Call;)I
-    .locals 4
+    .locals 7
 
     invoke-virtual {p1}, Lcom/android/incallui/Call;->getState()I
 
@@ -344,6 +344,26 @@
     move-result v1
 
     :goto_1
+    invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/android/incallui/InCallApp;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v5, "db_call_delay"
+
+    const/16 v6, 0x1f4
+
+    invoke-static {v4, v5, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
     return v1
 
     :cond_0
@@ -362,17 +382,17 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/16 v1, 0x0
+    const/16 v1, 0x1388
 
     goto :goto_1
 
     :pswitch_0
-    const/16 v1, 0x0
+    const/16 v1, 0xc8
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v1, 0x0
+    const/16 v1, 0x7d0
 
     goto :goto_1
 

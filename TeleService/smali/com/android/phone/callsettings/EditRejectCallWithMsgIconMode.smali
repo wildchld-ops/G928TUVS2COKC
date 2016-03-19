@@ -109,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->doSave()V
 
@@ -118,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mSaveItem:Landroid/view/MenuItem;
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mPortColumnWidth:I
 
@@ -136,7 +133,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mPortHorizonSpace:I
 
@@ -145,7 +141,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mPortGridViewWidth:I
 
@@ -154,7 +149,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mPortMarginLeft:I
 
@@ -163,7 +157,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mPortMarginRight:I
 
@@ -172,7 +165,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mLandColumnWidth:I
 
@@ -181,7 +173,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mLandHorizonSpace:I
 
@@ -190,7 +181,6 @@
 
 .method static synthetic access$1700(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mLandGridViewWidth:I
 
@@ -199,7 +189,6 @@
 
 .method static synthetic access$1800(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mLandMarginLeft:I
 
@@ -208,7 +197,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mLandMarginRight:I
 
@@ -217,7 +205,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mSaveButton:Landroid/widget/Button;
 
@@ -226,7 +213,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mInputMgr:Landroid/view/inputmethod/InputMethodManager;
 
@@ -235,7 +221,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mTitleEditText:Landroid/widget/EditText;
 
@@ -244,7 +229,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mBodyEditText:Landroid/widget/EditText;
 
@@ -253,7 +237,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mImageDlg:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
 
@@ -262,8 +245,6 @@
 
 .method static synthetic access$602(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;)Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
-    .param p1    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mImageDlg:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
 
@@ -272,7 +253,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mNewIconIndex:I
 
@@ -281,8 +261,6 @@
 
 .method static synthetic access$702(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mNewIconIndex:I
 
@@ -291,7 +269,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mImageButton:Landroid/widget/ImageButton;
 
@@ -526,7 +503,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -555,7 +531,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -778,8 +753,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 9
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v8, 0x7f0a0287
 
@@ -896,9 +869,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -1125,7 +1095,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1166,7 +1135,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 11
-    .param p1    # Landroid/view/Menu;
 
     const/4 v10, 0x2
 

@@ -1,0 +1,2006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customTheme" parent="@android:style/Theme.Material">
+        <item name="android:actionBarStyle">@style/ActionBarNoIconLight</item>
+    </style>
+    <style name="customSettingsTheme" parent="@android:style/Theme.Material">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:actionBarStyle">@style/ActionBarNoIconLight</item>
+    </style>
+    <style name="ThemeActionBarNoIconLightNoLeftPadding" parent="@android:style/Theme.Material">
+        <item name="android:actionBarStyle">@style/ActionBarNoIconLightNoLeftPadding</item>
+    </style>
+    <style name="undoToastFrameImageView">
+        <item name="android:background">@drawable/tw_toast_frame_holo_dark</item>
+    </style>
+    <style name="undoActionButtonImageView">
+        <item name="android:background">@drawable/item_background_light</item>
+    </style>
+    <style name="undoToastSeperatorImageView">
+        <item name="android:background">@drawable/tw_undo_popup_line_holo_light</item>
+    </style>
+    <style name="undoBackButtonImageView">
+        <item name="android:background">@drawable/tw_undo_popup_back_holo_light</item>
+    </style>
+    <style name="PersonalizerTheme" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+    <style name="xT9WordListTextView">
+        <item name="android:textColor">@color/hwr_tutorial_text_color</item>
+    </style>
+    <style name="settingsButtonTextView">
+        <item name="android:textColor">@color/settings_button_text_color_xml</item>
+    </style>
+    <style name="settingsGetstureGuideTextView">
+        <item name="android:textColor">@color/hwr_tutorial_guide_text_color</item>
+    </style>
+    <style name="settingsGetstureGuideSubTextView">
+        <item name="android:textColor">@color/hwr_popup_guide_sub_text_color</item>
+    </style>
+    <style name="popupGetstureGuideTextView">
+        <item name="android:textColor">@color/hwr_popup_guide_text_color</item>
+    </style>
+    <style name="popupGetstureGuideSubTextView">
+        <item name="android:textColor">@color/hwr_popup_guide_sub_text_color</item>
+    </style>
+    <style name="settingsPreferenceMoreBtn">
+        <item name="android:src">@drawable/settings_preference_icon_more_xml</item>
+    </style>
+    <style name="popupPinchZoomGuideImageView">
+        <item name="android:background">@drawable/pinch_zoom_animation</item>
+    </style>
+    <style name="movingGuideImageView">
+        <item name="android:background">@drawable/moving_animation</item>
+    </style>
+    <style name="notSplitMovingGuideImageView">
+        <item name="android:background">@drawable/not_split_moving_animation</item>
+    </style>
+    <style name="Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog" />
+    <style name="KeyboardAnimationUX">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter_ux</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit_ux</item>
+    </style>
+    <style name="KeyboardAnimationGED">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter_ged</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit_ged</item>
+    </style>
+    <style name="KeyboardAnimationNone">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter_none</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit_none</item>
+    </style>
+    <style name="ExpandCandidatePopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter_expandcandidate</item>
+        <item name="android:windowExitAnimation">@anim/exit_expandcandidate</item>
+    </style>
+    <style name="ExpandCandidateGridViewAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter_expandcandidategridview</item>
+        <item name="android:windowExitAnimation">@anim/exit_expandcandidategridview</item>
+    </style>
+    <style name="OpacityAndScaleFromRightToLeft" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/rightside_umlaut_popup_appear</item>
+        <item name="android:windowExitAnimation">@anim/rightside_umlaut_popup_disappear</item>
+    </style>
+    <style name="OpacityAndScaleFromLeftToRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/leftside_umlaut_popup_appear</item>
+        <item name="android:windowExitAnimation">@anim/leftside_umlaut_popup_disappear</item>
+    </style>
+    <style name="ScaleFromLeftToRight_MultiModal" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/leftbottom_to_righttop_appear</item>
+    </style>
+    <style name="ScaleFromRightToLeft_MultiModal" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/rightbottom_to_lefttop_appear</item>
+    </style>
+    <style name="floating_keypad_show_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/floating_keyboard_slide_in_up</item>
+    </style>
+    <style name="ActionBarNoIcon" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="ActionBarNoIconLight" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="ActionBarNoIconLightNoLeftPadding" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:contentInsetStart">0.0dip</item>
+    </style>
+    <style name="PopupItemDropDownStyle" parent="@android:attr/dropDownItemStyle">
+        <item name="android:textSize">@dimen/popup_delete_select_all_text_size</item>
+        <item name="android:textColor">@color/hwr_popup_guide_text_color</item>
+    </style>
+    <style name="KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/qwerty_default_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_default_padding_right</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.ashoka" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_10_10_10_10_8_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_10_10_10_10_8_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_10_10_10_10_8_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/qwerty_10_10_10_10_8_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_10_10_10_10_8_row0_padding_left</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.ashoka.tamil" parent="@style/KeyboardTheme.ashoka">
+        <item name="android:keyWidth">@dimen/qwerty_8_8_8_7_6_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_8_8_8_7_6_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_8_8_8_7_6_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_8_8_8_7_6_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/qwerty_8_8_8_7_6_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_8_8_8_7_6_row0_padding_left</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.10_10_10_7" parent="@style/KeyboardTheme">
+        <item name="android:keyHeight">@dimen/qwerty_10_10_10_10_8_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_10_10_10_10_8_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.10_9_8" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_10_9_8_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_10_9_8_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_10_9_8_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.11_10_7" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_11_10_7_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_11_10_7_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_11_10_7_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_11_10_7_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.11_10_8" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_11_10_8_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_11_10_8_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_11_10_8_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_11_10_8_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.11_11_7" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_11_11_7_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_11_11_7_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_11_11_7_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_11_11_7_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.11_11_9" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_11_11_9_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_11_11_9_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_11_11_9_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_11_11_9_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.11_11_10" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_11_11_10_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_11_11_10_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_default_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_default_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.8_10_9" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_8_10_9_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_default_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_default_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.10_10_7" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+    </style>
+    <style name="KeyboardTheme.12_11_7" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_12_11_7_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_12_11_7_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_12_11_7_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_12_11_7_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.12_11_8" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_12_11_8_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_12_11_8_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_12_11_8_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_12_11_8_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.12_11_10" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_12_11_10_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_12_11_10_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_12_11_10_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_12_11_10_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.12_12_10" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_12_12_10_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_12_12_10_key_horizontal_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_12_12_10_row0_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_12_12_10_row0_padding_left</item>
+    </style>
+    <style name="KeyboardTheme.9_10_9_7" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_9_10_9_7_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.11_11_11_7" parent="@style/KeyboardTheme.11_11_7">
+        <item name="android:keyWidth">@dimen/qwerty_11_11_11_7_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.10_10_10_8" parent="@style/KeyboardTheme.11_11_7">
+        <item name="android:keyWidth">@dimen/qwerty_10_10_10_8_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.10_10_10_7_vni" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_vietnamese_vni_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_vietnamese_vni_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="paddingBottom">@dimen/qwerty_default_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardTheme.10_12_11_9" parent="@style/KeyboardTheme.12_11_7">
+        <item name="android:keyWidth">@dimen/qwerty_10_12_11_9_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardTheme.11_12_11_10" parent="@style/KeyboardTheme.12_11_10">
+        <item name="android:keyWidth">@dimen/qwerty_11_12_11_10_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingTop">@dimen/qwerty_default_padding_top</item>
+        <item name="paddingBottom">@dimen/qwerty_default_padding_bottom</item>
+    </style>
+    <style name="KeyboardThemePhonepad">
+        <item name="android:keyWidth">@dimen/phonepad_default_key_width</item>
+        <item name="android:keyHeight">@dimen/phonepad_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/phonepad_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/phonepad_default_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/phonepad_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/phonepad_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/phonepad_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/phonepad_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardThemePhonepad.floating" parent="@style/KeyboardThemePhonepad">
+        <item name="android:keyWidth">@dimen/floating_phonepad_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_phonepad_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_phonepad_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_phonepad_default_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/floating_phonepad_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_phonepad_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/floating_phonepad_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/floating_phonepad_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardThemePhonepadChunjiin">
+        <item name="android:keyWidth">@dimen/phonepad_default_key_width</item>
+        <item name="android:keyHeight">@dimen/phonepad_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/phonepad_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/phonepad_default_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/phonepad_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/phonepad_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/phonepad_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/phonepad_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardThemePhonepadChunjiin.floating" parent="@style/KeyboardThemePhonepadChunjiin">
+        <item name="android:keyWidth">@dimen/floating_korean_cji_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_korean_cji_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_korean_cji_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_korean_cji_default_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/floating_korean_cji_first_last_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_korean_cji_first_last_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/floating_korean_cji_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/floating_korean_cji_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardThemePhonepadSymbol" parent="@style/KeyboardThemePhonepad">
+        <item name="android:keyWidth">@fraction/phonepad_default_symbol_keyWidth</item>
+        <item name="android:horizontalGap">@fraction/phonepad_default_symbol_key_horizontalGap</item>
+    </style>
+    <style name="KeyboardThemeYearDateTime">
+        <item name="android:keyWidth">@dimen/month_key_width</item>
+        <item name="android:keyHeight">@dimen/month_key_height</item>
+        <item name="android:horizontalGap">@dimen/month_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/month_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/month_side_horizontalgap</item>
+        <item name="paddingRight">@dimen/month_side_horizontalgap</item>
+        <item name="paddingTop">@dimen/month_first_verticalgap</item>
+        <item name="paddingBottom">@dimen/month_last_verticalgap</item>
+    </style>
+    <style name="KeyboardThemeYearDateTime.floating" parent="@style/KeyboardThemeYearDateTime">
+        <item name="android:keyWidth">@dimen/floating_month_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_month_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_month_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_month_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/floating_month_key_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_month_key_horizontal_gap</item>
+        <item name="paddingTop">@dimen/floating_month_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/floating_month_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardThemeChinesePinyin" parent="@style/KeyboardThemePhonepad">
+        <item name="android:keyWidth">@dimen/phonepad_chinese_key_width</item>
+        <item name="android:horizontalGap">@dimen/phonepad_chinese_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardThemeChinesePinyin.floating" parent="@style/KeyboardThemePhonepad.floating">
+        <item name="android:keyWidth">@dimen/floating_phonepad_chinese_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_phonepad_chinese_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardThemePhonepadJapanese">
+        <item name="android:keyWidth">@dimen/phonepad_japanese_key_width</item>
+        <item name="android:keyHeight">@dimen/phonepad_japanese_key_height</item>
+        <item name="android:horizontalGap">@dimen/phonepad_japanese_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/phonepad_japanese_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/phonepad_japanese_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/phonepad_japanese_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/phonepad_japanese_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/phonepad_japanese_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardThemePhonepadJapanese.floating" parent="@style/KeyboardThemePhonepadJapanese">
+        <item name="android:keyWidth">@dimen/floating_phonepad_japanese_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_phonepad_japanese_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_phonepad_japanese_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_phonepad_japanese_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_xml</item>
+        <item name="paddingLeft">@dimen/floating_phonepad_japanese_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_phonepad_japanese_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/floating_phonepad_japanese_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/floating_phonepad_japanese_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardEmoticonTheme">
+        <item name="android:keyWidth">@dimen/qwerty_emoticon_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_emoticon_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_emoticon_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_emoticon_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/qwerty_emoticon_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/qwerty_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardHandWritingToEmoticonTheme">
+        <item name="android:keyWidth">@dimen/qwerty_emoticon_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_emoticon_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/qwerty_emoticon_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_emoticon_horizontal_gap_left_of_backspace</item>
+        <item name="paddingTop">@dimen/qwerty_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/qwerty_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardEmoticonFloatingTheme">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/floating_emoticon_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/floating_emoticon_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardHandWritingToEmoticonFloatingTheme">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/floating_emoticon_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/floating_emoticon_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardRowModeSingleLanguage">
+        <item name="android:keyboardMode">@id/mode_single_language</item>
+    </style>
+    <style name="KeyboardRowModeEmailSingleLanguage">
+        <item name="android:keyboardMode">@id/mode_email_single_language</item>
+    </style>
+    <style name="KeyboardRowModeUrlSingleLanguage">
+        <item name="android:keyboardMode">@id/mode_url_single_language</item>
+    </style>
+    <style name="KeyboardRowModeComma">
+        <item name="android:keyboardMode">@id/mode_comma</item>
+    </style>
+    <style name="KeyboardRowModeNormal">
+        <item name="android:keyboardMode">@id/mode_normal</item>
+    </style>
+    <style name="KeyboardRowModeEmail">
+        <item name="android:keyboardMode">@id/mode_email</item>
+    </style>
+    <style name="KeyboardRowModeUrl">
+        <item name="android:keyboardMode">@id/mode_url</item>
+    </style>
+    <style name="KeyboardRowModeChn">
+        <item name="android:keyboardMode">@id/mode_chn</item>
+    </style>
+    <style name="KeyboardRowModeSingleLanguage.4row" parent="@style/KeyboardRowModeSingleLanguage">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowModeEmailSingleLanguage.4row" parent="@style/KeyboardRowModeEmailSingleLanguage">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowModeUrlSingleLanguage.4row" parent="@style/KeyboardRowModeUrlSingleLanguage">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowModeComma.4row" parent="@style/KeyboardRowModeComma">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowModeNormal.4row" parent="@style/KeyboardRowModeNormal">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowModeEmail.4row" parent="@style/KeyboardRowModeEmail">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowModeUrl.4row" parent="@style/KeyboardRowModeUrl">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1Normal">
+        <item name="android:keyboardMode">@id/symbol_page_1_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1Normal.First_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_1_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1Normal.Second_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_1_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1Normal.Third_Row" parent="@style/Qwerty_Third_Row">
+        <item name="android:keyboardMode">@id/symbol_page_1_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1SingleLanguage">
+        <item name="android:keyboardMode">@id/symbol_page_1_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1SingleLanguage.First_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_1_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1SingleLanguage.First_Row.floating" parent="@style/Qwerty_First_Row.floating">
+        <item name="android:keyboardMode">@id/symbol_page_1_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1SingleLanguage.Second_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_1_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1SingleLanguage.Second_Row.floating" parent="@style/Qwerty_First_Row.floating">
+        <item name="android:keyboardMode">@id/symbol_page_1_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage1SingleLanguage.Third_Row" parent="@style/Qwerty_Third_Row">
+        <item name="android:keyboardMode">@id/symbol_page_1_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2Normal">
+        <item name="android:keyboardMode">@id/symbol_page_2_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2Normal.First_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_2_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2Normal.Second_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_2_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2Normal.Third_Row" parent="@style/Qwerty_Third_Row">
+        <item name="android:keyboardMode">@id/symbol_page_2_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2SingleLanguage">
+        <item name="android:keyboardMode">@id/symbol_page_2_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2SingleLanguage.First_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_2_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2SingleLanguage.First_Row.floating" parent="@style/Qwerty_First_Row.floating">
+        <item name="android:keyboardMode">@id/symbol_page_2_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2SingleLanguage.Second_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_2_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2SingleLanguage.Second_Row.floating" parent="@style/Qwerty_First_Row.floating">
+        <item name="android:keyboardMode">@id/symbol_page_2_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage2SingleLanguage.Third_Row" parent="@style/Qwerty_Third_Row">
+        <item name="android:keyboardMode">@id/symbol_page_2_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage3Normal">
+        <item name="android:keyboardMode">@id/symbol_page_3_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage3Normal.First_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_3_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage3Normal.Second_Row" parent="@style/Qwerty_Second_Row">
+        <item name="android:keyboardMode">@id/symbol_page_3_normal</item>
+    </style>
+    <style name="KeyboardRowSymbolPage3SingleLanguage">
+        <item name="android:keyboardMode">@id/symbol_page_3_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage3SingleLanguage.First_Row" parent="@style/Qwerty_First_Row">
+        <item name="android:keyboardMode">@id/symbol_page_3_single_language</item>
+    </style>
+    <style name="KeyboardRowSymbolPage3SingleLanguage.Second_Row" parent="@style/Qwerty_Second_Row">
+        <item name="android:keyboardMode">@id/symbol_page_3_single_language</item>
+    </style>
+    <style name="KeyboardKeyPopupMultiModalKeyboard" parent="@style/KeyboardFunctionKey">
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPopupMultiModalKeyboard.floating" parent="@style/KeyboardFunctionKey.floating">
+        <item name="android:popupKeyboard">@xml/floating_popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPopupTemplateKeyboard">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+        <item name="android:popupKeyboard">@xml/popup_template_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPopupTemplateKeyboard.floating" parent="@style/KeyboardKeyPopupTemplateKeyboard">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_default_key_width</item>
+        <item name="android:popupKeyboard">@xml/floating_popup_template_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPopupDomainKeyboard">
+        <item name="android:popupKeyboard">@xml/popup_domain_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPopupDomainKeyboard.floating" parent="@style/KeyboardKeyPopupDomainKeyboard">
+        <item name="android:popupKeyboard">@xml/onehand_popup_domain_keyboard</item>
+    </style>
+    <style name="Default9ColRow">
+        <item name="paddingLeft">@dimen/qwerty_default_row1_padding_left</item>
+        <item name="paddingRight">@dimen/qwerty_default_row1_padding_left</item>
+    </style>
+    <style name="KeyboardIndianFirstColKey" />
+    <style name="KeyboardIndianLastColKey" />
+    <style name="KeyboardIndianBottomRowModeSingleLanguage" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:horizontalGap">@dimen/qwerty_indian_last_line_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_indian_last_line_vertical_gap</item>
+        <item name="android:keyboardMode">@id/mode_single_language</item>
+    </style>
+    <style name="KeyboardIndianBottomRowModeEmailSingleLanguage" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:keyboardMode">@id/mode_email_single_language</item>
+        <item name="paddingLeft">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+    </style>
+    <style name="KeyboardIndianBottomRowModeUrlSingleLanguage" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:horizontalGap">@dimen/qwerty_indian_last_line_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_indian_last_line_vertical_gap</item>
+        <item name="android:keyboardMode">@id/mode_url_single_language</item>
+    </style>
+    <style name="KeyboardIndianBottomRowModeComma" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:horizontalGap">@dimen/qwerty_indian_last_line_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_indian_last_line_vertical_gap</item>
+        <item name="android:keyboardMode">@id/mode_comma</item>
+    </style>
+    <style name="KeyboardIndianBottomRowModeNormal" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:horizontalGap">@dimen/qwerty_indian_last_line_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_indian_last_line_vertical_gap</item>
+        <item name="android:keyboardMode">@id/mode_normal</item>
+    </style>
+    <style name="KeyboardIndianbottomrow" parent="@style/KeyboardTheme.ashoka">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="paddingLeft">@dimen/qwerty_indian_last_line_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_indian_last_line_horizontal_gap</item>
+    </style>
+    <style name="KeyboardIndianBottomRowModeEmail" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:keyboardMode">@id/mode_email</item>
+        <item name="paddingLeft">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+    </style>
+    <style name="KeyboardIndianBottomRowModeUrl" parent="@style/KeyboardIndianbottomrow">
+        <item name="android:keyboardMode">@id/mode_url</item>
+        <item name="paddingLeft">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+    </style>
+    <style name="KeyboardIndianIndependantVowel">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardIndianFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardIndianFirstColIndependantVowelKey">
+        <item name="android:horizontalGap">@dimen/qwerty_indian_first_col_horizontal_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardIndianBackspaceKey" parent="@style/KeyboardIndianFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_indian_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_indian_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_delete_xml</item>
+    </style>
+    <style name="KeyboardIndianBackspaceKey.tablet" parent="@style/KeyboardIndianBackspaceKey">
+        <item name="android:horizontalGap">@fraction/qwerty_default_horizontalGap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardIndianBackspaceKey.tamil" parent="@style/KeyboardIndianFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_default_indian_tamil_key_width</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_delete_xml</item>
+    </style>
+    <style name="KeyboardIndianBackspaceKey.tamil.tablet" parent="@style/KeyboardIndianBackspaceKey.tamil">
+        <item name="android:horizontalGap">@fraction/tamil_default_horizontalGap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardIndianRangeChangeKeyNormalMode" parent="@style/KeyboardIndianFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_indian_symbol_shift_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_indian_first_col_last_line_horizontal_gap</item>
+    </style>
+    <style name="KeyboardIndianPopupMultiModalKeyboardKey" parent="@style/KeyboardIndianFunctionKey">
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardIndianSpaceKeyNormalMode" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_indian_space_key_width</item>
+    </style>
+    <style name="KeyboardIndianSpaceKeySingleLanguageMode" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_indian_space_key_width_single_language</item>
+    </style>
+    <style name="KeyboardIndianSpaceKeyEmailSingleLanguageMode" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_indian_space_key_width_single_language_email</item>
+    </style>
+    <style name="KeyboardIndianSpaceKeyEmailMultiLanguageMode" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_indian_space_key_width_single_language</item>
+    </style>
+    <style name="KeyboardIndianEnterKeyNormalMode" parent="@style/KeyboardIndianFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_indian_enter_key_width</item>
+    </style>
+    <style name="KeyboardIndianLanguageChangeKey" parent="@style/KeyboardIndianFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_language_xml</item>
+    </style>
+    <style name="KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_last_line_default_horizontal_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardFunctionKey.floating" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_default_key_width</item>
+        <item name="android:horizontalGap">@dimen/one_hand_qwerty_default_key_horizontal_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyDefault">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_shift_xml</item>
+    </style>
+    <style name="KeyboardKeyShiftKey" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.8_10_9" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.10_9_8" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/turkmen_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.10_10_7" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_10_7" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/icelandic_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_10_8" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/icelandic_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_11_7" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/danish_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_11_9" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/cyrill_r_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_11_10" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.12_11_7" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/ukrainian_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.12_11_8" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/ukrainian_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.12_11_9" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/ukrainian_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.12_11_10" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/cyrill_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.12_12_10" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/cyrill_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.9_10_9_7" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.10_10_10_8" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/khmer_qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.10_12_11_9" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/qwerty_kazakh_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_11_11_7" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/danish_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.11_12_11_10" parent="@style/KeyboardKeyShiftKey">
+        <item name="android:keyWidth">@dimen/thai_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKeySmall" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width_small</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/qwerty_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.8_10_9" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.10_9_8" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/turkmen_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.10_10_6" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/qwerty_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.11_10_7" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/albanian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.11_10_8" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/icelandic_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.11_11_7" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="android:horizontalGap">@dimen/danish_horizontal_gap_right_of_shift</item>
+        <item name="paddingLeft">@dimen/danish_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.11_11_9" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/bulgarian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.11_11_10" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/cyrill_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.12_11_7" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/qwerty_horizontal_gap_right_of_shift_estonian</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.12_11_8" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/macedonian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.12_11_9" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/cyrill_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.12_11_10" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/qwerty_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.10_10_10_8" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/khmer_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyLeftMoveKey">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_japanese_left_xml</item>
+    </style>
+    <style name="KeyboardKeyRightMoveKey">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_japanese_right_xml</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyJapan">
+        <item name="android:keyWidth">@dimen/qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardJapanSpaceKeyNormalMode">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_space_key_width</item>
+    </style>
+    <style name="KeyboardJapanSpaceKeySingleLanguageMode">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_space_key_width_no_voice</item>
+    </style>
+    <style name="KeyboardJapanSpaceKeyEmailSingleLanguageMode">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_space_key_width_email</item>
+    </style>
+    <style name="KeyboardJapanSpaceKeyEmailMultiLanguageMode">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_space_key_width_email_multi_language</item>
+    </style>
+    <style name="KeyboardJapanEnterKeyEmailSingleLanguage" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_enter_key_width_url</item>
+    </style>
+    <style name="KeyboardJapanKeyWwwDotUrlEmailSingleLanguage" parent="@style/KeyboardKeyPopupDomainKeyboard">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_www_dot_key_width</item>
+    </style>
+    <style name="KeyboardJapanKeyRangeChangeUrlEmailSingleLanguage" parent="@style/KeyboardKeyRangeChangeKey">
+        <item name="android:keyWidth">@dimen/japanese_qwerty_enter_key_width_url</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_delete_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.8_10_9" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_hebrew_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.10_10_6" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.10_10_7" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_11_7" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/danish_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/danish_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_11_9" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/cyrill_r_shift_key_width</item>
+        <item name="android:horizontalGap">@dimen/bulgarian_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.12_11_7" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width_estonian</item>
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_backspace_estonian</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.12_11_8" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/macedonian_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.12_11_9" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/cyrill_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.12_11_10" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/arabic_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/arabic_backspace_key_left_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.12_12_10" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/arabic_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/arabic_backspace_key_left_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_11_10" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/arabic_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/arabic_backspace_key_left_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_10_8" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/icelandic_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/icelandic_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_10_7" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/albanian_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.10_9_8" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/turkmen_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/turkmen_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.9_10_9_7" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/Lithuanian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.10_10_10_8" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/khmer_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/khmer_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.10_12_11_9" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/qwerty_kazakh_l_shift_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_kazakh_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_11_11_7" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/armenian_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/armenian_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.11_12_11_10" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/thai_back_key_width</item>
+        <item name="android:horizontalGap">@dimen/thai_horizontal_gap_left_of_backspace</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeKey" parent="@style/KeyboardFunctionKey" />
+    <style name="KeyboardKeyRangeChangeKey.floating" parent="@style/KeyboardFunctionKey.floating" />
+    <style name="KeyboardKeyRangeChangeNormal" parent="@style/KeyboardKeyRangeChangeKey">
+        <item name="android:keyWidth">@dimen/qwerty_input_mode_key_width_multi_language</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeSingleLanguage" parent="@style/KeyboardKeyRangeChangeKey">
+        <item name="android:keyWidth">@dimen/qwerty_input_mode_key_width</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeSingleLanguage.floating" parent="@style/KeyboardKeyRangeChangeKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_input_mode_key_width</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeUrlEmailSingleLanguage" parent="@style/KeyboardKeyRangeChangeKey">
+        <item name="android:keyWidth">@dimen/qwerty_input_mode_key_width_email</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeUrlEmailSingleLanguage.floating" parent="@style/KeyboardKeyRangeChangeKey.floating">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_input_mode_key_width_email</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeUrlEmailMultiLanguage" parent="@style/KeyboardKeyRangeChangeKey">
+        <item name="android:keyWidth">@dimen/qwerty_input_mode_key_width_email_multi_language</item>
+    </style>
+    <style name="KeyboardKeyRangeChangeUrlEmailMultiLanguage.floating" parent="@style/KeyboardKeyRangeChangeKey">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_input_mode_key_width_email_multi_language</item>
+    </style>
+    <style name="KeyboardKeyEnterSingleLanguage" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_enter_key_width</item>
+    </style>
+    <style name="KeyboardKeyEnterSingleLanguage.floating" parent="@style/KeyboardFunctionKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_enter_key_width</item>
+    </style>
+    <style name="KeyboardKeyEnterMultiLanguage" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_enter_key_width_multi_language</item>
+    </style>
+    <style name="KeyboardKeyEnterUrlEmailSingleLanguage" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_enter_key_width_email</item>
+    </style>
+    <style name="KeyboardKeyEnterUrlEmailSingleLanguage.floating" parent="@style/KeyboardFunctionKey.floating">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_enter_key_width_email</item>
+    </style>
+    <style name="KeyboardKeyEnterUrlEmailMultiLanguage" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyWidth">@dimen/qwerty_enter_key_width_email_multi_language</item>
+    </style>
+    <style name="KeyboardKeyWwwDotUrlEmailSingleLanguage" parent="@style/KeyboardKeyPopupDomainKeyboard">
+        <item name="android:keyWidth">@dimen/qwerty_www_dot_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyWwwDotUrlEmailSingleLanguage.floating" parent="@style/KeyboardKeyPopupDomainKeyboard">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_www_dot_key_width</item>
+    </style>
+    <style name="KeyboardKeyWwwDotUrlEmailMultiLanguage" parent="@style/KeyboardKeyPopupDomainKeyboard">
+        <item name="android:keyWidth">@dimen/qwerty_www_dot_key_width_multi_language</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyWwwDotUrlEmailMultiLanguage.floating" parent="@style/KeyboardKeyPopupDomainKeyboard.floating">
+        <item name="android:keyWidth">@dimen/qwerty_www_dot_key_width_multi_language</item>
+    </style>
+    <style name="KeyboardKeySpaceLeftGap">
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceLeftGap.floating" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:horizontalGap">@dimen/one_hand_qwerty_horizontal_gap_left_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceRightGap" parent="@style/KeyboardKeyPopupTemplateKeyboard">
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceRightGap.floating" parent="@style/KeyboardKeyPopupTemplateKeyboard.floating">
+        <item name="android:horizontalGap">@dimen/floating_qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceLeftGapMultiLanguage">
+        <item name="android:keyHeight">@dimen/qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceLeftGapMultiLanguage.floating" parent="@style/KeyboardKeySpaceLeftGapMultiLanguage">
+        <item name="android:keyHeight">@dimen/one_hand_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/one_hand_qwerty_horizontal_gap_left_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceRightGapMultiLanguage" parent="@style/KeyboardKeyPopupTemplateKeyboard">
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceRightGapMultiLanguage.floating" parent="@style/KeyboardKeyPopupTemplateKeyboard.floating">
+        <item name="android:horizontalGap">@dimen/one_hand_qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeyIndianSpaceRightGapMultiLanguage">
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceSingleLanguage" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_space_key_width_no_voice</item>
+    </style>
+    <style name="KeyboardKeySpaceSingleLanguage.floating" parent="@style/KeyboardKeySpaceLeftGap.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_space_key_width_no_voice</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_horizontal_gap_left_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceUrlEmailSingleLanguage" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_space_key_width_email</item>
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_left_of_space_email</item>
+    </style>
+    <style name="KeyboardKeySpaceUrlEmailSingleLanguage.floating" parent="@style/KeyboardKeySpaceLeftGap.floating">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_space_key_width_email</item>
+        <item name="android:horizontalGap">@dimen/one_hand_qwerty_horizontal_gap_left_of_space_email</item>
+    </style>
+    <style name="KeyboardKeySpaceRightGapSingleLanguage" parent="@style/KeyboardKeyPopupTemplateKeyboard">
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeySpaceRightGapSingleLanguage.floating" parent="@style/KeyboardKeyPopupTemplateKeyboard.floating">
+        <item name="android:horizontalGap">@dimen/one_hand_qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeySpaceDefault" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_space_key_width</item>
+    </style>
+    <style name="KeyboardKeySpaceMultiLanguage" parent="@style/KeyboardKeySpaceLeftGap">
+        <item name="android:keyWidth">@dimen/qwerty_space_key_width</item>
+    </style>
+    <style name="KeyboardKeySpaceMultiLanguage.floating" parent="@style/KeyboardKeySpaceLeftGap.floating">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_space_key_width</item>
+    </style>
+    <style name="KeyboardKeySpaceUrlEmailMultiLanguage" parent="@style/KeyboardKeySpaceLeftGapMultiLanguage">
+        <item name="android:keyWidth">@dimen/qwerty_space_key_width_email_multi_language</item>
+    </style>
+    <style name="KeyboardKeySpaceUrlEmailMultiLanguage.floating" parent="@style/KeyboardKeySpaceLeftGapMultiLanguage.floating">
+        <item name="android:keyWidth">@dimen/one_hand_qwerty_space_key_width_email_multi_language</item>
+    </style>
+    <style name="KeyboardKeyLanguageChange" parent="@style/KeyboardFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_language_xml</item>
+    </style>
+    <style name="KeyboardKeyLanguageChange.floating" parent="@style/KeyboardFunctionKey.floating">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_language_xml</item>
+    </style>
+    <style name="KeyboardPhonePadFunctionKey">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardPhonePadHalfKey">
+        <item name="android:keyWidth">@fraction/phonepad_half_keyWidth</item>
+    </style>
+    <style name="KeyboardPhonePadHalfKeyHorizGap">
+        <item name="android:horizontalGap">@fraction/phonepad_half_key_horizontalGap</item>
+    </style>
+    <style name="KeyboardPhonepadKeyBackspaceKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_delete_xml</item>
+    </style>
+    <style name="KeyboardPhonepadKeyBackspaceKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_floating_qwerty_ic_delete_xml</item>
+    </style>
+    <style name="KeyboardPhonepadKeyRangeChangeHalfKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_half_key_width</item>
+    </style>
+    <style name="KeyboardPhonepadKeyRangeChangeHalfKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_phonepad_half_key_width</item>
+    </style>
+    <style name="KeyboardPhonepadKeyLanguageChangeHalfKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_half_key_width</item>
+        <item name="android:horizontalGap">@dimen/phonepad_half_key_horizontal_gap</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="KeyboardPhonepadKeyLanguageChangeHalfKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_phonepad_half_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_phonepad_half_key_gap</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="KeyboardKeyPhonePadPopupMultiModalKeyboardHalfKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@fraction/phonepad_half_keyWidth</item>
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPhonePadPopupMultiModalKeyboardHalfKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@fraction/phonepad_half_keyWidth</item>
+        <item name="android:popupKeyboard">@xml/floating_popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardPhonepadKeySpace" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_space_xml</item>
+    </style>
+    <style name="KeyboardPhonepadKeySpace.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_floating_phonepad_ic_space_xml</item>
+    </style>
+    <style name="KeyboardPhonepadPopupTemplateLastColKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:popupKeyboard">@xml/popup_template_keyboard</item>
+    </style>
+    <style name="KeyboardPhonepadPopupTemplateLastColKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:popupKeyboard">@xml/floating_popup_template_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPhonePadPopupMultiModalKeyboard" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardKeyPhonePadPopupMultiModalKeyboard.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:popupKeyboard">@xml/floating_popup_multimodal_keyboard</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadBackspaceKey" parent="@style/KeyboardPhonepadKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/phonepad_sym_function_key_width</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadEnterKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_sym_function_key_width</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadRangeKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_sym_default_key_width</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadLanguageKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadLeftArrowKey">
+        <item name="android:keyWidth">@fraction/phonepad_symbol_arrow_key_width</item>
+        <item name="android:keyIcon">@drawable/phonepad_key_icon_left_page_arrow_xml</item>
+        <item name="backgroundDrawable">@drawable/sip_key_bg_normal_left</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadRightArrowKey">
+        <item name="android:keyWidth">@fraction/phonepad_symbol_arrow_key_width</item>
+        <item name="android:horizontalGap">0.0px</item>
+        <item name="android:keyIcon">@drawable/phonepad_key_icon_right_page_arrow_xml</item>
+        <item name="backgroundDrawable">@drawable/sip_key_bg_normal_right</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadSpaceKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@fraction/phonepad_symbol_space_keyWidth</item>
+    </style>
+    <style name="KeyboardSymbolPhonepadPopupMultiModalKeyboardKey" parent="@style/KeyboardSymbolPhonepadEnterKey">
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="ChinesePinyinKeyboardFirstCol">
+        <item name="android:keyWidth">@dimen/phonepad_chinese_first_col_key_width</item>
+        <item name="backgroundDrawable">0</item>
+    </style>
+    <style name="ChinesePinyinKeyboardFirstCol.floating" parent="@style/ChinesePinyinKeyboardFirstCol">
+        <item name="android:keyWidth">@dimen/floating_phonepad_chinese_first_col_key_width</item>
+        <item name="backgroundDrawable">0</item>
+    </style>
+    <style name="ChinesePinyinKeyboardLastCol" parent="@style/ChinesePinyinKeyboardFirstCol">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardLastCol.floating" parent="@style/ChinesePinyinKeyboardFirstCol.floating">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardBackspaceKey" parent="@style/ChinesePinyinKeyboardLastCol">
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_delete_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardBackspaceKey.floating" parent="@style/ChinesePinyinKeyboardLastCol.floating">
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_floating_qwerty_ic_delete_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardSpaceKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_space_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardSpaceKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_floating_phonepad_ic_space_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardPopupMultiModalKeyboard" parent="@style/ChinesePinyinKeyboardLastCol">
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="ChinesePinyinKeyboardPopupMultiModalKeyboard.floating" parent="@style/ChinesePinyinKeyboardLastCol.floating">
+        <item name="android:popupKeyboard">@xml/floating_popup_multimodal_keyboard</item>
+    </style>
+    <style name="ChinesePinyinKeyboardHalfSymKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_chinese_sym_mode_key_width</item>
+    </style>
+    <style name="ChinesePinyinKeyboardHalfSymKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_phonepad_chinese_sym_mode_key_width</item>
+    </style>
+    <style name="ChinesePinyinKeyboardHalfLanguageKey" parent="@style/ChinesePinyinKeyboardHalfSymKey">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="ChinesePinyinKeyboardHalfLanguageKey.floating" parent="@style/ChinesePinyinKeyboardHalfSymKey.floating">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardFirstCol" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_japanese_function_key_width</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardFirstCol.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_phonepad_japanese_function_key_width</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardReverseKey" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_reverse_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardReverseKey.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_reverse_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardNormalSymbolsKey" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_url02_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardNormalSymbolsKey.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_keypad_japanese_url02_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardEmailSymbolsKey" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_email_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardEmailSymbolsKey.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_keypad_japanese_email_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardUrlSymbolsKey" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_url01_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardUrlSymbolsKey.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_keypad_japanese_url01_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardMoveLeftKey" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_left_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardMoveLeftKey.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_keypad_japanese_left_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardKeySmall" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_small_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardKeySmall.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_keypad_japanese_small_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardLastCol" parent="@style/PhonepadJapaneseKeyboardFirstCol">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardLastCol.floating" parent="@style/PhonepadJapaneseKeyboardFirstCol.floating">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardBackspaceKey" parent="@style/PhonepadJapaneseKeyboardLastCol">
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_delete_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardBackspaceKey.floating" parent="@style/PhonepadJapaneseKeyboardLastCol.floating">
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/textinput_floating_qwerty_ic_delete_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardMoveRightKey" parent="@style/PhonepadJapaneseKeyboardLastCol">
+        <item name="android:keyIcon">@drawable/textinput_keypad_japanese_right_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardMoveRightKey.floating" parent="@style/PhonepadJapaneseKeyboardLastCol.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_keypad_japanese_right_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardPopupMultiModalKeyboard" parent="@style/PhonepadJapaneseKeyboardLastCol">
+        <item name="android:popupKeyboard">@xml/popup_multimodal_keyboard</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardPopupMultiModalKeyboard.floating" parent="@style/PhonepadJapaneseKeyboardLastCol.floating">
+        <item name="android:popupKeyboard">@xml/floating_popup_multimodal_keyboard</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardHalfSymKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_japanese_half_key_width</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardHalfSymKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_phonepad_japanese_half_key_width</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardHalfLanguageKey" parent="@style/PhonepadJapaneseKeyboardHalfSymKey">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardHalfLanguageKey.floating" parent="@style/PhonepadJapaneseKeyboardHalfSymKey.floating">
+        <item name="android:keyIcon">@drawable/textinput_floating_phonepad_ic_language_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardSpaceKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_space_xml</item>
+    </style>
+    <style name="PhonepadJapaneseKeyboardSpaceKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyIcon">@drawable/textinput_floating_phonepad_ic_space_xml</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/qwerty_default_enter_keyWidth_Tablet</item>
+        <item name="android:horizontalGap">@fraction/qwerty_default_horizontalGap_left_of_funcKey</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.indian" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/indian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.indian.tamil" parent="@style/QwertyKeyboardEnterKey.indian">
+        <item name="android:keyWidth">@fraction/tamil_indian_enter_keyWidth_Tablet</item>
+        <item name="android:horizontalGap">@fraction/tamil_indian_horizontalGap_left_of_EnterKey</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.8_10_9" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/hebrew_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.10_10_7" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/urdu_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_10_7" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@dimen/qwerty_enter_key_width_multi_language</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_10_8" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/icelandic_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_11_7" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/danish_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_11_9" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/bulgarian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_11_10" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@dimen/arabic_qwerty_enter_key_width</item>
+        <item name="android:horizontalGap">@dimen/qwerty_horizontal_gap_right_of_space</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.12_11_7" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/estonian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.12_11_8" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/macedonian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.12_11_9" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/ukrainian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.12_11_10" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/russian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.12_12_10" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/kyrgyz_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.9_10_9_7" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/lithuanian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.10_10_10_8" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/khmer_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.10_12_11_9" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/kazakh_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_11_11_7" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/armenian_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="QwertyKeyboardEnterKey.11_12_11_10" parent="@style/QwertyKeyboardEnterKey">
+        <item name="android:keyWidth">@fraction/thai_enter_keyWidth_Tablet</item>
+    </style>
+    <style name="RowNumberKeys">
+        <item name="android:keyWidth">@dimen/qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/qwerty_number_key_height</item>
+        <item name="android:horizontalGap">@dimen/qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/qwerty_number_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_number_xml</item>
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="QwertyKeyboardDelkey">
+        <item name="android:keyWidth">@fraction/qwerty_default_delete_keyWidth</item>
+        <item name="android:keyHeight">@fraction/qwerty_default_number_top_keyHeight</item>
+        <item name="android:horizontalGap">@fraction/qwerty_default_horizontalGap_left_of_funcKey</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_number_xml</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.indian" parent="@style/QwertyKeyboardDelkey">
+        <item name="android:keyWidth">@fraction/qwerty_default_indian_delete_keyWidth</item>
+        <item name="android:keyHeight">@fraction/qwerty_default_indian_keyHeight</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.indian.tamil" parent="@style/QwertyKeyboardDelkey.indian">
+        <item name="android:keyWidth">@fraction/qwerty_default_tamil_indian_delete_keyWidth</item>
+        <item name="android:horizontalGap">@fraction/tamil_indian_horizontalGap_left_of_DelKey</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.4row" parent="@style/QwertyKeyboardDelkey">
+        <item name="android:keyHeight">@fraction/qwerty_default_4row_keyHeight</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.10_10_10_8" parent="@style/QwertyKeyboardDelkey">
+        <item name="android:keyWidth">@fraction/qwerty_default_khmer_delete_keyWidth</item>
+        <item name="android:keyHeight">@fraction/qwerty_default_4row_keyHeight</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.10_12_11_9" parent="@style/QwertyKeyboardDelkey">
+        <item name="android:keyHeight">@fraction/qwerty_default_4row_keyHeight</item>
+        <item name="android:horizontalGap">@fraction/kazakh_horizontalGap_left_of_DelKey</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.11_11_11_7" parent="@style/QwertyKeyboardDelkey">
+        <item name="android:keyHeight">@fraction/qwerty_default_4row_keyHeight</item>
+        <item name="android:horizontalGap">@fraction/armenian_horizontalGap_left_of_DelKey</item>
+    </style>
+    <style name="QwertyKeyboardDelkey.11_12_11_10" parent="@style/QwertyKeyboardDelkey">
+        <item name="android:keyHeight">@fraction/qwerty_default_4row_keyHeight</item>
+        <item name="android:horizontalGap">@fraction/thai_horizontalGap_left_of_DelKey</item>
+    </style>
+    <style name="QwertyKeyboardCtrlkey">
+        <item name="android:keyWidth">@fraction/qwerty_default_left_shift_keyWidth</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyColon">
+        <item name="android:keyWidth">@fraction/qwerty_default_colon_keyWidth</item>
+        <item name="android:horizontalGap">@fraction/qwerty_default_horizontalGap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeyAt">
+        <item name="android:keyWidth">@fraction/qwerty_default_keyWidth</item>
+        <item name="android:horizontalGap">@fraction/qwerty_default_horizontalGap_right_of_space</item>
+    </style>
+    <style name="KeyboardKeyArrowLeft">
+        <item name="android:keyWidth">@fraction/qwerty_default_left_arrow_keyWidth</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyArrowRight">
+        <item name="android:keyWidth">@fraction/qwerty_default_right_arrow_keyWidth</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@fraction/qwerty_default_left_shift_keyWidth</item>
+        <item name="android:horizontalGap">@fraction/qwerty_default_horizontalGap_left_of_funcKey</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.indian" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/indian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.indian.tamil" parent="@style/KeyboardKeyShiftKeyRight.indian">
+        <item name="android:keyWidth">@fraction/tamil_indian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.10_10_7" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/urdu_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.11_10_7" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@dimen/albanian_r_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.11_10_8" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/icelandic_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.11_11_7" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/danish_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.11_11_9" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/bulgarian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.12_11_7" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/estonian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.12_11_8" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/macedonian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.12_11_9" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/ukrainian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.12_11_10" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/russian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.12_12_10" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/kyrgyz_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.9_10_9_7" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@dimen/qwerty_r_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.10_10_10_8" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/khmer_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.10_12_11_9" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@dimen/qwerty_kazakh_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.11_11_11_7" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/armenian_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyShiftKeyRight.11_12_11_10" parent="@style/KeyboardKeyShiftKeyRight">
+        <item name="android:keyWidth">@fraction/thai_right_shift_keyWidth</item>
+    </style>
+    <style name="KeyboardKeyQuotationKey" />
+    <style name="KeyboardKeyExclamationKey">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_exclamation_01_xml</item>
+    </style>
+    <style name="KeyboardKeyExclamationKey.11_11_10" parent="@style/KeyboardKeyExclamationKey">
+        <item name="android:keyWidth">@fraction/arabic_exclamation_width</item>
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_exclamation_01_xml</item>
+    </style>
+    <style name="KeyboardKeyQuestionKey">
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_question_01_xml</item>
+    </style>
+    <style name="KeyboardKeyQuestionKey.11_11_10" parent="@style/KeyboardKeyQuestionKey">
+        <item name="android:keyWidth">@fraction/arabic_question_width</item>
+        <item name="android:keyIcon">@drawable/textinput_qwerty_ic_question_01_xml</item>
+    </style>
+    <style name="Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.indian" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_indian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_indian_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.tamil" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/turkmen_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/turkmen_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.8_10_9" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_hebrew_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_hebrew_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.10_10_7" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_10_7" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/icelandic_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/icelandic_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_10_8" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/icelandic_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/icelandic_default_key_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_11_7" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/danish_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/danish_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_11_9" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/bulgarian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/bulgarian_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_11_10" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.12_11_7" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap_estonian</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap_estonian</item>
+    </style>
+    <style name="Qwerty_First_Row.12_11_8" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.12_11_9" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.12_11_10" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.12_12_10" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.9_10_9_7" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/Lithuanian_first_row_side_gap</item>
+        <item name="paddingRight">@dimen/Lithuanian_first_row_side_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.10_10_10_8" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/khmer_first_col_horizontal_gap_first_row</item>
+        <item name="paddingRight">@dimen/khmer_first_col_horizontal_gap_forth_row</item>
+    </style>
+    <style name="Qwerty_First_Row.10_12_11_9" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/qwerty_kazakh_first_row_side_gap</item>
+        <item name="paddingRight">@dimen/qwerty_kazakh_first_row_side_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_11_11_7" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/armenian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/armenian_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.11_12_11_10" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/thai_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/thai_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.8_10_9" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/qwerty_hebrew_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/qwerty_hebrew_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.10_10_7" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_10_7" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/icelandic_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/icelandic_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_10_8" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/icelandic_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/icelandic_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_11_7" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/danish_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/danish_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_11_9" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/bulgarian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/bulgarian_4th_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_11_10" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/arabic_default_left_horizontal_gap</item>
+        <item name="paddingRight">@dimen/arabic_default_left_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.12_11_7" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/qwerty_first_col_horizontal_gap_second_line_left_estonian</item>
+        <item name="paddingRight">@dimen/qwerty_first_col_horizontal_gap_second_line_left_estonian</item>
+    </style>
+    <style name="Qwerty_Second_Row.12_11_8" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.12_11_9" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.12_11_10" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.12_12_10" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.9_10_9_7" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/Lithuanian_first_row_side_gap_second_line</item>
+        <item name="paddingRight">@dimen/Lithuanian_first_row_side_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.10_10_10_8" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/khmer_first_col_horizontal_gap_second_row</item>
+        <item name="paddingRight">@dimen/khmer_first_col_horizontal_gap_second_row</item>
+    </style>
+    <style name="Qwerty_Second_Row.10_12_11_9" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/cyrill_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_11_11_7" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/armenian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/armenian_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.11_12_11_10" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/thai_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/thai_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Third_Row">
+        <item name="paddingLeft">@dimen/qwerty_hebrew_default_key_horizontal_gap</item>
+        <item name="paddingRight">@dimen/qwerty_hebrew_default_key_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Third_Row.10_10_10_8" parent="@style/Qwerty_Third_Row">
+        <item name="paddingLeft">@dimen/khmer_first_col_horizontal_gap_third_row</item>
+        <item name="paddingRight">@dimen/khmer_first_col_horizontal_gap_forth_row</item>
+    </style>
+    <style name="Qwerty_Third_Row.10_12_11_9" parent="@style/Qwerty_Third_Row">
+        <item name="paddingLeft">@dimen/qwerty_kazakh_first_row_side_gap_third_line</item>
+        <item name="paddingRight">@dimen/qwerty_kazakh_first_row_side_gap_third_line</item>
+    </style>
+    <style name="Qwerty_Fourth_Row_indian">
+        <item name="paddingLeft">@dimen/qwerty_indian_first_column_fifth_line_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Fourth_Row_Tamil">
+        <item name="paddingLeft">@dimen/qwerty_indian_tamil_first_column_fourth_line_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Fifth_Row_Tamil">
+        <item name="paddingLeft">@dimen/qwerty_indian_tamil_first_col_horizontal_gap</item>
+    </style>
+    <style name="TablePhonepadBlanckkey">
+        <item name="android:keyWidth">@fraction/phonepad_tablet_blankkey_width</item>
+        <item name="backgroundDrawable">0</item>
+    </style>
+    <style name="TabletPhonepadSpacekey">
+        <item name="android:keyWidth">@fraction/phonepad_phone_number_tablet_spacekey_width</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="ChunjiinKeyboardPhonepadKeyRangeChangeHalfKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_half_key_width</item>
+    </style>
+    <style name="ChunjiinKeyboardPhonepadKeyRangeChangeHalfKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_korean_cji_half_key_width</item>
+    </style>
+    <style name="ChunjiinKeyboardPhonepadKeyLanguageChangeHalfKey" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/phonepad_half_key_width</item>
+        <item name="android:horizontalGap">@dimen/phonepad_half_key_horizontal_gap</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="ChunjiinKeyboardPhonepadKeyLanguageChangeHalfKey.floating" parent="@style/KeyboardPhonePadFunctionKey">
+        <item name="android:keyWidth">@dimen/floating_korean_cji_half_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_korean_cji_half_key_gap</item>
+        <item name="android:keyIcon">@drawable/textinput_phonepad_ic_language_xml</item>
+    </style>
+    <style name="KeyboardHandWritingTheme">
+        <item name="android:keyWidth">@dimen/handwriting_default_key_width</item>
+        <item name="android:keyHeight">@dimen/handwriting_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/handwriting_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/handwriting_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/handwriting_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/handwriting_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/handwriting_first_line_vertical_gap</item>
+        <item name="paddingBottom">@dimen/handwriting_last_line_vertical_gap</item>
+    </style>
+    <style name="KeyboardHandWritingFloatingTheme">
+        <item name="android:keyWidth">@dimen/handwriting_floating_default_key_width</item>
+        <item name="android:keyHeight">@dimen/handwriting_floating_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/handwriting_floating_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/handwriting_floating_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/handwriting_floating_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/handwriting_floating_first_col_horizontal_gap</item>
+        <item name="paddingTop">@dimen/handwriting_floating_first_col_horizontal_gap</item>
+        <item name="paddingBottom">@dimen/handwriting_floating_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating" parent="@style/KeyboardTheme">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.11_11_7" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_danish_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_danish_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.11_11_9" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_bulgarian_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_bulgarian_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.11_11_10" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/arabic_floating_default_key_width</item>
+        <item name="android:keyHeight">@dimen/arabic_floating_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_bulgarian_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.10_10_7" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_azerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/arabic_floating_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/arabic_floating_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.12_11_7" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_azerbaijani_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_azerbaijani_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.9_10_9_7" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_4line_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_4line_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.10_12_11_9" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_kazakh_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_4line_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_kazakh_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_4line_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.12_11_10" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_cyrill_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_cyrill_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.8_10_9" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_hebrew_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_hebrew_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.11_11_11_7" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_armenian_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_armenian_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_armenian_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_armenian_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.10_10_10_10_8" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_indian_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_indian_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_indian_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_indian_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.8_8_8_7_8" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_indian_tamil_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_default_indian_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_indian_tamil_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_indian_key_vertical_gap</item>
+    </style>
+    <style name="KeyboardTheme.floating.11_12_11_10" parent="@style/KeyboardTheme.floating">
+        <item name="android:keyWidth">@dimen/floating_thai_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_4line_default_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_thai_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_4line_default_key_vertical_gap</item>
+    </style>
+    <style name="RowNumberKeys.floating" parent="@style/RowNumberKeys">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_key_width</item>
+        <item name="android:keyHeight">@dimen/floating_qwerty_number_key_height</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_key_horizontal_gap</item>
+        <item name="android:verticalGap">@dimen/floating_qwerty_default_key_vertical_gap</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_number_xml</item>
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_First_Row.floating" parent="@style/Qwerty_First_Row">
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating" parent="@style/Qwerty_Second_Row">
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Third_Row.floating" parent="@style/Qwerty_Third_Row">
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating" parent="@style/KeyboardKeyAfterShiftKey">
+        <item name="paddingLeft">@dimen/floating_qwerty_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating" parent="@style/KeyboardKeyBackspaceKey">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.11_11_7" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_danish_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_danish_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.11_11_7" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_danish_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.11_11_7" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_danish_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.10_10_7" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_azerty_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.10_10_7" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_azerty_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.12_11_9" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap_estonian</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap_estonian</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating.12_11_9" parent="@style/Qwerty_Second_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap_second_line_left_estonian</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap_second_line_left_estonian</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating.12_11_9" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_qwerty_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.12_11_9" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_azerbaijani_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.12_11_9" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_azerbaijani_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.12_11_10" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_cyrill_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_cyrill_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating.12_11_10" parent="@style/Qwerty_Second_Row.floating">
+        <item name="paddingLeft">@dimen/floating_cyrill_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/floating_cyrill_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating.12_11_10" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_cyrill_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.12_11_10" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_cyrill_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.12_11_10" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_cyrill_r_shift_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_cyrill_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating.8_10_9" parent="@style/Qwerty_Second_Row.floating">
+        <item name="paddingLeft">@dimen/floating_hebrew_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/floating_hebrew_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Third_Row.floating.8_10_9" parent="@style/Qwerty_Third_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating.8_10_9" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_cyrill_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.8_10_9" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_cyrill_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.8_10_9" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/qwerty_invisible_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_cyrill_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.12_11_7" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_horizontal_gap_right_of_shift_estonian</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.12_11_7" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width_estonian</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_horizontal_gap_left_of_backspace_estonian</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating.11_10_8" parent="@style/Qwerty_Second_Row.floating">
+        <item name="paddingLeft">@dimen/floating_icelandic_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/floating_icelandic_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.11_10_8" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_icelandic_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.11_10_8" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_icelandic_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.11_11_9" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_bulgarian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_bulgarian_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.11_11_9" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_bulgarian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.11_11_9" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_bulgarian_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.11_11_10" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/arabic_floating_first_col_key_horizontal_gap</item>
+        <item name="paddingRight">@dimen/arabic_floating_first_col_key_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Third_Row.floating.11_11_10" parent="@style/Qwerty_Third_Row.floating">
+        <item name="paddingLeft">@dimen/arabic_floating_first_col_key_horizontal_gap</item>
+        <item name="paddingRight">@dimen/arabic_floating_first_col_key_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.11_11_10" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/arabic_floating_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/arabic_floating_default_left_horizontal_gap</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.10_12_11_9" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_kazakh_first_row_side_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_kazakh_first_row_side_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating.10_12_11_9" parent="@style/Qwerty_Second_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_kazakh_first_row_side_gap_second_line</item>
+        <item name="paddingRight">@dimen/floating_qwerty_kazakh_first_row_side_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Third_Row.floating.10_12_11_9" parent="@style/Qwerty_Third_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_kazakh_first_row_side_gap_third_line</item>
+        <item name="paddingRight">@dimen/floating_qwerty_kazakh_first_row_side_gap_third_line</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating.10_12_11_9" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_qwerty_kazakh_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.10_12_11_9" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_kazakh_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.10_12_11_9" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_kazakh_l_shift_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_kazakh_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.11_11_11_7" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_armenian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_armenian_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.11_11_11_7" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="android:horizontalGap">@dimen/floating_qwerty_armenian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.11_11_11_7" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_armenian_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating.12_11_8" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_macedonian_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.12_11_8" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_macedonian_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.12_11_8" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_macedonian_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_macedonian_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.10_10_10_10_8" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_indian_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_indian_first_col_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.10_10_10_10_8" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_indian_backspace_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_indian_key_horizontal_gap</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.8_8_8_7_8" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_qwerty_indian_tamil_first_column_fourth_line_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_qwerty_indian_tamil_first_column_fourth_line_horizontal_gap</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.8_8_8_7_8" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_qwerty_default_indian_tamil_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_qwerty_default_indian_key_horizontal_gap</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="Qwerty_First_Row.floating.11_12_11_10" parent="@style/Qwerty_First_Row.floating">
+        <item name="paddingLeft">@dimen/floating_thai_first_col_horizontal_gap</item>
+        <item name="paddingRight">@dimen/floating_thai_first_col_horizontal_gap</item>
+    </style>
+    <style name="Qwerty_Second_Row.floating.11_12_11_10" parent="@style/Qwerty_Second_Row.floating">
+        <item name="paddingLeft">@dimen/floating_thai_first_col_horizontal_gap_second_line</item>
+        <item name="paddingRight">@dimen/floating_thai_first_col_horizontal_gap_second_line</item>
+    </style>
+    <style name="Qwerty_Third_Row.floating.11_12_11_10" parent="@style/Qwerty_Third_Row.floating">
+        <item name="paddingLeft">@dimen/floating_thai_first_col_horizontal_gap_third_line</item>
+        <item name="paddingRight">@dimen/floating_thai_first_col_horizontal_gap_third_line</item>
+    </style>
+    <style name="KeyboardKeyShiftKey.floating.11_12_11_10" parent="@style/KeyboardKeyShiftKeyDefault">
+        <item name="android:keyWidth">@dimen/floating_thai_l_shift_key_width</item>
+    </style>
+    <style name="KeyboardKeyAfterShiftKey.floating.11_12_11_10" parent="@style/KeyboardKeyAfterShiftKey.floating">
+        <item name="paddingLeft">@dimen/floating_thai_horizontal_gap_right_of_shift</item>
+    </style>
+    <style name="KeyboardKeyBackspaceKey.floating.11_12_11_10" parent="@style/KeyboardKeyBackspaceKey.floating">
+        <item name="android:keyWidth">@dimen/floating_thai_r_shift_key_width</item>
+        <item name="android:horizontalGap">@dimen/floating_thai_horizontal_gap_left_of_backspace</item>
+        <item name="android:isRepeatable">true</item>
+        <item name="android:keyIcon">@drawable/floating_qwerty_key_icon_backspace_xml</item>
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="KeyboardFunctionKey.floating.10_10_7" parent="@style/KeyboardFunctionKey.floating">
+        <item name="backgroundDrawable">@drawable/textinput_qwerty_btn_option_xml</item>
+    </style>
+    <style name="textAppearanceMedium">
+        <item name="android:textSize">@dimen/textAppearanceMedium_textSize</item>
+        <item name="android:textColor">@color/textAppearanceMedium_textColor</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="textAppearanceLargePopupMenu">
+        <item name="android:textSize">@dimen/textAppearanceLargePopupMenu_textSize</item>
+        <item name="android:textColor">@color/textAppearanceLargePopupMenu_textColor</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="textAppearanceActionBarDeleteLanguagesAllText">
+        <item name="android:textSize">@dimen/action_bar_delete_languages_all_text_label_size</item>
+        <item name="android:textColor">@color/action_bar_delete_languages_all_text_color</item>
+    </style>
+    <style name="ToolbarPopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/toolbar_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/toolbar_popup_exit</item>
+    </style>
+</resources>

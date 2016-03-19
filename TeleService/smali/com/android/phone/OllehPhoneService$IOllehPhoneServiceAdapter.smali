@@ -33,7 +33,6 @@
 # virtual methods
 .method public acceptVT(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -137,7 +136,6 @@
 
 .method public connectBtHandsfree(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "[carrier-phone] OllehPhoneService"
 
@@ -176,11 +174,6 @@
 
 .method public dial(Ljava/lang/String;ZZLandroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -420,7 +413,6 @@
 
 .method public dialVT(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -608,7 +600,6 @@
 
 .method public enableSystemBarNavigation(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -735,7 +726,6 @@
 
 .method public getConfiguration(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -872,7 +862,6 @@
 
 .method public getRunningTasksTopActivityInfo(I)Ljava/util/List;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1003,7 +992,6 @@
 
 .method public hold(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1126,7 +1114,6 @@
 
 .method public mute(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1282,7 +1269,6 @@
 
 .method public registerCallBack(Lcom/android/phone/ICallOEMEventListener;)Z
     .locals 5
-    .param p1    # Lcom/android/phone/ICallOEMEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1388,7 +1374,6 @@
 
 .method public sendDtmf(C)V
     .locals 6
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1465,8 +1450,6 @@
 
 .method public sendSms(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1496,8 +1479,6 @@
 
 .method public setConfiguration(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1590,7 +1571,6 @@
 
 .method public speaker(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "[carrier-phone] OllehPhoneService"
 
@@ -1903,7 +1883,6 @@
 
 .method public unregisterCallBack(Lcom/android/phone/ICallOEMEventListener;)Z
     .locals 3
-    .param p1    # Lcom/android/phone/ICallOEMEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

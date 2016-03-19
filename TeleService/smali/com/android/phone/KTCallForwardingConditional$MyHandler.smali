@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/KTCallForwardingConditional;Lcom/android/phone/KTCallForwardingConditional$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/KTCallForwardingConditional;
-    .param p2    # Lcom/android/phone/KTCallForwardingConditional$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/KTCallForwardingConditional$MyHandler;-><init>(Lcom/android/phone/KTCallForwardingConditional;)V
 
@@ -41,7 +39,6 @@
 
 .method private handleGetCFResponse(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const-string v4, "KTCallForwardingConditional"
 
@@ -189,7 +186,6 @@
 
 .method private handleSetCFResponse(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -277,7 +273,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

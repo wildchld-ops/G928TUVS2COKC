@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_yeardatetime_default_key_width" android:keyHeight="@dimen/split_phonepad_default_key_height" android:horizontalGap="@dimen/split_yeardatetime_default_key_horizontal_gap" android:verticalGap="@dimen/split_phonepad_default_key_vertical_gap" android:paddingLeft="@dimen/split_yeardatetime_first_col_horizontal_gap" android:paddingRight="@dimen/split_yeardatetime_first_col_horizontal_gap" android:paddingTop="@dimen/split_phonepad_first_line_vertical_gap" android:paddingBottom="@dimen/split_phonepad_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:rowEdgeFlags="top">
+        <Key android:codes="49" android:keyEdgeFlags="left" android:keyLabel="\ 1" />
+        <Key android:codes="50" android:keyLabel="\ 2" />
+        <Key android:codes="51" android:keyLabel="\ 3" />
+    </Row>
+    <Row>
+        <Key android:codes="52" android:keyEdgeFlags="left" android:keyLabel="\ 4" />
+        <Key android:codes="53" android:keyLabel="\ 5" />
+        <Key android:codes="54" android:keyLabel="\ 6" />
+    </Row>
+    <Row>
+        <Key android:codes="55" android:keyEdgeFlags="left" android:keyLabel="\ 7" />
+        <Key android:codes="56" android:keyLabel="\ 8" />
+        <Key android:codes="57" android:keyLabel="\ 9" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/textinput_floating_phonepad_ic_delete_xml" />
+        <Key android:codes="48" android:keyLabel="\ 0" />
+        <Key android:codes="10" android:keyEdgeFlags="right" android:keyIcon="@drawable/textinput_qwerty_ic_enter_xml" />
+    </Row>
+</Keyboard>

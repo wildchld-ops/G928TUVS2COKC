@@ -53,7 +53,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/ATCommandReceiver;->log(Ljava/lang/String;)V
 
@@ -62,8 +61,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/phone/ATCommandReceiver;->sendResponse(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -72,8 +69,6 @@
 
 .method private commandExecute(ILandroid/os/Bundle;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v6, 0x2
 
@@ -334,7 +329,6 @@
 
 .method public static handleGetCallForwarding(Landroid/os/Bundle;)V
     .locals 5
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v3, -0x1
 
@@ -419,7 +413,6 @@
 
 .method public static handleGetCallWaiting(Landroid/os/Bundle;)V
     .locals 3
-    .param p0    # Landroid/os/Bundle;
 
     const/16 v2, 0xb
 
@@ -444,7 +437,6 @@
 
 .method public static handleSetCallForwarding(Landroid/os/Bundle;)V
     .locals 8
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -620,7 +612,6 @@
 
 .method public static handleSetCallWaiting(Landroid/os/Bundle;)V
     .locals 5
-    .param p0    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/android/phone/ATCommandReceiver;->getPhone()Lcom/android/internal/telephony/Phone;
 
@@ -705,7 +696,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ATCommandReceiver"
 
@@ -716,8 +706,6 @@
 
 .method private static sendResponse(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -789,7 +777,6 @@
 
 .method private static setATcommandExecuting(Z)V
     .locals 2
-    .param p0    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -820,8 +807,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v4, "Received CUSTOMER_TEST_REQUSET"
 

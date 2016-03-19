@@ -210,8 +210,6 @@
 
 .method public static getSettingDB(Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -236,9 +234,6 @@
 
 .method public static getSettingDB(Ljava/lang/String;II)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -263,7 +258,6 @@
 
 .method public static initialize(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -272,7 +266,6 @@
 
 .method public static isAirplainModeOn(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -741,7 +734,6 @@
 
 .method public static isMobileKeyboardCovered(Landroid/content/res/Configuration;)Z
     .locals 4
-    .param p0    # Landroid/content/res/Configuration;
 
     const/4 v1, 0x1
 
@@ -1376,7 +1368,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SystemDBInterface"
 
@@ -1387,8 +1378,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "SystemDBInterface"
 
@@ -1399,7 +1388,6 @@
 
 .method public static setAlerting(Z)V
     .locals 4
-    .param p0    # Z
 
     const-string v0, "call_state_alerting"
 
@@ -1448,7 +1436,6 @@
 
 .method public static setCallerInfoCardMode(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -1487,7 +1474,6 @@
 
 .method public static setDisplayBitrate(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -1526,7 +1512,6 @@
 
 .method public static setDockOn(Z)V
     .locals 3
-    .param p0    # Z
 
     const/4 v2, 0x1
 
@@ -1563,7 +1548,6 @@
 
 .method public static setLGTRADCode(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "country_code"
 
@@ -1574,7 +1558,6 @@
 
 .method public static setLGTRADID(I)V
     .locals 1
-    .param p0    # I
 
     const-string v0, "country_id"
 
@@ -1585,7 +1568,6 @@
 
 .method public static setLGTRADNameEng(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CONTURY_NAME_ENG"
 
@@ -1596,7 +1578,6 @@
 
 .method public static setLGTRADNameKor(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CONTURY_NAME_KOR"
 
@@ -1607,7 +1588,6 @@
 
 .method public static setLGTRADSetting(I)V
     .locals 1
-    .param p0    # I
 
     const-string v0, "auto_dial_enable"
 
@@ -1618,7 +1598,6 @@
 
 .method public static setLostPhoneLock(Z)V
     .locals 3
-    .param p0    # Z
 
     const/4 v0, 0x1
 
@@ -1657,7 +1636,6 @@
 
 .method public static setMcidB2C(I)V
     .locals 2
-    .param p0    # I
 
     const-string v0, "mcid_b2c"
 
@@ -1690,7 +1668,6 @@
 
 .method public static setMcidBlockedNumber(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -1729,7 +1706,6 @@
 
 .method public static setMcidDownloadable(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -1768,7 +1744,6 @@
 
 .method public static setMcidServiceType(I)V
     .locals 1
-    .param p0    # I
 
     const-string v0, "mcid_service_type"
 
@@ -1779,7 +1754,6 @@
 
 .method public static setName4startIMSConference(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "name4startIMSConf"
 
@@ -1790,7 +1764,6 @@
 
 .method public static setNsriSecureCallMode(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "nsri_secure_call_mode"
 
@@ -1831,7 +1804,6 @@
 
 .method public static setNumber4startIMSConference(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "number4startIMSConf"
 
@@ -1842,7 +1814,6 @@
 
 .method public static setOllehPhoneEnabled(I)V
     .locals 2
-    .param p0    # I
 
     const-string v0, "kt_ollehphone_enabled"
 
@@ -1877,7 +1848,6 @@
 
 .method public static setOllehPhoneRejectMode(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "kt_ollehphone_reject_mode"
 
@@ -1918,7 +1888,6 @@
 
 .method public static setOllehPhoneRelaxMode(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "kt_ollehphone_relax_mode"
 
@@ -1959,7 +1928,6 @@
 
 .method public static setOnMerge(I)V
     .locals 3
-    .param p0    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1998,7 +1966,6 @@
 
 .method public static setRoamingAutoSetting(I)V
     .locals 1
-    .param p0    # I
 
     const-string v0, "roaming_auto_setting"
 
@@ -2009,8 +1976,6 @@
 
 .method public static setSettingDB(Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -2033,9 +1998,6 @@
 
 .method public static setSettingDB(Ljava/lang/String;II)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -2058,8 +2020,6 @@
 
 .method public static setSettingDB(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -2082,7 +2042,6 @@
 
 .method public static setSuppService(I)V
     .locals 3
-    .param p0    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2121,7 +2080,6 @@
 
 .method public static setTPhoneEnabled(I)V
     .locals 2
-    .param p0    # I
 
     const-string v0, "skt_phone20_settings"
 
@@ -2156,7 +2114,6 @@
 
 .method public static setTPhoneRADDialingToKorea(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "skt_phone20_rad_dialing_korea"
 
@@ -2197,7 +2154,6 @@
 
 .method public static setTPhoneRejectMode(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "skt_phone20_reject_mode"
 
@@ -2238,7 +2194,6 @@
 
 .method public static setTPhoneRelaxMode(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "skt_phone20_relax_mode"
 
@@ -2279,7 +2234,6 @@
 
 .method public static setTPhoneUpgradeInstallingState(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "skt_phone20_installing_mode"
 
@@ -2320,7 +2274,6 @@
 
 .method public static setTtyNotification(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "show_tty_notification"
 

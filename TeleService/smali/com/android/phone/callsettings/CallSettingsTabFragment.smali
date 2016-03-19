@@ -32,8 +32,6 @@
 
 .method private setupTab(Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -530,7 +528,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, -0x1
 
@@ -646,7 +643,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -703,7 +699,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

@@ -108,7 +108,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/OllehPhoneService;)Lcom/android/phone/PhoneGlobals;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->apps:Lcom/android/phone/PhoneGlobals;
 
@@ -117,7 +116,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/OllehPhoneService;)Lcom/android/phone/CarrierManager;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->mCarrierManager:Lcom/android/phone/CarrierManager;
 
@@ -126,9 +124,6 @@
 
 .method static synthetic access$1100(Lcom/android/phone/OllehPhoneService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/OllehPhoneService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/OllehPhoneService;->log(Ljava/lang/String;Z)V
 
@@ -137,7 +132,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/OllehPhoneService;)V
     .locals 0
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     invoke-direct {p0}, Lcom/android/phone/OllehPhoneService;->updateAutoRejectNotification()V
 
@@ -146,7 +140,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/OllehPhoneService;)Lcom/android/internal/telephony/CallManager;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->mCM:Lcom/android/internal/telephony/CallManager;
 
@@ -155,7 +148,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/OllehPhoneService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->mHandler:Landroid/os/Handler;
 
@@ -164,8 +156,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/OllehPhoneService;Lcom/android/internal/telephony/Call;)Lcom/android/internal/telephony/Connection;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
-    .param p1    # Lcom/android/internal/telephony/Call;
 
     invoke-direct {p0, p1}, Lcom/android/phone/OllehPhoneService;->getConnection(Lcom/android/internal/telephony/Call;)Lcom/android/internal/telephony/Connection;
 
@@ -176,8 +166,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/OllehPhoneService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/OllehPhoneService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/OllehPhoneService;->log(Ljava/lang/String;)V
 
@@ -186,7 +174,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/OllehPhoneService;)Lcom/android/phone/PhoneVoiceRecorder;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->recorder:Lcom/android/phone/PhoneVoiceRecorder;
 
@@ -195,7 +182,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/OllehPhoneService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->mSyncListener:Ljava/lang/Object;
 
@@ -204,7 +190,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/OllehPhoneService;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/phone/OllehPhoneService;
 
     iget-object v0, p0, Lcom/android/phone/OllehPhoneService;->mICallOEMEventListener:Landroid/os/RemoteCallbackList;
 
@@ -213,8 +198,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/OllehPhoneService;Lcom/android/phone/ICallOEMEventListener;)V
     .locals 0
-    .param p0    # Lcom/android/phone/OllehPhoneService;
-    .param p1    # Lcom/android/phone/ICallOEMEventListener;
 
     invoke-direct {p0, p1}, Lcom/android/phone/OllehPhoneService;->initRegisterListener(Lcom/android/phone/ICallOEMEventListener;)V
 
@@ -284,7 +267,6 @@
 
 .method private getCallInfo(Lcom/android/internal/telephony/Connection;)Lcom/kt/ollehcall/phoneinterface/KtCall;
     .locals 6
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v2, 0x0
 
@@ -599,7 +581,6 @@
 
 .method private getConnection(Lcom/android/internal/telephony/Call;)Lcom/android/internal/telephony/Connection;
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/Call;
 
     const/4 v0, 0x0
 
@@ -681,7 +662,6 @@
 
 .method private initRegisterListener(Lcom/android/phone/ICallOEMEventListener;)V
     .locals 7
-    .param p1    # Lcom/android/phone/ICallOEMEventListener;
 
     iget-object v3, p0, Lcom/android/phone/OllehPhoneService;->mSyncListener:Ljava/lang/Object;
 
@@ -790,7 +770,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[carrier-phone] OllehPhoneService"
 
@@ -805,8 +784,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "[carrier-phone] OllehPhoneService"
 
@@ -1030,7 +1007,6 @@
 
 .method public getConstCallType(Lcom/android/internal/telephony/Connection;)I
     .locals 6
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v5, 0x1
 
@@ -1130,7 +1106,6 @@
 
 .method public getKeyMappingTable(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1311,7 +1286,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -1465,7 +1439,6 @@
 
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "onUnbind()"
 
@@ -1480,8 +1453,6 @@
 
 .method public sendCoverStateChanged(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/phone/OllehPhoneService;->mSyncListener:Ljava/lang/Object;
 
@@ -1609,7 +1580,6 @@
 
 .method public sendDisconnectCall(Landroid/os/AsyncResult;)V
     .locals 10
-    .param p1    # Landroid/os/AsyncResult;
 
     if-nez p1, :cond_0
 
@@ -1734,7 +1704,6 @@
 
 .method public sendNewIncomingCall(Landroid/os/AsyncResult;)V
     .locals 10
-    .param p1    # Landroid/os/AsyncResult;
 
     if-nez p1, :cond_0
 
@@ -1994,8 +1963,6 @@
 
 .method public sendPostOnDialChars(Landroid/os/AsyncResult;C)V
     .locals 10
-    .param p1    # Landroid/os/AsyncResult;
-    .param p2    # C
 
     if-nez p1, :cond_0
 
@@ -2120,7 +2087,6 @@
 
 .method public sendRequestVideoCall(Lcom/android/internal/telephony/Connection;)V
     .locals 9
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     iget-object v5, p0, Lcom/android/phone/OllehPhoneService;->mSyncListener:Ljava/lang/Object;
 
@@ -2248,7 +2214,6 @@
 
 .method public sendShowMeContentsReceived(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v4, p0, Lcom/android/phone/OllehPhoneService;->mSyncListener:Ljava/lang/Object;
 
@@ -2350,7 +2315,6 @@
 
 .method public sendSuppServiceFailed(Landroid/os/AsyncResult;)V
     .locals 9
-    .param p1    # Landroid/os/AsyncResult;
 
     if-nez p1, :cond_0
 
@@ -2463,7 +2427,6 @@
 
 .method public sendSuppServiceNotification(Landroid/os/AsyncResult;)V
     .locals 9
-    .param p1    # Landroid/os/AsyncResult;
 
     if-nez p1, :cond_0
 
@@ -2616,7 +2579,6 @@
 
 .method public sendVideoCallResult(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/phone/OllehPhoneService;->mSyncListener:Ljava/lang/Object;
 
@@ -2744,8 +2706,6 @@
 
 .method public setKeyMappingTable(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_default_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_number_key_width" android:keyHeight="@dimen/split_default_number_key_height" android:paddingLeft="@dimen/split_default_left_row0_padding_left" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row1_padding_left" android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/split_number_symbol_default_page1_row1_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row2_padding_left" android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/split_number_symbol_default_page1_row2_left" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="left" />
+        <include android:keys="@xml/split_number_symbol_default_page1_row3_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row1_padding_left" android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page1_row1_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row2_padding_left" android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page1_row2_left" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="left" />
+        <include android:keys="@xml/split_number_symbol_default_page1_row3_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row1_padding_left" android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/split_number_symbol_default_page2_row1_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row2_padding_left" android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/split_number_symbol_default_page2_row2_left" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="left" />
+        <include android:keys="@xml/split_number_symbol_default_page2_row3_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row1_padding_left" android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page2_row1_left" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_left_row2_padding_left" android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page2_row2_left" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="left" />
+        <include android:keys="@xml/split_number_symbol_default_page2_row3_left" />
+    </Row>
+    <include android:rows="@xml/split_number_symbols_row_bottom_left" />
+</Keyboard>

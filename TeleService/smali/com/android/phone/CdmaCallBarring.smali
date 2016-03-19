@@ -88,7 +88,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/CdmaCallBarring;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -97,7 +96,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/CdmaCallBarring;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/CdmaCallBarring;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -106,7 +104,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/CdmaCallBarring;)V
     .locals 0
-    .param p0    # Lcom/android/phone/CdmaCallBarring;
 
     invoke-direct {p0}, Lcom/android/phone/CdmaCallBarring;->dismissExpandedDialog()V
 
@@ -204,7 +201,6 @@
 
 .method private checkCallBarringPassword(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -292,8 +288,6 @@
 
 .method private final displayPasswdDialog(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget v1, p0, Lcom/android/phone/CdmaCallBarring;->mPwState:I
 
@@ -416,7 +410,6 @@
 
 .method private initCallBarringPassword(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x2
 
@@ -482,7 +475,6 @@
 
 .method private final saveCallBarringIncoming(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/CdmaCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -497,7 +489,6 @@
 
 .method private final saveCallBarringOutgoing(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/CdmaCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -512,7 +503,6 @@
 
 .method private final saveCallBarringPasswd(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/CdmaCallBarring;->getActivity()Landroid/app/Activity;
 
@@ -537,7 +527,6 @@
 
 .method private setAppState(Lcom/android/phone/CdmaCallBarring$AppState;)V
     .locals 2
-    .param p1    # Lcom/android/phone/CdmaCallBarring$AppState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -566,8 +555,6 @@
 
 .method private setAppState(Lcom/android/phone/CdmaCallBarring$AppState;I)V
     .locals 4
-    .param p1    # Lcom/android/phone/CdmaCallBarring$AppState;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -794,7 +781,6 @@
 
 .method private updateCBIncomingSummary(I)V
     .locals 2
-    .param p1    # I
 
     const v1, 0x7f0a03e9
 
@@ -834,7 +820,6 @@
 
 .method private updateCBOutgoingSummary(I)V
     .locals 2
-    .param p1    # I
 
     const v1, 0x7f0a03e5
 
@@ -876,9 +861,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallBarring;->mAppState:Lcom/android/phone/CdmaCallBarring$AppState;
 
@@ -904,7 +886,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v0, 0x0
 
@@ -923,8 +904,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
@@ -958,7 +937,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1245,7 +1223,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -1419,7 +1396,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1446,8 +1422,6 @@
 
 .method public onPinEntered(Lcom/android/phone/EditPinPreference;Z)V
     .locals 6
-    .param p1    # Lcom/android/phone/EditPinPreference;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -1670,8 +1644,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1741,8 +1713,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x0
 
@@ -1815,7 +1785,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1882,8 +1851,6 @@
 
 .method public startActivityForResult(Landroid/content/Intent;I)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v1, -0x1
 

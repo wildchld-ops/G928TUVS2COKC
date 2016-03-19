@@ -36,8 +36,6 @@
 
 .method public static cancelAllowDataAccess(Landroid/app/NotificationManager;I)V
     .locals 0
-    .param p0    # Landroid/app/NotificationManager;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/NotificationManager;->cancel(I)V
 
@@ -46,8 +44,6 @@
 
 .method public static cancelEmegencyCallbackMode(Landroid/app/NotificationManager;I)V
     .locals 0
-    .param p0    # Landroid/app/NotificationManager;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/NotificationManager;->cancel(I)V
 
@@ -56,7 +52,6 @@
 
 .method public static disableWifiInEmergencyCall(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -122,7 +117,6 @@
 
 .method public static enableWifiAfterEmergencyCall(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -263,7 +257,6 @@
 
 .method private static getRoamPrefMenu(I)Z
     .locals 5
-    .param p0    # I
 
     const-string v3, "csc_chameleon_enable"
 
@@ -318,7 +311,6 @@
 
 .method public static getRoamingIntent(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "roaming_enhancement"
 
@@ -340,8 +332,6 @@
 
 .method public static getSecureSettingBoolean(Ljava/lang/String;I)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -370,8 +360,6 @@
 
 .method public static getSecureSettingValueInt(Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -709,7 +697,6 @@
 
 .method public static isVoicemailNumberDefault(Lcom/android/internal/telephony/Phone;)Z
     .locals 5
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     const/4 v4, 0x0
 
@@ -769,9 +756,6 @@
 
 .method public static notifyAllowDataAccess(Landroid/content/Context;Landroid/app/NotificationManager;I)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/NotificationManager;
-    .param p2    # I
 
     const v9, 0x7f0a0510
 
@@ -850,9 +834,6 @@
 
 .method public static notifyEmegencyCallbackMode(Landroid/content/Context;Landroid/app/NotificationManager;I)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/NotificationManager;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -917,9 +898,6 @@
 
 .method public static onEmergencyCallbackModeChanged(Landroid/content/Context;Lcom/android/internal/telephony/Phone;Landroid/content/Intent;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Phone;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -1261,8 +1239,6 @@
 
 .method public static setCdmaRoaming(Lcom/android/internal/telephony/Phone;Landroid/os/Message;)V
     .locals 6
-    .param p0    # Lcom/android/internal/telephony/Phone;
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x1
 
@@ -1337,8 +1313,6 @@
 
 .method public static setLTECdmaRoaming(Lcom/android/internal/telephony/Phone;Landroid/os/Message;)V
     .locals 11
-    .param p0    # Lcom/android/internal/telephony/Phone;
-    .param p1    # Landroid/os/Message;
 
     const/4 v9, 0x0
 
@@ -1820,8 +1794,6 @@
 
 .method public static setSecureSettingValue(Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 

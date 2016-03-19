@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/phonepad_sym_default_key_width" android:keyHeight="@dimen/phonepad_sym_default_key_height" android:horizontalGap="@dimen/phonepad_sym_default_key_horizontal_gap" android:verticalGap="@dimen/phonepad_sym_default_key_vertical_gap" android:paddingLeft="@dimen/phonepad_sym_first_col_horizontal_gap" android:paddingRight="@dimen/phonepad_sym_first_col_horizontal_gap" android:paddingTop="@dimen/phonepad_sym_first_line_vertical_gap" android:paddingBottom="@dimen/phonepad_sym_last_line_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row3" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_normal">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="18" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="19" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page1_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page2_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page3_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row1" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_phonepad_ic_delete_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row2" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email_single_language">
+        <include android:keys="@xml/phonepad_default_symbol_page4_row3" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codeIndex="20" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_normal">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_normal">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email">
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-108" android:keyIcon="@drawable/textinput_phonepad_ic_language_xml" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_url_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_url_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_url_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_url_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_email_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_email_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_3_email_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_4_email_single_language">
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/phonepad_sym_space_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="32" />
+        <Key android:keyWidth="@dimen/phonepad_sym_function_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="0.0px">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

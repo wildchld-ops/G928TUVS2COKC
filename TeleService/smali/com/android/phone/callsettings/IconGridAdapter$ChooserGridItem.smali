@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/graphics/drawable/Drawable;ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/callsettings/IconGridAdapter$ChooserGridItem;)I
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/IconGridAdapter$ChooserGridItem;
 
     iget v0, p0, Lcom/android/phone/callsettings/IconGridAdapter$ChooserGridItem;->mTitleResId:I
 
@@ -56,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/callsettings/IconGridAdapter$ChooserGridItem;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/phone/callsettings/IconGridAdapter$ChooserGridItem;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IconGridAdapter$ChooserGridItem;->mAppIcon:Landroid/graphics/drawable/Drawable;
 

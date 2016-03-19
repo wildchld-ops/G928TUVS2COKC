@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg$ImageAdapter;->this$1:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
 
@@ -52,7 +51,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     const-string v0, "EditIconMode"
 
@@ -67,7 +65,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -76,9 +73,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/settings_spell_checker" android:title="@string/use_spell_checker" android:key="settings_spell_checker"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

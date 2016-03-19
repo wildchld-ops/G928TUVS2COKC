@@ -204,7 +204,6 @@
 
 .method public makeDeactiveSuccessString(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     iget-object v6, p0, Lcom/android/phone/DsaResult;->mContext:Landroid/content/Context;
 
@@ -526,7 +525,6 @@
 
 .method public makeFailString(I)Ljava/lang/String;
     .locals 14
-    .param p1    # I
 
     const v13, 0x7f0a0315
 
@@ -1206,7 +1204,6 @@
 
 .method public makeResultInformation(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x2
 
@@ -1364,7 +1361,6 @@
 
 .method public makeSuccessString(I)Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const v12, 0x7f0a0625
 

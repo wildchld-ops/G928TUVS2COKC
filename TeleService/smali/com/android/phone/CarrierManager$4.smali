@@ -36,8 +36,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     :try_start_0
     const-string v2, "[carrier-phone] CarrierManager"
@@ -169,7 +167,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v4, 0x1
 

@@ -20,7 +20,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 

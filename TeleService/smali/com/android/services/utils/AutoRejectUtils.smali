@@ -34,7 +34,6 @@
 
 .method public static checkCnapSpecialCases(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PRIVATE"
 
@@ -120,8 +119,6 @@
 
 .method public static getAutoRejectBundleExtra(Landroid/content/Context;Lcom/android/internal/telephony/Connection;)Landroid/os/Bundle;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     invoke-static {p0, p1}, Lcom/android/services/utils/AutoRejectUtils;->isAutoRejectCall(Landroid/content/Context;Lcom/android/internal/telephony/Connection;)Z
 
@@ -149,8 +146,6 @@
 
 .method public static getNthPositionValue(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     shr-int v0, p0, p1
 
@@ -161,8 +156,6 @@
 
 .method public static isAutoRejectCall(Landroid/content/Context;Lcom/android/internal/telephony/Connection;)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const-string v10, "ctc_vip_mode"
 
@@ -825,9 +818,6 @@
 
 .method private static isAutoRejectMachedNumber(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;)Z
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
 
     const-string v10, "reject_number"
 
@@ -1140,7 +1130,6 @@
 
 .method private static isAutoRejectWfcCall(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1213,7 +1202,6 @@
 
 .method static isPhoneInEcm(Lcom/android/internal/telephony/Phone;)Z
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Phone;
 
     if-eqz p0, :cond_0
 
@@ -1248,8 +1236,6 @@
 
 .method private static isSameStartWith(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1275,8 +1261,6 @@
 
 .method public static isVipModeReject(Landroid/content/Context;Lcom/android/internal/telephony/Connection;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     const/4 v9, 0x0
 

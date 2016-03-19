@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
@@ -54,8 +53,6 @@
 
 .method static synthetic access$2002(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->mPosition:I
 
@@ -64,8 +61,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->changedGridViewParams(I)V
 
@@ -74,7 +69,6 @@
 
 .method private changedGridViewParams(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->mDlgGrid:Landroid/widget/GridView;
 
@@ -227,7 +221,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 

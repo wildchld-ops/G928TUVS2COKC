@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_box_handwriting_default_key_width" android:keyHeight="@dimen/floating_box_handwriting_default_key_height" android:horizontalGap="@dimen/floating_box_handwriting_default_key_horizontal_gap" android:verticalGap="@dimen/floating_box_handwriting_default_key_vertical_gap" android:paddingLeft="@dimen/floating_box_handwriting_first_col_horizontal_gap" android:paddingRight="@dimen/floating_box_handwriting_first_col_horizontal_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_box_handwriting_default_key_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="44" android:keyLabel="，" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_space_key_width" android:codes="32" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="-404" android:keyLabel="。" />
+        <Key android:property="phone" android:country="china" android:codes="-108" backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_space_key_width" android:codes="32" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="-404" android:keyLabel="。" />
+        <Key android:property="phone" android:country="china" android:codes="-108" backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_space_key_width" android:codes="32" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="-404" android:keyLabel="。" />
+        <Key android:property="phone" android:country="china" android:codes="-108" backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="0xff0c" android:keyLabel="，" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_space_key_single_language_width" android:codes="32" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="-404" android:keyLabel="。" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_space_key_single_language_width" android:codes="32" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="-404" android:keyLabel="。" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_space_key_single_language_width" android:codes="32" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_comma_dot_key_width" android:country="china" android:codes="-404" android:keyLabel="。" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_delete_xml" />
+        <Key android:keyWidth="@dimen/floating_box_handwriting_sym_enter_key_width" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_box_handwriting_non_button_area">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

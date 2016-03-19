@@ -17,7 +17,6 @@
 # direct methods
 .method public static build(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -40,8 +39,6 @@
 
 .method public static setDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -52,8 +49,6 @@
 
 .method public static setExtras(Ljava/lang/Object;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/os/Bundle;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -64,8 +59,6 @@
 
 .method public static setIconBitmap(Ljava/lang/Object;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/graphics/Bitmap;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -76,8 +69,6 @@
 
 .method public static setIconUri(Ljava/lang/Object;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/net/Uri;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -88,8 +79,6 @@
 
 .method public static setMediaId(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -100,8 +89,6 @@
 
 .method public static setSubtitle(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 
@@ -112,8 +99,6 @@
 
 .method public static setTitle(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/media/MediaDescription$Builder;
 

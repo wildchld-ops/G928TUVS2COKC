@@ -4,7 +4,7 @@
     <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <LinearLayout android:orientation="vertical" android:id="@id/placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
         <ImageView android:gravity="fill_horizontal" android:id="@id/title_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_weight="1.0" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
-        <TableLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="1">
+        <TableLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="\ 1">
             <TextView android:textStyle="bold" android:id="@id/issued_to_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="7.0dip" android:text="@string/issued_to" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
             <TableRow>
                 <TextView android:id="@id/to_common_header" android:text="@string/common_name" android:layout_marginStart="20.0dip" />

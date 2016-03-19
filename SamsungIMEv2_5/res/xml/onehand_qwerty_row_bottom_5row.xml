@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:property="phone" android:country="common" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:country="china" android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_multi_language" android:country="common" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_one_language_chn" android:country="china" android:codes="32" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:property="phone" android:country="china" android:codes="-404" android:keyLabel="." />
+        <Key android:property="phone" android:country="common" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:property="phone" android:country="china" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_enter" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:country="china" android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_one_language" android:country="common" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_one_language_chn" android:country="china" android:codes="32" />
+        <Key android:property="phone" android:country="china" android:codes="-404" android:keyLabel="." />
+        <Key android:property="phone" android:country="common" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:property="phone" android:country="china" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_enter" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url_multi_language" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_123_language_key_width_url_chn" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_one_language" android:country="common" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_one_language_chn" android:country="china" android:codes="32" />
+        <Key android:property="phone" android:country="common" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:property="phone" android:country="china" android:codes="-404" android:keyLabel="." />
+        <Key android:property="tablet" android:codes="0x3b" android:keyLabel=";" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_dot_com" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:property="phone" android:country="china" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url_multi_language" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_123_language_key_width_url_chn" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_one_language" android:country="common" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_one_language_chn" android:country="china" android:codes="32" />
+        <Key android:property="phone" android:country="common" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:property="phone" android:country="china" android:codes="-404" android:keyLabel="." />
+        <Key android:property="tablet" android:codes="0x3a" android:keyLabel=":" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_dot_com" android:codes="-113" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:property="phone" android:country="china" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:property="phone" android:country="common" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url_multi_language" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_123_language_key_width_url_chn" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_multi_language" android:country="common" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_one_language_chn" android:country="china" android:codes="32" />
+        <Key android:property="phone" android:country="china" android:codes="-404" android:keyLabel="." />
+        <Key android:property="tablet" android:codes="0x3a" android:keyLabel=":" />
+        <Key android:property="phone" android:country="common" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_dot_com_multi_language" android:country="common" android:codes="-113" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_dot_com_chn" android:country="china" android:codes="-113" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:property="phone" android:country="china" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url_multi_language" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" android:property="phone" android:country="common" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url_multi_language" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_123_language_key_width_url_chn" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="china" android:codes="-989" android:keyLabel="\ 123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:country="common" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_multi_language" android:country="common" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_email_one_language_chn" android:country="china" android:codes="32" />
+        <Key android:property="phone" android:country="china" android:codes="-404" android:keyLabel="." />
+        <Key android:property="tablet" android:codes="0x3b" android:keyLabel=";" />
+        <Key android:property="phone" android:country="common" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_dot_com_multi_language" android:country="common" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_dot_com_chn" android:country="china" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_123_language_chn" android:property="phone" android:country="china" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" backgroundDrawable="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_number_symbols_key_width_enter_url_multi_language" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:keyboardMode="@id/mode_comma">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_ctrl" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1000" android:keyLabel="Ctrl" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_multi_language" android:codes="32" />
+        <Key android:property="phone" android:codes="-122" android:popupKeyboard="@xml/floating_popup_template_keyboard" android:keyLabel="." />
+        <Key android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_enter" android:property="phone" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_left" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1001" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_l_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_arrow_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:property="tablet" android:codes="-1002" android:isRepeatable="true" android:keyIcon="@drawable/textinput_qwerty_ic_arrow_r_xml" />
+    </Row>
+    <Row android:keyHeight="@dimen/onehand_qwerty_x_x_x_x_x_key_control_key_height" android:keyboardMode="@id/mode_mirrorlink">
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_symbol_change" android:horizontalGap="@dimen/onehand_qwerty_default_row0_padding_left" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/textinput_floating_qwerty_ic_language_xml" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_space_one_language" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:codes="32" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:codes="-229" android:keyIcon="@drawable/keypad_hide_icon" />
+        <Key android:keyWidth="@dimen/onehand_qwerty_default_key_width_enter" android:horizontalGap="@dimen/onehand_qwerty_default_key_horizontal_gap" android:codes="10" android:keyLabel="StrEmpty" />
+    </Row>
+</merge>

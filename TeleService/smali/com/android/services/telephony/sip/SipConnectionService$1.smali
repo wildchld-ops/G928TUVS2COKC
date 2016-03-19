@@ -44,7 +44,6 @@
 # virtual methods
 .method public onFound(Landroid/net/sip/SipProfile;)V
     .locals 4
-    .param p1    # Landroid/net/sip/SipProfile;
 
     const/16 v3, 0x2b
 

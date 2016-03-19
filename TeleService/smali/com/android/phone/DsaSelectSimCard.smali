@@ -114,7 +114,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/DsaSelectSimCard;)I
     .locals 1
-    .param p0    # Lcom/android/phone/DsaSelectSimCard;
 
     iget v0, p0, Lcom/android/phone/DsaSelectSimCard;->mCurrentStatus:I
 
@@ -123,8 +122,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/DsaSelectSimCard;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/DsaSelectSimCard;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/DsaSelectSimCard;->mCurrentStatus:I
 
@@ -133,7 +130,6 @@
 
 .method private dsaLog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "DsaSelectSimCard"
 
@@ -171,7 +167,6 @@
 
 .method public displayDialog(I)V
     .locals 7
-    .param p1    # I
 
     const v6, 0x7f0a0623
 
@@ -478,7 +473,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "DsaSelectSimCard"
 
@@ -1293,7 +1287,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const/4 v6, 0x6
 
@@ -1436,8 +1429,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -1510,7 +1501,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 
@@ -1619,7 +1609,6 @@
 
 .method public softkeyRun1(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -1724,7 +1713,6 @@
 
 .method public softkeyRun2(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x0
 

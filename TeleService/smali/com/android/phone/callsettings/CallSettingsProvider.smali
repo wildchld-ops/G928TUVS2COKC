@@ -78,8 +78,6 @@
 
 .method private appendRowId(Ljava/lang/String;J)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -233,7 +231,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "CallSettingsProvider"
 
@@ -246,9 +243,6 @@
 # virtual methods
 .method public call(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -299,9 +293,6 @@
 
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1154,7 +1145,6 @@
 
 .method public getDatabase(Landroid/net/Uri;)Z
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -1490,7 +1480,6 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsProvider;->uriMatcher:Landroid/content/UriMatcher;
 
@@ -1562,8 +1551,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v8, 0x0
 
@@ -2744,11 +2731,6 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -3551,10 +3533,6 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v8, 0x0
 

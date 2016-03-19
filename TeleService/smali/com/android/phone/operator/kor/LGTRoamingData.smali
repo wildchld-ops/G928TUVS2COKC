@@ -176,7 +176,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x4
 
@@ -265,7 +264,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/kor/LGTRoamingData;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/kor/LGTRoamingData;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTRoamingData;->roamingContext:Landroid/content/Context;
 
@@ -295,7 +293,6 @@
 
 .method public getCountry(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -459,7 +456,6 @@
 
 .method public selectCountry(Ljava/lang/Long;)[Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/Long;
 
     const/4 v6, 0x3
 

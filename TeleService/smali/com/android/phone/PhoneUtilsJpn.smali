@@ -6,8 +6,6 @@
 # direct methods
 .method public static parseUSSD(Landroid/content/Context;Lcom/android/internal/telephony/MmiCode;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/telephony/MmiCode;
 
     const/4 v0, 0x0
 

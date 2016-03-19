@@ -1,4 +1,4 @@
-version: 2.0.2
+version: 2.0.3
 apkFileName: framework-res.apk
 isFrameworkApk: true
 sdkInfo:
@@ -11,6 +11,12 @@ versionInfo:
   versionName: 5.1.1-G928TUVS2COKC
 sharedLibrary: false
 doNotCompress:
-- resources.arsc
-- res/drawable-sw360dp-xxxhdpi-v13/ic_knox_badge.PNG
-- res/drawable-sw360dp-xxxhdpi-v13/ic_knox_badge2.PNG
+- xml
+- arsc
+- xsd
+- raw
+- dic
+- html
+- bin
+- frag
+- vert

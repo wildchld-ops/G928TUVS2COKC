@@ -117,7 +117,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->onPhoneStateChanged()V
 
@@ -126,8 +125,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->onDisconnect(Landroid/os/AsyncResult;)V
 
@@ -136,7 +133,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->actionAnswerCall()V
 
@@ -153,7 +149,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->speakerOnOff:Z
 
@@ -162,8 +157,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->actionTurnOnSpeker(Z)V
 
@@ -172,7 +165,6 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->log(Ljava/lang/String;)V
 
@@ -181,7 +173,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->actionConvertCall()V
 
@@ -190,7 +181,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
 
     invoke-direct {p0}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->actionSwitchCall()V
 
@@ -199,7 +189,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
 
     iget-object v0, p0, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->mHandler:Landroid/os/Handler;
 
@@ -208,8 +197,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;Ljava/util/ArrayList;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->actionOutgoingGroupCall(Ljava/util/ArrayList;)V
 
@@ -218,8 +205,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->actionEndCall(Ljava/lang/String;)V
 
@@ -340,7 +325,6 @@
 
 .method private actionEndCall(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -636,7 +620,6 @@
 
 .method private actionTurnOnSpeker(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/services/utils/SecTelecomAdapter;->getInstance()Lcom/android/services/utils/SecTelecomAdapter;
 
@@ -991,7 +974,6 @@
 
 .method private convertToLgtCallState(Lcom/android/internal/telephony/Call$State;)Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr$LgtCallState;
     .locals 2
-    .param p1    # Lcom/android/internal/telephony/Call$State;
 
     sget-object v0, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr$3;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
@@ -1071,7 +1053,6 @@
 
 .method private convertToLgtCallType(I)Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr$LgtCallType;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1097,7 +1078,6 @@
 
 .method private convertToLgtGroupCallState(Lcom/android/phone/ims/Participant$State;)Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr$LgtGroupCallState;
     .locals 2
-    .param p1    # Lcom/android/phone/ims/Participant$State;
 
     sget-object v0, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr$3;->$SwitchMap$com$android$phone$ims$Participant$State:[I
 
@@ -1170,7 +1150,6 @@
 
 .method private getPhoneNumber(Lcom/android/internal/telephony/Connection;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/Connection;
 
     if-eqz p1, :cond_0
 
@@ -1439,7 +1418,6 @@
 
 .method public static isAutoRejectCall(Lcom/android/internal/telephony/Connection;)Z
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/Connection;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1466,7 +1444,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/phone/operator/kor/LGTUwaCallServiceMgr;->DBG:Z
 
@@ -1482,7 +1459,6 @@
 
 .method public static makeConfNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -1646,7 +1622,6 @@
 
 .method private onDisconnect(Landroid/os/AsyncResult;)V
     .locals 3
-    .param p1    # Landroid/os/AsyncResult;
 
     const-string v1, "onDisconnect()..."
 
@@ -1935,8 +1910,6 @@
 
 .method private sendBroadcastIntent(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1991,7 +1964,6 @@
 
 .method private sendUwaCallDisconnetIntent(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "callState"
 
@@ -2040,8 +2012,6 @@
 
 .method private updateUwaCallStateIntentParams(Lcom/android/internal/telephony/Call;Landroid/os/Bundle;)Z
     .locals 11
-    .param p1    # Lcom/android/internal/telephony/Call;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -2250,8 +2220,6 @@
 # virtual methods
 .method public broadcastUwaGroupCallStateIntent(Ljava/lang/String;Lcom/android/phone/ims/Participant$State;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/phone/ims/Participant$State;
 
     new-instance v0, Ljava/util/ArrayList;
 

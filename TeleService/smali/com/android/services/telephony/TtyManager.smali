@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Lcom/android/internal/telephony/Phone;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/telephony/Phone;
 
     const/4 v8, 0x0
 
@@ -210,7 +208,6 @@
 
 .method static synthetic access$100(Lcom/android/services/telephony/TtyManager;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/services/telephony/TtyManager;
 
     iget-object v0, p0, Lcom/android/services/telephony/TtyManager;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -219,7 +216,6 @@
 
 .method static synthetic access$200(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/services/telephony/TtyManager;->phoneModeToTelecomMode(I)I
 
@@ -230,7 +226,6 @@
 
 .method static synthetic access$300(Lcom/android/services/telephony/TtyManager;)I
     .locals 1
-    .param p0    # Lcom/android/services/telephony/TtyManager;
 
     iget v0, p0, Lcom/android/services/telephony/TtyManager;->mTtyMode:I
 
@@ -239,7 +234,6 @@
 
 .method static synthetic access$400(Lcom/android/services/telephony/TtyManager;)I
     .locals 1
-    .param p0    # Lcom/android/services/telephony/TtyManager;
 
     iget v0, p0, Lcom/android/services/telephony/TtyManager;->mPrevStateMode:I
 
@@ -248,8 +242,6 @@
 
 .method static synthetic access$402(Lcom/android/services/telephony/TtyManager;I)I
     .locals 0
-    .param p0    # Lcom/android/services/telephony/TtyManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/TtyManager;->mPrevStateMode:I
 
@@ -258,7 +250,6 @@
 
 .method static synthetic access$500(Lcom/android/services/telephony/TtyManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/services/telephony/TtyManager;
 
     iget-object v0, p0, Lcom/android/services/telephony/TtyManager;->mContext:Landroid/content/Context;
 
@@ -267,7 +258,6 @@
 
 .method static synthetic access$600(Lcom/android/services/telephony/TtyManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/services/telephony/TtyManager;
 
     iget-object v0, p0, Lcom/android/services/telephony/TtyManager;->mHandler:Landroid/os/Handler;
 
@@ -276,8 +266,6 @@
 
 .method static synthetic access$700(Lcom/android/services/telephony/TtyManager;I)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/TtyManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/TtyManager;->updateTtyMode(I)V
 
@@ -286,8 +274,6 @@
 
 .method static synthetic access$800(Lcom/android/services/telephony/TtyManager;I)V
     .locals 0
-    .param p0    # Lcom/android/services/telephony/TtyManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/TtyManager;->updateUiTtyMode(I)V
 
@@ -296,7 +282,6 @@
 
 .method private static phoneModeToTelecomMode(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -332,7 +317,6 @@
 
 .method private static telecomModeToPhoneMode(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -358,7 +342,6 @@
 
 .method private updateTtyMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -407,7 +390,6 @@
 
 .method private updateUiTtyMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 

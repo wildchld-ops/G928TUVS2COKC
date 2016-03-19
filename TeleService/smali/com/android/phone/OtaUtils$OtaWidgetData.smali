@@ -69,8 +69,6 @@
 
 .method synthetic constructor <init>(Lcom/android/phone/OtaUtils;Lcom/android/phone/OtaUtils$1;)V
     .locals 0
-    .param p1    # Lcom/android/phone/OtaUtils;
-    .param p2    # Lcom/android/phone/OtaUtils$1;
 
     invoke-direct {p0, p1}, Lcom/android/phone/OtaUtils$OtaWidgetData;-><init>(Lcom/android/phone/OtaUtils;)V
 

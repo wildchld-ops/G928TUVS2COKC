@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/preference/PreferenceActivity;Landroid/preference/PreferenceScreen;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceActivity;
-    .param p2    # Landroid/preference/PreferenceScreen;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,9 +50,6 @@
 
 .method public constructor <init>(Landroid/preference/PreferenceActivity;Landroid/preference/PreferenceScreen;I)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceActivity;
-    .param p2    # Landroid/preference/PreferenceScreen;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,7 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/GsmUmtsOptions;)I
     .locals 1
-    .param p0    # Lcom/android/phone/GsmUmtsOptions;
 
     iget v0, p0, Lcom/android/phone/GsmUmtsOptions;->mSimId:I
 
@@ -107,7 +101,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/GsmUmtsOptions;)Landroid/preference/PreferenceActivity;
     .locals 1
-    .param p0    # Lcom/android/phone/GsmUmtsOptions;
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsOptions;->mPrefActivity:Landroid/preference/PreferenceActivity;
 
@@ -420,7 +413,6 @@
 
 .method private setNetworkOperatorName(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -543,8 +535,6 @@
 
 .method private updateRemovedAPNExpand(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "chn_cdma_network_on_all_rat"
 
@@ -862,7 +852,6 @@
 
 .method protected log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "GsmUmtsOptions"
 
@@ -873,7 +862,6 @@
 
 .method public preferenceTreeClick(Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 
@@ -941,7 +929,6 @@
 
 .method public setOperatorSelectionExpandEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsOptions;->mButtonOperatorSelectionExpand:Landroid/preference/PreferenceScreen;
 
@@ -954,7 +941,6 @@
 
 .method public setOperatorSelectionExpandSummary(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/GsmUmtsOptions;->mButtonOperatorSelectionExpand:Landroid/preference/PreferenceScreen;
 

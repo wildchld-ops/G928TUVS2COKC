@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="show_pictures" format="boolean" />
+    <attr name="extra_fields" format="string" />
+    <attr name="show_title_bar" format="boolean" />
+    <attr name="title_text" format="string" />
+    <attr name="done_button_text" format="string" />
+    <attr name="title_bar_background" format="reference" />
+    <attr name="done_button_background" format="reference" />
+    <attr name="multi_select" format="boolean" />
+    <attr name="radius_in_meters" format="integer" />
+    <attr name="results_limit" format="integer" />
+    <attr name="search_text" format="string" />
+    <attr name="show_search_box" format="boolean" />
+    <attr name="confirm_logout" format="boolean" />
+    <attr name="fetch_user_info" format="boolean" />
+    <attr name="login_text" format="string" />
+    <attr name="logout_text" format="string" />
+    <attr name="preset_size">
+        <enum name="large" value="-4" />
+        <enum name="normal" value="-3" />
+        <enum name="small" value="-2" />
+    </attr>
+    <attr name="is_cropped" format="boolean" />
+    <attr name="keyWidth" format="dimension|fraction" />
+    <attr name="keyHeight" format="dimension|fraction" />
+    <attr name="horizontalGap" format="dimension|fraction" />
+    <attr name="verticalGap" format="dimension|fraction" />
+    <attr name="style" format="reference" />
+    <attr name="backgroundDrawable" format="reference|integer" />
+    <attr name="property" format="string" />
+    <attr name="country" format="string" />
+    <attr name="paddingLeft" format="reference" />
+    <attr name="paddingRight" format="reference" />
+    <attr name="paddingTop" format="reference" />
+    <attr name="paddingBottom" format="reference" />
+    <attr name="rowEdgeFlags">
+        <flag name="bottom" value="0x00000008" />
+        <flag name="top" value="0x00000004" />
+    </attr>
+    <attr name="keyboardMode" format="reference" />
+    <attr name="startPosX" format="dimension|fraction" />
+    <attr name="keys" format="reference" />
+    <attr name="rows" format="reference" />
+    <attr name="padding" format="dimension|fraction" />
+    <attr name="codeIndex" format="integer" />
+    <attr name="codes" format="string|integer" />
+    <attr name="popupKeyboard" format="reference" />
+    <attr name="popupCharacters" format="string" />
+    <attr name="keyEdgeFlags">
+        <flag name="left" value="0x00000001" />
+        <flag name="right" value="0x00000002" />
+    </attr>
+    <attr name="isModifier" format="boolean" />
+    <attr name="isSticky" format="boolean" />
+    <attr name="isRepeatable" format="boolean" />
+    <attr name="iconPreview" format="reference" />
+    <attr name="keyOutputText" format="string" />
+    <attr name="keyLabel" format="string" />
+    <attr name="keyIcon" format="reference" />
+    <attr name="leftkeyindex" format="integer" />
+    <attr name="rightkeyindex" format="integer" />
+    <attr name="topkeyindex" format="integer" />
+    <attr name="bottomkeyindex" format="integer" />
+    <attr name="currentkeyindex" format="integer" />
+    <attr name="focusstate" format="boolean" />
+    <attr name="pressedstate" format="boolean" />
+    <attr name="textAppearanceLargePopupMenu" format="reference" />
+    <attr name="textAppearanceMedium" format="reference" />
+    <attr name="state_shift" format="boolean" />
+    <attr name="state_caps" format="boolean" />
+    <attr name="state_ctrl_modifier" format="boolean" />
+    <attr name="state_ctrl_modifier_pressed" format="boolean" />
+</resources>

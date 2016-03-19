@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="handwriting_vopanel_text_margin">533</integer>
+    <integer name="handwriting_vopanel_baseline_position">320</integer>
+    <integer name="handwriting_vopanel_font_size">200</integer>
+    <item type="integer" name="APKTOOL_DUMMY_0038">false</item>
+</resources>

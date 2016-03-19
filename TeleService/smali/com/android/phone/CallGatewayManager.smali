@@ -78,8 +78,6 @@
 
 .method public static checkAndCopyPhoneProviderExtras(Landroid/content/Intent;Landroid/content/Intent;)V
     .locals 2
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {p0}, Lcom/android/phone/CallGatewayManager;->hasPhoneProviderExtras(Landroid/content/Intent;)Z
 
@@ -157,7 +155,6 @@
 
 .method public static getProviderGatewayUri(Landroid/content/Intent;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const-string v1, "com.android.phone.extra.GATEWAY_URI"
 
@@ -186,8 +183,6 @@
 
 .method public static getRawGatewayInfo(Landroid/content/Intent;Ljava/lang/String;)Lcom/android/phone/CallGatewayManager$RawGatewayInfo;
     .locals 3
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/CallGatewayManager;->hasPhoneProviderExtras(Landroid/content/Intent;)Z
 
@@ -220,7 +215,6 @@
 
 .method public static hasPhoneProviderExtras(Landroid/content/Intent;)Z
     .locals 4
-    .param p0    # Landroid/content/Intent;
 
     const/4 v2, 0x0
 
@@ -264,8 +258,6 @@
 # virtual methods
 .method public setGatewayInfoForConnection(Lcom/android/internal/telephony/Connection;Lcom/android/phone/CallGatewayManager$RawGatewayInfo;)V
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/Connection;
-    .param p2    # Lcom/android/phone/CallGatewayManager$RawGatewayInfo;
 
     invoke-virtual {p2}, Lcom/android/phone/CallGatewayManager$RawGatewayInfo;->isEmpty()Z
 

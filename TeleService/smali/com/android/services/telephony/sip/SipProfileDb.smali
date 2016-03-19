@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method private deleteProfile(Ljava/io/File;)V
     .locals 5
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -96,7 +94,6 @@
 
 .method private deserialize(Ljava/io/File;)Landroid/net/sip/SipProfile;
     .locals 7
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -205,7 +202,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SIP"
 
@@ -370,7 +366,6 @@
 # virtual methods
 .method public deleteProfile(Landroid/net/sip/SipProfile;)V
     .locals 4
-    .param p1    # Landroid/net/sip/SipProfile;
 
     const-class v1, Lcom/android/services/telephony/sip/SipProfileDb;
 
@@ -473,7 +468,6 @@
 
 .method public saveProfile(Landroid/net/sip/SipProfile;)V
     .locals 9
-    .param p1    # Landroid/net/sip/SipProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

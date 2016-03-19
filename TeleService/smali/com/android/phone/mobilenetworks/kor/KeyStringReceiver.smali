@@ -74,7 +74,6 @@
 
 .method private startDataNetworkModeActivity(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "KeyStringReceiver"
 
@@ -105,8 +104,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 

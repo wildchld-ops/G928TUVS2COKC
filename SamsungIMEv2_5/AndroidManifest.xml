@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" coreApp="true" package="com.sec.android.inputmethod" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-G928TUVS2COKC">
+    <application android:hardwareAccelerated="false" android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/app_setting_icon" android:name="com.sec.android.inputmethod.SamsungKeypadApplication" android:supportsRtl="true" android:theme="@style/customTheme">
+        <meta-data android:name="scloud_support_sync" android:value="true"/>
+        <meta-data android:name="scloud_contents_id" android:value="5cycOLYlDH"/>
+        <meta-data android:name="scloud_support_authority" android:value="com.sec.android.inputmethod"/>
+        <meta-data android:name="scloud_data_authority" android:value="com.sec.android.inputmethod.scloudsync.SipSyncProvider"/>
+        <receiver android:enabled="true" android:name="com.samsung.android.scloud.oem.lib.sync.SCloudReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNIN_COMPLETED"/>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.sec.android.inputmethod.scloudsync.SipSyncProvider" android:enabled="true" android:exported="true" android:label="@string/scloud_sync_settings_label" android:name="com.sec.android.inputmethod.scloudsync.SipSyncProvider" android:readPermission="com.samsung.android.scloud.sync.permission.READ" android:syncable="false" android:writePermission="com.samsung.android.scloud.sync.permission.WRITE"/>
+        <provider android:authorities="com.sec.android.inputmethod" android:enabled="true" android:exported="true" android:name="com.samsung.android.scloud.oem.lib.sync.SyncClientProivder" android:readPermission="com.samsung.android.scloud.sync.permission.READ" android:syncable="false" android:writePermission="com.samsung.android.scloud.sync.permission.WRITE"/>
+        <service android:exported="true" android:name="com.samsung.android.scloud.oem.lib.sync.SyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/imesyncadapter"/>
+        </service>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+        <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+        <uses-permission android:name="com.sec.android.inputmethod.scloudsync.SipSyncProvider.READ"/>
+        <uses-permission android:name="com.sec.android.inputmethod.scloudsync.SipSyncProvider.WRITE"/>
+        <uses-permission android:name="com.samsung.android.scloud.sync.permission.READ"/>
+        <uses-permission android:name="com.samsung.android.scloud.sync.permission.WRITE"/>
+        <uses-permission android:name="com.sec.enterprise.knox.permission.CUSTOM_SYSTEM"/>
+        <permission android:name="com.sec.enterprise.knox.permission.CUSTOM_SYSTEM" android:protectionLevel="signatureOrSystem"/>
+        <service android:name="SamsungKeypad" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method"/>
+        </service>
+        <service android:exported="false" android:name="com.sec.android.inputmethod.databases.CandidateExplainerDbInflater"/>
+        <service android:name="com.ime.framework.spellcheckservice.SamsungIMESpellCheckerService" android:permission="android.permission.BIND_TEXT_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService"/>
+            </intent-filter>
+            <meta-data android:name="android.view.textservice.scs" android:resource="@xml/spellchecker"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.nuance.connect.service.ConnectClient">
+            <intent-filter>
+                <action android:name="com.nuance.connect.service.ConnectClient"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:label="@string/app_name" android:name="SamsungKeypadSettings" android:theme="@style/customSettingsTheme"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9AdvancedSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.XT9_ADVANCED_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:label="@string/use_xt9" android:launchMode="singleTop" android:name="com.touchtype.personalizer.PersonalizerSettingsActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.ime.implement.setting.PERSONALIZATIONSETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/app_setting_icon" android:name="com.touchtype.personalizer.PersonalizerActivity" android:theme="@style/PersonalizerTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.LanguagesSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.LANGUAGES_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.ime.implement.setting.ACLanguagesSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.AC_LANGUAGES_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:name="com.ime.implement.setting.ACDeleteLanguages"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.ConnectSetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.CONNECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.SwiftkeyDeleteLanguages" android:theme="@style/ThemeActionBarNoIconLightNoLeftPadding"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.SwiftkeyLanguagesSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.SWIFTKEY_LANGUAGES_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.KeyboardSwipeSettings">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.KEYBOARD_SWIPE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.HwrSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.HWR_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.GestureGuide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.GESTURE_GUIDE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9MyWords">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.XT9_MY_WORDS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9MyWordsAdd"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9MyWordsDel"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9AutoSubstitutions">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.XT9_AUTO_SUBSTITUTIONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9AutoSubstitutionsAdd"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.Xt9AutoSubstitutionsDel"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.AdvancedSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.ADVANCED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.KoreanKeypadSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.KOR_INPUTMETHOD_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:label="@string/use_auto_correction" android:name="com.ime.implement.setting.AutoReplacementSettings">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.AUTOREPLACEMENTSETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:label="@string/use_spell_checker" android:name="com.ime.implement.setting.SpellCheckerSettings">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.SPELLCHECKERSETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.input.umlaut.HwUmlautPopup" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.LanguageItemSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.ime.implement.setting.LanguageItemSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.KeyboardHeightSettings" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.HEIGHT_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.EnhancedPredictionSettings">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.ENHANCED_PREDICTION_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.ime.implement.setting.FuzzyPinyinSettings">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.FUZZY_PINYIN_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:label="@string/setting_shuangpin" android:name="com.ime.implement.setting.SettingsShuangPin"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:label="@string/setting_db_update_title" android:name="com.ime.implement.setting.dbmanager.DbUpdateSettingsActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:label="@null" android:name="com.ime.implement.setting.dbmanager.DbDeleteActivity"/>
+        <receiver android:name="com.ime.framework.dbmanager.autoupdate.DbAutoUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="com.samsung.inputmethod.lifecircle"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ime.framework.dbmanager.autoupdate.DbAutoUpdateService"/>
+        <receiver android:exported="false" android:name=".CscUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.inputmethod.UpdatePreferences"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".SuggestionPickReceiver">
+            <intent-filter>
+                <action android:name="android.text.style.SUGGESTION_PICKED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.touchtype.personalizer.PersonalizerService"/>
+        <provider android:authorities="com.sec.android.inputmethod.databases.SipProvider" android:name="com.sec.android.inputmethod.databases.SipProvider"/>
+        <service android:name="com.ime.implement.setting.GMailService"/>
+        <service android:name="com.google.android.voiceime.ServiceHelper"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:icon="@drawable/app_setting_icon" android:name="com.google.android.voiceime.ActivityHelper" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <receiver android:exported="false" android:name=".EasyModeReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.launcher.action.EASY_MODE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <receiver android:name="com.sec.android.inputmethod.TalkbackBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.settings.action.talkback_toggled"/>
+                <action android:name="android.intent.action.TALKBACK_STATE_CHANGED"/>
+                <action android:name="com.android.settings.action.talkback_off"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.inputmethod.SettingsSoftResetReceiver" android:permission="com.sec.android.settings.permission.SOFT_RESET">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.SETTINGS_SOFT_RESET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.inputmethod.SetupWizardCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.secsetupwizard.SETUPWIZARD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.inputmethod.MirrorLinkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.app.mirrorlink.sip"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.inputmethod.KnoxCustomKeypadReceiver" android:permission="com.sec.enterprise.knox.permission.CUSTOM_SYSTEM">
+            <intent-filter>
+                <action android:name="android.app.enterprise.knoxcustom"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:label="@string/shortcut_phrase" android:name="com.ime.implement.setting.PhraseSettings" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.PHRASE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/autotext_label" android:name="com.ime.implement.setting.AutoTextSettings">
+            <intent-filter>
+                <action android:name="com.ime.implement.setting.AUTOTEXT_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".settingsync.SettingBackupRestoreReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_SIP"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_SIP"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.sec.android.app.sns3.permission.SNS_FB_ACCESS_TOKEN"/>
+    <uses-permission android:name="com.samsung.helphub.permission.HELP"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.sec.android.app.twdvfs.DVFS_BOOSTER_PERMISSION"/>
+    <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
+    <uses-permission android:name="com.mirrorlink.android.service.ACCESS_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
+    <uses-permission android:name="android.permission.MANAGE_USB"/>
+    <uses-permission android:name="com.sec.android.permission.SIDESYNC_RECEIVER_PERMISSION"/>
+    <permission android:name="com.sec.android.inputmethod.permission.BACKUP_RESTORE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.permission.SIDESYNC_RECEIVER_PERMISSION" android:protectionLevel="signature"/>
+</manifest>

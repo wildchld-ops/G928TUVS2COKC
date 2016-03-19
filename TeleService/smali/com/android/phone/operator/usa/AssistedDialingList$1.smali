@@ -36,18 +36,12 @@
 # virtual methods
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 3
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/phone/operator/usa/AssistedDialingList$1;->this$0:Lcom/android/phone/operator/usa/AssistedDialingList;
 

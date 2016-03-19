@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/telecom/PhoneAccountHandle;)V
     .locals 0
-    .param p1    # Landroid/telecom/PhoneAccountHandle;
 
     invoke-direct {p0, p1}, Landroid/telecom/Conference;-><init>(Landroid/telecom/PhoneAccountHandle;)V
 
@@ -91,7 +90,6 @@
 
 .method private getOriginalConnection(Landroid/telecom/Connection;)Lcom/android/internal/telephony/Connection;
     .locals 3
-    .param p1    # Landroid/telecom/Connection;
 
     const/4 v0, 0x0
 
@@ -326,7 +324,6 @@
 
 .method public onPlayDtmfTone(C)V
     .locals 3
-    .param p1    # C
 
     invoke-direct {p0}, Lcom/android/services/telephony/CdmaConference;->getFirstConnection()Lcom/android/services/telephony/CdmaConnection;
 
@@ -353,7 +350,6 @@
 
 .method public onSeparate(Landroid/telecom/Connection;)V
     .locals 3
-    .param p1    # Landroid/telecom/Connection;
 
     new-instance v0, Ljava/lang/Exception;
 
@@ -452,7 +448,6 @@
 
 .method public updateCapabilities(I)V
     .locals 0
-    .param p1    # I
 
     or-int/lit16 p1, p1, 0x4040
 

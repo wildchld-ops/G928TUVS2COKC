@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/split_default_key_width" android:keyHeight="@dimen/split_default_key_height" android:horizontalGap="@dimen/split_default_key_horizontal_gap" android:verticalGap="@dimen/split_default_key_vertical_gap" android:paddingLeft="@dimen/split_default_padding_left" android:paddingRight="@dimen/split_default_padding_left" android:paddingTop="@dimen/split_default_padding_top" android:paddingBottom="@dimen/split_default_padding_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="@dimen/split_default_number_key_width" android:keyHeight="@dimen/split_default_number_key_height" android:rowEdgeFlags="top">
+        <include android:keys="@xml/split_default_number_row_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_delete" android:codes="-1003" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyLabel="Del" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/split_number_symbol_default_page1_row1_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_backspace" android:codes="-5" android:keyEdgeFlags="left" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_right_row2_padding_left" android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/split_number_symbol_default_page1_row2_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_enter" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <include android:keys="@xml/split_number_symbol_default_page1_row3_right" />
+        <Key android:property="tablet" android:codes="0x2c" android:keyLabel="," />
+        <Key android:property="tablet" android:codes="0x2e" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page1_row1_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_backspace" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_right_row2_padding_left" android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page1_row2_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_enter" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page1_row3_right" />
+        <Key android:property="tablet" android:codes="0x2c" android:keyLabel="," />
+        <Key android:property="tablet" android:codes="0x2e" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/split_number_symbol_default_page2_row1_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_backspace" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_right_row2_padding_left" android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/split_number_symbol_default_page2_row2_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_enter" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <include android:keys="@xml/split_indian_number_symbol_default_page2_row3_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page2_row1_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_backspace" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/floating_qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:paddingLeft="@dimen/split_default_right_row2_padding_left" android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/split_number_symbol_default_page2_row2_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_enter" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <include android:keys="@xml/split_indian_number_symbol_default_page2_row3_right" />
+        <Key android:keyWidth="@dimen/split_default_key_width_shift_right" android:backgroundDrawable="@drawable/textinput_qwerty_btn_option_xml" android:codes="-109" android:keyEdgeFlags="right" />
+    </Row>
+    <include android:rows="@xml/split_number_symbols_row_bottom_right" />
+</Keyboard>

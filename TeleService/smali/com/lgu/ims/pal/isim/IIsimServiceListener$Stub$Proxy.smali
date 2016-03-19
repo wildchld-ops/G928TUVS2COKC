@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public OnAUTSFailed([B)V
     .locals 5
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,9 +87,6 @@
 
 .method public OnAuthResponse([B[B[B)V
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -196,7 +191,6 @@
 
 .method public OnStatus(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

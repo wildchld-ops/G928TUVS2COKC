@@ -1589,8 +1589,8 @@
         <receiver android:name="TestingSettingsBroadcastReceiver" android:permission="com.sec.testingsettings.permission.KEYSTRING">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SECRET_CODE"/>
-                <data android:host="4636" android:scheme="android_secret_code"/>
-                <data android:host="562253" android:scheme="android_secret_code"/>
+                <data android:host="\ 4636" android:scheme="android_secret_code"/>
+                <data android:host="\ 562253" android:scheme="android_secret_code"/>
                 <data android:host="878737837*66" android:scheme="android_secret_code"/>
                 <data android:host="878737837*633" android:scheme="android_secret_code"/>
             </intent-filter>

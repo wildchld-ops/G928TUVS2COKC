@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/phone/PhoneGlobals;Landroid/os/Handler;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/phone/PhoneGlobals$5;->this$0:Lcom/android/phone/PhoneGlobals;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/phone/PhoneGlobals$5;->this$0:Lcom/android/phone/PhoneGlobals;
 

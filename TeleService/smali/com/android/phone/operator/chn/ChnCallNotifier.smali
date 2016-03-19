@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/phone/PhoneGlobals;Lcom/android/internal/telephony/Phone;)V
     .locals 3
-    .param p1    # Lcom/android/phone/PhoneGlobals;
-    .param p2    # Lcom/android/internal/telephony/Phone;
 
     const/4 v1, 0x0
 
@@ -222,7 +220,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/operator/chn/ChnCallNotifier;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mRedialProgressDialog:Landroid/app/ProgressDialog;
 
@@ -231,8 +228,6 @@
 
 .method static synthetic access$002(Lcom/android/phone/operator/chn/ChnCallNotifier;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mRedialProgressDialog:Landroid/app/ProgressDialog;
 
@@ -241,7 +236,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/operator/chn/ChnCallNotifier;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mLastCallNumber:Ljava/lang/String;
 
@@ -250,8 +244,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/operator/chn/ChnCallNotifier;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/operator/chn/ChnCallNotifier;->placeCall(Ljava/lang/String;)V
 
@@ -260,8 +252,6 @@
 
 .method static synthetic access$302(Lcom/android/phone/operator/chn/ChnCallNotifier;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mIsGsmRedialCall:Z
 
@@ -270,7 +260,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/operator/chn/ChnCallNotifier;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mHandler:Landroid/os/Handler;
 
@@ -279,8 +268,6 @@
 
 .method static synthetic access$502(Lcom/android/phone/operator/chn/ChnCallNotifier;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mRedialCallCount:I
 
@@ -289,7 +276,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/operator/chn/ChnCallNotifier;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mAlarmManager:Landroid/app/AlarmManager;
 
@@ -298,7 +284,6 @@
 
 .method static synthetic access$700(Lcom/android/phone/operator/chn/ChnCallNotifier;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mPendingIntent:Landroid/app/PendingIntent;
 
@@ -307,7 +292,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/operator/chn/ChnCallNotifier;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/operator/chn/ChnCallNotifier;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -316,7 +300,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -327,8 +310,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/phone/operator/chn/ChnCallNotifier;->LOG_TAG:Ljava/lang/String;
 
@@ -429,7 +410,6 @@
 
 .method private placeCall(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "placeCall entered!!!!!"
 
@@ -713,7 +693,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

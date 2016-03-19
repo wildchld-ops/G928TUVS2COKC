@@ -77,7 +77,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/edge/GlanceReply;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/phone/edge/GlanceReply;
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -86,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/edge/GlanceReply;)V
     .locals 0
-    .param p0    # Lcom/android/phone/edge/GlanceReply;
 
     invoke-direct {p0}, Lcom/android/phone/edge/GlanceReply;->changeTextCounterColor()V
 
@@ -95,8 +93,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/edge/GlanceReply;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/edge/GlanceReply;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/edge/GlanceReply;->setSubAppBarState(Z)V
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/edge/GlanceReply;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/phone/edge/GlanceReply;
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -213,7 +208,6 @@
 
 .method private changeEditTextState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->editText:Landroid/widget/EditText;
 
@@ -325,8 +319,6 @@
 
 .method public static displayOnKeyguard(Landroid/content/Context;Landroid/view/Window;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/Window;
 
     const-string v1, "keyguard"
 
@@ -656,7 +648,6 @@
 
 .method private setSubAppBarOnOffTextState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->mSubAppBarSwitch:Landroid/widget/Switch;
 
@@ -697,7 +688,6 @@
 
 .method private setSubAppBarState(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/phone/edge/GlanceReplyManager;->setGlanceReplyState(Landroid/content/Context;Z)V
 
@@ -712,17 +702,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -833,7 +818,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -854,7 +838,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -940,10 +923,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/phone/edge/GlanceReply;->editText:Landroid/widget/EditText;
 
@@ -1007,7 +986,6 @@
 
 .method public updateTextCounter(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/android/phone/edge/GlanceReply;->editText:Landroid/widget/EditText;
 

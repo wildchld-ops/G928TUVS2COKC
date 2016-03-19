@@ -351,7 +351,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->updateDataState()V
 
@@ -360,7 +359,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-boolean v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->isWaitRadioPowerOff:Z
 
@@ -369,8 +367,6 @@
 
 .method static synthetic access$1000(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->displayNetworkSelectionSucceeded(I)V
 
@@ -379,8 +375,6 @@
 
 .method static synthetic access$102(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->isWaitRadioPowerOff:Z
 
@@ -389,8 +383,6 @@
 
 .method static synthetic access$1102(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->isFlagResetAll:Z
 
@@ -399,7 +391,6 @@
 
 .method static synthetic access$1200(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->loadNetworksList()V
 
@@ -408,8 +399,6 @@
 
 .method static synthetic access$1300(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->selectNetworkAutomatic(I)V
 
@@ -418,7 +407,6 @@
 
 .method static synthetic access$1400(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->selectList()V
 
@@ -427,7 +415,6 @@
 
 .method static synthetic access$1500(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -436,7 +423,6 @@
 
 .method static synthetic access$1600(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-boolean v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mNotupdateSelectionState:Z
 
@@ -453,7 +439,6 @@
 
 .method static synthetic access$1800(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mSearchManualButton:Landroid/preference/CheckBoxPreference;
 
@@ -462,7 +447,6 @@
 
 .method static synthetic access$1900(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/PreferenceCategory;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mIMSISettings:Landroid/preference/PreferenceCategory;
 
@@ -471,7 +455,6 @@
 
 .method static synthetic access$200(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-boolean v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->resetAll:Z
 
@@ -480,7 +463,6 @@
 
 .method static synthetic access$2000(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mAutoSelectRadioButton:Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;
 
@@ -489,8 +471,6 @@
 
 .method static synthetic access$202(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->resetAll:Z
 
@@ -499,7 +479,6 @@
 
 .method static synthetic access$2100(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mManualSelectRadioButton:Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;
 
@@ -508,7 +487,6 @@
 
 .method static synthetic access$2200(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mAutoSelect:Landroid/preference/CheckBoxPreference;
 
@@ -517,7 +495,6 @@
 
 .method static synthetic access$2300(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mSearchButton:Landroid/preference/CheckBoxPreference;
 
@@ -526,8 +503,6 @@
 
 .method static synthetic access$2400(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->updateRadioButtons(Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;)V
 
@@ -544,8 +519,6 @@
 
 .method static synthetic access$2600(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->getTimeoutNewEntry(J)Ljava/lang/String;
 
@@ -556,7 +529,6 @@
 
 .method static synthetic access$2700(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)I
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mSearchPLMNDmin:I
 
@@ -565,7 +537,6 @@
 
 .method static synthetic access$2800(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mHandler:Landroid/os/Handler;
 
@@ -574,7 +545,6 @@
 
 .method static synthetic access$2900(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Lcom/android/phone/mobilenetworks/kor/ProcessStatsPreference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mProgressbarSearchNetwork:Lcom/android/phone/mobilenetworks/kor/ProcessStatsPreference;
 
@@ -583,7 +553,6 @@
 
 .method static synthetic access$300(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->DoReseAll_AfterRadioPoweroff()V
 
@@ -592,7 +561,6 @@
 
 .method static synthetic access$3000(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)I
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->getNetworkSelectMsg()I
 
@@ -603,7 +571,6 @@
 
 .method static synthetic access$3100(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mEfRoaming:Ljava/lang/String;
 
@@ -612,7 +579,6 @@
 
 .method static synthetic access$3200(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->sendImsiStatusChangeNoti()V
 
@@ -621,7 +587,6 @@
 
 .method static synthetic access$3300(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->networkSelectAuto()V
 
@@ -630,7 +595,6 @@
 
 .method static synthetic access$3400(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->getSelectedBandMode()V
 
@@ -639,7 +603,6 @@
 
 .method static synthetic access$3500(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->reboot()V
 
@@ -648,8 +611,6 @@
 
 .method static synthetic access$3600(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->setAutoBandMode(Landroid/os/AsyncResult;)V
 
@@ -658,7 +619,6 @@
 
 .method static synthetic access$3700(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->sendImsiStatusChangeNotiForNoWait()V
 
@@ -667,7 +627,6 @@
 
 .method static synthetic access$3800(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->checkDataConnectionSearchButton()V
 
@@ -676,7 +635,6 @@
 
 .method static synthetic access$3900(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/PreferenceCategory;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mCategorySearchNetwork:Landroid/preference/PreferenceCategory;
 
@@ -685,7 +643,6 @@
 
 .method static synthetic access$400(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)I
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->isSetIMSI:I
 
@@ -694,7 +651,6 @@
 
 .method static synthetic access$4000(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/PreferenceCategory;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mCurrentOperator:Landroid/preference/PreferenceCategory;
 
@@ -703,8 +659,6 @@
 
 .method static synthetic access$402(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->isSetIMSI:I
 
@@ -713,8 +667,6 @@
 
 .method static synthetic access$4102(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Lcom/android/phone/INetworkQueryService;)Lcom/android/phone/INetworkQueryService;
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Lcom/android/phone/INetworkQueryService;
 
     iput-object p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mNetworkQueryService:Lcom/android/phone/INetworkQueryService;
 
@@ -723,8 +675,6 @@
 
 .method static synthetic access$4200(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Z)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->setMobileDataEnabled(Z)V
 
@@ -733,7 +683,6 @@
 
 .method static synthetic access$4300(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -742,7 +691,6 @@
 
 .method static synthetic access$4400(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)I
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mActionType:I
 
@@ -751,8 +699,6 @@
 
 .method static synthetic access$4402(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;I)I
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mActionType:I
 
@@ -761,7 +707,6 @@
 
 .method static synthetic access$4500(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-object v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mTempPreference:Landroid/preference/Preference;
 
@@ -770,8 +715,6 @@
 
 .method static synthetic access$4600(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->displayNetworkSeletionInProgress(Ljava/lang/String;)V
 
@@ -780,7 +723,6 @@
 
 .method static synthetic access$4700(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->upateEfRoaming()V
 
@@ -789,7 +731,6 @@
 
 .method static synthetic access$4800(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->sendImsiStatusChangeNotiForResetAll()V
 
@@ -798,7 +739,6 @@
 
 .method static synthetic access$4900(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->readyDestory()V
 
@@ -807,7 +747,6 @@
 
 .method static synthetic access$500(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     invoke-direct {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->setIMSISelection()V
 
@@ -816,9 +755,6 @@
 
 .method static synthetic access$600(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Ljava/util/List;I)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Ljava/util/List;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->networksListLoaded(Ljava/util/List;I)V
 
@@ -827,7 +763,6 @@
 
 .method static synthetic access$700(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->log(Ljava/lang/String;)V
 
@@ -836,8 +771,6 @@
 
 .method static synthetic access$800(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->displayNetworkSelectionFailed(Ljava/lang/Throwable;)V
 
@@ -846,7 +779,6 @@
 
 .method static synthetic access$900(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;)Z
     .locals 1
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
 
     iget-boolean v0, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mGotoHomeAfterselection:Z
 
@@ -855,8 +787,6 @@
 
 .method static synthetic access$902(Lcom/android/phone/mobilenetworks/kor/NetworkOperators;Z)Z
     .locals 0
-    .param p0    # Lcom/android/phone/mobilenetworks/kor/NetworkOperators;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mGotoHomeAfterselection:Z
 
@@ -1427,8 +1357,6 @@
 
 .method private convertOperatorRat(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v3, "LTE"
 
@@ -1539,8 +1467,6 @@
 
 .method private convertOperatorState(Lcom/android/internal/telephony/OperatorInfo;Landroid/preference/Preference;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/internal/telephony/OperatorInfo;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v2, "X"
 
@@ -1646,7 +1572,6 @@
 
 .method private displayEmptyNetworkList(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mNetworkList:Landroid/preference/PreferenceGroup;
 
@@ -1667,7 +1592,6 @@
 
 .method private displayNetworkQueryFailed(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1726,7 +1650,6 @@
 
 .method private displayNetworkSelectionFailed(Ljava/lang/Throwable;)V
     .locals 11
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v10, 0x0
 
@@ -2045,7 +1968,6 @@
 
 .method private displayNetworkSelectionSucceeded(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -2160,7 +2082,6 @@
 
 .method private displayNetworkSeletionInProgress(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->getResources()Landroid/content/res/Resources;
 
@@ -2603,7 +2524,6 @@
 
 .method private getNetworkTitle(Lcom/android/internal/telephony/OperatorInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/OperatorInfo;
 
     const-string v0, "feature_ktt"
 
@@ -2725,7 +2645,6 @@
 
 .method private getTimeoutNewEntry(J)Ljava/lang/String;
     .locals 11
-    .param p1    # J
 
     const-wide/16 v6, 0x3e8
 
@@ -2889,7 +2808,6 @@
 
 .method private getToken(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/util/StringTokenizer;
@@ -2960,7 +2878,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "NetworkOperators"
 
@@ -2995,7 +2912,6 @@
 
 .method private networksListLoaded(Ljava/util/List;I)V
     .locals 20
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3896,7 +3812,6 @@
 
 .method private removeSpon(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -4380,7 +4295,6 @@
 
 .method private selectNetworkAutomatic(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "Select network automatically..."
 
@@ -4735,7 +4649,6 @@
 
 .method private setAutoBandMode(Landroid/os/AsyncResult;)V
     .locals 7
-    .param p1    # Landroid/os/AsyncResult;
 
     const/16 v6, 0x3e9
 
@@ -5661,7 +5574,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v1, "setMobileDataEnabled"
 
@@ -6105,7 +6017,6 @@
 
 .method private updateRadioButtons(Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;)V
     .locals 3
-    .param p1    # Lcom/android/phone/mobilenetworks/kor/RadioButtonPreference;
 
     const/4 v2, 0x1
 
@@ -6172,7 +6083,6 @@
 # virtual methods
 .method checkIMSI(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -6543,7 +6453,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v1, p0, Lcom/android/phone/mobilenetworks/kor/NetworkOperators;->mFailDialog:Landroid/app/AlertDialog;
 
@@ -6621,7 +6530,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -7586,7 +7494,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const v6, 0x1040009
 
@@ -8045,7 +7952,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 9
-    .param p1    # Landroid/view/Menu;
 
     const v8, 0x7f0a07ea
 
@@ -8197,8 +8103,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -8237,7 +8141,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -8611,8 +8514,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/16 v5, 0x1f4
 
@@ -8734,8 +8635,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v7, 0x2
 
@@ -9532,8 +9431,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
 
     const/16 v0, 0x64
 
@@ -9590,7 +9487,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const/4 v6, 0x0
 

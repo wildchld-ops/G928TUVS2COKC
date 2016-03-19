@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/sdk/cover/ScoverManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/cover/ScoverManager;->mContext:Landroid/content/Context;
 
@@ -500,7 +498,6 @@
 
 .method isSupportableVersion(I)Z
     .locals 8
-    .param p1    # I
 
     const v7, 0xffff
 
@@ -549,7 +546,6 @@
 
 .method public registerListener(Lcom/samsung/android/sdk/cover/ScoverManager$StateListener;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/sdk/cover/ScoverManager$StateListener;
 
     const-string v6, "ScoverManager"
 
@@ -696,7 +692,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/sdk/cover/ScoverManager$StateListener;)V
     .locals 7
-    .param p1    # Lcom/samsung/android/sdk/cover/ScoverManager$StateListener;
 
     const-string v5, "ScoverManager"
 

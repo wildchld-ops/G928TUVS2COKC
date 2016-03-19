@@ -6,7 +6,6 @@
 # direct methods
 .method public static getVoiceCapable(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -23,7 +22,6 @@
 
 .method private static isCDMA(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/phone/phonesearch/PhoneSearchIndexablesUtils;->isWorldPhone(Landroid/content/Context;)Z
 
@@ -135,7 +133,6 @@
 
 .method private static isWorldPhone(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -152,7 +149,6 @@
 
 .method public static updateIndexableRes(Landroid/content/Context;)[Landroid/provider/SearchIndexableResource;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const v3, 0x7f07002e
 

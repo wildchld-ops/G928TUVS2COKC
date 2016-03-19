@@ -117,7 +117,6 @@
 
 .method static synthetic access$000(Lcom/android/phone/photoring/PhotoringPhraseList;)I
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoringPhraseList;
 
     iget v0, p0, Lcom/android/phone/photoring/PhotoringPhraseList;->mScreenMode:I
 
@@ -126,8 +125,6 @@
 
 .method static synthetic access$100(Lcom/android/phone/photoring/PhotoringPhraseList;J)V
     .locals 1
-    .param p0    # Lcom/android/phone/photoring/PhotoringPhraseList;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/phone/photoring/PhotoringPhraseList;->viewPhrase(J)V
 
@@ -202,7 +199,6 @@
 
 .method private loadData(I)V
     .locals 13
-    .param p1    # I
 
     if-nez p1, :cond_3
 
@@ -400,8 +396,6 @@
 
 .method private returnSelectedPhrase(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v3, "PhotoringPhraseList"
 
@@ -769,7 +763,6 @@
 
 .method private showToast(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -784,7 +777,6 @@
 
 .method private viewPhrase(J)V
     .locals 3
-    .param p1    # J
 
     const/4 v2, 0x2
 
@@ -815,9 +807,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -864,7 +853,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 10
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v9, 0x1
 
@@ -1005,7 +993,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "PhotoringPhraseList"
 
@@ -1045,9 +1032,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 3
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v2, 0x0
 
@@ -1075,7 +1059,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const v6, 0x7f0a0286
 
@@ -1148,8 +1131,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1184,7 +1165,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 9
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v5, 0x1
 
@@ -1446,7 +1426,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const/4 v6, 0x3
 

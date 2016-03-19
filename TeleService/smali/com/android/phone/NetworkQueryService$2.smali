@@ -33,7 +33,6 @@
 # virtual methods
 .method public startNetworkQuery(Lcom/android/phone/INetworkQueryServiceCallback;)V
     .locals 4
-    .param p1    # Lcom/android/phone/INetworkQueryServiceCallback;
 
     const-string v0, "feature_multisim"
 
@@ -185,7 +184,6 @@
 
 .method public stopNetworkQuery(Lcom/android/phone/INetworkQueryServiceCallback;)V
     .locals 8
-    .param p1    # Lcom/android/phone/INetworkQueryServiceCallback;
 
     invoke-virtual {p0, p1}, Lcom/android/phone/NetworkQueryService$2;->unregisterCallback(Lcom/android/phone/INetworkQueryServiceCallback;)V
 
@@ -485,7 +483,6 @@
 
 .method public unregisterCallback(Lcom/android/phone/INetworkQueryServiceCallback;)V
     .locals 3
-    .param p1    # Lcom/android/phone/INetworkQueryServiceCallback;
 
     if-eqz p1, :cond_0
 
